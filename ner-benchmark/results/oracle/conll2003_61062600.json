@@ -1,0 +1,102 @@
+{
+  "document_id": "61062600-5002-47aa-88ce-ea8feae84da5",
+  "document_name": "conll2003_test_030.txt",
+  "dataset": "conll2003",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 2,
+  "chars": 2779,
+  "entities": [
+    {
+      "name": "Kinshasa",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Zairean rebels",
+      "type": "ORG"
+    },
+    {
+      "name": "eastern Zaire",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Tomorrow",
+      "type": "DATE"
+    },
+    {
+      "name": "Rwanda",
+      "type": "LOCATION"
+    },
+    {
+      "name": "General Baril",
+      "type": "PERSON"
+    },
+    {
+      "name": "Laurent Kabila",
+      "type": "PERSON"
+    },
+    {
+      "name": "Goma",
+      "type": "LOCATION"
+    },
+    {
+      "name": "last week",
+      "type": "DATE"
+    },
+    {
+      "name": "Rwandan",
+      "type": "LOCATION"
+    },
+    {
+      "name": "multinational force",
+      "type": "ORG"
+    },
+    {
+      "name": "Zairean army",
+      "type": "ORG"
+    },
+    {
+      "name": "Canadian",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Doug Young",
+      "type": "PERSON"
+    },
+    {
+      "name": "Thursday",
+      "type": "DATE"
+    },
+    {
+      "name": "NGOs",
+      "type": "ORG"
+    },
+    {
+      "name": "non-governmental organisations",
+      "type": "ORG"
+    },
+    {
+      "name": "Zaire",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Young",
+      "type": "PERSON"
+    },
+    {
+      "name": "Zairean government",
+      "type": "ORG"
+    },
+    {
+      "name": "Chapter Seven",
+      "type": "OTHER"
+    },
+    {
+      "name": "U.N.",
+      "type": "ORG"
+    },
+    {
+      "name": "Security Council",
+      "type": "ORG"
+    }
+  ]
+}

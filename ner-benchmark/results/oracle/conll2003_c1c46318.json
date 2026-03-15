@@ -1,0 +1,338 @@
+{
+  "document_id": "c1c46318-5d38-43fc-9bf7-cf02a81d6f6a",
+  "document_name": "conll2003_test_076.txt",
+  "dataset": "conll2003",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 2,
+  "chars": 2717,
+  "entities": [
+    {
+      "name": "United States",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Brian Shimer",
+      "type": "PERSON"
+    },
+    {
+      "name": "Randy Jones",
+      "type": "PERSON"
+    },
+    {
+      "name": "Italy",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Guenther Huber",
+      "type": "PERSON"
+    },
+    {
+      "name": "Antonio Tartaglia",
+      "type": "PERSON"
+    },
+    {
+      "name": "Canada",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Pierre Lueders",
+      "type": "PERSON"
+    },
+    {
+      "name": "Dave MacEachern",
+      "type": "PERSON"
+    },
+    {
+      "name": "German",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Sepp Dostthaler",
+      "type": "PERSON"
+    },
+    {
+      "name": "Thomas Lebsa",
+      "type": "PERSON"
+    },
+    {
+      "name": "Switzerland",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Reto Goetschi",
+      "type": "PERSON"
+    },
+    {
+      "name": "Guido Acklin",
+      "type": "PERSON"
+    },
+    {
+      "name": "Germany",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Dirk Wiese",
+      "type": "PERSON"
+    },
+    {
+      "name": "Jakobs Marco",
+      "type": "PERSON"
+    },
+    {
+      "name": "Czech Republic",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Jiri Dzmura",
+      "type": "PERSON"
+    },
+    {
+      "name": "Pavel Polomsky",
+      "type": "PERSON"
+    },
+    {
+      "name": "Austria",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Hubert Schoesser",
+      "type": "PERSON"
+    },
+    {
+      "name": "Erwin Arnold",
+      "type": "PERSON"
+    },
+    {
+      "name": "Britain",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Sean Olsson",
+      "type": "PERSON"
+    },
+    {
+      "name": "Dean Ward",
+      "type": "PERSON"
+    },
+    {
+      "name": "United States",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Jim Herberich",
+      "type": "PERSON"
+    },
+    {
+      "name": "Garrett\nHines",
+      "type": "PERSON"
+    },
+    {
+      "name": "Austria",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Hannes Conti",
+      "type": "PERSON"
+    },
+    {
+      "name": "Georg Kuttner",
+      "type": "PERSON"
+    },
+    {
+      "name": "WOOLMER",
+      "type": "PERSON"
+    },
+    {
+      "name": "KANPUR",
+      "type": "LOCATION"
+    },
+    {
+      "name": "KANPUR",
+      "type": "LOCATION"
+    },
+    {
+      "name": "India",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1996-12-07",
+      "type": "DATE"
+    },
+    {
+      "name": "South Africa",
+      "type": "LOCATION"
+    },
+    {
+      "name": "India",
+      "type": "LOCATION"
+    },
+    {
+      "name": "England",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Bob Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "Kanpur",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "India",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "South African",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Saturday",
+      "type": "DATE"
+    },
+    {
+      "name": "Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "England",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1975",
+      "type": "DATE"
+    },
+    {
+      "name": "1981",
+      "type": "DATE"
+    },
+    {
+      "name": "India",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Tony Greig",
+      "type": "PERSON"
+    },
+    {
+      "name": "England",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1976-77",
+      "type": "DATE"
+    },
+    {
+      "name": "Clarence Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "United Province",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Uttar Pradesh",
+      "type": "LOCATION"
+    },
+    {
+      "name": "India",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Ranji Trophy",
+      "type": "EVENT"
+    },
+    {
+      "name": "1949",
+      "type": "DATE"
+    },
+    {
+      "name": "Woolmer senior",
+      "type": "PERSON"
+    },
+    {
+      "name": "Cape Town",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "Kanpur",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1949",
+      "type": "DATE"
+    },
+    {
+      "name": "Woolmer senior",
+      "type": "PERSON"
+    },
+    {
+      "name": "Cape Town",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "Kanpur",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Calcutta",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Woolmer",
+      "type": "PERSON"
+    },
+    {
+      "name": "India-South Africa test",
+      "type": "EVENT"
+    },
+    {
+      "name": "WORLD CUP",
+      "type": "EVENT"
+    },
+    {
+      "name": "TIGNES",
+      "type": "LOCATION"
+    },
+    {
+      "name": "France",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1996-12-07",
+      "type": "DATE"
+    },
+    {
+      "name": "World Cup",
+      "type": "EVENT"
+    },
+    {
+      "name": "Saturday",
+      "type": "DATE"
+    },
+    {
+      "name": "Alexis Blanc",
+      "type": "PERSON"
+    },
+    {
+      "name": "France",
+      "type": "LOCATION"
+    }
+  ]
+}

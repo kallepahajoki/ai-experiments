@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+#
+# Pre-commit hook: reject commits containing API keys or secrets.
+# Scans staged files for common secret patterns.
+#
+
+set -euo pipefail
+
+# Patterns that indicate leaked secrets
+# Each line: "pattern_name regex"
+PATTERNS=(
+    "OpenRouter:sk-or-v1-[a-f0-9]{64}"
+    "Anthropic:sk-ant-[a-zA-Z0-9_-]{40,}"
+    "OpenAI:sk-[a-zA-Z0-9]{48,}"
+    "AWS_Access_Key:AKIA[0-9A-Z]{16}"
+    "GitHub_PAT:ghp_[a-zA-Z0-9]{36}"
+    "GitHub_OAuth:gho_[a-zA-Z0-9]{36}"
+    "GitLab_PAT:glpat-[a-zA-Z0-9_-]{20,}"
+    "Slack_Bot:xoxb-[0-9]+-[a-zA-Z0-9]+"
+    "Slack_User:xoxp-[0-9]+-[a-zA-Z0-9]+"
+    "Generic_Bearer:Bearer\s+[a-zA-Z0-9_.-]{30,}"
+    "HuggingFace:hf_[a-zA-Z0-9]{34,}"
+    "Google_API:AIza[0-9A-Za-z_-]{35}"
+)
+
+FOUND=0
+
+for entry in "${PATTERNS[@]}"; do
+    NAME="${entry%%:*}"
+    PATTERN="${entry#*:}"
+
+    # Search staged content only (not filenames, not unstaged changes)
+    MATCHES=$(git diff --cached --diff-filter=ACMR -U0 | grep -E "^\+" | grep -v "^+++" | grep -oE "$PATTERN" 2>/dev/null || true)
+
+    if [ -n "$MATCHES" ]; then
+        if [ "$FOUND" -eq 0 ]; then
+            echo "🚨 SECRET DETECTED — commit blocked"
+            echo ""
+        fi
+        echo "  $NAME pattern found:"
+        echo "$MATCHES" | head -3 | sed 's/^/    /'
+        echo ""
+        FOUND=1
+    fi
+done
+
+if [ "$FOUND" -ne 0 ]; then
+    echo "Remove the secret(s) above before committing."
+    echo "If this is a false positive, use: git commit --no-verify"
+    exit 1
+fi

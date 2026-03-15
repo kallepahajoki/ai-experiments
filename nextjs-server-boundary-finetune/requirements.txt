@@ -1,0 +1,13 @@
+# For cloud (RunPod), use scripts/cloud_setup.sh instead of pip install -r.
+# It handles install order and avoids upgrading the pre-installed torch.
+torch>=2.4.0
+transformers
+peft>=0.13.0
+trl>=0.12.0
+datasets>=3.0.0
+accelerate>=1.0.0
+pyyaml>=6.0
+unsloth
+unsloth_zoo
+causal-conv1d
+mamba-ssm

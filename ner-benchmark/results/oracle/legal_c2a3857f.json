@@ -1,0 +1,158 @@
+{
+  "document_id": "c2a3857f-63b9-4fb2-b9ad-6987e8b8218f",
+  "document_name": "contract_014.txt",
+  "dataset": "legal",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 9,
+  "chars": 16335,
+  "entities": [
+    {
+      "name": "AVOCENT CORPORATION",
+      "type": "ORG"
+    },
+    {
+      "name": "2000",
+      "type": "DATE"
+    },
+    {
+      "name": "2000 TRANSITION STOCK OPTION PLAN",
+      "type": "OTHER"
+    },
+    {
+      "name": "Plan",
+      "type": "OTHER"
+    },
+    {
+      "name": "Company",
+      "type": "ORG"
+    },
+    {
+      "name": "Nonstatutory Stock Options",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Board",
+      "type": "ORG"
+    },
+    {
+      "name": "U.S.",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Code",
+      "type": "OTHER"
+    },
+    {
+      "name": "Common Stock",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Board of Directors",
+      "type": "ORG"
+    },
+    {
+      "name": "Internal Revenue Code of 1986",
+      "type": "OTHER"
+    },
+    {
+      "name": "1986",
+      "type": "DATE"
+    },
+    {
+      "name": "Avocent Corporation",
+      "type": "ORG"
+    },
+    {
+      "name": "Delaware",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Section 22(e)(3)",
+      "type": "OTHER"
+    },
+    {
+      "name": "Exchange Act",
+      "type": "OTHER"
+    },
+    {
+      "name": "Securities Exchange Act of 1934",
+      "type": "OTHER"
+    },
+    {
+      "name": "1934",
+      "type": "DATE"
+    },
+    {
+      "name": "Nasdaq National Market",
+      "type": "ORG"
+    },
+    {
+      "name": "The Nasdaq SmallCap Market",
+      "type": "ORG"
+    },
+    {
+      "name": "The Nasdaq Stock Market",
+      "type": "ORG"
+    },
+    {
+      "name": "The Wall Street Journal",
+      "type": "ORG"
+    },
+    {
+      "name": "Option Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Nasdaq",
+      "type": "ORG"
+    },
+    {
+      "name": "Option",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Section 422",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 424(e)",
+      "type": "OTHER"
+    },
+    {
+      "name": "2000 Nonstatutory Stock Option Plan",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 12",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 424(f)",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 4",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 14",
+      "type": "OTHER"
+    },
+    {
+      "name": "ten (10) years",
+      "type": "DATE"
+    },
+    {
+      "name": "six months",
+      "type": "DATE"
+    },
+    {
+      "name": "three (3) months",
+      "type": "DATE"
+    },
+    {
+      "name": "twelve (12) months",
+      "type": "DATE"
+    }
+  ]
+}

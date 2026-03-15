@@ -1,0 +1,905 @@
+{
+  "qwen_08b": {
+    "precision": 0.5993610223642173,
+    "recall": 0.36929133858267715,
+    "f1": 0.4570036540803898,
+    "type_accuracy": 0.8170731707317073,
+    "tp": 938,
+    "fp": 627,
+    "fn": 1602,
+    "gt_total": 2540,
+    "model_total": 1565,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.6917900403768507,
+        "recall": 0.47548566142460685,
+        "f1": 0.5635964912280702,
+        "tp": 514,
+        "fp": 229,
+        "fn": 567
+      },
+      "ORG": {
+        "precision": 0.6981132075471698,
+        "recall": 0.3412384716732543,
+        "f1": 0.4584070796460177,
+        "tp": 259,
+        "fp": 112,
+        "fn": 500
+      },
+      "LOCATION": {
+        "precision": 0.7884615384615384,
+        "recall": 0.38497652582159625,
+        "f1": 0.5173501577287066,
+        "tp": 164,
+        "fp": 44,
+        "fn": 262
+      },
+      "OTHER": {
+        "precision": 0.0625,
+        "recall": 0.0036496350364963502,
+        "f1": 0.006896551724137931,
+        "tp": 1,
+        "fp": 15,
+        "fn": 273
+      }
+    },
+    "false_positives": [
+      {
+        "name": "$ 40 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "1 fc cologne",
+        "type": "PERSON"
+      },
+      {
+        "name": "1 willem ii tilburg",
+        "type": "DATE"
+      },
+      {
+        "name": "10-0-42-0 ( 1w ) , shahid afridi 7-0-40-2 , salim malik 2.5-0-8-1",
+        "type": "EVENT"
+      },
+      {
+        "name": "12-year-old conflict",
+        "type": "EVENT"
+      },
+      {
+        "name": "13,000",
+        "type": "OTHER"
+      },
+      {
+        "name": "15,232",
+        "type": "DATE"
+      },
+      {
+        "name": "150,000",
+        "type": "DATE"
+      },
+      {
+        "name": "165,000",
+        "type": "DATE"
+      },
+      {
+        "name": "1970",
+        "type": "DATE"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1. fc cologne",
+        "type": "ORG"
+      },
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "aa",
+        "type": "ORG"
+      },
+      {
+        "name": "abdel-rahman",
+        "type": "PERSON"
+      },
+      {
+        "name": "abdul latif helou",
+        "type": "PERSON"
+      },
+      {
+        "name": "abelardofernandez",
+        "type": "PERSON"
+      },
+      {
+        "name": "access",
+        "type": "OTHER"
+      },
+      {
+        "name": "adams",
+        "type": "PERSON"
+      }
+    ]
+  },
+  "qwen_2b": {
+    "precision": 0.5435552407932012,
+    "recall": 0.6043307086614174,
+    "f1": 0.5723340790454885,
+    "type_accuracy": 0.8478889531521111,
+    "tp": 1535,
+    "fp": 1289,
+    "fn": 1005,
+    "gt_total": 2540,
+    "model_total": 2824,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.9442176870748299,
+        "recall": 0.6419981498612396,
+        "f1": 0.7643171806167401,
+        "tp": 694,
+        "fp": 41,
+        "fn": 387
+      },
+      "ORG": {
+        "precision": 0.7407407407407407,
+        "recall": 0.6851119894598156,
+        "f1": 0.7118412046543463,
+        "tp": 520,
+        "fp": 182,
+        "fn": 239
+      },
+      "LOCATION": {
+        "precision": 0.7024608501118568,
+        "recall": 0.7370892018779343,
+        "f1": 0.7193585337915234,
+        "tp": 314,
+        "fp": 133,
+        "fn": 112
+      },
+      "OTHER": {
+        "precision": 0.022508038585209004,
+        "recall": 0.025547445255474453,
+        "f1": 0.023931623931623933,
+        "tp": 7,
+        "fp": 304,
+        "fn": 267
+      }
+    },
+    "false_positives": [
+      {
+        "name": "\" i bear witness that there is no god but allah and i bear witness that the prophet mohammed is the messenger of god , \" he quoted mills as saying",
+        "type": "EVENT"
+      },
+      {
+        "name": "$ 0.22 per share",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 0.30 per share",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1,000",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 1.5 million jcpenney classic",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 1.52-1.56",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1.65",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 10 billion",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 105 percent",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 11 mln",
+        "type": "OTHER"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "a. parore",
+        "type": "PERSON"
+      },
+      {
+        "name": "aa",
+        "type": "ORG"
+      },
+      {
+        "name": "abdel-rahman",
+        "type": "PERSON"
+      },
+      {
+        "name": "abelardofernandez",
+        "type": "PERSON"
+      },
+      {
+        "name": "access",
+        "type": "OTHER"
+      },
+      {
+        "name": "adams",
+        "type": "PERSON"
+      },
+      {
+        "name": "adilson da silva",
+        "type": "PERSON"
+      }
+    ]
+  },
+  "qwen_4b": {
+    "precision": 0.6345740873299929,
+    "recall": 0.6980314960629921,
+    "f1": 0.6647919010123734,
+    "type_accuracy": 0.8951271186440678,
+    "tp": 1773,
+    "fp": 1021,
+    "fn": 767,
+    "gt_total": 2540,
+    "model_total": 2794,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.9154285714285715,
+        "recall": 0.7409805735430157,
+        "f1": 0.8190184049079755,
+        "tp": 801,
+        "fp": 74,
+        "fn": 280
+      },
+      "ORG": {
+        "precision": 0.789002557544757,
+        "recall": 0.8129117259552042,
+        "f1": 0.800778715120052,
+        "tp": 617,
+        "fp": 165,
+        "fn": 142
+      },
+      "LOCATION": {
+        "precision": 0.7203389830508474,
+        "recall": 0.7981220657276995,
+        "f1": 0.7572383073496659,
+        "tp": 340,
+        "fp": 132,
+        "fn": 86
+      },
+      "OTHER": {
+        "precision": 0.1485148514851485,
+        "recall": 0.05474452554744526,
+        "f1": 0.07999999999999999,
+        "tp": 15,
+        "fp": 86,
+        "fn": 259
+      }
+    },
+    "false_positives": [
+      {
+        "name": "$ 1 = 8.3 yuan",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1.5 million jcpenney classic",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 1.52-1.56 per mmbtu",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 1.65",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 10 billion",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 100 million",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 105,000 mahindra international",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 11 mln",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 1=32.14 belgian franc",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 2 billion",
+        "type": "PRODUCT"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "a. parore",
+        "type": "PERSON"
+      },
+      {
+        "name": "aa",
+        "type": "ORG"
+      },
+      {
+        "name": "abdel-rahman",
+        "type": "PERSON"
+      },
+      {
+        "name": "abdul latif helou",
+        "type": "PERSON"
+      },
+      {
+        "name": "abelardofernandez",
+        "type": "PERSON"
+      },
+      {
+        "name": "access",
+        "type": "OTHER"
+      },
+      {
+        "name": "adrs",
+        "type": "OTHER"
+      }
+    ]
+  },
+  "qwen_9b": {
+    "precision": 0.6879073135409124,
+    "recall": 0.7480314960629921,
+    "f1": 0.7167106752168992,
+    "type_accuracy": 0.8865318204242724,
+    "tp": 1900,
+    "fp": 862,
+    "fn": 640,
+    "gt_total": 2540,
+    "model_total": 2762,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.9481641468682506,
+        "recall": 0.8122109158186864,
+        "f1": 0.8749377179870453,
+        "tp": 878,
+        "fp": 48,
+        "fn": 203
+      },
+      "ORG": {
+        "precision": 0.8387096774193549,
+        "recall": 0.8563899868247694,
+        "f1": 0.847457627118644,
+        "tp": 650,
+        "fp": 125,
+        "fn": 109
+      },
+      "LOCATION": {
+        "precision": 0.7023809523809523,
+        "recall": 0.8309859154929577,
+        "f1": 0.7612903225806451,
+        "tp": 354,
+        "fp": 150,
+        "fn": 72
+      },
+      "OTHER": {
+        "precision": 0.1487603305785124,
+        "recall": 0.06569343065693431,
+        "f1": 0.09113924050632911,
+        "tp": 18,
+        "fp": 103,
+        "fn": 256
+      }
+    },
+    "false_positives": [
+      {
+        "name": "$",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 2 billion",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 20,000",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 23.50",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "$ 35.375",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 35.63",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 40 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 475 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 60 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "+1 212 859 1640",
+        "type": "OTHER"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "abdel-rahman",
+        "type": "PERSON"
+      },
+      {
+        "name": "abelardofernandez",
+        "type": "PERSON"
+      },
+      {
+        "name": "access",
+        "type": "OTHER"
+      },
+      {
+        "name": "action performance cos inc",
+        "type": "ORG"
+      },
+      {
+        "name": "adams",
+        "type": "PERSON"
+      },
+      {
+        "name": "adilson da silva",
+        "type": "PERSON"
+      },
+      {
+        "name": "adrs",
+        "type": "OTHER"
+      }
+    ]
+  },
+  "spacy_lg": {
+    "precision": 0.3678621991505427,
+    "recall": 0.6137795275590551,
+    "f1": 0.46001770433756267,
+    "type_accuracy": 0.7905982905982906,
+    "tp": 1559,
+    "fp": 2679,
+    "fn": 981,
+    "gt_total": 2540,
+    "model_total": 4238,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.8389398572884812,
+        "recall": 0.7613320999074931,
+        "f1": 0.7982541222114453,
+        "tp": 823,
+        "fp": 158,
+        "fn": 258
+      },
+      "ORG": {
+        "precision": 0.3869281045751634,
+        "recall": 0.38998682476943347,
+        "f1": 0.3884514435695538,
+        "tp": 296,
+        "fp": 469,
+        "fn": 463
+      },
+      "LOCATION": {
+        "precision": 0.5978062157221207,
+        "recall": 0.7676056338028169,
+        "f1": 0.6721479958890031,
+        "tp": 327,
+        "fp": 220,
+        "fn": 99
+      },
+      "OTHER": {
+        "precision": 0.09201954397394137,
+        "recall": 0.4124087591240876,
+        "f1": 0.15046604527296936,
+        "tp": 113,
+        "fp": 1115,
+        "fn": 161
+      }
+    },
+    "false_positives": [
+      {
+        "name": "$ 1.5 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1.52-1.56",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 10 billion",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 11 mln",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1=32.14 belgian franc",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 3,000 to $ 4,000",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 30.3 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 31 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 350 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 4.1 million",
+        "type": "OTHER"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1. fc cologne",
+        "type": "ORG"
+      },
+      {
+        "name": "1860 munich",
+        "type": "ORG"
+      },
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "a. curts cooke",
+        "type": "PERSON"
+      },
+      {
+        "name": "a. parore",
+        "type": "PERSON"
+      },
+      {
+        "name": "aa",
+        "type": "ORG"
+      },
+      {
+        "name": "abelardofernandez",
+        "type": "PERSON"
+      },
+      {
+        "name": "aberdeen",
+        "type": "ORG"
+      }
+    ]
+  },
+  "spacy_sm": {
+    "precision": 0.3231430618581323,
+    "recall": 0.5326771653543307,
+    "f1": 0.4022595510628809,
+    "type_accuracy": 0.7642563198118754,
+    "tp": 1353,
+    "fp": 2834,
+    "fn": 1187,
+    "gt_total": 2540,
+    "model_total": 4187,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.7331975560081466,
+        "recall": 0.666049953746531,
+        "f1": 0.6980126030053321,
+        "tp": 720,
+        "fp": 262,
+        "fn": 361
+      },
+      "ORG": {
+        "precision": 0.3848396501457726,
+        "recall": 0.34782608695652173,
+        "f1": 0.3653979238754325,
+        "tp": 264,
+        "fp": 422,
+        "fn": 495
+      },
+      "LOCATION": {
+        "precision": 0.631578947368421,
+        "recall": 0.6197183098591549,
+        "f1": 0.6255924170616114,
+        "tp": 264,
+        "fp": 154,
+        "fn": 162
+      },
+      "OTHER": {
+        "precision": 0.09075194468452895,
+        "recall": 0.38321167883211676,
+        "f1": 0.14675052410901465,
+        "tp": 105,
+        "fp": 1052,
+        "fn": 169
+      }
+    },
+    "false_positives": [
+      {
+        "name": "$ 1.5 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1.52-1.56",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 10 billion",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 105,000",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 11 mln",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 3,000 to $ 4,000",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 30.3 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 31 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 350 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 4.1 million",
+        "type": "OTHER"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1. fc cologne",
+        "type": "ORG"
+      },
+      {
+        "name": "1860 munich",
+        "type": "ORG"
+      },
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "a. curts cooke",
+        "type": "PERSON"
+      },
+      {
+        "name": "a. parore",
+        "type": "PERSON"
+      },
+      {
+        "name": "aa",
+        "type": "ORG"
+      },
+      {
+        "name": "abdel-rahman",
+        "type": "PERSON"
+      },
+      {
+        "name": "abdul latif helou",
+        "type": "PERSON"
+      }
+    ]
+  },
+  "spacy_trf": {
+    "precision": 0.5191960834836382,
+    "recall": 0.7933070866141733,
+    "f1": 0.6276280953122567,
+    "type_accuracy": 0.902518656716418,
+    "tp": 2015,
+    "fp": 1866,
+    "fn": 525,
+    "gt_total": 2540,
+    "model_total": 3881,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.8998211091234347,
+        "recall": 0.9306197964847364,
+        "f1": 0.9149613460663938,
+        "tp": 1006,
+        "fp": 112,
+        "fn": 75
+      },
+      "ORG": {
+        "precision": 0.7382271468144044,
+        "recall": 0.7022397891963109,
+        "f1": 0.7197839297771774,
+        "tp": 533,
+        "fp": 189,
+        "fn": 226
+      },
+      "LOCATION": {
+        "precision": 0.6768642447418738,
+        "recall": 0.8309859154929577,
+        "f1": 0.7460484720758693,
+        "tp": 354,
+        "fp": 169,
+        "fn": 72
+      },
+      "OTHER": {
+        "precision": 0.125,
+        "recall": 0.44525547445255476,
+        "f1": 0.1952,
+        "tp": 122,
+        "fp": 854,
+        "fn": 152
+      }
+    },
+    "false_positives": [
+      {
+        "name": "$ 1",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1,000",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1.5 million",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 1.52-1.56",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 10 billion",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 105,000",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 11 mln",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 140s",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 15.625",
+        "type": "OTHER"
+      },
+      {
+        "name": "$ 15.725",
+        "type": "OTHER"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "1. fc cologne",
+        "type": "ORG"
+      },
+      {
+        "name": "1966 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1993 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "1995 world cup",
+        "type": "OTHER"
+      },
+      {
+        "name": "a. parore",
+        "type": "PERSON"
+      },
+      {
+        "name": "abdel-rahman",
+        "type": "PERSON"
+      },
+      {
+        "name": "abu dhabi",
+        "type": "LOCATION"
+      },
+      {
+        "name": "access",
+        "type": "OTHER"
+      },
+      {
+        "name": "adrs",
+        "type": "OTHER"
+      },
+      {
+        "name": "african cup winners ' cup",
+        "type": "OTHER"
+      }
+    ]
+  }
+}

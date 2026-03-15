@@ -1,0 +1,43 @@
+model:
+  name: "Qwen/Qwen3.5-0.8B"
+  torch_dtype: "bfloat16"
+  attn_implementation: "eager"
+
+lora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+  bias: "none"
+  task_type: "CAUSAL_LM"
+
+training:
+  output_dir: "./output/qwen3.5-0.8b-ward"
+  num_train_epochs: 3
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  warmup_ratio: 0.05
+  lr_scheduler_type: "cosine"
+  save_strategy: "epoch"
+  eval_strategy: "epoch"
+  load_best_model_at_end: true
+  logging_steps: 10
+  bf16: true
+  tf32: true
+  gradient_checkpointing: true
+  optim: "paged_adamw_8bit"
+  dataloader_num_workers: 0
+  report_to: "none"
+
+data:
+  train_file: "./data/train.jsonl"
+  eval_file: "./data/eval.jsonl"
+  max_seq_length: 512

@@ -1,0 +1,1716 @@
+[
+  {
+    "preview": true,
+    "extracted": 21,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "tsla",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-01-23",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:USD",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:shares",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:pure",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:CNY",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:CommonStockMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:AdditionalPaidInCapitalMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:AccumulatedOtherComprehensiveIncomeMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:RetainedEarningsMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:ParentMember",
+        "type": "ORG",
+        "confidence": 0.5,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:NoncontrollingInterestMember",
+        "type": "ORG",
+        "confidence": 0.5,
+        "context": "tsla-20251231 false 0001318605 2025 FY http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax http://fasb.org/us-gaap/2025#RevenueFromContractWithCustomerExcludingAssessedTax P3Y P3Y http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://www.tesla.com/20251231#AccruedAndOtherCurrentLiabilities http://fasb.org",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "9b9d0172-8cdf-440b-946e-05fd1b312652"
+  },
+  {
+    "preview": true,
+    "extracted": 12,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "pfe",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2027",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2029",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2032",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2037",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2045",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "USD",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      },
+      {
+        "name": "EUR",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "pfe-20251231 0000078003 2025 FY false 1 P4Y P18M P1Y P5Y Consolidated Statements of Operations Consolidated Statements of Operations Consolidated Statements of Operations http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense http://fasb",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "9b428ab6-517a-471b-9bb0-275756df5177"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [],
+    "documentId": "37546b9d-ced9-4419-91df-9868d972f137"
+  },
+  {
+    "preview": true,
+    "extracted": 29,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "intc",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "December 27, 2025",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "fasb.org",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:USD",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:shares",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:pure",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:unit",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:segment",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:factory",
+        "type": "LOCATION",
+        "confidence": 0.6,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:instrument",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:EUR",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:patent",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:claim",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:CNY",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:DisposalGroupDisposedOfBySaleNotDiscontinuedOperationsMember",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "intc:AlteraMember",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-09-12",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-09-28",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-27",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-28",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-30",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:AccumulatedOtherComprehensiveIncomeMember",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:RetainedEarningsMember",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:NoncontrollingInterestMember",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "d491662f-70f5-44dc-a5e2-a9b1919aad29"
+  },
+  {
+    "preview": true,
+    "extracted": 13,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "Goldman Sachs",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-02-06",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "USD",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "gs-20251231 FALSE 2025 0000886982 FY FALSE http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fasb.org/us-gaap/2025#InterestAndDividendIncomeOperating http://fa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Preferred Stock",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "901a5b45-fc15-4240-a526-8c6a64e3c970"
+  },
+  {
+    "preview": true,
+    "extracted": 46,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "ko-20251231",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "0000021344",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#IncomeTaxExpenseBenefit",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#ProfitLoss",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#InterestExpenseNonoperating",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#SellingGeneralAndAdministrativeExpense",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#AccountsPayableAndAccruedLiabilitiesCurrent",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#OtherSellingGeneralAndAdministrativeExpense",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "http://fasb.org/us-gaap/2025#OtherNonoperatingIncomeExpense",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:USD",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:shares",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:pure",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "utr:Y",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:segement",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:CommonStock0.25ParValueMember",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-02-18",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A1.875NotesDue2026Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0.750NotesDue2026Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A1.125NotesDue2027Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0125NotesDue2029KO29AMember",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0125NotesDue2029KO29BMember",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0400NotesDue2030Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A1.250NotesDue2031Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A3.125NotesDue2032Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0375NotesDue2033Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0500NotesDue2033Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A1.625NotesDue2035Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A1.100NotesDue2036Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0950NotesDue2036Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A3.375NotesDue2037Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A0800NotesDue2040Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A1000NotesDue2041Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A3.500NotesDue2044Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:A3.750NotesDue2053Member",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-27",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2015-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2018-01-01",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2018-03-30",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "ko:TaxYears20072009Member",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "eac03c93-46e1-4925-bf84-e1cb738222da"
+  },
+  {
+    "preview": true,
+    "extracted": 21,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "Chevron",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Eimear P. Bonner",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "R. Hewitt Pate",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Michael K. Wirth",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-02-06",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-10-01",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "USD",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "199ba1ac-8ca1-484f-b2cd-3357b47045f4"
+  },
+  {
+    "preview": true,
+    "extracted": 27,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "aapl",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-09-29",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-09-27",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-10-01",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-09-28",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-09-25",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-09-30",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-09-24",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-03-28",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-10-17",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:USD",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:shares",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:pure",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:Customer",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:Vendor",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:Subsidiary",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:CommonStockMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:ProductMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:ServiceMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:RetainedEarningsMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:AccumulatedOtherComprehensiveIncomeMember",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:IPhoneMember",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:MacMember",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:IPadMember",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      },
+      {
+        "name": "aapl:WearablesHomeandAccessoriesMe",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#LongTermDebtNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentNet http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/u",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "4c08eea7-5a5c-4273-a4c7-221b367310e8"
+  },
+  {
+    "preview": true,
+    "extracted": 43,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "amzn",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "FY",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "0001018724",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P4Y0M",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P5Y0M",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P10Y",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P3Y",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P6Y",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P1Y",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "P2Y",
+        "type": "DATE",
+        "confidence": 0.6,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "50",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "392",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "416",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "358",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "383",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "412",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "469",
+        "type": "OTHER",
+        "confidence": 0.3,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:USD",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "xbrli:shares",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "amzn:segment",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "utr:MWh",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:EUR",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "amzn:extension",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "amzn:lawsuit",
+        "type": "EVENT",
+        "confidence": 0.7,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "amzn:complaint",
+        "type": "EVENT",
+        "confidence": 0.7,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-01-28",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:ProductMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:ServiceMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:CommonStockMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:TreasuryStockCommonMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:AdditionalPaidInCapitalMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:AccumulatedOtherComprehensiveIncomeMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:RetainedEarningsMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap:ServiceLifeMember",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "amzn-20251231 false 2025 FY 0001018724 P4Y0M P4Y0M P5Y0M P5Y0M P10Y P3Y P5Y0M P6Y P6Y P1Y P1Y http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiab",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "851ce8da-a9e4-474b-877b-af0a0876d238"
+  },
+  {
+    "preview": true,
+    "extracted": 21,
+    "backend": "llm",
+    "model": "qwen3.5:9b",
+    "entities": [
+      {
+        "name": "goog",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-01-28",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:USD",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      },
+      {
+        "name": "iso4217:EUR",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "goog-20251231 FALSE 2025 FY 0001652044 P7Y P2Y http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#Revenues http://fasb.org/us-gaap/2025#NonoperatingIncomeExpense http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherAssetsCurrent http://fasb.org/us-gaap/2025#OtherLiabilitiesNoncurrent http://fasb.org/us-gaa",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "e3d7d51c-99b9-42ee-9e8b-fc31d86d9547"
+  }
+]

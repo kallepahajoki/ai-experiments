@@ -1,0 +1,166 @@
+{
+  "document_id": "2951829c-dfa8-472c-946f-7769da616f36",
+  "document_name": "contract_010.txt",
+  "dataset": "legal",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 3,
+  "chars": 4474,
+  "entities": [
+    {
+      "name": "Exhibit 10.23",
+      "type": "OTHER"
+    },
+    {
+      "name": "ADDENDUM",
+      "type": "OTHER"
+    },
+    {
+      "name": "AUGUST 31, 2000",
+      "type": "DATE"
+    },
+    {
+      "name": "MASTER LEASE AGREEMENT",
+      "type": "OTHER"
+    },
+    {
+      "name": "AUGUST 2, 2000",
+      "type": "DATE"
+    },
+    {
+      "name": "AGREEMENT",
+      "type": "OTHER"
+    },
+    {
+      "name": "EXELIXIS, INC.",
+      "type": "ORG"
+    },
+    {
+      "name": "LESSEE",
+      "type": "OTHER"
+    },
+    {
+      "name": "COMDISCO LABORATORY AND SCIENTIFIC GROUP",
+      "type": "ORG"
+    },
+    {
+      "name": "COMDISCO, INC.",
+      "type": "ORG"
+    },
+    {
+      "name": "LESSOR",
+      "type": "OTHER"
+    },
+    {
+      "name": "Addendum",
+      "type": "OTHER"
+    },
+    {
+      "name": "Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 1A, AFFILIATES",
+      "type": "OTHER"
+    },
+    {
+      "name": "Exelixis, Inc.",
+      "type": "ORG"
+    },
+    {
+      "name": "Affiliates",
+      "type": "OTHER"
+    },
+    {
+      "name": "Equipment Schedules",
+      "type": "OTHER"
+    },
+    {
+      "name": "Affiliate",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 3, RENT AND PAYMENT",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lessee",
+      "type": "OTHER"
+    },
+    {
+      "name": "Overdue Rate",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 7.1, CARE, USE AND MAINTENANCE",
+      "type": "OTHER"
+    },
+    {
+      "name": "Equipment",
+      "type": "OTHER"
+    },
+    {
+      "name": "Schedule",
+      "type": "OTHER"
+    },
+    {
+      "name": "Commencement Date",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 7.2, ATTACHMENTS AND RECONFIGURATIONS",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 8, REPRESENTATIONS AND WARRANTIES OF LESSEE",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 9, DELIVERY AND RETURN OF EQUIPMENT",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 7.1",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 13.3, MITIGATION",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lessor",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 14.3, BINDING NATURE",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 14.10, ADDITIONAL DOCUMENTS",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 8",
+      "type": "OTHER"
+    },
+    {
+      "name": "SECTION 14.12, DEFINITIONS",
+      "type": "OTHER"
+    },
+    {
+      "name": "Affiliates of Exelixis, Inc,",
+      "type": "OTHER"
+    },
+    {
+      "name": "Equipment Schedule",
+      "type": "OTHER"
+    },
+    {
+      "name": "Comdisco Laboratory and Scientific Group",
+      "type": "ORG"
+    },
+    {
+      "name": "Comdisco, Inc.",
+      "type": "ORG"
+    }
+  ]
+}

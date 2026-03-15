@@ -1,0 +1,206 @@
+{
+  "document_id": "eac03c93-46e1-4925-bf84-e1cb738222da",
+  "document_name": "Coca-Cola_10K.txt",
+  "dataset": "sec",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 1,
+  "chars": 4000,
+  "entities": [
+    {
+      "name": "ko",
+      "type": "ORG"
+    },
+    {
+      "name": "20251231",
+      "type": "DATE"
+    },
+    {
+      "name": "2025 FY",
+      "type": "DATE"
+    },
+    {
+      "name": "fasb.org",
+      "type": "ORG"
+    },
+    {
+      "name": "us-gaap",
+      "type": "OTHER"
+    },
+    {
+      "name": "AssetsOfDisposalGroupIncludingDiscontinuedOperation",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherAssetsNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "IncomeTaxExpenseBenefit",
+      "type": "OTHER"
+    },
+    {
+      "name": "ProfitLoss",
+      "type": "OTHER"
+    },
+    {
+      "name": "InterestExpenseNonoperating",
+      "type": "OTHER"
+    },
+    {
+      "name": "CostOfGoodsAndServicesSold",
+      "type": "OTHER"
+    },
+    {
+      "name": "SellingGeneralAndAdministrativeExpense",
+      "type": "OTHER"
+    },
+    {
+      "name": "AccountsPayableAndAccruedLiabilitiesCurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherLiabilitiesNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherSellingGeneralAndAdministrativeExpense",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherNonoperatingIncomeExpense",
+      "type": "OTHER"
+    },
+    {
+      "name": "iso4217",
+      "type": "OTHER"
+    },
+    {
+      "name": "USD",
+      "type": "OTHER"
+    },
+    {
+      "name": "xbrli",
+      "type": "OTHER"
+    },
+    {
+      "name": "shares",
+      "type": "OTHER"
+    },
+    {
+      "name": "pure",
+      "type": "OTHER"
+    },
+    {
+      "name": "utr",
+      "type": "OTHER"
+    },
+    {
+      "name": "2025-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2025-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "CommonStock0.25ParValueMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A1.875NotesDue2026Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0.750NotesDue2026Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A1.125NotesDue2027Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0125NotesDue2029KO29AMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0125NotesDue2029KO29BMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0400NotesDue2030Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A1.250NotesDue2031Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A3.125NotesDue2032Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0375NotesDue2033Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0500NotesDue2033Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A1.625NotesDue2035Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A1.100NotesDue2036Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0950NotesDue2036Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A3.375NotesDue2037Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A0800NotesDue2040Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A1000NotesDue2041Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A3.500NotesDue2044Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "A3.750NotesDue2053Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "2025-06-27",
+      "type": "DATE"
+    },
+    {
+      "name": "2026-02-18",
+      "type": "DATE"
+    },
+    {
+      "name": "TaxYears20072009Member",
+      "type": "DATE"
+    },
+    {
+      "name": "2015-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "2018-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2018-03-30",
+      "type": "DATE"
+    }
+  ]
+}

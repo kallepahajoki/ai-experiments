@@ -1,0 +1,9 @@
+{
+  "document_id": "e3d7d51c-99b9-42ee-9e8b-fc31d86d9547",
+  "document_name": "Alphabet_10K.txt",
+  "dataset": "sec",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 1,
+  "chars": 4000,
+  "entities": []
+}

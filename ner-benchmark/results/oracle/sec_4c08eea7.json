@@ -1,0 +1,182 @@
+{
+  "document_id": "4c08eea7-5a5c-4273-a4c7-221b367310e8",
+  "document_name": "Apple_10K.txt",
+  "dataset": "sec",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 1,
+  "chars": 4000,
+  "entities": [
+    {
+      "name": "aapl",
+      "type": "ORG"
+    },
+    {
+      "name": "20250927",
+      "type": "DATE"
+    },
+    {
+      "name": "2025 FY",
+      "type": "DATE"
+    },
+    {
+      "name": "0000320193",
+      "type": "ORG"
+    },
+    {
+      "name": "P1Y",
+      "type": "DATE"
+    },
+    {
+      "name": "fasb.org",
+      "type": "ORG"
+    },
+    {
+      "name": "LongTermDebtNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherAssetsNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "PropertyPlantAndEquipmentNet",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherLiabilitiesCurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherLiabilitiesNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "iso4217:USD",
+      "type": "OTHER"
+    },
+    {
+      "name": "xbrli:shares",
+      "type": "OTHER"
+    },
+    {
+      "name": "xbrli:pure",
+      "type": "OTHER"
+    },
+    {
+      "name": "aapl:Customer",
+      "type": "OTHER"
+    },
+    {
+      "name": "aapl:Vendor",
+      "type": "OTHER"
+    },
+    {
+      "name": "aapl:Subsidiary",
+      "type": "OTHER"
+    },
+    {
+      "name": "2024-09-29",
+      "type": "DATE"
+    },
+    {
+      "name": "2025-09-27",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:CommonStockMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "aapl:A0.000Notesdue2025Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:A1.625NotesDue2026Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:A2.000NotesDue2027Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:A1.375NotesDue2029Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:A3.050NotesDue2029Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:A0.500Notesdue2031Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:A3.600NotesDue2042Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "2025-03-28",
+      "type": "DATE"
+    },
+    {
+      "name": "2025-10-17",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:ProductMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "2023-10-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2024-09-28",
+      "type": "DATE"
+    },
+    {
+      "name": "2022-09-25",
+      "type": "DATE"
+    },
+    {
+      "name": "2023-09-30",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:ServiceMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "2022-09-24",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:RetainedEarningsMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:AccumulatedOtherComprehensiveIncomeMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "aapl:IPhoneMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:MacMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:IPadMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "aapl:WearablesHomeandAccessoriesMe",
+      "type": "PRODUCT"
+    }
+  ]
+}

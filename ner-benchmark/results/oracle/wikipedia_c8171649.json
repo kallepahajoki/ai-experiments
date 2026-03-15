@@ -1,0 +1,442 @@
+{
+  "document_id": "c8171649-fdd8-46fb-8b05-04d51afd7485",
+  "document_name": "Ernest_Shackleton.txt",
+  "dataset": "wikipedia",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 10,
+  "chars": 8688,
+  "entities": [
+    {
+      "name": "Ernest Henry Shackleton",
+      "type": "PERSON"
+    },
+    {
+      "name": "15 February 1874",
+      "type": "DATE"
+    },
+    {
+      "name": "5 January 1922",
+      "type": "DATE"
+    },
+    {
+      "name": "Anglo-Irish",
+      "type": "OTHER"
+    },
+    {
+      "name": "Antarctic",
+      "type": "LOCATION"
+    },
+    {
+      "name": "British",
+      "type": "OTHER"
+    },
+    {
+      "name": "Heroic Age of Antarctic Exploration",
+      "type": "EVENT"
+    },
+    {
+      "name": "Kilkea",
+      "type": "LOCATION"
+    },
+    {
+      "name": "County Kildare",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Ireland",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Shackleton",
+      "type": "PERSON"
+    },
+    {
+      "name": "Sydenham",
+      "type": "LOCATION"
+    },
+    {
+      "name": "London",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Robert Falcon Scott",
+      "type": "PERSON"
+    },
+    {
+      "name": "Discovery Expedition",
+      "type": "EVENT"
+    },
+    {
+      "name": "1901\u200d\u2013\u200d1904",
+      "type": "DATE"
+    },
+    {
+      "name": "Scott",
+      "type": "PERSON"
+    },
+    {
+      "name": "Edward Adrian Wilson",
+      "type": "PERSON"
+    },
+    {
+      "name": "Nimrod Expedition",
+      "type": "EVENT"
+    },
+    {
+      "name": "1907\u200d\u2013\u200d1909",
+      "type": "DATE"
+    },
+    {
+      "name": "Farthest South",
+      "type": "OTHER"
+    },
+    {
+      "name": "South Pole",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Mount Erebus",
+      "type": "LOCATION"
+    },
+    {
+      "name": "King Edward VII",
+      "type": "PERSON"
+    },
+    {
+      "name": "December 1911",
+      "type": "DATE"
+    },
+    {
+      "name": "Roald Amundsen",
+      "type": "PERSON"
+    },
+    {
+      "name": "Antarctica",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Imperial Trans-Antarctic Expedition",
+      "type": "EVENT"
+    },
+    {
+      "name": "1914\u200d\u2013\u200d1917",
+      "type": "DATE"
+    },
+    {
+      "name": "Endurance",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Weddell Sea",
+      "type": "LOCATION"
+    },
+    {
+      "name": "21 November 1915",
+      "type": "DATE"
+    },
+    {
+      "name": "Elephant Island",
+      "type": "LOCATION"
+    },
+    {
+      "name": "South Atlantic",
+      "type": "LOCATION"
+    },
+    {
+      "name": "South Georgia",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Shackleton\u2013Rowett Expedition",
+      "type": "EVENT"
+    },
+    {
+      "name": "1921",
+      "type": "DATE"
+    },
+    {
+      "name": "Grytviken cemetery",
+      "type": "LOCATION"
+    },
+    {
+      "name": "20th century",
+      "type": "DATE"
+    },
+    {
+      "name": "1956",
+      "type": "DATE"
+    },
+    {
+      "name": "British Science Association",
+      "type": "ORG"
+    },
+    {
+      "name": "Raymond Priestley",
+      "type": "PERSON"
+    },
+    {
+      "name": "Amundsen",
+      "type": "PERSON"
+    },
+    {
+      "name": "Apsley Cherry-Garrard",
+      "type": "PERSON"
+    },
+    {
+      "name": "1922",
+      "type": "DATE"
+    },
+    {
+      "name": "The Worst Journey in the World",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "2002",
+      "type": "DATE"
+    },
+    {
+      "name": "BBC",
+      "type": "ORG"
+    },
+    {
+      "name": "100 Greatest Britons",
+      "type": "OTHER"
+    },
+    {
+      "name": "Henry Shackleton",
+      "type": "PERSON"
+    },
+    {
+      "name": "British Army",
+      "type": "ORG"
+    },
+    {
+      "name": "English",
+      "type": "OTHER"
+    },
+    {
+      "name": "West Yorkshire",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Abraham Shackleton",
+      "type": "PERSON"
+    },
+    {
+      "name": "1726",
+      "type": "DATE"
+    },
+    {
+      "name": "Ballitore",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Henrietta Letitia Sophia Gavan",
+      "type": "PERSON"
+    },
+    {
+      "name": "Fitzmaurice family",
+      "type": "OTHER"
+    },
+    {
+      "name": "Ernest",
+      "type": "PERSON"
+    },
+    {
+      "name": "Frank",
+      "type": "PERSON"
+    },
+    {
+      "name": "1907",
+      "type": "DATE"
+    },
+    {
+      "name": "Irish Crown Jewels",
+      "type": "OTHER"
+    },
+    {
+      "name": "1880",
+      "type": "DATE"
+    },
+    {
+      "name": "Trinity College Dublin",
+      "type": "ORG"
+    },
+    {
+      "name": "Dublin",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Four years later",
+      "type": "DATE"
+    },
+    {
+      "name": "1882",
+      "type": "DATE"
+    },
+    {
+      "name": "Irish nationalists",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lord Frederick Cavendish",
+      "type": "PERSON"
+    },
+    {
+      "name": "Irish",
+      "type": "OTHER"
+    },
+    {
+      "name": "Fir Lodge Preparatory School",
+      "type": "ORG"
+    },
+    {
+      "name": "West Hill",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Dulwich",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Dulwich College",
+      "type": "ORG"
+    },
+    {
+      "name": "Merchant Navy",
+      "type": "ORG"
+    },
+    {
+      "name": "Royal Navy",
+      "type": "ORG"
+    },
+    {
+      "name": "Britannia",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Dartmouth",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1888",
+      "type": "DATE"
+    },
+    {
+      "name": "Worcester",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Conway",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "North Western Shipping Company",
+      "type": "ORG"
+    },
+    {
+      "name": "Hoghton Tower",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "August 1894",
+      "type": "DATE"
+    },
+    {
+      "name": "Welsh Shire Line",
+      "type": "ORG"
+    },
+    {
+      "name": "Two years later",
+      "type": "DATE"
+    },
+    {
+      "name": "1898",
+      "type": "DATE"
+    },
+    {
+      "name": "1900",
+      "type": "DATE"
+    },
+    {
+      "name": "Union-Castle Line",
+      "type": "ORG"
+    },
+    {
+      "name": "Britain",
+      "type": "LOCATION"
+    },
+    {
+      "name": "South Africa",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Keats",
+      "type": "PERSON"
+    },
+    {
+      "name": "Browning",
+      "type": "PERSON"
+    },
+    {
+      "name": "Boer War",
+      "type": "EVENT"
+    },
+    {
+      "name": "1899",
+      "type": "DATE"
+    },
+    {
+      "name": "Tintagel Castle",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "March 1900",
+      "type": "DATE"
+    },
+    {
+      "name": "Cedric Longstaff",
+      "type": "PERSON"
+    },
+    {
+      "name": "Llewellyn W. Longstaff",
+      "type": "PERSON"
+    },
+    {
+      "name": "British National Antarctic Expedition",
+      "type": "EVENT"
+    },
+    {
+      "name": "Longstaff senior",
+      "type": "PERSON"
+    },
+    {
+      "name": "Longstaff",
+      "type": "PERSON"
+    },
+    {
+      "name": "Clements Markham",
+      "type": "PERSON"
+    },
+    {
+      "name": "17 February 1901",
+      "type": "DATE"
+    },
+    {
+      "name": "Discovery",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "4 June",
+      "type": "DATE"
+    },
+    {
+      "name": "Royal Naval Reserve",
+      "type": "ORG"
+    },
+    {
+      "name": "Union-Castle",
+      "type": "ORG"
+    }
+  ]
+}

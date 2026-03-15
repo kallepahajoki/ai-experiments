@@ -1,0 +1,522 @@
+{
+  "document_id": "18333d59-0589-4eed-a3c9-006673efd4b4",
+  "document_name": "Albert_Einstein.txt",
+  "dataset": "wikipedia",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 8,
+  "chars": 8809,
+  "entities": [
+    {
+      "name": "Albert Einstein",
+      "type": "PERSON"
+    },
+    {
+      "name": "14 March 1879",
+      "type": "DATE"
+    },
+    {
+      "name": "18 April 1955",
+      "type": "DATE"
+    },
+    {
+      "name": "German",
+      "type": "OTHER"
+    },
+    {
+      "name": "theory of relativity",
+      "type": "OTHER"
+    },
+    {
+      "name": "Einstein",
+      "type": "PERSON"
+    },
+    {
+      "name": "quantum theory",
+      "type": "OTHER"
+    },
+    {
+      "name": "E = mc2",
+      "type": "OTHER"
+    },
+    {
+      "name": "special relativity",
+      "type": "OTHER"
+    },
+    {
+      "name": "1921 Nobel Prize in Physics",
+      "type": "EVENT"
+    },
+    {
+      "name": "law of the photoelectric effect",
+      "type": "OTHER"
+    },
+    {
+      "name": "German Empire",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Switzerland",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1895",
+      "type": "DATE"
+    },
+    {
+      "name": "the following year",
+      "type": "DATE"
+    },
+    {
+      "name": "1897",
+      "type": "DATE"
+    },
+    {
+      "name": "seventeen",
+      "type": "DATE"
+    },
+    {
+      "name": "Swiss federal polytechnic school",
+      "type": "ORG"
+    },
+    {
+      "name": "Zurich",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1900",
+      "type": "DATE"
+    },
+    {
+      "name": "Swiss",
+      "type": "OTHER"
+    },
+    {
+      "name": "a year later",
+      "type": "DATE"
+    },
+    {
+      "name": "Swiss Patent Office",
+      "type": "ORG"
+    },
+    {
+      "name": "Bern",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1905",
+      "type": "DATE"
+    },
+    {
+      "name": "University of Zurich",
+      "type": "ORG"
+    },
+    {
+      "name": "1914",
+      "type": "DATE"
+    },
+    {
+      "name": "Berlin",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Prussian Academy of Sciences",
+      "type": "ORG"
+    },
+    {
+      "name": "Humboldt University of Berlin",
+      "type": "ORG"
+    },
+    {
+      "name": "Kaiser Wilhelm Institute for Physics",
+      "type": "ORG"
+    },
+    {
+      "name": "1917",
+      "type": "DATE"
+    },
+    {
+      "name": "1933",
+      "type": "DATE"
+    },
+    {
+      "name": "United States",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Adolf Hitler",
+      "type": "PERSON"
+    },
+    {
+      "name": "Germany",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Nazi",
+      "type": "OTHER"
+    },
+    {
+      "name": "Jews",
+      "type": "OTHER"
+    },
+    {
+      "name": "US",
+      "type": "LOCATION"
+    },
+    {
+      "name": "American",
+      "type": "OTHER"
+    },
+    {
+      "name": "1940",
+      "type": "DATE"
+    },
+    {
+      "name": "World War II",
+      "type": "EVENT"
+    },
+    {
+      "name": "President Franklin D. Roosevelt",
+      "type": "PERSON"
+    },
+    {
+      "name": "German nuclear weapons program",
+      "type": "OTHER"
+    },
+    {
+      "name": "Manhattan Project",
+      "type": "EVENT"
+    },
+    {
+      "name": "annus mirabilis",
+      "type": "OTHER"
+    },
+    {
+      "name": "photoelectric effect",
+      "type": "OTHER"
+    },
+    {
+      "name": "Brownian motion",
+      "type": "OTHER"
+    },
+    {
+      "name": "special theory of relativity",
+      "type": "OTHER"
+    },
+    {
+      "name": "1915",
+      "type": "DATE"
+    },
+    {
+      "name": "general theory of relativity",
+      "type": "OTHER"
+    },
+    {
+      "name": "general relativity",
+      "type": "OTHER"
+    },
+    {
+      "name": "cosmological constant",
+      "type": "OTHER"
+    },
+    {
+      "name": "modern theoretical cosmology",
+      "type": "OTHER"
+    },
+    {
+      "name": "spontaneous emission",
+      "type": "OTHER"
+    },
+    {
+      "name": "stimulated emission",
+      "type": "OTHER"
+    },
+    {
+      "name": "laser",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "maser",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "quantum electrodynamics",
+      "type": "OTHER"
+    },
+    {
+      "name": "quantum optics",
+      "type": "OTHER"
+    },
+    {
+      "name": "statistical mechanics",
+      "type": "OTHER"
+    },
+    {
+      "name": "photons",
+      "type": "OTHER"
+    },
+    {
+      "name": "Satyendra Nath Bose",
+      "type": "PERSON"
+    },
+    {
+      "name": "Bose\u2013Einstein statistics",
+      "type": "OTHER"
+    },
+    {
+      "name": "God",
+      "type": "PERSON"
+    },
+    {
+      "name": "unified field theory",
+      "type": "OTHER"
+    },
+    {
+      "name": "electromagnetism",
+      "type": "OTHER"
+    },
+    {
+      "name": "mainstream modern physics",
+      "type": "OTHER"
+    },
+    {
+      "name": "Einsteinium",
+      "type": "OTHER"
+    },
+    {
+      "name": "1999",
+      "type": "DATE"
+    },
+    {
+      "name": "Time",
+      "type": "ORG"
+    },
+    {
+      "name": "Person of the Century",
+      "type": "OTHER"
+    },
+    {
+      "name": "Ulm",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Kingdom of W\u00fcrttemberg",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Ashkenazi Jews",
+      "type": "OTHER"
+    },
+    {
+      "name": "Hermann Einstein",
+      "type": "PERSON"
+    },
+    {
+      "name": "Pauline Koch",
+      "type": "PERSON"
+    },
+    {
+      "name": "1880",
+      "type": "DATE"
+    },
+    {
+      "name": "Munich",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Ludwigsvorstadt-Isarvorstadt",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Jakob",
+      "type": "PERSON"
+    },
+    {
+      "name": "Elektrotechnische Fabrik J. Einstein & Cie",
+      "type": "ORG"
+    },
+    {
+      "name": "direct current",
+      "type": "OTHER"
+    },
+    {
+      "name": "five",
+      "type": "DATE"
+    },
+    {
+      "name": "St. Peter's Catholic elementary school",
+      "type": "ORG"
+    },
+    {
+      "name": "eight",
+      "type": "DATE"
+    },
+    {
+      "name": "Luitpold Gymnasium",
+      "type": "ORG"
+    },
+    {
+      "name": "1894",
+      "type": "DATE"
+    },
+    {
+      "name": "Hermann",
+      "type": "PERSON"
+    },
+    {
+      "name": "alternating current",
+      "type": "OTHER"
+    },
+    {
+      "name": "Italy",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Milan",
+      "type": "LOCATION"
+    },
+    {
+      "name": "a few months later",
+      "type": "DATE"
+    },
+    {
+      "name": "Pavia",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Palazzo Cornazzani",
+      "type": "LOCATION"
+    },
+    {
+      "name": "fifteen",
+      "type": "DATE"
+    },
+    {
+      "name": "Gymnasium",
+      "type": "ORG"
+    },
+    {
+      "name": "end of December 1894",
+      "type": "DATE"
+    },
+    {
+      "name": "Luitpold",
+      "type": "ORG"
+    },
+    {
+      "name": "teenager",
+      "type": "DATE"
+    },
+    {
+      "name": "On the Investigation of the State of the Ether in a Magnetic Field",
+      "type": "OTHER"
+    },
+    {
+      "name": "Euclidean geometry",
+      "type": "OTHER"
+    },
+    {
+      "name": "twelve",
+      "type": "DATE"
+    },
+    {
+      "name": "Pythagorean theorem",
+      "type": "OTHER"
+    },
+    {
+      "name": "thirteenth",
+      "type": "DATE"
+    },
+    {
+      "name": "Max Talmud",
+      "type": "PERSON"
+    },
+    {
+      "name": "twelve year old",
+      "type": "DATE"
+    },
+    {
+      "name": "fourteen",
+      "type": "DATE"
+    },
+    {
+      "name": "thirteen",
+      "type": "DATE"
+    },
+    {
+      "name": "Talmud",
+      "type": "PERSON"
+    },
+    {
+      "name": "Kant",
+      "type": "PERSON"
+    },
+    {
+      "name": "Critique of Pure Reason",
+      "type": "OTHER"
+    },
+    {
+      "name": "thirteen years old",
+      "type": "DATE"
+    },
+    {
+      "name": "1895",
+      "type": "DATE"
+    },
+    {
+      "name": "sixteen",
+      "type": "DATE"
+    },
+    {
+      "name": "Eidgen\u00f6ssische Technische Hochschule",
+      "type": "ORG"
+    },
+    {
+      "name": "ETH",
+      "type": "ORG"
+    },
+    {
+      "name": "Argovian cantonal school",
+      "type": "ORG"
+    },
+    {
+      "name": "gymnasium",
+      "type": "ORG"
+    },
+    {
+      "name": "Aarau",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1896",
+      "type": "DATE"
+    },
+    {
+      "name": "Jost Winteler",
+      "type": "PERSON"
+    },
+    {
+      "name": "Winteler",
+      "type": "PERSON"
+    },
+    {
+      "name": "Marie",
+      "type": "PERSON"
+    },
+    {
+      "name": "Maja",
+      "type": "PERSON"
+    },
+    {
+      "name": "Paul",
+      "type": "PERSON"
+    },
+    {
+      "name": "January 1896",
+      "type": "DATE"
+    },
+    {
+      "name": "German Kingdom",
+      "type": "LOCATION"
+    }
+  ]
+}

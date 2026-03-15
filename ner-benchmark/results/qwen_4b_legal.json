@@ -1,0 +1,5312 @@
+[
+  {
+    "preview": true,
+    "extracted": 56,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "AVOCENT CORPORATION",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "AVOCENT CORPORATION 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "AVOCENT CORPORATION 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "U.S.",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "administration of stock option plans under U.S.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Internal Revenue Code of 1986",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "(d)  \"Code\"  means the Internal Revenue Code of 1986, as amended.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "(g)  \"Company\"  means Avocent Corporation, a Delaware corporation.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Section 22(e)(3)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Code",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Section 22(e)(3) of the Code.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "Company or any Parent or Subsidiary of the Company.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Parent",
+        "type": "ORG",
+        "confidence": 0.6,
+        "context": "Company or any Parent or Subsidiary of the Company.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Subsidiary",
+        "type": "ORG",
+        "confidence": 0.6,
+        "context": "ent or Subsidiary to render services",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Exchange Act",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "(l)  \"Exchange Act\"  means the Securities Exchange Act of 1934, as amended.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "EVENT",
+        "confidence": 0.98,
+        "context": "(l)  \"Exchange Act\"  means the Securities Exchange Act of 1934, as amended.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Nasdaq National Market",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "national market system, including without limitation the Nasdaq National Market",
+        "chunkIndex": 1
+      },
+      {
+        "name": "The Nasdaq SmallCap Market",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "or The Nasdaq SmallCap Market of The Nasdaq Stock Market, its Fair Market Value",
+        "chunkIndex": 1
+      },
+      {
+        "name": "The Nasdaq Stock Market",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "or The Nasdaq SmallCap Market of The Nasdaq Stock Market, its Fair Market Value",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "(m)  \"Fair Market Value\"  means, as of any date, the value of Common Stock",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Wall Street Journal",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "determination, as reported in The Wall Street Journal or such other source as",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Administrator",
+        "type": "PERSON",
+        "confidence": 0.6,
+        "context": "the Administrator deems reliable;",
+        "chunkIndex": 1
+      },
+      {
+        "name": "The Wall Street Journal",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "as reported in The Wall Street Journal or such other source as the Administrator",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Nasdaq",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "meaning of Nasdaq guidelines, including all employees with the corporate rank of",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 422",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 424(e)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 12",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 424(f)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "2000 Nonstatutory Stock Option Plan",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "(t)  \"Plan\"  means this 2000 Nonstatutory Stock Option Plan.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Common Stock on the last market trading day prior to the day of determination,",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Option",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "certain terms and conditions of an individual Option grant.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Optioned Stock",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "(q)  \"Optioned Stock\"  means the Common Stock subject to an Option.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Optionee",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "(r)  \"Optionee\"  means the holder of an outstanding Option granted under the",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Parent",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "(s)  \"Parent\"  means a \"parent corporation,\" whether now or hereafter",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Plan",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Plan, that is not intended to qualify as an incentive stock option within the",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Service Provider",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "(u)  \"Service Provider\"  means an Employee including an Officer, Consultant",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Share",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "(v)  \"Share\"  means a share of the Common Stock, as adjusted in accordance",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Subsidiary",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "(w)  \"Subsidiary\"  means a \"subsidiary corporation,\" whether now or",
+        "chunkIndex": 2
+      },
+      {
+        "name": "400,000 Shares",
+        "type": "DATE",
+        "confidence": 0.3,
+        "context": "under the Plan is 400,000 Shares.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 12",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Plan",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "the Plan, the maximum aggregate number of Shares which may be optioned and sold",
+        "chunkIndex": 3
+      },
+      {
+        "name": "400,000 Shares",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "under the Plan is 400,000 Shares.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "reacquired Common Stock.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Applicable Laws",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Board",
+        "type": "ORG",
+        "confidence": 0.6,
+        "context": "The Plan shall be administered by (i) the Board or",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.5,
+        "context": "(ii) a Committee, which committee shall be constituted to satisfy Applicable",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Administrator",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "(b)  Powers of the Administrator.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Section 14",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Plan",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "however, that notwithstanding anything to the contrary contained in the Plan,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Option",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Options may be granted to Service Providers; provided,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Service Providers",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Options may be granted to Service Providers; provided,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Officers",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "Options may not be granted to Officers and Directors.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Directors",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "Options may not be granted to Officers and Directors.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "other relationship) with the Company (or any Parent or Subsidiary), nor shall it",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Parent",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "other relationship) with the Company (or any Parent or Subsidiary), nor shall it",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Subsidiary",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "other relationship) with the Company (or any Parent or Subsidiary), nor shall it",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Optionee",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "Optionee any right with respect to the continuation of his or her employment (or",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Board",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Board.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Administrator",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Administrator.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Shares",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "The per share exercise price for the Shares to be",
+        "chunkIndex": 5
+      }
+    ],
+    "documentId": "c2a3857f-63b9-4fb2-b9ad-6987e8b8218f"
+  },
+  {
+    "preview": true,
+    "extracted": 23,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "Exhibit 10(s)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Exhibit 10(s)",
+        "chunkIndex": 0
+      },
+      {
+        "name": "MANAGEMENT AGREEMENT",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "MANAGEMENT AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "11th day of December, 1996",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "AGREEMENT made as of this 11th day of December, 1996 by and between Minntech",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Minntech Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Minnesota",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Corporation, a Minnesota corporation, with its principal executive office at",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Plymouth",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Plymouth, Minnesota (\"Company\") and Jules L.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Jules L. Fisher",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "16005 37th Avenue North, Plymouth, Minnesota 55446",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Change in Control",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "possibility of a Change in Control may exist and that such possibility, and the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Section 4",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Agreement",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "conditions of Section 4 of this Agreement.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Change in Control",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Change in Control.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Securities Exchange Act of 1934, as amended, or any successor statute thereto",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Exchange Act",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "Securities Exchange Act of 1934, as amended, or any successor statute thereto",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Rule 13d-3",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "(a) For purposes of this Agreement, a \"Change in Control\" of Company shall",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Voting Securities",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "(\"Voting Securities\"), provided, however, that the following shall not",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 2(a)(i)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "similar functions are at the time directly or indirectly owned by Company.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Executive",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "occur during the term of this Agreement, the Executive shall be entitled to the",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Good Reason",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "(c)  Good Reason.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Executive's status or position with Company, or a substantial alteration in the",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Plymouth, Minnesota",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "more than fifty miles from Plymouth, Minnesota or Company requiring the",
+        "chunkIndex": 7
+      }
+    ],
+    "documentId": "6e0a3c32-88d9-46ee-8520-c43f8b6f1018"
+  },
+  {
+    "preview": true,
+    "extracted": 30,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "EXHIBIT 10.2",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "EXHIBIT 10.2",
+        "chunkIndex": 0
+      },
+      {
+        "name": "AMENDED AND RESTATED REGISTRATION RIGHTS AGREEMENT",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "This Amended and Restated Registration Rights Agreement, dated as of",
+        "chunkIndex": 0
+      },
+      {
+        "name": "November 9, 2000",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "November 9, 2000, is among DAOU Systems, Inc., a Delaware corporation (the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "DAOU Systems, Inc.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "November 9, 2000, is among DAOU Systems, Inc., a Delaware corporation (the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "November 9, 2000, is among DAOU Systems, Inc., a Delaware corporation (the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Series A Stock Purchase Agreement",
+        "type": "EVENT",
+        "confidence": 0.92,
+        "chunkIndex": 0
+      },
+      {
+        "name": "July 26, 1999",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "Purchase Agreement, dated July 26, 1999 (the “Series A Agreement”), and the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Investment Agreement",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "Investment Agreement dated of even date herewith (the “Investment Agreement”);",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Registration Rights Agreement",
+        "type": "EVENT",
+        "confidence": 0.92,
+        "context": "REGISTRATION RIGHTS AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "stock, par value $0.001 per share (the “Common Stock”), issuable upon the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Series A Preferred Stock",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Warrants",
+        "type": "PRODUCT",
+        "confidence": 0.82,
+        "context": "Agreement pursuant to which the Company granted certain warrants exercisable for",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Series A Preferred Stock",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Securities Act of 1933",
+        "type": "OTHER",
+        "confidence": 0.98,
+        "context": "similar document in compliance with the Securities Act of 1933, as amended (the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Act",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "similar document in compliance with the Securities Act of 1933, as amended (the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Form S-3",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "(e)  the term “Form S-3” means such form under the Act as in effect on",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "adopted by the Securities and Exchange Commission (“SEC”) which permits",
+        "chunkIndex": 1
+      },
+      {
+        "name": "SEC",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "similar document in compliance with the Securities Act of 1933, as amended (the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "adopted by the Securities and Exchange Commission (“SEC”) which permits",
+        "chunkIndex": 2
+      },
+      {
+        "name": "SEC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "adopted by the Securities and Exchange Commission (“SEC”) which permits",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Form S-3 Registration",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Form S-3 Registration.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "SEC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "documents filed by the Company with the SEC.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Form S-3",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Form S-3 Registration.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Rule 415",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "the continuous sale of the Registrable Securities pursuant to Rule 415 under the",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Securities Act",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Securities Act or any successor thereto (each, a “Shelf Registration",
+        "chunkIndex": 3
+      },
+      {
+        "name": "SEC Rule 144",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Regulation S-X",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "(as defined under Regulation S-X of the SEC) acquisition or disposition or other",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Form 8-K",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "on Form 8-K or other form, a Shelf Registration Statement may contain a material",
+        "chunkIndex": 3
+      },
+      {
+        "name": "SEC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Securities, the Company will, as expeditiously as reasonably practicable:",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Securities Exchange Act of 1934, as amended (the “Exchange Act”), against any",
+        "chunkIndex": 10
+      }
+    ],
+    "documentId": "79e71b03-54d7-4a11-a7f6-27bdc5c0e132"
+  },
+  {
+    "preview": true,
+    "extracted": 21,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "EXHIBIT 10.2",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "EXHIBIT 10.2",
+        "chunkIndex": 0
+      },
+      {
+        "name": "September 15, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "FARGO ELECTRONICS, INC.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "among FARGO ELECTRONICS, INC., a Delaware corporation (the \"Company\"); the other",
+        "chunkIndex": 0
+      },
+      {
+        "name": "LASALLE BANK NATIONAL ASSOCIATION",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "LASALLE BANK NATIONAL ASSOCIATION in its capacity as agent for the Lender",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Deposit Account",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Assignee Deposit Account—see Section 4.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 4",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Debtor",
+        "type": "PERSON",
+        "confidence": 0.7,
+        "context": "Collateral means, with respect to any Debtor, all property and rights of",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Computer Hardware and Software",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Computer Hardware and Software means, with respect to any Debtor, all of",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 12.1.1",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Credit Agreement",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Section 12.1.1 or 12.1.4 of the Credit Agreement; or (b) any Event of Default.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 12.1.4",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "UCC",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "UCC means the Uniform Commercial Code as in effect in the State of Minnesota",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Uniform Commercial Code",
+        "type": "PRODUCT",
+        "confidence": 0.98,
+        "context": "UCC means the Uniform Commercial Code as in effect in the State of Minnesota",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Minnesota",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "UCC means the Uniform Commercial Code as in effect in the State of Minnesota",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 8",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 4
+      },
+      {
+        "name": "Schedule I",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Schedule II",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Schedule III",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Schedule IV",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Fair Labor Standards Act",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 9
+      }
+    ],
+    "documentId": "47b561f3-9200-47dc-8255-f1daf0f9b8df"
+  },
+  {
+    "preview": true,
+    "extracted": 19,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "Exhibit 10.23",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Exhibit 10.23",
+        "chunkIndex": 0
+      },
+      {
+        "name": "AUGUST 31, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ADDENDUM DATED AS OF AUGUST 31, 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "AUGUST 2, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Exelixis, Inc.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "BETWEEN EXELIXIS, INC.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "COMDISCO LABORATORY AND SCIENTIFIC GROUP",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "AND COMDISCO LABORATORY AND SCIENTIFIC GROUP,",
+        "chunkIndex": 0
+      },
+      {
+        "name": "COMDISCO, INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "A DIVISION OF COMDISCO, INC.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Exelixis, Inc",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Add the following definition: \"Affiliates of Exelixis, Inc,\" shall mean those",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 8",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "SECTION 8, REPRESENTATIONS AND WARRANTIES OF LESSEE",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.1",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "and replace with the following: \"and in accordance with Section 7.1, and",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 13.3",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "SECTION 13.3, MITIGATION",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 14.3",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "SECTION 14.3, BINDING NATURE",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 14.10",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "SECTION 14.10, ADDITIONAL DOCUMENTS",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 8",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "SECTION 8, REPRESENTATIONS AND WARRANTIES OF LESSEE",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Exelixis, Inc",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Add the following definition: \"Affiliates of Exelixis, Inc,\" shall mean those",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Exelixis, Inc.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "enterprises in which Exelixis, Inc., or its parent company owns and/or shall own",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 14.12",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "SECTION 14.12, DEFINITIONS",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Exelixis, Inc.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Schedule, the Affiliate of Exelixis, Inc.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Comdisco Laboratory and Scientific Group",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Comdisco Laboratory and Scientific Group, a",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Comdisco, Inc.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "division of Comdisco, Inc.",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "2951829c-dfa8-472c-946f-7769da616f36"
+  },
+  {
+    "preview": true,
+    "extracted": 21,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "Exhibit 10.2",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Exhibit 10.2",
+        "chunkIndex": 0
+      },
+      {
+        "name": "EMPLOYMENT AGREEMENT",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "EMPLOYMENT AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "31st day of August, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "SCOTT D. DORFMAN",
+        "type": "PERSON",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Georgia",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "the State of Georgia (\"Employee\"), and INNOTRAC CORPORATION, a Georgia",
+        "chunkIndex": 0
+      },
+      {
+        "name": "INNOTRAC CORPORATION",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "the State of Georgia (\"Employee\"), and INNOTRAC CORPORATION, a Georgia",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Return.com Online, Inc.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "may also serve as an officer or director of Return.com Online, Inc.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "December 31, 2005",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "date hereof until the earlier of (a) December 31, 2005 or (b) the occurrence of",
+        "chunkIndex": 0
+      },
+      {
+        "name": "December 31, 2005",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "date hereof until the earlier of (a) December 31, 2005 or (b) the occurrence of",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 4",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Sugar Loaf",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Sugar Loaf and at the 1818 Club, and will reimburse Employee for his annual dues",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1818 Club",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Sugar Loaf and at the 1818 Club, and will reimburse Employee for his annual dues",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Standard Club",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "and membership fees for his personal membership at the Standard Club, so that",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 3.2(b)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Change in Control",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "3.3          Effect of Change in Control.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "18 months",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "and the Employee's employment is terminated within 18 months following the date",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 2(b)(iii)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Good Reason",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Employer pursuant to Section 2(b)(iii) hereof or by Employee for \"Good Reason\"",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 3.2(a)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Section 3.2(a), the Employee shall be entitled to received the compensation and",
+        "chunkIndex": 5
+      },
+      {
+        "name": "eighteen (18) months",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "of eighteen (18) months from his date of termination in the same manner as it",
+        "chunkIndex": 5
+      },
+      {
+        "name": "COBRA",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "in this paragraph shall be applied against and reduce the period for which COBRA",
+        "chunkIndex": 6
+      }
+    ],
+    "documentId": "f7dda02d-6f18-417b-9232-2848d4ec7053"
+  },
+  {
+    "preview": true,
+    "extracted": 41,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "ASPIRATION ACHIEVEMENT INCENTIVE AWARD AGREEMENT",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "ASPIRATION ACHIEVEMENT INCENTIVE AWARD AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1st day of June, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "THIS AGREEMENT, made as of the 1st day of June, 1999 (the \"Grant Date\"),",
+        "chunkIndex": 0
+      },
+      {
+        "name": "National Service Industries, Inc.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "between National Service Industries, Inc., a Delaware corporation (\"NSI\") and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "between National Service Industries, Inc., a Delaware corporation (\"NSI\") and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "NSI",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "between National Service Industries, Inc., a Delaware corporation (\"NSI\") and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "NSI SERVICES, L.P.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "NSI SERVICES, L.P.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "GEORGE H. GILMORE, JR.",
+        "type": "PERSON",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "National Service Industries, Inc.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "between National Service Industries, Inc., a Delaware corporation (\"NSI\") and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Long-Term Achievement Incentive Plan",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "CHEMICAL GROUP",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Subsidiary, performs services with respect to the CHEMICAL GROUP, NATIONAL LINEN",
+        "chunkIndex": 0
+      },
+      {
+        "name": "NATIONAL LINEN SERVICE",
+        "type": "ORG",
+        "confidence": 0.85,
+        "chunkIndex": 0
+      },
+      {
+        "name": "AECO",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "SERVICE, AND AECO operations of the Company (the “Operations”); and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "September 1, 1997",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Performance Cycle from September 1, 1997 to August 31, 2000.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "August 31, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Performance Cycle from September 1, 1997 to August 31, 2000.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "NSI",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Performance Cycle, NSI consummates an acquisition or disposition involving the",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Performance Cycle",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Performance Cycle, the Performance Cycle and the Grantee’s outstanding Award",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 3.1",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "taking into account the adjustments provided for in Section 3.1 above and using",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Operations",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "be determined and paid at the Operations’ actual performance level to such date,",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Performance Measure",
+        "type": "PRODUCT",
+        "confidence": 0.6,
+        "context": "prorated performance levels of the Performance Measure to reflect the portion of",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 3.2",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "disposition that is not covered by the special provisions of this Section 3.2,",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Code Section 162(m)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "requirements of Code Section 162(m) and the regulations thereunder.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 4",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 4.1",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 4.2",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 4.3",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 4.4",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Sections 4.2",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "ovided in Sections 4.2, 4.3 and 4.4 below,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "4.3",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "ovided in Sections 4.2, 4.3 and 4.4 below,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "4.4",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "ovided in Sections 4.2, 4.3 and 4.4 below,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Grantee",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "in the event that a Grantee’s employment terminates during a Performance Cycle,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Performance Cycle",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "in the event that a Grantee’s employment terminates during a Performance Cycle,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Aspiration Awards",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "all unearned Aspiration Awards shall be immediately forfeited by the Grantee.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Section 3",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "the adjustment provisions and other rules in Section 3 above); and provided,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "determined by the Committee based upon the length of time that the Grantee was",
+        "chunkIndex": 7
+      },
+      {
+        "name": "111",
+        "type": "DATE",
+        "confidence": 0.7,
+        "context": "111",
+        "chunkIndex": 7
+      },
+      {
+        "name": "age 65",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "In the event of Grantee's Retirement (on or after age 65), the full",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Grantee",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "In the event Grantee's employment is",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "terminated by the Company without Cause more than one (1) year after the",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Performance Cycle",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "commencement of the Performance Cycle and prior to the end of the Performance",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 3",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "provisions and other rules in Section 3 above); and provided, further, that the",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Agreement shall be governed by the laws of the State of Delaware without giving",
+        "chunkIndex": 10
+      }
+    ],
+    "documentId": "a93310b9-1ddd-459f-8cfc-7626b6a9cf05"
+  },
+  {
+    "preview": true,
+    "extracted": 41,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "Exhibit 10.1",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Exhibit 10.1 to Recoton Form 10-Q",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Recoton Form 10-Q",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Exhibit 10.1 to Recoton Form 10-Q",
+        "chunkIndex": 0
+      },
+      {
+        "name": "June 30, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "for the Quarter Ended June 30, 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "3/23/98",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Approved by Board: 3/23/98",
+        "chunkIndex": 0
+      },
+      {
+        "name": "6/10/98",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Approved by Shareholders: 6/10/98",
+        "chunkIndex": 0
+      },
+      {
+        "name": "4/5/00",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Amendment to Increase Shares Approved by Board: 4/5/00",
+        "chunkIndex": 0
+      },
+      {
+        "name": "6/7/00",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Amendment to Increase Shares Approved by Shareholders: 6/7/00",
+        "chunkIndex": 0
+      },
+      {
+        "name": "RECOTON CORPORATION",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "RECOTON CORPORATION",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1998 STOCK OPTION PLAN",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "1998 STOCK OPTION PLAN",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Recoton Corporation",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "RECOTON CORPORATION",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Recoton Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "\"Corporation\" shall mean Recoton Corporation.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "National Association of Security Dealers Automated Quotation System",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "1998 Stock Option Plan",
+        "type": "PRODUCT",
+        "confidence": 0.92,
+        "context": "\"Plan\" shall mean this 1998 Stock Option Plan of Recoton Corporation, as adopted",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Recoton Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "\"Corporation\" shall mean Recoton Corporation.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Board of Directors",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "(or Co-Chairman) of the Board of Directors.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "March 23, 1998",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "by the Board of Directors on March 23, 1998, as such Plan from time to time may",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Rule 16b-3",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "\"Non-Employee Director\" within the meaning of Rule 16b-3 under the Securities",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "OTHER",
+        "confidence": 0.98,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Exchange Act",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Exchange Act of 1934, as amended (the \"Exchange Act\") and an \"outside director\"",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Section 162 (m)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "within the meaning of Section 162 (m) of the Internal Revenue Code of 1986, as",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Internal Revenue Code of 1986",
+        "type": "OTHER",
+        "confidence": 0.98,
+        "context": "within the meaning of Section 162 (m) of the Internal Revenue Code of 1986, as",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Internal Revenue Code",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "within the meaning of Section 162 (m) of the Internal Revenue Code of 1986, as",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "the Committee",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Board of Directors",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "shall cease to serve, the vacancy shall be filled by the Board of Directors.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Plan",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "advisable to administer the Plan.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Participants",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Participants.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Options",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Options granted under this Plan consist of the (i) employees of the Corporation",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Corporation",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Options granted under this Plan consist of the (i) employees of the Corporation",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Subsidiary",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "or a Subsidiary, as determined by the Committee in its sole discretion; (ii)",
+        "chunkIndex": 3
+      },
+      {
+        "name": "162(m)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "162(m) of the Code and the regulations promulgated",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Code",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "162(m) of the Code and the regulations promulgated",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 422",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "incentive stock option within the meaning of Section 422 of the Internal Revenue",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Internal Revenue Code",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "this Plan and the Internal Revenue Code.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "$100,000",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "exceeds $100,000, such Options shall be treated as Options which are not",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 18",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Section 18 or after the expiration of the Option): (a) subject to the provisions",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Section 13",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "of Section 13 hereof, upon the holder's retirement as an employee from the",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Corporation",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Corporation and all Subsidiaries at or after age 65, (b) subject to the",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Subsidiaries",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "Corporation and all Subsidiaries at or after age 65, (b) subject to the",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "manner as shall be determined by the Committee in its sole discretion) or death",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Change in Control",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Corporation or a Subsidiary, there occurs a Change in Control.",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Exchange Act",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "and 14(d) of the Exchange Act (\"Person\"), acquires (or has acquired during the",
+        "chunkIndex": 12
+      }
+    ],
+    "documentId": "ce876de2-b107-45f2-899c-90455e8e6dd4"
+  },
+  {
+    "preview": true,
+    "extracted": 53,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "EXHIBIT 10.22",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "EXHIBIT 10.22",
+        "chunkIndex": 0
+      },
+      {
+        "name": "MANATRON, INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "MANATRON, INC.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Restricted Stock Plan of 2000",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "RESTRICTED STOCK PLAN OF 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2000",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "RESTRICTED STOCK PLAN OF 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Internal Revenue Code of 1986",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "2.2          \"Code\" means the Internal Revenue Code of 1986, as",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1986",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "2.2          \"Code\" means the Internal Revenue Code of 1986, as",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Manatron, Inc.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "MANATRON, INC.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Michigan",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "2.5          \"Company\" means Manatron, Inc., a Michigan corporation,",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "rticipant with the Company or any Subsidiary that the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Committee determines to be in the best interests of the Company.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Participant",
+        "type": "PERSON",
+        "confidence": 0.75,
+        "context": "employment by a Participant with the written consent of the Committee after the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Subsidiary",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "rticipant with the Company or any Subsidiary that the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "2.8          \"Exchange Act\" means the Securities Exchange Act of 1934,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1934",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "2.8          \"Exchange Act\" means the Securities Exchange Act of 1934,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Restricted Stock Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "discretion or as otherwise may be set forth in a Restricted Stock Agreement.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "directly or indirectly owned or controlled by the Company or one or more",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Chief Executive Officer",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Chief Executive Officer.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Restricted Stock",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "all provisions of awards of Restricted Stock as the Committee may deem necessary",
+        "chunkIndex": 3
+      },
+      {
+        "name": "SECTION 4",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "SECTION 4",
+        "chunkIndex": 4
+      },
+      {
+        "name": "100,000 shares",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "100,000 shares of authorized Common Stock may be available for awards of",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "100,000 shares of authorized Common Stock may be available for awards of",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Restricted Stock",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Restricted Stock under the Plan.",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Plan",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "t with the Plan, provided that no such amendment may become",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 4.1",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "for awards of Restricted Stock under the Plan set forth in Section 4.1 of the",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 4.3",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Plan, subject to adjustment as provided in Section 4.3 of the Plan.",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 4.1",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "for awards of Restricted Stock under the Plan set forth in Section 4.1 of the",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 4.3",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Plan, subject to adjustment as provided in Section 4.3 of the Plan.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "SECTION 5",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "SECTION 5",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Restricted Stock",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "for awards of Restricted Stock under the Plan set forth in Section 4.1 of the",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "Committee and based on the recommendations of the Company's Chief Executive",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Company's Chief Executive Officer",
+        "type": "PERSON",
+        "confidence": 0.6,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Restricted Period",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "Restricted Period.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Restricted Stock",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "No payment is required from a Participant for an award of Restricted Stock.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Restricted Stock Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "5.2          Restricted Stock Agreements.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Plan",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Stock under the Plan shall be evidenced by a Restricted Stock Agreement",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Committee",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "Plan, as the Committee and the Chief Executive Officer may deem appropriate.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Chief Executive Officer",
+        "type": "PERSON",
+        "confidence": 0.6,
+        "context": "Plan, as the Committee and the Chief Executive Officer may deem appropriate.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Company or any Subsidiary to terminate the Participant's employment at any time.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Subsidiaries",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Company or one of its Subsidiaries for any reason other than the Participant's",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Participant",
+        "type": "PERSON",
+        "confidence": 0.7,
+        "context": "Company or any Subsidiary to terminate the Participant's employment at any time.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 5.3(c)",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Committee pursuant to Section 5.3(c),",
+        "chunkIndex": 6
+      },
+      {
+        "name": "90 days",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "exceed 90 days; or (iii) a leave of absence in excess of 90 days, duly",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Chief Executive Officer",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Committee may, based upon recommendations of the Chief Executive Officer,",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "continues to receive compensation from the Company or any of its Subsidiaries",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Restricted Stock Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "Restricted Stock Agreement or grant provide otherwise, in the event a",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Restricted Period",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "because of death or Total Disability during the Restricted Period, the",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Restricted Stock",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "Restricted Stock Agreement or grant provide otherwise, in the event a",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Early Retirement",
+        "type": "EVENT",
+        "confidence": 0.7,
+        "context": "Participant upon termination due to Early Retirement, Normal Retirement or",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Normal Retirement",
+        "type": "EVENT",
+        "confidence": 0.7,
+        "context": "Participant upon termination due to Early Retirement, Normal Retirement or",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Consensual Severance",
+        "type": "EVENT",
+        "confidence": 0.7,
+        "context": "Consensual Severance.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "5.3",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Company pursuant to subsection 5.3 or 5.4(b) or by will or the laws of descent",
+        "chunkIndex": 7
+      },
+      {
+        "name": "5.4(b)",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Company pursuant to subsection 5.3 or 5.4(b) or by will or the laws of descent",
+        "chunkIndex": 7
+      },
+      {
+        "name": "5.4(a)",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Period, except as provided above in subsections 5.3 and 5.4(a), the",
+        "chunkIndex": 7
+      }
+    ],
+    "documentId": "e78b2f1a-90ec-41fa-ad7f-07321535282f"
+  },
+  {
+    "preview": true,
+    "extracted": 121,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "U.S.",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "U.S.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "$425,000,000",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "$425,000,000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "CREDIT AGREEMENT",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "CREDIT AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "(SHORT TERM FACILITY)",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "(SHORT TERM FACILITY)",
+        "chunkIndex": 0
+      },
+      {
+        "name": "October 31, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "HORMEL FOODS CORPORATION",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "HORMEL FOODS CORPORATION, a Delaware corporation (the \"Borrower\"), the Banks",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "HORMEL FOODS CORPORATION, a Delaware corporation (the \"Borrower\"), the Banks",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Dow Jones Markets",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Dow Jones Markets (Telerate) page 3750 (or such other comparable page as may, in",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Telerate",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Dow Jones Markets (Telerate) page 3750 (or such other comparable page as may, in",
+        "chunkIndex": 0
+      },
+      {
+        "name": "11:00 A.M.",
+        "type": "DATE",
+        "confidence": 0.7,
+        "chunkIndex": 0
+      },
+      {
+        "name": "London",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "(London time) two Business Days prior to the first day",
+        "chunkIndex": 0
+      },
+      {
+        "name": "CUSA",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "(\"CUSA\"), as administrative agent for the Lenders (in such capacity,",
+        "chunkIndex": 0
+      },
+      {
+        "name": "SUNTRUST BANK",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "\"Lenders\"), SUNTRUST BANK, as Syndication Agent for the Lenders, U.S.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "U.S. BANK NATIONAL ASSOCIATION",
+        "type": "ORG",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "CUSA",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "\"Administrative Agent\" means CUSA, in its capacity as administrative agent for",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Lenders",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "the Lenders, or any Person serving as its successor.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Borrower",
+        "type": "ORG",
+        "confidence": 0.7,
+        "context": "\"Advance\" means an advance by a Lender to the Borrower as part of a Borrowing",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 2.02(b)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 2.01",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Base Rate Advance",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "pursuant to Section 2.01, and refers to a Base Rate Advance or a Eurodollar Rate",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Eurodollar Rate Advance",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Eurodollar Lending Office in the case of a Eurodollar Rate Advance.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.02",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.04",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.05",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 8.04",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 8.07(b)(iv)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 8.08",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 8.12",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Agreement the term \"Agent\" or \"Agents\", as the case may be, shall include the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Credit Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "\"Agreement\" means this Credit Agreement as it may be amended, supplemented or",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Domestic Lending Office",
+        "type": "LOCATION",
+        "confidence": 0.6,
+        "context": "Domestic Lending Office in the case of a Base Rate Advance, and such Lender's",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Eurodollar Lending Office",
+        "type": "LOCATION",
+        "confidence": 0.6,
+        "context": "Eurodollar Lending Office in the case of a Eurodollar Rate Advance.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Salomon Smith Barney Inc.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Exhibit A",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Exhibit A",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Bankruptcy Code",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "\"Bankruptcy Code\" means Title 11 of the United States Code entitled \"Bankruptcy\"",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Title 11",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "\"Bankruptcy Code\" means Title 11 of the United States Code entitled \"Bankruptcy\"",
+        "chunkIndex": 2
+      },
+      {
+        "name": "United States Code",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "\"Bankruptcy Code\" means Title 11 of the United States Code entitled \"Bankruptcy\"",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Citibank",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "(a) the rate of interest announced publicly by Citibank in New York, New",
+        "chunkIndex": 2
+      },
+      {
+        "name": "New York",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "(a) the rate of interest announced publicly by Citibank in New York, New",
+        "chunkIndex": 2
+      },
+      {
+        "name": "tibank",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "tibank's costs and desired",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Citibank",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "determined weekly by Citibank on the basis of such rates reported by certificate",
+        "chunkIndex": 3
+      },
+      {
+        "name": "United States",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "offering rates in the United States for three-month certificates of deposit of",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "of deposit dealers to and published by the Federal Reserve Bank of New York or,",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Citibank",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "determined weekly by Citibank on the basis of such rates reported by certificate",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Board of Governors of the Federal Reserve System",
+        "type": "ORG",
+        "confidence": 0.99,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Federal Reserve System",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "Governors of the Federal Reserve System for determining the maximum reserve",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Citibank",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "determined weekly by Citibank on the basis of such rates reported by certificate",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Federal Deposit Insurance Corporation",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "payable by Citibank to the Federal Deposit Insurance Corporation for insuring",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Hormel Foods Corporation",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "\"Borrower\" means Hormel Foods Corporation, a Delaware corporation.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Hormel Foods Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "\"Borrower\" means Hormel Foods Corporation, a Delaware corporation.",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "\"Borrower\" means Hormel Foods Corporation, a Delaware corporation.",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 2.06(a)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 2.02(a)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 4
+      },
+      {
+        "name": "New York City",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "which banks are not required or authorized to close in New York City or Los",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Los Angeles",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "chunkIndex": 4
+      },
+      {
+        "name": "London interbank market",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Advances, on which dealings are carried on in the London interbank market.",
+        "chunkIndex": 4
+      },
+      {
+        "name": "GAAP",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "that Person as lessee which would, in conformity with GAAP, be required to be",
+        "chunkIndex": 4
+      },
+      {
+        "name": "United States government",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "unconditionally guaranteed by the United States government or issued by any",
+        "chunkIndex": 4
+      },
+      {
+        "name": "United States",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "unconditionally guaranteed by the United States government or issued by any",
+        "chunkIndex": 4
+      },
+      {
+        "name": "state of the United States of America",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "chunkIndex": 4
+      },
+      {
+        "name": "United States",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "(b) marketable direct obligations issued by any state of the United States of",
+        "chunkIndex": 5
+      },
+      {
+        "name": "America",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "America or any political",
+        "chunkIndex": 5
+      },
+      {
+        "name": "S&P",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "acquisition, having the highest rating generally obtainable from either S&P or",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Moody's",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Moody's, (c) commercial paper maturing no more than one year from the date of",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Citibank",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "\"Citibank\" means Citibank, N.A.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Internal Revenue Code of 1986",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "\"Code\" means the Internal Revenue Code of 1986, as amended.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 2.01",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 5
+      },
+      {
+        "name": "October 30, 2001",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Effective Date",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "364 days from the Effective Date; provided, however, that, subject to the",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 2.15",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Extension Request",
+        "type": "EVENT",
+        "confidence": 0.7,
+        "context": "provisions of Section 2.15, if any Lender has consented to an Extension Request",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 5.01(b)(iii)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Exhibit B",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 2.08",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 5
+      },
+      {
+        "name": "CUSA",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "\"CUSA\" means Citicorp USA, Inc.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "July 1, 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "December 15, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "January 15, 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Moody's",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "the Rating Date has not occurred, but a rating has been established by Moody's",
+        "chunkIndex": 6
+      },
+      {
+        "name": "S&P",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "or S&P for the short-term, unsecured Debt of the Borrower, the applicable Level",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 8.07(g)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 6
+      },
+      {
+        "name": "U.S. Bank National Association",
+        "type": "ORG",
+        "confidence": 0.98,
+        "chunkIndex": 7
+      },
+      {
+        "name": "United States of America",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "chunkIndex": 7
+      },
+      {
+        "name": "Schedule I",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 7
+      },
+      {
+        "name": "EBITDA",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "\"EBITDA\" means, for any period, consolidated net income (excluding",
+        "chunkIndex": 7
+      },
+      {
+        "name": "GAAP",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Subsidiaries, as determined on a consolidated basis in conformity with GAAP.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Section 3.01",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "chunkIndex": 7
+      },
+      {
+        "name": "October 31, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 7
+      },
+      {
+        "name": "GAAP",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "s determined on a consolidated basis in conformity with GAAP.",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Section 3.01",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 8
+      },
+      {
+        "name": "October 31, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 8
+      },
+      {
+        "name": "United States",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "United States, or any state thereof, and having a combined capital and surplus",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Organization for Economical Cooperation and Development",
+        "type": "ORG",
+        "confidence": 0.98,
+        "chunkIndex": 8
+      },
+      {
+        "name": "OECD",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "and Development (the \"OECD\"), or a political subdivision of any such country and",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Environmental Law",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "\"Environmental Law\" means any and all statutes, laws, regulations, ordinances,",
+        "chunkIndex": 8
+      },
+      {
+        "name": "United States",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "United States, or any state thereof, and having a combined capital and surplus",
+        "chunkIndex": 8
+      },
+      {
+        "name": "ERISA",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "\"ERISA\" means the Employee Retirement Income Security Act of 1974, as amended",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Employee Retirement Income Security Act of 1974",
+        "type": "OTHER",
+        "confidence": 0.98,
+        "context": "\"ERISA\" means the Employee Retirement Income Security Act of 1974, as amended",
+        "chunkIndex": 8
+      },
+      {
+        "name": "1974",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "\"ERISA\" means the Employee Retirement Income Security Act of 1974, as amended",
+        "chunkIndex": 8
+      },
+      {
+        "name": "ERISA Affiliate",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "\"ERISA Affiliate\" means any Person who for purposes of Title IV of ERISA is a",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Title IV",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "\"ERISA Affiliate\" means any Person who for purposes of Title IV of ERISA is a",
+        "chunkIndex": 8
+      },
+      {
+        "name": "ERISA",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "\"ERISA\" means the Employee Retirement Income Security Act of 1974, as amended",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Section 414",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 8
+      },
+      {
+        "name": "Code",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Borrower, within the meaning of Section 414 of the Code and the regulations",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Section 414",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "the Code",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Borrower, within the meaning of Section 414 of the Code and the regulations",
+        "chunkIndex": 9
+      },
+      {
+        "name": "ERISA Event",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "\"ERISA Event\" means (i) the occurrence of a reportable event, within the meaning",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 4043",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "ERISA",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "\"ERISA Event\" means (i) the occurrence of a reportable event, within the meaning",
+        "chunkIndex": 9
+      },
+      {
+        "name": "PBGC",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "thereto has been waived by the PBGC; (ii) the provision by the administrator of",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 4041(a)(2)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 4041(e)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 4062(e)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Borrower",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "member of the Borrower's controlled group, or under common control with the",
+        "chunkIndex": 9
+      },
+      {
+        "name": "ERISA Affiliate",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "operations at a facility by the Borrower or an ERISA Affiliate in the",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 4001(a)(2)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 302(f)(1)",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 307",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "PBGC",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "thereto has been waived by the PBGC; (ii) the provision by the administrator of",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 4042",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      }
+    ],
+    "documentId": "fc187f48-cc84-4be1-bd98-8ad8479ada2e"
+  },
+  {
+    "preview": true,
+    "extracted": 35,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "Exhibit 10-41",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Exhibit 10-41",
+        "chunkIndex": 0
+      },
+      {
+        "name": "EMPLOYMENT AGREEMENT",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "EMPLOYMENT AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "June 14, 1999",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Energy East Corporation",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "1999 (the \"Agreement\"), by and among Energy East Corporation, a New York",
+        "chunkIndex": 0
+      },
+      {
+        "name": "New York",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "1999 (the \"Agreement\"), by and among Energy East Corporation, a New York",
+        "chunkIndex": 0
+      },
+      {
+        "name": "CMP Group, Inc.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "corporation (the \"Company\"), CMP Group, Inc., a Maine corporation or its",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Maine",
+        "type": "LOCATION",
+        "confidence": 0.99,
+        "context": "corporation (the \"Company\"), CMP Group, Inc., a Maine corporation or its",
+        "chunkIndex": 0
+      },
+      {
+        "name": "CMP",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "corporation (the \"Company\"), CMP Group, Inc., a Maine corporation or its",
+        "chunkIndex": 0
+      },
+      {
+        "name": "David T. Flanagan",
+        "type": "PERSON",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "December 31, 1997",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "replaces that certain Agreement dated December 31, 1997 and amended March 18,",
+        "chunkIndex": 0
+      },
+      {
+        "name": "March 18, 1999",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "June 14, 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Merger dated as of June 14, 1999, by and among CMP, the Company and EE Merger",
+        "chunkIndex": 1
+      },
+      {
+        "name": "CMP",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Merger dated as of June 14, 1999, by and among CMP, the Company and EE Merger",
+        "chunkIndex": 1
+      },
+      {
+        "name": "EE Merger Corp.",
+        "type": "ORG",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Maine",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Corp., a Maine corporation and wholly owned subsidiary of the Company (the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 10",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "performance of his duties hereunder or violate his obligations under Section 10",
+        "chunkIndex": 3
+      },
+      {
+        "name": "$550,000",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "rate which is no less than the rate of $550,000.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Employee Retirement Income Security Act of 1974",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "defined in section 3(3) of the Employee Retirement Income Security Act of 1974,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "ERISA",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "as amended from time to time (\"ERISA\")) and any employee benefit arrangement",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Section 5.2(a)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Notwithstanding anything in this Section 5.2(a) to the contrary (i) in addition",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$7,800",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "exceed $7,800 annually) on a term life insurance policy with a face amount of",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$700,000",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "$700,000 (the \"Replacement Policy\"); provided, that in the event the Company is",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Replacement Policy",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "$700,000 (the \"Replacement Policy\"); provided, that in the event the Company is",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 5.2(b)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Section 5.2(b) below.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Retirement Income Plan for Non-Union Employees of Central Maine Power Company",
+        "type": "ORG",
+        "confidence": 0.9,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Basic Plan",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "successor or replacement plan thereto (the \"Basic Plan\") in the event the",
+        "chunkIndex": 6
+      },
+      {
+        "name": "June 1, 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "terminates his employment with the Company voluntarily on or after June 1, 2001,",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Section 5.2(b)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Supplemental Retirement Benefit",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "The Supplemental Retirement Benefit shall be paid in the form of an",
+        "chunkIndex": 9
+      },
+      {
+        "name": "June 1, 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 9
+      },
+      {
+        "name": "Section 5.2(b)",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 10
+      },
+      {
+        "name": "Basic Plan",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "in accordance with the actuarial assumptions in effect under the Basic Plan at",
+        "chunkIndex": 10
+      },
+      {
+        "name": "Executive",
+        "type": "PERSON",
+        "confidence": 0.7,
+        "context": "The Executive shall be",
+        "chunkIndex": 10
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "incentive compensation plan made available by the Company now or during the",
+        "chunkIndex": 10
+      },
+      {
+        "name": "CMP",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "examinations as provided in accordance with the CMP's policies and practices",
+        "chunkIndex": 10
+      }
+    ],
+    "documentId": "ad7426b4-2b5d-4317-b3f3-70bcb191c21a"
+  },
+  {
+    "preview": true,
+    "extracted": 84,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "UNITED STATES",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "UNITED STATES",
+        "chunkIndex": 0
+      },
+      {
+        "name": "SECURITIES AND EXCHANGE COMMISSION",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "SECURITIES AND EXCHANGE COMMISSION",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Washington, D.C.",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Washington, D.C.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "20549",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "20549",
+        "chunkIndex": 0
+      },
+      {
+        "name": "FORM 10-Q",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "FORM 10-Q",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during",
+        "chunkIndex": 0
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "> For the quarterly period ended October 28, 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tennessee",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "State of Incorporation: Tennessee",
+        "chunkIndex": 0
+      },
+      {
+        "name": "62-0331040",
+        "type": "OTHER",
+        "confidence": 0.5,
+        "context": "Employer Identification Number: 62-0331040",
+        "chunkIndex": 0
+      },
+      {
+        "name": "750 Lakeshore Parkway, Birmingham, Alabama 35211",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "750 Lakeshore Parkway, Birmingham, Alabama 35211",
+        "chunkIndex": 0
+      },
+      {
+        "name": "(205) 940-4000",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "(205) 940-4000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "SAKS INCORPORATED",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "SAKS INCORPORATED",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Common Stock",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "common stock, as of the latest practicable date.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "$.10",
+        "type": "OTHER",
+        "confidence": 0.5,
+        "context": "Common Stock, $.10 Par Value -- 141,570,840 shares as of October 28, 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "141,570,840 shares",
+        "type": "OTHER",
+        "confidence": 0.5,
+        "context": "Common Stock, $.10 Par Value -- 141,570,840 shares as of October 28, 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Common Stock, $.10 Par Value -- 141,570,840 shares as of October 28, 2000",
+        "chunkIndex": 1
+      },
+      {
+        "name": "SAKS INCORPORATED",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "SAKS INCORPORATED",
+        "chunkIndex": 1
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Common Stock, $.10 Par Value -- 141,570,840 shares as of October 28, 2000",
+        "chunkIndex": 1
+      },
+      {
+        "name": "January 29, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "January 29, 2000, and October 30, 1999 3   Condensed Consolidated Statements of",
+        "chunkIndex": 1
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "January 29, 2000, and October 30, 1999 3   Condensed Consolidated Statements of",
+        "chunkIndex": 1
+      },
+      {
+        "name": "SAKS INCORPORATED",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "SAKS INCORPORATED",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Saks Incorporated",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "SAKS INCORPORATED and SUBSIDIARIES",
+        "chunkIndex": 2
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "October 28, 2000",
+        "chunkIndex": 2
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "October 30, 1999",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Year 2000 expenses",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Year 2000 expenses",
+        "chunkIndex": 2
+      },
+      {
+        "name": "nse",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "nse",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Other income (expense), net",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Other income (expense), net",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Income (loss) before provision (benefit) for income taxes and extraordinary items",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Provision (benefit) for income taxes",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "129,237 Provision (benefit) for income taxes       (4,870)            15,578",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Income (loss) before extraordinary items",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Extraordinary loss on extinguishment of debt, net of taxes",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Net income (loss)",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "(9,261)   Net income (loss) $ (8,149)",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Basic earnings (loss) per common share",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Basic earnings (loss) per common share:     Income (loss) before extraordinary",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Income (loss) before extraordinary items",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Extraordinary items",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "income taxes and extraordinary items",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Diluted earnings (loss) per common share",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "========= Diluted earnings (loss) per common share:    Income (loss) before",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Weighted average common shares",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Weighted average common shares:",
+        "chunkIndex": 3
+      },
+      {
+        "name": "See notes to condensed consolidated financial statements",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "See notes to condensed consolidated financial statements.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "SAKS INCORPORATED AND SUBSIDIARIES",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "SAKS INCORPORATED AND SUBSIDIARIES",
+        "chunkIndex": 3
+      },
+      {
+        "name": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited)",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited)",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Nine Months Ended October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 3
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "October 30, 1999",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Operating Activities",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Operating Activities:",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Net income",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "(9,261)   Net income (loss) $ (8,149)",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Adjustments to reconcile net income to net cash provided by (used in) operating activities",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Depreciation and amortization",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Depreciation and amortization",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Losses from long-lived assets and closings",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Losses from long-lived assets and closings",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Extraordinary loss on extinguishment of debt",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Extraordinary loss on extinguishment of debt",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Deferred income taxes",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Deferred income taxes",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Change in operating assets and liabilities, net",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Change in operating assets and liabilities, net",
+        "chunkIndex": 3
+      },
+      {
+        "name": "REMIC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Payment of REMIC certificates",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Saks Incorporated",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "the accounts of Saks Incorporated and its subsidiaries (collectively, the",
+        "chunkIndex": 5
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "October 28, 2000 are not necessarily indicative of the results that may be",
+        "chunkIndex": 5
+      },
+      {
+        "name": "February 3, 2001",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "expected for the year ending February 3, 2001.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Form 10-Q",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "financial information and with the instructions to Form 10-Q and Article 10 of",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Regulation S-X",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "the Regulation S-X.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "January 29, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "year ended January 29, 2000.",
+        "chunkIndex": 5
+      },
+      {
+        "name": "January 29, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "The accompanying balance sheet at January 29, 2000 has been derived from the",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$54.9 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Leased department sales of $54.9 million and $49.8",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$49.8 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "$8.3 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "$8.3 million and $7.6 million are included in net sales for the three months",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$7.6 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "$8.3 million and $7.6 million are included in net sales for the three months",
+        "chunkIndex": 6
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ended October 28, 2000 and October 30, 1999, respectively.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ended October 28, 2000 and October 30, 1999, respectively.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$165.8 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "sales of $165.8 million and $146.8 million are excluded from net sales, and",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$146.8 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "sales of $165.8 million and $146.8 million are excluded from net sales, and",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$25.2 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "commissions from leased departments of $25.2 million and $22.3 million are",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$22.3 million",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "commissions from leased departments of $25.2 million and $22.3 million are",
+        "chunkIndex": 6
+      },
+      {
+        "name": "NOTE 2 -- BUSINESS COMBINATIONS AND INTEGRATION COSTS",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "NOTE 2 -- BUSINESS COMBINATIONS AND INTEGRATION COSTS",
+        "chunkIndex": 6
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ended October 28, 2000 and October 30, 1999, respectively.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "ended October 28, 2000 and October 30, 1999, respectively.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "2000",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "The accompanying balance sheet at January 29, 2000 has been derived from the",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Herberger's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Herberger's and McRae's operating divisions and distribution centers.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "McRae's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Herberger's and McRae's operating divisions and distribution centers.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Herberger's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Herberger's and McRae's operating divisions and distribution centers.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "McRae's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Herberger's and McRae's operating divisions and distribution centers.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "for 1999 primarily consisted of the consolidation and conversion of redundant",
+        "chunkIndex": 7
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "remaining unpaid at October 28, 2000 is as follows (in thousands):",
+        "chunkIndex": 7
+      },
+      {
+        "name": "January 29, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "Amounts unpaid at January 29, 2000 and related to prior integration events",
+        "chunkIndex": 7
+      },
+      {
+        "name": "NOTE 3 -- EARNINGS PER COMMON SHARE",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "NOTE 3 -- EARNINGS PER COMMON SHARE",
+        "chunkIndex": 7
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "remaining unpaid at October 28, 2000 is as follows (in thousands):",
+        "chunkIndex": 7
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "ended October 28, 2000 and October 30, 1999 are as follows (income and shares in",
+        "chunkIndex": 7
+      },
+      {
+        "name": "October 28, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "October 28, 2000",
+        "chunkIndex": 8
+      },
+      {
+        "name": "October 30, 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "October 30, 1999",
+        "chunkIndex": 8
+      }
+    ],
+    "documentId": "897b604c-4141-4bc9-9e99-32f49e502f0e"
+  },
+  {
+    "preview": true,
+    "extracted": 79,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "EXHIBIT 10.1",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "EXHIBIT 10.1",
+        "chunkIndex": 0
+      },
+      {
+        "name": "OLD KENT FINANCIAL CORPORATION",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "OLD KENT FINANCIAL CORPORATION",
+        "chunkIndex": 0
+      },
+      {
+        "name": "EXECUTIVE BENEFIT TRUST",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "EXECUTIVE BENEFIT TRUST",
+        "chunkIndex": 0
+      },
+      {
+        "name": "June 12, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Dated: June 12, 2000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "OKFC Contributions",
+        "chunkIndex": 0
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Investment Direction by OKFC",
+        "chunkIndex": 1
+      },
+      {
+        "name": "26",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "26",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.5.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.5.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Governing Law",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Governing Law",
+        "chunkIndex": 2
+      },
+      {
+        "name": "26",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "26",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.6.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.6.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Notices",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Notices",
+        "chunkIndex": 2
+      },
+      {
+        "name": "26",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "26",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.7.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.7.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Counterparts",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Counterparts",
+        "chunkIndex": 2
+      },
+      {
+        "name": "27",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "27",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.8.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.8.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Gender and Number",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Gender and Number",
+        "chunkIndex": 2
+      },
+      {
+        "name": "27",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "27",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.9.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.9.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Scope of this Agreement",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Scope of this Agreement",
+        "chunkIndex": 2
+      },
+      {
+        "name": "27",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "27",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.10.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.10.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Statutory References",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Statutory References",
+        "chunkIndex": 2
+      },
+      {
+        "name": "27",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "27",
+        "chunkIndex": 2
+      },
+      {
+        "name": "10.11.",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "10.11.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Headings",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Headings",
+        "chunkIndex": 2
+      },
+      {
+        "name": "27",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "27",
+        "chunkIndex": 2
+      },
+      {
+        "name": "OLD KENT FINANCIAL CORPORATION",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "OLD KENT FINANCIAL CORPORATION",
+        "chunkIndex": 2
+      },
+      {
+        "name": "EXECUTIVE BENEFIT TRUST",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "EXECUTIVE BENEFIT TRUST",
+        "chunkIndex": 2
+      },
+      {
+        "name": "12th day of June, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Financial Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "OLD KENT FINANCIAL CORPORATION",
+        "chunkIndex": 2
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "June, 2000, by and between Old Kent Financial Corporation (\"OKFC\"), a Michigan",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Michigan",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "June, 2000, by and between Old Kent Financial Corporation (\"OKFC\"), a Michigan",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Wachovia Bank, N.A.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "corporation, and Wachovia Bank, N.A.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Trustee",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "(\"Trustee\").",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Executive Retirement Income Plan",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Old Kent Executive Retirement Income Plan",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Executive Thrift Plan",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Old Kent Executive Thrift Plan",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Deferred Compensation Plan",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Old Kent Deferred Compensation Plan",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Directors' Deferred Compensation Plan",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Old Kent Directors' Deferred Compensation Plan",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Deferred Stock Compensation Plan of Old Kent Financial Corporation",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Deferred Stock Compensation Plan of Old Kent Financial Corporation",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Executive Severance Agreements",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Executive Severance Agreements (each a \"Severance Agreement;\" collectively, the",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Severance Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Executive Severance Agreements (each a \"Severance Agreement;\" collectively, the",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Executive Compensation Plan",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "executive compensation plans and programs:",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Executive Compensation Plans",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "executive compensation plans and programs:",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Financial Corporation Executive Retirement Income Trust",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Old Kent Financial Corporation Executive Retirement Income Trust",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Financial Corporation Executive Thrift Trust",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Old Kent Financial Corporation Executive Thrift Trust",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Financial Corporation Deferred Compensation Trust",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Old Kent Financial Corporation Deferred Compensation Trust",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Financial Corporation Directors' Deferred Compensation Trust",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Old Kent Financial Corporation Directors' Deferred Compensation Trust",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Old Kent Financial Corporation Deferred Stock Compensation Trust",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Old Kent Financial Corporation Deferred Stock Compensation Trust",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Prior Trusts",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "(collectively the \"Prior Trusts\") and OKFC intends to establish a similar trust",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Executive",
+        "type": "PERSON",
+        "confidence": 0.7,
+        "context": "EXECUTIVE BENEFIT TRUST",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Executives",
+        "type": "PERSON",
+        "confidence": 0.7,
+        "context": "\"Executive;\" collectively, the \"Executives\"); and",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Executive Compensation Plans",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "WHEREAS, the Executive Compensation Plans are provided only",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Executives",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "\"Executive;\" collectively, the \"Executives\"); and",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Beneficiary",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "more of the Executives, or a beneficiary (\"Beneficiary\") of a deceased",
+        "chunkIndex": 3
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "WHEREAS, OKFC has incurred and expects in the future to",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Trust",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "WHEREAS, OKFC has determined to establish a new single trust",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Prior Trusts",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "(\"Trust\") as the successor to the prior trusts and as a new trust with respect",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Insolvency",
+        "type": "EVENT",
+        "confidence": 0.6,
+        "context": "subject to the claims of creditors in the event of Insolvency, as defined in",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Section 3",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "Section 3, until paid pursuant to one or more of the Executive Compensation",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Executive Compensation Plans",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "WHEREAS, the Executive Compensation Plans are provided only",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Employee Retirement Income Security Act of 1974",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Title I",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "compensated employees for purposes of Title I of the Employee Retirement Income",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Trust Agreement",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "NOW, THEREFORE, by this Trust Agreement the parties",
+        "chunkIndex": 3
+      },
+      {
+        "name": "June 12, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 4
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "OKFC Contributions.",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Exhibit A",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Change in Control,\" as such terms are defined in Exhibit A attached, neither the",
+        "chunkIndex": 5
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "OKFC shall make an irrevocable contribution to the Trust in an amount that,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Severance Agreements",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Severance Agreements, that each Executive would be entitled to receive pursuant",
+        "chunkIndex": 5
+      },
+      {
+        "name": "$100,000",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "contribute an additional $100,000 to the Trust to establish an account (\"Expense",
+        "chunkIndex": 5
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "ediately prior to a Change in Control, OKFC shall",
+        "chunkIndex": 6
+      },
+      {
+        "name": "$100,000",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "contribute an additional $100,000 to the Trust to establish an account (\"Expense",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Section 5.4",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "pursuant to Section 5.4, including any amount",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Internal Revenue Code of 1986",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "I, subchapter J, chapter 1, subtitle A of the Internal Revenue Code of 1986, as",
+        "chunkIndex": 6
+      },
+      {
+        "name": "ntor trust",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "ntor trust, with OKFC as the grantor, within the meaning of subpart E, part",
+        "chunkIndex": 7
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "ntor trust, with OKFC as the grantor, within the meaning of subpart E, part",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Internal Revenue Code of 1986",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "I, subchapter J, chapter 1, subtitle A of the Internal Revenue Code of 1986, as",
+        "chunkIndex": 7
+      },
+      {
+        "name": "OKFC",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "the Trust will be subject to the claims of OKFC's general creditors under",
+        "chunkIndex": 8
+      }
+    ],
+    "documentId": "be86abd7-df4e-48ad-8db0-de25dcf49cd6"
+  },
+  {
+    "preview": true,
+    "extracted": 77,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "SIXTH AMENDMENT TO THIRD AMENDED AND RESTATED CREDIT AGREEMENT",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "THIS SIXTH AMENDMENT TO THIRD AMENDED AND RESTATED CREDIT AGREEMENT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "June 23, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "SUNRISE MEDICAL, INC.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "MEDICAL, INC., a Delaware corporation (the \"Borrower\"), the subsidiaries of the",
+        "chunkIndex": 0
+      },
+      {
+        "name": "BANK OF AMERICA, N.A.",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "(the \"Lenders\") party hereto, and BANK OF AMERICA, N.A., as Agent (the \"Agent\")",
+        "chunkIndex": 0
+      },
+      {
+        "name": "August 28, 1997",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "February 18, 1998",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "August 26, 1998",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "April 28, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "August 25, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "September 30, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Fifth Amendment",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Pursuant to the terms of the Fifth Amendment, Section 7.20 was",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Third Amended and Restated Credit Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Amendment and Waiver to Third Amended and Restated Credit Agreement (the \"Fifth",
+        "chunkIndex": 1
+      },
+      {
+        "name": "September 30, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Sixth Amendment",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Amendment\") dated as of September 30, 1999 (together with this Sixth Amendment,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Amendment and Waiver to Third Amended and Restated Credit Agreement (the \"Fifth",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.20",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "Pursuant to the terms of the Fifth Amendment, Section 7.20 was",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.09",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "forth in Section 7.09, 7.10, 7.11 and 7.19 and the Collateral Release Conditions",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.10",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "that no modification is needed to Section 7.10 or the Collateral Release",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.11",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7.19",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Collateral Release Conditions",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "forth in Section 7.09, 7.10, 7.11 and 7.19 and the Collateral Release Conditions",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Borrower",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Amendment, the Borrower has completed the asset dispositions and sale and",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Agent",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "hereof, the Borrower, the Agent and the Lenders have agreed to amend Section",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Lenders",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "hereof, the Borrower, the Agent and the Lenders have agreed to amend Section",
+        "chunkIndex": 1
+      },
+      {
+        "name": "$250,000",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "more than $250,000 to repurchase stock options from the Borrower's employees.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Section 7",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "Amendments to Section 7.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Fiscal Quarter",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "> Permit the Leverage Ratio, as of the end of any Fiscal Quarter, to exceed the",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Fourth Quarter 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Fiscal Quarter Ending Maximum Ratio Fourth Quarter 2000 3.25 to 1 First",
+        "chunkIndex": 3
+      },
+      {
+        "name": "First Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > $48,500,000 First Quarter 2001 (4 quarters) $53,000,000 Second Quarter 2001",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Second Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Quarter 2001 3.00 to 1 Second Quarter 2001 3.00 to 1",
+        "chunkIndex": 3
+      },
+      {
+        "name": "June 1, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 3
+      },
+      {
+        "name": "$250,000",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "> therewith shall not exceed $250,000;",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Fourth Quarter 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Fiscal Quarter Ending Maximum Ratio Fourth Quarter 2000 3.25 to 1 First",
+        "chunkIndex": 3
+      },
+      {
+        "name": "First Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > $48,500,000 First Quarter 2001 (4 quarters) $53,000,000 Second Quarter 2001",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Second Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Quarter 2001 3.00 to 1 Second Quarter 2001 3.00 to 1",
+        "chunkIndex": 3
+      },
+      {
+        "name": "$48,500,000",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "> > $48,500,000 First Quarter 2001 (4 quarters) $53,000,000 Second Quarter 2001",
+        "chunkIndex": 3
+      },
+      {
+        "name": "First Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > $48,500,000 First Quarter 2001 (4 quarters) $53,000,000 Second Quarter 2001",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Second Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Quarter 2001 3.00 to 1 Second Quarter 2001 3.00 to 1",
+        "chunkIndex": 3
+      },
+      {
+        "name": "$53,000,000",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "> > $48,500,000 First Quarter 2001 (4 quarters) $53,000,000 Second Quarter 2001",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Fourth Quarter 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Fiscal Quarter Ending Maximum Ratio Fourth Quarter 2000 3.25 to 1 First",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Second Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "> > Quarter 2001 3.00 to 1 Second Quarter 2001 3.00 to 1",
+        "chunkIndex": 3
+      },
+      {
+        "name": "$51,500,000",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "> > (4 quarters) $51,500,000",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Second Quarter 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "quarters) $53,000,000 Second Quarter 2001",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Section 7.20",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "> (e) Section 7.20 of the Agreement is hereby amended and restated to read in",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.7,
+        "context": "> (e) Section 7.20 of the Agreement is hereby amended and restated to read in",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Sixth Amendment",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "The execution, delivery and performance of this Sixth Amendment have been duly",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Loan Parties",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Each of the Loan Parties jointly and severally represent and warrant to the",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Lenders",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Lenders and the Agent:",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Agent",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Lenders and the Agent:",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Debtor Relief Laws",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "respectively, except as such enforcement may be limited by Debtor Relief Laws or",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Governmental Agency",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "approval or authorization of any Governmental Agency is required by any Loan",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Sixth Amendment",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Sixth Amendment, the Agreement, or the transactions contemplated hereby or",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Sixth Amendment, the Agreement, or the transactions contemplated hereby or",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Article 5",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "context": "The representations and warranties set forth in Article 5 of the Agreement, as",
+        "chunkIndex": 5
+      },
+      {
+        "name": "September 30, 1999",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 5
+      },
+      {
+        "name": "Sixth Amendment",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Sixth Amendment, the Agreement, or the transactions contemplated hereby or",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Sixth Amendment",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "This Sixth Amendment may be executed in any number of counterparts and all of",
+        "chunkIndex": 8
+      },
+      {
+        "name": "California",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "be governed by and construed under the laws of the State of California.",
+        "chunkIndex": 8
+      },
+      {
+        "name": "SUNRISE MEDICAL, INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > SUNRISE MEDICAL, INC.,",
+        "chunkIndex": 10
+      },
+      {
+        "name": "Ted N. Tarbet",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 10
+      },
+      {
+        "name": "DYNAVOX SYSTEMS, INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > DYNAVOX SYSTEMS, INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNMED FINANCE INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > SUNMED FINANCE INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNRISE MARIN HOLDINGS INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > SUNRISE MARIN HOLDINGS INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNRISE MEDICAL CCG INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > SUNRISE MEDICAL CCG INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNRISE MEDICAL HHG INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > SUNRISE MEDICAL HHG INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "BANK OF AMERICA, N.A.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > BANK OF AMERICA, N.A., as Agent",
+        "chunkIndex": 10
+      },
+      {
+        "name": "ABN AMRO BANK NV Los Angeles International Branch",
+        "type": "ORG",
+        "confidence": 0.97,
+        "context": "> > > > > > ABN AMRO BANK NV Los Angeles International Branch",
+        "chunkIndex": 10
+      },
+      {
+        "name": "UNION BANK OF CALIFORNIA, N.A.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > UNION BANK OF CALIFORNIA, N.A.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "UNION BANK OF CALIFORNIA",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > UNION BANK OF CALIFORNIA, N.A.",
+        "chunkIndex": 11
+      },
+      {
+        "name": "N.A.",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "> > > > > > UNION BANK OF CALIFORNIA, N.A.",
+        "chunkIndex": 11
+      },
+      {
+        "name": "MORGAN GUARANTY TRUST COMPANY OF NEW YORK",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > MORGAN GUARANTY TRUST COMPANY OF NEW YORK",
+        "chunkIndex": 11
+      },
+      {
+        "name": "DEUTSCHE BANK AG",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > DEUTSCHE BANK AG, New York Branch and/or Cayman Islands Branch",
+        "chunkIndex": 11
+      },
+      {
+        "name": "New York Branch",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "> > > > > > DEUTSCHE BANK AG, New York Branch and/or Cayman Islands Branch",
+        "chunkIndex": 11
+      },
+      {
+        "name": "Cayman Islands Branch",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "> > > > > > DEUTSCHE BANK AG, New York Branch and/or Cayman Islands Branch",
+        "chunkIndex": 11
+      },
+      {
+        "name": "PNC BANK",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "> > > > > > PNC BANK, NATIONAL ASSOCIATION",
+        "chunkIndex": 11
+      },
+      {
+        "name": "NATIONAL ASSOCIATION",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "> > > > > > PNC BANK, NATIONAL ASSOCIATION",
+        "chunkIndex": 11
+      }
+    ],
+    "documentId": "2dc640d8-b803-469c-91a1-58757b1d8faa"
+  },
+  {
+    "preview": true,
+    "extracted": 59,
+    "backend": "llm",
+    "model": "qwen3.5:4b",
+    "entities": [
+      {
+        "name": "October 31, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Avocent Employment Services Co.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Avocent Employment Services Co.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Polycon Investments, Inc.",
+        "type": "ORG",
+        "confidence": 0.92,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Texas",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Texas corporation (\"Employer\"), Avocent Corporation, a Delaware corporation, and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Texas corporation (\"Employer\"), Avocent Corporation, a Delaware corporation, and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Delaware",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Texas corporation (\"Employer\"), Avocent Corporation, a Delaware corporation, and",
+        "chunkIndex": 0
+      },
+      {
+        "name": "R. Byron Driver",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Apex Inc.",
+        "type": "ORG",
+        "confidence": 0.94,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Cybex Computer Products Corporation",
+        "type": "ORG",
+        "confidence": 0.94,
+        "chunkIndex": 0
+      },
+      {
+        "name": "July 1, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "March 8, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Apex Acquisition Corp.",
+        "type": "ORG",
+        "confidence": 0.93,
+        "chunkIndex": 0
+      },
+      {
+        "name": "July 1, 2000",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "ion Corp.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "ion Corp., a",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "wholly-owned subsidiary of Avocent, merged with and into Cybex (the \"Cybex",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "wholly-owned subsidiary of Avocent, merged with and into Cybex (the \"Cybex",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Cybex Merger",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Merger\") on July 1, 2000, and upon the Cybex Merger, Cybex also became a",
+        "chunkIndex": 1
+      },
+      {
+        "name": "July 1, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Employee",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "not otherwise be made to Employee, Employer, Employee, Cybex, and Avocent now",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Employer",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "not otherwise be made to Employee, Employer, Employee, Cybex, and Avocent now",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Original Employment Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "wish to amend and restate the Original Employment Agreement with this Amended",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Amended and Restated Employment and Noncompetition Agreement",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Senior Vice President of Operations",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "Senior Vice President of Operations and Chief Operating Officer.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Chief Operating Officer",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "Operations and Chief Operating Officer, and Employer agrees to employ the",
+        "chunkIndex": 1
+      },
+      {
+        "name": "President",
+        "type": "PERSON",
+        "confidence": 0.7,
+        "context": "employed by Employer and to serve Avocent as its Senior Vice President of",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Cybex Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "shall report to the President of the Employer, Cybex, and Avocent Corporation",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Employer or Avocent or",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Employer or Avocent Corporation of the Employee's employment by the Employer",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Avocent within six (6) months following any \"Change in Control\" other than any",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Cybex Merger",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Reorganization Agreement including, without limitation, the Cybex Merger, the",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Apex Merger",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Apex Merger, and the Merger (as such terms are defined in the Reorganization",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Reorganization Agreement",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "\"Change in Control\" contemplated by or described in the Reorganization Agreement",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Agreement), or (ii) any termination by the Employer or Avocent Corporation of",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Cybex Merger",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "without limitation, the Cybex Merger, the",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Apex Merger",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Apex Merger, and the Merger (as such terms are defined in the Reorganization",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Reorganization Agreement",
+        "type": "OTHER",
+        "confidence": 0.9,
+        "chunkIndex": 4
+      },
+      {
+        "name": "CHANGE IN CONTROL",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "(e) \"CHANGE IN CONTROL\" shall mean any one of the following events:",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "(i) Any person (other than Avocent) acquires beneficial ownership of",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Employer",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "Employer's, Cybex's, or Avocent Corporation's securities and is or thereby",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "without limitation, the Cybex Merger, the",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Employer's, Cybex's, or Avocent Corporation's securities and is or thereby",
+        "chunkIndex": 4
+      },
+      {
+        "name": "Regulation 13D",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "chunkIndex": 4
+      },
+      {
+        "name": "Securities Exchange Act of 1934",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Regulation 13D under the Securities Exchange Act of 1934, or any similar",
+        "chunkIndex": 4
+      },
+      {
+        "name": "twenty-five percent (25%)",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "twenty-five percent (25%) or more of the combined voting power of Employer's,",
+        "chunkIndex": 4
+      },
+      {
+        "name": "twenty-four (24) month period",
+        "type": "DATE",
+        "confidence": 0.9,
+        "chunkIndex": 4
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "shares of Avocent Corporation common stock would be converted into cash,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "(iv) Cybex's stockholders approve:",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "assets of Cybex.",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Cybex Merger",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Reorganization Agreement",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "Merger (as described in the Reorganization Agreement) on July 1, 2000, and",
+        "chunkIndex": 6
+      },
+      {
+        "name": "July 1, 2000",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 6
+      },
+      {
+        "name": "December 31, 2004",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 6
+      },
+      {
+        "name": "December 31, 2004",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 7
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "benefits under any plans of Employer or Avocent in which the Employee is a",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Avocent, has failed to perform his duties under this Agreement on account of",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "awards granted to the Employee under any Cybex or Avocent stock option plans",
+        "chunkIndex": 9
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "applicable plan), any benefits under any plans of Employer or Avocent in which",
+        "chunkIndex": 10
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "under any Cybex or Avocent stock op",
+        "chunkIndex": 10
+      }
+    ],
+    "documentId": "7bc9f266-ddec-43e1-a0ff-6a8dbb92f376"
+  }
+]

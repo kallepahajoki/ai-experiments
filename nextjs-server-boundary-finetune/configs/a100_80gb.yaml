@@ -1,0 +1,54 @@
+# Qwen 3.5 27B config for A100 80GB (RunPod / cloud GPU)
+#
+# The 27B model fits in bf16 (~52 GB) with LoRA on 80GB VRAM.
+# No quantization needed (and not possible — hybrid architecture
+# with Mamba SSM layers can't be quantized by bitsandbytes).
+#
+# Memory budget (27B, bf16):
+#   Base model (bf16):      ~52 GB
+#   LoRA adapters (r=32):   ~0.8 GB
+#   Optimizer states:       ~1.6 GB (paged_adamw_8bit)
+#   Activations:            ~8-10 GB (with gradient checkpointing, batch_size=2)
+#   Overhead:               ~3 GB
+#   Total:                  ~66-68 GB / 80 GB
+#
+# If VRAM allows, try batch_size: 4 (saves wall-clock time).
+
+model:
+  name: "Qwen/Qwen3.5-27B"
+  max_seq_length: 4096
+  load_in_16bit: true
+
+lora:
+  r: 32                          # Higher rank — more VRAM budget available
+  alpha: 64                      # alpha = 2*r
+  dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  epochs: 3
+  batch_size: 2                  # Fits in 80GB; try 4 if VRAM allows
+  gradient_accumulation_steps: 4 # Effective batch size = 8
+  learning_rate: 1.0e-4          # Slightly lower for larger model
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  lr_scheduler: "cosine"
+  max_grad_norm: 0.3
+  optimizer: "paged_adamw_8bit"
+  gradient_checkpointing: true
+  bf16: true
+
+  logging_steps: 5
+  eval_steps: 10                 # More frequent — fewer total steps with larger batch
+  save_steps: 10
+  save_total_limit: 3
+  report_to: "none"              # Set to "wandb" for W&B tracking
+
+output_dir: "output"

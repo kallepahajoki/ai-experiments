@@ -1,0 +1,382 @@
+{
+  "document_id": "6abcaf57-6380-4eaf-9115-aa212b1e1d63",
+  "document_name": "Pel\u00e9.txt",
+  "dataset": "wikipedia",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 10,
+  "chars": 8737,
+  "entities": [
+    {
+      "name": "Edson Arantes do Nascimento",
+      "type": "PERSON"
+    },
+    {
+      "name": "Brazilian Portuguese",
+      "type": "OTHER"
+    },
+    {
+      "name": "23 October 1940",
+      "type": "DATE"
+    },
+    {
+      "name": "29 December 2022",
+      "type": "DATE"
+    },
+    {
+      "name": "Pel\u00e9",
+      "type": "PERSON"
+    },
+    {
+      "name": "Brazilian",
+      "type": "OTHER"
+    },
+    {
+      "name": "20th century",
+      "type": "DATE"
+    },
+    {
+      "name": "Guinness World Record",
+      "type": "ORG"
+    },
+    {
+      "name": "1999",
+      "type": "DATE"
+    },
+    {
+      "name": "Athlete of the Century",
+      "type": "OTHER"
+    },
+    {
+      "name": "International Olympic Committee",
+      "type": "ORG"
+    },
+    {
+      "name": "Time",
+      "type": "ORG"
+    },
+    {
+      "name": "2000",
+      "type": "DATE"
+    },
+    {
+      "name": "World Player of the Century",
+      "type": "OTHER"
+    },
+    {
+      "name": "International Federation of Football History & Statistics",
+      "type": "ORG"
+    },
+    {
+      "name": "IFFHS",
+      "type": "ORG"
+    },
+    {
+      "name": "FIFA Player of the Century",
+      "type": "OTHER"
+    },
+    {
+      "name": "FIFA",
+      "type": "ORG"
+    },
+    {
+      "name": "Diego Maradona",
+      "type": "PERSON"
+    },
+    {
+      "name": "Santos",
+      "type": "ORG"
+    },
+    {
+      "name": "Brazil national team",
+      "type": "ORG"
+    },
+    {
+      "name": "FIFA World Cup",
+      "type": "EVENT"
+    },
+    {
+      "name": "1958",
+      "type": "DATE"
+    },
+    {
+      "name": "1962",
+      "type": "DATE"
+    },
+    {
+      "name": "1970",
+      "type": "DATE"
+    },
+    {
+      "name": "World Cup",
+      "type": "EVENT"
+    },
+    {
+      "name": "O Rei",
+      "type": "OTHER"
+    },
+    {
+      "name": "Brazil",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1963",
+      "type": "DATE"
+    },
+    {
+      "name": "Copa Libertadores",
+      "type": "EVENT"
+    },
+    {
+      "name": "Intercontinental Cup",
+      "type": "EVENT"
+    },
+    {
+      "name": "The Beautiful Game",
+      "type": "OTHER"
+    },
+    {
+      "name": "1977",
+      "type": "DATE"
+    },
+    {
+      "name": "2010",
+      "type": "DATE"
+    },
+    {
+      "name": "New York Cosmos",
+      "type": "ORG"
+    },
+    {
+      "name": "1958 World Cup",
+      "type": "EVENT"
+    },
+    {
+      "name": "Tr\u00eas Cora\u00e7\u00f5es",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Minas Gerais",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Fluminense",
+      "type": "ORG"
+    },
+    {
+      "name": "Dondinho",
+      "type": "PERSON"
+    },
+    {
+      "name": "Jo\u00e3o Ramos do Nascimento",
+      "type": "PERSON"
+    },
+    {
+      "name": "Celeste Arantes",
+      "type": "PERSON"
+    },
+    {
+      "name": "1922\u20132024",
+      "type": "DATE"
+    },
+    {
+      "name": "Zoca",
+      "type": "PERSON"
+    },
+    {
+      "name": "American",
+      "type": "OTHER"
+    },
+    {
+      "name": "Thomas Edison",
+      "type": "PERSON"
+    },
+    {
+      "name": "Edson",
+      "type": "PERSON"
+    },
+    {
+      "name": "Edison",
+      "type": "PERSON"
+    },
+    {
+      "name": "Dico",
+      "type": "PERSON"
+    },
+    {
+      "name": "Vasco da Gama",
+      "type": "ORG"
+    },
+    {
+      "name": "Bil\u00e9",
+      "type": "PERSON"
+    },
+    {
+      "name": "2006",
+      "type": "DATE"
+    },
+    {
+      "name": "Portuguese",
+      "type": "OTHER"
+    },
+    {
+      "name": "Hebrew",
+      "type": "OTHER"
+    },
+    {
+      "name": "Bauru",
+      "type": "LOCATION"
+    },
+    {
+      "name": "S\u00e3o Paulo",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Sete de Setembro",
+      "type": "ORG"
+    },
+    {
+      "name": "Canto do Rio",
+      "type": "ORG"
+    },
+    {
+      "name": "S\u00e3o Paulinho",
+      "type": "ORG"
+    },
+    {
+      "name": "Ameriquinha",
+      "type": "ORG"
+    },
+    {
+      "name": "Bauru Atl\u00e9tico Clube",
+      "type": "ORG"
+    },
+    {
+      "name": "Waldemar de Brito",
+      "type": "PERSON"
+    },
+    {
+      "name": "S\u00e3o Paulo state youth championships",
+      "type": "EVENT"
+    },
+    {
+      "name": "Radium",
+      "type": "ORG"
+    },
+    {
+      "name": "futsal",
+      "type": "OTHER"
+    },
+    {
+      "name": "Zizinho",
+      "type": "PERSON"
+    },
+    {
+      "name": "1956\u20131962",
+      "type": "DATE"
+    },
+    {
+      "name": "1956",
+      "type": "DATE"
+    },
+    {
+      "name": "de Brito",
+      "type": "PERSON"
+    },
+    {
+      "name": "Santos",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Santos FC",
+      "type": "ORG"
+    },
+    {
+      "name": "Lula",
+      "type": "PERSON"
+    },
+    {
+      "name": "Est\u00e1dio Vila Belmiro",
+      "type": "LOCATION"
+    },
+    {
+      "name": "June 1956",
+      "type": "DATE"
+    },
+    {
+      "name": "7 September 1956",
+      "type": "DATE"
+    },
+    {
+      "name": "Corinthians de Santo Andr\u00e9",
+      "type": "ORG"
+    },
+    {
+      "name": "1957",
+      "type": "DATE"
+    },
+    {
+      "name": "1962 World Cup",
+      "type": "EVENT"
+    },
+    {
+      "name": "European",
+      "type": "OTHER"
+    },
+    {
+      "name": "Real Madrid",
+      "type": "ORG"
+    },
+    {
+      "name": "Juventus",
+      "type": "ORG"
+    },
+    {
+      "name": "Manchester United",
+      "type": "ORG"
+    },
+    {
+      "name": "Inter Milan",
+      "type": "ORG"
+    },
+    {
+      "name": "Angelo Moratti",
+      "type": "PERSON"
+    },
+    {
+      "name": "Valencia CF",
+      "type": "ORG"
+    },
+    {
+      "name": "1961",
+      "type": "DATE"
+    },
+    {
+      "name": "J\u00e2nio Quadros",
+      "type": "PERSON"
+    },
+    {
+      "name": "Campeonato Paulista",
+      "type": "EVENT"
+    },
+    {
+      "name": "Torneio Rio-S\u00e3o Paulo",
+      "type": "EVENT"
+    },
+    {
+      "name": "Rio-S\u00e3o Paulo tournament",
+      "type": "EVENT"
+    },
+    {
+      "name": "1960",
+      "type": "DATE"
+    },
+    {
+      "name": "Ta\u00e7a Brasil",
+      "type": "EVENT"
+    },
+    {
+      "name": "Bahia",
+      "type": "ORG"
+    }
+  ]
+}

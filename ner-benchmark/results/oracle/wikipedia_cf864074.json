@@ -1,0 +1,566 @@
+{
+  "document_id": "cf864074-7f8f-4e25-83c4-e20c55480494",
+  "document_name": "Muhammad_Ali.txt",
+  "dataset": "wikipedia",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 5,
+  "chars": 8606,
+  "entities": [
+    {
+      "name": "Muhammad Ali",
+      "type": "PERSON"
+    },
+    {
+      "name": "Cassius Marcellus Clay Jr.",
+      "type": "PERSON"
+    },
+    {
+      "name": "January 17, 1942",
+      "type": "DATE"
+    },
+    {
+      "name": "June 3, 2016",
+      "type": "DATE"
+    },
+    {
+      "name": "American",
+      "type": "OTHER"
+    },
+    {
+      "name": "the Greatest",
+      "type": "OTHER"
+    },
+    {
+      "name": "Ring magazine",
+      "type": "ORG"
+    },
+    {
+      "name": "1964",
+      "type": "DATE"
+    },
+    {
+      "name": "1970",
+      "type": "DATE"
+    },
+    {
+      "name": "1974",
+      "type": "DATE"
+    },
+    {
+      "name": "1978",
+      "type": "DATE"
+    },
+    {
+      "name": "WBA",
+      "type": "ORG"
+    },
+    {
+      "name": "Ring",
+      "type": "ORG"
+    },
+    {
+      "name": "1979",
+      "type": "DATE"
+    },
+    {
+      "name": "1999",
+      "type": "DATE"
+    },
+    {
+      "name": "Sportsman of the Century",
+      "type": "OTHER"
+    },
+    {
+      "name": "Sports Illustrated",
+      "type": "ORG"
+    },
+    {
+      "name": "Sports Personality of the Century",
+      "type": "OTHER"
+    },
+    {
+      "name": "BBC",
+      "type": "ORG"
+    },
+    {
+      "name": "Louisville, Kentucky",
+      "type": "LOCATION"
+    },
+    {
+      "name": "age 12",
+      "type": "DATE"
+    },
+    {
+      "name": "18",
+      "type": "DATE"
+    },
+    {
+      "name": "light heavyweight",
+      "type": "OTHER"
+    },
+    {
+      "name": "1960 Summer Olympics",
+      "type": "EVENT"
+    },
+    {
+      "name": "later that year",
+      "type": "DATE"
+    },
+    {
+      "name": "Nation of Islam",
+      "type": "ORG"
+    },
+    {
+      "name": "early 1960s",
+      "type": "DATE"
+    },
+    {
+      "name": "mid-1970s",
+      "type": "DATE"
+    },
+    {
+      "name": "Sonny Liston",
+      "type": "PERSON"
+    },
+    {
+      "name": "February 25, 1964",
+      "type": "DATE"
+    },
+    {
+      "name": "age 22",
+      "type": "DATE"
+    },
+    {
+      "name": "During that year",
+      "type": "DATE"
+    },
+    {
+      "name": "slave name",
+      "type": "OTHER"
+    },
+    {
+      "name": "1967",
+      "type": "DATE"
+    },
+    {
+      "name": "Ali",
+      "type": "PERSON"
+    },
+    {
+      "name": "Vietnam War",
+      "type": "EVENT"
+    },
+    {
+      "name": "Supreme Court",
+      "type": "ORG"
+    },
+    {
+      "name": "1971",
+      "type": "DATE"
+    },
+    {
+      "name": "nearly four years",
+      "type": "DATE"
+    },
+    {
+      "name": "1960s",
+      "type": "DATE"
+    },
+    {
+      "name": "African Americans",
+      "type": "OTHER"
+    },
+    {
+      "name": "civil rights movement",
+      "type": "EVENT"
+    },
+    {
+      "name": "Liston",
+      "type": "PERSON"
+    },
+    {
+      "name": "Joe Frazier",
+      "type": "PERSON"
+    },
+    {
+      "name": "Fight of the Century",
+      "type": "EVENT"
+    },
+    {
+      "name": "Thrilla in Manila",
+      "type": "EVENT"
+    },
+    {
+      "name": "George Foreman",
+      "type": "PERSON"
+    },
+    {
+      "name": "The Rumble in the Jungle",
+      "type": "EVENT"
+    },
+    {
+      "name": "hip-hop",
+      "type": "OTHER"
+    },
+    {
+      "name": "rope-a-dope",
+      "type": "OTHER"
+    },
+    {
+      "name": "I Am the Greatest!",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "1963",
+      "type": "DATE"
+    },
+    {
+      "name": "The Adventures of Ali and His Gang vs. Mr. Tooth Decay",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "1976",
+      "type": "DATE"
+    },
+    {
+      "name": "Grammy Award",
+      "type": "OTHER"
+    },
+    {
+      "name": "1981",
+      "type": "DATE"
+    },
+    {
+      "name": "1984",
+      "type": "DATE"
+    },
+    {
+      "name": "Parkinson's syndrome",
+      "type": "OTHER"
+    },
+    {
+      "name": "Odessa Grady Clay",
+      "type": "PERSON"
+    },
+    {
+      "name": "Cassius Marcellus Clay Sr.",
+      "type": "PERSON"
+    },
+    {
+      "name": "Clay Sr.",
+      "type": "PERSON"
+    },
+    {
+      "name": "19th-century",
+      "type": "DATE"
+    },
+    {
+      "name": "Republican",
+      "type": "OTHER"
+    },
+    {
+      "name": "abolitionist",
+      "type": "OTHER"
+    },
+    {
+      "name": "Cassius Marcellus Clay",
+      "type": "PERSON"
+    },
+    {
+      "name": "antebellum South",
+      "type": "LOCATION"
+    },
+    {
+      "name": "African",
+      "type": "OTHER"
+    },
+    {
+      "name": "Irish",
+      "type": "OTHER"
+    },
+    {
+      "name": "English",
+      "type": "OTHER"
+    },
+    {
+      "name": "2018",
+      "type": "DATE"
+    },
+    {
+      "name": "Clay",
+      "type": "PERSON"
+    },
+    {
+      "name": "Archer Alexander",
+      "type": "PERSON"
+    },
+    {
+      "name": "Emancipation Memorial",
+      "type": "OTHER"
+    },
+    {
+      "name": "Cassius Sr.",
+      "type": "PERSON"
+    },
+    {
+      "name": "Methodist",
+      "type": "OTHER"
+    },
+    {
+      "name": "Odessa",
+      "type": "PERSON"
+    },
+    {
+      "name": "Cassius Jr.",
+      "type": "PERSON"
+    },
+    {
+      "name": "Rudy",
+      "type": "PERSON"
+    },
+    {
+      "name": "Rahaman Ali",
+      "type": "PERSON"
+    },
+    {
+      "name": "Baptists",
+      "type": "OTHER"
+    },
+    {
+      "name": "Clay Jr.",
+      "type": "PERSON"
+    },
+    {
+      "name": "Central High School",
+      "type": "ORG"
+    },
+    {
+      "name": "Louisville",
+      "type": "LOCATION"
+    },
+    {
+      "name": "dyslexic",
+      "type": "OTHER"
+    },
+    {
+      "name": "1955",
+      "type": "DATE"
+    },
+    {
+      "name": "Emmett Till",
+      "type": "PERSON"
+    },
+    {
+      "name": "Hana",
+      "type": "PERSON"
+    },
+    {
+      "name": "Joe E. Martin",
+      "type": "PERSON"
+    },
+    {
+      "name": "12-year-old",
+      "type": "DATE"
+    },
+    {
+      "name": "Martin",
+      "type": "PERSON"
+    },
+    {
+      "name": "Tomorrow's Champions",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Fred Stoner",
+      "type": "PERSON"
+    },
+    {
+      "name": "last four years",
+      "type": "DATE"
+    },
+    {
+      "name": "Chuck Bodak",
+      "type": "PERSON"
+    },
+    {
+      "name": "1954",
+      "type": "DATE"
+    },
+    {
+      "name": "Ronnie O'Keefe",
+      "type": "PERSON"
+    },
+    {
+      "name": "Kentucky Golden Gloves",
+      "type": "EVENT"
+    },
+    {
+      "name": "Chicago Golden Gloves",
+      "type": "EVENT"
+    },
+    {
+      "name": "national Golden Gloves",
+      "type": "EVENT"
+    },
+    {
+      "name": "Amateur Athletic Union",
+      "type": "ORG"
+    },
+    {
+      "name": "U.S. Olympic Trials",
+      "type": "EVENT"
+    },
+    {
+      "name": "Rome",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1975",
+      "type": "DATE"
+    },
+    {
+      "name": "Rome Olympics",
+      "type": "EVENT"
+    },
+    {
+      "name": "Ohio River",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Bundini Brown",
+      "type": "PERSON"
+    },
+    {
+      "name": "Howard Bingham",
+      "type": "PERSON"
+    },
+    {
+      "name": "Brown",
+      "type": "PERSON"
+    },
+    {
+      "name": "Mark Kram",
+      "type": "PERSON"
+    },
+    {
+      "name": "Thomas Hauser",
+      "type": "PERSON"
+    },
+    {
+      "name": "Georgia Dome",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1996 Olympics",
+      "type": "EVENT"
+    },
+    {
+      "name": "Atlanta",
+      "type": "LOCATION"
+    },
+    {
+      "name": "October 29, 1960",
+      "type": "DATE"
+    },
+    {
+      "name": "Tunney Hunsaker",
+      "type": "PERSON"
+    },
+    {
+      "name": "end of 1963",
+      "type": "DATE"
+    },
+    {
+      "name": "Tony Esperti",
+      "type": "PERSON"
+    },
+    {
+      "name": "Jim Robinson",
+      "type": "PERSON"
+    },
+    {
+      "name": "Donnie Fleeman",
+      "type": "PERSON"
+    },
+    {
+      "name": "Alonzo Johnson",
+      "type": "PERSON"
+    },
+    {
+      "name": "George Logan",
+      "type": "PERSON"
+    },
+    {
+      "name": "Willi Besmanoff",
+      "type": "PERSON"
+    },
+    {
+      "name": "LaMar Clark",
+      "type": "PERSON"
+    },
+    {
+      "name": "Doug Jones",
+      "type": "PERSON"
+    },
+    {
+      "name": "Henry Cooper",
+      "type": "PERSON"
+    },
+    {
+      "name": "Archie Moore",
+      "type": "PERSON"
+    },
+    {
+      "name": "1962",
+      "type": "DATE"
+    },
+    {
+      "name": "Sonny Banks",
+      "type": "PERSON"
+    },
+    {
+      "name": "Cooper",
+      "type": "PERSON"
+    },
+    {
+      "name": "round four",
+      "type": "DATE"
+    },
+    {
+      "name": "fifth round",
+      "type": "DATE"
+    },
+    {
+      "name": "March 13, 1963",
+      "type": "DATE"
+    },
+    {
+      "name": "Jones",
+      "type": "PERSON"
+    },
+    {
+      "name": "New York's Madison Square Garden",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Madison Square Garden",
+      "type": "LOCATION"
+    },
+    {
+      "name": "first round",
+      "type": "DATE"
+    },
+    {
+      "name": "The Ring magazine",
+      "type": "ORG"
+    },
+    {
+      "name": "Fight of the Year",
+      "type": "OTHER"
+    },
+    {
+      "name": "Alex Miteff",
+      "type": "PERSON"
+    }
+  ]
+}

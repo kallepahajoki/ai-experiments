@@ -1,0 +1,202 @@
+{
+  "document_id": "fc187f48-cc84-4be1-bd98-8ad8479ada2e",
+  "document_name": "contract_005.txt",
+  "dataset": "legal",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 10,
+  "chars": 16795,
+  "entities": [
+    {
+      "name": "U.S.",
+      "type": "LOCATION"
+    },
+    {
+      "name": "CREDIT AGREEMENT (SHORT TERM FACILITY)",
+      "type": "OTHER"
+    },
+    {
+      "name": "October 31, 2000",
+      "type": "DATE"
+    },
+    {
+      "name": "HORMEL FOODS CORPORATION",
+      "type": "ORG"
+    },
+    {
+      "name": "Delaware",
+      "type": "LOCATION"
+    },
+    {
+      "name": "SUNTRUST BANK",
+      "type": "ORG"
+    },
+    {
+      "name": "U.S. BANK NATIONAL ASSOCIATION",
+      "type": "ORG"
+    },
+    {
+      "name": "CITICORP USA, INC.",
+      "type": "ORG"
+    },
+    {
+      "name": "CUSA",
+      "type": "ORG"
+    },
+    {
+      "name": "Adjusted Eurodollar Rate",
+      "type": "OTHER"
+    },
+    {
+      "name": "Eurodollar Rate Advance",
+      "type": "OTHER"
+    },
+    {
+      "name": "Dow Jones Markets (Telerate) page 3750",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "London",
+      "type": "LOCATION"
+    },
+    {
+      "name": "11:00 A.M. (London time)",
+      "type": "DATE"
+    },
+    {
+      "name": "Base Rate Advance",
+      "type": "OTHER"
+    },
+    {
+      "name": "Credit Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Salomon Smith Barney Inc.",
+      "type": "ORG"
+    },
+    {
+      "name": "Bankruptcy Code",
+      "type": "OTHER"
+    },
+    {
+      "name": "Title 11 of the United States Code",
+      "type": "OTHER"
+    },
+    {
+      "name": "Base Rate",
+      "type": "OTHER"
+    },
+    {
+      "name": "Citibank",
+      "type": "ORG"
+    },
+    {
+      "name": "New York, New York",
+      "type": "LOCATION"
+    },
+    {
+      "name": "United States",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Federal Reserve Bank of New York",
+      "type": "ORG"
+    },
+    {
+      "name": "Board of Governors of the Federal Reserve System",
+      "type": "ORG"
+    },
+    {
+      "name": "Federal Deposit Insurance Corporation",
+      "type": "ORG"
+    },
+    {
+      "name": "Federal Funds Rate",
+      "type": "OTHER"
+    },
+    {
+      "name": "New York City",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Los Angeles",
+      "type": "LOCATION"
+    },
+    {
+      "name": "GAAP",
+      "type": "OTHER"
+    },
+    {
+      "name": "United States government",
+      "type": "ORG"
+    },
+    {
+      "name": "United States of America",
+      "type": "LOCATION"
+    },
+    {
+      "name": "S&P",
+      "type": "ORG"
+    },
+    {
+      "name": "Moody's",
+      "type": "ORG"
+    },
+    {
+      "name": "Citibank, N.A.",
+      "type": "ORG"
+    },
+    {
+      "name": "Code",
+      "type": "OTHER"
+    },
+    {
+      "name": "Internal Revenue Code of 1986",
+      "type": "OTHER"
+    },
+    {
+      "name": "October 30, 2001",
+      "type": "DATE"
+    },
+    {
+      "name": "July 1, 2001",
+      "type": "DATE"
+    },
+    {
+      "name": "December 15, 2000",
+      "type": "DATE"
+    },
+    {
+      "name": "January 15, 2001",
+      "type": "DATE"
+    },
+    {
+      "name": "EBITDA",
+      "type": "OTHER"
+    },
+    {
+      "name": "Organization for Economical Cooperation and Development",
+      "type": "ORG"
+    },
+    {
+      "name": "OECD",
+      "type": "ORG"
+    },
+    {
+      "name": "ERISA",
+      "type": "OTHER"
+    },
+    {
+      "name": "Employee Retirement Income Security Act of 1974",
+      "type": "OTHER"
+    },
+    {
+      "name": "Title IV of ERISA",
+      "type": "OTHER"
+    },
+    {
+      "name": "PBGC",
+      "type": "ORG"
+    }
+  ]
+}

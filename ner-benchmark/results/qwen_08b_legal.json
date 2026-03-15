@@ -1,0 +1,685 @@
+[
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [],
+    "documentId": "c2a3857f-63b9-4fb2-b9ad-6987e8b8218f"
+  },
+  {
+    "preview": true,
+    "extracted": 2,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "Minntech Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Jules L. Fisher",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "6e0a3c32-88d9-46ee-8520-c43f8b6f1018"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [],
+    "documentId": "79e71b03-54d7-4a11-a7f6-27bdc5c0e132"
+  },
+  {
+    "preview": true,
+    "extracted": 2,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "FARGO ELECTRONICS, INC.",
+        "type": "ORG",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "LASALLE BANK NATIONAL ASSOCIATION",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "LASALLE BANK NATIONAL ASSOCIATION in its capacity as agent for the Lender",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "47b561f3-9200-47dc-8255-f1daf0f9b8df"
+  },
+  {
+    "preview": true,
+    "extracted": 2,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "Exelixis, Inc.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Schedule, the Affiliate of Exelixis, Inc.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Comdisco Laboratory and Scientific Group",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Comdisco Laboratory and Scientific Group, a",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "2951829c-dfa8-472c-946f-7769da616f36"
+  },
+  {
+    "preview": true,
+    "extracted": 15,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "SCOTT D. DORFMAN",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      },
+      {
+        "name": "INNOTRAC CORPORATION",
+        "type": "ORG",
+        "confidence": 0.97,
+        "context": "the State of Georgia (\"Employee\"), and INNOTRAC CORPORATION, a Georgia",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Four Hundred Twenty-Five Thousand Dollars",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "no less than Four Hundred Twenty-Five Thousand Dollars ($ 425,000) per annum,",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Salary",
+        "type": "PRODUCT",
+        "confidence": 0.98,
+        "context": "the following salary, expense reimbursement and additional employee benefits",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Bonus",
+        "type": "PRODUCT",
+        "confidence": 0.97,
+        "context": "(b)          Bonus.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Car Allowance",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "(c)          Car Allowance.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Club Dues",
+        "type": "PRODUCT",
+        "confidence": 0.96,
+        "context": "(d)          Club Dues.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Sugar Loaf",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Sugar Loaf and at the 1818 Club, and will reimburse Employee for his annual dues",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1818 Club",
+        "type": "ORG",
+        "confidence": 0.97,
+        "context": "Sugar Loaf and at the 1818 Club, and will reimburse Employee for his annual dues",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Standard Club",
+        "type": "ORG",
+        "confidence": 0.96,
+        "context": "and membership fees for his personal membership at the Standard Club, so that",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Employer",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Employer will provide Employee with",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Employee",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Employer will provide Employee with",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Board of Directors",
+        "type": "ORG",
+        "confidence": 0.97,
+        "context": "by the Board of Directors of Employer on at least an annual basis.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Vacation",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "(e)          Vacation.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "eight (8) weeks vacation time",
+        "type": "DATE",
+        "confidence": 0.96,
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "f7dda02d-6f18-417b-9232-2848d4ec7053"
+  },
+  {
+    "preview": true,
+    "extracted": 1,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "George H. Gilmore, Jr.",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "a93310b9-1ddd-459f-8cfc-7626b6a9cf05"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [],
+    "documentId": "ce876de2-b107-45f2-899c-90455e8e6dd4"
+  },
+  {
+    "preview": true,
+    "extracted": 1,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "Manatron, Inc.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "MANATRON, INC.",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "e78b2f1a-90ec-41fa-ad7f-07321535282f"
+  },
+  {
+    "preview": true,
+    "extracted": 11,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "Salomon Smith Barney Inc.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Hormel Foods Corporation",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "\"Borrower\" means Hormel Foods Corporation, a Delaware corporation.",
+        "chunkIndex": 3
+      },
+      {
+        "name": "July 1",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "December 15, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "January 15, 2001",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 6
+      },
+      {
+        "name": "Level 3",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Level 1   0 % 0.4300 % Level 2   0 % 0.5400 % Level 3   0 % 0.6500 % Level 4",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Level 4",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Level 1   0 % 0.4300 % Level 2   0 % 0.5400 % Level 3   0 % 0.6500 % Level 4",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Level 5",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "0 % 0.7250 % Level 5   0 % 0.9250 %",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Moody's",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "the Rating Date has not occurred, but a rating has been established by Moody's",
+        "chunkIndex": 6
+      },
+      {
+        "name": "S&P",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "or S&P for the short-term, unsecured Debt of the Borrower, the applicable Level",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Helsinki University",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 7
+      }
+    ],
+    "documentId": "fc187f48-cc84-4be1-bd98-8ad8479ada2e"
+  },
+  {
+    "preview": true,
+    "extracted": 13,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "David T. Flanagan",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Effective Time",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Effective Time occurs, unless further extended as hereinafter provided.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "June 14, 1999",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Merger dated as of June 14, 1999, by and among CMP, the Company and EE Merger",
+        "chunkIndex": 1
+      },
+      {
+        "name": "CMP",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Merger dated as of June 14, 1999, by and among CMP, the Company and EE Merger",
+        "chunkIndex": 1
+      },
+      {
+        "name": "EE Merger Corp.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Employee Retirement Income Security Act of 1974",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "defined in section 3(3) of the Employee Retirement Income Security Act of 1974,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Executive",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "(a) The Executive shall be entitled",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 0.96,
+        "context": "made available by the Company now or during the period of the Executive's",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Executive",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "greater than $7,800, the Executive shall have the option to pay the excess",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Central Maine Power Company",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Income Plan for Non-Union Employees of Central Maine Power Company, or any",
+        "chunkIndex": 6
+      },
+      {
+        "name": "Executive",
+        "type": "PERSON",
+        "confidence": 1,
+        "context": "(b)      In the event that the Executive",
+        "chunkIndex": 8
+      },
+      {
+        "name": "Company",
+        "type": "ORG",
+        "confidence": 1,
+        "context": "terminates his employment with the Company voluntarily on or after June 1, 2001,",
+        "chunkIndex": 8
+      },
+      {
+        "name": "June 1, 2001",
+        "type": "DATE",
+        "confidence": 1,
+        "context": "terminates his employment with the Company voluntarily on or after June 1, 2001,",
+        "chunkIndex": 8
+      }
+    ],
+    "documentId": "ad7426b4-2b5d-4317-b3f3-70bcb191c21a"
+  },
+  {
+    "preview": true,
+    "extracted": 4,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "Washington, D.C.",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "Washington, D.C.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "SAKS INCORPORATED",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "SAKS INCORPORATED",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Herberger's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Herberger's and McRae's operating divisions and distribution centers.",
+        "chunkIndex": 7
+      },
+      {
+        "name": "McRae's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Herberger's and McRae's operating divisions and distribution centers.",
+        "chunkIndex": 7
+      }
+    ],
+    "documentId": "897b604c-4141-4bc9-9e99-32f49e502f0e"
+  },
+  {
+    "preview": true,
+    "extracted": 4,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "OLD KENT FINANCIAL CORPORATION",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "OLD KENT FINANCIAL CORPORATION",
+        "chunkIndex": 0
+      },
+      {
+        "name": "EXECUTIVE BENEFIT TRUST",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "EXECUTIVE BENEFIT TRUST",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Old Kent Financial Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "OLD KENT FINANCIAL CORPORATION",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Wachovia Bank, N.A.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "corporation, and Wachovia Bank, N.A.",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "be86abd7-df4e-48ad-8db0-de25dcf49cd6"
+  },
+  {
+    "preview": true,
+    "extracted": 14,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "June 23, 2000",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "SUNRISE MEDICAL, INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > SUNRISE MEDICAL, INC.,",
+        "chunkIndex": 10
+      },
+      {
+        "name": "DYNAVOX SYSTEMS, INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > DYNAVOX SYSTEMS, INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNMED FINANCE INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > SUNMED FINANCE INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNRISE MARIN HOLDINGS INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > SUNRISE MARIN HOLDINGS INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNRISE MEDICAL CCG INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > SUNRISE MEDICAL CCG INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "SUNRISE MEDICAL HHG INC.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > SUNRISE MEDICAL HHG INC.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "BANK OF AMERICA, N.A.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > BANK OF AMERICA, N.A., as Agent",
+        "chunkIndex": 10
+      },
+      {
+        "name": "ABN AMRO BANK NV Los Angeles International Branch",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > ABN AMRO BANK NV Los Angeles International Branch",
+        "chunkIndex": 10
+      },
+      {
+        "name": "UNION BANK OF CALIFORNIA, N.A.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > UNION BANK OF CALIFORNIA, N.A.",
+        "chunkIndex": 10
+      },
+      {
+        "name": "MORGAN GUARANTY TRUST COMPANY OF NEW YORK",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > MORGAN GUARANTY TRUST COMPANY OF NEW YORK",
+        "chunkIndex": 11
+      },
+      {
+        "name": "UNION BANK OF CALIFORNIA, N.A.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > UNION BANK OF CALIFORNIA, N.A.",
+        "chunkIndex": 11
+      },
+      {
+        "name": "DEUTSCHE BANK AG, New York Branch and/or Cayman Islands Branch",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > DEUTSCHE BANK AG, New York Branch and/or Cayman Islands Branch",
+        "chunkIndex": 11
+      },
+      {
+        "name": "PNC BANK, NATIONAL ASSOCIATION",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "> > > > > > PNC BANK, NATIONAL ASSOCIATION",
+        "chunkIndex": 11
+      }
+    ],
+    "documentId": "2dc640d8-b803-469c-91a1-58757b1d8faa"
+  },
+  {
+    "preview": true,
+    "extracted": 12,
+    "backend": "llm",
+    "model": "qwen3.5:0.8b",
+    "entities": [
+      {
+        "name": "Avocent Employment Services Co.",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Avocent Employment Services Co.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "R. Byron Driver",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Cybex Merger",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Reorganization Agreement including, without limitation, the Cybex Merger, the",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Apex Merger",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Apex Merger, and the Merger (as such terms are defined in the Reorganization",
+        "chunkIndex": 3
+      },
+      {
+        "name": "Merger (as such terms are defined in the Reorganization Agreement)",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "chunkIndex": 3
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "shares of Avocent Corporation common stock would be converted into cash,",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "(iv) Cybex's stockholders approve:",
+        "chunkIndex": 5
+      },
+      {
+        "name": "Employer",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "efore December 31, 2004, the Employer and the Employee",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Employee",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "efore December 31, 2004, the Employer and the Employee",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Avocent Corporation",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Directors of Employer and Avocent Corporation stating the reason for",
+        "chunkIndex": 7
+      },
+      {
+        "name": "Cybex",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "under any Cybex or Avocent stock op",
+        "chunkIndex": 10
+      },
+      {
+        "name": "Avocent",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "applicable plan), any benefits under any plans of Employer or Avocent in which",
+        "chunkIndex": 10
+      }
+    ],
+    "documentId": "7bc9f266-ddec-43e1-a0ff-6a8dbb92f376"
+  }
+]

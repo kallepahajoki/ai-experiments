@@ -1,0 +1,855 @@
+[
+  {
+    "preview": true,
+    "extracted": 9,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2025-12-31 0001318605 2025-06-30 0001318605 2026-01-23 0001318605 2025-12-31 0001318605 2024-12-31 0001318605 tsla:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2025-12-31 0001318605 2025-06-30 0001318605 2026-01-23 0001318605 2025-12-31 0001318605 2024-12-31 0001318605 tsla:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-01-23",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2025-12-31 0001318605 2025-06-30 0001318605 2026-01-23 0001318605 2025-12-31 0001318605 2024-12-31 0001318605 tsla:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2025-12-31 0001318605 2025-06-30 0001318605 2026-01-23 0001318605 2025-12-31 0001318605 2024-12-31 0001318605 tsla:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "EnergyGenerationAndStorageSystemsMember 2025-12-31 0001318605 tsla:EnergyGenerationAndStorageSystemsMember 2024-12-31 0001318605 tsla:AutomotiveSalesMember 2025-01-01 2025-12-31 0001318605",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "tsla:AutomotiveSalesMember 2024-01-01 2024-12-31 0001318605 tsla:AutomotiveSalesMember 2023-01-01 2023-12-31 0001318605",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "tsla:AutomotiveSalesMember 2024-01-01 2024-12-31 0001318605 tsla:AutomotiveSalesMember 2023-01-01 2023-12-31 0001318605",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2025-12-31 0001318605 tsla:AutomotiveRegulatoryCreditsMember 2024-01-01 2024-12-31 0001318605 tsla:AutomotiveRegulatoryCreditsMember 2023-01-01 2023-12-31 0001318605",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2024-12-31 0001318605 tsla:ServicesAndOtherMember 2023-01-01 2023-12-31 0001318605 2024-01-01 2024-12-31 0001318605 2023-01-01 2023-12-31 0001318605 2022-12-31",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "9b9d0172-8cdf-440b-946e-05fd1b312652"
+  },
+  {
+    "preview": true,
+    "extracted": 13,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "NotesDue20292.875Member 2025-01-01 2025-12-31 0000078003 pfe:NotesDue20323.250Member 2025-01-01 2025-12-31 0000078003 pfe:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-29",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000078003 2025-06-29 0000078003 2026-02-19 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-02-19",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000078003 2025-06-29 0000078003 2026-02-19 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "01-01 2024-12-31 0000078003 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2023-12-31 0000078003 2024-01-01 2024-12-31 0000078003 2023-01-01 2023-12-31 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2023-12-31 0000078003 2024-01-01 2024-12-31 0000078003 2023-01-01 2023-12-31 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2024-12-31 0000078003 us-gaap:RoyaltyMember 2023-01-01 2023-12-31 0000078003 2025-12-31 0000078003 2024-12-31 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:CommonStockMember 2022-12-31 0000078003 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31 0000078003",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-31 0000078003 us-gaap:TreasuryStockCommonMember 2022-12-31 0000078003 us-gaap:RetainedEarningsMember 2022-12-31 0000078003 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2022-12-31 0000078003 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "us-gaap:AdditionalPaidInCapitalMember 2023-01-01 2023-12-31 0000078003 us-gaap:TreasuryStockCommonMember 2023-01-01 2023-12-31 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31 0000078003",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-31 0000078003 us-gaap:AdditionalPaidInCapitalMember 2023-12-31 0000078003",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:TreasuryStockCommonMember 2023-12-31 0000078003 us-gaap:RetainedEarningsMember 2023-12-31 0000078003 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-31 0000078003",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "9b428ab6-517a-471b-9bb0-275756df5177"
+  },
+  {
+    "preview": true,
+    "extracted": 21,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2014 2015 2016 2017",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2005",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2006",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2007",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2008",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2009",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2012",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2013",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeAssets http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#DerivativeLiabilities http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#ShortTermInvestments http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#OtherAssetsCurrent http://fasb.org/us-gaap/2024#LongTermInvestments http://fasb.org/us-g",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-07-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "msft:FederalAndStateMember 2024-07-01 2025-06-30 0000789019 srt:MinimumMember msft:IssuanceOfLongTermDebtThirteenMember 2024-07-01 2025-06-30 0000789019 msft:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-07-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "ProductivityAndBusinessProcessesMember 2023-07-01 2024-06-30 0000789019 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-06-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "ProductivityAndBusinessProcessesMember 2023-07-01 2024-06-30 0000789019 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "CustomerRelationshipsMember 2025-06-30 0000789019 us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2025-06-30 0000789019 msft:ShareRepurchaseProgramTwentyTwentyOneMember 2023-01-01 2023-03-31 0000789019",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-07-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2024-07-01 2025-06-30 0000789019 us-gaap:OtherContractMember us-gaap:NonoperatingIncomeExpenseMember 2022-07-01 2023-06-30 0000789019 us-gaap:USTreasuryAndGovernmentMember 2025-06-30 0000789019 msft:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-06-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2022-07-01 2023-06-30 0000789019 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-10-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2024-07-01 2025-06-30 0000789019 msft:O2024Q2DividendsMember 2023-10-01 2023-12-31 0000789019 msft:ShareRepurchaseProgramTwentyTwentyOneMember 2021-09-14 0000789019 2023-10-01 2023-12-31 0000789019 msft:IssuanceOfLongTermDebtFiveMember 2025-06-30 0000789019 us-gaap:DebtSecuritiesMember us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2021-09-14",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2024-07-01 2025-06-30 0000789019 msft:O2024Q2DividendsMember 2023-10-01 2023-12-31 0000789019 msft:ShareRepurchaseProgramTwentyTwentyOneMember 2021-09-14 0000789019 2023-10-01 2023-12-31 0000789019 msft:IssuanceOfLongTermDebtFiveMember 2025-06-30 0000789019 us-gaap:DebtSecuritiesMember us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30 0000789019",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "AssetBackedSecuritiesMember 2025-06-30 0000789019 us-gaap:NonoperatingIncomeExpenseMember us-gaap:ForeignExchangeContractMember 2024-07-01 2025-06-30 0000789019 us-gaap:OtherNoncurrentAssetsMember 2025-06-30 0000789019 us-gaap:EmployeeStockMember 2024-06-30 0000789019 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "AssetBackedSecuritiesMember 2025-06-30 0000789019 us-gaap:NonoperatingIncomeExpenseMember us-gaap:ForeignExchangeContractMember 2024-07-01 2025-06-30 0000789019 us-gaap:OtherNoncurrentAssetsMember 2025-06-30 0000789019 us-gaap:EmployeeStockMember 2024-06-30 0000789019 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-10-13",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:AccumulatedGainLossNetCashFlowHedgeParentMember 2024-07-01 2025-06-30 0000789019 msft:ActivisionBlizzardIncMember 2023-10-13 0000789019 us-gaap:AccumulatedGainLossNetCashFlowHedgeParentMember 2024-07-01 2025-06-30 0000789019 us-gaap:ContractualRightsMember 2024-07-01 2025-06-30 0000789019 us-gaap:ContractualRightsMember 2024-06-30 000",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-06-30 000",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:AccumulatedGainLossNetCashFlowHedgeParentMember 2024-07-01 2025-06-30 0000789019 msft:ActivisionBlizzardIncMember 2023-10-13 0000789019 us-gaap:AccumulatedGainLossNetCashFlowHedgeParentMember 2024-07-01 2025-06-30 0000789019 us-gaap:ContractualRightsMember 2024-07-01 2025-06-30 0000789019 us-gaap:ContractualRightsMember 2024-06-30 000",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "37546b9d-ced9-4419-91df-9868d972f137"
+  },
+  {
+    "preview": true,
+    "extracted": 11,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "December 27, 2025 2025",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "three",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "intc-20251227 0000050863 12-27 December 27, 2025 2025 FY false 0.001 0.001 50 50 &#8212; &#8212; 0.001 0.001 10,000 10,000 4,994 4,330 4,994 4,330 http://fasb.org/us-gaap/2025#AccountingStandardsUpdate202308Member three http://fasb.org/us-gaap/2025#CostOfGoodsAndServicesSold http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumul",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-29",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "claim iso4217:CNY 0000050863 2024-12-29 2025-12-27 0000050863 2025-06-27 0000050863 2026-01-16 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-27",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "claim iso4217:CNY 0000050863 2024-12-29 2025-12-27 0000050863 2025-06-27 0000050863 2026-01-16 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-27",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "claim iso4217:CNY 0000050863 2024-12-29 2025-12-27 0000050863 2025-06-27 0000050863 2026-01-16 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-01-16",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "claim iso4217:CNY 0000050863 2024-12-29 2025-12-27 0000050863 2025-06-27 0000050863 2026-01-16 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-09-28",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "0000050863 2025-09-28 2025-12-27 0000050863 2023-12-31 2024-12-28 0000050863 2023-01-01 2023-12-30 0000050863 2025-12-27 0000050863 2024-12-28 0000050863 2023-12-30 0000050863 2022-12-31 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "0000050863 2025-09-28 2025-12-27 0000050863 2023-12-31 2024-12-28 0000050863 2023-01-01 2023-12-30 0000050863 2025-12-27 0000050863 2024-12-28 0000050863 2023-12-30 0000050863 2022-12-31 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-28",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "0000050863 2025-09-28 2025-12-27 0000050863 2023-12-31 2024-12-28 0000050863 2023-01-01 2023-12-30 0000050863 2025-12-27 0000050863 2024-12-28 0000050863 2023-12-30 0000050863 2022-12-31 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "0000050863 2025-09-28 2025-12-27 0000050863 2023-12-31 2024-12-28 0000050863 2023-01-01 2023-12-30 0000050863 2025-12-27 0000050863 2024-12-28 0000050863 2023-12-30 0000050863 2022-12-31 0000050863 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "0000050863 2025-09-28 2025-12-27 0000050863 2023-12-31 2024-12-28 0000050863 2023-01-01 2023-12-30 0000050863 2025-12-27 0000050863 2024-12-28 0000050863 2023-12-30 0000050863 2022-12-31 0000050863 us-gaap",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "d491662f-70f5-44dc-a5e2-a9b1919aad29"
+  },
+  {
+    "preview": true,
+    "extracted": 10,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000886982 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000886982 gs:SeriesDFloatingRatePreferredStockMember 2025-01-01 2025-12-31 0000886982 gs:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000886982 gs:FloatingRateNormalApexMember 2025-01-01 2025-12-31 0000886982 gs",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000886982 2025-06-30 0000886982 2026-02-06 0000886982 2024-01-01 2024-12-31 0000886982 2023-01-01 2023-12-31 0000886982 2025-12-31 0000886982 2024-12-31 0000886982",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000886982 2025-06-30 0000886982 2026-02-06 0000886982 2024-01-01 2024-12-31 0000886982 2023-01-01 2023-12-31 0000886982 2025-12-31 0000886982 2024-12-31 0000886982",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000886982 2025-06-30 0000886982 2026-02-06 0000886982 2024-01-01 2024-12-31 0000886982 2023-01-01 2023-12-31 0000886982 2025-12-31 0000886982 2024-12-31 0000886982",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31 0000886982",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:SecuritiesSoldUnderAgreementsToRepurchaseMember us-gaap:AssetPledgedAsCollateralWithRightMember 2025-12-31 0000886982 us-gaap:SecuritiesSoldUnderAgreementsToRepurchaseMember",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "us-gaap:AssetPledgedAsCollateralWithRightMember 2024-12-31 0000886982 us-gaap:PreferredStockMember 2024-12-31 0000886982 us-gaap:PreferredStockMember",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2022-12-31 0000886982 us-gaap:PreferredStockMember 2025-01-01 2025-12-31 0000886982",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:PreferredStockMember 2024-01-01 2024-12-31 0000886982 us-gaap:PreferredStockMember 2023-01-01 2023-12-31 0000886982 us-gaap:PreferredStockMember 2025-12-31 0000886982 us-gaap:CommonStockMember 2024-12-31 0000886982 us-gaap:Commo",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "901a5b45-fc15-4240-a526-8c6a64e3c970"
+  },
+  {
+    "preview": true,
+    "extracted": 6,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "ko-20251231 0000021344 2025 FY False http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#AssetsOfDisposalGroupIncludingDiscontinuedOperation http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-27",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "A3.750NotesDue2053Member 2025-01-01 2025-12-31 0000021344 2025-06-27 0000021344 2026-02-18 0000021344 ko:TaxYears20072009Member 2015-12-31 0000021344 ko:TaxYears20072009Member 2018-01-01 2018-03-30 0000021344 ko:TaxYears20072",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2015-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "A3.750NotesDue2053Member 2025-01-01 2025-12-31 0000021344 2025-06-27 0000021344 2026-02-18 0000021344 ko:TaxYears20072009Member 2015-12-31 0000021344 ko:TaxYears20072009Member 2018-01-01 2018-03-30 0000021344 ko:TaxYears20072",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2018-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "A3.750NotesDue2053Member 2025-01-01 2025-12-31 0000021344 2025-06-27 0000021344 2026-02-18 0000021344 ko:TaxYears20072009Member 2015-12-31 0000021344 ko:TaxYears20072009Member 2018-01-01 2018-03-30 0000021344 ko:TaxYears20072",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2018-03-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "A3.750NotesDue2053Member 2025-01-01 2025-12-31 0000021344 2025-06-27 0000021344 2026-02-18 0000021344 ko:TaxYears20072009Member 2015-12-31 0000021344 ko:TaxYears20072009Member 2018-01-01 2018-03-30 0000021344 ko:TaxYears20072",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "eac03c93-46e1-4925-bf84-e1cb738222da"
+  },
+  {
+    "preview": true,
+    "extracted": 10,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "cvx-20251231 0000093410 false 2025 FY 361 364 364 http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#AccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#ShortTermBorrowings http://fasb.org/us-gaap/2025#ShortT",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000093410 2025-06-30 0000093410 2026-02-06 0000093410 cvx",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000093410 2025-06-30 0000093410 2026-02-06 0000093410 cvx",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2026-02-06",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-01-01 2025-12-31 0000093410 2025-06-30 0000093410 2026-02-06 0000093410 cvx",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-10-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "EimearP.BonnerMember 2025-10-01 2025-12-31 0000093410 cvx:R.HewittPateMember 2025-10-01 2025-12-31 0000093410",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-12-31 0000093410 2025-10-01 2025-12-31 0000093410 cvx",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "MichaelKWirthMember 2025-12-31 0000093410 cvx:EimearP.BonnerMember 2025-12-31 0000093410 cvx:R.HewittPateMember 2025-12-31 0000093410 2024-01-01 2024-12-31 0000093410 2023-01-01 2023-12-31 0000093410 2025-12-31 0000093410 2024-12-31 0000093410 2023-12-31 0000093410 2022-12-31 0000093410",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "MichaelKWirthMember 2025-12-31 0000093410 cvx:EimearP.BonnerMember 2025-12-31 0000093410 cvx:R.HewittPateMember 2025-12-31 0000093410 2024-01-01 2024-12-31 0000093410 2023-01-01 2023-12-31 0000093410 2025-12-31 0000093410 2024-12-31 0000093410 2023-12-31 0000093410 2022-12-31 0000093410",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "MichaelKWirthMember 2025-12-31 0000093410 cvx:EimearP.BonnerMember 2025-12-31 0000093410 cvx:R.HewittPateMember 2025-12-31 0000093410 2024-01-01 2024-12-31 0000093410 2023-01-01 2023-12-31 0000093410 2025-12-31 0000093410 2024-12-31 0000093410 2023-12-31 0000093410 2022-12-31 0000093410",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "MichaelKWirthMember 2025-12-31 0000093410 cvx:EimearP.BonnerMember 2025-12-31 0000093410 cvx:R.HewittPateMember 2025-12-31 0000093410 2024-01-01 2024-12-31 0000093410 2023-01-01 2023-12-31 0000093410 2025-12-31 0000093410 2024-12-31 0000093410 2023-12-31 0000093410 2022-12-31 0000093410",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "199ba1ac-8ca1-484f-b2cd-3357b47045f4"
+  },
+  {
+    "preview": true,
+    "extracted": 10,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2024-09-29",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "Customer aapl:Vendor aapl:Subsidiary 0000320193 2024-09-29 2025-09-27 0000320193 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-09-27",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "Customer aapl:Vendor aapl:Subsidiary 0000320193 2024-09-29 2025-09-27 0000320193 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-03-28",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "aapl:A1.625NotesDue2026Member 2024-09-29 2025-09-27 0000320193 aapl:A2.000NotesDue2027Member 2024-09-29 2025-09-27 0000320193 aapl:A1.375NotesDue2029Member 2024-09-29 2025-09-27 0000320193 aapl:A3.050NotesDue2029Member 2024-09-29 2025-09-27 0000320193 aapl:A0.500Notesdue2031Member 2024-09-29 2025-09-27 0000320193 aapl:A3.600NotesDue2042Member 2024-09-29 2025-09-27 0000320193 2025-03-28 0000320193 2025-10-17 0000320193 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-10-17",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "aapl:A1.625NotesDue2026Member 2024-09-29 2025-09-27 0000320193 aapl:A2.000NotesDue2027Member 2024-09-29 2025-09-27 0000320193 aapl:A1.375NotesDue2029Member 2024-09-29 2025-09-27 0000320193 aapl:A3.050NotesDue2029Member 2024-09-29 2025-09-27 0000320193 aapl:A0.500Notesdue2031Member 2024-09-29 2025-09-27 0000320193 aapl:A3.600NotesDue2042Member 2024-09-29 2025-09-27 0000320193 2025-03-28 0000320193 2025-10-17 0000320193 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-09-28",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-01 2024-09-28 0000320193 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-09-25",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "ProductMember 2022-09-25 2023-09-30 0000320193",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-09-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "ProductMember 2022-09-25 2023-09-30 0000320193",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-10-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:ServiceMember 2023-10-01 2024-09-28 0000320193",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-09-24",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:ServiceMember 2022-09-25 2023-09-30 0000320193 2023-10-01 2024-09-28 0000320193 2022-09-25 2023-09-30 0000320193 2025-09-27 0000320193 2024-09-28 0000320193 2023-09-30 0000320193 2022-09-24 0000320193",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us-gaap",
+        "type": "PERSON",
+        "confidence": 0.8,
+        "context": "us-gaap:RetainedEarningsMember 2022-09-25 2023-09-30 0000320193 us-gaap:RetainedEarningsMember 2025-09-27 0000320193",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "4c08eea7-5a5c-4273-a4c7-221b367310e8"
+  },
+  {
+    "preview": true,
+    "extracted": 11,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "complaint 0001018724 2025-01-01 2025-12-31 0001018724 2025-06-30 0001018724 2026-01-28 0001018724 2024-01-01 2024-12-31 0001018724 2022-12-31 0001018724 2023-12-31 0001018724 2024-12-31 0001018724 2023-01-01 2023-12-31 0001018724 2025-12-31 0001018724 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-06-30",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "complaint 0001018724 2025-01-01 2025-12-31 0001018724 2025-06-30 0001018724 2026-01-28 0001018724 2024-01-01 2024-12-31 0001018724 2022-12-31 0001018724 2023-12-31 0001018724 2024-12-31 0001018724 2023-01-01 2023-12-31 0001018724 2025-12-31 0001018724 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "complaint 0001018724 2025-01-01 2025-12-31 0001018724 2025-06-30 0001018724 2026-01-28 0001018724 2024-01-01 2024-12-31 0001018724 2022-12-31 0001018724 2023-12-31 0001018724 2024-12-31 0001018724 2023-01-01 2023-12-31 0001018724 2025-12-31 0001018724 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "complaint 0001018724 2025-01-01 2025-12-31 0001018724 2025-06-30 0001018724 2026-01-28 0001018724 2024-01-01 2024-12-31 0001018724 2022-12-31 0001018724 2023-12-31 0001018724 2024-12-31 0001018724 2023-01-01 2023-12-31 0001018724 2025-12-31 0001018724 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "complaint 0001018724 2025-01-01 2025-12-31 0001018724 2025-06-30 0001018724 2026-01-28 0001018724 2024-01-01 2024-12-31 0001018724 2022-12-31 0001018724 2023-12-31 0001018724 2024-12-31 0001018724 2023-01-01 2023-12-31 0001018724 2025-12-31 0001018724 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "us",
+        "type": "LOCATION",
+        "confidence": 0.8,
+        "context": "-31 0001018724 us-gaap:TreasuryStockCommonMember 2022-12-31 0001018724 us-gaap:AdditionalPaidInCapitalMember 2022-12-31 0001018724 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:CommonStockMember 2023-12-31 0001018724 us-gaap:TreasuryStockCommonMember 2023-12-31 0001018724 us-gaap",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-31 0001018724 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-31 0001018724 us-gaap:RetainedEarningsMember 2023-12-31 0001018724 us-gaap:RetainedEarningsMember 2024-01-01 2024-12-31 0001018724 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-01-01 2024-12-31 0001018724 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "-31 0001018724 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-31 0001018724 us-gaap:RetainedEarningsMember 2023-12-31 0001018724 us-gaap:RetainedEarningsMember 2024-01-01 2024-12-31 0001018724 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-01-01 2024-12-31 0001018724 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:RetainedEarningsMember 2025-01-01 2025-12-31 0001018724 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-01 2025-12-31 0001018724 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31 0001018724",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "2025-12-31 0001018724 us-gaap:TreasuryStockCommonMember 2025-12-31 0001018724 us-gaap:AdditionalPaidInCapitalMember 2025-12-31 0001018724 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-12-31 0001018724 us-gaap:RetainedEarningsMember 2025-12-31 0001018724 us-gaap:ServiceLifeMember us-ga",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "851ce8da-a9e4-474b-877b-af0a0876d238"
+  },
+  {
+    "preview": true,
+    "extracted": 8,
+    "backend": "spacy",
+    "model": "en_core_web_trf",
+    "entities": [
+      {
+        "name": "2025-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": ":CapitalClassCMember 2025-01-01 2025-12-31 0001652044",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "goog:A3.375SeniorNotesDue2037Member 2025-01-01 2025-12-31 0001652044 goog:A3.500SeniorNotesDue2038Member 2025-01-01 2025-12-31 0001652044 goog:A4.000SeniorNotesDue2044Member 2025-01-01 2025-12-31 0001652044 goog:A3.875SeniorNotesDue2045Member 2025-01-01 2025-12-31 0001652044 goog:A4.000SeniorNotesDue2054Member 2025-01-01 2025-12-31 0001652044",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "CapitalClassCMember 2025-12-31 0001652044 2023-01-01 2023-12-31 0001652044 2024-01-01 2024-12-31 0001652044",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-01-01",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "CapitalClassCMember 2025-12-31 0001652044 2023-01-01 2023-12-31 0001652044 2024-01-01 2024-12-31 0001652044",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2022-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2022-12-31 0001652044 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2022-12-31 0001652044 us-gaap:",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2023-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2023-12-31 0001652044 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-31 0001652044 us-gaap:RetainedEarningsMember 2023-12-31 0001652044 2023-12-31 0001652044 us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2024-01-01 2024-12-31 0001652044",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2024-12-31",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "RetainedEarningsMember 2024-01-01 2024-12-31 0001652044 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-01-01 2024-12-31 0001652044 us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2024-12-31 0001652044 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-12-31 0001652044",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2025-12-31 000",
+        "type": "DATE",
+        "confidence": 0.8,
+        "context": "us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2025-01-01 2025-12-31 0001652044 us-gaap:RetainedEarningsMember 2025-01-01 2025-12-31 0001652044 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-01 2025-12-31 0001652044 us-gaap:CommonStockIncludingAdditionalPaidInCapitalMember 2025-12-31 0001652044 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-12-31 000",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "e3d7d51c-99b9-42ee-9e8b-fc31d86d9547"
+  }
+]

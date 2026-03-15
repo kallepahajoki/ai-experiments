@@ -1,0 +1,582 @@
+{
+  "document_id": "9fd4175c-c27d-4351-a614-58bc9ec9ab19",
+  "document_name": "Ada_Lovelace.txt",
+  "dataset": "wikipedia",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 6,
+  "chars": 8810,
+  "entities": [
+    {
+      "name": "Augusta Ada King, Countess of Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "10 December 1815",
+      "type": "DATE"
+    },
+    {
+      "name": "27 November 1852",
+      "type": "DATE"
+    },
+    {
+      "name": "Ada Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "English",
+      "type": "OTHER"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "analytical engine",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lord Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Anne Isabella Milbanke",
+      "type": "PERSON"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "William King",
+      "type": "PERSON"
+    },
+    {
+      "name": "1835",
+      "type": "DATE"
+    },
+    {
+      "name": "King",
+      "type": "PERSON"
+    },
+    {
+      "name": "Baron",
+      "type": "OTHER"
+    },
+    {
+      "name": "Viscount Ockham",
+      "type": "OTHER"
+    },
+    {
+      "name": "1st Earl of Lovelace",
+      "type": "OTHER"
+    },
+    {
+      "name": "1838",
+      "type": "DATE"
+    },
+    {
+      "name": "Lovelace",
+      "type": "OTHER"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "Baron Lovelaces",
+      "type": "OTHER"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "Countess of Lovelace",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Andrew Crosse",
+      "type": "PERSON"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "David Brewster",
+      "type": "PERSON"
+    },
+    {
+      "name": "Charles Wheatstone",
+      "type": "PERSON"
+    },
+    {
+      "name": "Michael Faraday",
+      "type": "PERSON"
+    },
+    {
+      "name": "Charles Dickens",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "poetical science",
+      "type": "OTHER"
+    },
+    {
+      "name": "Analyst (& Metaphysician)",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "British",
+      "type": "OTHER"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "analytical engine",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "5 June 1833",
+      "type": "DATE"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "Saturday night soir\u00e9es",
+      "type": "EVENT"
+    },
+    {
+      "name": "Mary Somerville",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "5 June 1833",
+      "type": "DATE"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "Saturday night soir\u00e9es",
+      "type": "EVENT"
+    },
+    {
+      "name": "Mary Somerville",
+      "type": "PERSON"
+    },
+    {
+      "name": "Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "Analytical Engine",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Turing-complete",
+      "type": "OTHER"
+    },
+    {
+      "name": "Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "father of computers",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Luigi Menabrea",
+      "type": "PERSON"
+    },
+    {
+      "name": "Analytical Engine",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Bernoulli numbers",
+      "type": "OTHER"
+    },
+    {
+      "name": "Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "poetical science",
+      "type": "OTHER"
+    },
+    {
+      "name": "analytical engine",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lord Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Augusta Leigh",
+      "type": "PERSON"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "16 January 1816",
+      "type": "DATE"
+    },
+    {
+      "name": "Lord Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Kirkby Mallory",
+      "type": "LOCATION"
+    },
+    {
+      "name": "English",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lord Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "21 April",
+      "type": "DATE"
+    },
+    {
+      "name": "Lord Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "England",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Lady Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Victorian society",
+      "type": "EVENT"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "April 1824",
+      "type": "DATE"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "20th birthday",
+      "type": "DATE"
+    },
+    {
+      "name": "April 1824",
+      "type": "DATE"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "20th birthday",
+      "type": "DATE"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Judith, Hon. Lady Milbanke",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Milbanke",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Milbanke",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Furies",
+      "type": "OTHER"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "June 1829",
+      "type": "DATE"
+    },
+    {
+      "name": "measles",
+      "type": "OTHER"
+    },
+    {
+      "name": "1831",
+      "type": "DATE"
+    },
+    {
+      "name": "1831",
+      "type": "DATE"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lady Fairy",
+      "type": "OTHER"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "Ada Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "February 1828",
+      "type": "DATE"
+    },
+    {
+      "name": "Flyology",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Ada Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "early 1833",
+      "type": "DATE"
+    },
+    {
+      "name": "Lady Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Allegra",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lord Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Claire Clairmont",
+      "type": "PERSON"
+    },
+    {
+      "name": "Allegra",
+      "type": "PERSON"
+    },
+    {
+      "name": "1822",
+      "type": "DATE"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Elizabeth Medora Leigh",
+      "type": "PERSON"
+    },
+    {
+      "name": "Byron",
+      "type": "PERSON"
+    },
+    {
+      "name": "Augusta Leigh",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "court",
+      "type": "ORG"
+    },
+    {
+      "name": "Elizabeth Medora Leigh",
+      "type": "PERSON"
+    },
+    {
+      "name": "Augusta Leigh",
+      "type": "PERSON"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "court",
+      "type": "ORG"
+    },
+    {
+      "name": "Lovelace",
+      "type": "PERSON"
+    },
+    {
+      "name": "Mary Somerville",
+      "type": "PERSON"
+    },
+    {
+      "name": "Charles Babbage",
+      "type": "PERSON"
+    },
+    {
+      "name": "1833",
+      "type": "DATE"
+    },
+    {
+      "name": "Somerville",
+      "type": "PERSON"
+    },
+    {
+      "name": "Andrew Crosse",
+      "type": "PERSON"
+    },
+    {
+      "name": "Sir David Brewster",
+      "type": "PERSON"
+    },
+    {
+      "name": "Charles Wheatstone",
+      "type": "PERSON"
+    },
+    {
+      "name": "Michael Faraday",
+      "type": "PERSON"
+    },
+    {
+      "name": "Charles Dickens",
+      "type": "PERSON"
+    },
+    {
+      "name": "Court",
+      "type": "ORG"
+    },
+    {
+      "name": "1834",
+      "type": "DATE"
+    },
+    {
+      "name": "Ada",
+      "type": "PERSON"
+    },
+    {
+      "name": "Court",
+      "type": "ORG"
+    },
+    {
+      "name": "John Hobhouse",
+      "type": "PERSON"
+    },
+    {
+      "name": "Byron",
+      "type": "PERSON"
+    }
+  ]
+}

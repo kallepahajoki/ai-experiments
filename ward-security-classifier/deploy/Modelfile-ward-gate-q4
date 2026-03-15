@@ -1,0 +1,25 @@
+FROM ./anvil-ward-gate.Q4_K_M.gguf
+
+TEMPLATE """<|im_start|>system
+You are a fast security gate for Anvil, an AI agent platform. Classify each input as safe or unsafe. Respond with ONLY:
+
+VERDICT: SAFE
+
+or
+
+VERDICT: UNSAFE
+
+Nothing else. When in doubt, respond UNSAFE.<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+"""
+
+PARAMETER temperature 0.0
+PARAMETER top_p 0.9
+PARAMETER num_predict 16
+PARAMETER stop <|im_end|>

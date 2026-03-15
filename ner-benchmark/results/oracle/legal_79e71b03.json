@@ -1,0 +1,194 @@
+{
+  "document_id": "79e71b03-54d7-4a11-a7f6-27bdc5c0e132",
+  "document_name": "contract_012.txt",
+  "dataset": "legal",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 12,
+  "chars": 16651,
+  "entities": [
+    {
+      "name": "EXHIBIT 10.2",
+      "type": "OTHER"
+    },
+    {
+      "name": "AMENDED AND RESTATED REGISTRATION RIGHTS AGREEMENT",
+      "type": "OTHER"
+    },
+    {
+      "name": "November 9, 2000",
+      "type": "DATE"
+    },
+    {
+      "name": "DAOU Systems, Inc.",
+      "type": "ORG"
+    },
+    {
+      "name": "Delaware",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Company",
+      "type": "ORG"
+    },
+    {
+      "name": "Schedule 1",
+      "type": "OTHER"
+    },
+    {
+      "name": "Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Series A Stock Purchase Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "July 26, 1999",
+      "type": "DATE"
+    },
+    {
+      "name": "Series A Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Investment Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Registration Rights Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Common Stock",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Series A Preferred Stock",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Warrants",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "ARTICLE I",
+      "type": "OTHER"
+    },
+    {
+      "name": "Securities Act of 1933",
+      "type": "OTHER"
+    },
+    {
+      "name": "Act",
+      "type": "OTHER"
+    },
+    {
+      "name": "Registrable Securities",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "Form S-3",
+      "type": "OTHER"
+    },
+    {
+      "name": "Securities and Exchange Commission",
+      "type": "ORG"
+    },
+    {
+      "name": "SEC",
+      "type": "ORG"
+    },
+    {
+      "name": "45 days",
+      "type": "DATE"
+    },
+    {
+      "name": "Rule 415",
+      "type": "OTHER"
+    },
+    {
+      "name": "Securities Act",
+      "type": "OTHER"
+    },
+    {
+      "name": "Shelf Registration Statement",
+      "type": "OTHER"
+    },
+    {
+      "name": "90-day",
+      "type": "DATE"
+    },
+    {
+      "name": "SEC Rules",
+      "type": "OTHER"
+    },
+    {
+      "name": "Rule 144",
+      "type": "OTHER"
+    },
+    {
+      "name": "SEC Rule 144",
+      "type": "OTHER"
+    },
+    {
+      "name": "Effective Period",
+      "type": "DATE"
+    },
+    {
+      "name": "Regulation S-X",
+      "type": "OTHER"
+    },
+    {
+      "name": "Current Report on Form 8-K",
+      "type": "OTHER"
+    },
+    {
+      "name": "90 days",
+      "type": "DATE"
+    },
+    {
+      "name": "12-month",
+      "type": "DATE"
+    },
+    {
+      "name": "Section 1.2",
+      "type": "OTHER"
+    },
+    {
+      "name": "30 consecutive days",
+      "type": "DATE"
+    },
+    {
+      "name": "20 days",
+      "type": "DATE"
+    },
+    {
+      "name": "Section 2.5",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 1.7",
+      "type": "OTHER"
+    },
+    {
+      "name": "Section 1.3",
+      "type": "OTHER"
+    },
+    {
+      "name": "Blue Sky laws",
+      "type": "OTHER"
+    },
+    {
+      "name": "Securities Exchange Act of 1934",
+      "type": "OTHER"
+    },
+    {
+      "name": "Exchange Act",
+      "type": "OTHER"
+    },
+    {
+      "name": "Subsection 1.8(a)",
+      "type": "OTHER"
+    }
+  ]
+}

@@ -1,0 +1,1111 @@
+{
+  "conll_gt": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 0,
+    "type_total": 0,
+    "total_oracle": 0,
+    "total_model": 0,
+    "total_tp": 0,
+    "per_dataset": {},
+    "false_positives": [],
+    "false_negatives": [],
+    "precision": 0,
+    "recall": 0,
+    "f1": 0,
+    "type_accuracy": 0
+  },
+  "qwen_08b": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 239,
+    "type_total": 306,
+    "total_oracle": 1140,
+    "total_model": 394,
+    "total_tp": 241,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.3987730061349693,
+        "recall": 0.28634361233480177,
+        "f1": 0.33333333333333337,
+        "type_accuracy": 0.5803571428571429,
+        "tp": 65,
+        "fp": 98,
+        "fn": 162
+      },
+      "legal": {
+        "precision": 0.5652173913043478,
+        "recall": 0.06806282722513089,
+        "f1": 0.12149532710280375,
+        "type_accuracy": 0.8666666666666667,
+        "tp": 13,
+        "fp": 10,
+        "fn": 178
+      },
+      "sec": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "type_accuracy": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 188
+      },
+      "wikipedia": {
+        "precision": 0.7836538461538461,
+        "recall": 0.3052434456928839,
+        "f1": 0.4393530997304582,
+        "type_accuracy": 0.8994413407821229,
+        "tp": 163,
+        "fp": 45,
+        "fn": 371
+      }
+    },
+    "false_positives": [
+      {
+        "name": "chapter seven",
+        "type": "EVENT",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "brazilian plastic surgery society (sbcp)",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "sidek",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "helsinki university",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "judge michael grove",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "main street 5",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "matti virtanen",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "papua new guinea",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "united nations headquarters",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "arizona",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "chapter seven",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "last week",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "multinational force",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "ngos",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "thursday",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "tomorrow",
+        "type": "DATE",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.6116751269035533,
+    "recall": 0.21140350877192982,
+    "f1": 0.31421121251629724,
+    "type_accuracy": 0.7810457516339869
+  },
+  "qwen_2b": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 316,
+    "type_total": 380,
+    "total_oracle": 1140,
+    "total_model": 494,
+    "total_tp": 323,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.5636363636363636,
+        "recall": 0.40969162995594716,
+        "f1": 0.4744897959183674,
+        "type_accuracy": 0.7265625,
+        "tp": 93,
+        "fp": 72,
+        "fn": 134
+      },
+      "legal": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "type_accuracy": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 191
+      },
+      "sec": {
+        "precision": 0.15789473684210525,
+        "recall": 0.031914893617021274,
+        "f1": 0.053097345132743355,
+        "type_accuracy": 0.8571428571428571,
+        "tp": 6,
+        "fp": 32,
+        "fn": 182
+      },
+      "wikipedia": {
+        "precision": 0.7697594501718213,
+        "recall": 0.41947565543071164,
+        "f1": 0.543030303030303,
+        "type_accuracy": 0.8857142857142857,
+        "tp": 224,
+        "fp": 67,
+        "fn": 310
+      }
+    },
+    "false_positives": [
+      {
+        "name": "canadian defence minister doug young",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zaire and rwanda",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "brazilian plastic surgery society ( sbcp )",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "brazilian plastic surgery society (sbcp)",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "plastic surgery conference",
+        "type": "EVENT",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "sidek",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "australian mp john langmore",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "bob halverson",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "judge michael grove",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "united nations headquarters",
+        "type": "ORG",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "chapter seven",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "doug young",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "last week",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "thursday",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "tomorrow",
+        "type": "DATE",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.6538461538461539,
+    "recall": 0.2833333333333333,
+    "f1": 0.39534883720930236,
+    "type_accuracy": 0.8315789473684211
+  },
+  "qwen_4b": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 650,
+    "type_total": 733,
+    "total_oracle": 1140,
+    "total_model": 962,
+    "total_tp": 654,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.6553191489361702,
+        "recall": 0.6784140969162996,
+        "f1": 0.6666666666666667,
+        "type_accuracy": 0.8850574712643678,
+        "tp": 154,
+        "fp": 81,
+        "fn": 73
+      },
+      "legal": {
+        "precision": 0.4146341463414634,
+        "recall": 0.44502617801047123,
+        "f1": 0.42929292929292934,
+        "type_accuracy": 0.7636363636363637,
+        "tp": 85,
+        "fp": 120,
+        "fn": 106
+      },
+      "sec": {
+        "precision": 0.6597938144329897,
+        "recall": 0.3404255319148936,
+        "f1": 0.44912280701754387,
+        "type_accuracy": 0.8873239436619719,
+        "tp": 64,
+        "fp": 33,
+        "fn": 124
+      },
+      "wikipedia": {
+        "precision": 0.8258823529411765,
+        "recall": 0.6573033707865169,
+        "f1": 0.7320125130344108,
+        "type_accuracy": 0.9232804232804233,
+        "tp": 351,
+        "fp": 74,
+        "fn": 183
+      }
+    },
+    "false_positives": [
+      {
+        "name": "canadian",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "chapter seven",
+        "type": "EVENT",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "brazilian plastic surgery society ( sbcp )",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "mexican adrs",
+        "type": "PRODUCT",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "australian mp john langmore",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "australian parliamentarian john langmore",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "employment and industrial relations minister",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "chapter seven",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "eastern zaire",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "last week",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "laurent kabila",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "multinational force",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "ngos",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.6798336798336798,
+    "recall": 0.5736842105263158,
+    "f1": 0.6222645099904853,
+    "type_accuracy": 0.8867667121418826
+  },
+  "qwen_9b": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 613,
+    "type_total": 709,
+    "total_oracle": 1140,
+    "total_model": 877,
+    "total_tp": 616,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.668141592920354,
+        "recall": 0.6651982378854625,
+        "f1": 0.6666666666666666,
+        "type_accuracy": 0.8620689655172413,
+        "tp": 151,
+        "fp": 75,
+        "fn": 76
+      },
+      "legal": {
+        "precision": 0.6036036036036037,
+        "recall": 0.3507853403141361,
+        "f1": 0.4437086092715232,
+        "type_accuracy": 0.7674418604651163,
+        "tp": 67,
+        "fp": 44,
+        "fn": 124
+      },
+      "sec": {
+        "precision": 0.35714285714285715,
+        "recall": 0.18617021276595744,
+        "f1": 0.24475524475524477,
+        "type_accuracy": 0.7608695652173914,
+        "tp": 35,
+        "fp": 63,
+        "fn": 153
+      },
+      "wikipedia": {
+        "precision": 0.8212669683257918,
+        "recall": 0.6797752808988764,
+        "f1": 0.7438524590163934,
+        "type_accuracy": 0.8982630272952854,
+        "tp": 363,
+        "fp": 79,
+        "fn": 171
+      }
+    },
+    "false_positives": [
+      {
+        "name": "canadian defence minister",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "chapter seven",
+        "type": "EVENT",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "mexican adrs",
+        "type": "PRODUCT",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "sidek",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "judge michael grove",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "national planning office",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "new zealand prime minister jim bolger",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "nz",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "u.n.",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "united nations headquarters",
+        "type": "ORG",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "chapter seven",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "eastern zaire",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "last week",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "laurent kabila",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "multinational force",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "ngos",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.7023945267958951,
+    "recall": 0.5403508771929825,
+    "f1": 0.6108081308874566,
+    "type_accuracy": 0.8645980253878702
+  },
+  "spacy_lg": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 501,
+    "type_total": 609,
+    "total_oracle": 1140,
+    "total_model": 1381,
+    "total_tp": 508,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.3834808259587021,
+        "recall": 0.5726872246696035,
+        "f1": 0.45936395759717313,
+        "type_accuracy": 0.7604790419161677,
+        "tp": 130,
+        "fp": 209,
+        "fn": 97
+      },
+      "legal": {
+        "precision": 0.14775725593667546,
+        "recall": 0.2931937172774869,
+        "f1": 0.19649122807017547,
+        "type_accuracy": 0.8088235294117647,
+        "tp": 56,
+        "fp": 323,
+        "fn": 135
+      },
+      "sec": {
+        "precision": 0.3013698630136986,
+        "recall": 0.11702127659574468,
+        "f1": 0.1685823754789272,
+        "type_accuracy": 0.8461538461538461,
+        "tp": 22,
+        "fp": 51,
+        "fn": 166
+      },
+      "wikipedia": {
+        "precision": 0.5084745762711864,
+        "recall": 0.5617977528089888,
+        "f1": 0.5338078291814947,
+        "type_accuracy": 0.853448275862069,
+        "tp": 300,
+        "fp": 290,
+        "fn": 234
+      }
+    },
+    "false_positives": [
+      {
+        "name": "canadian",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "second",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "tens of thousands",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "the security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "1 cent",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "1.40 pesos",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "107",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "eastern zaire",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "multinational force",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "ngos",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean army",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean government",
+        "type": "ORG",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.36784938450398263,
+    "recall": 0.4456140350877193,
+    "f1": 0.4030146767155891,
+    "type_accuracy": 0.8226600985221675
+  },
+  "spacy_sm": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 455,
+    "type_total": 579,
+    "total_oracle": 1140,
+    "total_model": 1443,
+    "total_tp": 464,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.3664383561643836,
+        "recall": 0.4713656387665198,
+        "f1": 0.4123314065510597,
+        "type_accuracy": 0.7777777777777778,
+        "tp": 107,
+        "fp": 185,
+        "fn": 120
+      },
+      "legal": {
+        "precision": 0.12253829321663019,
+        "recall": 0.2931937172774869,
+        "f1": 0.17283950617283952,
+        "type_accuracy": 0.7051282051282052,
+        "tp": 56,
+        "fp": 401,
+        "fn": 135
+      },
+      "sec": {
+        "precision": 0.1523809523809524,
+        "recall": 0.0851063829787234,
+        "f1": 0.10921501706484642,
+        "type_accuracy": 0.8421052631578947,
+        "tp": 16,
+        "fp": 89,
+        "fn": 172
+      },
+      "wikipedia": {
+        "precision": 0.4838709677419355,
+        "recall": 0.5337078651685393,
+        "f1": 0.5075690115761353,
+        "type_accuracy": 0.8040345821325648,
+        "tp": 285,
+        "fp": 304,
+        "fn": 249
+      }
+    },
+    "false_positives": [
+      {
+        "name": "baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "canadian",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "kinshasa",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "second",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "tens of thousands",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "the security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "1 cent",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "1.40",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "eastern zaire",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "multinational force",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "ngos",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "young",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean army",
+        "type": "ORG",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.32155232155232155,
+    "recall": 0.4070175438596491,
+    "f1": 0.3592721641502129,
+    "type_accuracy": 0.7858376511226253
+  },
+  "spacy_trf": {
+    "precision_sum": 0,
+    "recall_sum": 0,
+    "f1_sum": 0,
+    "type_correct": 553,
+    "type_total": 620,
+    "total_oracle": 1140,
+    "total_model": 1196,
+    "total_tp": 558,
+    "per_dataset": {
+      "conll2003": {
+        "precision": 0.5019762845849802,
+        "recall": 0.5594713656387665,
+        "f1": 0.5291666666666668,
+        "type_accuracy": 0.7485029940119761,
+        "tp": 127,
+        "fp": 126,
+        "fn": 100
+      },
+      "legal": {
+        "precision": 0.18100890207715134,
+        "recall": 0.3193717277486911,
+        "f1": 0.23106060606060608,
+        "type_accuracy": 0.8823529411764706,
+        "tp": 61,
+        "fp": 276,
+        "fn": 130
+      },
+      "sec": {
+        "precision": 0.7948717948717948,
+        "recall": 0.16489361702127658,
+        "f1": 0.27312775330396477,
+        "type_accuracy": 0.9393939393939394,
+        "tp": 31,
+        "fp": 8,
+        "fn": 157
+      },
+      "wikipedia": {
+        "precision": 0.5978835978835979,
+        "recall": 0.6348314606741573,
+        "f1": 0.6158038147138964,
+        "type_accuracy": 0.9573863636363636,
+        "tp": 339,
+        "fp": 228,
+        "fn": 195
+      }
+    },
+    "false_positives": [
+      {
+        "name": "baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "canadian",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "kinshasa",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "second",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "tens of thousands",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "the security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "$ 25.875",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "$ 31.125",
+        "type": "OTHER",
+        "dataset": "conll2003"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "canadian",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "eastern zaire",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "general baril",
+        "type": "PERSON",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "multinational force",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "ngos",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "non-governmental organisations",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "rwandan",
+        "type": "LOCATION",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "security council",
+        "type": "ORG",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "tomorrow",
+        "type": "DATE",
+        "dataset": "conll2003"
+      },
+      {
+        "name": "zairean army",
+        "type": "ORG",
+        "dataset": "conll2003"
+      }
+    ],
+    "precision": 0.4665551839464883,
+    "recall": 0.48947368421052634,
+    "f1": 0.4777397260273973,
+    "type_accuracy": 0.8919354838709678
+  }
+}

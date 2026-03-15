@@ -1,0 +1,54 @@
+# Qwen 3.5 config for RTX 4090 (24GB VRAM)
+#
+# Qwen 3.5 uses a hybrid architecture (linear attention + full attention)
+# where bitsandbytes 4-bit quantization doesn't work on the SSM layers.
+# The 9B model fits in bf16 (~17 GB) with LoRA on 24GB VRAM.
+# The 27B model (52 GB bf16) does NOT fit on 24GB.
+#
+# Memory budget (9B, bf16):
+#   Base model (bf16):      ~17 GB
+#   LoRA adapters:          ~0.3 GB
+#   Optimizer states:       ~0.6 GB (paged_adamw_8bit)
+#   Activations:            ~3 GB (with gradient checkpointing, batch_size=1)
+#   Overhead:               ~1.5 GB
+#   Total:                  ~22.4 GB / 24 GB
+
+model:
+  name: "Qwen/Qwen3.5-9B"
+  max_seq_length: 4096          # Enough for our examples (~2-3K tokens each)
+  load_in_16bit: true           # bf16 (no 4-bit - hybrid arch not supported by bnb)
+
+lora:
+  r: 16                         # LoRA rank - 16 is good for narrow tasks
+  alpha: 32                     # alpha = 2*r is a common starting point
+  dropout: 0.05                 # Light dropout for small dataset
+  target_modules:               # Target attention + MLP for Qwen architecture
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  epochs: 3                     # 3 epochs over 46 examples = 138 steps
+  batch_size: 1                 # Max that fits in 24GB with this model
+  gradient_accumulation_steps: 4 # Effective batch size = 4
+  learning_rate: 2.0e-4         # Standard LoRA LR
+  weight_decay: 0.01
+  warmup_ratio: 0.1             # ~14 warmup steps
+  lr_scheduler: "cosine"
+  max_grad_norm: 0.3
+  optimizer: "paged_adamw_8bit" # Paged optimizer avoids OOM spikes
+  gradient_checkpointing: true  # Essential for 24GB
+  bf16: true
+
+  # Logging & saving
+  logging_steps: 5
+  eval_steps: 20
+  save_steps: 20
+  save_total_limit: 3
+  report_to: "none"             # Set to "wandb" if you want W&B tracking
+
+output_dir: "output"

@@ -1,0 +1,126 @@
+{
+  "document_id": "ad7426b4-2b5d-4317-b3f3-70bcb191c21a",
+  "document_name": "contract_004.txt",
+  "dataset": "legal",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 13,
+  "chars": 16672,
+  "entities": [
+    {
+      "name": "Exhibit 10-41",
+      "type": "OTHER"
+    },
+    {
+      "name": "AMENDED AND RESTATED EMPLOYMENT AGREEMENT",
+      "type": "OTHER"
+    },
+    {
+      "name": "June 14, 1999",
+      "type": "DATE"
+    },
+    {
+      "name": "Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Energy East Corporation",
+      "type": "ORG"
+    },
+    {
+      "name": "New York",
+      "type": "LOCATION"
+    },
+    {
+      "name": "CMP Group, Inc.",
+      "type": "ORG"
+    },
+    {
+      "name": "Maine",
+      "type": "LOCATION"
+    },
+    {
+      "name": "CMP",
+      "type": "ORG"
+    },
+    {
+      "name": "David T. Flanagan",
+      "type": "PERSON"
+    },
+    {
+      "name": "December 31, 1997",
+      "type": "DATE"
+    },
+    {
+      "name": "March 18, 1999",
+      "type": "DATE"
+    },
+    {
+      "name": "Prior Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Board of Directors",
+      "type": "ORG"
+    },
+    {
+      "name": "Board",
+      "type": "ORG"
+    },
+    {
+      "name": "Merger",
+      "type": "EVENT"
+    },
+    {
+      "name": "Agreement and Plan of Merger",
+      "type": "OTHER"
+    },
+    {
+      "name": "EE Merger Corp.",
+      "type": "ORG"
+    },
+    {
+      "name": "Merger Agreement",
+      "type": "OTHER"
+    },
+    {
+      "name": "Employee Retirement Income Security Act of 1974",
+      "type": "OTHER"
+    },
+    {
+      "name": "ERISA",
+      "type": "OTHER"
+    },
+    {
+      "name": "Replacement Policy",
+      "type": "OTHER"
+    },
+    {
+      "name": "Retirement Income Plan for Non-Union Employees of Central Maine Power Company",
+      "type": "OTHER"
+    },
+    {
+      "name": "Central Maine Power Company",
+      "type": "ORG"
+    },
+    {
+      "name": "Basic Plan",
+      "type": "OTHER"
+    },
+    {
+      "name": "Supplemental Retirement Benefit",
+      "type": "OTHER"
+    },
+    {
+      "name": "Additional Life Insurance Policy",
+      "type": "OTHER"
+    },
+    {
+      "name": "June 1, 2001",
+      "type": "DATE"
+    },
+    {
+      "name": "Social Security disability insurance program",
+      "type": "ORG"
+    }
+  ]
+}

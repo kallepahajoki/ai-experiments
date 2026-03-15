@@ -1,0 +1,234 @@
+{
+  "document_id": "4fd269dd-c465-4ff3-a1a5-acbec0384a96",
+  "document_name": "conll2003_test_066.txt",
+  "dataset": "conll2003",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 2,
+  "chars": 3118,
+  "entities": [
+    {
+      "name": "February 1993",
+      "type": "DATE"
+    },
+    {
+      "name": "Leszic Betcher",
+      "type": "PERSON"
+    },
+    {
+      "name": "Sydney",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Michael Grove",
+      "type": "PERSON"
+    },
+    {
+      "name": "Crofts",
+      "type": "PERSON"
+    },
+    {
+      "name": "Grove",
+      "type": "PERSON"
+    },
+    {
+      "name": "Betcher",
+      "type": "PERSON"
+    },
+    {
+      "name": "NZ",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Bolger",
+      "type": "PERSON"
+    },
+    {
+      "name": "Nats",
+      "type": "ORG"
+    },
+    {
+      "name": "NZ First",
+      "type": "ORG"
+    },
+    {
+      "name": "Sunday",
+      "type": "DATE"
+    },
+    {
+      "name": "WELLINGTON",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1996-12-06",
+      "type": "DATE"
+    },
+    {
+      "name": "New Zealand",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Jim Bolger",
+      "type": "PERSON"
+    },
+    {
+      "name": "New Zealand First",
+      "type": "ORG"
+    },
+    {
+      "name": "Friday",
+      "type": "DATE"
+    },
+    {
+      "name": "National",
+      "type": "ORG"
+    },
+    {
+      "name": "Thursday",
+      "type": "DATE"
+    },
+    {
+      "name": "Peters",
+      "type": "PERSON"
+    },
+    {
+      "name": "Nat",
+      "type": "ORG"
+    },
+    {
+      "name": "Lab",
+      "type": "ORG"
+    },
+    {
+      "name": "Winston Peters",
+      "type": "PERSON"
+    },
+    {
+      "name": "Labour",
+      "type": "ORG"
+    },
+    {
+      "name": "Helen Clark",
+      "type": "PERSON"
+    },
+    {
+      "name": "Reuters",
+      "type": "ORG"
+    },
+    {
+      "name": "Wellington",
+      "type": "LOCATION"
+    },
+    {
+      "name": "RTRS",
+      "type": "ORG"
+    },
+    {
+      "name": "Australian",
+      "type": "OTHER"
+    },
+    {
+      "name": "John Langmore",
+      "type": "PERSON"
+    },
+    {
+      "name": "CANBERRA",
+      "type": "LOCATION"
+    },
+    {
+      "name": "House of Representatives",
+      "type": "ORG"
+    },
+    {
+      "name": "Bob Halverson",
+      "type": "PERSON"
+    },
+    {
+      "name": "Halverson",
+      "type": "PERSON"
+    },
+    {
+      "name": "today",
+      "type": "DATE"
+    },
+    {
+      "name": "John Vance Langmore",
+      "type": "PERSON"
+    },
+    {
+      "name": "Fraser",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Australian Capital Territory",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Langmore",
+      "type": "PERSON"
+    },
+    {
+      "name": "November",
+      "type": "DATE"
+    },
+    {
+      "name": "Australia",
+      "type": "LOCATION"
+    },
+    {
+      "name": "United Nations",
+      "type": "ORG"
+    },
+    {
+      "name": "New York",
+      "type": "LOCATION"
+    },
+    {
+      "name": "U.N. social development conference",
+      "type": "EVENT"
+    },
+    {
+      "name": "Copenhagen",
+      "type": "LOCATION"
+    },
+    {
+      "name": "last year",
+      "type": "DATE"
+    },
+    {
+      "name": "U.N. development programme",
+      "type": "ORG"
+    },
+    {
+      "name": "Inge Kaul",
+      "type": "PERSON"
+    },
+    {
+      "name": "Labor",
+      "type": "ORG"
+    },
+    {
+      "name": "1984",
+      "type": "DATE"
+    },
+    {
+      "name": "1983",
+      "type": "DATE"
+    },
+    {
+      "name": "Paul Keating",
+      "type": "PERSON"
+    },
+    {
+      "name": "Papua New Guinea",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1969",
+      "type": "DATE"
+    },
+    {
+      "name": "1973",
+      "type": "DATE"
+    }
+  ]
+}

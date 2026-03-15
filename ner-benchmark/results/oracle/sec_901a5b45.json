@@ -1,0 +1,202 @@
+{
+  "document_id": "901a5b45-fc15-4240-a526-8c6a64e3c970",
+  "document_name": "Goldman-Sachs_10K.txt",
+  "dataset": "sec",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 1,
+  "chars": 4000,
+  "entities": [
+    {
+      "name": "gs",
+      "type": "ORG"
+    },
+    {
+      "name": "20251231",
+      "type": "DATE"
+    },
+    {
+      "name": "2025",
+      "type": "DATE"
+    },
+    {
+      "name": "FY",
+      "type": "DATE"
+    },
+    {
+      "name": "fasb.org",
+      "type": "ORG"
+    },
+    {
+      "name": "us-gaap",
+      "type": "OTHER"
+    },
+    {
+      "name": "InterestAndDividendIncomeOperating",
+      "type": "OTHER"
+    },
+    {
+      "name": "www.goldmansachs.com",
+      "type": "ORG"
+    },
+    {
+      "name": "MarketMakingNet",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherPrincipalTransactions",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherAssets",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherLiabilities",
+      "type": "OTHER"
+    },
+    {
+      "name": "IncomeTaxExpenseBenefit",
+      "type": "OTHER"
+    },
+    {
+      "name": "IncreaseDecreaseInOtherOperatingCapitalNet",
+      "type": "OTHER"
+    },
+    {
+      "name": "TradingAssetsIncludingPledge",
+      "type": "OTHER"
+    },
+    {
+      "name": "TradingLiabilities",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherNoninterestExpense",
+      "type": "OTHER"
+    },
+    {
+      "name": "P3Y",
+      "type": "DATE"
+    },
+    {
+      "name": "iso4217:USD",
+      "type": "OTHER"
+    },
+    {
+      "name": "xbrli:shares",
+      "type": "OTHER"
+    },
+    {
+      "name": "gs:Segment",
+      "type": "OTHER"
+    },
+    {
+      "name": "xbrli:pure",
+      "type": "OTHER"
+    },
+    {
+      "name": "gs:yr",
+      "type": "OTHER"
+    },
+    {
+      "name": "utr:Y",
+      "type": "OTHER"
+    },
+    {
+      "name": "gs:employee",
+      "type": "OTHER"
+    },
+    {
+      "name": "2025-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2025-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:CommonStockMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "gs:SeriesAFloatingRatePreferredStockMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "gs:SeriesCFloatingRatePreferredStockMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "gs:SeriesDFloatingRatePreferredStockMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "gs:FivePointSevenNineThreePercentageFixedToFloatingRateNormalApexMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "gs:FloatingRateNormalApexMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "gs:SeriesFMediumTermNotesCallableFixedAndFloatingRateNotesDueMarch2031OfGSFinanceCorpMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "March 2031",
+      "type": "DATE"
+    },
+    {
+      "name": "GS Finance Corp",
+      "type": "ORG"
+    },
+    {
+      "name": "gs:SeriesFMediumTermNotesCallableFixedAndFloatingRateNotesDueMay2031OfGSFinanceCorpMember",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "May 2031",
+      "type": "DATE"
+    },
+    {
+      "name": "2025-06-30",
+      "type": "DATE"
+    },
+    {
+      "name": "2026-02-06",
+      "type": "DATE"
+    },
+    {
+      "name": "2024-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2024-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "2023-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2023-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:SecuritiesSoldUnderAgreementsToRepurchaseMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:AssetPledgedAsCollateralWithRightMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "2022-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:PreferredStockMember",
+      "type": "OTHER"
+    }
+  ]
+}

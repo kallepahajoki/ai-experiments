@@ -1,0 +1,470 @@
+{
+  "document_id": "c24b874e-97f2-4e46-8d16-ea17d43458d5",
+  "document_name": "conll2003_test_011.txt",
+  "dataset": "conll2003",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 2,
+  "chars": 2401,
+  "entities": [
+    {
+      "name": "NEW YORK",
+      "type": "ORG"
+    },
+    {
+      "name": "ORLANDO",
+      "type": "ORG"
+    },
+    {
+      "name": "WASHINGTON",
+      "type": "ORG"
+    },
+    {
+      "name": "PHILADELPHIA",
+      "type": "ORG"
+    },
+    {
+      "name": "BOSTON",
+      "type": "ORG"
+    },
+    {
+      "name": "NEW JERSEY",
+      "type": "ORG"
+    },
+    {
+      "name": "CENTRAL DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "CHICAGO",
+      "type": "ORG"
+    },
+    {
+      "name": "DETROIT",
+      "type": "ORG"
+    },
+    {
+      "name": "CLEVELAND",
+      "type": "ORG"
+    },
+    {
+      "name": "ATLANTA",
+      "type": "ORG"
+    },
+    {
+      "name": "CHARLOTTE",
+      "type": "ORG"
+    },
+    {
+      "name": "MILWAUKEE",
+      "type": "ORG"
+    },
+    {
+      "name": "INDIANA",
+      "type": "ORG"
+    },
+    {
+      "name": "TORONTO",
+      "type": "ORG"
+    },
+    {
+      "name": "WESTERN CONFERENCE",
+      "type": "ORG"
+    },
+    {
+      "name": "MIDWEST DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "HOUSTON",
+      "type": "ORG"
+    },
+    {
+      "name": "UTAH",
+      "type": "ORG"
+    },
+    {
+      "name": "MINNESOTA",
+      "type": "ORG"
+    },
+    {
+      "name": "DALLAS",
+      "type": "ORG"
+    },
+    {
+      "name": "DENVER",
+      "type": "ORG"
+    },
+    {
+      "name": "SAN ANTONIO",
+      "type": "ORG"
+    },
+    {
+      "name": "VANCOUVER",
+      "type": "ORG"
+    },
+    {
+      "name": "PACIFIC DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "SEATTLE",
+      "type": "ORG"
+    },
+    {
+      "name": "LA LAKERS",
+      "type": "ORG"
+    },
+    {
+      "name": "PORTLAND",
+      "type": "ORG"
+    },
+    {
+      "name": "LA CLIPPERS",
+      "type": "ORG"
+    },
+    {
+      "name": "GOLDEN STATE",
+      "type": "ORG"
+    },
+    {
+      "name": "SACRAMENTO",
+      "type": "ORG"
+    },
+    {
+      "name": "PHOENIX",
+      "type": "ORG"
+    },
+    {
+      "name": "FRIDAY , DECEMBER 6",
+      "type": "DATE"
+    },
+    {
+      "name": "NEW JERSEY",
+      "type": "ORG"
+    },
+    {
+      "name": "BOSTON",
+      "type": "ORG"
+    },
+    {
+      "name": "CLEVELAND",
+      "type": "ORG"
+    },
+    {
+      "name": "DETROIT",
+      "type": "ORG"
+    },
+    {
+      "name": "NEW YORK",
+      "type": "ORG"
+    },
+    {
+      "name": "MIAMI",
+      "type": "ORG"
+    },
+    {
+      "name": "PHOENIX",
+      "type": "ORG"
+    },
+    {
+      "name": "SACRAMENTO",
+      "type": "ORG"
+    },
+    {
+      "name": "VANCOUVER",
+      "type": "ORG"
+    },
+    {
+      "name": "SAN ANTONIO",
+      "type": "ORG"
+    },
+    {
+      "name": "MINNESOTA",
+      "type": "ORG"
+    },
+    {
+      "name": "UTAH",
+      "type": "ORG"
+    },
+    {
+      "name": "CHARLOTTE",
+      "type": "ORG"
+    },
+    {
+      "name": "PORTLAND",
+      "type": "ORG"
+    },
+    {
+      "name": "INDIANA",
+      "type": "ORG"
+    },
+    {
+      "name": "GOLDEN STATE",
+      "type": "ORG"
+    },
+    {
+      "name": "ORLANDO",
+      "type": "ORG"
+    },
+    {
+      "name": "LA LAKERS",
+      "type": "ORG"
+    },
+    {
+      "name": "NFL",
+      "type": "ORG"
+    },
+    {
+      "name": "AMERICAN FOOTBALL",
+      "type": "OTHER"
+    },
+    {
+      "name": "THURSDAY",
+      "type": "DATE"
+    },
+    {
+      "name": "MIAMI",
+      "type": "ORG"
+    },
+    {
+      "name": "PHOENIX",
+      "type": "ORG"
+    },
+    {
+      "name": "SACRAMENTO",
+      "type": "ORG"
+    },
+    {
+      "name": "VANCOUVER",
+      "type": "ORG"
+    },
+    {
+      "name": "SAN ANTONIO",
+      "type": "ORG"
+    },
+    {
+      "name": "MINNESOTA",
+      "type": "ORG"
+    },
+    {
+      "name": "UTAH",
+      "type": "ORG"
+    },
+    {
+      "name": "CHARLOTTE",
+      "type": "ORG"
+    },
+    {
+      "name": "PORTLAND",
+      "type": "ORG"
+    },
+    {
+      "name": "INDIANA",
+      "type": "ORG"
+    },
+    {
+      "name": "GOLDEN STATE",
+      "type": "ORG"
+    },
+    {
+      "name": "ORLANDO",
+      "type": "ORG"
+    },
+    {
+      "name": "LA LAKERS",
+      "type": "ORG"
+    },
+    {
+      "name": "NFL",
+      "type": "ORG"
+    },
+    {
+      "name": "AMERICAN FOOTBALL",
+      "type": "OTHER"
+    },
+    {
+      "name": "THURSDAY",
+      "type": "DATE"
+    },
+    {
+      "name": "NEW YORK",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1996-12-05",
+      "type": "DATE"
+    },
+    {
+      "name": "National Football League",
+      "type": "ORG"
+    },
+    {
+      "name": "Thursday",
+      "type": "DATE"
+    },
+    {
+      "name": "AMERICAN FOOTBALL CONFERENCE",
+      "type": "ORG"
+    },
+    {
+      "name": "EASTERN DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "NEW ENGLAND",
+      "type": "ORG"
+    },
+    {
+      "name": "BUFFALO",
+      "type": "ORG"
+    },
+    {
+      "name": "INDIANAPOLIS",
+      "type": "ORG"
+    },
+    {
+      "name": "MIAMI",
+      "type": "ORG"
+    },
+    {
+      "name": "NY JETS",
+      "type": "ORG"
+    },
+    {
+      "name": "CENTRAL DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "PITTSBURGH",
+      "type": "ORG"
+    },
+    {
+      "name": "HOUSTON",
+      "type": "ORG"
+    },
+    {
+      "name": "JACKSONVILLE",
+      "type": "ORG"
+    },
+    {
+      "name": "CINCINNATI",
+      "type": "ORG"
+    },
+    {
+      "name": "BALTIMORE",
+      "type": "ORG"
+    },
+    {
+      "name": "WESTERN DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "X-DENVER",
+      "type": "ORG"
+    },
+    {
+      "name": "KANSAS CITY",
+      "type": "ORG"
+    },
+    {
+      "name": "SAN DIEGO",
+      "type": "ORG"
+    },
+    {
+      "name": "OAKLAND",
+      "type": "ORG"
+    },
+    {
+      "name": "SEATTLE",
+      "type": "ORG"
+    },
+    {
+      "name": "NATIONAL FOOTBALL CONFERENCE",
+      "type": "ORG"
+    },
+    {
+      "name": "EASTERN DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "DALLAS",
+      "type": "ORG"
+    },
+    {
+      "name": "WASHINGTON",
+      "type": "ORG"
+    },
+    {
+      "name": "PHILADELPHIA",
+      "type": "ORG"
+    },
+    {
+      "name": "ARIZONA",
+      "type": "ORG"
+    },
+    {
+      "name": "NY GIANTS",
+      "type": "ORG"
+    },
+    {
+      "name": "CENTRAL DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "Y-GREEN BAY",
+      "type": "ORG"
+    },
+    {
+      "name": "MINNESOTA",
+      "type": "ORG"
+    },
+    {
+      "name": "CHICAGO",
+      "type": "ORG"
+    },
+    {
+      "name": "DETROIT",
+      "type": "ORG"
+    },
+    {
+      "name": "TAMPA BAY",
+      "type": "ORG"
+    },
+    {
+      "name": "WESTERN DIVISION",
+      "type": "ORG"
+    },
+    {
+      "name": "SAN FRANCISCO",
+      "type": "ORG"
+    },
+    {
+      "name": "CAROLINA",
+      "type": "ORG"
+    },
+    {
+      "name": "ST LOUIS",
+      "type": "ORG"
+    },
+    {
+      "name": "ATLANTA",
+      "type": "ORG"
+    },
+    {
+      "name": "NEW ORLEANS",
+      "type": "ORG"
+    },
+    {
+      "name": "SUNDAY , DECEMBER 8",
+      "type": "DATE"
+    },
+    {
+      "name": "ST LOUIS",
+      "type": "ORG"
+    },
+    {
+      "name": "CHICAGO",
+      "type": "ORG"
+    }
+  ]
+}

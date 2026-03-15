@@ -1,0 +1,162 @@
+{
+  "document_id": "dfd8c600-38a6-4256-96de-9cf86305b165",
+  "document_name": "conll2003_test_038.txt",
+  "dataset": "conll2003",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 2,
+  "chars": 2841,
+  "entities": [
+    {
+      "name": "Simec",
+      "type": "ORG"
+    },
+    {
+      "name": "Sidek group",
+      "type": "ORG"
+    },
+    {
+      "name": "Mexican",
+      "type": "OTHER"
+    },
+    {
+      "name": "New York",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Telmex",
+      "type": "ORG"
+    },
+    {
+      "name": "Televisa",
+      "type": "ORG"
+    },
+    {
+      "name": "New York",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Mexico",
+      "type": "LOCATION"
+    },
+    {
+      "name": "earlier this week",
+      "type": "DATE"
+    },
+    {
+      "name": "Carlos Ponce",
+      "type": "PERSON"
+    },
+    {
+      "name": "Santander",
+      "type": "ORG"
+    },
+    {
+      "name": "Friday",
+      "type": "DATE"
+    },
+    {
+      "name": "Ponce",
+      "type": "PERSON"
+    },
+    {
+      "name": "Mexico",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Brazil",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Simona de Logu",
+      "type": "PERSON"
+    },
+    {
+      "name": "RIO DE JANEIRO",
+      "type": "LOCATION"
+    },
+    {
+      "name": "1996-12-06",
+      "type": "DATE"
+    },
+    {
+      "name": "Brazilians",
+      "type": "OTHER"
+    },
+    {
+      "name": "Friday",
+      "type": "DATE"
+    },
+    {
+      "name": "Brazil",
+      "type": "LOCATION"
+    },
+    {
+      "name": "this year",
+      "type": "DATE"
+    },
+    {
+      "name": "July 1994",
+      "type": "DATE"
+    },
+    {
+      "name": "Farid Hakme",
+      "type": "PERSON"
+    },
+    {
+      "name": "Brazilian Plastic Surgery Society",
+      "type": "ORG"
+    },
+    {
+      "name": "SBCP",
+      "type": "ORG"
+    },
+    {
+      "name": "1994",
+      "type": "DATE"
+    },
+    {
+      "name": "1995",
+      "type": "DATE"
+    },
+    {
+      "name": "Hakme",
+      "type": "PERSON"
+    },
+    {
+      "name": "Brazilian Plastic Surgery Society",
+      "type": "ORG"
+    },
+    {
+      "name": "SBCP",
+      "type": "ORG"
+    },
+    {
+      "name": "1994",
+      "type": "DATE"
+    },
+    {
+      "name": "1995",
+      "type": "DATE"
+    },
+    {
+      "name": "Brazil",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Hakme",
+      "type": "PERSON"
+    },
+    {
+      "name": "Latin America",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Brazil",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Ivo Pitangy",
+      "type": "PERSON"
+    }
+  ]
+}

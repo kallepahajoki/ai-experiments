@@ -1,0 +1,202 @@
+{
+  "document_id": "9b428ab6-517a-471b-9bb0-275756df5177",
+  "document_name": "Pfizer_10K.txt",
+  "dataset": "sec",
+  "model": "google/gemini-2.5-pro",
+  "chunks": 1,
+  "chars": 4000,
+  "entities": [
+    {
+      "name": "pfe",
+      "type": "ORG"
+    },
+    {
+      "name": "20251231",
+      "type": "DATE"
+    },
+    {
+      "name": "0000078003",
+      "type": "ORG"
+    },
+    {
+      "name": "2025",
+      "type": "DATE"
+    },
+    {
+      "name": "P4Y",
+      "type": "DATE"
+    },
+    {
+      "name": "P18M",
+      "type": "DATE"
+    },
+    {
+      "name": "P1Y",
+      "type": "DATE"
+    },
+    {
+      "name": "P5Y",
+      "type": "DATE"
+    },
+    {
+      "name": "Consolidated Statements of Operations",
+      "type": "OTHER"
+    },
+    {
+      "name": "fasb.org",
+      "type": "ORG"
+    },
+    {
+      "name": "us-gaap",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherAssetsCurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherAssetsNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherNonoperatingIncomeExpense",
+      "type": "OTHER"
+    },
+    {
+      "name": "LongTermDebtNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "Consolidated Balance Sheets",
+      "type": "OTHER"
+    },
+    {
+      "name": "AccountsPayableCurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "P7Y",
+      "type": "DATE"
+    },
+    {
+      "name": "P3Y",
+      "type": "DATE"
+    },
+    {
+      "name": "OtherLiabilitiesCurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "OtherLiabilitiesNoncurrent",
+      "type": "OTHER"
+    },
+    {
+      "name": "iso4217",
+      "type": "OTHER"
+    },
+    {
+      "name": "USD",
+      "type": "OTHER"
+    },
+    {
+      "name": "xbrli",
+      "type": "ORG"
+    },
+    {
+      "name": "EUR",
+      "type": "OTHER"
+    },
+    {
+      "name": "2025-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2025-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:CommonStockMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "pfe:NotesDue20271.000Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "pfe:NotesDue20292.875Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "pfe:NotesDue20323.250Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "pfe:NotesDue20373.875Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "pfe:NotesDue20454.250Member",
+      "type": "PRODUCT"
+    },
+    {
+      "name": "2025-06-29",
+      "type": "DATE"
+    },
+    {
+      "name": "2026-02-19",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:ProductMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "2024-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2024-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "2023-01-01",
+      "type": "DATE"
+    },
+    {
+      "name": "2023-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:RoyaltyMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "2022-12-31",
+      "type": "DATE"
+    },
+    {
+      "name": "us-gaap:AdditionalPaidInCapitalMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:TreasuryStockCommonMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:RetainedEarningsMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:AccumulatedOtherComprehensiveIncomeMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:ParentMember",
+      "type": "OTHER"
+    },
+    {
+      "name": "us-gaap:NoncontrollingInterestMember",
+      "type": "OTHER"
+    }
+  ]
+}

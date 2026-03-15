@@ -1,0 +1,60 @@
+# AI Experiments
+
+Practical experiments in fine-tuning small language models for targeted tasks — exploring where a few dozen carefully crafted examples can close the gap between a model that almost works and one that does.
+
+Each subdirectory is a self-contained experiment with its own training data, scripts, and evaluation harness. The common thread: QLoRA on consumer hardware (RTX 4090, 24GB VRAM), Qwen 3.5 models, and deployment via Ollama.
+
+---
+
+## Experiments
+
+### [`ward-security-classifier/`](ward-security-classifier/)
+
+**LLM security classifier** — fine-tunes Qwen3.5 (0.8B / 2B / 4B) to detect prompt injection, jailbreaks, destructive commands, and agent manipulation. Designed as an input screening layer for AI agent pipelines.
+
+Key results from benchmarking three model sizes on 472 training examples:
+
+| | 0.8B | 2B | 4B |
+|---|---|---|---|
+| Accuracy | 82.9% | 95.9% | **98.4%** |
+| Recall | 98.8% | 98.8% | **100%** |
+| F1 | 0.890 | 0.971 | **0.989** |
+
+The 4B model achieves perfect recall (zero missed threats) and shows genuine contextual reasoning — distinguishing "kill stuck PID 18234" (safe ops) from "kill all data" (destructive) — rather than pattern-matching on keywords.
+
+Includes a proposed [two-stage architecture](ward-security-classifier/docs/two-stage-architecture.md): a 0.8B fast gate (~80ms) screens every request, escalating only flagged inputs to the 4B model for deep classification with chain-of-thought reasoning.
+
+### [`ner-benchmark/`](ner-benchmark/)
+
+**Named Entity Recognition benchmark** — compares local spaCy models (sm/lg/trf) against Qwen 3.5 LLMs (0.8B–9B via Ollama) for on-premise entity extraction across 4 English document domains.
+
+Evaluated with both an LLM oracle (Gemini 2.5 Pro) and CoNLL-2003 human annotations, revealing that LLM oracles overstate the advantage of LLM-based NER by ~50%.
+
+| | spaCy trf (CPU) | Qwen 3.5 9B (GPU) |
+|---|---|---|
+| F1 (human GT) | 0.628 | **0.717** |
+| Recall | **0.793** | 0.748 |
+| Precision | 0.519 | **0.688** |
+| Speed | 1.0s/doc | 45s/doc |
+| PERSON F1 | **0.915** | 0.875 |
+| ORG F1 | 0.720 | **0.847** |
+
+The two approaches are complementary: spaCy has higher recall (catches more entities), Qwen has higher precision (fewer false positives). Finnish NER evaluation planned.
+
+### [`nextjs-server-boundary-finetune/`](nextjs-server-boundary-finetune/)
+
+**Targeted reasoning correction** — fine-tunes Qwen3.5-27B to fix a specific Next.js webpack error where Node.js built-in modules fail to resolve in server bundles.
+
+The 27B model (dense) gets tantalizingly close but picks the wrong webpack mechanism: `resolve.fallback: { crypto: false }` (silences the error, crashes at runtime) instead of `config.externals` (resolves modules from Node.js at runtime). The larger 122B MoE variant gets it right. This experiment tests whether QLoRA with ~43 synthetic training examples can install the correct reasoning path without needing 4x the parameters.
+
+Training data deliberately excludes the real target project so it serves as a held-out generalization test.
+
+---
+
+## Hardware
+
+All experiments target a single RTX 4090 (24GB VRAM) using 4-bit NF4 quantization and gradient checkpointing. Trained models are exported to GGUF and served via Ollama for inference.
+
+## License
+
+Personal research. Code generated with assistance from Claude (Anthropic). Reasoning datasets for Ward generated with Gemini 2.5 Flash on OpenRouter.
