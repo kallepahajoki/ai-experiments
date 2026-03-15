@@ -5,41 +5,40 @@
 | Setting | Value |
 |---------|-------|
 | GPU | 1x A100 80GB (or H100) |
-| Template | RunPod PyTorch (comes with CUDA 12.4 + torch pre-installed) |
-| Container disk | 20 GB (minimum) |
-| Network volume | 50 GB (stores model weights + pip packages across restarts) |
+| Template | RunPod PyTorch (comes with CUDA + torch pre-installed) |
+| Container disk | 20 GB (default is fine) |
+| Network volume | 50 GB (stores venv, model weights, and training output) |
 
-### Network Volume Setup
+## First-Time Setup
 
-Attach a network volume so you don't re-download 52 GB of model weights and
-recompile CUDA extensions every time you start a pod.
-
-1. In RunPod, create a **Network Volume** (50 GB, same region as your pod)
-2. Attach it when creating the pod — it mounts at `/workspace`
-3. Set the HuggingFace cache to use the volume:
+Attach a network volume (50 GB, same region as your pod) — it mounts at `/workspace`.
 
 ```bash
-export HF_HOME=/workspace/hf_cache
-```
-
-Add this to your `.bashrc` on the pod so it persists:
-
-```bash
-echo 'export HF_HOME=/workspace/hf_cache' >> ~/.bashrc
-```
-
-## Setup & Training
-
-```bash
-git clone <this-repo>
-cd nextjs-server-boundary-finetune
+git clone <this-repo> /workspace/git/nextjs-server-boundary-finetune
+cd /workspace/git/nextjs-server-boundary-finetune
 bash scripts/cloud_setup.sh
 python scripts/train.py --config configs/a100_80gb.yaml
 ```
 
-The setup script takes ~20-30 minutes:
-- pip packages: ~5 min (mostly compiling `causal-conv1d` and `mamba-ssm` CUDA extensions)
-- Model download: ~10-20 min (52 GB)
+The setup script:
+- Creates a Python venv on the volume (`/workspace/venv`)
+- Installs all dependencies into the venv
+- Downloads model weights to `/workspace/hf_cache` (~52 GB)
+- Optionally compiles CUDA extensions (causal-conv1d, mamba-ssm) — if these
+  fail, unsloth falls back to a pure torch implementation
+
+Total setup time: ~20-30 min (mostly model download + optional CUDA compilation).
+
+## Resuming After Pod Restart
+
+The venv and model weights persist on the volume. Just activate and go:
+
+```bash
+source /workspace/venv/bin/activate
+export HF_HOME=/workspace/hf_cache
+cd /workspace/git/nextjs-server-boundary-finetune
+python scripts/train.py --config configs/a100_80gb.yaml
+```
 
 ## Retrieving the Adapter
 
@@ -57,42 +56,36 @@ zip -r adapter.zip output/final
 
 ### `No space left on device`
 
-The RunPod PyTorch template comes with torch pre-installed. If pip tries to
-**upgrade torch**, it downloads ~8 GB of nvidia CUDA wheels and can fill the
-container disk.
+Usually caused by pip upgrading torch and downloading ~8 GB of nvidia CUDA
+wheels onto the container disk. The setup script avoids this by using a venv
+on the network volume. If you hit this anyway:
 
-Fix: the setup script uses `--no-deps` for packages that would pull in a new
-torch. If you're installing manually, avoid `pip install torch` or any package
-that pins a different torch version.
-
-To free space:
 ```bash
 pip cache purge
 rm -rf /tmp/pip-*
 ```
 
-### `causal-conv1d` or `mamba-ssm` build takes forever
+### `causal-conv1d` or `mamba-ssm` build fails
 
-These are CUDA C++ extensions that compile from source. 5-10 minutes each is
-normal. Use `--no-build-isolation` for `mamba-ssm` if the default fails:
+These CUDA extensions sometimes fail to compile (nvcc out of memory, version
+mismatches). This is OK — unsloth falls back to a pure torch implementation.
+Training works, just slightly slower.
 
+To retry manually:
 ```bash
-pip install mamba-ssm --no-build-isolation
+MAX_JOBS=1 pip install causal-conv1d
+MAX_JOBS=1 pip install mamba-ssm --no-build-isolation
 ```
 
-### `ModuleNotFoundError: No module named 'datasets'`
+### `ModuleNotFoundError`
 
-The initial `pip install -r requirements.txt` failed partway through (likely
-on the `unsloth` extras specifier) and nothing got installed. Use the setup
-script instead of installing from requirements.txt directly:
-
+Make sure the venv is activated:
 ```bash
-bash scripts/cloud_setup.sh
+source /workspace/venv/bin/activate
 ```
 
-### Reusing a Volume Across Pod Restarts
+### Import order warning for unsloth
 
-If you attached a network volume and set `HF_HOME=/workspace/hf_cache`, the
-model weights persist. You still need to re-run the setup script for pip
-packages (they live on the container disk), but the model download step will
-be skipped since the weights are already cached on the volume.
+If you see a warning about unsloth needing to be imported before trl/transformers,
+the train.py script already handles this — the warning is harmless if using the
+provided script.

@@ -1,51 +1,55 @@
 #!/bin/bash
 # cloud_setup.sh — Bootstrap a RunPod pod for Qwen 3.5 27B LoRA fine-tuning
 #
-# Assumes: RunPod PyTorch template (CUDA 12.4, torch pre-installed)
+# Assumes: RunPod PyTorch template (CUDA toolkit pre-installed)
 # Usage:   bash scripts/cloud_setup.sh
 # Then:    python scripts/train.py --config configs/a100_80gb.yaml
 #
 # IMPORTANT:
-#   - Use a pod with >= 50 GB disk (container + volume). The model weights
-#     alone are ~52 GB, plus pip packages need ~10 GB.
-#   - Attach a network volume so you can reuse the setup across pod restarts.
-#     Mount it at /workspace and set HF_HOME=/workspace/hf_cache before running.
-#   - Do NOT let pip upgrade torch — the RunPod template's torch is pre-built
-#     for the pod's CUDA version. Upgrading pulls ~8 GB of nvidia wheels and
-#     can fill the disk.
+#   - Attach a network volume (50 GB) mounted at /workspace.
+#   - This script creates a venv on the volume so deps persist across restarts.
+#   - Set HF_HOME=/workspace/hf_cache so model weights also persist.
 
 set -euo pipefail
 
 echo "=== Cloud Setup for Qwen 3.5 27B Fine-tuning ==="
 echo ""
 
-# 1. System-level build dependencies for causal-conv1d / mamba-ssm compilation
+# 1. System-level build dependencies
 echo "--- Installing system dependencies ---"
 apt-get update -qq && apt-get install -y --no-install-recommends git build-essential > /dev/null
 
-# 2. Install Python dependencies
-#    Key constraint: keep the pre-installed torch to avoid disk bloat.
+# 2. Create venv on the network volume (persists across pod restarts)
+VENV_DIR="/workspace/venv"
+if [ ! -d "$VENV_DIR" ]; then
+    echo "--- Creating venv at $VENV_DIR ---"
+    python -m venv "$VENV_DIR"
+fi
+source "$VENV_DIR/bin/activate"
+
+# 3. Set HF cache to volume
+export HF_HOME=/workspace/hf_cache
+
+# 4. Install Python dependencies
 echo "--- Installing Python dependencies ---"
 pip install --upgrade pip -q
 
-# Core deps — pin torch to avoid upgrade (RunPod's torch is fine)
-pip install -q --no-deps transformers peft trl datasets accelerate pyyaml huggingface_hub
-# Install their transitive deps without touching torch
-pip install -q datasets accelerate peft trl transformers
+# Install torch (will match the pod's CUDA version)
+pip install -q torch torchvision
 
-# Unsloth — install without deps first, then let it pull only what it needs.
-# The [cu124-torch240-ampere] extras specifier is fragile; --no-deps is safer.
-pip install -q --no-deps unsloth unsloth_zoo
+# Install training stack
+pip install -q unsloth "transformers<=5.2.0" datasets accelerate peft "trl<=0.24.0" pyyaml
 
-# causal-conv1d and mamba-ssm compile CUDA C++ extensions from source.
-# These take 5-10 minutes each — this is normal.
-echo "--- Building causal-conv1d (CUDA extension, ~5 min) ---"
-pip install -q causal-conv1d
+# causal-conv1d and mamba-ssm are optional CUDA extensions for Mamba/SSM layers.
+# They compile from source (~5-10 min each). If they fail, unsloth falls back
+# to a pure torch implementation (slower but functional).
+echo "--- Building causal-conv1d (CUDA extension, ~5 min — optional) ---"
+MAX_JOBS=1 pip install -q causal-conv1d 2>/dev/null || echo "WARNING: causal-conv1d build failed — will use torch fallback"
 
-echo "--- Building mamba-ssm (CUDA extension, ~5-10 min) ---"
-pip install -q mamba-ssm --no-build-isolation
+echo "--- Building mamba-ssm (CUDA extension, ~5-10 min — optional) ---"
+MAX_JOBS=1 pip install -q mamba-ssm --no-build-isolation 2>/dev/null || echo "WARNING: mamba-ssm build failed — will use torch fallback"
 
-# 3. Verify GPU is visible and has enough VRAM
+# 5. Verify GPU is visible and has enough VRAM
 echo "--- Verifying GPU ---"
 python -c "
 import torch
@@ -58,7 +62,7 @@ assert vram >= 70, f'Need >= 70 GB VRAM, got {vram:.1f} GB. Use an A100 80GB or 
 print('  GPU check passed')
 "
 
-# 4. Verify key imports work
+# 6. Verify key imports work
 echo "--- Verifying imports ---"
 python -c "
 from unsloth import FastLanguageModel
@@ -67,8 +71,7 @@ from trl import SFTTrainer
 print('  All imports OK')
 "
 
-# 5. Pre-download model weights so training doesn't stall
-#    Uses HF_HOME if set (e.g. /workspace/hf_cache on a network volume)
+# 7. Pre-download model weights so training doesn't stall
 echo "--- Downloading Qwen/Qwen3.5-27B weights (~52 GB, may take 10-20 min) ---"
 python -c "
 from huggingface_hub import snapshot_download
@@ -78,6 +81,10 @@ print('  Model download complete')
 
 echo ""
 echo "=== Setup complete ==="
+echo ""
+echo "On future pod restarts, just activate the venv:"
+echo "  source /workspace/venv/bin/activate"
+echo "  export HF_HOME=/workspace/hf_cache"
 echo ""
 echo "Run training with:"
 echo "  python scripts/train.py --config configs/a100_80gb.yaml"

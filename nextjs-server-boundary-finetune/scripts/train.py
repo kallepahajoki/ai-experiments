@@ -16,6 +16,8 @@ Usage:
     python scripts/train.py --config configs/qlora_4090.yaml
 """
 
+from unsloth import FastLanguageModel  # must be first — patches trl/transformers/peft
+
 import argparse
 import json
 import os
@@ -25,7 +27,6 @@ import yaml
 from datasets import Dataset
 from transformers import TrainingArguments
 from trl import SFTTrainer
-from unsloth import FastLanguageModel
 
 
 def load_config(config_path: str) -> dict:
@@ -122,6 +123,7 @@ def main():
         report_to=train_cfg.get("report_to", "none"),
         dataloader_pin_memory=False,
         remove_unused_columns=False,
+        max_seq_length=max_seq_length,
     )
 
     # Trainer
@@ -131,7 +133,6 @@ def main():
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
         processing_class=tokenizer,
-        max_seq_length=max_seq_length,
     )
 
     # Train
