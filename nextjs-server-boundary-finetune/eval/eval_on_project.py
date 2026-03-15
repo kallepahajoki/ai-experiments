@@ -333,12 +333,15 @@ def run_inference_transformers(model_name: str, adapter_path: str | None, prompt
         {"role": "system", "content": system},
         {"role": "user", "content": prompt},
     ]
-    input_ids = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(model.device)
-    inputs = {"input_ids": input_ids}
+    # Use the underlying text tokenizer (not the multimodal processor)
+    text_tokenizer = getattr(tokenizer, "tokenizer", tokenizer)
+    text = text_tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    import torch as _torch
+    input_ids = _torch.tensor([text_tokenizer.encode(text)], device=model.device)
 
     with torch.no_grad():
         outputs = model.generate(
-            **inputs,
+            input_ids=input_ids,
             max_new_tokens=4096,
             temperature=0.1,
             do_sample=True,
@@ -346,8 +349,8 @@ def run_inference_transformers(model_name: str, adapter_path: str | None, prompt
         )
 
     # Decode only the new tokens
-    new_tokens = outputs[0][inputs["input_ids"].shape[1]:]
-    return tokenizer.decode(new_tokens, skip_special_tokens=True)
+    new_tokens = outputs[0][input_ids.shape[1]:]
+    return text_tokenizer.decode(new_tokens, skip_special_tokens=True)
 
 
 def main():
