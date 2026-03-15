@@ -334,7 +334,8 @@ def run_inference_transformers(model_name: str, adapter_path: str | None, prompt
         {"role": "user", "content": prompt},
     ]
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    inputs = tokenizer(text, return_tensors="pt").to(model.device)
+    input_ids = tokenizer.encode(text, return_tensors="pt").to(model.device)
+    inputs = {"input_ids": input_ids}
 
     with torch.no_grad():
         outputs = model.generate(
