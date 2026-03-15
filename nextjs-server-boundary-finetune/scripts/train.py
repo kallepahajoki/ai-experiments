@@ -25,8 +25,8 @@ from pathlib import Path
 
 import yaml
 from datasets import Dataset
-from transformers import TrainingArguments
 from trl import SFTConfig, SFTTrainer
+from unsloth.chat_templates import train_on_responses_only
 
 
 def load_config(config_path: str) -> dict:
@@ -86,10 +86,22 @@ def main():
         random_state=3407,
     )
 
-    # Load datasets
+    # Load datasets and apply chat template
     data_dir = project_root / "data"
     train_dataset = load_dataset_from_jsonl(str(data_dir / "train.jsonl"))
     val_dataset = load_dataset_from_jsonl(str(data_dir / "val.jsonl"))
+
+    def apply_chat_template(examples):
+        texts = [
+            tokenizer.apply_chat_template(
+                msgs, tokenize=False, add_generation_prompt=False
+            )
+            for msgs in examples["messages"]
+        ]
+        return {"text": texts}
+
+    train_dataset = train_dataset.map(apply_chat_template, batched=True)
+    val_dataset = val_dataset.map(apply_chat_template, batched=True)
 
     print(f"Training examples: {len(train_dataset)}")
     print(f"Validation examples: {len(val_dataset)}")
@@ -100,13 +112,14 @@ def main():
 
     training_args = SFTConfig(
         output_dir=output_dir,
+        dataset_text_field="text",
         num_train_epochs=train_cfg["epochs"],
         per_device_train_batch_size=train_cfg["batch_size"],
         per_device_eval_batch_size=train_cfg["batch_size"],
         gradient_accumulation_steps=train_cfg["gradient_accumulation_steps"],
         learning_rate=train_cfg["learning_rate"],
         weight_decay=train_cfg["weight_decay"],
-        warmup_ratio=train_cfg["warmup_ratio"],
+        warmup_steps=int(train_cfg.get("warmup_ratio", 0.1) * 50),
         lr_scheduler_type=train_cfg["lr_scheduler"],
         logging_steps=train_cfg["logging_steps"],
         eval_strategy="steps",
@@ -121,26 +134,24 @@ def main():
         max_grad_norm=train_cfg.get("max_grad_norm", 0.3),
         optim=train_cfg.get("optimizer", "paged_adamw_8bit"),
         report_to=train_cfg.get("report_to", "none"),
-        dataloader_pin_memory=False,
-        remove_unused_columns=False,
-        max_seq_length=max_seq_length,
+        dataset_num_proc=1,
+        seed=3407,
     )
-
-    # Format chat messages into tokenized text
-    def formatting_func(examples):
-        return [
-            tokenizer.apply_chat_template(msgs, tokenize=False)
-            for msgs in examples["messages"]
-        ]
 
     # Trainer
     trainer = SFTTrainer(
         model=model,
+        tokenizer=tokenizer,
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        processing_class=tokenizer,
-        formatting_func=formatting_func,
+    )
+
+    # Only train on assistant responses, not user prompts
+    trainer = train_on_responses_only(
+        trainer,
+        instruction_part="<|im_start|>user\n",
+        response_part="<|im_start|>assistant\n",
     )
 
     # Train
