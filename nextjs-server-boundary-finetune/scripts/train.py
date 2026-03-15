@@ -26,7 +26,7 @@ from pathlib import Path
 import yaml
 from datasets import Dataset
 from transformers import TrainingArguments
-from trl import SFTTrainer
+from trl import SFTConfig, SFTTrainer
 
 
 def load_config(config_path: str) -> dict:
@@ -98,7 +98,7 @@ def main():
     train_cfg = config["training"]
     output_dir = str(project_root / config.get("output_dir", "output"))
 
-    training_args = TrainingArguments(
+    training_args = SFTConfig(
         output_dir=output_dir,
         num_train_epochs=train_cfg["epochs"],
         per_device_train_batch_size=train_cfg["batch_size"],
