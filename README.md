@@ -39,7 +39,9 @@ Evaluated with both an LLM oracle (Gemini 2.5 Pro) and CoNLL-2003 human annotati
 | PERSON F1 | **0.915** | 0.875 |
 | ORG F1 | 0.720 | **0.847** |
 
-The two approaches are complementary: spaCy has higher recall (catches more entities), Qwen has higher precision (fewer false positives). Finnish NER evaluation planned.
+The two approaches are complementary: spaCy has higher recall (catches more entities), Qwen has higher precision (fewer false positives).
+
+**Finnish NER** results tell a different story — spaCy dominates (F1 0.417 vs Qwen 4b's 0.274), and Qwen 0.8b extracts zero entities from tokenized Finnish text. No transformer pipeline exists for Finnish spaCy, so the CNN-based `fi_core_news_md` is the clear default. Qwen finetuning on Finnish NER data is a logical next step.
 
 ### [`nextjs-server-boundary-finetune/`](nextjs-server-boundary-finetune/)
 

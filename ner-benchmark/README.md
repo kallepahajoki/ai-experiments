@@ -19,9 +19,21 @@ Evaluated using Gemini 2.5 Pro as LLM oracle (20 docs) and CoNLL-2003 human anno
 | spaCy trf | 0.628 | 1.0s/doc | CPU |
 | spaCy sm | 0.402 | 0.4s/doc | CPU |
 
-### Finnish NER (Planned)
+### [`finnish-benchmark.md`](finnish-benchmark.md) — Finnish NER (Complete)
 
-Finnish entity extraction comparison — spaCy Finnish models vs Qwen on Finnish-language documents.
+Compares 3 spaCy Finnish models (sm/md/lg, all CNN-based) and 3 Qwen 3.5 sizes (0.8b/2b/4b) on 141 Finnish documents across 3 domains: Turku NER corpus, FiNER/Digitoday tech news, and Finnish Wikipedia.
+
+Complete reversal from English — spaCy dominates, Qwen models are unreliable for Finnish.
+
+**Headline results (vs human annotations):**
+
+| Model | F1 | Hardware | Notes |
+|-------|-----|----------|-------|
+| spaCy md | **0.417** | CPU | Clear winner |
+| spaCy lg | 0.411 | CPU | No improvement over md |
+| Qwen 3.5 2B | 0.284 | GPU | Crashes on FiNER |
+| Qwen 3.5 4B | 0.274 | GPU | 40% behind spaCy |
+| Qwen 3.5 0.8B | 0.000 | GPU | Zero entities on tokenized text |
 
 ## Structure
 

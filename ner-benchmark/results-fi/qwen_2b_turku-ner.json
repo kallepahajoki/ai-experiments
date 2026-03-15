@@ -1,0 +1,4863 @@
+[
+  {
+    "preview": true,
+    "extracted": 39,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Kurdistanin",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Kurdit taistelevat luodakseen joko oman valtion , Kurdistanin , tai vaihtoehtoisesti suuremman itsehallinnon puolesta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Ville Wahlbeckista",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Ville Wahlbeckista ensimmäinen suomalainen WSOP-voittaja",
+        "chunkIndex": 0
+      },
+      {
+        "name": "WSOP-voittaja",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Ville Wahlbeckista ensimmäinen suomalainen WSOP-voittaja",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Las Vegasissa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Las Vegasissa käytävässä pokerin World Series of Poker -turnaussarjassa saatiin kautta aikojen ensimmäinen suomalaisvoittaja kun Ville Wahlbeck voitti 10 000 dollarin sisäänoston mixed -pelien maailmanmestaruuden ( $ 10,000 World Championship Mixed Event ) .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "World Series of Poker",
+        "type": "EVENT",
+        "confidence": 0.94,
+        "context": "Las Vegasissa käytävässä pokerin World Series of Poker -turnaussarjassa saatiin kautta aikojen ensimmäinen suomalaisvoittaja kun Ville Wahlbeck voitti 10 000 dollarin sisäänoston mixed -pelien maailmanmestaruuden ( $ 10,000 World Championship Mixed Event ) .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "$ 10,000 World Championship Mixed Event",
+        "type": "PRODUCT",
+        "confidence": 0.88,
+        "context": "Las Vegasissa käytävässä pokerin World Series of Poker -turnaussarjassa saatiin kautta aikojen ensimmäinen suomalaisvoittaja kun Ville Wahlbeck voitti 10 000 dollarin sisäänoston mixed -pelien maailmanmestaruuden ( $ 10,000 World Championship Mixed Event ) .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "David Chiu",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Kaksinpelissä kukistui yhdysvaltalainen David Chiu .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "492 375 dollaria",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Turnauksen ykköspalkinto oli 492 375 dollaria .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "19-vuotias nainen",
+        "type": "OTHER",
+        "confidence": 0.82,
+        "context": "Joukkoraiskauksen uhriksi joutunut 19-vuotias nainen tuomittiin kuuden kuukauden vankeusrangaistukseen Saudi-Arabiassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Saudi-Arabiassa",
+        "type": "LOCATION",
+        "confidence": 0.93,
+        "context": "Joukkoraiskauksen uhriksi joutunut 19-vuotias nainen tuomittiin kuuden kuukauden vankeusrangaistukseen Saudi-Arabiassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kuuden kuukauden vankeusrangaistukseen",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Joukkoraiskauksen uhriksi joutunut 19-vuotias nainen tuomittiin kuuden kuukauden vankeusrangaistukseen Saudi-Arabiassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Saudi-Arabia",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "in kuuden kuukauden vankeusrangaistukseen Saudi-Arabiassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kuuden kuukauden vankeusrangaistukseen",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "in kuuden kuukauden vankeusrangaistukseen Saudi-Arabiassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Maan sukupuolierottelua koskevien lakien nojalla",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Rangaistus annettiin maan sukupuolierottelua koskevien lakien nojalla , sillä nainen oli ollut raiskauksen aikoihin vieraan miehen autossa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Šiiavähemmistöön kuuluvan naisen tuomio koostui alun perin 90 raipaniskusta",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "Šiiavähemmistöön kuuluvan naisen tuomio koostui alun perin 90 raipaniskusta , mutta valitustuomioistuin muutti sen 200 raipaniskuksi ja määräsi naisen lisäksi kuudeksi kuukaudeksi vankeuteen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "200 raipaniskuksi",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "Šiiavähemmistöön kuuluvan naisen tuomio koostui alun perin 90 raipaniskusta , mutta valitustuomioistuin muutti sen 200 raipaniskuksi ja määräsi naisen lisäksi kuudeksi kuukaudeksi vankeuteen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "kuudeksi kuukaudeksi vankeuteen",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Šiiavähemmistöön kuuluvan naisen tuomio koostui alun perin 90 raipaniskusta , mutta valitustuomioistuin muutti sen 200 raipaniskuksi ja määräsi naisen lisäksi kuudeksi kuukaudeksi vankeuteen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "valitustuomioistuin kaksinkertaisti naisen neljätoista kertaa joukkoraiskanneiden miesten tuomioiden pituudet",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Samassa yhteydessä valitustuomioistuin kaksinkertaisti naisen neljätoista kertaa joukkoraiskanneiden miesten tuomioiden pituudet .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Seitsemälle sunnimiehelle annettujen rangaistusten alkuperäiset kestot olivat noin 1–5 vuotta",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Seitsemälle sunnimiehelle annettujen rangaistusten alkuperäiset kestot olivat noin 1–5 vuotta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Arevan laitoksesta radioaktiivinen vuoto Ranskassa",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Arevan laitoksesta radioaktiivinen vuoto Ranskassa",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Areva havaitsi laitoksessaan radioaktiivisen vuodon Ranskassa",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Areva havaitsi laitoksessaan radioaktiivisen vuodon Ranskassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kaakkois-Ranskassa laitos valmistaa polttoainetta ydinvoimaloille",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Kaakkois-Ranskassa laitos valmistaa polttoainetta ydinvoimaloille .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Uraanipitoista radioaktiivista nestettä on vuotanut rikkinäisestä maanalaisesta putkesta",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "Uraanipitoista radioaktiivista nestettä on vuotanut rikkinäisestä maanalaisesta putkesta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Sen epäillään hajonneen useita vuosia sitten",
+        "type": "DATE",
+        "confidence": 0.7,
+        "context": "Sen epäillään hajonneen useita vuosia sitten .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Toissa viikolla Tricastinin ydinvoimala-alueella Etelä-Ranskassa tapahtui onnettomuus",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Toissa viikolla Tricastinin ydinvoimala-alueella Etelä-Ranskassa tapahtui onnettomuus , jossa uraanipitoista vettä pääsi vuotamaan jokeen ja maaperään .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "jossa uraanipitoista vettä pääsi vuotamaan jokeen ja maaperään",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "Toissa viikolla Tricastinin ydinvoimala-alueella Etelä-Ranskassa tapahtui onnettomuus , jossa uraanipitoista vettä pääsi vuotamaan jokeen ja maaperään .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Vuodon takia alueen asukkaita kiellettiin uimasta ja kalastamasta",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Vuodon takia alueen asukkaita kiellettiin uimasta ja kalastamasta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "MTV3:lle kolme uutta maksullista kanavaa",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "MTV3:lle kolme uutta maksullista kanavaa",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Mainosrahoitteinen televisioyhtiö MTV3 saa maaliskuun alusta lähtien kolme uutta maksullista kanavaa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Mainosrahoitteinen televisioyhtiö MTV3 saa maaliskuun alusta lähtien kolme uutta maksullista kanavaa , kerrotaan yhtiön julkaisemassa tiedotteessa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "kerrotaan yhtiön julkaisemassa tiedotteessa",
+        "type": "EVENT",
+        "confidence": 0.6,
+        "context": "Mainosrahoitteinen televisioyhtiö MTV3 saa maaliskuun alusta lähtien kolme uutta maksullista kanavaa , kerrotaan yhtiön julkaisemassa tiedotteessa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Oman kanavansa saavat niin naiset sekä tv-sarjat että scifin harrastajat",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Oman kanavansa saavat niin naiset sekä tv-sarjat että scifin harrastajat .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Uudet kanavat ovat siis MTV3 AVA , MTV3 Sarja ja MTV3 Scifi",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Uudet kanavat ovat siis MTV3 AVA , MTV3 Sarja ja MTV3 Scifi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kaikki kolme aloittavat samaan aikaan heti tulevan maaliskuun alussa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Kaikki kolme aloittavat samaan aikaan heti tulevan maaliskuun alussa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kesäkuussa 2008 yli 400 000 kotitaloutta maksaa MTV3 Kanavapaketista",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "Kesäkuussa 2008 yli 400 000 kotitaloutta maksaa MTV3 Kanavapaketista .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Jo neljäsosa suomalaisista kotitalouksista tilaa jotakin maksukanavaa , ilmoittaa MTV Oy",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Jo neljäsosa suomalaisista kotitalouksista tilaa jotakin maksukanavaa , ilmoittaa MTV Oy .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Marskin ritari satavuotias",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Marskin ritari satavuotias",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Yksi viimeisistä Mannerheim-ristin ritareista , Onni Määttänen täytti täydet sata vuotta",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Yksi viimeisistä Mannerheim-ristin ritareista , Onni Määttänen täytti täydet sata vuotta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Hän vietti juhlapäivää Pohjois-Karjalan prikaatin järjestämässä juhlassa Kontiorannan varuskunnassa",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "Hän vietti juhlapäivää Pohjois-Karjalan prikaatin järjestämässä juhlassa Kontiorannan varuskunnassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Pohjois-Karjalan prikaatin järjestämässä juhlassa Kontiorannan varuskunnassa",
+        "type": "LOCATION",
+        "confidence": 0.75,
+        "context": "Hän vietti juhlapäivää Pohjois-Karjalan prikaatin järjestämässä juhlassa Kontiorannan varuskunnassa .",
+        "chunkIndex": 1
+      }
+    ],
+    "documentId": "b5a40ec9-1967-4d49-b3ca-e45acf7c1e38"
+  },
+  {
+    "preview": true,
+    "extracted": 46,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Tehy",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Tehy-neuvotteluissa loppurutistus",
+        "chunkIndex": 0
+      },
+      {
+        "name": "19 miljoonaa euroa",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Sen lakkokassan ilmoitetaan olevan 19 miljoonaa euroa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Mikko Mäenpäällä",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "STTK:n puheenjohtaja Mikko Mäenpäällä ei ollut tietoa neuvottelujen viimeisistä vaiheista tai siitä , mitä maan hallitus on mahdollisesti osapuolille sanonut tai luvannut .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tehyn ja kuntatyönantajan välillä",
+        "type": "EVENT",
+        "confidence": 0.78,
+        "context": "Neuvottelut Tehyn ja kuntatyönantajan välillä jatkuvat viikonlopun ajan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Hankkeen takana",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "Hankkeen takana on Jim Balsillie , joka yritti jo ostaa Nashville Predatorsin ja siirtää sen Kanadan Hamiltoniin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Jim Balsillie",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "Hankkeen takana on Jim Balsillie , joka yritti jo ostaa Nashville Predatorsin ja siirtää sen Kanadan Hamiltoniin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Nashville Predatorsin",
+        "type": "PRODUCT",
+        "confidence": 0.88,
+        "context": "Hankkeen takana on Jim Balsillie , joka yritti jo ostaa Nashville Predatorsin ja siirtää sen Kanadan Hamiltoniin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kanadan Hamiltoniin",
+        "type": "LOCATION",
+        "confidence": 0.82,
+        "context": "Hankkeen takana on Jim Balsillie , joka yritti jo ostaa Nashville Predatorsin ja siirtää sen Kanadan Hamiltoniin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Research In Motion",
+        "type": "ORG",
+        "confidence": 0.96,
+        "context": "Balsillie toimii Research In Motion -nimisen yhtiön toimitusjohtajana .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Torontoon puuhataan Maple Leafsin rinnalle toista NHL-joukkuetta",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Torontoon puuhataan Maple Leafsin rinnalle toista NHL-joukkuetta",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Euroopan keskuspankki",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Euroopan keskuspankki laski eilen ohjauskorkoja .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "euribor-viitekorkoon",
+        "type": "OTHER",
+        "confidence": 0.68,
+        "context": "Talousasiantuntijat arvioivat etukäteen , että tämä koronalennus ei riitä pysyvästi vaikuttamaan euribor-viitekorkoon vaan EKP:n on laskettava ohjauskorkoja vielä uudelleen tänä vuonna .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "jauskorkoja",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "jauskorkoja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Talousasiantuntijat",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Talousasiantuntijat arvioivat etukäteen , että tämä koronalennus ei riitä pysyvästi vaikuttamaan euribor-viitekorkoon vaan EKP:n on laskettava ohjauskorkoja vielä uudelleen tänä vuonna .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "euribor-viitekorko",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Talousasiantuntijat arvioivat etukäteen , että tämä koronalennus ei riitä pysyvästi vaikuttamaan euribor-viitekorkoon vaan EKP:n on laskettava ohjauskorkoja vielä uudelleen tänä vuonna .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "EKP:n",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Talousasiantuntijat arvioivat etukäteen , että tämä koronalennus ei riitä pysyvästi vaikuttamaan euribor-viitekorkoon vaan EKP:n on laskettava ohjauskorkoja vielä uudelleen tänä vuonna .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tiina Helenius",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Markkinakoroissa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Handelsbankenin pääekonomisti Tiina Heleniuksen mukaan markkinakoroissa on ohjauskorkoihin nähden yllättävän paljon riskilisää : europankit ovat epäluuloisia toistensa suhteen ja varautuvat siihen , että kilpailijat peittelevät luottotappioitaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "europankit",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Handelsbankenin pääekonomisti Tiina Heleniuksen mukaan markkinakoroissa on ohjauskorkoihin nähden yllättävän paljon riskilisää : europankit ovat epäluuloisia toistensa suhteen ja varautuvat siihen , että kilpailijat peittelevät luottotappioitaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Hanno Möttölä",
+        "type": "PERSON",
+        "confidence": 0.99,
+        "context": "Hanno Möttölä lopettaa ammattilaisuransa",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomen ja Unkarin välisen EM-karsintaottelu",
+        "type": "EVENT",
+        "confidence": 0.92,
+        "context": "Möttölä kertoi päätöksestään Suomen ja Unkarin välisen EM-karsintaottelun jälkeen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "FC Passen",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Möttölä jatkaa pelejään Suomessa II-divisioonan FC Passen riveissä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomen maajoukkueessa",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Ottelu oli Möttölälle sadas Suomen maajoukkueessa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "NBA:ssa",
+        "type": "LOCATION",
+        "confidence": 0.8,
+        "context": "Ensimmäisenä suomalaiskoripalloilijana NBA:ssa pelannut Hanno Möttölä lopettaa ammattilais- ja maajoukkueuransa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Atlanta Hawksin joukkueessa",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Hän pelasi NBA:ssa Atlanta Hawksin joukkueessa kausina 2000–2002 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "2000–2002",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Hän pelasi NBA:ssa Atlanta Hawksin joukkueessa kausina 2000–2002 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Žalgiris Kaunas",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Liettualaisessa Žalgiris Kaunasin joukkueessa Möttölä oli mukana voittamassa maan mestaruutta ja cupia vuonna 2007 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Espanjassa",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "Hän on pelannut lisäksi muun muassa Espanjassa , Italiassa ja Kreikassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Italiassa",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "Hän on pelannut lisäksi muun muassa Espanjassa , Italiassa ja Kreikassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kreikassa",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "Hän on pelannut lisäksi muun muassa Espanjassa , Italiassa ja Kreikassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Helsinkiin",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Möttölä on rakennuttamassa taloa Helsinkiin , Käpylän kaupunginosaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Käpylän kaupunginosaan",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Möttölä on rakennuttamassa taloa Helsinkiin , Käpylän kaupunginosaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "2007",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Liettualaisessa Žalgiris Kaunasin joukkueessa Möttölä oli mukana voittamassa maan mestaruutta ja cupia vuonna 2007 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "32 vuotta",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Möttölällä on ikää 32 vuotta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Espanjassa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "a Espanjassa , Italiassa ja Kreikassa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Italiassa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "a Espanjassa , Italiassa ja Kreikassa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Kreikassa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "a Espanjassa , Italiassa ja Kreikassa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Helsinki",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Möttölä on rakennuttamassa taloa Helsinkiin , Käpylän kaupunginosaan .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Käpylän kaupungosa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "chunkIndex": 2
+      },
+      {
+        "name": "vaimonsa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Hänellä on vaimonsa kanssa kaksi alle kouluikäistä lasta .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "32 vuotta",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Möttölällä on ikää 32 vuotta .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Suomessa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Sisäpiirikauppaepäilyjä herännyt Suomessa ja Ruotsissa",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Ruotsissa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Sisäpiirikauppaepäilyjä herännyt Suomessa ja Ruotsissa",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Sisäpiirikauppaepäilyjä",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "Sisäpiirikauppaepäilyjä herännyt Suomessa ja Ruotsissa",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Suomen osakkeiden sisäpiirikaupat",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Suomen osakkeiden sisäpiirikaupat olivat Ratan mukaan v.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Ratan",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Suomen osakkeiden sisäpiirikaupat olivat Ratan mukaan v.",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "ebde795c-7234-41de-b0ad-752707727296"
+  },
+  {
+    "preview": true,
+    "extracted": 47,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Iberia",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Roomalaiset ilmeisesti myönsivät menettäneensä Iberian Iranin kanssa solmitun Acilisenen sopimuksen jälkeen vuonna 387 .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Iran",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Roomalaiset ilmeisesti myönsivät menettäneensä Iberian Iranin kanssa solmitun Acilisenen sopimuksen jälkeen vuonna 387 .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Acilisenen sopimus",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kristitty kirkko",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Kristitty kirkko ja osa aatelistosta vastustivat Iranin vaikutusvallan kasvua ja zarathustralaisuuden leviämistä Itä-Georgiassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "zarathustralaisuus",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "chunkIndex": 0
+      },
+      {
+        "name": "georgialaiset aakkoset",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Merkittävin taistosta jäljelle jäänyt kulttuuriperintö on georgialaiset aakkoset , jotka olivat ratkaisevan tärkeä väline kristinuskon oppien levittämiseksi maassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Iberian Khosroiani-kuninkaat",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Vaikka Iberian Khosroiani-kuninkaat olivat kristittyjä , he pysyivät yleisesti ottaen uskollisina iranilaisille herroilleen , kunnes Vakhtang I Gorgasali ( hallitsi 447–522 ) käänsi kelkkansa vuonna 482 ja toi maansa ja kirkkonsa lähemmäs Bysanttia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vakhtang I Gorgasali",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Vaikka Iberian Khosroiani-kuninkaat olivat kristittyjä , he pysyivät yleisesti ottaen uskollisina iranilaisille herroilleen , kunnes Vakhtang I Gorgasali ( hallitsi 447–522 ) käänsi kelkkansa vuonna 482 ja toi maansa ja kirkkonsa lähemmäs Bysanttia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Bysantti",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Vaikka Iberian Khosroiani-kuninkaat olivat kristittyjä , he pysyivät yleisesti ottaen uskollisina iranilaisille herroilleen , kunnes Vakhtang I Gorgasali ( hallitsi 447–522 ) käänsi kelkkansa vuonna 482 ja toi maansa ja kirkkonsa lähemmäs Bysanttia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tbilisi",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Hän oli mahdollisesti kaikkein suosituin Iberian Khosroiani-kuninkaista ja häntä on perinteisesti pidetty Georgian nykyisen pääkaupungin Tbilisin perustajana .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vardan I Mamikonianin",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "Hän aloitti armenialaisen prinssin Vardan I Mamikonianin kanssa avoimen kapinan sassanideja vastaan ja jatkoi epätoivoista , lopulta tuloksettomaksi jäänyttä kamppailuaan elämänsä loppuun saakka .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "sassanidit",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Kun kuningas Bakur II kuoli vuonna 580 , sassanidit käyttivät tilaisuutta hyväkseen ja lakkauttivat monarkian .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Bakur II",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Kun kuningas Bakur II kuoli vuonna 580 , sassanidit käyttivät tilaisuutta hyväkseen ja lakkauttivat monarkian .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Maurikiokselle",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Jälkimmäisen sukuhaaran jäsen Guaram I ( hallitsi 588–590 ) kapinoi vuonna 588 sassanideja vastaan ja vannoi uskollisuuttaan Bysantin keisari Maurikiokselle , minkä vuoksi hänelle annettiin korkea bysanttilainen kuropalates-arvonimi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "bysanttilainen kuropalates-arvonimi",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Jälkimmäisen sukuhaaran jäsen Guaram I ( hallitsi 588–590 ) kapinoi vuonna 588 sassanideja vastaan ja vannoi uskollisuuttaan Bysantin keisari Maurikiokselle , minkä vuoksi hänelle annettiin korkea bysanttilainen kuropalates-arvonimi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Guaram I",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Jälkimmäisen sukuhaaran jäsen Guaram I ( hallitsi 588–590 ) kapinoi vuonna 588 sassanideja vastaan ja vannoi uskollisuuttaan Bysantin keisari Maurikiokselle , minkä vuoksi hänelle annettiin korkea bysanttilainen kuropalates-arvonimi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Bysantiin",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Bysantin keisari",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "uskollisuuttaan Bysantin keisari Maurikiokselle , minkä vuoksi hänelle annettiin korkea bysanttilainen kuropalates-arvonimi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Maurikiokselle",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "uskollisuuttaan Bysantin keisari Maurikiokselle , minkä vuoksi hänelle annettiin korkea bysanttilainen kuropalates-arvonimi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Iberia",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Hän onnistui palauttamaan Iberian itsehallinnon ruhtinaskunnan muodossa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Iran",
+        "type": "ORG",
+        "confidence": 0.93,
+        "context": "Iran hyväksyi järjestelyn vuoden 591 rauhassa , jossa Iberia jaettiin Bysantin ja Iranin välillä kahtia Tbilisissä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tbilisi",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Iran hyväksyi järjestelyn vuoden 591 rauhassa , jossa Iberia jaettiin Bysantin ja Iranin välillä kahtia Tbilisissä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Guaramin",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Guaramin poika ja seuraaja Stepanoz I ( hallitsi 590–627 ) alkoi kuitenkin tukea sassanideja ja yhdisti Iberian jälleen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Stepanoz I",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Guaramin poika ja seuraaja Stepanoz I ( hallitsi 590–627 ) alkoi kuitenkin tukea sassanideja ja yhdisti Iberian jälleen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Herakleios",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Bysantin keisari Herakleios ( hallitsi 610–641 ) lähti lopulta raivokkaaseen vastahyökkäykseen liitossa kasaarien kanssa ja valtasi Tbilisin vaikean piirityksen jälkeen vuonna 627 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kakhetin Adarnase I",
+        "type": "ORG",
+        "confidence": 0.94,
+        "context": "Herakleios I käski nylkeä Stepanozin elävältä ja antoi hänen virkansa Bysanttia tukeneelle Khosroiani-ruhtinaalle Kakhetin Adarnase I:lle ( hallitsi 627–637/42 ) .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Khosroiani-ruhtinaalle",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Herakleios I käski nylkeä Stepanozin elävältä ja antoi hänen virkansa Bysanttia tukeneelle Khosroiani-ruhtinaalle Kakhetin Adarnase I:lle ( hallitsi 627–637/42 ) .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Adarnase II",
+        "type": "PERSON",
+        "confidence": 0.93,
+        "context": "Adarnase II:n ( hallitsi n.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Artšil",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "693 ) palasi valtaan , ja vanhempi Khosroiani-haara vetäytyi jälleen läänityksilleen Kakhetiin , jossa sukuun syntyi merkittävä jäsen , Georgian ortodoksikirkon pyhimys Artšil .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Iovane",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "Kun Artšil kuoli , hänen vanhin poikansa Iovane ( kuoli n.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Džuanšer",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Hänen nuorempi poikansa Džuanšer ( hallitsi 786 – n.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Bagrationi-dynastia",
+        "type": "ORG",
+        "confidence": 0.87,
+        "context": "807 ) puolestaan pysyi Kakhetissa ja meni naimisiin Bagrationi-dynastian esi-isän prinssi Adarnasen tyttären Latavrin kanssa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Georgian ortodoksikirkko",
+        "type": "ORG",
+        "confidence": 0.82,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Egrisi",
+        "type": "LOCATION",
+        "confidence": 0.91,
+        "context": "799 ) pakeni Bysantin hallisemalle alueelle Egrisiin ( Lazicaan ) Länsi-Georgiassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Lazicaan",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "799 ) pakeni Bysantin hallisemalle alueelle Egrisiin ( Lazicaan ) Länsi-Georgiassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "786",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "Hän joutui marttyyriksi arabien käsissä vuonna 786 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "799",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "799 ) pakeni Bysantin hallisemalle alueelle Egrisiin ( Lazicaan ) Länsi-Georgiassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "807",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "807 ) puolestaan pysyi Kakhetissa ja meni naimisiin Bagrationi-dynastian esi-isän prinssi Adarnasen tyttären Latavrin kanssa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Adarnasen",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "si Adarnasen tyttären Latavrin kanssa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Latavrin",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "si Adarnasen tyttären Latavrin kanssa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Kakhetissa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Paikalliset aatelisperheet ottivat haltuunsa khosroidien omaisuuden Kakhetissa ja muodostivat piispojen ( khorepiskopos ) dynastian , joka säilyi 1000-luvulle saakka .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1000-luku",
+        "type": "DATE",
+        "confidence": 0.9,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Bagrationi-dynastia",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Guaramidien tilat siirtyivät heidän sukulaisilleen Bagrationi-dynastiasta .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Mithridates VI Eupator",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Mithridates VI Eupator Dionysos ( muinaiskreikaksi Μιθριδάτης Εὐπάτωρ Διόνυσος , 132 eaa.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Pontoksen kuningas",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": ", myös Mithridates Suuri ) oli Pontoksen kuningas 120 eaa.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "120 eaa.",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": ", myös Mithridates Suuri ) oli Pontoksen kuningas 120 eaa.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "63 eaa.",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "– 63 eaa.",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "80d76faa-5ee0-4e1c-bdaa-ba25f6e525f9"
+  },
+  {
+    "preview": true,
+    "extracted": 17,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Iberiassa",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "man kanssa vaikutusvallasta Iberiassa , ja onnistuivat tilapäisesti syrjäyttämään Mirianin Roomaa tukeneen seuraajan Saurmag II:n .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Mirianin Roomaa",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "man kanssa vaikutusvallasta Iberiassa , ja onnistuivat tilapäisesti syrjäyttämään Mirianin Roomaa tukeneen seuraajan Saurmag II:n .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Saurmag II",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "man kanssa vaikutusvallasta Iberiassa , ja onnistuivat tilapäisesti syrjäyttämään Mirianin Roomaa tukeneen seuraajan Saurmag II:n .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Irania",
+        "type": "ORG",
+        "confidence": 0.8,
+        "context": "Hänen tilalleen nostettiin Irania tukenut Varaz-Bakur I vuonna 361 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Varaz-Bakur I",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Hänen tilalleen nostettiin Irania tukenut Varaz-Bakur I vuonna 361 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Vuonna 361",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Hänen tilalleen nostettiin Irania tukenut Varaz-Bakur I vuonna 361 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Valens",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Rooman keisari Valens puuttui alueen tapahtumiin ja palautti Saurmagin valtaistuimelle vuonna 370 , mutta Varaz-Bakurin pojan ja seuraajan Mirdat III:n ( hallitsi 365–380 ) annettiin jäädä hallitsemaan kuningaskunnan itäosaa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Saurmagin valtaistuimelle",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Rooman keisari Valens puuttui alueen tapahtumiin ja palautti Saurmagin valtaistuimelle vuonna 370 , mutta Varaz-Bakurin pojan ja seuraajan Mirdat III:n ( hallitsi 365–380 ) annettiin jäädä hallitsemaan kuningaskunnan itäosaa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Vuonna 370",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Rooman keisari Valens puuttui alueen tapahtumiin ja palautti Saurmagin valtaistuimelle vuonna 370 , mutta Varaz-Bakurin pojan ja seuraajan Mirdat III:n ( hallitsi 365–380 ) annettiin jäädä hallitsemaan kuningaskunnan itäosaa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Varaz-Bakurin pojan ja seuraajan Mirdat III:n",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Rooman keisari Valens puuttui alueen tapahtumiin ja palautti Saurmagin valtaistuimelle vuonna 370 , mutta Varaz-Bakurin pojan ja seuraajan Mirdat III:n ( hallitsi 365–380 ) annettiin jäädä hallitsemaan kuningaskunnan itäosaa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "kuningaskunnan itäosaa",
+        "type": "LOCATION",
+        "confidence": 0.7,
+        "context": "Rooman keisari Valens puuttui alueen tapahtumiin ja palautti Saurmagin valtaistuimelle vuonna 370 , mutta Varaz-Bakurin pojan ja seuraajan Mirdat III:n ( hallitsi 365–380 ) annettiin jäädä hallitsemaan kuningaskunnan itäosaa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Vuoteen 380 mennessä",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "Vuoteen 380 mennessä sassanidit olivat kuitenkin jälleen saaneet Iberian valtaansa yhdistettyään maan Varaz-Bakur II:n hallintoon ( hallitsi 380–394 ) ja alkoivat kerätä Iberialta veroa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "sassanidit",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Vuoteen 380 mennessä sassanidit olivat kuitenkin jälleen saaneet Iberian valtaansa yhdistettyään maan Varaz-Bakur II:n hallintoon ( hallitsi 380–394 ) ja alkoivat kerätä Iberialta veroa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Iberian valtaansa",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Vuoteen 380 mennessä sassanidit olivat kuitenkin jälleen saaneet Iberian valtaansa yhdistettyään maan Varaz-Bakur II:n hallintoon ( hallitsi 380–394 ) ja alkoivat kerätä Iberialta veroa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Varaz-Bakur II:n hallintoon",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Vuoteen 380 mennessä sassanidit olivat kuitenkin jälleen saaneet Iberian valtaansa yhdistettyään maan Varaz-Bakur II:n hallintoon ( hallitsi 380–394 ) ja alkoivat kerätä Iberialta veroa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Vuonna 380–394",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Iberialta",
+        "type": "LOCATION",
+        "confidence": 0.75,
+        "context": "Vuoteen 380 mennessä sassanidit olivat kuitenkin jälleen saaneet Iberian valtaansa yhdistettyään maan Varaz-Bakur II:n hallintoon ( hallitsi 380–394 ) ja alkoivat kerätä Iberialta veroa .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "be25fc9f-d16e-4c3a-9237-08fd2fdbbe10"
+  },
+  {
+    "preview": true,
+    "extracted": 86,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "ḥōlem-vokaali",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Yhdessä ḥōlem-vokaalin kanssa vav on pitkän o:n merkki : tällöin piste on kirjaimen yläpuolella .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "vav",
+        "type": "PRODUCT",
+        "confidence": 0.92,
+        "context": "Yhdessä ḥōlem-vokaalin kanssa vav on pitkän o:n merkki : tällöin piste on kirjaimen yläpuolella .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "vo",
+        "type": "PRODUCT",
+        "confidence": 0.91,
+        "context": "Yhdessä ḥōlem-vokaalin kanssa vav on pitkän o:n merkki : tällöin piste on kirjaimen yläpuolella .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "maskuliini",
+        "type": "OTHER",
+        "confidence": 0.88,
+        "context": "Kieliopillisesti vav toimii muun muassa sanan perään liitettynä yksikön kolmanteen persoonaan ( maskuliini ) viittaavana suffiksina .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "yksikön kolmanteen persoonaan",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Kieliopillisesti vav toimii muun muassa sanan perään liitettynä yksikön kolmanteen persoonaan ( maskuliini ) viittaavana suffiksina .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "j-konjunktiota",
+        "type": "OTHER",
+        "confidence": 0.82,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Raamatun hepreassa",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Näitä niin sanottuja konsekutiivisia aikamuotoja käytetään lähinnä Raamatun hepreassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Heprealaisessa numerojärjestelmässä",
+        "type": "OTHER",
+        "confidence": 0.87,
+        "context": "Heprealaisessa numerojärjestelmässä vavilla on lukuarvo kuusi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "vuosi 1985",
+        "type": "DATE",
+        "confidence": 0.93,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Magnus Ugglan kokoelmalevy",
+        "type": "PRODUCT",
+        "confidence": 0.94,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Ugglan",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Collection on ruotsalainen Magnus Ugglan vuonna 1985 julkaistu kokoelmalevy .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1985",
+        "type": "DATE",
+        "confidence": 0.92,
+        "context": "Collection on ruotsalainen Magnus Ugglan vuonna 1985 julkaistu kokoelmalevy .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Hu Jun",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Hu Jun ( s.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "MM-kilpailuissa Zagrebissa 2006",
+        "type": "EVENT",
+        "confidence": 0.89,
+        "context": "Hu Jun saavutti MM-kilpailuissa Zagrebissa 2006 joukkuekultaa ja henkilökohtaista hopeaa 10 m ilmapistoolissa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "10 m ilmapistoolissa",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Hu Jun saavutti MM-kilpailuissa Zagrebissa 2006 joukkuekultaa ja henkilökohtaista hopeaa 10 m ilmapistoolissa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Zagrebissa",
+        "type": "LOCATION",
+        "confidence": 0.94,
+        "context": "Hu Jun saavutti MM-kilpailuissa Zagrebissa 2006 joukkuekultaa ja henkilökohtaista hopeaa 10 m ilmapistoolissa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2006",
+        "type": "DATE",
+        "confidence": 0.91,
+        "context": "Hu Jun saavutti MM-kilpailuissa Zagrebissa 2006 joukkuekultaa ja henkilökohtaista hopeaa 10 m ilmapistoolissa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Novo mesto",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Novo mesto on kaupunki Slovenian kaakkoisosassa Krka-joen rannalla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Slovenian kaakkoisosassa",
+        "type": "LOCATION",
+        "confidence": 0.87,
+        "context": "Novo mesto on kaupunki Slovenian kaakkoisosassa Krka-joen rannalla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Krka-joen rannalla",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Novo mesto on kaupunki Slovenian kaakkoisosassa Krka-joen rannalla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Dolenjskan alueen taloudellisena ja kulttuurillisena keskuksena",
+        "type": "OTHER",
+        "confidence": 0.83,
+        "context": "Sitä pidetään Dolenjskan alueen taloudellisena ja kulttuurillisena keskuksena .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "298,5 neliökilometriä",
+        "type": "OTHER",
+        "confidence": 0.81,
+        "context": "Novo Meston pinta-ala on 298,5 neliökilometriä ja asukasluku 35 570 ( 2008 ) .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "35 570",
+        "type": "OTHER",
+        "confidence": 0.84,
+        "context": "Novo Meston pinta-ala on 298,5 neliökilometriä ja asukasluku 35 570 ( 2008 ) .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2008",
+        "type": "DATE",
+        "confidence": 0.92,
+        "context": "Novo Meston pinta-ala on 298,5 neliökilometriä ja asukasluku 35 570 ( 2008 ) .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Itävallan herttua Rudolf IV",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Kaupungin perusti Itävallan herttua Rudolf IV 7.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "7. huhtikuuta 1365",
+        "type": "DATE",
+        "confidence": 0.94,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Rudolfswert",
+        "type": "OTHER",
+        "confidence": 0.89,
+        "context": "huhtikuuta 1365 nimellä Rudolfswert .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Itävallan-Unkarin hajottua",
+        "type": "EVENT",
+        "confidence": 0.86,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vuonna 1958 valmistui Novo meston kautta kulkeva Ljubljanan ja Zagrebin välinen valtatie",
+        "type": "OTHER",
+        "confidence": 0.78,
+        "context": "Vuonna 1958 valmistui Novo meston kautta kulkeva Ljubljanan ja Zagrebin välinen valtatie , joka on nyt osa E70-tietä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Cviček-viini",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Matkailun suosio alueella on lisääntynyt , ja muun muassa viiniharrastajat käyvät maistelemassa paikallista Cviček-viiniä Krkan laaksossa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Krkan laaksossa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Matkailun suosio alueella on lisääntynyt , ja muun muassa viiniharrastajat käyvät maistelemassa paikallista Cviček-viiniä Krkan laaksossa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "15. marraskuuta",
+        "type": "DATE",
+        "confidence": 0.98,
+        "chunkIndex": 1
+      },
+      {
+        "name": "319. päivä",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "320. päivä karkausvuonna",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Vuodesta",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Vuodesta on jäljellä 46 päivää .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1533",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1533 – Konkistadori Francisco Pizarro saapui inkojen pääkaupunkiin Cuzcoon .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Konkistadori Francisco Pizarro",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "* 1533 – Konkistadori Francisco Pizarro saapui inkojen pääkaupunkiin Cuzcoon .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Cuzcoon",
+        "type": "LOCATION",
+        "confidence": 0.88,
+        "context": "* 1533 – Konkistadori Francisco Pizarro saapui inkojen pääkaupunkiin Cuzcoon .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1889",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1889 – Marechal Deodoro da Fonseca julisti Brasilian tasavallaksi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Marechal Deodoro da Fonseca",
+        "type": "PERSON",
+        "confidence": 0.93,
+        "context": "* 1889 – Marechal Deodoro da Fonseca julisti Brasilian tasavallaksi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Brasilian tasavallaksi",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "* 1889 – Marechal Deodoro da Fonseca julisti Brasilian tasavallaksi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Keisari Pedro II",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "Keisari Pedro II kukistettiin sotilasvallankaappauksessa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "sotilasvallankaappauksessa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Keisari Pedro II kukistettiin sotilasvallankaappauksessa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1917",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1917 – Eduskunta julistautui Suomen korkeimman valtiovallan haltijaksi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomen korkeimman valtiovallan haltijaksi",
+        "type": "EVENT",
+        "confidence": 0.82,
+        "context": "* 1917 – Eduskunta julistautui Suomen korkeimman valtiovallan haltijaksi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Genevessä",
+        "type": "LOCATION",
+        "confidence": 0.91,
+        "context": "* 1920 – Ensimmäinen Kansainliiton yleiskokous pidettiin Genevessä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1941",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1941 – SS-johtaja Heinrich Himmler määräsi eräitä natsien johtavia virkamiehiä lukuun ottamatta kaikki Saksan homoseksuaalit pidätettäviksi ja karkotettavaksi keskitysleireille .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "SS-johtaja Heinrich Himmler",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "* 1941 – SS-johtaja Heinrich Himmler määräsi eräitä natsien johtavia virkamiehiä lukuun ottamatta kaikki Saksan homoseksuaalit pidätettäviksi ja karkotettavaksi keskitysleireille .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Saksan homoseksuaalit",
+        "type": "OTHER",
+        "confidence": 0.78,
+        "context": "* 1941 – SS-johtaja Heinrich Himmler määräsi eräitä natsien johtavia virkamiehiä lukuun ottamatta kaikki Saksan homoseksuaalit pidätettäviksi ja karkotettavaksi keskitysleireille .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1942",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1942 – Toinen maailmansota : Guadalcanalin laivastotaistelu päättyi liittoutuneiden selkeään voittoon .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Guadalcanalin laivastotaistelu",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "* 1942 – Toinen maailmansota : Guadalcanalin laivastotaistelu päättyi liittoutuneiden selkeään voittoon .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1943",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1943 – SS-johtaja Heinrich Himmler määräsi romanit asetettavaksi \" juutalaisten kanssa samaan asemaan ja sijoitettaviksi keskitysleireille \" .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "romanit",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "* 1943 – SS-johtaja Heinrich Himmler määräsi romanit asetettavaksi \" juutalaisten kanssa samaan asemaan ja sijoitettaviksi keskitysleireille \" .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "juutalaisten kanssa samaan asemaan ja sijoitettaviksi keskitysleireille",
+        "type": "EVENT",
+        "confidence": 0.82,
+        "context": "* 1943 – SS-johtaja Heinrich Himmler määräsi romanit asetettavaksi \" juutalaisten kanssa samaan asemaan ja sijoitettaviksi keskitysleireille \" .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1945",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1945 – Sotasyyllisyysoikeudenkäynti Suomen sodanaikaista poliittista johtoa vastaan alkoi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Sotasyyllisyysoikeudenkäynti Suomen sodanaikaista poliittista johtoa vastaan",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "* 1945 – Sotasyyllisyysoikeudenkäynti Suomen sodanaikaista poliittista johtoa vastaan alkoi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1956",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1956 – Ensimmäinen Elvis Presley -elokuva , Love Me Tender , oli ensi-illassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Ensimmäinen Elvis Presley -elokuva",
+        "type": "PRODUCT",
+        "confidence": 0.93,
+        "context": "* 1956 – Ensimmäinen Elvis Presley -elokuva , Love Me Tender , oli ensi-illassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Love Me Tender",
+        "type": "PRODUCT",
+        "confidence": 0.94,
+        "context": "* 1956 – Ensimmäinen Elvis Presley -elokuva , Love Me Tender , oli ensi-illassa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1959",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1959 – Richard Hickock ja Perry Smith murhasivat Clutterin perheen Kansasin Holcombissa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Richard Hickock",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "* 1959 – Richard Hickock ja Perry Smith murhasivat Clutterin perheen Kansasin Holcombissa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Perry Smith",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "* 1959 – Richard Hickock ja Perry Smith murhasivat Clutterin perheen Kansasin Holcombissa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Clutterin perheen Kansasin Holcombissa",
+        "type": "LOCATION",
+        "confidence": 0.88,
+        "context": "* 1959 – Richard Hickock ja Perry Smith murhasivat Clutterin perheen Kansasin Holcombissa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Murha oli aiheena kuusi vuotta myöhemmin ilmestyneessä Truman Capoten dokumenttiromaanissa Kylmäverisesti",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Murha oli aiheena kuusi vuotta myöhemmin ilmestyneessä Truman Capoten dokumenttiromaanissa Kylmäverisesti .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1966",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1966 – Avaruustutkimus : Gemini-12 laskeutui turvallisesti maahan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Avaruustutkimus",
+        "type": "EVENT",
+        "confidence": 0.82,
+        "context": "* 1966 – Avaruustutkimus : Gemini-12 laskeutui turvallisesti maahan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Gemini-12",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "* 1966 – Avaruustutkimus : Gemini-12 laskeutui turvallisesti maahan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1969",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kylmä sota",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "* 1969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "neuvostoliittolainen sukellusvene K-19",
+        "type": "PRODUCT",
+        "confidence": 0.82,
+        "context": "* 1969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "yhdysvaltalainen sukellusvene USS Gato",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "* 1969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Barentsinmerellä",
+        "type": "LOCATION",
+        "confidence": 0.91,
+        "context": "* 1969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1970",
+        "type": "DATE",
+        "confidence": 0.96,
+        "context": "* 1970 – Neuvostoliittolainen kuukulkija Lunokhod 1 laskeutui Kuuhun .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Neuvostoliittolainen kuukulkija Lunokhod 1",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "* 1970 – Neuvostoliittolainen kuukulkija Lunokhod 1 laskeutui Kuuhun .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kuuhun",
+        "type": "LOCATION",
+        "confidence": 0.88,
+        "context": "* 1970 – Neuvostoliittolainen kuukulkija Lunokhod 1 laskeutui Kuuhun .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kylmä sota",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "neuvostoliittolainen sukellusvene K-19",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "yhdysvaltalainen sukellusvene USS Gato",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Barentsinmerellä",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "969 – Kylmä sota : neuvostoliittolainen sukellusvene K-19 ja yhdysvaltalainen sukellusvene USS Gato törmäsivät Barentsinmerellä .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1970",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "* 1970 – Neuvostoliittolainen kuukulkija Lunokhod 1 laskeutui Kuuhun .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Neuvostoliittolainen kuukulkija Lunokhod 1",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "* 1970 – Neuvostoliittolainen kuukulkija Lunokhod 1 laskeutui Kuuhun .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Kuhun",
+        "type": "LOCATION",
+        "confidence": 0.88,
+        "chunkIndex": 2
+      },
+      {
+        "name": "1971",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "* 1971 – Intel julkaisi maailman ensimmäisen kaupallisen yhden mikropiirin mikroprosessorin , Intel 4004:n .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Intel",
+        "type": "ORG",
+        "confidence": 0.99,
+        "context": "* 1971 – Intel julkaisi maailman ensimmäisen kaupallisen yhden mikropiirin mikroprosessorin , Intel 4004:n .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "maailman ensimmäisen kaupallisen yhden mikropiirin mikroprosessorin",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "* 1971 – Intel julkaisi maailman ensimmäisen kaupallisen yhden mikropiirin mikroprosessorin , Intel 4004:n .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Intel 4004:n",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "* 1971 – Intel julkaisi maailman ensimmäisen kaupallisen yhden mikropiirin mikroprosessorin , Intel 4004:n .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "b14af9d0-1434-452f-ac50-6588e6e64b2c"
+  },
+  {
+    "preview": true,
+    "extracted": 8,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "ilä",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "ilä , Lunkaa , Porras ja Ojanen .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Lunkaa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "ilä , Lunkaa , Porras ja Ojanen .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Porras",
+        "type": "LOCATION",
+        "confidence": 0.91,
+        "context": "ilä , Lunkaa , Porras ja Ojanen .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Ojanen",
+        "type": "PERSON",
+        "confidence": 0.88,
+        "context": "ilä , Lunkaa , Porras ja Ojanen .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Kuivajärven rajoittuu myös Forssan kaupungin ja Tammelan kunnan nykyään omistama Saaren kansanpuisto",
+        "type": "ORG",
+        "confidence": 0.94,
+        "chunkIndex": 2
+      },
+      {
+        "name": "Kajaanin linna",
+        "type": "PRODUCT",
+        "confidence": 0.96,
+        "context": "Kajaanin linna on 1600-luvulla rakennettu linnoitus Ämmäkosken saaressa Kajaaninjoella nykyisen Kajaanin kaupungin keskustassa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1600-luvulla",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Kajaanin linna on 1600-luvulla rakennettu linnoitus Ämmäkosken saaressa Kajaaninjoella nykyisen Kajaanin kaupungin keskustassa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Ämmäkosken saaressa Kajaaninjoella nykyisen Kajaanin kaupungin keskustassa",
+        "type": "LOCATION",
+        "confidence": 0.93,
+        "context": "Kajaanin linna on 1600-luvulla rakennettu linnoitus Ämmäkosken saaressa Kajaaninjoella nykyisen Kajaanin kaupungin keskustassa .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "3c6efe3e-9b12-480c-8b73-3dd5dd8dad85"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "97f81962-41b6-4c22-886a-16756bfdb0f8"
+  },
+  {
+    "preview": true,
+    "extracted": 55,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Pienemmän osallistujamäärän",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Pienemmän osallistujamäärän on tarkoitus taata mahdollisuus esimerkiksi juuri kysymysten esittämiseen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Juuri kysymysten esittämiseen",
+        "type": "OTHER",
+        "confidence": 0.82,
+        "context": "Pienemmän osallistujamäärän on tarkoitus taata mahdollisuus esimerkiksi juuri kysymysten esittämiseen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Lapset",
+        "type": "PERSON",
+        "confidence": 0.75,
+        "context": "Kun lapset tutustuivat tieteeseen ja tutkimukseen , viihtyivät heidän vanhempansa lauantaina äiti- ja isäparkissa , jossa professori Hannu Ruonavaara puhui asuntovarallisuudesta vanhuudenturvana ja PsT Katja Valli kertoi lasten nukkumisesta ja unennäöstä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vanhempansa",
+        "type": "OTHER",
+        "confidence": 0.78,
+        "context": "Kun lapset tutustuivat tieteeseen ja tutkimukseen , viihtyivät heidän vanhempansa lauantaina äiti- ja isäparkissa , jossa professori Hannu Ruonavaara puhui asuntovarallisuudesta vanhuudenturvana ja PsT Katja Valli kertoi lasten nukkumisesta ja unennäöstä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Aiti- ja isäparka",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Professori Hannu Ruonavaara",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Kun lapset tutustuivat tieteeseen ja tutkimukseen , viihtyivät heidän vanhempansa lauantaina äiti- ja isäparkissa , jossa professori Hannu Ruonavaara puhui asuntovarallisuudesta vanhuudenturvana ja PsT Katja Valli kertoi lasten nukkumisesta ja unennäöstä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "PsT Katja Valli",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "Kun lapset tutustuivat tieteeseen ja tutkimukseen , viihtyivät heidän vanhempansa lauantaina äiti- ja isäparkissa , jossa professori Hannu Ruonavaara puhui asuntovarallisuudesta vanhuudenturvana ja PsT Katja Valli kertoi lasten nukkumisesta ja unennäöstä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Lasten yliopisto",
+        "type": "ORG",
+        "confidence": 0.96,
+        "context": "Lasten yliopiston luennot jatkuvat vielä kahtena tulevana lauantaina .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vuonna 2008",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Vuonna 2008 Turun yliopistossa käynnistynyt Lasten yliopisto on tarkoitettu 7−10-vuotiaille koululaisille .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Turun yliopistossa",
+        "type": "LOCATION",
+        "confidence": 0.97,
+        "context": "Vuonna 2008 Turun yliopistossa käynnistynyt Lasten yliopisto on tarkoitettu 7−10-vuotiaille koululaisille .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Lasten yliopisto",
+        "type": "ORG",
+        "confidence": 0.96,
+        "context": "Lasten yliopiston luennot jatkuvat vielä kahtena tulevana lauantaina .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Luennoilla",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Luennoilla on tarkoitus tarjota pieniä vastauksia tieteen suuriin kysymyksiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Akatemian Viksu-palkinto",
+        "type": "EVENT",
+        "confidence": 0.93,
+        "context": "Akatemian Viksu-palkinto Turkuun",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Turkuun",
+        "type": "LOCATION",
+        "confidence": 0.94,
+        "context": "Akatemian Viksu-palkinto Turkuun",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Suomen Akatemian lukiolaisille järjestämän vuoden 2009 Viksu-tiedekilpailun kansainvälisen sarjan 4000 euron suuruisen ykköspalkinnon voitti Salli Anttila Turun normaalikoulusta fysiikan alan työllään",
+        "type": "EVENT",
+        "confidence": 0.91,
+        "context": "Suomen Akatemian lukiolaisille järjestämän vuoden 2009 Viksu-tiedekilpailun kansainvälisen sarjan 4000 euron suuruisen ykköspalkinnon voitti Salli Anttila Turun normaalikoulusta fysiikan alan työllään .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Salli Anttila",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Suomen Akatemian lukiolaisille järjestämän vuoden 2009 Viksu-tiedekilpailun kansainvälisen sarjan 4000 euron suuruisen ykköspalkinnon voitti Salli Anttila Turun normaalikoulusta fysiikan alan työllään .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Turun normaalikoulusta",
+        "type": "LOCATION",
+        "confidence": 0.93,
+        "context": "Suomen Akatemian lukiolaisille järjestämän vuoden 2009 Viksu-tiedekilpailun kansainvälisen sarjan 4000 euron suuruisen ykköspalkinnon voitti Salli Anttila Turun normaalikoulusta fysiikan alan työllään .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "fysiikan alan työllään",
+        "type": "OTHER",
+        "confidence": 0.88,
+        "context": "Suomen Akatemian lukiolaisille järjestämän vuoden 2009 Viksu-tiedekilpailun kansainvälisen sarjan 4000 euron suuruisen ykköspalkinnon voitti Salli Anttila Turun normaalikoulusta fysiikan alan työllään .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Anttilan lääkeaineiden annostelun kehittämiseen liittyvässä perustutkimuksessa",
+        "type": "OTHER",
+        "confidence": 0.89,
+        "context": "Anttilan lääkeaineiden annostelun kehittämiseen liittyvässä perustutkimuksessa selvitettiin , miten läääkeaineiden vaikuttavien ainesosien kiteisyys tai kidetyyppi vaikuttaa lääkkeen tehokkuuteen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "lääkkeen tehokkuuteen",
+        "type": "OTHER",
+        "confidence": 0.87,
+        "context": "Anttilan lääkeaineiden annostelun kehittämiseen liittyvässä perustutkimuksessa selvitettiin , miten läääkeaineiden vaikuttavien ainesosien kiteisyys tai kidetyyppi vaikuttaa lääkkeen tehokkuuteen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Salli Anttila teki tutkimuksensa Turun yliopiston teollisuusfysiikan laboratoriossa",
+        "type": "EVENT",
+        "confidence": 0.92,
+        "context": "Salli Anttila teki tutkimuksensa Turun yliopiston teollisuusfysiikan laboratoriossa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Yliopisto on jo vuosia järjestänyt fysiikan harjoitustyökursseja lukiolaisille",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Yliopisto on jo vuosia järjestänyt fysiikan harjoitustyökursseja lukiolaisille .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Niihin osallistuvat lukiolaiset saavat opintopistehyvityksen kurssista",
+        "type": "OTHER",
+        "confidence": 0.84,
+        "context": "Niihin osallistuvat lukiolaiset saavat opintopistehyvityksen kurssista , mikäli tulevat yliopistoon opiskelemaan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "mikäli tulevat yliopistoon opiskelemaan",
+        "type": "OTHER",
+        "confidence": 0.83,
+        "context": "Niihin osallistuvat lukiolaiset saavat opintopistehyvityksen kurssista , mikäli tulevat yliopistoon opiskelemaan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "- Hienoa , että tämä yhteistyö on nyt poikinut näin upeaa tulosta , iloitsee dosentti Jarno Salonen fysiikan ja tähtitieteen laitokselta .",
+        "type": "EVENT",
+        "confidence": 0.91,
+        "context": "- Hienoa , että tämä yhteistyö on nyt poikinut näin upeaa tulosta , iloitsee dosentti Jarno Salonen fysiikan ja tähtitieteen laitokselta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "dosentti Jarno Salonen",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "- Hienoa , että tämä yhteistyö on nyt poikinut näin upeaa tulosta , iloitsee dosentti Jarno Salonen fysiikan ja tähtitieteen laitokselta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "fysiikan ja tähtitieteen laitokselta",
+        "type": "OTHER",
+        "confidence": 0.88,
+        "context": "- Hienoa , että tämä yhteistyö on nyt poikinut näin upeaa tulosta , iloitsee dosentti Jarno Salonen fysiikan ja tähtitieteen laitokselta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Viksu-tiedekilpailun kansallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "type": "EVENT",
+        "confidence": 0.93,
+        "context": "Viksu-tiedekilpailun kansallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Savonlinnan lyseon oppilaat Eveliina Tahvanainen",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Viksu-tiedekilpailun kansallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Siniriikka Ventelä psykologian alan parityöllä",
+        "type": "OTHER",
+        "confidence": 0.89,
+        "context": "Viksu-tiedekilpailun kansallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Molemmat palkittiin 2500 eurolla",
+        "type": "OTHER",
+        "confidence": 0.86,
+        "context": "Molemmat palkittiin 2500 eurolla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Savonlinnan lyseon oppilaat",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "sallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Eveliina Tahvanainen",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "sallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Siniriikka Ventelä",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "sallisen sarjan ykköspalkinnon voittivat Savonlinnan lyseon oppilaat Eveliina Tahvanainen ja Siniriikka Ventelä psykologian alan parityöllä , joka koski anoreksiaa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "2500 euro",
+        "type": "OTHER",
+        "confidence": 0.92,
+        "context": "Molemmat palkittiin 2500 eurolla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Henna Virkkunen",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Opetusministeri Henna Virkkunen ja Akatemian pääjohtaja Markku Mattila palkitsivat voittajat palkintojenjakotilaisuudessa keskiviikkona 7.4 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Akatemian pääjohtaja",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Opetusministeri Henna Virkkunen ja Akatemian pääjohtaja Markku Mattila palkitsivat voittajat palkintojenjakotilaisuudessa keskiviikkona 7.4 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Markku Mattila",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Opetusministeri Henna Virkkunen ja Akatemian pääjohtaja Markku Mattila palkitsivat voittajat palkintojenjakotilaisuudessa keskiviikkona 7.4 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "7.4",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "Opetusministeri Henna Virkkunen ja Akatemian pääjohtaja Markku Mattila palkitsivat voittajat palkintojenjakotilaisuudessa keskiviikkona 7.4 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "16 opiskelijaa",
+        "type": "OTHER",
+        "confidence": 0.88,
+        "context": "Palkinnon sai yhteensä 16 opiskelijaa , kuusi koulua ja yksi opettaja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "kuusi koulua",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "Palkinnon sai yhteensä 16 opiskelijaa , kuusi koulua ja yksi opettaja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "yksi opettaja",
+        "type": "OTHER",
+        "confidence": 0.82,
+        "context": "Palkinnon sai yhteensä 16 opiskelijaa , kuusi koulua ja yksi opettaja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Viksu-tiedekilpailu",
+        "type": "EVENT",
+        "confidence": 0.94,
+        "context": "Lukiolaisten Viksu-tiedekilpailu järjestettiin kahdettatoista kertaa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Akatemia",
+        "type": "ORG",
+        "confidence": 0.96,
+        "context": "Opetusministeri Henna Virkkunen ja Akatemian pääjohtaja Markku Mattila palkitsivat voittajat palkintojenjakotilaisuudessa keskiviikkona 7.4 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "143 kilpailutyötä",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Kilpailuun osallistui kaikkiaan 143 kilpailutyötä 27 lukiosta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "27 lukiosta",
+        "type": "LOCATION",
+        "confidence": 0.88,
+        "context": "Kilpailuun osallistui kaikkiaan 143 kilpailutyötä 27 lukiosta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Maailman Venäjä",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Tämän maailman Venäjä",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Anttonen",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "− Venäjää on Suomessa tapana tarkastella yleensä hyvin suomalaisesta näkökulmasta , sanoo Moskovan suurlähettiläs Anttonen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Moskovan suurlähettiläs",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "− Venäjää on Suomessa tapana tarkastella yleensä hyvin suomalaisesta näkökulmasta , sanoo Moskovan suurlähettiläs Anttonen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Matti Anttonen",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Viimeiset kaksi vuotta Suomen Moskovan suurlähettiläänä toiminut Matti Anttonen esitteli vierailuluennollaan Turun kauppakorkeakoulussa erilaisia näkökulmia nyky-Venäjään ja sen talouteen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Turun kauppakorkeakoulu",
+        "type": "LOCATION",
+        "confidence": 0.93,
+        "context": "Viimeiset kaksi vuotta Suomen Moskovan suurlähettiläänä toiminut Matti Anttonen esitteli vierailuluennollaan Turun kauppakorkeakoulussa erilaisia näkökulmia nyky-Venäjään ja sen talouteen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "EU-tasolla",
+        "type": "OTHER",
+        "confidence": 0.82,
+        "context": "Maata tarkasteltiin sekä maailmanlaajuisesta näkökulmasta , EU-tasolla että Suomen naapuriasemasta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomen naapuriasema",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Maata tarkasteltiin sekä maailmanlaajuisesta näkökulmasta , EU-tasolla että Suomen naapuriasemasta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Turun yliopisto",
+        "type": "ORG",
+        "confidence": 0.94,
+        "context": "Sekä Turun yliopistosta että Turun kauppakorkeakoulusta valmistunut suurlähettiläs Anttonen muistutti , että Venäjän läheiset suhteet Eurooppaan eivät ole uusi asia .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "WTO:n ulkopuolella",
+        "type": "OTHER",
+        "confidence": 0.83,
+        "context": "Maailman suurin öljyn ja kaasun tuottaja on toistaiseksi pysytellyt WTO:n ulkopuolella .",
+        "chunkIndex": 1
+      }
+    ],
+    "documentId": "742e42f0-ce73-491d-ac1f-3a611df8056e"
+  },
+  {
+    "preview": true,
+    "extracted": 35,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Leena Jokinen",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Emme edes pyrkineet tiukkaan yksimielisyyteen tai yhden reseptin löytämiseen , Leena Jokinen kertoi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vironmäki",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Vironmäki totesi , että yliopistot liian helposti viestivät organisaatiorakenteestaan käsin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Turun kauppakorkeakoulu",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Yksi vastaus kolmannen tehtävän kansainvälistämiseen on yrittäjyyteen liittyvä tutkimus- , koulutus- ja kehittämistyö , jota Turun kauppakorkeakoulun yrittäjyyden professori Antti Paasio esitteli .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Antti Paasio",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Yksi vastaus kolmannen tehtävän kansainvälistämiseen on yrittäjyyteen liittyvä tutkimus- , koulutus- ja kehittämistyö , jota Turun kauppakorkeakoulun yrittäjyyden professori Antti Paasio esitteli .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "BID Innovaatiot ja yrityskehitys -yksikkö",
+        "type": "ORG",
+        "confidence": 0.94,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Turku Innovation Platformissa (TIP)",
+        "type": "ORG",
+        "confidence": 0.93,
+        "chunkIndex": 0
+      },
+      {
+        "name": "EU-rahoitusta",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Tällä hetkellä esimerkiksi EU-rahoitusta hyödynnetään alueen yrityksissä heikosti .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Eurooppa-osaamistaan ja globaalia osaamistaan",
+        "type": "PRODUCT",
+        "confidence": 0.82,
+        "context": "Yliopistojen ja yritysten pitäisi kehittää Eurooppa-osaamistaan ja globaalia osaamistaan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "vaatiot ja yrityskehitys -yksikössä",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "vaatiot ja yrityskehitys -yksikössä , joka on keskeinen toimija Turku Innovation Platformissa ( TIP ) .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Turku Innovation Platformissa (TIP)",
+        "type": "ORG",
+        "confidence": 0.92,
+        "chunkIndex": 1
+      },
+      {
+        "name": "ICT",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "TIPissä yhdistyvät ICT- , Life Science- ja luovien alojen tutkimus sekä liiketoimintaosaaminen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Life Science",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "TIPissä yhdistyvät ICT- , Life Science- ja luovien alojen tutkimus sekä liiketoimintaosaaminen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "luovien alojen",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "TIPissä yhdistyvät ICT- , Life Science- ja luovien alojen tutkimus sekä liiketoimintaosaaminen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Turkulaisten toimijoiden lisäksi",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Turkulaisten toimijoiden lisäksi keskeisiä yhteistyökumppaneita ovat esimerkiksi tukholmalaiset yliopistot Karolinska Institutet ja Kungliga Tekniska högskolan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "tukholmalaiset yliopistot Karolinska Institutet",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Turkulaisten toimijoiden lisäksi keskeisiä yhteistyökumppaneita ovat esimerkiksi tukholmalaiset yliopistot Karolinska Institutet ja Kungliga Tekniska högskolan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kungliga Tekniska högskolan",
+        "type": "ORG",
+        "confidence": 0.94,
+        "context": "Turkulaisten toimijoiden lisäksi keskeisiä yhteistyökumppaneita ovat esimerkiksi tukholmalaiset yliopistot Karolinska Institutet ja Kungliga Tekniska högskolan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Innovation and Growth",
+        "type": "PRODUCT",
+        "confidence": 0.91,
+        "context": "Koulutuksen saralla meillä on käynnissä esimerkiksi uusi MBA-ohjelma Innovation and Growth , jossa tohtoriopiskelijat saavat myös liiketoimintaosaamisen koulutuksen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "TUCS",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Kansainvälinen osallistujajoukko koostuu TUCSin ja Kungliga Tekniska högskolanin tohtoriopiskelijoista , Paasio kertoi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Paasio",
+        "type": "PERSON",
+        "confidence": 0.93,
+        "context": "Kansainvälinen osallistujajoukko koostuu TUCSin ja Kungliga Tekniska högskolanin tohtoriopiskelijoista , Paasio kertoi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "20.4.2010",
+        "type": "DATE",
+        "confidence": 0.99,
+        "context": "Yliopistonmäellä järjestettiin 20.4.2010 perinteinen yliopistoon tutustumispäivä lukion ykkös- ja kakkosluokkalaisille .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Yliopistonmäellä",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Yliopistonmäellä järjestettiin 20.4.2010 perinteinen yliopistoon tutustumispäivä lukion ykkös- ja kakkosluokkalaisille .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "lukion ykkös- ja kakkosluokkalaiset",
+        "type": "OTHER",
+        "confidence": 0.72,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Juhana Herttuan lukiolaista Hanna Grönroosia",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Juhana Herttuan lukiolaista Hanna Grönroosia kiinnosti yleinen kirjallisuustiede ja hänen opiskelutoveriaan Rosa-Maria Ketolaa kiehtoi logopedia .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Rosa-Maria Ketolaa",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "Juhana Herttuan lukiolaista Hanna Grönroosia kiinnosti yleinen kirjallisuustiede ja hänen opiskelutoveriaan Rosa-Maria Ketolaa kiehtoi logopedia .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "yleisesti yliopisto-opiskelun luonteeseen tutustuminen",
+        "type": "EVENT",
+        "confidence": 0.82,
+        "context": "Ohjelmana olivat yleisesti yliopisto-opiskelun luonteeseen tutustuminen sekä tiedekuntien esittelyt .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "tiedekuntien esittelyt",
+        "type": "EVENT",
+        "confidence": 0.78,
+        "context": "Ohjelmana olivat yleisesti yliopisto-opiskelun luonteeseen tutustuminen sekä tiedekuntien esittelyt .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "lukioiden opinto-ohjaajille oma informaatiotilaisuus",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "Lukiolaisten päivän yhteydessä järjestettiin myös lukioiden opinto-ohjaajille oma informaatiotilaisuus .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Janne Talvitie",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Klassikon lukiolaiset Janne Talvitie ja Matti Juhanoja harkitsevat matemaattis-luonnontieteelliseen tiedekuntaan hakemista .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Matti Juhanoja",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "Klassikon lukiolaiset Janne Talvitie ja Matti Juhanoja harkitsevat matemaattis-luonnontieteelliseen tiedekuntaan hakemista .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Janne Talvitie",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Klassikon lukiolaiset Janne Talvitie ja Matti Juhanoja harkitsevat matemaattis-luonnontieteelliseen tiedekuntaan hakemista .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Matti Juhanoja",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Klassikon lukiolaiset Janne Talvitie ja Matti Juhanoja harkitsevat matemaattis-luonnontieteelliseen tiedekuntaan hakemista .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Juhana Herttuan lukiolaiset",
+        "type": "ORG",
+        "confidence": 0.85,
+        "context": "- Valintakokeiden poistaminen ei ole hyvä asia , koska sitten ylioppilaskirjoituksissa pitäisi onnistua , jos haluaisi saada jatko-opiskelupaikan , sanoivat Juhana Herttuan lukiolaiset Hanna Grönroos ja Rosa-Maria Ketola .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Hanna Grönroos",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "- Valintakokeiden poistaminen ei ole hyvä asia , koska sitten ylioppilaskirjoituksissa pitäisi onnistua , jos haluaisi saada jatko-opiskelupaikan , sanoivat Juhana Herttuan lukiolaiset Hanna Grönroos ja Rosa-Maria Ketola .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Rosa-Maria Ketola",
+        "type": "PERSON",
+        "confidence": 0.93,
+        "context": "- Valintakokeiden poistaminen ei ole hyvä asia , koska sitten ylioppilaskirjoituksissa pitäisi onnistua , jos haluaisi saada jatko-opiskelupaikan , sanoivat Juhana Herttuan lukiolaiset Hanna Grönroos ja Rosa-Maria Ketola .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Luostarinvuoren lukiolaiset",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Toisaalta esimerkiksi Luostarinvuoren lukiolaiset ajattelivat , että valintakokeiden tarpeellisuus riippuu siitä mitä menee opiskelemaan .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "ec5a4bcb-77f8-46b1-8528-932750f85f55"
+  },
+  {
+    "preview": true,
+    "extracted": 22,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Moody's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Luottoluokittaja Moody's varoitti Yhdysvaltoja 13.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Standard & Poor's",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Myös kaksi muuta suurta luottoluokittajaa , Standard & Poor's ja Fitch Ratings , uhkasivat Yhdysvaltoja luokituksen laskulla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Fitch Ratings",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Myös kaksi muuta suurta luottoluokittajaa , Standard & Poor's ja Fitch Ratings , uhkasivat Yhdysvaltoja luokituksen laskulla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Yhdysvallat",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Yhdysvallat on yksi niistä harvoista valtioista , joilla on kaikista korkein eli kolmen A:n luottoluokitus suurilta luottoluokitusyrityksiltä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "13. heinäkuuta",
+        "type": "DATE",
+        "confidence": 0.92,
+        "chunkIndex": 1
+      },
+      {
+        "name": "perjantaina",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Moody's totesi jo perjantaina , että Yhdysvaltain luottoluokitus pysyy kolmen A:n luokassa , jos sopu velkakatosta syntyy .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Saksa",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Euroopassa listalle kuuluvat muun muassa suuret Saksa , Ranska ja Britannia .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Ranska",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Euroopassa listalle kuuluvat muun muassa suuret Saksa , Ranska ja Britannia .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Britannia",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Euroopassa listalle kuuluvat muun muassa suuret Saksa , Ranska ja Britannia .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomi",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Pohjoismaista mukana ovat Suomi , Ruotsi , Tanska ja Norja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Ruotsi",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Pohjoismaista mukana ovat Suomi , Ruotsi , Tanska ja Norja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tanska",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Pohjoismaista mukana ovat Suomi , Ruotsi , Tanska ja Norja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Norja",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Pohjoismaista mukana ovat Suomi , Ruotsi , Tanska ja Norja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Uutta-Seelanti",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Pohjois-Amerikasta listalle kuuluu Yhdysvaltain lisäksi Kanada , muuten AAA-kerho on hyvin Eurooppa-keskeinen lukuun ottamatta Uutta-Seelantia ja Singaporea .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Singapore",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Pohjois-Amerikasta listalle kuuluu Yhdysvaltain lisäksi Kanada , muuten AAA-kerho on hyvin Eurooppa-keskeinen lukuun ottamatta Uutta-Seelantia ja Singaporea .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Automatic Data Processing",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "* Automatic Data Processing",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Exxon Mobil",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "* Exxon Mobil",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Johnson & Johnson",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "* Johnson & Johnson",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Microsoft",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "* Microsoft",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Fitch",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Fitch vahvisti Suomen valtion AAA-luokituksen 20.",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Suomi",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Pohjoismaista mukana ovat Suomi , Ruotsi , Tanska ja Norja .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "20. heinäkuuta",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "acfb7b1f-d912-42fd-91f2-d36a2ba5047b"
+  },
+  {
+    "preview": true,
+    "extracted": 29,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Luennolla",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Luennolla olijoita pyydettiin lopulta kutakin poimimaan läheinen lennokki .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Turun Yliopisto",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Turun Yliopiston IT-laitoksen oppilaat ja henkilökunta tuntuivat olevan mielissään marraskuisena aamuna löytäessään B-siiven hissistä puhujanpöntön sekä sen takaa tarjoilijan kyselemässä varauksista .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "IT-laitos",
+        "type": "ORG",
+        "confidence": 0.8,
+        "chunkIndex": 0
+      },
+      {
+        "name": "B-siiven hissistä",
+        "type": "LOCATION",
+        "confidence": 0.75,
+        "context": "Turun Yliopiston IT-laitoksen oppilaat ja henkilökunta tuntuivat olevan mielissään marraskuisena aamuna löytäessään B-siiven hissistä puhujanpöntön sekä sen takaa tarjoilijan kyselemässä varauksista .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "marraskuinen aamuna",
+        "type": "DATE",
+        "confidence": 0.9,
+        "chunkIndex": 0
+      },
+      {
+        "name": "kaksi tuntia",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Jäynä kesti tasan kaksi tuntia päättyen yllättävästi vapaaehtoisesti , kun naurut oli naurettu ja hissikorin ylipaine kehittyi kivuliaaksi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "171 henkilöä",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Tänä aikana hissiä käytti 171 henkilöä , joista 14 ilmoitti että heillä on varaus , ja viisi kysyi tarjoilua .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "14 ilmoitti",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "Tänä aikana hissiä käytti 171 henkilöä , joista 14 ilmoitti että heillä on varaus , ja viisi kysyi tarjoilua .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "viisi kysyi",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "Tänä aikana hissiä käytti 171 henkilöä , joista 14 ilmoitti että heillä on varaus , ja viisi kysyi tarjoilua .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "seitsemän henkeä",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Seitsemän henkeä jätti käyttämättä hissiä , mutta jokaisessa tapauksessa koska he nauroivat liian kovaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "nettovoitto",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "Kyseessä lienee siis nettovoitto , josta voimme oppia yksityiskohtien tärkeyttä kokonaisuudelle mutta myös valmistautumista odottamattomaan : englantia puhuvien opiskelijoiden suuri määrä pakotti improvisoituun käännöstyöhön , ja siivoojien kärryjen kanssa tuli tiukkaa , joskin he suhtautuivat asiaan hyvin ymmärtäväisesti .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "englantia puhuvien opiskelijoiden",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Kyseessä lienee siis nettovoitto , josta voimme oppia yksityiskohtien tärkeyttä kokonaisuudelle mutta myös valmistautumista odottamattomaan : englantia puhuvien opiskelijoiden suuri määrä pakotti improvisoituun käännöstyöhön , ja siivoojien kärryjen kanssa tuli tiukkaa , joskin he suhtautuivat asiaan hyvin ymmärtäväisesti .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "siivoojien kärryjen kanssa",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Kyseessä lienee siis nettovoitto , josta voimme oppia yksityiskohtien tärkeyttä kokonaisuudelle mutta myös valmistautumista odottamattomaan : englantia puhuvien opiskelijoiden suuri määrä pakotti improvisoituun käännöstyöhön , ja siivoojien kärryjen kanssa tuli tiukkaa , joskin he suhtautuivat asiaan hyvin ymmärtäväisesti .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "törkeä ideavarkaus",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "musta puku",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "pappa betalar",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "valkoinen pyyhe käsivarrelle",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "lähetystori Fida",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "2 €",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Asteriskin karkkitiski",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1 €",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "puhujanpönttö",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "TYY vuokraa alayhdistyksille",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Spektaakkelin luomiseen tarvittiin - yksi allekirjoittanut - törkeä ideavarkaus ( nettifoorumi , 0 € ) - musta puku ( pappa betalar ) - valkoinen pyyhe käsivarrelle ( lähetystori Fida , 2 € ) - tarjoilu ( Asteriskin karkkitiski , 1 € ) - puhujanpönttö , jota TYY vuokraa alayhdistyksille mutta jonka se lainasi , kun kohteliaasti pyydettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Huonekasvi Jaska II",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Huonekasvi Jaska II ( juurrutettu ) kuului myös seurueeseen , muttei onnistunut mahtumaan pöntön päälle .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Apuri",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Apuri ( kaljat torjuttu ) , jota voin parhaiten kiittää olemalla nimeämättä häntä , järjesti kallisarvoisen mööpelin noudon sekä palautuksen lastenvaunuilla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "kallisarvoisen mööpelin noudon sekä palautuksen lastenvaunuilla",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Apuri ( kaljat torjuttu ) , jota voin parhaiten kiittää olemalla nimeämättä häntä , järjesti kallisarvoisen mööpelin noudon sekä palautuksen lastenvaunuilla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Helikopteri",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "Paluumatkalla näimme helikopterin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Mahtien mittelöt eli Titeenien taistot Oulussa 29.2.",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Mahtien mittelöt eli Titeenien taistot Oulussa 29.2.",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "0a208f18-44d0-4109-a7d0-c6ec548a2a53"
+  },
+  {
+    "preview": true,
+    "extracted": 6,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Euroopan yhteisöjen ja niiden jäsenvaltioiden sekä Tunisian tasavallan välisestä assosiaatiosta tehdyn Euro–Välimeri-sopimuksen",
+        "type": "EVENT",
+        "confidence": 0.95,
+        "context": "Neuvoston päätös Euroopan yhteisöjen ja niiden jäsenvaltioiden sekä Tunisian tasavallan välisestä assosiaatiosta tehdyn Euro–Välimeri-sopimuksen 84 artiklan täytäntöönpanoa koskevasta assosiaationeuvostossa vahvistettavasta yhteisön kannasta",
+        "chunkIndex": 1
+      },
+      {
+        "name": "17 päivänä heinäkuuta 1995",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "( 1 ) Euroopan yhteisöjen ja niiden jäsenvaltioiden sekä Tunisian tasavallan välisestä assosiaatiosta tehtiin Euro–Välimeri-sopimus 17 päivänä heinäkuuta 1995 , ja se tuli voimaan 1 päivänä maaliskuuta 1998 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1 päivänä maaliskuuta 1998",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "( 1 ) Euroopan yhteisöjen ja niiden jäsenvaltioiden sekä Tunisian tasavallan välisestä assosiaatiosta tehtiin Euro–Välimeri-sopimus 17 päivänä heinäkuuta 1995 , ja se tuli voimaan 1 päivänä maaliskuuta 1998 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Alakomitea",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Alakomitean tehtävistä ja työjärjestyksestä on keskusteltu epävirallisesti Tunisian viranomaisten kanssa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Euroopan komission edustaja",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "Euroopan komission edustaja toimii alakomitean puheenjohtajana Euroopan yhteisön ja sen jäsenvaltioiden puolesta ja esittää näkemyksiä yhteisön toimivaltaan kuuluvista asioista .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "EU:n kannan aukoton johdonmukaisuus",
+        "type": "OTHER",
+        "confidence": 0.78,
+        "chunkIndex": 1
+      }
+    ],
+    "documentId": "0dfdf606-ffe0-422d-a4e1-76ce16c58ec0"
+  },
+  {
+    "preview": true,
+    "extracted": 8,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Maailman terveysjärjestön",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "ottaen samalla huomioon Maailman terveysjärjestön julkaisemat ohjeet ( 7 ) .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "direktiivi",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "On laskettu , etteivät tässä direktiivissä vahvistetut jäämien enimmäismäärät johda kuluttajien liialliseen altistumiseen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "direktiivin 86/362/ETY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Lisätään direktiivin 86/362/ETY liitteessä II olevaan A osaan seuraavat rivit : \" > TAULUKON PAIKKA > \"",
+        "chunkIndex": 1
+      },
+      {
+        "name": "direktiivin 86/363/ETY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Lisätään direktiivin 86/363/ETY liitteessä II olevaan B osaan seuraava rivi : \" > TAULUKON PAIKKA > \"",
+        "chunkIndex": 1
+      },
+      {
+        "name": "direktiivin 90/642/ETY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Muutetaan direktiivin 90/642/ETY liite II seuraavasti :",
+        "chunkIndex": 1
+      },
+      {
+        "name": "direktiivin liite II",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "chunkIndex": 1
+      },
+      {
+        "name": "direktiivin noudattamisen edellyttämät säännökset",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Jäsenvaltioiden on annettava ja julkaistava tämän direktiivin noudattamisen edellyttämät säännökset viimeistään 31 päivänä heinäkuuta 2004 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "31 päivänä heinäkuuta 2004",
+        "type": "DATE",
+        "confidence": 0.98,
+        "context": "Jäsenvaltioiden on annettava ja julkaistava tämän direktiivin noudattamisen edellyttämät säännökset viimeistään 31 päivänä heinäkuuta 2004 .",
+        "chunkIndex": 1
+      }
+    ],
+    "documentId": "b1fe421a-dfa1-4c18-8596-1ae3aaf67d5f"
+  },
+  {
+    "preview": true,
+    "extracted": 8,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Outokummun Magnets Oy",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Outokummun Magnets Oy:llä on ollut enemmän tilauksia kuin tehdas on voinut ottaa vastaan tähän mennessä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Lempi Karjalainen",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "Kauppa- ja teollisuusministeriön kirjanpitäjäksi Lempi Karjalainen tuli 1942 ja nimitettiin parin vuoden päästä apukamreeriksi ja ylimääräiseksi esittelijäksi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1942",
+        "type": "DATE",
+        "confidence": 0.88,
+        "context": "Kauppa- ja teollisuusministeriön kirjanpitäjäksi Lempi Karjalainen tuli 1942 ja nimitettiin parin vuoden päästä apukamreeriksi ja ylimääräiseksi esittelijäksi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Porvoosta",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Mehän Porvoosta tulemme .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Loimaalle",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Porissa asuneen Helmin saapuminen vähintään kerran vuodessa Loimaalle oli oma draamansa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Rovaniemen juna",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Rovaniemen juna",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Museovirasto",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Museoviraston mukaan peuranpyyntikuopat ovat muinaismuistolain suojaamia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Sonja Mikkola",
+        "type": "PERSON",
+        "confidence": 0.87,
+        "context": "\" Ei kaatuneita tuoleja , ei rikkoutuneita astioita , surmaaja on tehnyt täydellisen yllätyksen tai Sonja Mikkola on tuntenut hänet niin hyvin , ett ei ole edes ujostellut \" , Salakka sanoo .",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "74cb8439-9aff-4cb1-bd4e-f830bc4da12d"
+  },
+  {
+    "preview": true,
+    "extracted": 22,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Maijan",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Hän tuli Maijan sijaan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tielaitos",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Heidän näkemyksensä mukaan Tielaitos sovittaisi vanhoja syntejään rakentamalla tornin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Karhu",
+        "type": "PRODUCT",
+        "confidence": 0.78,
+        "context": "karhu joko tarpoo aidan yli tai ali .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tarpoo",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "karhu joko tarpoo aidan yli tai ali .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Aidan",
+        "type": "LOCATION",
+        "confidence": 0.82,
+        "context": "karhu joko tarpoo aidan yli tai ali .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Maija",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Hän tuli Maijan sijaan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Työnjohtaja",
+        "type": "PRODUCT",
+        "confidence": 0.65,
+        "context": "Se oli työnjohtaja joka pani sen sinne .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kirjakauppojen pokkarihyllyssä",
+        "type": "LOCATION",
+        "confidence": 0.72,
+        "context": "Kirjakauppojen pokkarihyllyssä näkee rivikaupalla osasta toiseen etenevää tarinaa , ja niitä on paljon .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Rivikaupalla",
+        "type": "LOCATION",
+        "confidence": 0.74,
+        "context": "Kirjakauppojen pokkarihyllyssä näkee rivikaupalla osasta toiseen etenevää tarinaa , ja niitä on paljon .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Fennougristinen",
+        "type": "PRODUCT",
+        "confidence": 0.88,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Germanistiikan",
+        "type": "PRODUCT",
+        "confidence": 0.91,
+        "context": "Tämä jutusteleva kirja riemastuttanee fennougristisen kielitieteen sisäpiirejä , jotka eivät valitettavasti ole yhtä suuret kuin vaikkapa germanistiikan tutkijamassa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "DeskJet 690C",
+        "type": "PRODUCT",
+        "confidence": 0.99,
+        "context": "DeskJet 690C käyttää samoja kasetteja kuin edeltäjänsä , lukuun ottamatta uutta lisävärisäiliötä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Lisävärisäiliö",
+        "type": "PRODUCT",
+        "confidence": 0.87,
+        "context": "DeskJet 690C käyttää samoja kasetteja kuin edeltäjänsä , lukuun ottamatta uutta lisävärisäiliötä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Nato",
+        "type": "ORG",
+        "confidence": 0.94,
+        "context": "Torjuessaan Nato-jäsenyyden Ruotsi määrittelee puolustusoppinsa suunnilleen samoin sanoin kuin Suomi : pysytään liittoutumattomana ja varmistetaan uskottava itsenäinen puolustus .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Ruotsi",
+        "type": "LOCATION",
+        "confidence": 0.96,
+        "context": "Torjuessaan Nato-jäsenyyden Ruotsi määrittelee puolustusoppinsa suunnilleen samoin sanoin kuin Suomi : pysytään liittoutumattomana ja varmistetaan uskottava itsenäinen puolustus .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Suomi",
+        "type": "LOCATION",
+        "confidence": 0.97,
+        "context": "Torjuessaan Nato-jäsenyyden Ruotsi määrittelee puolustusoppinsa suunnilleen samoin sanoin kuin Suomi : pysytään liittoutumattomana ja varmistetaan uskottava itsenäinen puolustus .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Romaani",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Minulla on romaani tekeillä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tekeillä",
+        "type": "EVENT",
+        "confidence": 0.68,
+        "context": "Minulla on romaani tekeillä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Hikiältä",
+        "type": "ORG",
+        "confidence": 0.93,
+        "context": "Samasta syystä talokin ostettiin Hikiältä ; Helsingissä se olisi maksanut omaisuuksia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Helsingissä",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Samasta syystä talokin ostettiin Hikiältä ; Helsingissä se olisi maksanut omaisuuksia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Omaisuuksia",
+        "type": "PRODUCT",
+        "confidence": 0.76,
+        "context": "Samasta syystä talokin ostettiin Hikiältä ; Helsingissä se olisi maksanut omaisuuksia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kesä",
+        "type": "EVENT",
+        "confidence": 0.82,
+        "context": "Kesä on yhä ihanimmillaan .",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "535b9a29-1e08-44b7-9a62-8e48de26e482"
+  },
+  {
+    "preview": true,
+    "extracted": 6,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Aleksei Sultanov",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Aleksei Sultanov on tällä hetkellä yksi kaikkein kuumimpia nimiä uudessa pianistikaartissa - paitsi ei tietenkään kotimaassaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Seinäjoelle",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Säikähdin , kun muistin opettajan luvanneen tulla Seinäjoelle yöksi .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Horneteissa",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Suomeen ostetuissa Horneteissa varustus kun on luokkaa parempi kuin vastaavissa Yhdysvaltojen käytössä olevissa koneissa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Yhdysvaltojen",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "Suomeen ostetuissa Horneteissa varustus kun on luokkaa parempi kuin vastaavissa Yhdysvaltojen käytössä olevissa koneissa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Gerda Vesta",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "54-vuotias merimies seilasi 1987 tanskalaisessa Gerda Vesta -aluksessa Kolumbian ja Yhdysvaltain väliä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kolumbian ja Yhdysvaltain väliä",
+        "type": "LOCATION",
+        "confidence": 0.75,
+        "context": "54-vuotias merimies seilasi 1987 tanskalaisessa Gerda Vesta -aluksessa Kolumbian ja Yhdysvaltain väliä .",
+        "chunkIndex": 1
+      }
+    ],
+    "documentId": "df47e00b-f22e-494f-a302-82b3964a765b"
+  },
+  {
+    "preview": true,
+    "extracted": 10,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "John Lennon",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Silloin olisi ollut järkytys tietää , että John Lennon tulisi murhatuksi , tai että Brian Epstein tekisi itsemurhan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Brian Epstein",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Silloin olisi ollut järkytys tietää , että John Lennon tulisi murhatuksi , tai että Brian Epstein tekisi itsemurhan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Ilkka",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Silmälasit välähtivät , kun Ilkka poimi jonkin paperin pinosta ja siirsi sen toiseen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Myyrä",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "\" huudahti Myyrä äkkiä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Aulis",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Aulis pureksi leipäpalaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Merja",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Kauko yritti nähdä Merjan , mutta tyttö oli korin ympärillä heiluvan tungoksen keskellä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Taikuri",
+        "type": "PERSON",
+        "confidence": 0.85,
+        "context": "Ja Taikurin takia minä kai olin tullutkin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Virran Petri",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Yks toinen kaveri toi Virran Petri niin se vois tulla sillee soittaan muutaman biisin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "TBK",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Tähän asti TBK on noussut vitosesta kakkoseen sarjaporras ja vuosi vauhdilla .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Jokisen",
+        "type": "LOCATION",
+        "confidence": 0.75,
+        "context": "Hänen täytyisi kohta lähteä , että ehtisi vielä käydä Jokisen luona .",
+        "chunkIndex": 0
+      }
+    ],
+    "documentId": "b9dace4e-5b96-472f-96f7-d7be930de6fb"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "209358ef-27d8-477c-9e3d-1b4d9decbf27"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "971a25ff-07ac-4af6-820d-8458a412931c"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "17d6ec1e-4ea6-47f7-9a9c-246b19d41ea2"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "a4b1be44-092e-4154-917f-6e1d66ae68e9"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "6e19b18e-d8cf-41b2-aaaf-7db7829d5d4f"
+  },
+  {
+    "preview": true,
+    "extracted": 72,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Raviohjelmistoon",
+        "type": "OTHER",
+        "confidence": 0.95,
+        "context": "Raviohjelmistoon kuuluu myös Pelivihjeet .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Pelivihjeet",
+        "type": "PRODUCT",
+        "confidence": 0.92,
+        "context": "Raviohjelmistoon kuuluu myös Pelivihjeet .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Urheilukanava",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Urheilukanava esitti 23.",
+        "chunkIndex": 0
+      },
+      {
+        "name": "23. joulukuuta 2007",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Espanjan jalkapallon pääsarjan klassikko-ottelu",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "joulukuuta 2007 Espanjan jalkapallon pääsarjan klassikko-ottelun Barcelona – Real Madrid , joka keräsi parhaimmillaan 135 000 katsojaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Barcelona – Real Madrid",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "joulukuuta 2007 Espanjan jalkapallon pääsarjan klassikko-ottelun Barcelona – Real Madrid , joka keräsi parhaimmillaan 135 000 katsojaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "135 000 katsojaa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "joulukuuta 2007 Espanjan jalkapallon pääsarjan klassikko-ottelun Barcelona – Real Madrid , joka keräsi parhaimmillaan 135 000 katsojaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "11. huhtikuuta 2009",
+        "type": "DATE",
+        "confidence": 0.99,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Vaasan Sport – Porin Ässät",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "huhtikuuta 2009 Urheilukanava esitti Vaasan Sport – Porin Ässät välillä pelatun SM-liigakarsinnan seitsemännen ja ratkaisevan ottelun .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "SM-liigakarsinnan seitsemännen ja ratkaisevan ottelun",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "huhtikuuta 2009 Urheilukanava esitti Vaasan Sport – Porin Ässät välillä pelatun SM-liigakarsinnan seitsemännen ja ratkaisevan ottelun .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Keskimäärin 224 000 katsojaa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Parhaimmillaan 266 000 katsojaa",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Ottelua seurasi keskimäärin 224 000 ja parhaimmillaan 266 000 katsojaa , mikä on Urheilukanavan katsojaennätys .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Urheilukanavan katsojaennätys",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Ottelua seurasi keskimäärin 224 000 ja parhaimmillaan 266 000 katsojaa , mikä on Urheilukanavan katsojaennätys .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Meänteis",
+        "type": "PERSON",
+        "confidence": 0.99,
+        "context": "Meänteis , tai Määnteinen on 1950- ja 1960-luvulla Saariselän Lankojärvellä turvekammissa asunut erakko .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1950- ja 1960-luvulla",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "Meänteis , tai Määnteinen on 1950- ja 1960-luvulla Saariselän Lankojärvellä turvekammissa asunut erakko .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Saariselän Lankojärvellä",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "Meänteis , tai Määnteinen on 1950- ja 1960-luvulla Saariselän Lankojärvellä turvekammissa asunut erakko .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "turvekammissa",
+        "type": "OTHER",
+        "confidence": 0.7,
+        "context": "Meänteis , tai Määnteinen on 1950- ja 1960-luvulla Saariselän Lankojärvellä turvekammissa asunut erakko .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "erakko",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Meänteis , tai Määnteinen on 1950- ja 1960-luvulla Saariselän Lankojärvellä turvekammissa asunut erakko .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Nimi tarkoitti saamelaisen mytologian metsänhaltijaa",
+        "type": "OTHER",
+        "confidence": 0.65,
+        "context": "Nimi tarkoitti saamelaisen mytologian metsänhaltijaa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Reijo Savinainen",
+        "type": "PERSON",
+        "confidence": 0.99,
+        "context": "Hänen oikea nimensä on Reijo Savinainen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Lapin legendaarisiksi henkilöiksi päätyneiden joukkoon",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "Hän kuuluu Lapin legendaarisiksi henkilöiksi päätyneiden joukkoon , tosin hän ei ole niin tunnettu kuin esimerkiksi Mosku tai Raja-Jooseppi tai Nätti-Jussi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Mosku",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Hän kuuluu Lapin legendaarisiksi henkilöiksi päätyneiden joukkoon , tosin hän ei ole niin tunnettu kuin esimerkiksi Mosku tai Raja-Jooseppi tai Nätti-Jussi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Raja-Jooseppi",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Hän kuuluu Lapin legendaarisiksi henkilöiksi päätyneiden joukkoon , tosin hän ei ole niin tunnettu kuin esimerkiksi Mosku tai Raja-Jooseppi tai Nätti-Jussi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Nätti-Jussi",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Hän kuuluu Lapin legendaarisiksi henkilöiksi päätyneiden joukkoon , tosin hän ei ole niin tunnettu kuin esimerkiksi Mosku tai Raja-Jooseppi tai Nätti-Jussi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kerrotaan kämppien jääneen hänen käyntinsä jälkeen erityisen siistiin kuntoon ja joskus vieraskirjaan oli jäänyt häneltä viesti",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Kerrotaan kämppien jääneen hänen käyntinsä jälkeen erityisen siistiin kuntoon ja joskus vieraskirjaan oli jäänyt häneltä viesti .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kirjailija Kullervo Kemppinen",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Kirjailija Kullervo Kemppinen kertoo hänestä kirjoissaan .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Meänteis pihisti retkeilijöiden eväitä ja muutenkin välillä hätyytteli",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Sen mukaan Meänteis pihisti retkeilijöiden eväitä ja muutenkin välillä hätyytteli , syyksi on sanottu halua karkottaa ihmiset pois erämaasta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "syyksi on sanottu halua karkottaa ihmiset pois erämaasta",
+        "type": "OTHER",
+        "confidence": 0.5,
+        "context": "Sen mukaan Meänteis pihisti retkeilijöiden eväitä ja muutenkin välillä hätyytteli , syyksi on sanottu halua karkottaa ihmiset pois erämaasta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Tämä hän joutui myös käräjille",
+        "type": "OTHER",
+        "confidence": 0.5,
+        "chunkIndex": 0
+      },
+      {
+        "name": "Meänteis oli rakentanut Lankojärvelle kammin lisäksi niliaitan ja yhdestä puusta veistetyn ruuhen",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Meänteis oli rakentanut Lankojärvelle kammin lisäksi niliaitan ja yhdestä puusta veistetyn ruuhen .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Virkavalta ei pitkään antanut miehen erakoitua vaan Meänteis joutui lähtemään Lankojärveltä",
+        "type": "OTHER",
+        "confidence": 0.5,
+        "context": "Virkavalta ei pitkään antanut miehen erakoitua vaan Meänteis joutui lähtemään Lankojärveltä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Sittemmin Saariselän alueelle perustetun UKK-kansallispuiston vuoksi asuinkenttä hävitettiin",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Sittemmin Saariselän alueelle perustetun UKK-kansallispuiston vuoksi asuinkenttä hävitettiin .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Jotain merkkejä asuinkentästä on silti vielä nähtävillä Lankojärvellä",
+        "type": "OTHER",
+        "confidence": 0.6,
+        "context": "Jotain merkkejä asuinkentästä on silti vielä nähtävillä Lankojärvellä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Meänteis itse meni naimisiin ja muutti myöhemmin Kainuuseen jossa hän nykyisin asuu",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Meänteis itse meni naimisiin ja muutti myöhemmin Kainuuseen jossa hän nykyisin asuu .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Yrjö Teeriahon",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Yrjö Teeriahon kirjassa Pitkin poikin Saariselkää ja muita Lapin takamaita ( Ykin Kartat Oy , 2005 ) Meänteis kertoo itse oman tarinansa ja oikaisee samalla Kemppisen kirjoissa hänestä kerrottuja tietoja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Pitkin poikin Saariselkää ja muita Lapin takamaita",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Yrjö Teeriahon kirjassa Pitkin poikin Saariselkää ja muita Lapin takamaita ( Ykin Kartat Oy , 2005 ) Meänteis kertoo itse oman tarinansa ja oikaisee samalla Kemppisen kirjoissa hänestä kerrottuja tietoja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Ykin Kartat Oy",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Yrjö Teeriahon kirjassa Pitkin poikin Saariselkää ja muita Lapin takamaita ( Ykin Kartat Oy , 2005 ) Meänteis kertoo itse oman tarinansa ja oikaisee samalla Kemppisen kirjoissa hänestä kerrottuja tietoja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "2005",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Yrjö Teeriahon kirjassa Pitkin poikin Saariselkää ja muita Lapin takamaita ( Ykin Kartat Oy , 2005 ) Meänteis kertoo itse oman tarinansa ja oikaisee samalla Kemppisen kirjoissa hänestä kerrottuja tietoja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Lapin Kansa -lehdessä",
+        "type": "ORG",
+        "confidence": 0.88,
+        "context": "Lapin Kansa -lehdessä julkaistiin myös silloin 69-vuotiaan Meänteisin haastattelu 1.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1. lokakuuta 2005",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Myriam Bédard",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Myriam Bédard ( s.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "s. 22. joulukuuta 1969",
+        "type": "DATE",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Neufchâtel",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "joulukuuta 1969 Neufchâtel , Québec , Kanada ) on kanadalainen entinen ampumahiihtäjä ja kaksinkertainen olympiavoittaja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Québec",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "joulukuuta 1969 Neufchâtel , Québec , Kanada ) on kanadalainen entinen ampumahiihtäjä ja kaksinkertainen olympiavoittaja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kanada",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "joulukuuta 1969 Neufchâtel , Québec , Kanada ) on kanadalainen entinen ampumahiihtäjä ja kaksinkertainen olympiavoittaja .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1991",
+        "type": "DATE",
+        "confidence": 0.9,
+        "context": "Bédardista tuli vuonna 1991 ensimmäinen kanadalainen ampumahiihtäjä , joka voitti maailmancupin osakilpailun .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "maailmancupin osakilpailun",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "Bédardista tuli vuonna 1991 ensimmäinen kanadalainen ampumahiihtäjä , joka voitti maailmancupin osakilpailun .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Albertvillen talviolympialaisissa 1992",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Hän muodosti Kanadan ampumahiihtojoukkueen Albertvillen talviolympialaisissa 1992 ja voitti pronssia 15 kilometrillä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1994 Lillehammerin talviolympialaisissa",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Vuonna 1994 Lillehammerin talviolympialaisissa Bédard voitti naisten molemmat henkilökohtaiset matkat : 7,5 km ja 15 km .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "7,5 km ja 15 km",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Vuonna 1994 Lillehammerin talviolympialaisissa Bédard voitti naisten molemmat henkilökohtaiset matkat : 7,5 km ja 15 km .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Jean Paquet",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "Bédard piti taukoa urheilusta lyhyesti synnyttääkseen ensimmäisen lapsensa ( isä ampumahiihtäjä Jean Paquet ) .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Naganon talvikisojen 1998 jälkeen",
+        "type": "EVENT",
+        "confidence": 0.8,
+        "context": "Hän lopetti uransa Naganon talvikisojen 1998 jälkeen .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Keväällä 2004",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Keväällä 2004 Bédard oli mukana sponsorointiskandaalissa , jossa hän syytti entistä työnantajaansa VIA Railia siitä , että hänet oli pakotettu eroamaan vuonna 2002 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "VIA Railia",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Keväällä 2004 Bédard oli mukana sponsorointiskandaalissa , jossa hän syytti entistä työnantajaansa VIA Railia siitä , että hänet oli pakotettu eroamaan vuonna 2002 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tatjana Levina",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Tatjana Levina ( ven.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "ven. Татьяна Левина",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Münchenin EM-kisoissa 2002",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Levina karsiutui Münchenin EM-kisoissa 2002 400 metrin juoksun alkuerissä ajalla 52,56 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "400 metrin juoksun alkuerissä",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Levina karsiutui Münchenin EM-kisoissa 2002 400 metrin juoksun alkuerissä ajalla 52,56 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "52,56",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Levina karsiutui Münchenin EM-kisoissa 2002 400 metrin juoksun alkuerissä ajalla 52,56 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Budapestin sisäratojen MM-kisoissa",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Kaksi vuotta myöhemmin hän oli Budapestin sisäratojen MM-kisoissa mukana Venäjän joukkueessa , joka voitti MM-kultaa 4 x 400 metrin viestijuoksussa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "MM-kultaa 4 x 400 metrin viestijuoksussa",
+        "type": "PRODUCT",
+        "confidence": 0.8,
+        "context": "Kaksi vuotta myöhemmin hän oli Budapestin sisäratojen MM-kisoissa mukana Venäjän joukkueessa , joka voitti MM-kultaa 4 x 400 metrin viestijuoksussa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "200 metrin juoksun toisissa alkuerissä",
+        "type": "EVENT",
+        "confidence": 0.75,
+        "context": "Myöhemmin samana vuonna hän karsiutui Ateenan olympialaisissa 200 metrin juoksun toisissa alkuerissä ajalla 23,23 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "23,23",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Myöhemmin samana vuonna hän karsiutui Ateenan olympialaisissa 200 metrin juoksun toisissa alkuerissä ajalla 23,23 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Venäjän",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "mukana Venäjän joukkueessa , joka voitti MM-kultaa 4 x 400 metrin viestijuoksussa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "MM-kultaa",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "mukana Venäjän joukkueessa , joka voitti MM-kultaa 4 x 400 metrin viestijuoksussa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "4 x 400 metrin viestijuoksussa",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "mukana Venäjän joukkueessa , joka voitti MM-kultaa 4 x 400 metrin viestijuoksussa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Ateenan olympialaisissa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Myöhemmin samana vuonna hän karsiutui Ateenan olympialaisissa 200 metrin juoksun toisissa alkuerissä ajalla 23,23 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "200 metrin juoksun",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Myöhemmin samana vuonna hän karsiutui Ateenan olympialaisissa 200 metrin juoksun toisissa alkuerissä ajalla 23,23 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "23,23",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Myöhemmin samana vuonna hän karsiutui Ateenan olympialaisissa 200 metrin juoksun toisissa alkuerissä ajalla 23,23 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Moskovan sisäratojen MM-kisoissa",
+        "type": "LOCATION",
+        "confidence": 0.9,
+        "context": "Moskovan sisäratojen MM-kisoissa 2006 hän oli jälleen mukana Venäjän viestikultaa voittaneessa joukkueessa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "2006",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Moskovan sisäratojen MM-kisoissa 2006 hän oli jälleen mukana Venäjän viestikultaa voittaneessa joukkueessa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Venäjän viestikultaa",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "Moskovan sisäratojen MM-kisoissa 2006 hän oli jälleen mukana Venäjän viestikultaa voittaneessa joukkueessa .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "646a0de0-c50c-409e-8e0f-51d696cd9d10"
+  },
+  {
+    "preview": true,
+    "extracted": 6,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "20 päivänä kesäkuuta 2006",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Komission päätös , tehty 20 päivänä kesäkuuta 2006 , Romaniasta peräisin olevan piikarbidin tuontia koskevan polkumyynnin vastaisen menettelyn päättämisestä ( 2006/423/EY )",
+        "chunkIndex": 2
+      },
+      {
+        "name": "2006/423/EY",
+        "type": "PRODUCT",
+        "confidence": 0.92,
+        "context": "Komission päätös , tehty 20 päivänä kesäkuuta 2006 , Romaniasta peräisin olevan piikarbidin tuontia koskevan polkumyynnin vastaisen menettelyn päättämisestä ( 2006/423/EY )",
+        "chunkIndex": 2
+      },
+      {
+        "name": "22 päivänä joulukuuta 1995",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon polkumyynnillä muista kuin Euroopan yhteisön jäsenvaltioista tapahtuvalta tuonnilta suojautumisesta 22 päivänä joulukuuta 1995 annetun neuvoston asetuksen ( EY ) N:o 384/96 , jäljempänä \" perusasetus \" , ja erityisesti sen 9 artiklan , on kuullut neuvoa-antavaa komiteaa , sekä katsoo seuraavaa :",
+        "chunkIndex": 2
+      },
+      {
+        "name": "( EY ) N:o 384/96",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon polkumyynnillä muista kuin Euroopan yhteisön jäsenvaltioista tapahtuvalta tuonnilta suojautumisesta 22 päivänä joulukuuta 1995 annetun neuvoston asetuksen ( EY ) N:o 384/96 , jäljempänä \" perusasetus \" , ja erityisesti sen 9 artiklan , on kuullut neuvoa-antavaa komiteaa , sekä katsoo seuraavaa :",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Euroopan yhteisön perustamissopimus",
+        "type": "ORG",
+        "confidence": 0.85,
+        "chunkIndex": 2
+      },
+      {
+        "name": "neuvoston asetuksen ( EY ) N:o 384/96",
+        "type": "PRODUCT",
+        "confidence": 0.88,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon polkumyynnillä muista kuin Euroopan yhteisön jäsenvaltioista tapahtuvalta tuonnilta suojautumisesta 22 päivänä joulukuuta 1995 annetun neuvoston asetuksen ( EY ) N:o 384/96 , jäljempänä \" perusasetus \" , ja erityisesti sen 9 artiklan , on kuullut neuvoa-antavaa komiteaa , sekä katsoo seuraavaa :",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "31fa61fb-c24a-459f-80ad-3c02f13acbc2"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "c4848cd1-1d22-4b64-8148-7a58826b532d"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "9c1ce574-e031-4ebe-b384-884fbc83ea99"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "a300b45e-f2b7-49ba-86b8-542f2bc997bc"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "7c99c9d5-e0f9-4f88-9770-48ed45969935"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "c448b385-fdf7-4273-b78c-487d3fae2035"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "e0f99e47-2c2c-4d42-92ad-26ed9d36eca1"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "43d39f96-3163-4982-91e8-bfcfc14af51f"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "be8ce332-e878-4f21-adc1-f8d2b99232fa"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "404bd4bf-6176-47ae-941b-f72f1d7d7e2f"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "fee6eab9-1066-4230-a368-307fc31ded07"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "660fd709-9bef-45d1-bc14-51a216bc0bf0"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "4559c813-4522-43de-a526-0943607c0148"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "120dc02b-7cd3-4ae1-95ef-2db2e304d4af"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "6beb161f-6e64-4032-8993-f9b16d8ad95c"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "18c259f4-5ed4-4cec-b1b5-0124275f7441"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "f394de83-4143-4fe4-998c-8fff5b065b5f"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "068f706c-3239-4ef4-84c1-aea9aaefdc35"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "33a98e63-6c4d-4822-b92d-c27fa28a752e"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "ea2a52cc-eddf-4632-85b8-5b81411a5926"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "ec4264b2-6cd0-4165-ab2c-519ae65f599a"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "47bcb607-6d5e-43f7-ac24-6fa4b9f18ab1"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "3e6b83ba-d09a-49af-9e3c-32bb9e49a499"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "89b70e27-154f-4267-b9cd-a2c497782827"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "d11a34dc-f44c-4bdf-aba0-ac4cd1f8d838"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "02d91660-bf8c-47f2-a099-d3bbe3960d4b"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "d5dd3efb-6766-4cec-91ff-52e904a7e9f6"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "c950f7c0-c066-4c2f-bde2-eda59a679fe3"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "049d9215-d70b-4021-8368-4785295ac362"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "a684ef30-dacf-4f45-973e-bc023fbde4be"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "bb6c0dc5-72ff-4cf3-b43c-e7d938e629fe"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "7d3a1f1e-2a2d-4839-a2d7-d95bbacc4fd8"
+  },
+  {
+    "preview": true,
+    "extracted": 32,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Real3D",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Real3D on suomalaisen Realsoftin tekemä kolmiulotteinen animaation teko-ohjelma .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Realsoft",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Real3D on suomalaisen Realsoftin tekemä kolmiulotteinen animaation teko-ohjelma .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Maya",
+        "type": "PRODUCT",
+        "confidence": 0.94,
+        "context": "Maya on vastaavanlainen ohjelma .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Erik Justander",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Erik Justander ( noin 1623 , Turku – 10.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Henrik Tavasti",
+        "type": "PERSON",
+        "confidence": 0.95,
+        "context": "Justander varttui luultavasti kasvattipoikana raatimies Henrik Tavastin perheessä ja pääsi ylioppilaaksi vuoteen 1645 mennessä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Johan Oxenstierna",
+        "type": "PERSON",
+        "confidence": 0.96,
+        "context": "Valmistuttuaan filosofian maisteriksi 1653 hän toimi kreivi Johan Oxenstiernan kirjastonhoitajana 1654 ja Turun akatemian runousopin professorina vuosina 1655-1667 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Erik Juusti",
+        "type": "PERSON",
+        "confidence": 0.94,
+        "context": "Justander kirjoitti muisto- , hauta- ja onnittelurunoja suomeksi , ruotsiksi ja latinaksi Erik Juusti nimellä ja hän suomensi myös ensimmäisen suomenkielellä esitetyn näytelmän Tuhlaaja-pojasta , joka esitettiin uuden rehtorin astuessa virkaan Turun akatemiassa vuonna 1650 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tuhlaaja-pojasta",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Justander kirjoitti muisto- , hauta- ja onnittelurunoja suomeksi , ruotsiksi ja latinaksi Erik Juusti nimellä ja hän suomensi myös ensimmäisen suomenkielellä esitetyn näytelmän Tuhlaaja-pojasta , joka esitettiin uuden rehtorin astuessa virkaan Turun akatemiassa vuonna 1650 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Turun yliopisto",
+        "type": "ORG",
+        "confidence": 0.97,
+        "context": "Arvioinnin toteutti Turun yliopiston kasvatustieteiden tiedekunnan koulutuksen arviointi- ja kehittämisyksikkö yhteistyössä Elinkeinoelämän keskusliiton ja Suomen Ammattiliittojen Keskusjärjestön Turun toimipisteiden kanssa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kasvatustieteiden tiedekunta",
+        "type": "ORG",
+        "confidence": 0.93,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Elinkeinoelämän keskusliitto",
+        "type": "ORG",
+        "confidence": 0.96,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomen Ammattiliittojen Keskusjärjestö",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Arvioinnin toteutti Turun yliopiston kasvatustieteiden tiedekunnan koulutuksen arviointi- ja kehittämisyksikkö yhteistyössä Elinkeinoelämän keskusliiton ja Suomen Ammattiliittojen Keskusjärjestön Turun toimipisteiden kanssa .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Risto Rinne",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Hanketta johti professori Risto Rinne Turun yliopiston kasvatustieteiden laitokselta .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Realsoftin",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "en Realsoftin tekemä kolmiulotteinen animaation teko-ohjelma .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "kolmiulotteinen animaation teko-ohjelma",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "en Realsoftin tekemä kolmiulotteinen animaation teko-ohjelma .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "fysiikan lait",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Siihen on ohjelmoitu fysiikan lait , joten sillä kyetään tekemään tarkkoja , realistisia animaatioita .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Maya",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Maya on vastaavanlainen ohjelma .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1983",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Ensimmäiset koodirivit kirjoitettiin 1983 Commodore 64 tietokoneelle suomalaisten veljesten Juha and Vesa Meskanen toimesta .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Commodore 64",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Ensimmäiset koodirivit kirjoitettiin 1983 Commodore 64 tietokoneelle suomalaisten veljesten Juha and Vesa Meskanen toimesta .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Juha Meskanen",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Real3D:n kehitys käynnistyi toden teolla 1985 , kun Juha Meskanen aloitti opinnot Lahden Teknillisessä Opistossa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Vesa Meskanen",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Ensimmäiset koodirivit kirjoitettiin 1983 Commodore 64 tietokoneelle suomalaisten veljesten Juha and Vesa Meskanen toimesta .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Lahden Teknillisessä Opistossa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Real3D:n kehitys käynnistyi toden teolla 1985 , kun Juha Meskanen aloitti opinnot Lahden Teknillisessä Opistossa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Real3D:n",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Real3D:n kehitys käynnistyi toden teolla 1985 , kun Juha Meskanen aloitti opinnot Lahden Teknillisessä Opistossa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1985",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Real3D:n kehitys käynnistyi toden teolla 1985 , kun Juha Meskanen aloitti opinnot Lahden Teknillisessä Opistossa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Juha Meskanen",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "Real3D:n kehitys käynnistyi toden teolla 1985 , kun Juha Meskanen aloitti opinnot Lahden Teknillisessä Opistossa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Lahden Teknillisessä Opistossa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Real3D:n kehitys käynnistyi toden teolla 1985 , kun Juha Meskanen aloitti opinnot Lahden Teknillisessä Opistossa .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Realsoft Oy",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Vesa tuli mukaan kehitystyöhön asteittain ja siirtyi matemaatikon uraltaan lopulta kokopäiväisesti perustamaansa Realsoft Oy yritykseen 1989 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "1989",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "Vesa tuli mukaan kehitystyöhön asteittain ja siirtyi matemaatikon uraltaan lopulta kokopäiväisesti perustamaansa Realsoft Oy yritykseen 1989 .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Amigalle",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Ensimmäinen kaupallinen Real3D versio julkaistiin Amigalle vielä samana vuonna .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "constructive solid geometry",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Ensimäinen versio tarjosi ominaisuuksia kuten constructive solid geometry , toisen asteen pinnat ( quadric surfaces ) and valonsäteiden seurantaan ( ray-tracing ) perustuvan photo realistisen tulostuksen .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "quadric surfaces",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Ensimäinen versio tarjosi ominaisuuksia kuten constructive solid geometry , toisen asteen pinnat ( quadric surfaces ) and valonsäteiden seurantaan ( ray-tracing ) perustuvan photo realistisen tulostuksen .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "ray-tracing",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Ensimäinen versio tarjosi ominaisuuksia kuten constructive solid geometry , toisen asteen pinnat ( quadric surfaces ) and valonsäteiden seurantaan ( ray-tracing ) perustuvan photo realistisen tulostuksen .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "9f8088d7-6bd0-4a7c-b115-67c8d8287cb8"
+  },
+  {
+    "preview": true,
+    "extracted": 45,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Ranska",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Sen perässä tulevat Ranska ja Italia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Italia",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Sen perässä tulevat Ranska ja Italia .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Suomi",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Seitsemäntenä tuleva Suomi maksaa reilut puoli miljardia euroa enemmän kuin saa .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Puola",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Ylivoimaisesti suurin nettosaaja on Puola , jäljessään Kreikka ja Unkari .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Kreikka",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Ylivoimaisesti suurin nettosaaja on Puola , jäljessään Kreikka ja Unkari .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Unkari",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Ylivoimaisesti suurin nettosaaja on Puola , jäljessään Kreikka ja Unkari .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Eurobondit",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Talousunioni voitaisiin järjestää kahdella tavalla : ottamalla käyttöön eurobondit tai luomalla järjestelmä , jossa raha virtaa tasaisesti rikkailta mailta köyhemmille .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Clemens Fuestin",
+        "type": "PERSON",
+        "confidence": 0.92,
+        "context": "Oxfordin yliopiston ekonomisti Clemens Fuestin mielestä Brysselin kokous oli merkittävä askel kohti tulonsiirtounionin syntyä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Brysselin kokous",
+        "type": "EVENT",
+        "confidence": 0.88,
+        "context": "Oxfordin yliopiston ekonomisti Clemens Fuestin mielestä Brysselin kokous oli merkittävä askel kohti tulonsiirtounionin syntyä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Spiegel",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "– Kalliin lainan ottaminen ja halvan lainan myöntäminen on selvä varainsiirtoliiton merkki , Fuest sanoo Spiegelille .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Nissan Leaf",
+        "type": "PRODUCT",
+        "confidence": 0.92,
+        "context": "Suomen verotus syrjii täyssähköautoja , minkä vuoksi Nissan Leaf , vuoden auto 2011 , ei saavukaan Suomeen tänä vuonna , Autobild-lehti kertoo .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "vuoden auto 2011",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Suomen verotus syrjii täyssähköautoja , minkä vuoksi Nissan Leaf , vuoden auto 2011 , ei saavukaan Suomeen tänä vuonna , Autobild-lehti kertoo .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Autobild-lehti",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Suomen verotus syrjii täyssähköautoja , minkä vuoksi Nissan Leaf , vuoden auto 2011 , ei saavukaan Suomeen tänä vuonna , Autobild-lehti kertoo .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "60 grammaa hiilidioksidia kilometriltä",
+        "type": "OTHER",
+        "confidence": 0.75,
+        "context": "Lain alin päästöluokka on 60 grammaa hiilidioksidia kilometriltä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "60",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "Lain alin päästöluokka on 60 grammaa hiilidioksidia kilometriltä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Leaf",
+        "type": "PRODUCT",
+        "confidence": 0.98,
+        "context": "Leaf putoaa monen muun sähköauton tapaan alimpaan luokkaan , vaikka sen päästöt ovat paljon pienemmät .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tanskassa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Tanskassa ja Norjassa täyssähköautoja on tuettu poistamalla niiltä autovero kokonaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Norjassa",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Tanskassa ja Norjassa täyssähköautoja on tuettu poistamalla niiltä autovero kokonaan .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "33 000",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Norjasta Leafin saa omakseen vajaalla 33 000 eurolla ja Tanskasta noin 39 000 eurolla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "eurolla",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Norjasta Leafin saa omakseen vajaalla 33 000 eurolla ja Tanskasta noin 39 000 eurolla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tanskasta",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Norjasta Leafin saa omakseen vajaalla 33 000 eurolla ja Tanskasta noin 39 000 eurolla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "39 000",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Norjasta Leafin saa omakseen vajaalla 33 000 eurolla ja Tanskasta noin 39 000 eurolla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "eurolla",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Norjasta Leafin saa omakseen vajaalla 33 000 eurolla ja Tanskasta noin 39 000 eurolla .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Suomeen",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Autobildin mukaan Nissan Leaf on tulossa Suomeen ensi vuonna .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Ensi vuonna",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Autobildin mukaan Nissan Leaf on tulossa Suomeen ensi vuonna .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Nokialta",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "Nokialta salaperäinen kutsu",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Microsoft",
+        "type": "ORG",
+        "confidence": 0.98,
+        "context": "Matkapuhelinvalmistaja Nokia ja ohjelmistoyhtiö Microsoft kutsuvat tärkeään tapaamiseen 17.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "17. elokuuta",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Windows-älypuhelimensa",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Uusimpien markkinahuhujen mukaan Nokia voi julkistaa ensimmäisen Windows-älypuhelimensa jo elokuun puolivälissä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "elokuun puolivälissä",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Uusimpien markkinahuhujen mukaan Nokia voi julkistaa ensimmäisen Windows-älypuhelimensa jo elokuun puolivälissä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Nokian ja Microsoftin lähettämä kutsusta",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "chunkIndex": 1
+      },
+      {
+        "name": "Windows Phone-käyttöjärjestelmä",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Nokian odotetussa uutuudessa on Microsoftin mobiilialustalle tarkoitettu Windows Phone-käyttöjärjestelmä ja sen Mango-versio .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Mango-versio",
+        "type": "PRODUCT",
+        "confidence": 0.85,
+        "context": "Nokian odotetussa uutuudessa on Microsoftin mobiilialustalle tarkoitettu Windows Phone-käyttöjärjestelmä ja sen Mango-versio .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Sea Ray",
+        "type": "PRODUCT",
+        "confidence": 0.9,
+        "context": "Nokian älypuhelimen koodinimi on Sea Ray .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Saksan Kölnissä",
+        "type": "LOCATION",
+        "confidence": 0.92,
+        "context": "Tilaisuus on Saksan Kölnissä 17.",
+        "chunkIndex": 1
+      },
+      {
+        "name": "17. elokuuta",
+        "type": "DATE",
+        "confidence": 0.95,
+        "chunkIndex": 1
+      },
+      {
+        "name": "GamesCom-tapahtuman yhteyteen järjestetyt",
+        "type": "EVENT",
+        "confidence": 0.85,
+        "context": "Toisaalta kutsu viittaa siihen , että kyseessä on GamesCom-tapahtuman yhteyteen järjestetyt Nokian ja Microsoftin rattoisat bileet .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Nokian ja Microsoftin rattoisat bileet",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Toisaalta kutsu viittaa siihen , että kyseessä on GamesCom-tapahtuman yhteyteen järjestetyt Nokian ja Microsoftin rattoisat bileet .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Tiedonjulkistamisen valtionpalkinto professori Kivelälle",
+        "type": "EVENT",
+        "confidence": 0.9,
+        "context": "Tiedonjulkistamisen valtionpalkinto professori Kivelälle",
+        "chunkIndex": 1
+      },
+      {
+        "name": "28.4",
+        "type": "DATE",
+        "confidence": 0.85,
+        "context": "Ministeri Henna Virkkunen luovutti tiedonjulkistamisen valtionpalkinnot keskiviikkona 28.4 .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Depressiosta tasapainoon - Hyvä elämä iäkkäänä",
+        "type": "PRODUCT",
+        "confidence": 0.75,
+        "context": "Professori Sirkka-Liisa Kivelä sai palkinnon ymmärtämystä osoittaneesta asiantuntemuksestaan sekä teoksestaan Depressiosta tasapainoon - Hyvä elämä iäkkäänä .",
+        "chunkIndex": 1
+      },
+      {
+        "name": "teiskunta",
+        "type": "ORG",
+        "confidence": 0.95,
+        "context": "teiskunta tukee aktiivisesti niitä tiedontuottamisen ja tiedonvälityksen keinoja , jotka takaavat sen , että päätöksentekijät ja kansalaiset saavat tietoa nopeasti ja luotettavasti , Virkkunen sanoi .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Virkkunen",
+        "type": "PERSON",
+        "confidence": 0.98,
+        "context": "teiskunta tukee aktiivisesti niitä tiedontuottamisen ja tiedonvälityksen keinoja , jotka takaavat sen , että päätöksentekijät ja kansalaiset saavat tietoa nopeasti ja luotettavasti , Virkkunen sanoi .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Turun yliopisto",
+        "type": "ORG",
+        "confidence": 0.92,
+        "context": "Palkintoperusteissa todetaan , että yhteiskunnallisena keskustelijana Turun yliopiston yleislääketieteen professori Sirkka-Liisa Kivelä on tinkimättä puolustanut tiedon ja asiantuntemuksen merkitystä päätöksenteossa , koulutuksessa ja käytännön hoitotyössä .",
+        "chunkIndex": 2
+      },
+      {
+        "name": "Sirkka-Liisa Kivelä",
+        "type": "PERSON",
+        "confidence": 0.97,
+        "context": "Palkintoperusteissa todetaan , että yhteiskunnallisena keskustelijana Turun yliopiston yleislääketieteen professori Sirkka-Liisa Kivelä on tinkimättä puolustanut tiedon ja asiantuntemuksen merkitystä päätöksenteossa , koulutuksessa ja käytännön hoitotyössä .",
+        "chunkIndex": 2
+      }
+    ],
+    "documentId": "2866f1b2-d15d-43c4-bfc5-d20ac256de41"
+  },
+  {
+    "preview": true,
+    "extracted": 30,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [
+      {
+        "name": "Brasilia",
+        "type": "LOCATION",
+        "confidence": 0.95,
+        "context": "Brasilia tekee rahauudistuksen , jonka toivotaan päästävän maa jatkuvasti laukkaavasta inflaatiosta .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Aatuna",
+        "type": "LOCATION",
+        "confidence": 0.85,
+        "context": "Hän esiintyi turisteille jonkinlaisena avuliaana Aatuna antaen näille neuvoja kaupungin nähtävyyksistä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Poliisi",
+        "type": "ORG",
+        "confidence": 0.75,
+        "context": "Poliisi saartoi katoliset alueilleen",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Siemensin",
+        "type": "ORG",
+        "confidence": 0.9,
+        "context": "Siemensin luurissa oleva näyttö kertoo valitun puhelinnumeron , mutt ei nimiä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "Liesjärven puisto",
+        "type": "LOCATION",
+        "confidence": 0.88,
+        "context": "Olin juuri lukemassa Forssan Lehden oheisjuttua Liesjärven puiston eläimistöstä , kun puhelin soi .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "1980-luvun alkuvuosina",
+        "type": "DATE",
+        "confidence": 0.92,
+        "context": "1980-luvun alkuvuosina pidätettiin ja vangittiin tuhansia ihmisiä terrorismista epäiltyinä .",
+        "chunkIndex": 0
+      },
+      {
+        "name": "14 päivänä heinäkuuta 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "93/23/ETY",
+        "type": "PRODUCT",
+        "confidence": 0.98,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "93/24/ETY",
+        "type": "PRODUCT",
+        "confidence": 0.98,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "94/432/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "94/433/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1999/547/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "K(1999) 2080",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1 päivänä kesäkuuta 1993",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon sikatuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/23/ETY ( 1 ) , sellaisena kuin se on viimeksi muutettuna direktiivillä 97/77/EY ( 2 ) , ja erityisesti sen 6 artiklan 2 ja 3 kohdan , ottaa huomioon nautaeläintuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/24/ETY ( 3 ) , sellaisen",
+        "chunkIndex": 1
+      },
+      {
+        "name": "97/77/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon sikatuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/23/ETY ( 1 ) , sellaisena kuin se on viimeksi muutettuna direktiivillä 97/77/EY ( 2 ) , ja erityisesti sen 6 artiklan 2 ja 3 kohdan , ottaa huomioon nautaeläintuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/24/ETY ( 3 ) , sellaisen",
+        "chunkIndex": 1
+      },
+      {
+        "name": "6 artiklan 2 ja 3 kohdan",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon sikatuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/23/ETY ( 1 ) , sellaisena kuin se on viimeksi muutettuna direktiivillä 97/77/EY ( 2 ) , ja erityisesti sen 6 artiklan 2 ja 3 kohdan , ottaa huomioon nautaeläintuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/24/ETY ( 3 ) , sellaisen",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1 artiklan 2 ja 3 kohdan",
+        "type": "OTHER",
+        "confidence": 0.8,
+        "context": "EUROOPAN YHTEISÖJEN KOMISSIO , joka ottaa huomioon Euroopan yhteisön perustamissopimuksen , ottaa huomioon sikatuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/23/ETY ( 1 ) , sellaisena kuin se on viimeksi muutettuna direktiivillä 97/77/EY ( 2 ) , ja erityisesti sen 6 artiklan 2 ja 3 kohdan , ottaa huomioon nautaeläintuotantoa koskevien tilastotietojen keruusta 1 päivänä kesäkuuta 1993 annetun neuvoston direktiivin 93/24/ETY ( 3 ) , sellaisen",
+        "chunkIndex": 1
+      },
+      {
+        "name": "toukokuun 30 päivänä 1994",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "että 1 ) toukokuun 30 päivänä 1994 tehdyillä komission päätöksillä 94/432/EY ( 4 ) ja 94/433/EY ( 5 ) , sellaisina kuin ne ovat muutettuina 18 päivänä syyskuuta 1995 tehdyllä komission päätöksellä 95/380/EY ( 6 ) , ja 8 päivänä tammikuuta 1999 tehdyllä komission päätöksellä 1999/47/EY ( 7 ) , vahvistetaan direktiivien 93/23/ETY ja 93/24/ETY soveltamista koskevat yksityiskohtaiset säännöt ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "94/432/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "94/433/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "KOMISSION PÄÄTÖS , tehty 14 päivänä heinäkuuta 1999 , neuvoston direktiivien 93/23/ETY ja 93/24/ETY soveltamissäännöksistä sikakarjaa ja -tuotantoa sekä karjaa ja nauta-alan tuotantoa koskevien tilastotietojen keruiden osalta tehtyjen päätösten 94/432/EY ja 94/433/EY muuttamisesta ( tiedoksiannettu numerolla K(1999) 2080 ) ( 1999/547/EY )",
+        "chunkIndex": 1
+      },
+      {
+        "name": "18 päivänä syyskuuta 1995",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "että 1 ) toukokuun 30 päivänä 1994 tehdyillä komission päätöksillä 94/432/EY ( 4 ) ja 94/433/EY ( 5 ) , sellaisina kuin ne ovat muutettuina 18 päivänä syyskuuta 1995 tehdyllä komission päätöksellä 95/380/EY ( 6 ) , ja 8 päivänä tammikuuta 1999 tehdyllä komission päätöksellä 1999/47/EY ( 7 ) , vahvistetaan direktiivien 93/23/ETY ja 93/24/ETY soveltamista koskevat yksityiskohtaiset säännöt ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "95/380/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "että 1 ) toukokuun 30 päivänä 1994 tehdyillä komission päätöksillä 94/432/EY ( 4 ) ja 94/433/EY ( 5 ) , sellaisina kuin ne ovat muutettuina 18 päivänä syyskuuta 1995 tehdyllä komission päätöksellä 95/380/EY ( 6 ) , ja 8 päivänä tammikuuta 1999 tehdyllä komission päätöksellä 1999/47/EY ( 7 ) , vahvistetaan direktiivien 93/23/ETY ja 93/24/ETY soveltamista koskevat yksityiskohtaiset säännöt ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "8 päivänä tammikuuta 1999",
+        "type": "DATE",
+        "confidence": 0.95,
+        "context": "että 1 ) toukokuun 30 päivänä 1994 tehdyillä komission päätöksillä 94/432/EY ( 4 ) ja 94/433/EY ( 5 ) , sellaisina kuin ne ovat muutettuina 18 päivänä syyskuuta 1995 tehdyllä komission päätöksellä 95/380/EY ( 6 ) , ja 8 päivänä tammikuuta 1999 tehdyllä komission päätöksellä 1999/47/EY ( 7 ) , vahvistetaan direktiivien 93/23/ETY ja 93/24/ETY soveltamista koskevat yksityiskohtaiset säännöt ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "95/380/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "että 1 ) toukokuun 30 päivänä 1994 tehdyillä komission päätöksillä 94/432/EY ( 4 ) ja 94/433/EY ( 5 ) , sellaisina kuin ne ovat muutettuina 18 päivänä syyskuuta 1995 tehdyllä komission päätöksellä 95/380/EY ( 6 ) , ja 8 päivänä tammikuuta 1999 tehdyllä komission päätöksellä 1999/47/EY ( 7 ) , vahvistetaan direktiivien 93/23/ETY ja 93/24/ETY soveltamista koskevat yksityiskohtaiset säännöt ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "1999/47/EY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "että 1 ) toukokuun 30 päivänä 1994 tehdyillä komission päätöksillä 94/432/EY ( 4 ) ja 94/433/EY ( 5 ) , sellaisina kuin ne ovat muutettuina 18 päivänä syyskuuta 1995 tehdyllä komission päätöksellä 95/380/EY ( 6 ) , ja 8 päivänä tammikuuta 1999 tehdyllä komission päätöksellä 1999/47/EY ( 7 ) , vahvistetaan direktiivien 93/23/ETY ja 93/24/ETY soveltamista koskevat yksityiskohtaiset säännöt ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "huhtikuussa tai touko-/kesäkuussa tai elokuussa",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "2 ) jäsenvaltioille voidaan , näiden hakemuksesta , antaa lupa huhtikuussa tai touko-/kesäkuussa tai elokuussa tehtävän sikakarjaa koskevien tilastotietojen keruun lopullisten tulosten alueelliseen jaotteluun ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "touko-/kesäkuussa tai marras-/joulukuussa",
+        "type": "OTHER",
+        "confidence": 0.85,
+        "context": "3 ) niille jäsenvaltioille , joiden nautakanta on pienempi kuin 1,5 miljoonaa eläintä , voidaan antaa lupa suorittaa vain toinen touko-/kesäkuussa tai marras-/joulukuussa tehtävistä tilastotietojen keruista ,",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Kreikka",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "4 ) Kreikka ja Belgia ovat tehneet edellä mainittuja mahdollisuuksia koskevat poikkeuslupahakemukset , ja",
+        "chunkIndex": 1
+      },
+      {
+        "name": "Belgia",
+        "type": "LOCATION",
+        "confidence": 0.98,
+        "context": "4 ) Kreikka ja Belgia ovat tehneet edellä mainittuja mahdollisuuksia koskevat poikkeuslupahakemukset , ja",
+        "chunkIndex": 1
+      },
+      {
+        "name": "72/279/ETY",
+        "type": "PRODUCT",
+        "confidence": 0.95,
+        "context": "5 ) tämä päätös on neuvoston päätöksellä 72/279/ETY ( 8 ) perustetun pysyvän maatalouskomitean lausunnon mukainen ,",
+        "chunkIndex": 1
+      }
+    ],
+    "documentId": "f55c3877-5356-4114-bf79-62e767ff8047"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "9693453d-b86d-41db-897a-961e004641ea"
+  },
+  {
+    "preview": true,
+    "extracted": 0,
+    "backend": "llm",
+    "model": "qwen3.5:2b",
+    "entities": [],
+    "documentId": "98291e15-6e94-4b91-9307-e2fdd4bb2d88"
+  }
+]
