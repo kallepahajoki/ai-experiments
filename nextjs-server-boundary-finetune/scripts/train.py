@@ -126,6 +126,13 @@ def main():
         max_seq_length=max_seq_length,
     )
 
+    # Format chat messages into tokenized text
+    def formatting_func(examples):
+        return [
+            tokenizer.apply_chat_template(msgs, tokenize=False)
+            for msgs in examples["messages"]
+        ]
+
     # Trainer
     trainer = SFTTrainer(
         model=model,
@@ -133,6 +140,7 @@ def main():
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
         processing_class=tokenizer,
+        formatting_func=formatting_func,
     )
 
     # Train
