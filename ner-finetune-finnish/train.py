@@ -154,15 +154,57 @@ def main():
         },
     )
 
-    # ── Tokenize using chat template ──
-    def format_example(example):
-        messages = example["messages"]
-        text = tokenizer.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=False
-        )
-        return {"text": text}
+    # ── Tokenize and pack ──
+    # We pack manually because Unsloth's SFTTrainer override can silently
+    # disable TRL's built-in packing. By pre-packing, we bypass this entirely.
+    # Qwen3.5 loads as a VLM processor — use the inner text tokenizer directly.
+    text_tokenizer = getattr(tokenizer, "tokenizer", tokenizer)
 
-    dataset = dataset.map(format_example)
+    def tokenize_and_format(example):
+        text = text_tokenizer.apply_chat_template(
+            example["messages"], tokenize=False, add_generation_prompt=False
+        )
+        ids = text_tokenizer(text, truncation=True, max_length=args.max_seq_length)["input_ids"]
+        return {"input_ids": ids, "attention_mask": [1] * len(ids)}
+
+    print("Tokenizing dataset...")
+    tokenized_train = dataset["train"].map(
+        tokenize_and_format, remove_columns=dataset["train"].column_names
+    )
+    tokenized_eval = dataset["eval"].select(
+        range(min(2000, len(dataset["eval"])))
+    ).map(tokenize_and_format, remove_columns=dataset["eval"].column_names)
+
+    def pack_sequences(examples, max_len):
+        """Concatenate tokenized examples into fixed-length packed sequences."""
+        all_input_ids = []
+        all_attention_mask = []
+        for ids, mask in zip(examples["input_ids"], examples["attention_mask"]):
+            all_input_ids.extend(ids)
+            all_attention_mask.extend(mask)
+
+        packed_input_ids = []
+        packed_attention_mask = []
+        for i in range(0, len(all_input_ids), max_len):
+            chunk_ids = all_input_ids[i:i + max_len]
+            chunk_mask = all_attention_mask[i:i + max_len]
+            if len(chunk_ids) == max_len:
+                packed_input_ids.append(chunk_ids)
+                packed_attention_mask.append(chunk_mask)
+
+        return {"input_ids": packed_input_ids, "attention_mask": packed_attention_mask}
+
+    print("Packing sequences...")
+    packed_train = tokenized_train.map(
+        pack_sequences, fn_kwargs={"max_len": args.max_seq_length},
+        batched=True, batch_size=1000, remove_columns=tokenized_train.column_names,
+    )
+    packed_eval = tokenized_eval.map(
+        pack_sequences, fn_kwargs={"max_len": args.max_seq_length},
+        batched=True, batch_size=1000, remove_columns=tokenized_eval.column_names,
+    )
+    print(f"Packed: {len(dataset['train'])} → {len(packed_train)} train sequences, "
+          f"{len(tokenized_eval)} → {len(packed_eval)} eval sequences")
 
     # ── Train ──
     from trl import SFTTrainer, SFTConfig
@@ -174,8 +216,8 @@ def main():
     trainer = SFTTrainer(
         model=model,
         tokenizer=tokenizer,
-        train_dataset=dataset["train"],
-        eval_dataset=dataset["eval"].select(range(min(2000, len(dataset["eval"])))),
+        train_dataset=packed_train,
+        eval_dataset=packed_eval,
         args=SFTConfig(
             output_dir=str(output_path),
             num_train_epochs=args.epochs,
@@ -192,7 +234,6 @@ def main():
             fp16=False,
             bf16=True,
             max_length=args.max_seq_length,
-            packing=True,
             dataset_text_field="text",
         ),
         callbacks=callbacks,
