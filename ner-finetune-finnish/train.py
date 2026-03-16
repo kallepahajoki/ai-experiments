@@ -16,6 +16,7 @@ import argparse
 import time
 from pathlib import Path
 
+from unsloth import FastLanguageModel  # must be first — patches transformers/peft
 from transformers import TrainerCallback
 
 MODEL_MAP = {
@@ -119,8 +120,6 @@ def main():
     print(f"Output: {output_path}")
 
     # ── Load model with Unsloth ──
-    from unsloth import FastLanguageModel
-
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=model_name,
         max_seq_length=args.max_seq_length,
@@ -192,7 +191,7 @@ def main():
             save_total_limit=3,
             fp16=False,
             bf16=True,
-            max_seq_length=args.max_seq_length,
+            max_length=args.max_seq_length,
             packing=True,
             dataset_text_field="text",
         ),
