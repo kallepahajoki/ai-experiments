@@ -43,6 +43,12 @@ The two approaches are complementary: spaCy has higher recall (catches more enti
 
 **Finnish NER** results tell a different story — spaCy dominates (F1 0.417 vs Qwen 4b's 0.274), and Qwen 0.8b extracts zero entities from tokenized Finnish text. No transformer pipeline exists for Finnish spaCy, so the CNN-based `fi_core_news_md` is the clear default. Qwen finetuning on Finnish NER data is a logical next step.
 
+### [`ner-finetune-finnish/`](ner-finetune-finnish/)
+
+**Finnish NER finetuning** — QLoRA finetune of Qwen 3.5 (0.8B/2B/4B) on Finnish NER data from Turku NER corpus and FiNER/Digitoday. Motivated by the benchmark above showing that base Qwen 3.5 models are essentially useless for Finnish entity extraction (best F1: 0.274 vs spaCy's 0.417).
+
+Uses the full Turku NER corpus (~800 docs, 11k entities) and FiNER/Digitoday (~3,700 docs, 196k entities) as training data, formatted as instruction-tuning examples with a Finnish system prompt. Exports finetuned models to GGUF for Ollama deployment.
+
 ### [`nextjs-server-boundary-finetune/`](nextjs-server-boundary-finetune/)
 
 **Targeted reasoning correction** — fine-tunes Qwen3.5-27B to fix a specific Next.js webpack error where Node.js built-in modules fail to resolve in server bundles.
