@@ -160,6 +160,71 @@ export async function compressBuffer(input: Buffer): Promise<Buffer> {
   });
 }""",
     },
+    {
+        "filename": "lib/db/pool.ts",
+        "imports": ["events"],
+        "purpose": "PostgreSQL connection pool with event-based health monitoring",
+        "code_snippet": """import { Pool } from 'pg';
+import { EventEmitter } from 'events';
+
+export class DatabasePool extends EventEmitter {
+  private pool: Pool;
+
+  constructor(connectionString: string) {
+    super();
+    this.pool = new Pool({ connectionString });
+    this.pool.on('error', (err) => this.emit('error', err));
+    this.pool.on('connect', () => this.emit('ready'));
+  }
+
+  async query(sql: string, params?: unknown[]) {
+    return this.pool.query(sql, params);
+  }
+}""",
+    },
+    {
+        "filename": "lib/db/migrations.ts",
+        "imports": ["fs/promises", "path", "crypto"],
+        "purpose": "Database migration runner with checksum verification",
+        "code_snippet": """import fs from 'fs/promises';
+import path from 'path';
+import { createHash } from 'crypto';
+import { Pool } from 'pg';
+
+export async function runMigrations(pool: Pool): Promise<void> {
+  const migrationsDir = path.join(process.cwd(), 'migrations');
+  const files = await fs.readdir(migrationsDir);
+  for (const file of files.sort()) {
+    const sql = await fs.readFile(path.join(migrationsDir, file), 'utf-8');
+    const checksum = createHash('md5').update(sql).digest('hex');
+    await pool.query(sql);
+  }
+}""",
+    },
+    {
+        "filename": "lib/realtime/pubsub.ts",
+        "imports": ["events", "crypto"],
+        "purpose": "Pub/sub event bus for real-time updates",
+        "code_snippet": """import { EventEmitter } from 'events';
+import { randomUUID } from 'crypto';
+
+export class PubSub extends EventEmitter {
+  private subscriptions = new Map<string, Set<string>>();
+
+  subscribe(channel: string): string {
+    const id = randomUUID();
+    if (!this.subscriptions.has(channel)) {
+      this.subscriptions.set(channel, new Set());
+    }
+    this.subscriptions.get(channel)!.add(id);
+    return id;
+  }
+
+  publish(channel: string, data: unknown): void {
+    this.emit(channel, { id: randomUUID(), data, timestamp: Date.now() });
+  }
+}""",
+    },
 ]
 
 # Import chain patterns (how the server file gets pulled into the webpack build)
@@ -916,6 +981,244 @@ When you externalize `pg`, webpack emits `require('pg')` as-is. Node.js then loa
     }
 
 
+def generate_pg_progressive_fix_example() -> dict:
+    """Example where user fixes builtins first, then discovers pg transitive deps."""
+
+    user_msg = """I'm building a Next.js app with PostgreSQL. I already added webpack externals for `crypto`, `net`, `fs`, `path`, `events`, and `pg`:
+
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'crypto',
+        'net',
+        'fs',
+        'path',
+        'events',
+        'pg',
+      ];
+    }
+    return config;
+  },
+```
+
+But I'm still getting errors:
+
+```
+./node_modules/pgpass/lib/index.js
+Module not found: Can't resolve 'fs'
+
+Import trace for requested module:
+./node_modules/pgpass/lib/index.js
+./node_modules/pg/lib/client.js
+./lib/db.ts
+./instrumentation.ts
+
+./node_modules/split2/index.js
+Module not found: Can't resolve 'stream'
+
+Import trace for requested module:
+./node_modules/split2/index.js
+./node_modules/pgpass/lib/index.js
+./node_modules/pg/lib/client.js
+./lib/db.ts
+./instrumentation.ts
+```
+
+I thought externalizing `pg` would handle all its internal modules?"""
+
+    assistant_msg = """Externalizing `pg` tells webpack not to bundle `pg` itself, but webpack still processes `pg`'s dependencies (`pgpass`, `split2`, `pg-pool`, `pg-protocol`) because they're separate packages in `node_modules`.
+
+You need to externalize these transitive dependencies too:
+
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'crypto',
+        'net',
+        'fs',
+        'path',
+        'events',
+        'stream',
+        'pg',
+        'pgpass',
+        'split2',
+        'pg-pool',
+        'pg-protocol',
+      ];
+    }
+    return config;
+  },
+```
+
+**Why this happens:** `pg` has dependencies like `pgpass` (reads ~/.pgpass files using `fs`) and `split2` (stream splitter using `stream`). These are separate npm packages, so externalizing `pg` alone doesn't cover them. Each package that uses Node.js built-ins needs to be externalized individually, or you externalize the entire dependency chain.
+
+A good rule of thumb: if you see errors from `node_modules/X/...`, add `X` to externals."""
+
+    return {
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
+def generate_mongoose_transitive_example() -> dict:
+    """Example with mongoose transitive deps to reinforce the pattern."""
+
+    user_msg = """Next.js build fails with:
+
+```
+./node_modules/mongodb/lib/cmap/connect.js
+Module not found: Can't resolve 'net'
+
+Import trace for requested module:
+./node_modules/mongodb/lib/index.js
+./node_modules/mongoose/lib/index.js
+./lib/models/user.ts
+./app/api/users/route.ts
+```
+
+I have mongoose externalized:
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'mongoose',
+      ];
+    }
+    return config;
+  },
+```
+
+Why is mongodb still causing errors?"""
+
+    assistant_msg = """Same pattern as other database drivers — `mongoose` depends on `mongodb`, which is a separate package in `node_modules`. Externalizing `mongoose` doesn't cover `mongodb`.
+
+You need to externalize the full dependency chain plus the Node.js built-ins they use:
+
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'net',
+        'dns',
+        'tls',
+        'stream',
+        'crypto',
+        'os',
+        'zlib',
+        'events',
+        'mongoose',
+        'mongodb',
+      ];
+    }
+    return config;
+  },
+```
+
+**The pattern:** When you see a build error from `node_modules/X/...` where X is a dependency of a package you already externalized, add X to externals too. Database drivers (`pg`, `mongoose`, `ioredis`) are the most common case because they have deep dependency trees that use many Node.js built-ins.
+
+`mongodb` internally uses `net`, `dns`, `tls`, `stream`, `crypto`, `os`, and `zlib` — all of which need to be available at runtime. Externalizing both `mongoose` and `mongodb` ensures webpack leaves the entire chain for Node.js to resolve."""
+
+    return {
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
+def generate_events_focused_example() -> dict:
+    """Example specifically highlighting events as a commonly missed module."""
+
+    user_msg = """My Next.js build almost passes — I fixed most module errors with webpack externals but one remains:
+
+```
+./lib/queue/worker.ts:2:1
+Module not found: Can't resolve 'events'
+  1 | import { Pool } from 'pg';
+> 2 | import { EventEmitter } from 'events';
+    | ^
+  3 |
+  4 | export class JobWorker extends EventEmitter {
+
+Import trace for requested module:
+./lib/queue/worker.ts
+./instrumentation.ts
+```
+
+My current config:
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'crypto',
+        'net',
+        'fs',
+        'path',
+        'pg',
+        'pgpass',
+        'split2',
+      ];
+    }
+    return config;
+  },
+```
+
+I forgot to include `events` — but what other modules might I be missing?"""
+
+    assistant_msg = """Add `events` and review all Node.js built-ins your code uses. A good practice is to include all the common ones upfront rather than playing whack-a-mole:
+
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'crypto',
+        'net',
+        'fs',
+        'fs/promises',
+        'path',
+        'events',
+        'stream',
+        'dns',
+        'tls',
+        'pg',
+        'pgpass',
+        'split2',
+      ];
+    }
+    return config;
+  },
+```
+
+**Commonly missed modules:**
+- `events` — used by any class extending `EventEmitter` (very common in Node.js code)
+- `stream` — used by database drivers, compression, file processing
+- `dns` — used by database drivers and email libraries for hostname resolution
+- `tls` — used by anything making secure connections
+- `fs/promises` — the promise-based fs API, separate from `fs`
+
+Since your code uses `pg`, make sure to include its transitive dependencies (`pgpass`, `split2`, `pg-pool`, `pg-protocol`) too, as they're separate npm packages that webpack will try to bundle independently."""
+
+    return {
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
 def main():
     random.seed(42)
     examples = []
@@ -927,6 +1230,11 @@ def main():
     examples.append(generate_negative_example_client_side())
     examples.append(generate_transitive_deps_example())
 
+    # 2. Additional focused examples for transitive deps and events
+    examples.append(generate_pg_progressive_fix_example())
+    examples.append(generate_mongoose_transitive_example())
+    examples.append(generate_events_focused_example())
+
     # 3. Synthetic variations
     config_keys = list(CONFIG_TEMPLATES.keys())
     chain_templates = IMPORT_CHAINS
@@ -937,10 +1245,17 @@ def main():
         num_files = random.randint(1, 3)
         files = random.sample(SOURCE_FILE_SCENARIOS, min(num_files, len(SOURCE_FILE_SCENARIOS)))
 
-        # Maybe include an npm package
+        # Maybe include an npm package — bias toward pg to boost transitive dep coverage
         npm_pkgs = []
         if random.random() > 0.4:
-            npm_pkgs = random.sample(list(SERVER_NPM_PACKAGES.keys()), random.randint(1, 2))
+            if random.random() < 0.5:
+                # 50% chance: always include pg, maybe with another package
+                npm_pkgs = ["pg"]
+                if random.random() > 0.5:
+                    other = random.choice([k for k in SERVER_NPM_PACKAGES if k != "pg"])
+                    npm_pkgs.append(other)
+            else:
+                npm_pkgs = random.sample(list(SERVER_NPM_PACKAGES.keys()), random.randint(1, 2))
 
         # Pick config template and import chain
         config_key = random.choice(config_keys)
