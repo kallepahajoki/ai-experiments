@@ -28,10 +28,10 @@ EPOCHS = {
 }
 
 QUANT = {
-    "0.8b": "q8_0",
-    "2b":   "q8_0",
-    "4b":   "q4_k_m",
-    "9b":   "q4_k_m",
+    "0.8b": "Q8_0",
+    "2b":   "Q8_0",
+    "4b":   "Q4_K_M",
+    "9b":   "Q4_K_M",
 }
 
 
@@ -68,6 +68,10 @@ def main():
     parser.add_argument("--output-dir", default="./output")
     parser.add_argument("--learning-rate", type=float, default=2e-4)
     parser.add_argument("--lora-rank", type=int, default=16)
+    parser.add_argument("--resume", action="store_true",
+                        help="Resume each model from latest checkpoint")
+    parser.add_argument("--time-limit", type=float, default=None,
+                        help="Time limit in hours per model")
     args = parser.parse_args()
 
     results = {}
@@ -87,7 +91,9 @@ def main():
                 "--output-dir", args.output_dir,
                 "--learning-rate", str(args.learning_rate),
                 "--lora-rank", str(args.lora_rank),
-            ],
+            ]
+            + (["--resume"] if args.resume else [])
+            + (["--time-limit", str(args.time_limit)] if args.time_limit else []),
         )
 
         if not train_ok:
