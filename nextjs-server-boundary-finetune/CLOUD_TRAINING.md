@@ -7,7 +7,7 @@
 | GPU | 1x A100 80GB (or H100) |
 | Template | RunPod PyTorch (comes with CUDA + torch pre-installed) |
 | Container disk | 20 GB (default is fine) |
-| Network volume | 50 GB (stores venv, model weights, and training output) |
+| Network volume | 200 GB (model weights ~52 GB, venv ~12 GB, GGUF export needs ~100 GB temp) |
 
 ## First-Time Setup
 
