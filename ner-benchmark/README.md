@@ -32,7 +32,8 @@ Complete reversal from English — spaCy dominates, Qwen models are unreliable f
 | spaCy md | **0.417** | CPU | Clear winner |
 | spaCy lg | 0.411 | CPU | No improvement over md |
 | Qwen 3.5 2B | 0.284 | GPU | Crashes on FiNER |
-| Qwen 3.5 4B | 0.274 | GPU | 40% behind spaCy |
+| Qwen 3.5 4B | 0.274 | GPU | Best Qwen, still 34% behind spaCy |
+| Qwen 3.5 9B | 0.256 | GPU | Worse than 4b — scaling inverted |
 | Qwen 3.5 0.8B | 0.000 | GPU | Zero entities on tokenized text |
 
 ## Structure

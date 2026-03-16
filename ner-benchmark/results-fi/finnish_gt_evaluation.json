@@ -648,6 +648,119 @@
       }
     ]
   },
+  "qwen_9b_turku-ner": {
+    "precision": 0.4550898203592814,
+    "recall": 0.46454767726161367,
+    "f1": 0.45977011494252873,
+    "type_accuracy": 0.949748743718593,
+    "tp": 380,
+    "fp": 455,
+    "fn": 438,
+    "gt_total": 818,
+    "model_total": 835,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.6903225806451613,
+        "recall": 0.4908256880733945,
+        "f1": 0.5737265415549598,
+        "tp": 107,
+        "fp": 48,
+        "fn": 111
+      },
+      "ORG": {
+        "precision": 0.32653061224489793,
+        "recall": 0.35036496350364965,
+        "f1": 0.33802816901408456,
+        "tp": 48,
+        "fp": 99,
+        "fn": 89
+      },
+      "LOCATION": {
+        "precision": 0.6082949308755761,
+        "recall": 0.49070631970260226,
+        "f1": 0.54320987654321,
+        "tp": 132,
+        "fp": 85,
+        "fn": 137
+      },
+      "PRODUCT": {
+        "precision": 0.25925925925925924,
+        "recall": 0.39622641509433965,
+        "f1": 0.31343283582089554,
+        "tp": 21,
+        "fp": 60,
+        "fn": 32
+      },
+      "EVENT": {
+        "precision": 0.14705882352941177,
+        "recall": 0.5882352941176471,
+        "f1": 0.23529411764705882,
+        "tp": 10,
+        "fp": 58,
+        "fn": 7
+      },
+      "DATE": {
+        "precision": 0.5535714285714286,
+        "recall": 0.5,
+        "f1": 0.5254237288135594,
+        "tp": 62,
+        "fp": 50,
+        "fn": 62
+      },
+      "OTHER": {
+        "precision": 0.0,
+        "recall": 0,
+        "f1": 0,
+        "tp": 0,
+        "fp": 55,
+        "fn": 0
+      }
+    },
+    "false_positives": [
+      {
+        "name": "-docstart-",
+        "type": "OTHER"
+      },
+      {
+        "name": "10 m ilmapistooli",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "10 metriä",
+        "type": "OTHER"
+      },
+      {
+        "name": "1000",
+        "type": "OTHER"
+      },
+      {
+        "name": "1000-luvulle",
+        "type": "DATE"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "\" khosroes \"",
+        "type": "PERSON"
+      },
+      {
+        "name": "\" sotareppu \"",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "1 päivänä kesäkuuta 1993",
+        "type": "DATE"
+      },
+      {
+        "name": "1.6.2006",
+        "type": "DATE"
+      },
+      {
+        "name": "120 eaa. – 63 eaa.",
+        "type": "DATE"
+      }
+    ]
+  },
   "spacy_sm_finer": {
     "precision": 0.25811001410437234,
     "recall": 0.34593572778827975,
@@ -1167,6 +1280,119 @@
       {
         "name": "-kombinaatioita",
         "type": "OTHER"
+      }
+    ],
+    "false_negatives": [
+      {
+        "name": "\"     itv     \"     -televisio",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "\"     surface     minin     \"",
+        "type": "PRODUCT"
+      },
+      {
+        "name": "1.        syyskuuta        alkaen",
+        "type": "OTHER"
+      },
+      {
+        "name": "1.       syyskuuta       alkaen",
+        "type": "OTHER"
+      },
+      {
+        "name": "10-vuotinen",
+        "type": "OTHER"
+      }
+    ]
+  },
+  "qwen_9b_finer": {
+    "precision": 0.17929292929292928,
+    "recall": 0.16776937618147447,
+    "f1": 0.17333984374999997,
+    "type_accuracy": 0.7985948477751756,
+    "tp": 355,
+    "fp": 1625,
+    "fn": 1761,
+    "gt_total": 2116,
+    "model_total": 1980,
+    "per_type": {
+      "PERSON": {
+        "precision": 0.12363636363636364,
+        "recall": 0.15454545454545454,
+        "f1": 0.13737373737373737,
+        "tp": 34,
+        "fp": 241,
+        "fn": 186
+      },
+      "ORG": {
+        "precision": 0.2980599647266314,
+        "recall": 0.3039568345323741,
+        "f1": 0.3009795191451469,
+        "tp": 169,
+        "fp": 398,
+        "fn": 387
+      },
+      "LOCATION": {
+        "precision": 0.27040816326530615,
+        "recall": 0.452991452991453,
+        "f1": 0.3386581469648563,
+        "tp": 53,
+        "fp": 143,
+        "fn": 64
+      },
+      "PRODUCT": {
+        "precision": 0.15917602996254682,
+        "recall": 0.1388888888888889,
+        "f1": 0.14834205933682373,
+        "tp": 85,
+        "fp": 449,
+        "fn": 527
+      },
+      "EVENT": {
+        "precision": 0.0297029702970297,
+        "recall": 0.23076923076923078,
+        "f1": 0.052631578947368425,
+        "tp": 3,
+        "fp": 98,
+        "fn": 10
+      },
+      "DATE": {
+        "precision": 0.026119402985074626,
+        "recall": 0.4375,
+        "f1": 0.04929577464788732,
+        "tp": 7,
+        "fp": 261,
+        "fn": 9
+      },
+      "OTHER": {
+        "precision": 0.10256410256410256,
+        "recall": 0.006872852233676976,
+        "f1": 0.01288244766505636,
+        "tp": 4,
+        "fp": 35,
+        "fn": 578
+      }
+    },
+    "false_positives": [
+      {
+        "name": "'68 comeback special",
+        "type": "EVENT"
+      },
+      {
+        "name": ".bike",
+        "type": "PRODUCT"
+      },
+      {
+        "name": ".biz",
+        "type": "PRODUCT"
+      },
+      {
+        "name": ".clothing",
+        "type": "PRODUCT"
+      },
+      {
+        "name": ".com",
+        "type": "PRODUCT"
       }
     ],
     "false_negatives": [

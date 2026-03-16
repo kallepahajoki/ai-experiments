@@ -27,8 +27,9 @@ No transformer pipeline exists for Finnish spaCy — all three are CNN-based (un
 | `qwen3.5:0.8b` | 0.8B |
 | `qwen3.5:2b` | 2B |
 | `qwen3.5:4b` | 4B |
+| `qwen3.5:9b` | 9B |
 
-Same models as the English benchmark. The 9b model was not tested in this round.
+Same models as the English benchmark.
 
 ## Datasets
 
@@ -52,6 +53,7 @@ Same models as the English benchmark. The 9b model was not tested in this round.
 | Qwen 0.8b | **0** | **0** | 1,007 | 1,007 |
 | Qwen 2b | 629 | FAIL* | 1,354 | 1,983 |
 | Qwen 4b | 1,112 | 3,764 | 2,846 | 7,722 |
+| Qwen 9b | 968 | 3,183 | 2,633 | 6,784 |
 
 *Qwen 2b crashes Atlas on FiNER documents — consistent across retries. Similar to the English benchmark where 2b extracted zero entities from legal contracts.
 
@@ -78,6 +80,7 @@ Fairer comparison — different domain from spaCy's training data.
 | spaCy lg | 0.262 | 0.362 | 0.304 | **0.810** |
 | spaCy sm | 0.258 | 0.346 | 0.296 | 0.766 |
 | Qwen 4b | 0.189 | 0.203 | 0.196 | 0.776 |
+| Qwen 9b | 0.179 | 0.168 | 0.173 | **0.799** |
 | Qwen 2b | — | — | FAIL | — |
 | Qwen 0.8b | — | — | — | — |
 
@@ -90,6 +93,7 @@ Fairer comparison — different domain from spaCy's training data.
 | spaCy sm | 0.332 | 0.460 | 0.385 | 0.835 |
 | Qwen 2b | 0.338 | 0.244 | 0.284 | 0.868 |
 | Qwen 4b | 0.261 | 0.289 | 0.274 | 0.852 |
+| Qwen 9b | 0.261 | 0.251 | 0.256 | 0.874 |
 
 ### Per-Type F1 (combined)
 
@@ -100,6 +104,7 @@ Fairer comparison — different domain from spaCy's training data.
 | spaCy sm | 0.574 | 0.525 | 0.650 | 0.309 | 0.291 | 0.312 |
 | Qwen 2b | 0.403 | 0.237 | 0.278 | 0.212 | 0.094 | 0.437 |
 | Qwen 4b | 0.348 | 0.344 | 0.448 | 0.201 | 0.070 | 0.312 |
+| Qwen 9b | 0.325 | 0.308 | 0.463 | 0.166 | 0.131 | 0.265 |
 
 ## Key Findings
 
@@ -111,9 +116,10 @@ spaCy md/lg achieve F1 0.41-0.42 combined, while the best Qwen model manages onl
 
 - **0.8b:** Extracts zero entities from tokenized Finnish text. Only works on clean Wikipedia prose.
 - **2b:** Crashes Atlas on FiNER documents. Manages weak results (F1 0.284) on Turku NER.
-- **4b:** Best Qwen model but still 40% behind spaCy md (F1 0.274 vs 0.417).
+- **4b:** Best Qwen model (F1 0.274) but still 34% behind spaCy md (0.417).
+- **9b:** Actually worse than 4b (F1 0.256). More parameters doesn't help — the model needs Finnish NER training data, not more capacity.
 
-The English NER prompt works poorly for Finnish — the models don't understand Finnish morphology well enough to identify entity boundaries in agglutinative text.
+The English NER prompt works poorly for Finnish — the models don't understand Finnish morphology well enough to identify entity boundaries in agglutinative text. The Qwen scaling curve is **flat or inverted** for Finnish, unlike English where 9b was the clear winner.
 
 ### 3. spaCy md is the sweet spot
 
@@ -133,7 +139,8 @@ Even spaCy only achieves F1 0.30 on FiNER, compared to 0.67 on Turku NER. FiNER'
 |--------|---------------|----------------|
 | Best overall F1 | Qwen 9b: 0.717 | spaCy md: 0.417 |
 | Best CPU F1 | spaCy trf: 0.628 | spaCy md: 0.417 |
-| Best LLM F1 | Qwen 9b: 0.717 | Qwen 2b: 0.284 |
+| Best LLM F1 | Qwen 9b: 0.717 | Qwen 4b: 0.274 |
+| LLM scaling | More params = better | Flat/inverted |
 | Winner | LLM (with GPU) | spaCy (CPU) |
 
 Finnish NER is significantly harder for all models, but the gap is much wider for LLMs. spaCy drops from 0.628 → 0.417 (34% decrease), while Qwen drops from 0.717 → 0.284 (60% decrease).
