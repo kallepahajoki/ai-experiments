@@ -13,7 +13,7 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser(description="Export finetuned model to Ollama")
-    parser.add_argument("--model", choices=["0.8b", "2b", "4b"], required=True)
+    parser.add_argument("--model", choices=["0.8b", "2b", "4b", "9b"], required=True)
     parser.add_argument("--quant", default="q4_k_m",
                         help="GGUF quantization (q4_k_m, q8_0, f16)")
     parser.add_argument("--output-dir", default="./output")

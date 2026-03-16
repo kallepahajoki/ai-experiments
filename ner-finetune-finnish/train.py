@@ -2,7 +2,7 @@
 """
 LoRA finetune Qwen 3.5 for Finnish NER using Unsloth.
 
-Targets: qwen3.5:0.8b, qwen3.5:2b, qwen3.5:4b
+Targets: qwen3.5:0.8b, qwen3.5:2b, qwen3.5:4b, qwen3.5:9b
 Hardware: RTX 4090 (24GB VRAM), QLoRA 4-bit
 
 Usage:
@@ -17,18 +17,20 @@ MODEL_MAP = {
     "0.8b": "Qwen/Qwen3.5-0.8B",
     "2b":   "Qwen/Qwen3.5-2B",
     "4b":   "Qwen/Qwen3.5-4B",
+    "9b":   "Qwen/Qwen3.5-9B",
 }
 
 BATCH_SIZE_MAP = {
     "0.8b": 4,
     "2b":   2,
     "4b":   1,
+    "9b":   1,
 }
 
 
 def main():
     parser = argparse.ArgumentParser(description="Finetune Qwen for Finnish NER")
-    parser.add_argument("--model", choices=["0.8b", "2b", "4b"], required=True)
+    parser.add_argument("--model", choices=["0.8b", "2b", "4b", "9b"], required=True)
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--data-dir", default="./data")
     parser.add_argument("--output-dir", default="./output")

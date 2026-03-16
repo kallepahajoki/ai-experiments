@@ -1,6 +1,6 @@
 # Finnish NER Finetuning — Qwen 3.5
 
-QLoRA finetune of Qwen 3.5 (0.8B/2B/4B) on Finnish NER data from Turku NER corpus and FiNER/Digitoday. Motivated by the [Finnish NER benchmark](../ner-benchmark/finnish-benchmark.md) showing that base Qwen 3.5 models are essentially useless for Finnish entity extraction (best F1: 0.274, vs spaCy's 0.417).
+QLoRA finetune of Qwen 3.5 (0.8B/2B/4B/9B) on Finnish NER data from Turku NER corpus and FiNER/Digitoday. Motivated by the [Finnish NER benchmark](../ner-benchmark/finnish-benchmark.md) showing that base Qwen 3.5 models are essentially useless for Finnish entity extraction (best F1: 0.274, vs spaCy's 0.417).
 
 ## Quick Start
 
@@ -16,17 +16,13 @@ python prepare_data.py --datasets-dir ../ner-benchmark/datasets-fi
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Train (start with 0.8b to validate, then 4b for quality)
-python train.py --model 0.8b --epochs 3
-python train.py --model 4b --epochs 2
+# 4. Train all models (0.8b → 2b → 4b → 9b), export GGUF, register in Ollama
+python train_all.py
 
-# 5. Export to Ollama
-python export_to_ollama.py --model 0.8b --quant q8_0
-python export_to_ollama.py --model 4b --quant q4_k_m
-
-# 6. Register in Ollama
-cd output/qwen3.5-4b-fi-ner-gguf
-ollama create qwen3.5-4b-fi-ner -f Modelfile
+# Or train specific sizes / skip export
+python train_all.py --models 0.8b 4b
+python train_all.py --skip-export
+python train_all.py --models 4b --epochs 3
 ```
 
 ## Expected VRAM Usage (RTX 4090, 24GB)
@@ -36,13 +32,15 @@ ollama create qwen3.5-4b-fi-ner -f Modelfile
 | 0.8B | ~1.5 GB | ~3 GB | ~10-15 min |
 | 2B | ~3 GB | ~5 GB | ~25-35 min |
 | 4B | ~5 GB | ~10 GB | ~45-60 min |
+| 9B | ~8 GB | ~16 GB | ~90-120 min |
 
 ## Files
 
 ```
 ner-finetune-finnish/
 ├── prepare_data.py        # Convert annotations to instruction-tuning JSONL
-├── train.py               # QLoRA finetune with Unsloth
+├── train.py               # QLoRA finetune with Unsloth (single model)
+├── train_all.py           # Train + export + register all model sizes
 ├── export_to_ollama.py    # Merge adapter + export GGUF + Ollama Modelfile
 ├── requirements.txt       # Python dependencies
 ├── data/                  # Generated training data (train.jsonl, eval.jsonl)
