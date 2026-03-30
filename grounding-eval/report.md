@@ -156,6 +156,25 @@ Tied worst with Gemini Flash but for different reasons. This model fails across 
 
 **Cost vs quality is dramatic.** GPT 5.4 mini at $0.0007/run massively outperformed Sonnet 4.6 on faithfulness. The cheapest model was the most truthful.
 
+## Could an LLM Judge Have Prevented the HS Error?
+
+On 2026-03-30, Helsingin Sanomat editor-in-chief Erja Yläjärvi [published a statement](https://www.hs.fi/paakirjoitukset/art-2000011912865.html) confirming that HS had published erroneous information claiming Russian drones had been downed in Kouvola. The error was live for three minutes. Ilta-Sanomat made the same mistake. The root cause: **an AI tool used to summarize press releases had fabricated the Russia attribution**. The tool headlines press release alerts on an internal channel, and journalists picked up the hallucinated headline as breaking news. Yläjärvi wrote: "Tekoälytyökalu oli tässä tapauksessa täysin virheellisesti otsikoinut Puolustusministeriön tiedotehälytyksen Venäjään liittyväksi, vaikka itse tiedotteessa ei puhuttu maasta mitään." (The AI tool had completely erroneously headlined the Ministry of Defence press release alert as related to Russia, even though the press release itself said nothing about any country.)
+
+This is a textbook **fabricated addition** — the most critical failure mode in our framework.
+
+**Could an LLM-as-judge have caught it?** Yes, trivially. Our benchmark's fabricated addition judge prompt asks the judge to verify every factual claim against the source. In our test, Opus 4.6 successfully detected fabricated additions across all models that produced them — including far more subtle cases than a country attribution that doesn't exist in the source at all. Even a cheaper judge model would catch "Russian drones" when the source mentions no country.
+
+**What would it cost?**
+
+- Running the fabricated addition judge alone on one press release summary: **~$0.01** (500 input tokens + 300 output tokens at Opus 4.6 pricing)
+- Running all 12 failure modes on one press release summary: **~$0.12**
+- Running the full 12-mode evaluation on every press release HS processes in a day (estimate ~50-100 alerts): **$6-12/day**
+- Using a cheaper judge (Sonnet 4.6 at ~$0.003/M input): **under $1/day** for all alerts
+
+For context, HS's reputational damage from three minutes of "Russian drones" breaking news during an active security incident — including the editor-in-chief's public apology — almost certainly cost more than a decade of continuous LLM-judge monitoring.
+
+**The irony:** HS is already paying for an LLM to summarize press releases. Adding a second LLM call to verify the first one's output would have cost a fraction of a cent and prevented the incident entirely. The architecture needed is exactly what this benchmark implements: source in, output in, judge evaluates faithfulness. A single fabricated_addition check on the AI tool's headline against the original MoD press release would have flagged "Russia" as an ungrounded claim in under 2 seconds.
+
 ## Evaluation Metadata
 
 - **Judge model:** anthropic/claude-opus-4.6
