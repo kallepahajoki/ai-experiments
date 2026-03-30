@@ -171,9 +171,6 @@ This is a textbook **fabricated addition** — the most critical failure mode in
 - Running the full 12-mode evaluation on every press release HS processes in a day (estimate ~50-100 alerts): **$6-12/day**
 - Using a cheaper judge (Sonnet 4.6 at ~$0.003/M input): **under $1/day** for all alerts
 
-For context, HS's reputational damage from three minutes of "Russian drones" breaking news during an active security incident — including the editor-in-chief's public apology — almost certainly cost more than a decade of continuous LLM-judge monitoring.
-
-**The irony:** HS is already paying for an LLM to summarize press releases. Adding a second LLM call to verify the first one's output would have cost a fraction of a cent and prevented the incident entirely. The architecture needed is exactly what this benchmark implements: source in, output in, judge evaluates faithfulness. A single fabricated_addition check on the AI tool's headline against the original MoD press release would have flagged "Russia" as an ungrounded claim in under 2 seconds.
 
 ## Evaluation Metadata
 
