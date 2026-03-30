@@ -723,9 +723,13 @@ def generate_tool_response_only_example(
         import_chain_template, include_wrong_approach, existing_externals,
     )
 
+    user_prompt = random.choice(AGENTIC_USER_PROMPTS)
+
     return {
         "messages": [
-            # Minimal context: assistant already ran a build
+            # Brief user request — required by Qwen's chat template
+            {"role": "user", "content": user_prompt},
+            # Assistant runs the build — no config read step
             {
                 "role": "assistant",
                 "content": "",
