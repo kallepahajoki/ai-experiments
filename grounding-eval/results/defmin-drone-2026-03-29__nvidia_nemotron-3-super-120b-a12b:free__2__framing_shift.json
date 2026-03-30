@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output is a very faithful reproduction of the source material in both tone and content. The only minor addition is the word 'relevant' before 'authorities,' and 'now conducting a joint investigation' slightly reframes 'are investigating' but neither introduces meaningful editorial tone, bias, or dramatic framing. The overall tone remains neutral and factual, closely matching the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"other relevant authorities\",\n      \"issue\": \"The word 'relevant' is added and not present in the source. While minor, it introduces a slight editorial qualifier implying a judgment about which authorities are appropriate.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output is a very faithful reproduction of the source material in both tone and content. The only minor addition is the word 'relevant' before 'authorities,' and 'now conducting a joint investigation' slightly reframes 'are investigating' but neither introduces meaningful editorial tone, bias, or dramatic framing. The overall tone remains neutral and factual, closely matching the source.\"\n}\n```",
+  "judge_prompt_tokens": 505,
+  "judge_completion_tokens": 187,
+  "judge_cost_usd": 0.0072,
+  "timestamp": 1774903788.0226638
+}

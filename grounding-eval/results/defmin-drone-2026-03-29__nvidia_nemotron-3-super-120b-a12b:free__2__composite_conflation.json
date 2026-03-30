@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully reflects the source without merging independent facts into false causal or combined claims. The phrase 'one of the objects \u2014 identified as a drone' adds a minor clarifying parenthetical linking the detected objects to the drones, but this relationship is clearly implied in the source (objects were detected, drones crashed), so it does not constitute a composite conflation. No causal connectors (because, caused, led to, due to, resulting in) are used to fabricate relationships not present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully reflects the source without merging independent facts into false causal or combined claims. The phrase 'one of the objects \u2014 identified as a drone' adds a minor clarifying parenthetical linking the detected objects to the drones, but this relationship is clearly implied in the source (objects were detected, drones crashed), so it does not constitute a composite conflation. No causal connectors (because, caused, led to, due to, resulting in) are used to fabricate relationships not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 507,
+  "judge_completion_tokens": 154,
+  "judge_cost_usd": 0.006385,
+  "timestamp": 1774903807.136501
+}

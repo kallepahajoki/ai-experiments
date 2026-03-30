@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds to distinct facts stated in the source. The summary accurately separates the detection, the Air Force response, the crash locations, the police securing of sites, the minister's statement, and the ongoing investigation. No causal connectors are used to fabricate relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds to distinct facts stated in the source. The summary accurately separates the detection, the Air Force response, the crash locations, the police securing of sites, the minister's statement, and the ongoing investigation. No causal connectors are used to fabricate relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 529,
+  "judge_completion_tokens": 125,
+  "judge_cost_usd": 0.00577,
+  "timestamp": 1774902774.4965591
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output states 'Two drones subsequently crashed,' which is a reasonable inference from the source mentioning 'one drone has crashed north of Kouvola and another east of Kouvola' (1 + 1 = 2). All other numbers and quantities match the source accurately.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\", \"F/A-18\"],\n  \"numbers_in_output\": [\"several\", \"Two\", \"one\", \"another\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output states 'Two drones subsequently crashed,' which is a reasonable inference from the source mentioning 'one drone has crashed north of Kouvola and another east of Kouvola' (1 + 1 = 2). All other numbers and quantities match the source accurately.\"\n}\n```",
+  "judge_prompt_tokens": 463,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.00634,
+  "timestamp": 1774904194.469461
+}

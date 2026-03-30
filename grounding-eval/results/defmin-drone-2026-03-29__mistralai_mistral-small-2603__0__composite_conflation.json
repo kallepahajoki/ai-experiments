@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. The summary accurately separates the detection of objects, the deployment of the Hornet, the drone crashes, the minister's statement, and the ongoing investigation, all consistent with the source structure.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. The summary accurately separates the detection of objects, the deployment of the Hornet, the drone crashes, the minister's statement, and the ongoing investigation, all consistent with the source structure.\"\n}\n```",
+  "judge_prompt_tokens": 482,
+  "judge_completion_tokens": 104,
+  "judge_cost_usd": 0.00501,
+  "timestamp": 1774903330.781187
+}

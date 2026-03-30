@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The source initially describes the detected items as 'small objects' (not yet confirmed drones) and qualifies the crash reports with 'According to current information,' indicating preliminary/evolving information. The output drops both hedges: it calls the detected items 'drones' from the outset and states the crashes as definitive fact without the 'according to current information' qualifier. The removal of 'according to current information' on the crash details is moderately significant as it removes the provisional nature of the report. The replacement of 'small objects' with 'drones' is also notable since the source deliberately distinguishes between the initial detection of unidentified objects and the later identification/ministerial confirmation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"small objects\",\n      \"context\": \"Several low-flying, slow-moving small objects were detected \u2014 they are not immediately called drones in the initial detection description\"\n    },\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"small objects\",\n      \"preserved\": false,\n      \"output_version\": \"multiple low-flying, slow-moving drones were detected \u2014 the output replaces 'small objects' with 'drones', removing the initial ambiguity about what was detected\"\n    },\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones subsequently crashed\u2014one north of Kouvola and another east of Kouvola \u2014 the qualifier 'according to current information' is dropped, presenting the crashes as established fact\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The source initially describes the detected items as 'small objects' (not yet confirmed drones) and qualifies the crash reports with 'According to current information,' indicating preliminary/evolving information. The output drops both hedges: it calls the detected items 'drones' from the outset and states the crashes as definitive fact without the 'according to current information' qualifier. The removal of 'according to current information' on the crash details is moderately significant as it removes the provisional nature of the report. The replacement of 'small objects' with 'drones' is also notable since the source deliberately distinguishes between the initial detection of unidentified objects and the later identification/ministerial confirmation.\"\n}\n```",
+  "judge_prompt_tokens": 526,
+  "judge_completion_tokens": 455,
+  "judge_cost_usd": 0.014005,
+  "timestamp": 1774904606.8884501
+}

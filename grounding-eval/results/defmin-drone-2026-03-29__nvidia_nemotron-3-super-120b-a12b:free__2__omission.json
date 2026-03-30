@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully covers all key facts from the source, including the detection details, Air Force response, crash locations, police securing the sites, the Defense Minister's quote, and the joint investigation. No important information is omitted.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects were detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"The Air Force responded with an F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen's statement: 'Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.'\",\n    \"The Defence Forces are investigating the incident together with other authorities\"\n  ],\n  \"omitted_facts\": [],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully covers all key facts from the source, including the detection details, Air Force response, crash locations, police securing the sites, the Defense Minister's quote, and the joint investigation. No important information is omitted.\"\n}\n```",
+  "judge_prompt_tokens": 515,
+  "judge_completion_tokens": 261,
+  "judge_cost_usd": 0.0091,
+  "timestamp": 1774903802.707069
+}

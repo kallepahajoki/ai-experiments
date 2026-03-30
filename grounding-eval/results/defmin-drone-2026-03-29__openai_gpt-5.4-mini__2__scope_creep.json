@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "Every piece of information in the output can be directly traced to the source document. The summary is a faithful paraphrase of the original text with no added context, background information, or details beyond what was provided.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"Every piece of information in the output can be directly traced to the source document. The summary is a faithful paraphrase of the original text with no added context, background information, or details beyond what was provided.\"\n}\n```",
+  "judge_prompt_tokens": 469,
+  "judge_completion_tokens": 90,
+  "judge_cost_usd": 0.004595,
+  "timestamp": 1774904041.8879948
+}

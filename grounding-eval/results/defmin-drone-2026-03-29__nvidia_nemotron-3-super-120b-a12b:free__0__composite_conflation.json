@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output largely mirrors the source accurately. The only notable deviation is the characterization of the Defence Forces as 'leading' the investigation rather than simply investigating 'together with' other authorities, but this is more of an embellishment than a composite conflation of two separate facts. No causal connectors merge independent facts into false combined claims.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The Finnish Defence Forces are leading the investigation in cooperation with other relevant authorities.\",\n      \"source_facts\": [\n        \"The Defence Forces are investigating the incident together with other authorities.\"\n      ],\n      \"explanation\": \"The source says the Defence Forces are investigating 'together with' other authorities, implying a collaborative effort. The output says they are 'leading' the investigation, which introduces a hierarchical relationship not stated in the source. This is a subtle embellishment rather than a composite conflation of two separate facts.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output largely mirrors the source accurately. The only notable deviation is the characterization of the Defence Forces as 'leading' the investigation rather than simply investigating 'together with' other authorities, but this is more of an embellishment than a composite conflation of two separate facts. No causal connectors merge independent facts into false combined claims.\"\n}\n```",
+  "judge_prompt_tokens": 497,
+  "judge_completion_tokens": 243,
+  "judge_cost_usd": 0.00856,
+  "timestamp": 1774903626.183368
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The key hedging phrase 'According to current information' is preserved in the output as 'According to the latest information,' which conveys the same sense of provisional/preliminary information. No other significant hedging language was present in the source. The source itself presents most facts fairly directly (e.g., 'Drones have strayed into Finnish territory' is a direct quote from the minister), so there is limited hedging to begin with. The output faithfully mirrors the source's level of certainty.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to the latest information, one of the objects \u2014 identified as a drone \u2014 crashed north of Kouvola, while a second drone crashed east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The key hedging phrase 'According to current information' is preserved in the output as 'According to the latest information,' which conveys the same sense of provisional/preliminary information. No other significant hedging language was present in the source. The source itself presents most facts fairly directly (e.g., 'Drones have strayed into Finnish territory' is a direct quote from the minister), so there is limited hedging to begin with. The output faithfully mirrors the source's level of certainty.\"\n}\n```",
+  "judge_prompt_tokens": 566,
+  "judge_completion_tokens": 290,
+  "judge_cost_usd": 0.01008,
+  "timestamp": 1774903776.6823978
+}

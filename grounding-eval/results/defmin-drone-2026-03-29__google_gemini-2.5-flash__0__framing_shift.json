@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.78,
+    "evidence": "The most notable framing shift is the headline's use of 'Intrusion,' which reframes the minister's characterization of drones having 'strayed' (accidental connotation) into a more deliberate-sounding unauthorized entry. Additionally, 'emphasized' editorially characterizes the minister's delivery beyond what the source conveys.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Finnish Airspace Intrusion by Drones\",\n      \"issue\": \"The headline uses the word 'Intrusion,' which carries a more aggressive/adversarial connotation than the source's neutral phrasing 'strayed into Finnish territory.' The source uses the minister's word 'strayed,' which implies accidental entry, whereas 'intrusion' implies deliberate unauthorized entry.\"\n    },\n    {\n      \"output_phrase\": \"emphasized that the incident is being taken 'very seriously'\",\n      \"issue\": \"The word 'emphasized' adds editorial characterization of the minister's tone that is not present in the source. The source simply uses 'states' without indicating emphasis or rhetorical force.\"\n    },\n    {\n      \"output_phrase\": \"relevant authorities\",\n      \"issue\": \"Minor addition \u2014 the source says 'other authorities,' not 'other relevant authorities.' The word 'relevant' is a small editorial addition, though relatively neutral.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.78,\n  \"evidence\": \"The most notable framing shift is the headline's use of 'Intrusion,' which reframes the minister's characterization of drones having 'strayed' (accidental connotation) into a more deliberate-sounding unauthorized entry. Additionally, 'emphasized' editorially characterizes the minister's delivery beyond what the source conveys.\"\n}\n```",
+  "judge_prompt_tokens": 529,
+  "judge_completion_tokens": 357,
+  "judge_cost_usd": 0.01157,
+  "timestamp": 1774903055.8990982
+}

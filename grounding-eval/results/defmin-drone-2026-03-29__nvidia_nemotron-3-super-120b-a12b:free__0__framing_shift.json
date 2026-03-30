@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The summary is largely faithful in tone, but introduces two notable framing shifts: specifying 'radar' as the detection method (not in source) and characterizing the Defence Forces as 'leading' the investigation rather than collaboratively investigating. These are subtle but alter the implied narrative slightly. The addition of 'relevant' to 'authorities' is a very minor editorial insertion. Overall the tone remains neutral and no dramatic or loaded language is introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Finnish radar detected\",\n      \"issue\": \"The source says objects 'were detected' without specifying the detection method as 'radar.' Adding 'radar' introduces a specific technical detail not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"The Finnish Defence Forces are leading the investigation\",\n      \"issue\": \"The source says the Defence Forces are 'investigating the incident together with other authorities,' which implies a collaborative role, not necessarily a leading one. 'Leading' introduces an implied hierarchy not stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"other relevant authorities\",\n      \"issue\": \"The source says 'other authorities.' Adding 'relevant' is a minor editorial addition not present in the source, though it introduces minimal framing shift.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The summary is largely faithful in tone, but introduces two notable framing shifts: specifying 'radar' as the detection method (not in source) and characterizing the Defence Forces as 'leading' the investigation rather than collaboratively investigating. These are subtle but alter the implied narrative slightly. The addition of 'relevant' to 'authorities' is a very minor editorial insertion. Overall the tone remains neutral and no dramatic or loaded language is introduced.\"\n}\n```",
+  "judge_prompt_tokens": 495,
+  "judge_completion_tokens": 332,
+  "judge_cost_usd": 0.010775,
+  "timestamp": 1774903592.448958
+}

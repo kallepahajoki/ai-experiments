@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source says 'According to current information, one drone has crashed north of Kouvola and another east of Kouvola,' which already contains a mild qualifier but presents the crashes as established facts. The output rephrases this as 'Two drones were reported to have crashed,' which introduces the hedging phrase 'reported to have' that adds further uncertainty beyond what the source conveys. This is a borderline case since the source itself uses 'according to current information,' but the output's phrasing shifts the tone toward greater doubt.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [\n    {\n      \"source_statement\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\",\n      \"output_statement\": \"Two drones were reported to have crashed\u2014one north of Kouvola and another east of Kouvola.\",\n      \"added_hedging\": \"\\\"were reported to have crashed\\\" adds a layer of hedging beyond the source's \\\"According to current information, one drone has crashed.\\\" The source uses \\\"according to current information\\\" as a qualifier but states the crashes as factual within that framing. The output's \\\"reported to have\\\" introduces additional distancing language.\"\n    }\n  ],\n  \"hedging_addition_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source says 'According to current information, one drone has crashed north of Kouvola and another east of Kouvola,' which already contains a mild qualifier but presents the crashes as established facts. The output rephrases this as 'Two drones were reported to have crashed,' which introduces the hedging phrase 'reported to have' that adds further uncertainty beyond what the source conveys. This is a borderline case since the source itself uses 'according to current information,' but the output's phrasing shifts the tone toward greater doubt.\"\n}\n```",
+  "judge_prompt_tokens": 455,
+  "judge_completion_tokens": 314,
+  "judge_cost_usd": 0.010125,
+  "timestamp": 1774903307.444918
+}

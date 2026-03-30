@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully summarizes the source document without adding any external information. All details \u2014 the detection of objects, F/A-18 Hornet deployment, two drone crashes near Kouvola, police securing the areas, the Defense Minister's quote, and the ongoing investigation \u2014 are directly traceable to the source. Minor wording additions like 'relevant authorities' instead of 'other authorities' and 'crash sites' instead of 'areas' are paraphrasing rather than scope creep.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully summarizes the source document without adding any external information. All details \u2014 the detection of objects, F/A-18 Hornet deployment, two drone crashes near Kouvola, police securing the areas, the Defense Minister's quote, and the ongoing investigation \u2014 are directly traceable to the source. Minor wording additions like 'relevant authorities' instead of 'other authorities' and 'crash sites' instead of 'areas' are paraphrasing rather than scope creep.\"\n}\n```",
+  "judge_prompt_tokens": 533,
+  "judge_completion_tokens": 154,
+  "judge_cost_usd": 0.006515,
+  "timestamp": 1774903153.525077
+}

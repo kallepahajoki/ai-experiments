@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reflects the source document. Minor paraphrasing differences (e.g., 'strayed into' vs. 'entered,' 'airspace' vs. 'air-space monitoring') do not constitute contradictions. All key facts \u2014 the detection of small objects, the F/A-18 Hornet dispatch, the two drone crash locations relative to Kouvola, police securing the sites, the Defence Minister's quote, and the joint investigation \u2014 are accurately represented.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reflects the source document. Minor paraphrasing differences (e.g., 'strayed into' vs. 'entered,' 'airspace' vs. 'air-space monitoring') do not constitute contradictions. All key facts \u2014 the detection of small objects, the F/A-18 Hornet dispatch, the two drone crash locations relative to Kouvola, police securing the sites, the Defence Minister's quote, and the joint investigation \u2014 are accurately represented.\"\n}\n```",
+  "judge_prompt_tokens": 457,
+  "judge_completion_tokens": 149,
+  "judge_cost_usd": 0.00601,
+  "timestamp": 1774903641.67753
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The most notable omission is the qualifier 'According to current information' which signals that the crash reports were preliminary. The summary presents the crashes as established fact without this caveat. While important, the overall meaning and key facts are well preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected over sea areas and Southeast Finland\",\n    \"Air Force used F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen made a statement\",\n    \"H\u00e4kk\u00e4nen said drones have strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said they take this very seriously\",\n    \"H\u00e4kk\u00e4nen said security authorities have responded immediately\",\n    \"Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"The qualifier 'According to current information' before the drone crash details, indicating the information was preliminary and potentially subject to change\",\n      \"importance\": \"high\"\n    },\n    {\n      \"fact\": \"H\u00e4kk\u00e4nen described drones as having 'strayed into' Finnish territory (implying possible unintentional entry), whereas the summary uses 'entered' which is more neutral but loses the specific characterization\",\n      \"importance\": \"medium\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The most notable omission is the qualifier 'According to current information' which signals that the crash reports were preliminary. The summary presents the crashes as established fact without this caveat. While important, the overall meaning and key facts are well preserved.\"\n}\n```",
+  "judge_prompt_tokens": 519,
+  "judge_completion_tokens": 398,
+  "judge_cost_usd": 0.012545,
+  "timestamp": 1774902879.492341
+}

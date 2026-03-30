@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary covers virtually all key facts from the source. The only notable omission is the qualifier 'according to current information' before the drone crash details, which signals that the information was preliminary and could change. This is a meaningful caveat but not critical to the overall meaning.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected over sea areas and Southeast Finland\",\n    \"Air Force responded with an F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said they take this very seriously\",\n    \"Security authorities responded immediately\",\n    \"Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The drone crash locations were described as 'according to current information,' indicating preliminary/unconfirmed details\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary covers virtually all key facts from the source. The only notable omission is the qualifier 'according to current information' before the drone crash details, which signals that the information was preliminary and could change. This is a meaningful caveat but not critical to the overall meaning.\"\n}\n```",
+  "judge_prompt_tokens": 537,
+  "judge_completion_tokens": 309,
+  "judge_cost_usd": 0.01041,
+  "timestamp": 1774902763.626946
+}

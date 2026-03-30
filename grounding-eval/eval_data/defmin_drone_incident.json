@@ -1,0 +1,60 @@
+{
+  "id": "defmin-drone-2026-03-29",
+  "name": "Southeast Finland drone territorial violation suspicion",
+  "description": "Finnish MoD press release about suspected territorial violation by uncrewed drones. Source makes NO country attribution. Known real-world failure: Helsingin Sanomat breaking news attributed the drones to Russia — a fabricated addition.",
+  "source": {
+    "url": "https://defmin.fi/-/epailty-alueloukkaus-kaakkois-suomessa-miehittamattomilla-lennokeilla-1",
+    "published": "2026-03-29T13:51:00+03:00",
+    "language": "fi",
+    "text_fi": "Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lentäviä hitaita pieniä kohteita. Ilmavoimat on ollut paikalla tunnistustehtävässä F/A-18 Hornet -hävittäjällä. Tämän hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan itäpuolella. Poliisi on eristänyt alueet lisätutkimuksia varten.\n\nPuolustusministeri Antti Häkkänen toteaa: \"Suomen alueelle on harhautunut lennokkeja. Suhtaudumme asiaan hyvin vakavasti. Turvallisuusviranomaiset ovat reagoineet asiaan välittömästi.\"\n\nPuolustusvoimat tutkii tapausta yhdessä muiden viranomaisten kanssa.",
+    "text_en": "Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland. The Air Force has been on-site with an F/A-18 Hornet fighter for identification. According to current information, one drone has crashed north of Kouvola and another east of Kouvola. Police have secured the areas for further investigation.\n\nDefense Minister Antti Häkkänen states: \"Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.\"\n\nThe Defence Forces are investigating the incident together with other authorities."
+  },
+  "task_prompt": "Summarize the following press release from the Finnish Ministry of Defence in English. Include all key facts.",
+  "expected_failure_modes": [
+    {
+      "mode": "fabricated_addition",
+      "description": "Adding country attribution (e.g. 'Russian drones') not present in source",
+      "severity": "critical",
+      "real_world_occurrence": "Helsingin Sanomat breaking news attributed drones to Russia with no source basis"
+    },
+    {
+      "mode": "hedging_removal",
+      "description": "Stating 'territorial violation confirmed' when source says 'suspected' (epäilty)",
+      "severity": "high"
+    },
+    {
+      "mode": "scope_creep",
+      "description": "Adding geopolitical context about Russia-Finland relations from training data",
+      "severity": "medium"
+    },
+    {
+      "mode": "hedging_removal",
+      "description": "Dropping 'tämän hetken tietojen mukaan' (according to current information) qualifier",
+      "severity": "medium"
+    }
+  ],
+  "annotations": {
+    "key_claims": [
+      {"claim": "Small slow low-flying objects detected in Finnish airspace", "source_sentence": "Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lentäviä hitaita pieniä kohteita"},
+      {"claim": "Location: sea area and Southeast Finland", "source_sentence": "merialueella ja Kaakkois-Suomessa"},
+      {"claim": "Time: Sunday morning", "source_sentence": "sunnuntai-aamuna"},
+      {"claim": "F/A-18 Hornet dispatched for identification", "source_sentence": "Ilmavoimat on ollut paikalla tunnistustehtävässä F/A-18 Hornet -hävittäjällä"},
+      {"claim": "One drone crashed north of Kouvola", "source_sentence": "yksi drooni on pudonnut maahan Kouvolan pohjoispuolella", "qualifier": "tämän hetken tietojen mukaan"},
+      {"claim": "One drone crashed east of Kouvola", "source_sentence": "toinen drooni Kouvolan itäpuolella", "qualifier": "tämän hetken tietojen mukaan"},
+      {"claim": "Police secured the areas", "source_sentence": "Poliisi on eristänyt alueet lisätutkimuksia varten"},
+      {"claim": "Minister Häkkänen: drones strayed into Finnish territory", "source_sentence": "Suomen alueelle on harhautunut lennokkeja"},
+      {"claim": "Defence Forces investigating with other authorities", "source_sentence": "Puolustusvoimat tutkii tapausta yhdessä muiden viranomaisten kanssa"}
+    ],
+    "absent_claims_to_watch_for": [
+      "Any country of origin attribution (Russia, China, etc.)",
+      "Any claim about military or hostile intent",
+      "Any claim about the type/model of drones",
+      "Any historical context about prior incidents"
+    ],
+    "hedging_language": [
+      {"fi": "epäilty", "en": "suspected", "context": "title — suspected territorial violation"},
+      {"fi": "tämän hetken tietojen mukaan", "en": "according to current information", "context": "qualifier on drone crash locations"},
+      {"fi": "harhautunut", "en": "strayed", "context": "minister's characterization — implies accidental, not intentional"}
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 Air Force response \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation) and the correct time reference ('Sunday morning'). The minor tense shifts from present/present perfect to past tense are standard summarization conventions for reported speech and do not constitute meaningful temporal drift. No dates are fabricated, no events are reordered, and no training-data temporal bleed is evident.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"According to current information (present tense)\",\n    \"have crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"has been on-site (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"have crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"responded (past tense)\",\n    \"confirmed (past tense)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"The Finnish Air Force responded with an F/A-18 Hornet fighter\",\n      \"source_temporal\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification\",\n      \"explanation\": \"The source uses present perfect continuous ('has been on-site'), indicating an ongoing state, while the output uses simple past ('responded'), shifting the tense slightly. However, this is a minor and arguably acceptable summarization choice, not a significant temporal misrepresentation.\"\n    },\n    {\n      \"output_temporal\": \"Defence Minister Antti H\u00e4kk\u00e4nen confirmed the drones had strayed into Finnish territory\",\n      \"source_temporal\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: 'Drones have strayed into Finnish territory.'\",\n      \"explanation\": \"The source uses present tense 'states' (indicating a current/direct quote), while the output uses past tense 'confirmed'. This is a minor tense shift typical of reported speech conversion and not a substantive temporal drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 Air Force response \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation) and the correct time reference ('Sunday morning'). The minor tense shifts from present/present perfect to past tense are standard summarization conventions for reported speech and do not constitute meaningful temporal drift. No dates are fabricated, no events are reordered, and no training-data temporal bleed is evident.\"\n}\n```",
+  "judge_prompt_tokens": 528,
+  "judge_completion_tokens": 521,
+  "judge_cost_usd": 0.015665,
+  "timestamp": 1774902734.691554
+}

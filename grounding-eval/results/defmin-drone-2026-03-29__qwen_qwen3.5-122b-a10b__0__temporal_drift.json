@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 Hornet deployment \u2192 drone crashes \u2192 police securing areas \u2192 investigation) and the correct time reference (Sunday morning). There are minor tense shifts from present perfect to simple past, which are common in summarization and do not constitute meaningful temporal drift. No dates are wrong, no events are reordered, and no training-data temporal bleed is evident.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has crashed\", \"have secured\", \"have strayed\", \"take\", \"have responded\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"was deployed\", \"crashed\", \"have secured\", \"had strayed\", \"is being taken\", \"responded\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"detected (past tense, attributed to Finnish Air Force)\",\n      \"source_temporal\": \"were detected (passive, not attributed specifically to Air Force)\",\n      \"explanation\": \"The source says objects 'were detected' without specifying who detected them, and separately states the Air Force responded with a Hornet for identification. The summary attributes the detection directly to the Finnish Air Force, which is a slight semantic shift but not strictly a temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"Two drones subsequently crashed\",\n      \"source_temporal\": \"one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The source uses present perfect ('has crashed'), suggesting a recently completed event with present relevance, while the output uses simple past ('crashed'). This is a minor tense shift but does not materially alter the temporal meaning. The word 'subsequently' implies a clear sequence (detection \u2192 crash) which is consistent with the source's ordering.\"\n    },\n    {\n      \"output_temporal\": \"responded immediately (simple past)\",\n      \"source_temporal\": \"have responded immediately (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect to simple past. Does not significantly alter temporal meaning.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 Hornet deployment \u2192 drone crashes \u2192 police securing areas \u2192 investigation) and the correct time reference (Sunday morning). There are minor tense shifts from present perfect to simple past, which are common in summarization and do not constitute meaningful temporal drift. No dates are wrong, no events are reordered, and no training-data temporal bleed is evident.\"\n}\n```",
+  "judge_prompt_tokens": 465,
+  "judge_completion_tokens": 504,
+  "judge_cost_usd": 0.014925,
+  "timestamp": 1774904142.122592
+}

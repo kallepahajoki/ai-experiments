@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The output introduces a subtle causal/sequential implication with 'subsequently' linking the F/A-18 deployment to the drone crashes, and upgrades 'states' to 'confirmed,' which adds a tone of authoritative verification not present in the source. These are mild framing shifts rather than dramatic distortions.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Two drones subsequently crashed\",\n      \"issue\": \"The word 'subsequently' implies a temporal/causal sequence suggesting the crashes happened after (and possibly as a result of) the F/A-18 deployment. The source does not establish this causal or sequential link; it simply states that according to current information, drones crashed in those locations.\"\n    },\n    {\n      \"output_phrase\": \"Defense Minister Antti H\u00e4kk\u00e4nen confirmed that the drones had strayed into Finnish territory\",\n      \"issue\": \"The source uses 'states' while the output uses 'confirmed,' which subtly elevates the authority and finality of the statement. 'Confirmed' implies verification of established fact, whereas 'states' is more neutral.\"\n    },\n    {\n      \"output_phrase\": \"relevant authorities\",\n      \"issue\": \"Minor addition \u2014 the source says 'other authorities,' not 'other relevant authorities.' The word 'relevant' is a minor editorial addition, though not strongly biased.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The output introduces a subtle causal/sequential implication with 'subsequently' linking the F/A-18 deployment to the drone crashes, and upgrades 'states' to 'confirmed,' which adds a tone of authoritative verification not present in the source. These are mild framing shifts rather than dramatic distortions.\"\n}\n```",
+  "judge_prompt_tokens": 476,
+  "judge_completion_tokens": 359,
+  "judge_cost_usd": 0.011355,
+  "timestamp": 1774904402.749558
+}

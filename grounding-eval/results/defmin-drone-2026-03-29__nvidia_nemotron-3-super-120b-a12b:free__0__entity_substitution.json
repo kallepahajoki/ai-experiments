@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output match those in the source. 'Finnish Defence Forces' vs 'Defence Forces' is a minor naming variation, not a substitution. The output says the Defence Forces are 'leading' the investigation, which is a factual embellishment but not an entity substitution.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Finnish Defence Forces\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output match those in the source. 'Finnish Defence Forces' vs 'Defence Forces' is a minor naming variation, not a substitution. The output says the Defence Forces are 'leading' the investigation, which is a factual embellishment but not an entity substitution.\"\n}\n```",
+  "judge_prompt_tokens": 524,
+  "judge_completion_tokens": 152,
+  "judge_cost_usd": 0.00642,
+  "timestamp": 1774903525.859326
+}

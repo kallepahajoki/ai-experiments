@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The summary is largely faithful in tone, but introduces minor framing shifts: attributing the report to the 'Ministry of Defence' (not stated in source) and using the word 'emphasized' to characterize the minister's statement, which adds editorial interpretation. The omission of 'We take this very seriously' also slightly softens the gravity conveyed in the original quote.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"the Finnish Ministry of Defence reported\", \"issue\": \"The source does not attribute the initial detection report to the Ministry of Defence specifically. The source presents the detection passively without naming a reporting body. This subtly shifts the framing by implying an official institutional announcement.\"},\n    {\"output_phrase\": \"emphasized that security authorities have responded immediately\", \"issue\": \"The word 'emphasized' introduces an editorial characterization of the minister's tone. The source uses a direct quote where the minister says 'We take this very seriously' \u2014 the summary omits this quote and instead paraphrases with 'emphasized,' which adds interpretive framing about how the statement was delivered.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The summary is largely faithful in tone, but introduces minor framing shifts: attributing the report to the 'Ministry of Defence' (not stated in source) and using the word 'emphasized' to characterize the minister's statement, which adds editorial interpretation. The omission of 'We take this very seriously' also slightly softens the gravity conveyed in the original quote.\"\n}\n```",
+  "judge_prompt_tokens": 478,
+  "judge_completion_tokens": 281,
+  "judge_cost_usd": 0.009415,
+  "timestamp": 1774904519.096645
+}

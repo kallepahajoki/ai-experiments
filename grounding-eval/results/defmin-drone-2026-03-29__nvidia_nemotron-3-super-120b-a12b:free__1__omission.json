@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output faithfully covers all key facts from the source. The only notable difference is the translation nuance of 'strayed into' vs 'entered' Finnish territory in the minister's quote, which slightly changes the connotation but does not constitute a critical omission.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force responded with an F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen made a statement\",\n    \"H\u00e4kk\u00e4nen stated: 'Drones have strayed into Finnish territory'\",\n    \"H\u00e4kk\u00e4nen stated: 'We take this very seriously'\",\n    \"H\u00e4kk\u00e4nen stated: 'Security authorities have responded immediately'\",\n    \"The Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"H\u00e4kk\u00e4nen used the word 'strayed' (implying the drones drifted or wandered into Finnish territory), while the output says 'entered' which is more neutral and loses the connotation of unauthorized/unintentional incursion\",\n      \"importance\": \"medium\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output faithfully covers all key facts from the source. The only notable difference is the translation nuance of 'strayed into' vs 'entered' Finnish territory in the minister's quote, which slightly changes the connotation but does not constitute a critical omission.\"\n}\n```",
+  "judge_prompt_tokens": 501,
+  "judge_completion_tokens": 385,
+  "judge_cost_usd": 0.01213,
+  "timestamp": 1774903724.424444
+}

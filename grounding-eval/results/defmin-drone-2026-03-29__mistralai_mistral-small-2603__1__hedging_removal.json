@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.97,
+    "evidence": "The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output not only drops this hedging but actively strengthens the claim by stating the crashes were 'confirmed,' which goes beyond even a neutral removal of the hedge and presents the information as definitively established fact. This is a significant hedging removal on a critical factual claim about the incident.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones were confirmed to have crashed\u2014one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.97,\n  \"evidence\": \"The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output not only drops this hedging but actively strengthens the claim by stating the crashes were 'confirmed,' which goes beyond even a neutral removal of the hedge and presents the information as definitively established fact. This is a significant hedging removal on a critical factual claim about the incident.\"\n}\n```",
+  "judge_prompt_tokens": 555,
+  "judge_completion_tokens": 260,
+  "judge_cost_usd": 0.009275,
+  "timestamp": 1774903373.2613828
+}

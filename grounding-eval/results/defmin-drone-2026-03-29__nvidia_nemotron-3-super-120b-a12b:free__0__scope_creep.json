@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary introduces 'radar' as the detection method (not stated in source), characterizes the Defence Forces as 'leading' the investigation (source only says 'investigating together with'), and adds the qualifier 'relevant' to 'other authorities.'",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"Finnish radar detected\",\n      \"explanation\": \"The source says objects 'were detected' but does not specify that radar was the detection method.\"\n    },\n    {\n      \"output_content\": \"The Finnish Defence Forces are leading the investigation\",\n      \"explanation\": \"The source says 'The Defence Forces are investigating the incident together with other authorities,' but does not state they are 'leading' the investigation.\"\n    },\n    {\n      \"output_content\": \"other relevant authorities\",\n      \"explanation\": \"The source says 'other authorities' \u2014 the word 'relevant' is added by the summary and not present in the source.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary introduces 'radar' as the detection method (not stated in source), characterizes the Defence Forces as 'leading' the investigation (source only says 'investigating together with'), and adds the qualifier 'relevant' to 'other authorities.'\"\n}\n```",
+  "judge_prompt_tokens": 493,
+  "judge_completion_tokens": 258,
+  "judge_cost_usd": 0.008915,
+  "timestamp": 1774903598.502885
+}

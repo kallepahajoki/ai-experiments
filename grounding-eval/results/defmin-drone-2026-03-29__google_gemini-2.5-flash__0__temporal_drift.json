@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The minister's quote is shifted from present tense ('states') to past tense ('stated'), and the verb within the quote is shifted from present perfect ('have strayed') to past perfect ('had strayed'). These are minor tense changes that slightly alter the temporal framing but do not misrepresent the event sequence or timing. No reordering of events or incorrect dates/times were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"has been\", \"have responded immediately\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"have crashed\", \"had 'strayed into Finnish territory'\", \"having responded immediately\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"stated that the drones had 'strayed into Finnish territory'\",\n      \"source_temporal\": \"states: 'Drones have strayed into Finnish territory.'\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the output shifts to past tense 'stated'. Additionally, the source uses present perfect 'have strayed' while the output shifts to past perfect 'had strayed'. This is a minor tense shift, though arguably acceptable in summarization when converting from a press-release style to a narrative summary.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The minister's quote is shifted from present tense ('states') to past tense ('stated'), and the verb within the quote is shifted from present perfect ('have strayed') to past perfect ('had strayed'). These are minor tense changes that slightly alter the temporal framing but do not misrepresent the event sequence or timing. No reordering of events or incorrect dates/times were found.\"\n}\n```",
+  "judge_prompt_tokens": 530,
+  "judge_completion_tokens": 335,
+  "judge_cost_usd": 0.011025,
+  "timestamp": 1774903027.277049
+}

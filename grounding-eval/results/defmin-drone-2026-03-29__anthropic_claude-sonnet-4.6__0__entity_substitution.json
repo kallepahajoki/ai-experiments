@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All named entities in the output match those in the source. 'Defence Minister' vs 'Defense Minister' is a minor spelling variation (British vs American English), not a substitution. All locations (Kouvola, Southeast Finland), people (Antti H\u00e4kk\u00e4nen), and organizations (Air Force, Defence Forces) are consistent with the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish\", \"Southeast Finland\", \"Kouvola\", \"F/A-18 Hornet\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\", \"Air Force\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All named entities in the output match those in the source. 'Defence Minister' vs 'Defense Minister' is a minor spelling variation (British vs American English), not a substitution. All locations (Kouvola, Southeast Finland), people (Antti H\u00e4kk\u00e4nen), and organizations (Air Force, Defence Forces) are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 556,
+  "judge_completion_tokens": 171,
+  "judge_cost_usd": 0.007055,
+  "timestamp": 1774902698.613302
+}

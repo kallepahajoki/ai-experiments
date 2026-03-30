@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The most notable omission is the qualifier 'According to current information' which signals that the crash reports were preliminary and potentially subject to change. This is important hedging/caveat language. The output presents the crashes as confirmed facts without this caveat. The descriptions 'slow-moving' and 'small' provide characterization of the objects that is missing. H\u00e4kk\u00e4nen's emphasis on taking the matter 'very seriously' is also omitted but partially conveyed by the overall tone.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen stated: 'We take this very seriously'\",\n    \"Security authorities responded immediately\",\n    \"Defence Forces investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The objects were described as 'slow-moving' and 'small'\", \"importance\": \"medium\"},\n    {\"fact\": \"The qualifier 'According to current information' was used regarding the drone crashes, indicating preliminary/uncertain findings\", \"importance\": \"high\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen stated 'We take this very seriously'\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The most notable omission is the qualifier 'According to current information' which signals that the crash reports were preliminary and potentially subject to change. This is important hedging/caveat language. The output presents the crashes as confirmed facts without this caveat. The descriptions 'slow-moving' and 'small' provide characterization of the objects that is missing. H\u00e4kk\u00e4nen's emphasis on taking the matter 'very seriously' is also omitted but partially conveyed by the overall tone.\"\n}\n```",
+  "judge_prompt_tokens": 486,
+  "judge_completion_tokens": 416,
+  "judge_cost_usd": 0.01283,
+  "timestamp": 1774904414.376218
+}

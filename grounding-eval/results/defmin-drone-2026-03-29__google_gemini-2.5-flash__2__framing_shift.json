@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The headline introduces the word 'Intrusion' which adds a more aggressive/deliberate framing not present in the source. The source uses neutral language ('detected,' 'strayed into'), while 'intrusion' implies intentional unauthorized entry. The rest of the summary is tonally faithful to the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Finnish Airspace Intrusion\",\n      \"issue\": \"The source does not use the word 'intrusion,' which carries a more adversarial and deliberate connotation. The source uses the neutral phrasing 'detected in Finnish airspace' and the minister's quote says drones 'strayed into' Finnish territory, which implies accidental entry rather than an intrusion.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The headline introduces the word 'Intrusion' which adds a more aggressive/deliberate framing not present in the source. The source uses neutral language ('detected,' 'strayed into'), while 'intrusion' implies intentional unauthorized entry. The rest of the summary is tonally faithful to the source.\"\n}\n```",
+  "judge_prompt_tokens": 546,
+  "judge_completion_tokens": 215,
+  "judge_cost_usd": 0.008105,
+  "timestamp": 1774903230.218734
+}

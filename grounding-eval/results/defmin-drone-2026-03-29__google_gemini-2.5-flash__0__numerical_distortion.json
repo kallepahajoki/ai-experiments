@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numbers match the source. The output's 'two' is a correct aggregation of 'one' and 'another' from the source. The F/A-18 designation is preserved accurately. Locations (north of Kouvola, east of Kouvola) match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"one (drone)\", \"another (drone)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"two (drones)\", \"one (north of Kouvola)\", \"another (east of Kouvola)\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numbers match the source. The output's 'two' is a correct aggregation of 'one' and 'another' from the source. The F/A-18 designation is preserved accurately. Locations (north of Kouvola, east of Kouvola) match the source.\"\n}\n```",
+  "judge_prompt_tokens": 522,
+  "judge_completion_tokens": 178,
+  "judge_cost_usd": 0.00706,
+  "timestamp": 1774903018.6858509
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary introduces the term 'Unauthorized' in the title and 'scrambled' to describe the Air Force response, neither of which appear in the source. These add connotations and context beyond what the source explicitly provides, though they are relatively minor inferences rather than major fabrications.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"Unauthorized Drones Detected in Finnish Airspace\",\n      \"explanation\": \"The word 'Unauthorized' is not stated in the source. The source says drones 'strayed into Finnish territory' but does not explicitly characterize them as 'unauthorized.' While this could be inferred, it adds a characterization not present in the source.\"\n    },\n    {\n      \"output_content\": \"The Finnish Air Force scrambled an F/A-18 Hornet fighter jet to identify the objects.\",\n      \"explanation\": \"The word 'scrambled' is not in the source. The source says 'The Air Force has been on-site with an F/A-18 Hornet fighter for identification.' 'Scrambled' implies a specific military rapid-response action that adds connotation beyond the source's language.\"\n    },\n    {\n      \"output_content\": \"confirmed the drones had entered Finnish territory, calling the incident serious\",\n      \"explanation\": \"The source quotes H\u00e4kk\u00e4nen as saying 'We take this very seriously,' not that he 'called the incident serious.' This is a minor paraphrase but is reasonably faithful. Additionally, 'confirmed' slightly elevates the language \u2014 the source uses 'states' rather than 'confirmed.' These are borderline but worth noting.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary introduces the term 'Unauthorized' in the title and 'scrambled' to describe the Air Force response, neither of which appear in the source. These add connotations and context beyond what the source explicitly provides, though they are relatively minor inferences rather than major fabrications.\"\n}\n```",
+  "judge_prompt_tokens": 507,
+  "judge_completion_tokens": 418,
+  "judge_cost_usd": 0.012985,
+  "timestamp": 1774902871.402773
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The only hedging expression in the source is 'According to current information,' which signals that the information about the drone crashes may be preliminary or subject to change. The output faithfully preserves this qualifier. No other hedging language was identified in the source, and the output does not present any hedged claims as established fact.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to current information, two drones have crashed: one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The only hedging expression in the source is 'According to current information,' which signals that the information about the drone crashes may be preliminary or subject to change. The output faithfully preserves this qualifier. No other hedging language was identified in the source, and the output does not present any hedged claims as established fact.\"\n}\n```",
+  "judge_prompt_tokens": 537,
+  "judge_completion_tokens": 242,
+  "judge_cost_usd": 0.008735,
+  "timestamp": 1774903843.299136
+}

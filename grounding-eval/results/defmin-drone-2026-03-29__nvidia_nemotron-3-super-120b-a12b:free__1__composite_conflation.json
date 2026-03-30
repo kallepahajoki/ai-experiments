@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported separately (north and east of Kouvola) as in the source. The minister's quote is slightly paraphrased ('strayed into' becomes 'entered') but the meaning is preserved without conflation. No causal connectors are used to fabricate relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported separately (north and east of Kouvola) as in the source. The minister's quote is slightly paraphrased ('strayed into' becomes 'entered') but the meaning is preserved without conflation. No causal connectors are used to fabricate relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 493,
+  "judge_completion_tokens": 131,
+  "judge_cost_usd": 0.00574,
+  "timestamp": 1774903728.707519
+}

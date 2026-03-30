@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output correspond accurately to those in the source. 'Finnish Air Force' vs 'Air Force' is a minor contextual clarification, not a substitution. All locations (Kouvola, Southeast Finland), people (Antti H\u00e4kk\u00e4nen), and organizations (Defence Forces) match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Finnish Air Force\",\n      \"source_entity\": \"Air Force\",\n      \"explanation\": \"The output adds 'Finnish' to 'Air Force', but this is a minor clarifying variation consistent with the context of Finnish airspace, not a true substitution.\"\n    }\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output correspond accurately to those in the source. 'Finnish Air Force' vs 'Air Force' is a minor contextual clarification, not a substitution. All locations (Kouvola, Southeast Finland), people (Antti H\u00e4kk\u00e4nen), and organizations (Defence Forces) match the source.\"\n}\n```",
+  "judge_prompt_tokens": 499,
+  "judge_completion_tokens": 234,
+  "judge_cost_usd": 0.008345,
+  "timestamp": 1774904190.4825642
+}

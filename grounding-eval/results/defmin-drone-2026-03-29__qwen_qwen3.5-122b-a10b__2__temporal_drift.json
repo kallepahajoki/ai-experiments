@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "There are minor tense shifts from present perfect/present to simple past in the summary (e.g., 'has been on-site' \u2192 'deployed', 'states' \u2192 'confirmed', 'has crashed' \u2192 'crashed'). However, the event sequence is preserved correctly, no dates or times are wrong, and no events are reordered. The drifts are stylistic rather than factually misleading.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"has been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"have strayed (present perfect)\",\n    \"take this very seriously (present)\",\n    \"have responded immediately (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"deployed (past tense)\",\n    \"crashed (past tense)\",\n    \"have secured (present perfect)\",\n    \"confirmed (past tense)\",\n    \"strayed (past tense)\",\n    \"responded immediately (past tense)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"deployed (past tense: 'The Air Force deployed an F/A-18 Hornet fighter')\",\n      \"source_temporal\": \"has been on-site (present perfect: 'The Air Force has been on-site with an F/A-18 Hornet fighter')\",\n      \"explanation\": \"The source uses present perfect ('has been on-site'), implying an ongoing or recently completed action still relevant at the time of the report. The summary shifts to simple past ('deployed'), which is a minor tense change but does not significantly misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (past tense: 'Defense Minister Antti H\u00e4kk\u00e4nen confirmed')\",\n      \"source_temporal\": \"states (present tense: 'Defense Minister Antti H\u00e4kk\u00e4nen states')\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the summary shifts to past tense 'confirmed'. This is a minor tense drift but does not alter the factual content.\"\n    },\n    {\n      \"output_temporal\": \"crashed (past tense: 'Two drones crashed')\",\n      \"source_temporal\": \"has crashed (present perfect: 'one drone has crashed')\",\n      \"explanation\": \"Minor tense shift from present perfect to simple past. Does not misrepresent the facts.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"There are minor tense shifts from present perfect/present to simple past in the summary (e.g., 'has been on-site' \u2192 'deployed', 'states' \u2192 'confirmed', 'has crashed' \u2192 'crashed'). However, the event sequence is preserved correctly, no dates or times are wrong, and no events are reordered. The drifts are stylistic rather than factually misleading.\"\n}\n```",
+  "judge_prompt_tokens": 530,
+  "judge_completion_tokens": 645,
+  "judge_cost_usd": 0.018775,
+  "timestamp": 1774904304.8586502
+}

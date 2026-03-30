@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely paraphrases the source document without adding any external information. Minor wording differences such as 'air-space surveillance' (implied by 'detected'), 'dispatched' (implied by 'has been on-site'), 'crash sites' (implied by 'crashed' and 'secured the areas'), and 'relevant authorities' (vs. 'other authorities') are reasonable paraphrases rather than scope creep. No background context, historical references, or extraneous details were added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely paraphrases the source document without adding any external information. Minor wording differences such as 'air-space surveillance' (implied by 'detected'), 'dispatched' (implied by 'has been on-site'), 'crash sites' (implied by 'crashed' and 'secured the areas'), and 'relevant authorities' (vs. 'other authorities') are reasonable paraphrases rather than scope creep. No background context, historical references, or extraneous details were added.\"\n}\n```",
+  "judge_prompt_tokens": 503,
+  "judge_completion_tokens": 159,
+  "judge_cost_usd": 0.00649,
+  "timestamp": 1774903793.267021
+}

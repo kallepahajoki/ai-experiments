@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source does not specify who reported the detection of the objects. The summary attributes the report to the 'Finnish Ministry of Defence,' which is an inference (possibly from the Defense Minister's quote) rather than a stated fact. This is a minor conflation where the Minister's involvement is merged with the detection report's attribution.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"the Finnish Ministry of Defence reported that several low-flying, slow-moving small objects were detected in Finnish airspace\",\n      \"source_facts\": [\n        \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\",\n        \"Defense Minister Antti H\u00e4kk\u00e4nen states: 'Drones have strayed into Finnish territory.'\"\n      ],\n      \"explanation\": \"The source does not attribute the detection report to the 'Finnish Ministry of Defence.' The detection is stated as a general fact, and only Defense Minister H\u00e4kk\u00e4nen is quoted separately. The summary merges the detection report with the Ministry of Defence as its source, which is not explicitly stated in the original.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source does not specify who reported the detection of the objects. The summary attributes the report to the 'Finnish Ministry of Defence,' which is an inference (possibly from the Defense Minister's quote) rather than a stated fact. This is a minor conflation where the Minister's involvement is merged with the detection report's attribution.\"\n}\n```",
+  "judge_prompt_tokens": 480,
+  "judge_completion_tokens": 288,
+  "judge_cost_usd": 0.0096,
+  "timestamp": 1774904548.612158
+}

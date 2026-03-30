@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output correspond accurately to those in the source. The only minor difference is 'Finnish Air Force' vs 'Air Force', which is a reasonable clarification, not a substitution.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish\", \"Southeast Finland\", \"Finnish Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [\n    {\"output_entity\": \"Finnish Air Force\", \"source_entity\": \"Air Force\", \"explanation\": \"The output adds 'Finnish' as a qualifier to 'Air Force'. This is a minor clarification rather than a true substitution, as the context clearly refers to the Finnish Air Force.\"}\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output correspond accurately to those in the source. The only minor difference is 'Finnish Air Force' vs 'Air Force', which is a reasonable clarification, not a substitution.\"\n}\n```",
+  "judge_prompt_tokens": 494,
+  "judge_completion_tokens": 208,
+  "judge_cost_usd": 0.00767,
+  "timestamp": 1774904572.111371
+}

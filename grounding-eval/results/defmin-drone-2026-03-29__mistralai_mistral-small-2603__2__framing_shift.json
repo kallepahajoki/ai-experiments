@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful to the source. The only minor framing issue is the use of 'emphasized' to characterize the minister's statement, which adds a slight editorial interpretation of tone not explicitly present in the source. The omission of 'We take this very seriously' is a factual omission rather than a framing shift per se, but its replacement with 'emphasized' partially compensates while introducing a subtle tonal shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"emphasized that security authorities had responded immediately\", \"issue\": \"The word 'emphasized' introduces an editorial characterization of the minister's tone. The source simply quotes him stating 'We take this very seriously' and 'Security authorities have responded immediately.' The summary also omits the 'We take this very seriously' statement, replacing it with the interpretive verb 'emphasized,' which subtly editorializes his delivery.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful to the source. The only minor framing issue is the use of 'emphasized' to characterize the minister's statement, which adds a slight editorial interpretation of tone not explicitly present in the source. The omission of 'We take this very seriously' is a factual omission rather than a framing shift per se, but its replacement with 'emphasized' partially compensates while introducing a subtle tonal shift.\"\n}\n```",
+  "judge_prompt_tokens": 486,
+  "judge_completion_tokens": 240,
+  "judge_cost_usd": 0.00843,
+  "timestamp": 1774903482.3367329
+}

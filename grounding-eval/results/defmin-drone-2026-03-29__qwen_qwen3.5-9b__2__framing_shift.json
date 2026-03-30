@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful but introduces minor framing shifts: calling the objects 'drones' from the start (source initially calls them 'small objects'), using 'prompting' to imply causality between crashes and police response, and upgrading 'states' to 'confirmed' for the minister's remarks. These are subtle but detectable editorial adjustments.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"multiple low-flying, slow-moving drones\",\n      \"issue\": \"The source describes them as 'small objects' that were later identified; the summary presumes they were all drones from the outset, slightly shifting the framing from cautious identification to confirmed fact.\"\n    },\n    {\n      \"output_phrase\": \"Two drones subsequently crashed\u2014one north of Kouvola and another east of Kouvola\u2014prompting police to secure both areas\",\n      \"issue\": \"The word 'prompting' introduces an implied causal link between the crashes and the police action that is not explicitly stated in the source. The source simply states the crashes and then separately notes that police secured the areas. 'Prompting' adds editorial causality.\"\n    },\n    {\n      \"output_phrase\": \"confirmed\",\n      \"issue\": \"The source uses 'states' for the Defense Minister's remarks. 'Confirmed' carries a slightly stronger, more authoritative connotation, subtly elevating the tone beyond the neutral reporting of the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful but introduces minor framing shifts: calling the objects 'drones' from the start (source initially calls them 'small objects'), using 'prompting' to imply causality between crashes and police response, and upgrading 'states' to 'confirmed' for the minister's remarks. These are subtle but detectable editorial adjustments.\"\n}\n```",
+  "judge_prompt_tokens": 465,
+  "judge_completion_tokens": 375,
+  "judge_cost_usd": 0.0117,
+  "timestamp": 1774904619.3442838
+}

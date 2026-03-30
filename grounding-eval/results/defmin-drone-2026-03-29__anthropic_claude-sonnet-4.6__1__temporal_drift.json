@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The tense shifts observed (present perfect to simple past, present tense to past tense in reported speech) are minor stylistic changes typical of summarization. No dates, times, or event sequences are misrepresented. The chronological order of events (detection \u2192 Air Force response \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation) is preserved accurately.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"have been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"were detected (past tense)\",\n    \"scrambled (past tense)\",\n    \"have since crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"confirmed (past tense)\",\n    \"had entered (past perfect)\",\n    \"had responded (past perfect)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"scrambled (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect, ongoing)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site' suggesting an ongoing or recently completed action. The summary uses 'scrambled' (simple past), which is a minor tense shift but does not significantly misrepresent the event. This is a stylistic rephrasing rather than a meaningful temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (past tense), had entered (past perfect), had responded (past perfect)\",\n      \"source_temporal\": \"states (present tense), have strayed (present perfect), have responded (present perfect)\",\n      \"explanation\": \"The source uses present tense 'states' and present perfect 'have strayed' / 'have responded', indicating a current/recent statement. The summary shifts to past tense 'confirmed' and past perfect 'had entered' / 'had responded'. This is a tense shift but represents a common and acceptable journalistic rephrasing from direct reporting to reported speech. No factual temporal misrepresentation occurs.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The tense shifts observed (present perfect to simple past, present tense to past tense in reported speech) are minor stylistic changes typical of summarization. No dates, times, or event sequences are misrepresented. The chronological order of events (detection \u2192 Air Force response \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation) is preserved accurately.\"\n}\n```",
+  "judge_prompt_tokens": 510,
+  "judge_completion_tokens": 546,
+  "judge_cost_usd": 0.0162,
+  "timestamp": 1774902821.763056
+}

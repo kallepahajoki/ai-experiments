@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced directly to the source document. The summary accurately paraphrases the source without adding external context, background information, or details from general knowledge. Minor wording additions like 'relevant authorities,' 'both crash sites,' and 'Finnish Ministry of Defence press release' are reasonable inferences from the source context rather than scope creep from training data.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced directly to the source document. The summary accurately paraphrases the source without adding external context, background information, or details from general knowledge. Minor wording additions like 'relevant authorities,' 'both crash sites,' and 'Finnish Ministry of Defence press release' are reasonable inferences from the source context rather than scope creep from training data.\"\n}\n```",
+  "judge_prompt_tokens": 544,
+  "judge_completion_tokens": 127,
+  "judge_cost_usd": 0.005895,
+  "timestamp": 1774903234.8828301
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each statement in the summary corresponds accurately to the source, and no causal connectors are used to fabricate relationships between separate facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each statement in the summary corresponds accurately to the source, and no causal connectors are used to fabricate relationships between separate facts.\"\n}\n```",
+  "judge_prompt_tokens": 488,
+  "judge_completion_tokens": 92,
+  "judge_cost_usd": 0.00474,
+  "timestamp": 1774903496.488854
+}

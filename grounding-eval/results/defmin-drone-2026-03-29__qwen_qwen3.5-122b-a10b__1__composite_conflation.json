@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported as separate events (north and east of Kouvola) consistent with the source. The detection and identification steps are presented sequentially as in the source. No causal connectors inappropriately link unrelated facts. The word 'subsequently' before 'crashed' could be scrutinized, but the source does present detection first and then the crash information, so the temporal ordering is reasonable and does not create a false causal claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported as separate events (north and east of Kouvola) consistent with the source. The detection and identification steps are presented sequentially as in the source. No causal connectors inappropriately link unrelated facts. The word 'subsequently' before 'crashed' could be scrutinized, but the source does present detection first and then the crash information, so the temporal ordering is reasonable and does not create a false causal claim.\"\n}\n```",
+  "judge_prompt_tokens": 472,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.006385,
+  "timestamp": 1774904266.612406
+}

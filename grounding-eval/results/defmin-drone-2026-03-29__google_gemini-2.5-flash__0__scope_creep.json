@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The output adds the characterization of the source as a 'Finnish Ministry of Defence press release,' which is not stated in the source document. It also adds the qualifier 'relevant' to 'other authorities.' These are minor scope creep issues \u2014 no significant external knowledge or geopolitical context was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"Finnish Ministry of Defence press release\", \"explanation\": \"The source does not identify itself as a 'Ministry of Defence press release.' This is an assumption about the document's origin not stated in the source.\"},\n    {\"output_content\": \"relevant authorities\", \"explanation\": \"The source says 'other authorities,' not 'other relevant authorities.' The word 'relevant' is an addition, though minor.\"}\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The output adds the characterization of the source as a 'Finnish Ministry of Defence press release,' which is not stated in the source document. It also adds the qualifier 'relevant' to 'other authorities.' These are minor scope creep issues \u2014 no significant external knowledge or geopolitical context was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 527,
+  "judge_completion_tokens": 209,
+  "judge_cost_usd": 0.00786,
+  "timestamp": 1774903063.511651
+}

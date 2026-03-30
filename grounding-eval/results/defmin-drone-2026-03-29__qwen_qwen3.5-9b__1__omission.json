@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output covers nearly all key facts from the source. The only notable omission is H\u00e4kk\u00e4nen's explicit statement 'We take this very seriously,' which conveys the gravity of the situation. However, the output does note he 'emphasized' the response, partially capturing the tone. The output also adds 'Finnish Ministry of Defence' as the reporting entity, which is not explicitly stated in the source but is a minor attribution addition rather than an omission issue.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said 'We take this very seriously'\",\n    \"Security authorities responded immediately\",\n    \"Defence Forces investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"H\u00e4kk\u00e4nen's statement 'We take this very seriously'\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output covers nearly all key facts from the source. The only notable omission is H\u00e4kk\u00e4nen's explicit statement 'We take this very seriously,' which conveys the gravity of the situation. However, the output does note he 'emphasized' the response, partially capturing the tone. The output also adds 'Finnish Ministry of Defence' as the reporting entity, which is not explicitly stated in the source but is a minor attribution addition rather than an omission issue.\"\n}\n```",
+  "judge_prompt_tokens": 488,
+  "judge_completion_tokens": 342,
+  "judge_cost_usd": 0.01099,
+  "timestamp": 1774904541.695741
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reproduces the definitive statements from the source without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' All factual claims are presented with the same level of certainty as in the source. Minor wording changes like 'According to the latest information' (vs. 'According to current information') and 'one of the objects \u2014 identified as a drone \u2014' do not constitute inappropriate hedging; they preserve the same meaning and certainty level.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reproduces the definitive statements from the source without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' All factual claims are presented with the same level of certainty as in the source. Minor wording changes like 'According to the latest information' (vs. 'According to current information') and 'one of the objects \u2014 identified as a drone \u2014' do not constitute inappropriate hedging; they preserve the same meaning and certainty level.\"\n}\n```",
+  "judge_prompt_tokens": 480,
+  "judge_completion_tokens": 157,
+  "judge_cost_usd": 0.006325,
+  "timestamp": 1774903781.253613
+}

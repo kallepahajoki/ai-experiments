@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output shifts the overall narrative from present perfect tense (source) to past tense, which is a common and acceptable summarization convention. The word 'subsequently' adds a slight sequential implication not explicit in the source, but it is a reasonable inference. No dates, times, or event orderings are materially misrepresented. The tense shifts are minor and do not constitute meaningful temporal drift.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"has been\", \"According to current information\", \"have secured\", \"states\", \"have strayed\", \"have responded immediately\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"subsequently\", \"crashed\", \"prompting\", \"confirmed\", \"had strayed\", \"responded immediately\", \"are currently investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"confirmed\",\n      \"source_temporal\": \"states\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the output shifts to past tense 'confirmed'. This is a minor tense change but does not significantly misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"had strayed\",\n      \"source_temporal\": \"have strayed\",\n      \"explanation\": \"The source uses present perfect 'have strayed' (indicating current relevance), while the output uses past perfect 'had strayed' (indicating a completed action prior to another past event). This is a subtle tense shift but aligns with the output's overall past-tense narrative framing.\"\n    },\n    {\n      \"output_temporal\": \"responded immediately\",\n      \"source_temporal\": \"have responded immediately\",\n      \"explanation\": \"The source uses present perfect 'have responded immediately', while the output uses simple past 'responded immediately'. Minor tense shift consistent with the output's narrative reframing into past tense.\"\n    },\n    {\n      \"output_temporal\": \"subsequently crashed\",\n      \"source_temporal\": \"one drone has crashed... another [has crashed]\",\n      \"explanation\": \"The addition of 'subsequently' implies a clear temporal sequence (detection then crashing) that is not explicitly stated in the source. The source says drones were detected and that drones have crashed, but does not explicitly state the crashes happened after detection. However, this is a reasonable inference and not a major distortion.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output shifts the overall narrative from present perfect tense (source) to past tense, which is a common and acceptable summarization convention. The word 'subsequently' adds a slight sequential implication not explicit in the source, but it is a reasonable inference. No dates, times, or event orderings are materially misrepresented. The tense shifts are minor and do not constitute meaningful temporal drift.\"\n}\n```",
+  "judge_prompt_tokens": 466,
+  "judge_completion_tokens": 577,
+  "judge_cost_usd": 0.016755,
+  "timestamp": 1774904597.162068
+}

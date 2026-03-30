@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The tense changes observed ('have strayed' \u2192 'had strayed', 'have responded' \u2192 'had responded') are standard shifts from direct to indirect/reported speech and do not misrepresent the timeline. The shift from 'has been on-site' to 'deployed' is a minor tense simplification. Event ordering is preserved accurately. No dates, times, or event sequences are misrepresented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has crashed\", \"have secured\", \"take\", \"have responded\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"were detected\", \"deployed\", \"crashed\", \"have secured\", \"stated\", \"had strayed\", \"had responded\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"were detected (past tense)\",\n      \"source_temporal\": \"were detected (past tense)\",\n      \"explanation\": \"No drift \u2014 both use past tense for detection.\"\n    },\n    {\n      \"output_temporal\": \"deployed (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect ('has been on-site') to simple past ('deployed'). The source implies an ongoing/recent action; the summary converts it to a completed past action. This is a slight tense change but does not materially misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"had strayed (past perfect)\",\n      \"source_temporal\": \"have strayed (present perfect)\",\n      \"explanation\": \"The source quotes H\u00e4kk\u00e4nen using present perfect ('have strayed'), while the summary uses past perfect ('had strayed'). This is a standard shift from direct to indirect speech and is grammatically expected, not a meaningful temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"had responded (past perfect)\",\n      \"source_temporal\": \"have responded (present perfect)\",\n      \"explanation\": \"Same direct-to-indirect speech tense shift as above. Present perfect in the direct quote becomes past perfect in reported speech. This is standard and not a meaningful drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The tense changes observed ('have strayed' \u2192 'had strayed', 'have responded' \u2192 'had responded') are standard shifts from direct to indirect/reported speech and do not misrepresent the timeline. The shift from 'has been on-site' to 'deployed' is a minor tense simplification. Event ordering is preserved accurately. No dates, times, or event sequences are misrepresented.\"\n}\n```",
+  "judge_prompt_tokens": 487,
+  "judge_completion_tokens": 541,
+  "judge_cost_usd": 0.01596,
+  "timestamp": 1774903466.429284
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "google/gemini-2.5-flash",
+  "run_index": 1,
+  "content": "Here's a summary of the Finnish Ministry of Defence press release:\n\n**Finnish Airspace Intrusion by Drones, Two Crashed**\n\nOn Sunday morning, several low-flying, slow-moving small objects were detected in Finnish airspace. These objects were observed over both sea areas and Southeast Finland.\n\nThe Finnish Air Force deployed an F/A-18 Hornet fighter jet to the scene for identification purposes.\n\nAccording to current information, two of these objects, identified as drones, have crashed. One drone crashed north of Kouvola, and the other crashed east of Kouvola. Police have secured both crash sites for further investigation.\n\nDefense Minister Antti H\u00e4kk\u00e4nen stated, \"Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.\"\n\nThe Finnish Defence Forces are currently investigating the incident in collaboration with other relevant authorities.",
+  "prompt_tokens": 144,
+  "completion_tokens": 182,
+  "cost_usd": 0.0004982,
+  "latency_ms": 1464.1245000093477,
+  "timestamp": 1774902550.7525172
+}

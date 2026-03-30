@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful but introduces minor framing shifts: 'emphasizing' editorializes the minister's delivery, 'confirmed' subtly reframes a statement as verification, and 'subsequently' introduces implied sequencing/causality. These are mild shifts that do not substantially distort the source but do introduce editorial tone not present in the original.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"emphasizing that the incident is being taken seriously\",\n      \"issue\": \"The word 'emphasizing' adds editorial characterization of the minister's tone. The source simply reports his statement ('We take this very seriously') without describing how he delivered it. 'Emphasizing' implies rhetorical force or urgency beyond what the source conveys.\"\n    },\n    {\n      \"output_phrase\": \"confirmed that drones had strayed into Finnish territory\",\n      \"issue\": \"The word 'confirmed' subtly implies that the drone incursion was already established fact that the minister is verifying, whereas the source simply presents his statement. The source uses 'states' rather than 'confirms.'\"\n    },\n    {\n      \"output_phrase\": \"Two drones subsequently crashed\",\n      \"issue\": \"The word 'subsequently' introduces a temporal/causal sequencing implying the crashes followed the detection/identification as a consequence. The source simply reports the crashes as current information without implying a causal chain from the Hornet deployment.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful but introduces minor framing shifts: 'emphasizing' editorializes the minister's delivery, 'confirmed' subtly reframes a statement as verification, and 'subsequently' introduces implied sequencing/causality. These are mild shifts that do not substantially distort the source but do introduce editorial tone not present in the original.\"\n}\n```",
+  "judge_prompt_tokens": 470,
+  "judge_completion_tokens": 368,
+  "judge_cost_usd": 0.01155,
+  "timestamp": 1774904247.2112892
+}

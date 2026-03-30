@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "Minor tense shifts detected: present perfect to past perfect ('have strayed' \u2192 'had strayed'), present perfect to simple past ('have responded' \u2192 'responded'), and present perfect continuous to simple past ('has been on-site' \u2192 'deployed'). These are relatively minor and could be attributed to normal summarization style (shifting from a live press release tone to a retrospective summary tone). No dates, times, or event sequences are misrepresented. The factual content and event ordering remain accurate.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"According to current information (present tense)\",\n    \"have crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"were detected (past tense)\",\n    \"deployed (past tense)\",\n    \"were reported to have crashed (past tense)\",\n    \"have secured (present perfect)\",\n    \"had strayed (past perfect)\",\n    \"responded (past tense)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"had strayed (past perfect)\",\n      \"source_temporal\": \"have strayed (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'have strayed' indicating a current/recent situation, while the output shifts to past perfect 'had strayed', which places the event further into the past. This is a minor tense shift but changes the temporal framing.\"\n    },\n    {\n      \"output_temporal\": \"responded (simple past) / responded immediately\",\n      \"source_temporal\": \"have responded immediately (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'have responded' emphasizing the current relevance of the response, while the output uses simple past 'responded', subtly shifting the temporal perspective.\"\n    },\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect continuous)\",\n      \"explanation\": \"The source says 'The Air Force has been on-site with an F/A-18 Hornet fighter for identification,' using present perfect suggesting ongoing presence. The output says 'deployed' in simple past, which is a slight tense shift but a reasonable paraphrase of the action.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"Minor tense shifts detected: present perfect to past perfect ('have strayed' \u2192 'had strayed'), present perfect to simple past ('have responded' \u2192 'responded'), and present perfect continuous to simple past ('has been on-site' \u2192 'deployed'). These are relatively minor and could be attributed to normal summarization style (shifting from a live press release tone to a retrospective summary tone). No dates, times, or event sequences are misrepresented. The factual content and event ordering remain accurate.\"\n}\n```",
+  "judge_prompt_tokens": 481,
+  "judge_completion_tokens": 605,
+  "judge_cost_usd": 0.01753,
+  "timestamp": 1774903293.43909
+}

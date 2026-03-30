@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output match those in the source. 'Finnish Ministry of Defence' appears in the summary title as a contextual framing but is not a substitution of any source entity. All other entities (Air Force, F/A-18 Hornet, Kouvola, Antti H\u00e4kk\u00e4nen, Defence Forces) are directly present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"Finnish\", \"Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output match those in the source. 'Finnish Ministry of Defence' appears in the summary title as a contextual framing but is not a substitution of any source entity. All other entities (Air Force, F/A-18 Hornet, Kouvola, Antti H\u00e4kk\u00e4nen, Defence Forces) are directly present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 523,
+  "judge_completion_tokens": 179,
+  "judge_cost_usd": 0.00709,
+  "timestamp": 1774903353.609917
+}

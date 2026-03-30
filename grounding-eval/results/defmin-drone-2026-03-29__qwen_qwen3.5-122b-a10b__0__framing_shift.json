@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output maintains a neutral, factual tone consistent with the source. It accurately paraphrases the key details without introducing editorial language, loaded words, dramatic framing, or implied causality. The phrase 'confirmed' used for the minister's statement is a reasonable paraphrase of the direct quote attribution, and no evaluative or opinion language was added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output maintains a neutral, factual tone consistent with the source. It accurately paraphrases the key details without introducing editorial language, loaded words, dramatic framing, or implied causality. The phrase 'confirmed' used for the minister's statement is a reasonable paraphrase of the direct quote attribution, and no evaluative or opinion language was added.\"\n}\n```",
+  "judge_prompt_tokens": 464,
+  "judge_completion_tokens": 122,
+  "judge_cost_usd": 0.00537,
+  "timestamp": 1774904155.910437
+}

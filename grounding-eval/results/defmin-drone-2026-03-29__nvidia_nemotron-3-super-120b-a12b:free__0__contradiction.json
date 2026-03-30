@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source describes a joint investigation ('together with other authorities') without specifying who leads it, while the output explicitly states the Defence Forces are 'leading' the investigation, introducing a claim not supported by the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Defence Forces are leading the investigation in cooperation with other relevant authorities.\",\n      \"source_statement\": \"The Defence Forces are investigating the incident together with other authorities.\",\n      \"explanation\": \"The source says the Defence Forces are investigating 'together with' other authorities, implying a collaborative effort. The output says they are 'leading' the investigation, which adds a hierarchical claim not present in the source and could be incompatible with the collaborative framing.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source describes a joint investigation ('together with other authorities') without specifying who leads it, while the output explicitly states the Defence Forces are 'leading' the investigation, introducing a claim not supported by the source.\"\n}\n```",
+  "judge_prompt_tokens": 461,
+  "judge_completion_tokens": 202,
+  "judge_cost_usd": 0.007355,
+  "timestamp": 1774903521.133389
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "Minor tense drift: the source's present perfect 'have strayed' is converted to past perfect 'had strayed' in the output, subtly shifting the temporal framing of the minister's statement. The event sequence and dates are otherwise faithfully preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"immediately\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"current information\", \"immediately\", \"currently\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"the Finnish Ministry of Defence reported\",\n      \"source_temporal\": \"(no attribution to the Ministry of Defence as the reporting entity)\",\n      \"explanation\": \"The output attributes the report to the 'Finnish Ministry of Defence,' but the source does not specify who reported the detection. This is an attribution error rather than a temporal drift, so it is noted but not scored as temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"stated that the drones had strayed (past perfect tense)\",\n      \"source_temporal\": \"\\\"Drones have strayed into Finnish territory\\\" (present perfect tense)\",\n      \"explanation\": \"The source uses present perfect ('have strayed'), indicating a recent/ongoing relevance. The output shifts to past perfect ('had strayed'), which pushes the event further into the past and changes the temporal framing slightly. This is a minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"are currently investigating\",\n      \"source_temporal\": \"are investigating\",\n      \"explanation\": \"The addition of 'currently' is a minor elaboration but does not misrepresent the temporal meaning. The source implies an ongoing investigation, and 'currently' reinforces that. No meaningful drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"Minor tense drift: the source's present perfect 'have strayed' is converted to past perfect 'had strayed' in the output, subtly shifting the temporal framing of the minister's statement. The event sequence and dates are otherwise faithfully preserved.\"\n}\n```",
+  "judge_prompt_tokens": 479,
+  "judge_completion_tokens": 431,
+  "judge_cost_usd": 0.01317,
+  "timestamp": 1774904486.071249
+}

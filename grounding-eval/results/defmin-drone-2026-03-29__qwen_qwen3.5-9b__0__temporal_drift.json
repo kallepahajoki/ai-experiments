@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary contains minor tense shifts (present perfect to simple past or past perfect), which are common and generally acceptable in summarization. No dates, times, or event sequences are materially misrepresented. The core temporal marker ('Sunday morning') is preserved accurately, and the event ordering is consistent with the source. The tense changes are stylistic rather than substantively misleading.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"According to current information\", \"have crashed\", \"have secured\", \"have strayed\", \"have responded immediately\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"subsequently\", \"have secured\", \"had strayed\", \"responded immediately\", \"are currently investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Two drones subsequently crashed\",\n      \"source_temporal\": \"one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The source uses present perfect ('has crashed'), indicating a recently completed event with present relevance (consistent with a live press release). The summary uses simple past ('crashed'), which is a minor tense shift but acceptable in summarization context. The word 'subsequently' implies a clear sequential ordering after the fighter deployment, which is reasonable but adds a temporal sequencing not explicitly stated in the source.\"\n    },\n    {\n      \"output_temporal\": \"had strayed\",\n      \"source_temporal\": \"have strayed\",\n      \"explanation\": \"The source uses present perfect ('have strayed') in the minister's quote, while the summary shifts to past perfect ('had strayed'). This is a minor tense change that subtly alters the temporal framing from present relevance to a completed-before-another-past-event perspective, though it does not significantly misrepresent the facts.\"\n    },\n    {\n      \"output_temporal\": \"responded immediately\",\n      \"source_temporal\": \"have responded immediately\",\n      \"explanation\": \"The source uses present perfect ('have responded immediately'), while the summary uses simple past ('responded immediately'). Minor tense shift from present perfect to simple past.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary contains minor tense shifts (present perfect to simple past or past perfect), which are common and generally acceptable in summarization. No dates, times, or event sequences are materially misrepresented. The core temporal marker ('Sunday morning') is preserved accurately, and the event ordering is consistent with the source. The tense changes are stylistic rather than substantively misleading.\"\n}\n```",
+  "judge_prompt_tokens": 477,
+  "judge_completion_tokens": 512,
+  "judge_cost_usd": 0.015185,
+  "timestamp": 1774904380.3146691
+}

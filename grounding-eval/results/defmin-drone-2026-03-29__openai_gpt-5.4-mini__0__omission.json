@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output covers all key facts from the source. The only notable difference is the nuance of 'strayed into' vs 'entered' Finnish territory, which slightly changes the implied intentionality but is a minor wording difference rather than a factual omission.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force responded with an F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated: 'Drones have strayed into Finnish territory'\",\n    \"H\u00e4kk\u00e4nen stated: 'We take this very seriously'\",\n    \"H\u00e4kk\u00e4nen stated: 'Security authorities have responded immediately'\",\n    \"The Defence Forces are investigating the incident together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"H\u00e4kk\u00e4nen used the word 'strayed' to describe the drones entering Finnish territory, implying they may have drifted in unintentionally, whereas the summary uses the more neutral 'entered'\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output covers all key facts from the source. The only notable difference is the nuance of 'strayed into' vs 'entered' Finnish territory, which slightly changes the implied intentionality but is a minor wording difference rather than a factual omission.\"\n}\n```",
+  "judge_prompt_tokens": 486,
+  "judge_completion_tokens": 356,
+  "judge_cost_usd": 0.01133,
+  "timestamp": 1774903881.505821
+}

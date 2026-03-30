@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values and quantities in the output match the source. 'Several' low-flying objects, 'one' drone north of Kouvola, and 'another' east of Kouvola are faithfully reproduced. No rounding, unit changes, or magnitude errors detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\"],\n  \"numbers_in_output\": [\"several\", \"one\", \"another\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values and quantities in the output match the source. 'Several' low-flying objects, 'one' drone north of Kouvola, and 'another' east of Kouvola are faithfully reproduced. No rounding, unit changes, or magnitude errors detected.\"\n}\n```",
+  "judge_prompt_tokens": 488,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.006015,
+  "timestamp": 1774903537.773175
+}

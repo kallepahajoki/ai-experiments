@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. The source says 'several low-flying, slow-moving small objects' were detected, and the output says 'multiple low-flying, slow-moving drones' \u2014 while the source initially calls them 'small objects' and only later confirms drones crashed, the output's characterization is a reasonable interpretation rather than a contradiction. All other details about the F/A-18 deployment, crash locations, police securing areas, H\u00e4kk\u00e4nen's statement, and the investigation match the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. The source says 'several low-flying, slow-moving small objects' were detected, and the output says 'multiple low-flying, slow-moving drones' \u2014 while the source initially calls them 'small objects' and only later confirms drones crashed, the output's characterization is a reasonable interpretation rather than a contradiction. All other details about the F/A-18 deployment, crash locations, police securing areas, H\u00e4kk\u00e4nen's statement, and the investigation match the source.\"\n}\n```",
+  "judge_prompt_tokens": 431,
+  "judge_completion_tokens": 156,
+  "judge_cost_usd": 0.006055,
+  "timestamp": 1774904562.96806
+}

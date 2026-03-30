@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The summary is largely faithful in tone, but introduces two minor framing shifts: (1) replacing the hedged 'according to current information' with the more definitive 'confirmed,' and (2) using 'emphasized' to characterize the minister's statement, which adds editorial tone not present in the neutral 'states' used in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Two drones were confirmed to have crashed\",\n      \"issue\": \"The source says 'According to current information, one drone has crashed...' which hedges the claim with uncertainty. The summary uses 'confirmed,' which implies a higher degree of certainty than the source conveys.\"\n    },\n    {\n      \"output_phrase\": \"emphasized that authorities are treating the incident with seriousness\",\n      \"issue\": \"The word 'emphasized' adds editorial characterization of the minister's tone not present in the source. The source simply uses 'states.' Additionally, 'treating the incident with seriousness' is a slight reframe of the more direct 'We take this very seriously.'\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The summary is largely faithful in tone, but introduces two minor framing shifts: (1) replacing the hedged 'according to current information' with the more definitive 'confirmed,' and (2) using 'emphasized' to characterize the minister's statement, which adds editorial tone not present in the neutral 'states' used in the source.\"\n}\n```",
+  "judge_prompt_tokens": 494,
+  "judge_completion_tokens": 290,
+  "judge_cost_usd": 0.00972,
+  "timestamp": 1774903386.177526
+}

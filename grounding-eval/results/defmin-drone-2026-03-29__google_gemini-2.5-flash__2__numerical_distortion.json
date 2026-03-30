@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numbers and quantities in the output match the source. 'Two' drones is a valid explicit restatement of 'one...and another' from the source. The single F/A-18 Hornet, 'several' objects, and crash locations all match.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one (drone)\", \"another (drone)\", \"one (F/A-18 Hornet)\"],\n  \"numbers_in_output\": [\"several\", \"two (drones)\", \"one (north of Kouvola)\", \"another (east of Kouvola)\", \"one (F/A-18 Hornet)\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numbers and quantities in the output match the source. 'Two' drones is a valid explicit restatement of 'one...and another' from the source. The single F/A-18 Hornet, 'several' objects, and crash locations all match.\"\n}\n```",
+  "judge_prompt_tokens": 539,
+  "judge_completion_tokens": 193,
+  "judge_cost_usd": 0.00752,
+  "timestamp": 1774903195.001837
+}

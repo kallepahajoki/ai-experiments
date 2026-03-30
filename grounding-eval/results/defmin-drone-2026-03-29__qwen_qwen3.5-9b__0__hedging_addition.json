@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source's definitive statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The source's qualifier 'According to current information' regarding the drone crashes is actually removed in the output, making it slightly more definitive rather than less. All key facts are presented as stated in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source's definitive statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The source's qualifier 'According to current information' regarding the drone crashes is actually removed in the output, making it slightly more definitive rather than less. All key facts are presented as stated in the source.\"\n}\n```",
+  "judge_prompt_tokens": 451,
+  "judge_completion_tokens": 126,
+  "judge_cost_usd": 0.005405,
+  "timestamp": 1774904393.725016
+}

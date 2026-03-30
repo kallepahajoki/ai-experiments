@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the temporal expression 'Sunday morning' and maintains the same event sequence: detection of objects \u2192 Air Force response with F/A-18 \u2192 drones crashed near Kouvola \u2192 police secured areas \u2192 Defense Minister statement \u2192 Defence Forces investigating. Tenses are consistent with the source (present perfect 'have crashed', 'have secured' preserved). No dates, times, tenses, or event orderings were altered.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\"],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the temporal expression 'Sunday morning' and maintains the same event sequence: detection of objects \u2192 Air Force response with F/A-18 \u2192 drones crashed near Kouvola \u2192 police secured areas \u2192 Defense Minister statement \u2192 Defence Forces investigating. Tenses are consistent with the source (present perfect 'have crashed', 'have secured' preserved). No dates, times, tenses, or event orderings were altered.\"\n}\n```",
+  "judge_prompt_tokens": 477,
+  "judge_completion_tokens": 166,
+  "judge_cost_usd": 0.006535,
+  "timestamp": 1774903838.1706848
+}

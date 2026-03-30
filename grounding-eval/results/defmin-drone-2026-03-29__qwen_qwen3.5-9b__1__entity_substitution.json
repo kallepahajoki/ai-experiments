@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output states 'the Finnish Ministry of Defence reported that...' but the source does not mention the Ministry of Defence as the reporting entity. The source attributes the statement to Defense Minister Antti H\u00e4kk\u00e4nen and mentions the Defence Forces investigating, but does not credit the Ministry of Defence with the initial report.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"Finnish\", \"Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Finnish Ministry of Defence\",\n      \"source_entity\": \"(not mentioned in source)\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source mentions the Defence Forces and the Defense Minister, but does not say the Ministry of Defence reported the incident. This introduces an entity not present in the source.\"\n    }\n  ],\n  \"substitution_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output states 'the Finnish Ministry of Defence reported that...' but the source does not mention the Ministry of Defence as the reporting entity. The source attributes the statement to Defense Minister Antti H\u00e4kk\u00e4nen and mentions the Defence Forces investigating, but does not credit the Ministry of Defence with the initial report.\"\n}\n```",
+  "judge_prompt_tokens": 507,
+  "judge_completion_tokens": 252,
+  "judge_cost_usd": 0.008835,
+  "timestamp": 1774904454.207165
+}

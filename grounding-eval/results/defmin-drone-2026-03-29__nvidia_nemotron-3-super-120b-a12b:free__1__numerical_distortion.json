@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All numerical values and quantities in the output match the source exactly: 'several' small objects, 'one' drone north of Kouvola, and 'another' east of Kouvola. The F/A-18 Hornet designation is also preserved correctly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\"],\n  \"numbers_in_output\": [\"several\", \"one\", \"another\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All numerical values and quantities in the output match the source exactly: 'several' small objects, 'one' drone north of Kouvola, and 'another' east of Kouvola. The F/A-18 Hornet designation is also preserved correctly.\"\n}\n```",
+  "judge_prompt_tokens": 484,
+  "judge_completion_tokens": 141,
+  "judge_cost_usd": 0.005945,
+  "timestamp": 1774903658.2157838
+}

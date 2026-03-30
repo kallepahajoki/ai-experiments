@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output correspond to entities mentioned in the source. 'Finnish Ministry of Defence' is referenced in the framing ('Finnish Ministry of Defence press release') which is an inference about the source but not a substitution of any entity from the source. 'Finnish Air Force' corresponds to 'Air Force', 'Finnish Defence Forces' corresponds to 'Defence Forces' \u2014 these are minor elaborations, not substitutions. All locations and the person named match the source exactly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\n    \"Finnish Ministry of Defence\",\n    \"Finnish Air Force\",\n    \"F/A-18 Hornet\",\n    \"Southeast Finland\",\n    \"Kouvola\",\n    \"Antti H\u00e4kk\u00e4nen\",\n    \"Finnish Defence Forces\"\n  ],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output correspond to entities mentioned in the source. 'Finnish Ministry of Defence' is referenced in the framing ('Finnish Ministry of Defence press release') which is an inference about the source but not a substitution of any entity from the source. 'Finnish Air Force' corresponds to 'Air Force', 'Finnish Defence Forces' corresponds to 'Defence Forces' \u2014 these are minor elaborations, not substitutions. All locations and the person named match the source exactly.\"\n}\n```",
+  "judge_prompt_tokens": 575,
+  "judge_completion_tokens": 220,
+  "judge_cost_usd": 0.008375,
+  "timestamp": 1774903188.1807208
+}

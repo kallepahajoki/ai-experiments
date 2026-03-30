@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary preserves the correct event sequence: detection on Sunday morning \u2192 Air Force response \u2192 drone crashes near Kouvola \u2192 police securing sites \u2192 minister's statement \u2192 joint investigation. There are minor tense shifts (present tense 'states' \u2192 past tense 'confirmed'; present perfect 'has been on-site' \u2192 simple past 'scrambled') but no meaningful temporal drift such as wrong dates, reordered events, or fabricated timelines. These tense shifts are stylistic rather than substantively misleading.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"have been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"states (present tense)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"were detected (past tense)\",\n    \"scrambled (past tense)\",\n    \"have since crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"responded (past tense)\",\n    \"confirmed (past tense)\",\n    \"responded immediately (past tense)\",\n    \"are jointly investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"were detected (past tense)\",\n      \"source_temporal\": \"were detected (past tense)\",\n      \"explanation\": \"No drift here; both use past tense for the detection event.\"\n    },\n    {\n      \"output_temporal\": \"scrambled (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect ('has been on-site') suggesting an ongoing state, while the output uses 'scrambled' (simple past), implying a completed action. Additionally, the source does not use the word 'scrambled' \u2014 it says the Air Force 'has been on-site... for identification.' This is a minor tense shift but does not significantly misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"have since crashed\",\n      \"source_temporal\": \"has crashed\",\n      \"explanation\": \"The addition of 'since' subtly implies a temporal gap between detection and crashing that is not explicitly stated in the source, but this is a minor interpretive addition rather than a clear drift.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (past tense)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the output shifts to past tense 'confirmed.' This is a minor tense change but does not alter the event sequence or meaning significantly.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary preserves the correct event sequence: detection on Sunday morning \u2192 Air Force response \u2192 drone crashes near Kouvola \u2192 police securing sites \u2192 minister's statement \u2192 joint investigation. There are minor tense shifts (present tense 'states' \u2192 past tense 'confirmed'; present perfect 'has been on-site' \u2192 simple past 'scrambled') but no meaningful temporal drift such as wrong dates, reordered events, or fabricated timelines. These tense shifts are stylistic rather than substantively misleading.\"\n}\n```",
+  "judge_prompt_tokens": 531,
+  "judge_completion_tokens": 689,
+  "judge_cost_usd": 0.01988,
+  "timestamp": 1774902940.386549
+}

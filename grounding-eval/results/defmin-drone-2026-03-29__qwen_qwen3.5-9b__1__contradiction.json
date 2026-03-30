@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The output attributes the detection report to the 'Finnish Ministry of Defence,' but the source does not specify who reported the detection. This is an unsupported attribution rather than a direct factual contradiction, so confidence is moderate.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"the Finnish Ministry of Defence reported that several low-flying, slow-moving small objects were detected\",\n      \"source_statement\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\",\n      \"explanation\": \"The source does not attribute the detection report to the 'Finnish Ministry of Defence.' The source simply states the objects were detected, without specifying which entity made the report. The Defense Minister is quoted separately, but the initial detection report is not attributed to the Ministry of Defence.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The output attributes the detection report to the 'Finnish Ministry of Defence,' but the source does not specify who reported the detection. This is an unsupported attribution rather than a direct factual contradiction, so confidence is moderate.\"\n}\n```",
+  "judge_prompt_tokens": 444,
+  "judge_completion_tokens": 221,
+  "judge_cost_usd": 0.007745,
+  "timestamp": 1774904446.2598348
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All key temporal markers (Sunday morning, event sequence of detection \u2192 dispatch \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 joint investigation) are faithfully preserved. Minor paraphrases ('current' \u2192 'latest', addition of 'now') do not alter the timeline or misrepresent any dates, times, tenses, or event ordering.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"latest information\", \"now\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"latest information\",\n      \"source_temporal\": \"current information\",\n      \"explanation\": \"Minor paraphrase of 'current' to 'latest'; semantically equivalent, no meaningful temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"now\",\n      \"source_temporal\": \"(none explicitly)\",\n      \"explanation\": \"The output adds 'are now conducting' where the source says 'are investigating'. The word 'now' is an editorial addition but does not contradict the source's present-tense framing. Very minor embellishment, not a substantive drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All key temporal markers (Sunday morning, event sequence of detection \u2192 dispatch \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 joint investigation) are faithfully preserved. Minor paraphrases ('current' \u2192 'latest', addition of 'now') do not alter the timeline or misrepresent any dates, times, tenses, or event ordering.\"\n}\n```",
+  "judge_prompt_tokens": 506,
+  "judge_completion_tokens": 304,
+  "judge_cost_usd": 0.01013,
+  "timestamp": 1774903770.298589
+}

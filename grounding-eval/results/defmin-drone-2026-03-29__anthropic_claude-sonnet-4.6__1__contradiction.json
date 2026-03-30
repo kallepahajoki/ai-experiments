@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key details from the source document. The locations of the crashed drones (north and east of Kouvola), the F/A-18 Hornet identification, police securing the areas, the Defence Forces investigating with other authorities, and Defence Minister H\u00e4kk\u00e4nen's statements all align with the source. The summary uses 'confirmed' rather than 'states' for H\u00e4kk\u00e4nen's quote, which is a slight interpretive difference but not a contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key details from the source document. The locations of the crashed drones (north and east of Kouvola), the F/A-18 Hornet identification, police securing the areas, the Defence Forces investigating with other authorities, and Defence Minister H\u00e4kk\u00e4nen's statements all align with the source. The summary uses 'confirmed' rather than 'states' for H\u00e4kk\u00e4nen's quote, which is a slight interpretive difference but not a contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 475,
+  "judge_completion_tokens": 147,
+  "judge_cost_usd": 0.00605,
+  "timestamp": 1774902797.6690078
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary faithfully represents the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported separately as in the source. The connection between detected objects and the drones that crashed uses the phrase 'two of these objects, identified as drones,' which is a reasonable inference from the source (the source discusses detected objects and then mentions drones crashing), though the source does not explicitly state the crashed drones were among the detected objects. However, this is a very natural and likely accurate inference rather than a composite conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary faithfully represents the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported separately as in the source. The connection between detected objects and the drones that crashed uses the phrase 'two of these objects, identified as drones,' which is a reasonable inference from the source (the source discusses detected objects and then mentions drones crashing), though the source does not explicitly state the crashed drones were among the detected objects. However, this is a very natural and likely accurate inference rather than a composite conflation.\"\n}\n```",
+  "judge_prompt_tokens": 537,
+  "judge_completion_tokens": 160,
+  "judge_cost_usd": 0.006685,
+  "timestamp": 1774903164.1042109
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely paraphrases the source document without adding any external context, background information, or details beyond what is provided. Minor wording changes such as 'entered' instead of 'strayed into,' 'unmanned aerial vehicle (drone)' instead of just 'drone,' 'crash sites' instead of 'areas,' and 'relevant authorities' instead of 'other authorities' are stylistic rephrasing rather than scope creep. The parenthetical '(drone)' is simply clarifying the term already used in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely paraphrases the source document without adding any external context, background information, or details beyond what is provided. Minor wording changes such as 'entered' instead of 'strayed into,' 'unmanned aerial vehicle (drone)' instead of just 'drone,' 'crash sites' instead of 'areas,' and 'relevant authorities' instead of 'other authorities' are stylistic rephrasing rather than scope creep. The parenthetical '(drone)' is simply clarifying the term already used in the source.\"\n}\n```",
+  "judge_prompt_tokens": 489,
+  "judge_completion_tokens": 165,
+  "judge_cost_usd": 0.00657,
+  "timestamp": 1774903705.325372
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All named entities in the output match those in the source. 'Finnish Air Force' is a minor elaboration of 'The Air Force' from the source, referring to the same entity in context. All locations (Finnish airspace, Southeast Finland, Kouvola) and persons (Antti H\u00e4kk\u00e4nen) match exactly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish\", \"Southeast Finland\", \"Finnish Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All named entities in the output match those in the source. 'Finnish Air Force' is a minor elaboration of 'The Air Force' from the source, referring to the same entity in context. All locations (Finnish airspace, Southeast Finland, Kouvola) and persons (Antti H\u00e4kk\u00e4nen) match exactly.\"\n}\n```",
+  "judge_prompt_tokens": 505,
+  "judge_completion_tokens": 168,
+  "judge_cost_usd": 0.006725,
+  "timestamp": 1774903826.637015
+}

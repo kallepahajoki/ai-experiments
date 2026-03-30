@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output correspond to entities in the source. 'Finnish Ministry of Defence' is a reasonable framing label for the press release context and not a substitution of any source entity. All locations (Southeast Finland, Kouvola), people (Antti H\u00e4kk\u00e4nen), organizations (Defence Forces, Air Force), and equipment (F/A-18 Hornet) match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"Finnish\", \"Southeast Finland\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output correspond to entities in the source. 'Finnish Ministry of Defence' is a reasonable framing label for the press release context and not a substitution of any source entity. All locations (Southeast Finland, Kouvola), people (Antti H\u00e4kk\u00e4nen), organizations (Defence Forces, Air Force), and equipment (F/A-18 Hornet) match the source.\"\n}\n```",
+  "judge_prompt_tokens": 515,
+  "judge_completion_tokens": 185,
+  "judge_cost_usd": 0.0072,
+  "timestamp": 1774903452.1277251
+}

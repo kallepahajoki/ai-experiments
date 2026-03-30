@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the source in both content and tone. The language is neutral and factual throughout. Minor wording changes such as 'entered Finnish territory' instead of 'strayed into Finnish territory' are arguably more neutral than the original, and 'responded' instead of 'have been on-site' is a reasonable paraphrase without added editorial tone. No evaluative language, dramatic framing, or implied causality was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the source in both content and tone. The language is neutral and factual throughout. Minor wording changes such as 'entered Finnish territory' instead of 'strayed into Finnish territory' are arguably more neutral than the original, and 'responded' instead of 'have been on-site' is a reasonable paraphrase without added editorial tone. No evaluative language, dramatic framing, or implied causality was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 471,
+  "judge_completion_tokens": 141,
+  "judge_cost_usd": 0.00588,
+  "timestamp": 1774904037.199648
+}

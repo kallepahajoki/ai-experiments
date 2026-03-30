@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The headline uses 'Intrusion' which carries a more deliberate, threatening connotation than the source's neutral 'detected' and the minister's characterization of drones having 'strayed' into Finnish territory. This subtly shifts the framing from a possibly accidental event to a more intentional security violation. The rest of the summary is largely faithful in tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"Finnish Airspace Intrusion by Drones\", \"issue\": \"The word 'Intrusion' introduces a more adversarial/security-threat framing than the source, which uses the neutral phrasing 'detected' and the minister's word 'strayed.' 'Intrusion' implies deliberate unauthorized entry, whereas 'strayed' suggests accidental movement.\"},\n    {\"output_phrase\": \"relevant authorities\", \"issue\": \"Minor addition \u2014 the source says 'other authorities,' not 'other relevant authorities.' The word 'relevant' is a small editorial addition, though not significantly loaded.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The headline uses 'Intrusion' which carries a more deliberate, threatening connotation than the source's neutral 'detected' and the minister's characterization of drones having 'strayed' into Finnish territory. This subtly shifts the framing from a possibly accidental event to a more intentional security violation. The rest of the summary is largely faithful in tone.\"\n}\n```",
+  "judge_prompt_tokens": 535,
+  "judge_completion_tokens": 275,
+  "judge_cost_usd": 0.00955,
+  "timestamp": 1774903141.028409
+}

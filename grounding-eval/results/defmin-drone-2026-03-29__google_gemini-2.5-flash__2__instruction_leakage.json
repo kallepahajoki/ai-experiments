@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The opening line explicitly references the task of summarizing and includes meta-commentary about what the output will contain ('all key facts'), suggesting it is echoing instructions rather than simply presenting the summary.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [\n    {\"text\": \"Here's a summary of the Finnish Ministry of Defence press release in English, including all key facts:\", \"type\": \"instruction_echo\"}\n  ],\n  \"leakage_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The opening line explicitly references the task of summarizing and includes meta-commentary about what the output will contain ('all key facts'), suggesting it is echoing instructions rather than simply presenting the summary.\"\n}\n```",
+  "judge_prompt_tokens": 555,
+  "judge_completion_tokens": 124,
+  "judge_cost_usd": 0.005875,
+  "timestamp": 1774903259.780363
+}

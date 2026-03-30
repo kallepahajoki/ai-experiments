@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output drops this qualifier entirely and presents the crashes as established fact ('Two drones have since crashed'). While not the most severe case of hedging removal (the underlying claim is fairly specific), the qualifier signals that the information was still developing and its removal changes the epistemic status of the claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones have since crashed \u2014 one north of Kouvola and one east of Kouvola\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output drops this qualifier entirely and presents the crashes as established fact ('Two drones have since crashed'). While not the most severe case of hedging removal (the underlying claim is fairly specific), the qualifier signals that the information was still developing and its removal changes the epistemic status of the claim.\"\n}\n```",
+  "judge_prompt_tokens": 570,
+  "judge_completion_tokens": 259,
+  "judge_cost_usd": 0.009325,
+  "timestamp": 1774902837.095834
+}

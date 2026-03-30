@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The key hedging expression 'According to current information' is preserved in the output. The source uses relatively definitive language throughout (e.g., the Defense Minister directly states 'Drones have strayed into Finnish territory'), and the output faithfully reflects this tone. The output's subtitle 'Multiple Drones Detected, Two Crashed' could be seen as slightly more assertive than the hedged source claim, but the body text properly preserves the hedging qualifier.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to current information, two of these objects, identified as drones, have crashed: one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The key hedging expression 'According to current information' is preserved in the output. The source uses relatively definitive language throughout (e.g., the Defense Minister directly states 'Drones have strayed into Finnish territory'), and the output faithfully reflects this tone. The output's subtitle 'Multiple Drones Detected, Two Crashed' could be seen as slightly more assertive than the hedged source claim, but the body text properly preserves the hedging qualifier.\"\n}\n```",
+  "judge_prompt_tokens": 607,
+  "judge_completion_tokens": 283,
+  "judge_cost_usd": 0.01011,
+  "timestamp": 1774903220.695908
+}

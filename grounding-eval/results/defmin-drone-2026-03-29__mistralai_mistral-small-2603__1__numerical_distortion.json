@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'one drone has crashed north of Kouvola and another east of Kouvola,' which implies two drones. The output states 'Two drones were confirmed to have crashed\u2014one north of Kouvola and another east of Kouvola,' which is a faithful representation. The F/A-18 designation is preserved correctly. No numerical distortions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"one (drone)\", \"another (drone)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"Two (drones)\", \"one (drone)\", \"another (drone)\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'one drone has crashed north of Kouvola and another east of Kouvola,' which implies two drones. The output states 'Two drones were confirmed to have crashed\u2014one north of Kouvola and another east of Kouvola,' which is a faithful representation. The F/A-18 designation is preserved correctly. No numerical distortions were found.\"\n}\n```",
+  "judge_prompt_tokens": 487,
+  "judge_completion_tokens": 189,
+  "judge_cost_usd": 0.00716,
+  "timestamp": 1774903358.398335
+}

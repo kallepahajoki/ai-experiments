@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported as separate events (north and east of Kouvola) consistent with the source. The detection of objects and deployment of the F/A-18 are presented in sequence without implying a causal relationship beyond what the source states. The Defense Minister's statements are accurately paraphrased without conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. The two drone crashes are reported as separate events (north and east of Kouvola) consistent with the source. The detection of objects and deployment of the F/A-18 are presented in sequence without implying a causal relationship beyond what the source states. The Defense Minister's statements are accurately paraphrased without conflation.\"\n}\n```",
+  "judge_prompt_tokens": 466,
+  "judge_completion_tokens": 135,
+  "judge_cost_usd": 0.005705,
+  "timestamp": 1774904171.3185
+}

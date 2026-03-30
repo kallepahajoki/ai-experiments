@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the neutral, factual tone of the source. Minor wording changes such as 'entered' for 'strayed into,' 'commented' for 'states,' 'air-space monitoring' for 'airspace,' and 'relevant authorities' for 'other authorities' are stylistic rather than editorial or evaluative. No loaded language, dramatic framing, opinion words, or implied causality were introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the neutral, factual tone of the source. Minor wording changes such as 'entered' for 'strayed into,' 'commented' for 'states,' 'air-space monitoring' for 'airspace,' and 'relevant authorities' for 'other authorities' are stylistic rather than editorial or evaluative. No loaded language, dramatic framing, opinion words, or implied causality were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 491,
+  "judge_completion_tokens": 141,
+  "judge_cost_usd": 0.00598,
+  "timestamp": 1774903700.04547
+}

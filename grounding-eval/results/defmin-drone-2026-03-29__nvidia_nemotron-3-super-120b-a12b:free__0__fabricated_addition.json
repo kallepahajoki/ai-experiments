@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "Two fabricated additions were found: (1) The output specifies 'radar' as the detection method, which is not mentioned in the source. (2) The output states the Defence Forces are 'leading' the investigation, whereas the source only says they are 'investigating the incident together with other authorities,' without specifying a leading role.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, Finnish radar detected several low-flying, slow-moving small objects in Finnish airspace\",\n      \"grounded\": false,\n      \"source_evidence\": \"The source says 'Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.' The source does not specify 'radar' as the detection method.\"\n    },\n    {\n      \"claim\": \"The objects were detected over sea areas and southeastern Finland\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Air Force responded by sending an F/A-18 Hornet fighter to the scene to identify the objects\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"One unmanned aerial vehicle (drone) crashed north of Kouvola\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola\"\n    },\n    {\n      \"claim\": \"Another crashed east of Kouvola\",\n      \"grounded\": true,\n      \"source_evidence\": \"and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"Police have secured both crash sites for further investigation\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"Defense Minister Antti H\u00e4kk\u00e4nen commented, 'Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.'\",\n      \"grounded\": true,\n      \"source_evidence\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The Finnish Defence Forces are leading the investigation in cooperation with other relevant authorities\",\n      \"grounded\": false,\n      \"source_evidence\": \"The source says 'The Defence Forces are investigating the incident together with other authorities.' The source does not say the Defence Forces are 'leading' the investigation, nor does it describe other authorities as 'relevant'.\"\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"Two fabricated additions were found: (1) The output specifies 'radar' as the detection method, which is not mentioned in the source. (2) The output states the Defence Forces are 'leading' the investigation, whereas the source only says they are 'investigating the incident together with other authorities,' without specifying a leading role.\"\n}\n```",
+  "judge_prompt_tokens": 514,
+  "judge_completion_tokens": 696,
+  "judge_cost_usd": 0.01997,
+  "timestamp": 1774903515.8233442
+}

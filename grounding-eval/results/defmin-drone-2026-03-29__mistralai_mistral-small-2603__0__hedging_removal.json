@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.6,
+    "evidence": "The source uses 'According to current information' to hedge the claim about the drone crashes, indicating the information may be preliminary or subject to change. The output drops this exact phrase but substitutes 'were reported to have crashed,' which introduces a different but roughly equivalent hedging mechanism ('reported to'). This is not a clean preservation of the original hedge, but it does maintain a degree of uncertainty. The hedging removal is borderline \u2014 the original qualifier suggests the information could change, while 'reported to' suggests attribution rather than provisionality. However, since some uncertainty is retained, this is not a clear-cut case of hedging removal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones were reported to have crashed\u2014one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses 'According to current information' to hedge the claim about the drone crashes, indicating the information may be preliminary or subject to change. The output drops this exact phrase but substitutes 'were reported to have crashed,' which introduces a different but roughly equivalent hedging mechanism ('reported to'). This is not a clean preservation of the original hedge, but it does maintain a degree of uncertainty. The hedging removal is borderline \u2014 the original qualifier suggests the information could change, while 'reported to' suggests attribution rather than provisionality. However, since some uncertainty is retained, this is not a clear-cut case of hedging removal.\"\n}\n```",
+  "judge_prompt_tokens": 541,
+  "judge_completion_tokens": 307,
+  "judge_cost_usd": 0.01038,
+  "timestamp": 1774903300.348161
+}

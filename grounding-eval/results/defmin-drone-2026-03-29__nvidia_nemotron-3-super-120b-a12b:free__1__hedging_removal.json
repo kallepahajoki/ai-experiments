@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The key hedging phrase 'According to current information' is preserved (rendered as 'According to the latest information'). However, the minister's quote changes 'strayed into' to 'entered,' which slightly alters the connotation \u2014 'strayed into' implies accidental or unintentional incursion, while 'entered' is more neutral/assertive. This is a minor alteration within a direct quote rather than a classic hedging removal, and its severity is relatively low since the original 'strayed' is not a standard uncertainty hedge but rather a characterization of intent. Overall, hedging removal is minimal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"expression\": \"strayed into\",\n      \"context\": \"Drones have strayed into Finnish territory.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to the latest information, one unmanned aerial vehicle (drone) crashed north of Kouvola and another crashed east of Kouvola.\"\n    },\n    {\n      \"expression\": \"strayed into\",\n      \"preserved\": false,\n      \"output_version\": \"Drones have entered Finnish territory.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The key hedging phrase 'According to current information' is preserved (rendered as 'According to the latest information'). However, the minister's quote changes 'strayed into' to 'entered,' which slightly alters the connotation \u2014 'strayed into' implies accidental or unintentional incursion, while 'entered' is more neutral/assertive. This is a minor alteration within a direct quote rather than a classic hedging removal, and its severity is relatively low since the original 'strayed' is not a standard uncertainty hedge but rather a characterization of intent. Overall, hedging removal is minimal.\"\n}\n```",
+  "judge_prompt_tokens": 552,
+  "judge_completion_tokens": 387,
+  "judge_cost_usd": 0.012435,
+  "timestamp": 1774903683.559021
+}

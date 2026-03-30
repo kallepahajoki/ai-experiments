@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "No fabricated additions were found. The output is a faithful paraphrase of the source. Minor wording differences (e.g., 'entered' vs. 'strayed into', 'relevant authorities' vs. 'other authorities') are paraphrases rather than fabricated claims. The quote is slightly altered ('entered' instead of 'strayed into' and combining two sentences with 'and'), but the meaning is preserved and no new factual claims are introduced.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, Finnish air-space monitoring detected several low-flying, slow-moving small objects over sea areas and southeastern Finland.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Finnish Air Force dispatched an F/A-18 Hornet fighter to the scene to identify the objects.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"One unmanned aerial vehicle (drone) crashed north of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola\"\n    },\n    {\n      \"claim\": \"Another crashed east of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"Police have secured both crash sites for further investigation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"Defence Minister Antti H\u00e4kk\u00e4nen commented, 'Drones have entered Finnish territory. We take this very seriously, and security authorities have responded immediately.'\",\n      \"grounded\": true,\n      \"source_evidence\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The Defence Forces are conducting the investigation in cooperation with other relevant authorities.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    }\n  ],\n  \"fabricated_additions_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"No fabricated additions were found. The output is a faithful paraphrase of the source. Minor wording differences (e.g., 'entered' vs. 'strayed into', 'relevant authorities' vs. 'other authorities') are paraphrases rather than fabricated claims. The quote is slightly altered ('entered' instead of 'strayed into' and combining two sentences with 'and'), but the meaning is preserved and no new factual claims are introduced.\"\n}\n```",
+  "judge_prompt_tokens": 510,
+  "judge_completion_tokens": 613,
+  "judge_cost_usd": 0.017875,
+  "timestamp": 1774903637.492801
+}

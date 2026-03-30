@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All numerical values and quantities in the output match the source. 'Several' objects detected, 'one' drone crashed north of Kouvola, and 'another'/'a second' drone crashed east of Kouvola \u2014 these are equivalent expressions with no numerical distortion.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\"],\n  \"numbers_in_output\": [\"several\", \"one\", \"a second\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All numerical values and quantities in the output match the source. 'Several' objects detected, 'one' drone crashed north of Kouvola, and 'another'/'a second' drone crashed east of Kouvola \u2014 these are equivalent expressions with no numerical distortion.\"\n}\n```",
+  "judge_prompt_tokens": 498,
+  "judge_completion_tokens": 142,
+  "judge_cost_usd": 0.00604,
+  "timestamp": 1774903762.540412
+}

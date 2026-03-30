@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output describes the source as a 'Finnish Ministry of Defence press release,' but the source document does not identify itself as a Ministry of Defence press release. While the content is consistent with such a release, this specific attribution is not grounded in the source text.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, several low-flying, slow-moving small objects were detected in Finnish airspace.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"These objects were observed over both sea areas and Southeast Finland.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Finnish Air Force deployed an F/A-18 Hornet fighter jet to the scene for identification purposes.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"Two of these objects, identified as drones, have crashed.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"One crashed north of Kouvola and another east of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"The police have secured both crash sites for further investigation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"Defense Minister Antti H\u00e4kk\u00e4nen stated: 'Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.'\",\n      \"grounded\": true,\n      \"source_evidence\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory. We take this very seriously. Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The Finnish Defence Forces are currently investigating the incident in collaboration with other relevant authorities.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    },\n    {\n      \"claim\": \"This is a Finnish Ministry of Defence press release.\",\n      \"grounded\": false,\n      \"source_evidence\": null\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output describes the source as a 'Finnish Ministry of Defence press release,' but the source document does not identify itself as a Ministry of Defence press release. While the content is consistent with such a release, this specific attribution is not grounded in the source text.\"\n}\n```",
+  "judge_prompt_tokens": 565,
+  "judge_completion_tokens": 693,
+  "judge_cost_usd": 0.02015,
+  "timestamp": 1774903179.154316
+}

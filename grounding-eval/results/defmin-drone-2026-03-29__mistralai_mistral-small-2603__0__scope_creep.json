@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be directly traced to the source document. The summary accurately paraphrases the source without adding any external context, background information, or details beyond what was provided.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be directly traced to the source document. The summary accurately paraphrases the source without adding any external context, background information, or details beyond what was provided.\"\n}\n```",
+  "judge_prompt_tokens": 478,
+  "judge_completion_tokens": 86,
+  "judge_cost_usd": 0.00454,
+  "timestamp": 1774903317.563916
+}

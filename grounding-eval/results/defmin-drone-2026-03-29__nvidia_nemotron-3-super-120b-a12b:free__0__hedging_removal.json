@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source says 'The Defence Forces are investigating the incident together with other authorities,' which implies a collaborative, co-equal investigation. The output changes this to 'The Finnish Defence Forces are leading the investigation,' which introduces the unsupported claim that the Defence Forces are 'leading' the effort. This is a minor embellishment rather than a classic hedging removal. The key hedging phrase 'According to current information' is preserved (as 'According to the latest information'), which is good. Overall, the hedging removal is minor \u2014 the shift from 'investigating together with' to 'leading the investigation' slightly overstates the Defence Forces' role but does not remove uncertainty language on a critical factual claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"expression\": \"investigating\",\n      \"context\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to the latest information, one unmanned aerial vehicle (drone) crashed north of Kouvola and another crashed east of Kouvola.\"\n    },\n    {\n      \"expression\": \"investigating (together with other authorities)\",\n      \"preserved\": false,\n      \"output_version\": \"The Finnish Defence Forces are leading the investigation in cooperation with other relevant authorities.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source says 'The Defence Forces are investigating the incident together with other authorities,' which implies a collaborative, co-equal investigation. The output changes this to 'The Finnish Defence Forces are leading the investigation,' which introduces the unsupported claim that the Defence Forces are 'leading' the effort. This is a minor embellishment rather than a classic hedging removal. The key hedging phrase 'According to current information' is preserved (as 'According to the latest information'), which is good. Overall, the hedging removal is minor \u2014 the shift from 'investigating together with' to 'leading the investigation' slightly overstates the Defence Forces' role but does not remove uncertainty language on a critical factual claim.\"\n}\n```",
+  "judge_prompt_tokens": 556,
+  "judge_completion_tokens": 412,
+  "judge_cost_usd": 0.01308,
+  "timestamp": 1774903556.6456032
+}

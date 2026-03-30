@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "Two minor tense shifts were found: (1) 'has been on-site' (present perfect, ongoing relevance) \u2192 'deployed' (simple past, completed action); (2) 'states' (present tense) \u2192 'commented' (simple past). These are subtle tense drifts but do not materially alter the event sequence or factual content. No date/time errors, no event reordering, and no temporal bleed were detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"has been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"states (present tense)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"were detected (past tense)\",\n    \"were observed (past tense)\",\n    \"deployed (past tense)\",\n    \"have crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"commented (past tense)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are currently investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"were detected (simple past)\",\n      \"source_temporal\": \"were detected (simple past)\",\n      \"explanation\": \"No drift here; both use past tense for the detection event.\"\n    },\n    {\n      \"output_temporal\": \"were observed (simple past)\",\n      \"source_temporal\": \"were detected (simple past)\",\n      \"explanation\": \"Minor paraphrase ('observed' vs 'detected') but no temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site,' implying an ongoing or recently completed action with present relevance. The summary uses simple past 'deployed,' which shifts the temporal framing to a completed past action. This is a minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"commented (simple past)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states,' suggesting a current/official statement. The summary shifts to simple past 'commented,' which is a tense change, though minor and common in summarization.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"Two minor tense shifts were found: (1) 'has been on-site' (present perfect, ongoing relevance) \u2192 'deployed' (simple past, completed action); (2) 'states' (present tense) \u2192 'commented' (simple past). These are subtle tense drifts but do not materially alter the event sequence or factual content. No date/time errors, no event reordering, and no temporal bleed were detected.\"\n}\n```",
+  "judge_prompt_tokens": 547,
+  "judge_completion_tokens": 629,
+  "judge_cost_usd": 0.01846,
+  "timestamp": 1774903206.241314
+}

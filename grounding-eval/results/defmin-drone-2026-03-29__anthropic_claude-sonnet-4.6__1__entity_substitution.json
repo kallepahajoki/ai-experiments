@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All named entities in the output match those in the source. 'Finnish Air Force' corresponds to 'The Air Force' in the source (minor elaboration, not a substitution). 'Finnish Defence Forces' corresponds to 'The Defence Forces' (same). All locations and person names match exactly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Finnish Defence Forces\", \"Antti H\u00e4kk\u00e4nen\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All named entities in the output match those in the source. 'Finnish Air Force' corresponds to 'The Air Force' in the source (minor elaboration, not a substitution). 'Finnish Defence Forces' corresponds to 'The Defence Forces' (same). All locations and person names match exactly.\"\n}\n```",
+  "judge_prompt_tokens": 538,
+  "judge_completion_tokens": 154,
+  "judge_cost_usd": 0.00654,
+  "timestamp": 1774902802.562607
+}

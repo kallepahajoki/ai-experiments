@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The phrase 'According to current information' is retained from the source itself. The output uses 'identified as drones' and 'relevant authorities,' which are minor clarifying additions but do not constitute hedging. All key facts are stated with the same level of certainty as in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The phrase 'According to current information' is retained from the source itself. The output uses 'identified as drones' and 'relevant authorities,' which are minor clarifying additions but do not constitute hedging. All key facts are stated with the same level of certainty as in the source.\"\n}\n```",
+  "judge_prompt_tokens": 504,
+  "judge_completion_tokens": 148,
+  "judge_cost_usd": 0.00622,
+  "timestamp": 1774903047.580383
+}

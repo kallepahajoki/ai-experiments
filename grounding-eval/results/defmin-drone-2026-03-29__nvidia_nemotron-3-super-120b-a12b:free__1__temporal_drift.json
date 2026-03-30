@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "The summary preserves the single temporal reference ('Sunday morning') accurately. The event sequence \u2014 detection, dispatch of F/A-18, drone crashes, police securing sites, minister's statement, ongoing investigation \u2014 matches the source ordering exactly. Tenses are consistent (past tense for completed events, present perfect for ongoing states). No dates were added, altered, or reordered, and no training-data temporal bleed is evident.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\"],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"The summary preserves the single temporal reference ('Sunday morning') accurately. The event sequence \u2014 detection, dispatch of F/A-18, drone crashes, police securing sites, minister's statement, ongoing investigation \u2014 matches the source ordering exactly. Tenses are consistent (past tense for completed events, present perfect for ongoing states). No dates were added, altered, or reordered, and no training-data temporal bleed is evident.\"\n}\n```",
+  "judge_prompt_tokens": 492,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.006485,
+  "timestamp": 1774903675.581114
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The summary introduces the term 'scrambled' (a specific military term for rapid deployment) and 'Unauthorized' in the title, neither of which appear in the source. The rest of the summary accurately reflects the source content.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"scrambled an F/A-18 Hornet fighter jet\", \"explanation\": \"The source says 'The Air Force has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' implies a specific military rapid-response procedure that is not stated in the source. The source simply says the Air Force was on-site.\"},\n    {\"output_content\": \"Unauthorized Drones Detected in Finnish Airspace\", \"explanation\": \"The word 'Unauthorized' is not used in the source. The source says drones 'strayed into Finnish territory,' which does not explicitly characterize them as unauthorized. While this may be a reasonable inference, it adds a characterization not present in the source.\"}\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The summary introduces the term 'scrambled' (a specific military term for rapid deployment) and 'Unauthorized' in the title, neither of which appear in the source. The rest of the summary accurately reflects the source content.\"\n}\n```",
+  "judge_prompt_tokens": 528,
+  "judge_completion_tokens": 271,
+  "judge_cost_usd": 0.009415,
+  "timestamp": 1774902970.8633559
+}

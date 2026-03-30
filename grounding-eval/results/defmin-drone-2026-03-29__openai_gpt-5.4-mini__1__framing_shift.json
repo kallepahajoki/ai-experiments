@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "Two minor framing shifts were detected: (1) 'immediately' was applied to the Air Force response when the source only attributes immediacy to 'security authorities' in the minister's quote, and (2) 'entered' replaces 'strayed into,' removing the implication of accidental incursion present in the original quote. Both are subtle but alter tone and implied intent.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"The Air Force responded immediately and sent an F/A-18 Hornet fighter to identify the objects\",\n      \"issue\": \"The word 'immediately' is not used in the source to describe the Air Force's response. The source says the Air Force 'has been on-site' for identification. The word 'immediately' appears only in the Defense Minister's quote about 'security authorities' responding, not specifically about the Air Force's deployment. This subtly adds urgency to the Air Force's action beyond what the source states.\"\n    },\n    {\n      \"output_phrase\": \"drones had entered Finnish territory\",\n      \"issue\": \"The source uses the phrase 'strayed into Finnish territory,' which implies an unintentional or accidental incursion. Replacing 'strayed into' with 'entered' removes that connotation and makes the action sound more deliberate, subtly shifting the framing.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"Two minor framing shifts were detected: (1) 'immediately' was applied to the Air Force response when the source only attributes immediacy to 'security authorities' in the minister's quote, and (2) 'entered' replaces 'strayed into,' removing the implication of accidental incursion present in the original quote. Both are subtle but alter tone and implied intent.\"\n}\n```",
+  "judge_prompt_tokens": 473,
+  "judge_completion_tokens": 351,
+  "judge_cost_usd": 0.01114,
+  "timestamp": 1774903941.001534
+}

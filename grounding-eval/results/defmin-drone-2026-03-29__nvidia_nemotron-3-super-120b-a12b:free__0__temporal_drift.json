@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All temporal expressions and event ordering in the summary match the source. 'Sunday morning' is preserved, the sequence of detection \u2192 Air Force response \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation is maintained accurately. Tenses are consistent. The only minor deviation is the characterization of the Defence Forces as 'leading' the investigation, which is a factual nuance rather than a temporal drift.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"immediately\"],\n  \"temporal_expressions_output\": [\"Sunday morning\", \"immediately\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Finnish Defence Forces are leading the investigation\",\n      \"source_temporal\": \"The Defence Forces are investigating the incident together with other authorities\",\n      \"explanation\": \"The source says the Defence Forces are 'investigating together with other authorities,' implying a collaborative role. The summary says they are 'leading the investigation in cooperation with other relevant authorities,' which introduces the notion of 'leading' not present in the source. This is more of a factual embellishment than a temporal drift, but no actual temporal drift is present here.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All temporal expressions and event ordering in the summary match the source. 'Sunday morning' is preserved, the sequence of detection \u2192 Air Force response \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation is maintained accurately. Tenses are consistent. The only minor deviation is the characterization of the Defence Forces as 'leading' the investigation, which is a factual nuance rather than a temporal drift.\"\n}\n```",
+  "judge_prompt_tokens": 496,
+  "judge_completion_tokens": 289,
+  "judge_cost_usd": 0.009705,
+  "timestamp": 1774903548.623677
+}

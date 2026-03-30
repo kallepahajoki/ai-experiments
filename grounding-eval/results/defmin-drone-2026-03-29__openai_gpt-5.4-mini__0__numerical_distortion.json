@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output states 'two drones have crashed: one north of Kouvola and another east of Kouvola,' which accurately reflects the source's 'one drone has crashed north of Kouvola and another east of Kouvola.' The number 'two' is a correct inference from 'one' and 'another.' All other quantities match.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\"],\n  \"numbers_in_output\": [\"several\", \"two\", \"one\", \"another\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output states 'two drones have crashed: one north of Kouvola and another east of Kouvola,' which accurately reflects the source's 'one drone has crashed north of Kouvola and another east of Kouvola.' The number 'two' is a correct inference from 'one' and 'another.' All other quantities match.\"\n}\n```",
+  "judge_prompt_tokens": 469,
+  "judge_completion_tokens": 163,
+  "judge_cost_usd": 0.00642,
+  "timestamp": 1774903833.6417139
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The key hedging expression 'According to current information' is preserved in the output. The source itself presents most facts as established (objects were detected, Air Force deployed, police secured areas, minister's quote), and the output faithfully mirrors this tone. The only notable hedging language in the source is 'According to current information,' which the output retains.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to current information, two of these objects, identified as drones, have crashed.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The key hedging expression 'According to current information' is preserved in the output. The source itself presents most facts as established (objects were detected, Air Force deployed, police secured areas, minister's quote), and the output faithfully mirrors this tone. The only notable hedging language in the source is 'According to current information,' which the output retains.\"\n}\n```",
+  "judge_prompt_tokens": 596,
+  "judge_completion_tokens": 241,
+  "judge_cost_usd": 0.009005,
+  "timestamp": 1774903123.07133
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The event sequence is preserved accurately: detection \u2192 deployment of fighter jet \u2192 drone crashes identified \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation. The timing ('Sunday morning') is correctly reproduced. The only minor issue is the summary saying drones 'were confirmed' rather than reflecting the hedged 'according to current information' from the source, which is more of a certainty shift than a temporal drift. No dates, times, or event ordering are misrepresented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"immediately\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"immediately\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Two drones were confirmed to have crashed\",\n      \"source_temporal\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The source uses 'according to current information' to hedge the claim, and uses present perfect tense ('has crashed'), indicating the information is preliminary and ongoing. The summary uses 'were confirmed to have crashed,' which implies a definitive confirmation that is not present in the source. This is a subtle tense/certainty shift but not a major temporal drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The event sequence is preserved accurately: detection \u2192 deployment of fighter jet \u2192 drone crashes identified \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation. The timing ('Sunday morning') is correctly reproduced. The only minor issue is the summary saying drones 'were confirmed' rather than reflecting the hedged 'according to current information' from the source, which is more of a certainty shift than a temporal drift. No dates, times, or event ordering are misrepresented.\"\n}\n```",
+  "judge_prompt_tokens": 495,
+  "judge_completion_tokens": 319,
+  "judge_cost_usd": 0.01045,
+  "timestamp": 1774903367.331549
+}

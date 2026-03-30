@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source document. The objects are described as 'small objects' in the source and 'drones' in the summary, but the source itself later confirms they were drones. The crash locations, the F/A-18 deployment, the police securing the areas, the Defense Minister's statement, and the collaborative investigation are all consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source document. The objects are described as 'small objects' in the source and 'drones' in the summary, but the source itself later confirms they were drones. The crash locations, the F/A-18 deployment, the police securing the areas, the Defense Minister's statement, and the collaborative investigation are all consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 442,
+  "judge_completion_tokens": 121,
+  "judge_cost_usd": 0.005235,
+  "timestamp": 1774904359.4218209
+}

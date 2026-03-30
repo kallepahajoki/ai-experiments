@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 deployment \u2192 crashes \u2192 police securing \u2192 minister statement \u2192 ongoing investigation). Tense shifts from present perfect to simple past are minor and conventional in summarization. No dates or times are fabricated or altered. The addition of 'subsequently' is an inference but not unreasonable. Overall, no meaningful temporal drift is present.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"have been on-site\", \"has been\", \"have crashed\", \"have secured\", \"have strayed\", \"have responded\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"was deployed\", \"subsequently crashed\", \"confirmed\", \"responded immediately\", \"are currently investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"detected (past tense, attributed to Finnish Air Force)\",\n      \"source_temporal\": \"were detected (passive, no specific agent as detector)\",\n      \"explanation\": \"The source says objects 'were detected' without specifying who detected them. The summary attributes the detection specifically to 'the Finnish Air Force,' which subtly changes the meaning. However, this is more of an attribution issue than a temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"Two drones subsequently crashed\",\n      \"source_temporal\": \"one drone has crashed north of Kouvola and another east of Kouvola (present perfect, according to current information)\",\n      \"explanation\": \"The source uses present perfect ('has crashed') with the qualifier 'According to current information,' suggesting this is the latest known status at the time of reporting. The summary uses simple past ('crashed') and adds 'subsequently,' implying a clear sequential narrative. The tense shift from present perfect to simple past is minor but loses the sense of ongoing/developing information. The word 'subsequently' implies the crashes happened after detection/deployment, which is a reasonable inference but not explicitly stated in the source.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (past tense)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, indicating a current/contemporaneous statement. The summary changes this to past tense 'confirmed,' which is a minor tense shift but standard in summarization.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 deployment \u2192 crashes \u2192 police securing \u2192 minister statement \u2192 ongoing investigation). Tense shifts from present perfect to simple past are minor and conventional in summarization. No dates or times are fabricated or altered. The addition of 'subsequently' is an inference but not unreasonable. Overall, no meaningful temporal drift is present.\"\n}\n```",
+  "judge_prompt_tokens": 471,
+  "judge_completion_tokens": 562,
+  "judge_cost_usd": 0.016405,
+  "timestamp": 1774904225.923069
+}

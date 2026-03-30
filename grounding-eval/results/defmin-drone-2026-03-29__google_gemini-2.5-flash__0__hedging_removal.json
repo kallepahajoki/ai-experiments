@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The key hedging expression 'According to current information' is preserved in the output. The source's language is largely factual and declarative, and the output faithfully mirrors this tone. The title 'Finnish Airspace Intrusion by Drones, Two Crashed' could be seen as slightly more assertive than the source (which uses 'small objects' initially and only identifies them as drones conditionally), but the source itself does confirm them as drones via the Defense Minister's quote and the 'according to current information' line. No significant hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to current information, two of these objects, identified as drones, have crashed: one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The key hedging expression 'According to current information' is preserved in the output. The source's language is largely factual and declarative, and the output faithfully mirrors this tone. The title 'Finnish Airspace Intrusion by Drones, Two Crashed' could be seen as slightly more assertive than the source (which uses 'small objects' initially and only identifies them as drones conditionally), but the source itself does confirm them as drones via the Defense Minister's quote and the 'according to current information' line. No significant hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 590,
+  "judge_completion_tokens": 306,
+  "judge_cost_usd": 0.0106,
+  "timestamp": 1774903033.167899
+}

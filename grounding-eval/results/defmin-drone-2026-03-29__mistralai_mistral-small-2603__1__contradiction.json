@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source document. All key details\u2014the detection of slow-moving, low-flying objects, the deployment of an F/A-18 Hornet, the two drone crash locations (north and east of Kouvola), police securing the areas, Defence Minister H\u00e4kk\u00e4nen's statement, and the joint investigation\u2014are consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source document. All key details\u2014the detection of slow-moving, low-flying objects, the deployment of an F/A-18 Hornet, the two drone crash locations (north and east of Kouvola), police securing the areas, Defence Minister H\u00e4kk\u00e4nen's statement, and the joint investigation\u2014are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 460,
+  "judge_completion_tokens": 122,
+  "judge_cost_usd": 0.00535,
+  "timestamp": 1774903349.462636
+}

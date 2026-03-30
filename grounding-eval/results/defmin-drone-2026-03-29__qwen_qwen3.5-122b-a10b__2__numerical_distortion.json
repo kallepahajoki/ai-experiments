@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "The source mentions 'one drone crashed north of Kouvola and another east of Kouvola,' which totals two drones. The output states 'Two drones crashed,' which is a faithful representation. All other numbers and quantities match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\", \"F/A-18\"],\n  \"numbers_in_output\": [\"several\", \"Two\", \"one\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"The source mentions 'one drone crashed north of Kouvola and another east of Kouvola,' which totals two drones. The output states 'Two drones crashed,' which is a faithful representation. All other numbers and quantities match the source.\"\n}\n```",
+  "judge_prompt_tokens": 522,
+  "judge_completion_tokens": 150,
+  "judge_cost_usd": 0.00636,
+  "timestamp": 1774904294.448168
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 1,
+  "content": "On Sunday morning, Finnish air\u2011space monitoring detected several low\u2011flying, slow\u2011moving small objects over sea areas and southeastern Finland. The Finnish Air Force dispatched an F/A\u201118 Hornet fighter to the scene to identify the objects. According to the latest information, one unmanned aerial vehicle (drone) crashed north of Kouvola and another crashed east of Kouvola. Police have secured both crash sites for further investigation.  \n\nDefence Minister Antti\u202fH\u00e4kk\u00e4nen commented, \u201cDrones have entered Finnish territory. We take this very seriously, and security authorities have responded immediately.\u201d  \n\nThe Defence Forces are conducting the investigation in cooperation with other relevant authorities.",
+  "prompt_tokens": 158,
+  "completion_tokens": 239,
+  "cost_usd": 0.0,
+  "latency_ms": 20089.992499997607,
+  "timestamp": 1774902579.17813
+}

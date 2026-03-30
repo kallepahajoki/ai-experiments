@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The summary introduces 'Unauthorized' in the headline and 'scrambled' to describe the fighter jet deployment, both of which add editorial tone and dramatic framing not present in the source. The source uses neutral language ('has been on-site,' 'strayed into Finnish territory') while the summary implies more urgency and deliberate violation.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Unauthorized Drones Detected in Finnish Airspace\",\n      \"issue\": \"The word 'Unauthorized' is not present in the source. The source says drones 'strayed into Finnish territory,' which is more neutral and does not explicitly characterize them as 'unauthorized.' While the implication may be similar, 'unauthorized' adds an editorial characterization of illegality or deliberate violation not stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"scrambled an F/A-18 Hornet fighter jet\",\n      \"issue\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' introduces dramatic military framing implying urgency and rapid emergency deployment, which is not present in the neutral source language.\"\n    },\n    {\n      \"output_phrase\": \"calling the incident a serious matter\",\n      \"issue\": \"Minor paraphrase shift. The source quotes the minister saying 'We take this very seriously,' which the summary rephrases as 'calling the incident a serious matter.' This slightly softens the direct, emphatic tone of the original quote but is a minor issue.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary introduces 'Unauthorized' in the headline and 'scrambled' to describe the fighter jet deployment, both of which add editorial tone and dramatic framing not present in the source. The source uses neutral language ('has been on-site,' 'strayed into Finnish territory') while the summary implies more urgency and deliberate violation.\"\n}\n```",
+  "judge_prompt_tokens": 530,
+  "judge_completion_tokens": 406,
+  "judge_cost_usd": 0.0128,
+  "timestamp": 1774902960.629843
+}

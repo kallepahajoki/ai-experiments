@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "All temporal references (Sunday morning, event sequence of detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) are preserved accurately. Tense shifts are minor and consistent with converting a news bulletin into a past-tense summary; no dates, times, or event orderings are misrepresented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"has been\", \"have secured\", \"states\", \"have strayed\", \"take\", \"have responded\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"were detected\", \"responded\", \"crashed\", \"have secured\", \"said\", \"had entered\", \"is being taken\", \"responded\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"were detected (past tense)\",\n      \"source_temporal\": \"were detected (past tense)\",\n      \"explanation\": \"No drift \u2014 both use past tense for the detection event.\"\n    },\n    {\n      \"output_temporal\": \"responded (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect (ongoing relevance) to simple past, but this does not misrepresent the timeline or event ordering. Acceptable paraphrase.\"\n    },\n    {\n      \"output_temporal\": \"said / had entered / responded (past tense / past perfect)\",\n      \"source_temporal\": \"states / have strayed / have responded (present tense / present perfect)\",\n      \"explanation\": \"The summary shifts the minister's quote from present tense ('states', 'take', 'have responded') to past tense ('said', 'had entered', 'responded'). This is a standard shift from direct to indirect reported speech and does not misrepresent the temporal facts or event sequence.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"All temporal references (Sunday morning, event sequence of detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) are preserved accurately. Tense shifts are minor and consistent with converting a news bulletin into a past-tense summary; no dates, times, or event orderings are misrepresented.\"\n}\n```",
+  "judge_prompt_tokens": 472,
+  "judge_completion_tokens": 461,
+  "judge_cost_usd": 0.013885,
+  "timestamp": 1774904012.240213
+}
