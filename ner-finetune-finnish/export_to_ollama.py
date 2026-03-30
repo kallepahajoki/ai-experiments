@@ -115,8 +115,18 @@ def main():
         check=True,
     )
 
-    # Create Ollama Modelfile
+    # Create Ollama Modelfile with proper Qwen 3 ChatML template
     modelfile_content = f"""FROM {quantized_gguf}
+
+TEMPLATE \"\"\"{{{{- if .System }}}}<|im_start|>system
+{{{{ .System }}}}<|im_end|>
+{{{{- end }}}}
+<|im_start|>user
+{{{{ .Prompt }}}}<|im_end|>
+<|im_start|>assistant
+{{{{ .Response }}}}<|im_end|>
+\"\"\"
+
 PARAMETER temperature 0.1
 PARAMETER top_p 0.9
 PARAMETER stop <|im_end|>

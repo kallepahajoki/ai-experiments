@@ -167,7 +167,8 @@ def main():
     print("Finnish NER Benchmark — Ground Truth Evaluation")
     print("=" * 70)
 
-    MODELS = ["spacy_sm", "spacy_md", "spacy_lg", "qwen_08b", "qwen_2b", "qwen_4b", "qwen_9b"]
+    MODELS = ["spacy_sm", "spacy_md", "spacy_lg", "qwen_08b", "qwen_2b", "qwen_4b", "qwen_9b",
+              "qwen_ft_08b", "qwen_ft_2b", "qwen_ft_4b"]
     # Keys must match both the results-fi filenames AND the datasets-fi-sample dir names
     # Results: spacy_sm_finer.json -> dataset key "finer"
     # Sample dir: datasets-fi-sample/finer-digitoday/ -> dir name "finer-digitoday"

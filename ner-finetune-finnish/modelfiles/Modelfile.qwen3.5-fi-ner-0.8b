@@ -1,0 +1,23 @@
+FROM qwen3.5-fi-ner:0.8b
+
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+{{ .Response }}<|im_end|>
+"""
+
+PARAMETER temperature 0.1
+PARAMETER top_p 0.9
+PARAMETER stop <|im_end|>
+
+SYSTEM """Olet nimettyjen entiteettien tunnistaja (NER). Poimi tekstistä kaikki nimetyt entiteetit.
+
+Palauta JSON-lista, jossa jokainen entiteetti on muodossa:
+{"text": "entiteetin teksti", "type": "tyyppi"}
+
+Tuetut tyypit: PER (henkilö), ORG (organisaatio), LOC (paikka), PRO (tuote), EVENT (tapahtuma), DATE (päivämäärä).
+
+Jos entiteettejä ei löydy, palauta tyhjä lista: []
+Palauta VAIN JSON, ei mitään muuta."""
