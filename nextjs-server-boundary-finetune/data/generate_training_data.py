@@ -413,10 +413,9 @@ WRONG_APPROACHES = [
 ]
 
 # ---------------------------------------------------------------------------
-# System prompt for training
+# No system prompt — agentic use doesn't have one. The model should learn
+# to recognise the error pattern from build output alone.
 # ---------------------------------------------------------------------------
-
-SYSTEM_PROMPT = """You are an expert software engineer. When given a coding task, analyze the problem carefully, explain your reasoning, then provide the fix. Focus on correctness - use the right mechanism for the problem, not just something that silences the error."""
 
 # ---------------------------------------------------------------------------
 # Example generators
@@ -448,7 +447,19 @@ Import trace for requested module:
 {trace}"""
 
 
-def generate_example(
+# Agentic user prompts — short directives an agent or user might give
+AGENTIC_USER_PROMPTS = [
+    "Fix the Next.js build error.",
+    "The build is failing. Fix it.",
+    "npm run build fails. Debug and fix.",
+    "Build is broken, fix the webpack errors.",
+    "Fix the Module not found errors in the build.",
+    "The Next.js production build fails. Fix it.",
+    "Debug and fix the build failure.",
+]
+
+
+def _build_example_data(
     source_files: list[dict],
     npm_packages: list[str],
     config_template_key: str,
@@ -456,7 +467,11 @@ def generate_example(
     include_wrong_approach: bool = False,
     existing_externals: list[str] | None = None,
 ) -> dict:
-    """Generate one training example."""
+    """Build the raw data for a training example (build output, config, fix, explanation).
+
+    Returns a dict with keys: build_output, config_before, config_after,
+    config_filename, assistant_msg.
+    """
 
     existing_externals = existing_externals or []
     config_template = CONFIG_TEMPLATES[config_template_key]
@@ -525,23 +540,7 @@ Failed to compile.
         "$EXISTING_EXTERNALS$", existing_ext_str
     ).replace("$EXTERNALS_LIST$", externals_list)
 
-    # Build the source file listing
-    source_listings = []
-    for sf in source_files:
-        source_listings.append(f"File: {sf['filename']}\n```typescript\n{sf['code_snippet'].strip()}\n```")
-
-    # Build user message
-    user_parts = [
-        f"I'm getting build errors in my Next.js project. Here's the output of `npm run build`:\n\n```\n{build_output}\n```",
-        f"\nHere's my current {config_template['filename']}:\n```javascript\n{config_before}\n```",
-    ]
-    for listing in source_listings:
-        user_parts.append(f"\n{listing}")
-
-    user_msg = "\n".join(user_parts)
-
     # Build assistant response
-    # Explain the problem
     file_descriptions = []
     for sf in source_files:
         mods = ", ".join(f"`{m}`" for m in sf["imports"])
@@ -598,10 +597,152 @@ The correct approach is to use webpack `externals`:
         assistant_msg = wrong_discussion + assistant_msg
 
     return {
+        "build_output": build_output,
+        "config_before": config_before,
+        "config_after": config_after,
+        "config_filename": config_template["filename"],
+        "assistant_msg": assistant_msg,
+    }
+
+
+def generate_example(
+    source_files: list[dict],
+    npm_packages: list[str],
+    config_template_key: str,
+    import_chain_template: dict,
+    include_wrong_approach: bool = False,
+    existing_externals: list[str] | None = None,
+) -> dict:
+    """Generate one plain-format training example (user/assistant)."""
+
+    data = _build_example_data(
+        source_files, npm_packages, config_template_key,
+        import_chain_template, include_wrong_approach, existing_externals,
+    )
+
+    user_msg = f"""`npm run build` output:
+
+```
+{data['build_output']}
+```
+
+{data['config_filename']}:
+```javascript
+{data['config_before']}
+```"""
+
+    return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
-            {"role": "assistant", "content": assistant_msg},
+            {"role": "assistant", "content": data["assistant_msg"]},
+        ]
+    }
+
+
+def generate_tool_use_example(
+    source_files: list[dict],
+    npm_packages: list[str],
+    config_template_key: str,
+    import_chain_template: dict,
+    include_wrong_approach: bool = False,
+    existing_externals: list[str] | None = None,
+) -> dict:
+    """Generate a tool-use formatted training example.
+
+    Simulates an agentic flow where build output and config arrive as tool
+    results (role: "tool"), matching the <tool_response> wrapper that Qwen 3.5's
+    chat template renders at inference time.
+    """
+
+    data = _build_example_data(
+        source_files, npm_packages, config_template_key,
+        import_chain_template, include_wrong_approach, existing_externals,
+    )
+
+    user_prompt = random.choice(AGENTIC_USER_PROMPTS)
+
+    return {
+        "messages": [
+            # User asks to fix the build
+            {"role": "user", "content": user_prompt},
+            # Assistant runs the build
+            {
+                "role": "assistant",
+                "content": "Let me run the build to see the errors.",
+                "tool_calls": [
+                    {
+                        "type": "function",
+                        "function": {
+                            "name": "bash",
+                            "arguments": {"command": "npm run build"},
+                        },
+                    }
+                ],
+            },
+            # Build output arrives as tool result
+            {"role": "tool", "content": data["build_output"]},
+            # Assistant reads the config
+            {
+                "role": "assistant",
+                "content": f"The build has Module not found errors for Node.js built-ins. Let me check the webpack config.",
+                "tool_calls": [
+                    {
+                        "type": "function",
+                        "function": {
+                            "name": "read_file",
+                            "arguments": {"path": data["config_filename"]},
+                        },
+                    }
+                ],
+            },
+            # Config arrives as tool result
+            {"role": "tool", "content": data["config_before"]},
+            # Assistant provides the fix
+            {"role": "assistant", "content": data["assistant_msg"]},
+        ]
+    }
+
+
+def generate_tool_response_only_example(
+    source_files: list[dict],
+    npm_packages: list[str],
+    config_template_key: str,
+    import_chain_template: dict,
+    include_wrong_approach: bool = False,
+    existing_externals: list[str] | None = None,
+) -> dict:
+    """Generate a minimal example: just the build error as a lone tool result.
+
+    The model must recognise the pattern from the <tool_response> alone —
+    no user request, no config read.  This forces the LoRA to activate on
+    the error text itself rather than relying on surrounding context.
+    """
+
+    data = _build_example_data(
+        source_files, npm_packages, config_template_key,
+        import_chain_template, include_wrong_approach, existing_externals,
+    )
+
+    return {
+        "messages": [
+            # Minimal context: assistant already ran a build
+            {
+                "role": "assistant",
+                "content": "",
+                "tool_calls": [
+                    {
+                        "type": "function",
+                        "function": {
+                            "name": "bash",
+                            "arguments": {"command": "npm run build"},
+                        },
+                    }
+                ],
+            },
+            # Just the build error — nothing else
+            {"role": "tool", "content": data["build_output"]},
+            # Model must identify the problem and provide the fix
+            {"role": "assistant", "content": data["assistant_msg"]},
         ]
     }
 
@@ -730,20 +871,18 @@ const nextConfig = {
 
 module.exports = nextConfig;"""
 
-    user_msg = f"""I'm getting build errors in my Next.js project. The project uses an instrumentation hook to start a Signal messenger adapter as a background process. The signal adapter and calendar integration use Node.js built-in modules. Here's the output of `npm run build`:
+    user_msg = f"""`npm run build` output:
 
 ```
 {build_output}
 ```
 
-Here's my current next.config.js:
+next.config.js:
 ```javascript
 {config_before}
 ```
 
-The project also has `pg` (PostgreSQL) as a dependency, used in `lib/calendar/token-store.ts` and a shared database module. The `token-store.ts` imports both `crypto` and `pg`.
-
-How do I fix this?"""
+The project also has `pg` (PostgreSQL) as a dependency, used in `lib/calendar/token-store.ts`."""
 
     assistant_msg = f"""The build fails because webpack is trying to bundle Node.js built-in modules that are only available at runtime on the server. The import trace shows these files are pulled in through `instrumentation.ts` → signal/calendar modules.
 
@@ -771,7 +910,6 @@ This tells webpack to skip bundling these modules for the server — they'll be 
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
@@ -781,7 +919,7 @@ This tells webpack to skip bundling these modules for the server — they'll be 
 def generate_negative_example_fallback() -> dict:
     """Generate an example where the model should NOT use resolve.fallback."""
 
-    user_msg = """My Next.js app fails to build:
+    user_msg = """`npm run build` output:
 
 ```
 ./lib/db/connection.ts:1:1
@@ -794,7 +932,7 @@ Import trace for requested module:
 ./instrumentation.ts
 ```
 
-I tried this fix but the app crashes at runtime:
+Current webpack config uses resolve.fallback — build passes but runtime crashes with `TypeError: Cannot read properties of undefined (reading 'createConnection')`:
 ```javascript
 webpack: (config, { isServer }) => {
     if (isServer) {
@@ -807,9 +945,7 @@ webpack: (config, { isServer }) => {
     }
     return config;
   },
-```
-
-The build passes now but I get `TypeError: Cannot read properties of undefined (reading 'createConnection')` when the code runs. What's going on?"""
+```"""
 
     assistant_msg = """The issue is that `resolve.fallback: { net: false }` tells webpack "don't provide a polyfill and resolve to `undefined`." The build succeeds because webpack no longer tries to find the module, but at runtime `net` is `undefined`, so `createConnection` fails.
 
@@ -836,7 +972,6 @@ The key distinction:
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
@@ -846,7 +981,7 @@ The key distinction:
 def generate_negative_example_client_side() -> dict:
     """Example where someone applies the fix to the wrong side."""
 
-    user_msg = """Next.js build error:
+    user_msg = """`npm run build` output:
 
 ```
 ./lib/crypto/hash.ts:1:1
@@ -858,7 +993,7 @@ Import trace for requested module:
 ./app/api/auth/route.ts
 ```
 
-My current next.config.js:
+next.config.js:
 ```javascript
 const nextConfig = {
   webpack: (config, { isServer }) => {
@@ -872,9 +1007,7 @@ const nextConfig = {
   },
 };
 module.exports = nextConfig;
-```
-
-Why isn't this working?"""
+```"""
 
     assistant_msg = """Two problems:
 
@@ -902,7 +1035,6 @@ This tells webpack: "when building the server bundle, don't try to bundle `crypt
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
@@ -912,22 +1044,7 @@ This tells webpack: "when building the server bundle, don't try to bundle `crypt
 def generate_transitive_deps_example() -> dict:
     """Example focusing on the need to externalize transitive dependencies."""
 
-    user_msg = """I fixed the direct Node.js built-in errors in my Next.js build by adding webpack externals:
-
-```javascript
-webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.externals = [
-        ...(config.externals || []),
-        'crypto',
-        'net',
-      ];
-    }
-    return config;
-  },
-```
-
-But now I get a new error:
+    user_msg = """`npm run build` output:
 
 ```
 ./node_modules/pg/lib/connection.js
@@ -940,7 +1057,19 @@ Import trace for requested module:
 ./instrumentation.ts
 ```
 
-The `crypto` and `net` errors in my own code are gone, but `pg` still can't find `net`. Do I need to add `node:` prefix to pg's source code?"""
+Current webpack config already externalizes direct builtins:
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'crypto',
+        'net',
+      ];
+    }
+    return config;
+  },
+```"""
 
     assistant_msg = """No — you can't modify code inside `node_modules`. The issue is that `pg` (the PostgreSQL driver) internally imports Node.js built-ins like `net`, `dns`, `stream`, `tls`, and `crypto`. When webpack processes `pg` for the server bundle, it tries to bundle those too.
 
@@ -974,7 +1103,6 @@ When you externalize `pg`, webpack emits `require('pg')` as-is. Node.js then loa
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
@@ -984,26 +1112,7 @@ When you externalize `pg`, webpack emits `require('pg')` as-is. Node.js then loa
 def generate_pg_progressive_fix_example() -> dict:
     """Example where user fixes builtins first, then discovers pg transitive deps."""
 
-    user_msg = """I'm building a Next.js app with PostgreSQL. I already added webpack externals for `crypto`, `net`, `fs`, `path`, `events`, and `pg`:
-
-```javascript
-webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.externals = [
-        ...(config.externals || []),
-        'crypto',
-        'net',
-        'fs',
-        'path',
-        'events',
-        'pg',
-      ];
-    }
-    return config;
-  },
-```
-
-But I'm still getting errors:
+    user_msg = """`npm run build` output:
 
 ```
 ./node_modules/pgpass/lib/index.js
@@ -1026,7 +1135,23 @@ Import trace for requested module:
 ./instrumentation.ts
 ```
 
-I thought externalizing `pg` would handle all its internal modules?"""
+Current webpack config:
+```javascript
+webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'crypto',
+        'net',
+        'fs',
+        'path',
+        'events',
+        'pg',
+      ];
+    }
+    return config;
+  },
+```"""
 
     assistant_msg = """Externalizing `pg` tells webpack not to bundle `pg` itself, but webpack still processes `pg`'s dependencies (`pgpass`, `split2`, `pg-pool`, `pg-protocol`) because they're separate packages in `node_modules`.
 
@@ -1060,7 +1185,6 @@ A good rule of thumb: if you see errors from `node_modules/X/...`, add `X` to ex
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
@@ -1070,7 +1194,7 @@ A good rule of thumb: if you see errors from `node_modules/X/...`, add `X` to ex
 def generate_mongoose_transitive_example() -> dict:
     """Example with mongoose transitive deps to reinforce the pattern."""
 
-    user_msg = """Next.js build fails with:
+    user_msg = """`npm run build` output:
 
 ```
 ./node_modules/mongodb/lib/cmap/connect.js
@@ -1083,7 +1207,7 @@ Import trace for requested module:
 ./app/api/users/route.ts
 ```
 
-I have mongoose externalized:
+Current webpack config:
 ```javascript
 webpack: (config, { isServer }) => {
     if (isServer) {
@@ -1094,9 +1218,7 @@ webpack: (config, { isServer }) => {
     }
     return config;
   },
-```
-
-Why is mongodb still causing errors?"""
+```"""
 
     assistant_msg = """Same pattern as other database drivers — `mongoose` depends on `mongodb`, which is a separate package in `node_modules`. Externalizing `mongoose` doesn't cover `mongodb`.
 
@@ -1129,7 +1251,6 @@ webpack: (config, { isServer }) => {
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
@@ -1139,7 +1260,7 @@ webpack: (config, { isServer }) => {
 def generate_events_focused_example() -> dict:
     """Example specifically highlighting events as a commonly missed module."""
 
-    user_msg = """My Next.js build almost passes — I fixed most module errors with webpack externals but one remains:
+    user_msg = """`npm run build` output:
 
 ```
 ./lib/queue/worker.ts:2:1
@@ -1155,7 +1276,7 @@ Import trace for requested module:
 ./instrumentation.ts
 ```
 
-My current config:
+Current webpack config:
 ```javascript
 webpack: (config, { isServer }) => {
     if (isServer) {
@@ -1172,9 +1293,7 @@ webpack: (config, { isServer }) => {
     }
     return config;
   },
-```
-
-I forgot to include `events` — but what other modules might I be missing?"""
+```"""
 
     assistant_msg = """Add `events` and review all Node.js built-ins your code uses. A good practice is to include all the common ones upfront rather than playing whack-a-mole:
 
@@ -1212,30 +1331,113 @@ Since your code uses `pg`, make sure to include its transitive dependencies (`pg
 
     return {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg},
             {"role": "assistant", "content": assistant_msg},
         ]
     }
 
 
+def wrap_as_tool_use(plain_example: dict) -> dict:
+    """Convert a plain user/assistant example into tool-use format.
+
+    Splits the user message into build output and config, then wraps them
+    as tool results so they appear inside <tool_response> tags at inference.
+    Works for handcrafted examples that have build output and a config block
+    in the user message.
+    """
+    user_msg = plain_example["messages"][0]["content"]
+    assistant_msg = plain_example["messages"][1]["content"]
+
+    # Try to split into build output and config
+    # Look for the config section (either "Current webpack config:" or "next.config" or similar)
+    config_markers = [
+        "Current webpack config",
+        "next.config.js:",
+        "next.config.mjs:",
+        "Current webpack config:",
+    ]
+
+    build_part = user_msg
+    config_part = ""
+
+    for marker in config_markers:
+        idx = user_msg.find(marker)
+        if idx != -1:
+            build_part = user_msg[:idx].strip()
+            config_part = user_msg[idx:].strip()
+            break
+
+    # Strip markdown code fences from build_part for raw tool output
+    build_content = build_part
+    for prefix in ["`npm run build` output:", "```", "`"]:
+        build_content = build_content.replace(prefix, "")
+    build_content = build_content.strip()
+
+    # Strip markdown fences from config_part
+    config_content = config_part
+    for prefix in ["```javascript", "```"]:
+        config_content = config_content.replace(prefix, "")
+    # Extract just the config filename for the tool call
+    config_filename = "next.config.js"
+    if "next.config.mjs" in config_part:
+        config_filename = "next.config.mjs"
+    # Get just the JS content
+    for marker in config_markers:
+        config_content = config_content.replace(marker, "")
+    config_content = config_content.strip()
+
+    user_prompt = random.choice(AGENTIC_USER_PROMPTS)
+
+    messages = [
+        {"role": "user", "content": user_prompt},
+        {
+            "role": "assistant",
+            "content": "Let me run the build to see the errors.",
+            "tool_calls": [{"type": "function", "function": {"name": "bash", "arguments": {"command": "npm run build"}}}],
+        },
+        {"role": "tool", "content": build_content},
+    ]
+
+    if config_content:
+        messages.extend([
+            {
+                "role": "assistant",
+                "content": "Let me check the webpack config.",
+                "tool_calls": [{"type": "function", "function": {"name": "read_file", "arguments": {"path": config_filename}}}],
+            },
+            {"role": "tool", "content": config_content},
+        ])
+
+    messages.append({"role": "assistant", "content": assistant_msg})
+
+    return {"messages": messages}
+
+
 def main():
     random.seed(42)
     examples = []
 
-    # 1. Negative examples (wrong approaches)
+    # 1. Negative examples (wrong approaches) — plain format
     # NOTE: The real ai-toolkit example is deliberately excluded from training
     # so we can use it as a held-out eval to test generalization.
     examples.append(generate_negative_example_fallback())
     examples.append(generate_negative_example_client_side())
     examples.append(generate_transitive_deps_example())
 
-    # 2. Additional focused examples for transitive deps and events
+    # 2. Additional focused examples for transitive deps and events — plain
     examples.append(generate_pg_progressive_fix_example())
     examples.append(generate_mongoose_transitive_example())
     examples.append(generate_events_focused_example())
 
-    # 3. Synthetic variations
+    # 2b. Tool-use variants of the handcrafted examples
+    examples.append(wrap_as_tool_use(generate_negative_example_fallback()))
+    examples.append(wrap_as_tool_use(generate_negative_example_client_side()))
+    examples.append(wrap_as_tool_use(generate_transitive_deps_example()))
+    examples.append(wrap_as_tool_use(generate_pg_progressive_fix_example()))
+    examples.append(wrap_as_tool_use(generate_mongoose_transitive_example()))
+    examples.append(wrap_as_tool_use(generate_events_focused_example()))
+
+    # 3. Synthetic variations — mix of plain and tool-use format
     config_keys = list(CONFIG_TEMPLATES.keys())
     chain_templates = IMPORT_CHAINS
 
@@ -1269,7 +1471,10 @@ def main():
         # Maybe include wrong approach discussion
         include_wrong = random.random() > 0.7
 
-        example = generate_example(
+        # Mix of formats: ~1/3 plain, ~1/3 full tool-use, ~1/3 minimal tool-response-only
+        fmt_roll = random.random()
+
+        gen_kwargs = dict(
             source_files=files,
             npm_packages=npm_pkgs,
             config_template_key=config_key,
@@ -1277,6 +1482,14 @@ def main():
             include_wrong_approach=include_wrong,
             existing_externals=existing,
         )
+
+        if fmt_roll < 0.33:
+            example = generate_example(**gen_kwargs)
+        elif fmt_roll < 0.66:
+            example = generate_tool_use_example(**gen_kwargs)
+        else:
+            example = generate_tool_response_only_example(**gen_kwargs)
+
         examples.append(example)
 
     # Real ai-toolkit example is held out for eval — not included in training

@@ -35,8 +35,8 @@ import tempfile
 from pathlib import Path
 
 
-# The prompt we'll send to the model (same format as training data)
-SYSTEM_PROMPT = """You are an expert software engineer. When given a coding task, analyze the problem carefully, explain your reasoning, then provide the fix. Focus on correctness - use the right mechanism for the problem, not just something that silences the error."""
+# No system prompt — matches the agentic training data format.
+SYSTEM_PROMPT = None
 
 # Loaded from the real project
 EVAL_PROMPT = None  # Set in main()
@@ -117,27 +117,18 @@ Import trace for requested module:
 
 > Build failed because of webpack errors"""
 
-    return f"""I'm getting build errors in my Next.js project. The project uses an instrumentation hook to start a Signal messenger adapter as a background process. The signal adapter and calendar integration use Node.js built-in modules.
-
-Here's the output of `npm run build`:
+    return f"""`npm run build` output:
 
 ```
 {build_error}
 ```
 
-Here's my current next.config.js:
+next.config.js:
 ```javascript
 {ctx['files']['next.config.js']}
 ```
 
-Here's the instrumentation.ts that's in the import trace:
-```typescript
-{ctx['files']['instrumentation.ts']}
-```
-
-The project also has `pg` (PostgreSQL) as a dependency, used in `lib/calendar/token-store.ts` for encrypted credential storage. The `token-store.ts` imports both `crypto` and `pg`.
-
-How do I fix the build error?"""
+The project also has `pg` (PostgreSQL) as a dependency, used in `lib/calendar/token-store.ts`."""
 
 
 def score_response(response: str) -> dict:
@@ -293,12 +284,13 @@ def run_inference_ollama(model: str, prompt: str, system: str) -> str:
     import urllib.request
 
     url = os.environ.get("OLLAMA_HOST", "http://localhost:11434") + "/api/chat"
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
     payload = json.dumps({
         "model": model,
-        "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": prompt},
-        ],
+        "messages": messages,
         "stream": False,
         "options": {"temperature": 0.1, "num_predict": 4096},
     }).encode()
@@ -329,10 +321,10 @@ def run_inference_transformers(model_name: str, adapter_path: str | None, prompt
 
     FastLanguageModel.for_inference(model)
 
-    messages = [
-        {"role": "system", "content": system},
-        {"role": "user", "content": prompt},
-    ]
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
     # Use the underlying text tokenizer (not the multimodal processor)
     text_tokenizer = getattr(tokenizer, "tokenizer", tokenizer)
     text = text_tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
