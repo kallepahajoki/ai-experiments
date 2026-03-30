@@ -49,6 +49,26 @@ The two approaches are complementary: spaCy has higher recall (catches more enti
 
 Uses the full Turku NER corpus (~800 docs, 11k entities) and FiNER/Digitoday (~3,700 docs, 196k entities) as training data, formatted as instruction-tuning examples with a Finnish system prompt. Exports finetuned models to GGUF for Ollama deployment.
 
+### [`grounding-eval/`](grounding-eval/)
+
+**Source-grounded LLM output evaluation** — benchmarks how faithfully LLMs reproduce source material, detecting 12 failure modes from fabricated claims to subtle hedging removal. Uses an LLM judge (Claude Opus 4.6 via OpenRouter) to evaluate outputs from 7 subject models.
+
+Motivated by a real incident: on 2026-03-29, Helsingin Sanomat's AI press release tool [fabricated a Russia attribution](https://www.hs.fi/paakirjoitukset/art-2000011912865.html) for a Finnish MoD drone press release that contained no country information. The erroneous breaking news was live for three minutes before correction.
+
+First eval case uses that same MoD press release. Results from 7 models (3 runs each, 252 judge evaluations):
+
+| Model | Overall failure rate | Critical failure rate | Notable patterns |
+|---|---|---|---|
+| openai/gpt-5.4-mini | **5.6%** | **0.0%** | Cleanest — preserved hedging, neutral tone |
+| nvidia/nemotron-3-super-120b-a12b | 16.7% | 33.3% | Invented "radar" as detection method |
+| qwen/qwen3.5-122b-a10b | 19.4% | 0.0% | 100% hedging removal, zero fabrication |
+| mistralai/mistral-small-2603 | 22.2% | 16.7% | One run replaced "preliminary" with "confirmed" |
+| anthropic/claude-sonnet-4.6 | 27.8% | 33.3% | "Unauthorized drones", "scrambled" — editorial embellishment |
+| google/gemini-2.5-flash | 36.1% | 50.0% | 100% fabrication, instruction leakage, temporal drift |
+| qwen/qwen3.5-9b | 36.1% | 33.3% | Failed across 9 of 12 modes |
+
+Key finding: framing shift (adding editorial tone) was detected in every model. No model faithfully preserved the Finnish minister's word "harhautunut" (strayed, implying accidental) — it became "unauthorized", "intrusion", or "entered". A single fabricated-addition judge call (~$0.01) would have caught the HS error before publication.
+
 ### [`nextjs-server-boundary-finetune/`](nextjs-server-boundary-finetune/)
 
 **Targeted reasoning correction** — fine-tunes Qwen3.5-27B to fix a specific Next.js webpack error where Node.js built-in modules fail to resolve in server bundles.
