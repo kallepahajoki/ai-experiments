@@ -33,7 +33,7 @@ lora:
     - "down_proj"
 
 training:
-  epochs: 3
+  epochs: 5
   batch_size: 2                  # Fits in 80GB; try 4 if VRAM allows
   gradient_accumulation_steps: 4 # Effective batch size = 8
   learning_rate: 1.0e-4          # Slightly lower for larger model

@@ -17,7 +17,7 @@ echo ""
 
 # 1. System-level build dependencies
 echo "--- Installing system dependencies ---"
-apt-get update -qq && apt-get install -y --no-install-recommends git build-essential > /dev/null
+apt-get update -qq && apt-get install -y --no-install-recommends git build-essential libssl-dev cmake libcurl4-openssl-dev > /dev/null
 
 # 2. Create venv on the network volume (persists across pod restarts)
 VENV_DIR="/workspace/venv"

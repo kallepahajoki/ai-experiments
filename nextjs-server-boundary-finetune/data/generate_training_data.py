@@ -410,6 +410,36 @@ WRONG_APPROACHES = [
     serverComponentsExternalPackages: ['crypto', 'net', 'fs', 'path', 'events'],
   },""",
     },
+    {
+        "approach": "resolve.fallback with pg",
+        "explanation": "Setting resolve.fallback: { pg: false } makes `require('pg')` return undefined at runtime. The PostgreSQL driver needs to actually load — use externals so webpack leaves the require() as-is for Node.js to handle.",
+        "wrong_code": """webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.resolve = config.resolve || {};
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        pg: false,
+      };
+    }
+    return config;
+  },""",
+    },
+    {
+        "approach": "resolve.fallback with multiple packages",
+        "explanation": "Using resolve.fallback for any module — whether Node.js built-in or npm package — makes it undefined at runtime. The build passes but the code crashes. Always use config.externals instead.",
+        "wrong_code": """webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        pg: false,
+        net: false,
+        crypto: false,
+        fs: false,
+      };
+    }
+    return config;
+  },""",
+    },
 ]
 
 # ---------------------------------------------------------------------------
@@ -1341,6 +1371,378 @@ Since your code uses `pg`, make sure to include its transitive dependencies (`pg
     }
 
 
+def generate_negative_pg_fallback() -> dict:
+    """Negative example: using resolve.fallback for pg specifically."""
+
+    user_msg = """`npm run build` output:
+
+```
+../lib/forge/db.ts
+Module not found: Can't resolve 'pg'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./lib/db.ts
+./lib/calendar/nl-parser.ts
+./lib/signal/router.ts
+./instrumentation.ts
+
+> Build failed because of webpack errors
+```
+
+next.config.mjs:
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+};
+
+export default nextConfig;
+```"""
+
+    assistant_msg = """The build fails because webpack is trying to bundle `pg` (PostgreSQL driver), which is a server-side npm package that should be resolved by Node.js at runtime, not bundled by webpack.
+
+**The fix:** Use webpack `externals` to tell webpack to leave `pg` and its transitive dependencies as runtime requires:
+
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'pg',
+        'pgpass',
+        'split2',
+        'pg-pool',
+        'pg-protocol',
+      ];
+    }
+    return config;
+  },
+};
+
+export default nextConfig;
+```
+
+**Important:** Don't use `resolve.fallback: { pg: false }` — that makes `require('pg')` return `undefined`, so the build passes but the database connection crashes at runtime. `externals` tells webpack to emit `require('pg')` as-is, which Node.js resolves normally."""
+
+    return {
+        "messages": [
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
+def generate_negative_fallback_to_externals_correction() -> dict:
+    """Negative example: model sees an existing fallback config and must replace it with externals."""
+
+    user_msg = """`npm run build` passes but the app crashes at runtime:
+
+```
+TypeError: Cannot read properties of undefined (reading 'Pool')
+    at Object.<anonymous> (/app/lib/db.ts:3:22)
+```
+
+next.config.mjs:
+```javascript
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.resolve = config.resolve || {};
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        pg: false,
+        net: false,
+        crypto: false,
+        fs: false,
+      };
+    }
+    return config;
+  },
+};
+
+export default nextConfig;
+```"""
+
+    assistant_msg = """The crash is caused by `resolve.fallback: { pg: false }`. This tells webpack to resolve `pg` to `undefined` — the build passes because webpack doesn't try to find the module, but at runtime `require('pg')` returns `undefined`, so `Pool` doesn't exist.
+
+**Replace `resolve.fallback` with `externals`:**
+
+`externals` tells webpack "leave this `require()` call alone — Node.js will resolve it at runtime." The module actually loads instead of becoming `undefined`.
+
+```javascript
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'pg',
+        'pgpass',
+        'split2',
+        'pg-pool',
+        'pg-protocol',
+        'net',
+        'crypto',
+        'fs',
+      ];
+    }
+    return config;
+  },
+};
+
+export default nextConfig;
+```
+
+The key distinction:
+- `resolve.fallback: { pg: false }` → `require('pg')` returns `undefined` → runtime crash
+- `externals: ['pg']` → `require('pg')` resolved by Node.js at runtime → works"""
+
+    return {
+        "messages": [
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
+def generate_negative_multiple_builtins_fallback() -> dict:
+    """Negative example: fallback with multiple Node.js builtins."""
+
+    user_msg = """`npm run build` output:
+
+```
+./lib/signal/adapter.ts:1:1
+Module not found: Can't resolve 'net'
+> 1 | import { createConnection } from 'net';
+    | ^
+
+Import trace for requested module:
+./instrumentation.ts
+
+./lib/calendar/token-store.ts:12:1
+Module not found: Can't resolve 'crypto'
+> 12 | import { createCipheriv } from 'crypto';
+     | ^
+
+Import trace for requested module:
+./lib/signal/router.ts
+./instrumentation.ts
+
+> Build failed because of webpack errors
+```
+
+next.config.js:
+```javascript
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+};
+
+module.exports = nextConfig;
+```"""
+
+    assistant_msg = """The build fails because webpack tries to bundle `net` and `crypto`, which are Node.js built-in modules available only at runtime.
+
+**The fix:** Add webpack `externals` — NOT `resolve.fallback`:
+
+```javascript
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'net',
+        'crypto',
+        'events',
+        'fs',
+        'fs/promises',
+        'path',
+        'stream',
+        'dns',
+        'tls',
+      ];
+    }
+    return config;
+  },
+};
+
+module.exports = nextConfig;
+```
+
+**Why `externals` and not `resolve.fallback`:**
+- `resolve.fallback: { net: false }` → webpack resolves `net` to `undefined` → build passes but `createConnection` crashes at runtime
+- `config.externals = ['net']` → webpack emits `require('net')` as-is → Node.js loads the real module at runtime
+
+Always use `config.externals` for Node.js built-in modules and server-side npm packages."""
+
+    return {
+        "messages": [
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
+def generate_negative_pg_only_simple() -> dict:
+    """Simple negative: just pg, minimal error — closest to the real test case."""
+
+    user_msg = """`npm run build` output:
+
+```
+Module not found: Can't resolve 'pg'
+
+Import trace for requested module:
+./lib/db.ts
+./app/api/config/route.ts
+
+> Build failed because of webpack errors
+```
+
+next.config.mjs:
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+};
+
+export default nextConfig;
+```"""
+
+    assistant_msg = """The build fails because webpack tries to bundle `pg`, a server-side npm package. Use webpack `externals` to tell webpack to leave it for Node.js to resolve at runtime:
+
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'pg',
+        'pgpass',
+        'split2',
+        'pg-pool',
+        'pg-protocol',
+      ];
+    }
+    return config;
+  },
+};
+
+export default nextConfig;
+```
+
+**Do not** use `resolve.fallback: { pg: false }` — that makes `require('pg')` return `undefined`, which silences the build error but crashes at runtime when the code tries to create a database connection."""
+
+    return {
+        "messages": [
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
+def generate_negative_replace_existing_fallback() -> dict:
+    """Negative example: existing config already has resolve.fallback, must be replaced."""
+
+    user_msg = """The build passes but the server crashes on startup with:
+
+```
+TypeError: Cannot read properties of undefined (reading 'connect')
+    at SignalAdapter.connect (/app/lib/signal/adapter.ts:45:18)
+```
+
+next.config.mjs:
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        net: false,
+        tls: false,
+        dns: false,
+        crypto: false,
+        events: false,
+        fs: false,
+        path: false,
+      };
+    }
+    return config;
+  },
+};
+
+export default nextConfig;
+```"""
+
+    assistant_msg = """The `resolve.fallback` approach is the cause of the crash. Setting modules to `false` makes them `undefined` at runtime — the build passes because webpack stops looking for them, but `net.connect()` fails because `net` is `undefined`.
+
+**Replace the entire `resolve.fallback` block with `externals`:**
+
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        'net',
+        'tls',
+        'dns',
+        'crypto',
+        'events',
+        'fs',
+        'fs/promises',
+        'path',
+        'stream',
+      ];
+    }
+    return config;
+  },
+};
+
+export default nextConfig;
+```
+
+`config.externals` tells webpack "don't bundle these — emit `require()` calls that Node.js resolves at runtime." The modules actually load, so `net.connect()` works as expected."""
+
+    return {
+        "messages": [
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": assistant_msg},
+        ]
+    }
+
+
 def wrap_as_tool_use(plain_example: dict) -> dict:
     """Convert a plain user/assistant example into tool-use format.
 
@@ -1433,20 +1835,32 @@ def main():
     examples.append(generate_mongoose_transitive_example())
     examples.append(generate_events_focused_example())
 
-    # 2b. Tool-use variants of the handcrafted examples
+    # 2b. Extra negative examples — fallback vs externals (the key correction)
+    examples.append(generate_negative_pg_fallback())
+    examples.append(generate_negative_fallback_to_externals_correction())
+    examples.append(generate_negative_multiple_builtins_fallback())
+    examples.append(generate_negative_pg_only_simple())
+    examples.append(generate_negative_replace_existing_fallback())
+
+    # 2c. Tool-use variants of all handcrafted examples
     examples.append(wrap_as_tool_use(generate_negative_example_fallback()))
     examples.append(wrap_as_tool_use(generate_negative_example_client_side()))
     examples.append(wrap_as_tool_use(generate_transitive_deps_example()))
     examples.append(wrap_as_tool_use(generate_pg_progressive_fix_example()))
     examples.append(wrap_as_tool_use(generate_mongoose_transitive_example()))
     examples.append(wrap_as_tool_use(generate_events_focused_example()))
+    examples.append(wrap_as_tool_use(generate_negative_pg_fallback()))
+    examples.append(wrap_as_tool_use(generate_negative_fallback_to_externals_correction()))
+    examples.append(wrap_as_tool_use(generate_negative_multiple_builtins_fallback()))
+    examples.append(wrap_as_tool_use(generate_negative_pg_only_simple()))
+    examples.append(wrap_as_tool_use(generate_negative_replace_existing_fallback()))
 
     # 3. Synthetic variations — mix of plain and tool-use format
     config_keys = list(CONFIG_TEMPLATES.keys())
     chain_templates = IMPORT_CHAINS
 
     # Generate combinations of source files and config templates
-    for i in range(40):
+    for i in range(60):
         # Pick 1-3 source files
         num_files = random.randint(1, 3)
         files = random.sample(SOURCE_FILE_SCENARIOS, min(num_files, len(SOURCE_FILE_SCENARIOS)))
@@ -1472,8 +1886,9 @@ def main():
         if random.random() > 0.6:
             existing = random.sample(NODE_BUILTINS[:6], random.randint(1, 3))
 
-        # Maybe include wrong approach discussion
-        include_wrong = random.random() > 0.7
+        # Include wrong approach discussion in ~50% of examples to reinforce
+        # the fallback-is-wrong signal
+        include_wrong = random.random() > 0.5
 
         # Mix of formats: ~1/3 plain, ~1/3 full tool-use, ~1/3 minimal tool-response-only
         fmt_roll = random.random()
