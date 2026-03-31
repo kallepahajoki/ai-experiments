@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source content. The number of drones (two), their locations (north and south of Kouvola), the F/A-18 Hornet identification mission, police cordoning off areas, Minister H\u00e4kk\u00e4nen's comments, and the joint investigation are all consistent with the source. The output uses 'useita' (several) instead of 'muutamia' (a few) for the detected objects, which is a slight nuance difference but not a direct contradiction. The summary omits the direct quote from the minister but paraphrases it accurately.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source content. The number of drones (two), their locations (north and south of Kouvola), the F/A-18 Hornet identification mission, police cordoning off areas, Minister H\u00e4kk\u00e4nen's comments, and the joint investigation are all consistent with the source. The output uses 'useita' (several) instead of 'muutamia' (a few) for the detected objects, which is a slight nuance difference but not a direct contradiction. The summary omits the direct quote from the minister but paraphrases it accurately.\"\n}\n```",
+  "judge_prompt_tokens": 730,
+  "judge_completion_tokens": 170,
+  "judge_cost_usd": 0.0079,
+  "timestamp": 1774947888.345838
+}

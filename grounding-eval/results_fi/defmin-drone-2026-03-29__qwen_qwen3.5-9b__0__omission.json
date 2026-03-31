@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary covers the main facts well. The qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is omitted, which is a caveat indicating preliminary nature of the drone crash information. H\u00e4kk\u00e4nen's statement about authorities reacting 'immediately' is simplified. The word 'muutamia' (a few) is changed to 'useita' (several), which slightly alters the meaning but is not an omission per se. No critical omissions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin kohteita sunnuntai-aamuna\",\n    \"Kohteet olivat matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Havaittu muutamia kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"H\u00e4kk\u00e4nen: Suhtaudumme asiaan hyvin vakavasti\",\n    \"H\u00e4kk\u00e4nen: Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Kohteet kuvattiin 'pieniksi' (pieni\u00e4 kohteita)\", \"importance\": \"low\"},\n    {\"fact\": \"Qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) regarding the downed drones\", \"importance\": \"medium\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen totesi turvallisuusviranomaisten reagoineen asiaan 'v\u00e4litt\u00f6m\u00e4sti'\", \"importance\": \"medium\"},\n    {\"fact\": \"Ilmavoimat oli paikalla nimenomaan 'tunnistusteht\u00e4v\u00e4ss\u00e4' (identification mission), not just investigating\", \"importance\": \"low\"},\n    {\"fact\": \"L\u00e4hteess\u00e4 sanotaan 'muutamia' kohteita, tiivistelm\u00e4ss\u00e4 'useita' \u2014 muutos merkityksess\u00e4\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary covers the main facts well. The qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is omitted, which is a caveat indicating preliminary nature of the drone crash information. H\u00e4kk\u00e4nen's statement about authorities reacting 'immediately' is simplified. The word 'muutamia' (a few) is changed to 'useita' (several), which slightly alters the meaning but is not an omission per se. No critical omissions were found.\"\n}\n```",
+  "judge_prompt_tokens": 716,
+  "judge_completion_tokens": 724,
+  "judge_cost_usd": 0.02168,
+  "timestamp": 1774947888.347671
+}

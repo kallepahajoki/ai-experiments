@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The key hedging expression 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved as 'T\u00e4m\u00e4nhetkisten tietojen mukaan' in the output. The characterization 'harhautunut/harhautuneet' (strayed) is also preserved. No significant hedging was removed. The output is largely faithful to the source's level of uncertainty.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"on harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 the word 'harhautunut' (strayed/wandered) implies accidental entry, a characterization rather than confirmed fact\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"T\u00e4m\u00e4nhetkisten tietojen mukaan kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle\"\n    },\n    {\n      \"expression\": \"on harhautunut\",\n      \"preserved\": true,\n      \"output_version\": \"lenokit ovat harhautuneet Suomeen\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The key hedging expression 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved as 'T\u00e4m\u00e4nhetkisten tietojen mukaan' in the output. The characterization 'harhautunut/harhautuneet' (strayed) is also preserved. No significant hedging was removed. The output is largely faithful to the source's level of uncertainty.\"\n}\n```",
+  "judge_prompt_tokens": 750,
+  "judge_completion_tokens": 441,
+  "judge_cost_usd": 0.014775,
+  "timestamp": 1774947888.347283
+}

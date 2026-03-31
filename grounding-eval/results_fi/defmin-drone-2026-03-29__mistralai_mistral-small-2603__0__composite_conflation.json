@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The most significant conflation is the use of 'pudotettiin' (were brought down) instead of 'pudonnut' (fell), which merges the independent fact of drones falling to the ground with an implied military action, creating a false causal claim that the drones were actively shot down.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Yksi drooni pudotettiin maahan Kouvolan pohjoispuolella, toinen it\u00e4puolella.\",\n      \"source_facts\": [\"yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\", \"toinen drooni Kouvolan it\u00e4puolella\"],\n      \"explanation\": \"The source uses 'pudonnut' (fell/dropped), indicating the drones fell to the ground on their own. The summary uses 'pudotettiin' (were shot/brought down), which is a causative form implying they were actively downed by someone. This merges the fact of the drones falling with an implied action by the military (the F/A-18 Hornet mission), creating a false causal/combined claim that the drones were deliberately brought down.\"\n    },\n    {\n      \"output_statement\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n.\",\n      \"source_facts\": [\"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\"],\n      \"explanation\": \"Minor: The source says the Air Force 'was present' on an identification mission, while the summary says they 'sent' a fighter for the mission. This is a slight reframing but not a major conflation of two separate facts.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The most significant conflation is the use of 'pudotettiin' (were brought down) instead of 'pudonnut' (fell), which merges the independent fact of drones falling to the ground with an implied military action, creating a false causal claim that the drones were actively shot down.\"\n}\n```",
+  "judge_prompt_tokens": 745,
+  "judge_completion_tokens": 468,
+  "judge_cost_usd": 0.015425,
+  "timestamp": 1774947888.346569
+}

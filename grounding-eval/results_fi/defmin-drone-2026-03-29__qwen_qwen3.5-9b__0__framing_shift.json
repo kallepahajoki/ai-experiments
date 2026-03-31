@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output introduces several subtle framing shifts: amplifying quantity ('muutamia' \u2192 'useita'), prematurely identifying objects as drones, adding implied causality ('Tapahtuman seurauksena'), upgrading the minister's speech act from 'states' to 'confirms', and softening the severity language by dropping 'hyvin' (very). While individually minor, collectively these shifts alter the editorial tone of the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"useita\",\n      \"issue\": \"The source says 'muutamia' (a few), but the output changes this to 'useita' (several/multiple), which subtly amplifies the scale of the incident.\"\n    },\n    {\n      \"output_phrase\": \"(drooneja)\",\n      \"issue\": \"The source describes them as 'matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (small slow low-flying objects). The parenthetical '(drooneja)' immediately identifies them as drones at the point of detection, whereas the source only confirms drones later when describing the ones that fell. This removes the initial ambiguity present in the source.\"\n    },\n    {\n      \"output_phrase\": \"Tapahtuman seurauksena\",\n      \"issue\": \"The phrase 'Tapahtuman seurauksena' (As a consequence of the event) introduces an implied causal chain not present in the source. The source simply states that drones fell; it does not frame the falls as a consequence of the detection or interception event.\"\n    },\n    {\n      \"output_phrase\": \"vahvistaa\",\n      \"issue\": \"The source uses 'toteaa' (states), while the output uses 'vahvistaa' (confirms). 'Vahvistaa' carries a stronger authoritative connotation, subtly shifting the framing of the minister's role from simply commenting to officially confirming.\"\n    },\n    {\n      \"output_phrase\": \"asiaa k\u00e4sitell\u00e4\u00e4n vakavasti\",\n      \"issue\": \"The source quotes the minister saying 'Suhtaudumme asiaan hyvin vakavasti' (We take the matter very seriously). The output softens this to 'asiaa k\u00e4sitell\u00e4\u00e4n vakavasti' (the matter is handled seriously), dropping 'hyvin' (very) and changing the active personal stance to a passive construction, which slightly downplays the tone.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output introduces several subtle framing shifts: amplifying quantity ('muutamia' \u2192 'useita'), prematurely identifying objects as drones, adding implied causality ('Tapahtuman seurauksena'), upgrading the minister's speech act from 'states' to 'confirms', and softening the severity language by dropping 'hyvin' (very). While individually minor, collectively these shifts alter the editorial tone of the source.\"\n}\n```",
+  "judge_prompt_tokens": 706,
+  "judge_completion_tokens": 610,
+  "judge_cost_usd": 0.01878,
+  "timestamp": 1774947888.34762
+}

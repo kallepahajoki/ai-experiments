@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the source without adding external context, background information, or details beyond what was provided. Minor wording differences (e.g., 'l\u00e4hetti' instead of 'on ollut paikalla', 'tutkintaa' instead of 'lis\u00e4tutkimuksia') are paraphrasing rather than scope creep. The typo 'lenokit' instead of 'lennokkeja' is a minor error but not scope creep.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the source without adding external context, background information, or details beyond what was provided. Minor wording differences (e.g., 'l\u00e4hetti' instead of 'on ollut paikalla', 'tutkintaa' instead of 'lis\u00e4tutkimuksia') are paraphrasing rather than scope creep. The typo 'lenokit' instead of 'lennokkeja' is a minor error but not scope creep.\"\n}\n```",
+  "judge_prompt_tokens": 687,
+  "judge_completion_tokens": 167,
+  "judge_cost_usd": 0.00761,
+  "timestamp": 1774947888.3473332
+}

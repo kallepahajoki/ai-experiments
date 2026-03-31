@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary is largely faithful in tone and content. The only notable framing issue is the substitution of 'muutamia' (a few) with 'useita' (several), which slightly amplifies the magnitude of the event. No dramatic language, editorial opinion, or implied causality was added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"useita\",\n      \"issue\": \"The source says 'muutamia' (a few), but the summary uses 'useita' (several/multiple), which subtly amplifies the scale of the event. While not strongly editorial, it shifts the framing toward a larger incident than described.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary is largely faithful in tone and content. The only notable framing issue is the substitution of 'muutamia' (a few) with 'useita' (several), which slightly amplifies the magnitude of the event. No dramatic language, editorial opinion, or implied causality was added.\"\n}\n```",
+  "judge_prompt_tokens": 733,
+  "judge_completion_tokens": 195,
+  "judge_cost_usd": 0.00854,
+  "timestamp": 1774947888.3467882
+}

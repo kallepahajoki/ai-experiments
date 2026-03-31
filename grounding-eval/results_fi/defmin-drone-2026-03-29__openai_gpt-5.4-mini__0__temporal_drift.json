@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The main temporal drift is the tense change from present perfect 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present for the identification task \u2014 ongoing/recent) to simple past 'suoritti tunnistusteht\u00e4v\u00e4n' (carried out the identification task \u2014 completed). A secondary minor drift is 'ovat reagoineet' (have reacted, present perfect) changed to 'reagoivat' (react, present tense). Event ordering is preserved correctly. No wrong dates or training-data temporal bleed detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect, ongoing/recent)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"v\u00e4litt\u00f6m\u00e4sti\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"suoritti (simple past)\",\n    \"T\u00e4m\u00e4nhetkisten tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"heti\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"suoritti tunnistusteht\u00e4v\u00e4n (simple past / preterite)\",\n      \"source_temporal\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 (present perfect, implying ongoing or recently completed presence)\",\n      \"explanation\": \"The source uses the present perfect 'on ollut paikalla' suggesting the Air Force has been (and possibly still is) present for the identification task. The summary changes this to the simple past 'suoritti' (carried out), which implies the task is completed and finished, subtly shifting the temporal aspect from an ongoing/recent state to a concluded event.\"\n    },\n    {\n      \"output_temporal\": \"reagoivat heti\",\n      \"source_temporal\": \"ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n      \"explanation\": \"The source uses the present perfect 'ovat reagoineet' (have reacted), indicating a completed action with present relevance. The summary uses the present tense 'reagoivat' (react), which could be read as a general/habitual present rather than a completed past action. This is a minor tense shift.\"\n    },\n    {\n      \"output_temporal\": \"eritt\u00e4in vakavasti\",\n      \"source_temporal\": \"hyvin vakavasti\",\n      \"explanation\": \"Not a temporal drift per se, but a slight intensification change ('hyvin' \u2192 'eritt\u00e4in'). Noted but not a temporal issue.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The main temporal drift is the tense change from present perfect 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present for the identification task \u2014 ongoing/recent) to simple past 'suoritti tunnistusteht\u00e4v\u00e4n' (carried out the identification task \u2014 completed). A secondary minor drift is 'ovat reagoineet' (have reacted, present perfect) changed to 'reagoivat' (react, present tense). Event ordering is preserved correctly. No wrong dates or training-data temporal bleed detected.\"\n}\n```",
+  "judge_prompt_tokens": 737,
+  "judge_completion_tokens": 683,
+  "judge_cost_usd": 0.02076,
+  "timestamp": 1774947888.346999
+}

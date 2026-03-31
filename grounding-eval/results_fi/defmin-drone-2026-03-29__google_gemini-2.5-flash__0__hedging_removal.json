@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "Two instances of hedging modification: (1) 'muutamia' (a few) changed to 'useita' (several), which is a minor quantifier shift rather than a strict hedging removal. (2) The minister's characterization that drones 'strayed' (harhautunut) into Finnish territory \u2014 which implies accidental or uncertain intent \u2014 is dropped from the output, replaced by a neutral paraphrase. The key hedging phrase 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is properly preserved. Overall, the hedging removals are relatively minor and do not fundamentally misrepresent critical claims as established fact.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita (a few slow-moving small objects)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan... (According to current information, one drone has fallen...)\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja (drones have strayed into Finland's territory \u2014 implying accidental/uncertain intent)\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"useita (several) \u2014 changes 'a few' to 'several', slightly amplifying but both are vague quantifiers; however 'useita' suggests more than 'muutamia'\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"T\u00e4m\u00e4nhetkisten tietojen mukaan\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"preserved\": false,\n      \"output_version\": \"The output omits the minister's direct quote about drones having 'strayed' (harhautunut) into Finnish territory, replacing it with a general paraphrase 'kommentoi tapausta vakavana', losing the hedging nuance of accidental entry\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"Two instances of hedging modification: (1) 'muutamia' (a few) changed to 'useita' (several), which is a minor quantifier shift rather than a strict hedging removal. (2) The minister's characterization that drones 'strayed' (harhautunut) into Finnish territory \u2014 which implies accidental or uncertain intent \u2014 is dropped from the output, replaced by a neutral paraphrase. The key hedging phrase 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is properly preserved. Overall, the hedging removals are relatively minor and do not fundamentally misrepresent critical claims as established fact.\"\n}\n```",
+  "judge_prompt_tokens": 825,
+  "judge_completion_tokens": 633,
+  "judge_cost_usd": 0.01995,
+  "timestamp": 1774947888.3460102
+}

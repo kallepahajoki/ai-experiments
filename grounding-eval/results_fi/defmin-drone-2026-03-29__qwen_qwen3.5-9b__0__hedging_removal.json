@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which is a significant hedging expression indicating the information about drones falling may be preliminary and subject to change. The output drops this entirely and even replaces it with 'Tapahtuman seurauksena' (as a consequence of the event), presenting the drone crashes as established fact. Additionally, the source describes the objects as 'muutamia...pieni\u00e4 kohteita' (a few small objects), while the output changes this to 'useita...kohteita (drooneja)' \u2014 both altering the quantity qualifier and explicitly identifying them as drones, whereas the source left them as unidentified objects at that point. The minister's verb 'toteaa' (states) is changed to 'vahvistaa' (confirms), which upgrades a neutral statement to an authoritative confirmation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\"\n    },\n    {\n      \"expression\": \"toteaa\",\n      \"context\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: \\\"Suomen alueelle on harhautunut lennokkeja.\\\"\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"useita hitaita, matalalla lent\u00e4vi\u00e4 kohteita (drooneja)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Tapahtuman seurauksena yksi drooni pudonnut maahan Kouvolan pohjoispuolella ja toinen Kouvolan it\u00e4puolella\"\n    },\n    {\n      \"expression\": \"toteaa\",\n      \"preserved\": false,\n      \"output_version\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen vahvistaa, ett\u00e4 Suomen alueelle on harhautunut lennokkeja\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which is a significant hedging expression indicating the information about drones falling may be preliminary and subject to change. The output drops this entirely and even replaces it with 'Tapahtuman seurauksena' (as a consequence of the event), presenting the drone crashes as established fact. Additionally, the source describes the objects as 'muutamia...pieni\u00e4 kohteita' (a few small objects), while the output changes this to 'useita...kohteita (drooneja)' \u2014 both altering the quantity qualifier and explicitly identifying them as drones, whereas the source left them as unidentified objects at that point. The minister's verb 'toteaa' (states) is changed to 'vahvistaa' (confirms), which upgrades a neutral statement to an authoritative confirmation.\"\n}\n```",
+  "judge_prompt_tokens": 767,
+  "judge_completion_tokens": 672,
+  "judge_cost_usd": 0.020635,
+  "timestamp": 1774947888.3475718
+}

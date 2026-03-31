@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values and quantities in the output match the source. The numbers F/A-18, yksi (one drone), and toinen (second drone) are faithfully reproduced. Note: the source says 'on pudonnut' (fell/dropped) while the output says 'pudotettiin' (was shot down), which changes the meaning but is not a numerical distortion.",
+    "severity": "high"
+  },
+  "raw_judge_response": "\n\n```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"F/A-18\", \"yksi\", \"toinen\"],\n  \"numbers_in_output\": [\"F/A-18\", \"Yksi\", \"toinen\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values and quantities in the output match the source. The numbers F/A-18, yksi (one drone), and toinen (second drone) are faithfully reproduced. Note: the source says 'on pudonnut' (fell/dropped) while the output says 'pudotettiin' (was shot down), which changes the meaning but is not a numerical distortion.\"\n}\n```",
+  "judge_prompt_tokens": 736,
+  "judge_completion_tokens": 188,
+  "judge_cost_usd": 0.00838,
+  "timestamp": 1774947888.346312
+}

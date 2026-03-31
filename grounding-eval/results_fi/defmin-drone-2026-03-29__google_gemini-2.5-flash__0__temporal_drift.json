@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.8,
+    "evidence": "The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (present perfect, ongoing relevance), while the output renders this as 'Ilmavoimat suoritti tunnistusteht\u00e4v\u00e4n' (preterite, completed action). This tense change subtly alters the temporal framing from an ongoing/recently relevant situation to a concluded event. All other temporal elements (sunnuntaiaamuna, present perfect for drone crashes, police cordons, and authorities' response) are faithfully preserved, and event ordering is correct.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect, ongoing/recent)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"suoritti (simple past/preterite)\",\n    \"T\u00e4m\u00e4nhetkisten tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"suoritti tunnistusteht\u00e4v\u00e4n (simple past \u2013 preterite)\",\n      \"source_temporal\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 (present perfect \u2013 implying ongoing/recent presence)\",\n      \"explanation\": \"The source uses the present perfect 'on ollut paikalla' suggesting the Air Force has been (and possibly still is) present for the identification task. The summary shifts this to the simple past 'suoritti' (carried out), implying the task is completed. This is a tense drift from present perfect (ongoing relevance) to preterite (completed action).\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.8,\n  \"evidence\": \"The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (present perfect, ongoing relevance), while the output renders this as 'Ilmavoimat suoritti tunnistusteht\u00e4v\u00e4n' (preterite, completed action). This tense change subtly alters the temporal framing from an ongoing/recently relevant situation to a concluded event. All other temporal elements (sunnuntaiaamuna, present perfect for drone crashes, police cordons, and authorities' response) are faithfully preserved, and event ordering is correct.\"\n}\n```",
+  "judge_prompt_tokens": 765,
+  "judge_completion_tokens": 511,
+  "judge_cost_usd": 0.0166,
+  "timestamp": 1774947888.34595
+}

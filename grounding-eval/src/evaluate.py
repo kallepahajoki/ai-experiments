@@ -1,5 +1,6 @@
 """Evaluate LLM outputs against source documents for failure modes."""
 
+import asyncio
 import json
 import time
 from dataclasses import dataclass, asdict
@@ -85,9 +86,10 @@ def evaluate_output(
     output: GeneratedOutput,
     judge_model: str,
     mode_ids: list[str] | None = None,
+    source_key: str = "text_en",
 ) -> list[EvalResult]:
     """Evaluate a single generated output for all (or specified) failure modes."""
-    source_text = case["source"].get("text_en") or case["source"]["text_fi"]
+    source_text = case["source"].get(source_key) or case["source"]["text_fi"]
     modes = mode_ids or all_mode_ids()
     results = []
 
@@ -126,29 +128,69 @@ def evaluate_all(
     outputs: list[GeneratedOutput],
     judge_model: str,
     mode_ids: list[str] | None = None,
+    concurrency: int = 10,
+    source_key: str = "text_en",
 ) -> list[EvalResult]:
-    """Evaluate all generated outputs against their source cases."""
-    # Load cases indexed by id
+    """Evaluate all generated outputs concurrently."""
     cases = {}
     for p in cases_dir.glob("*.json"):
         case = load_eval_case(p)
         cases[case["id"]] = case
 
-    n_modes = len(mode_ids) if mode_ids else len(all_mode_ids())
-    total = len(outputs) * n_modes
-    done = 0
+    modes = mode_ids or all_mode_ids()
 
-    all_results = []
-    for i, output in enumerate(outputs):
+    # Build all (output, mode) pairs as batch requests
+    work_items = []
+    for output in outputs:
         case = cases[output.case_id]
-        print(f"  [{i+1}/{len(outputs)}] {output.model} run {output.run_index}", flush=True)
-        results = evaluate_output(client, case, output, judge_model, mode_ids)
-        for r in results:
-            done += 1
-            flag = " ⚑" if r.verdict.detected else ""
-            print(f"    [{done}/{total}] {r.failure_mode}: {r.verdict.detected}{flag}", flush=True)
-        all_results.extend(results)
+        source_text = case["source"].get(source_key) or case["source"]["text_fi"]
+        for mode_id in modes:
+            judge_prompt = get_judge_prompt(mode_id, source_text, output.content)
+            work_items.append({
+                "request": {
+                    "model": judge_model,
+                    "messages": [{"role": "user", "content": judge_prompt}],
+                    "temperature": 0.0,
+                    "max_tokens": 4096,
+                },
+                "output": output,
+                "mode_id": mode_id,
+            })
 
+    total = len(work_items)
+    print(f"  Running {total} judge calls with concurrency={concurrency}", flush=True)
+
+    # Run all requests concurrently
+    requests = [w["request"] for w in work_items]
+    completion_results = asyncio.run(
+        client.batch_complete(requests, concurrency=concurrency)
+    )
+
+    # Parse results
+    all_results = []
+    detected_count = 0
+    for item, comp_result in zip(work_items, completion_results):
+        output = item["output"]
+        mode_id = item["mode_id"]
+        verdict = parse_judge_response(mode_id, comp_result.content)
+        if verdict.detected:
+            detected_count += 1
+
+        all_results.append(EvalResult(
+            case_id=output.case_id,
+            subject_model=output.model,
+            run_index=output.run_index,
+            judge_model=judge_model,
+            failure_mode=mode_id,
+            verdict=verdict,
+            raw_judge_response=comp_result.content,
+            judge_prompt_tokens=comp_result.prompt_tokens,
+            judge_completion_tokens=comp_result.completion_tokens,
+            judge_cost_usd=comp_result.cost_usd,
+            timestamp=time.time(),
+        ))
+
+    print(f"  Done: {detected_count}/{total} failures detected", flush=True)
     return all_results
 
 

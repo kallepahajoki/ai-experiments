@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the factual tone of the source. No hedging language (such as 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'v\u00e4itetysti') has been added. All definitive statements from the source are presented as definitive in the output. Minor wording changes (e.g., 'lenokit ovat harhautuneet' instead of direct quote) do not introduce uncertainty.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the factual tone of the source. No hedging language (such as 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'v\u00e4itetysti') has been added. All definitive statements from the source are presented as definitive in the output. Minor wording changes (e.g., 'lenokit ovat harhautuneet' instead of direct quote) do not introduce uncertainty.\"\n}\n```",
+  "judge_prompt_tokens": 664,
+  "judge_completion_tokens": 157,
+  "judge_cost_usd": 0.007245,
+  "timestamp": 1774947888.3472981
+}

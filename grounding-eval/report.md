@@ -152,9 +152,53 @@ Tied worst with Gemini Flash but for different reasons. This model fails across 
 
 **"harhautunut" (strayed) is a litmus test.** The Finnish minister chose this word carefully — it implies accidental incursion, not hostile intent. Sonnet 4.6 turned it into "unauthorized", Gemini into "intrusion", GPT 5.4 mini into "entered" (neutral but losing the accidental implication). No model preserved the accidental connotation faithfully.
 
-**Nobody fabricated "Russian drones".** The specific HS hallucination didn't reproduce here, likely because the task prompt used the English translation rather than asking models to interpret the Finnish original. This suggests the HS failure may have involved the model applying geopolitical priors to a Finnish-language source — a hypothesis worth testing with Finnish-language prompts.
+**Nobody fabricated "Russian drones".** The specific HS hallucination didn't reproduce here — not in the English eval, and not in the Finnish eval either (see below). We don't know what model HS uses, its system prompt, what other context is fed alongside the press release, or whether it's a fine-tuned model. The fabrication likely arose from a combination of factors specific to their pipeline, not just the source language. What we can say: a judge call checking the output against the source would have caught it regardless.
 
 **Cost vs quality is dramatic.** GPT 5.4 mini at $0.0007/run massively outperformed Sonnet 4.6 on faithfulness. The cheapest model was the most truthful.
+
+---
+
+## Finnish-Language Eval
+
+The English eval gave models a pre-translated source, removing the challenge of working with Finnish text. To test whether Finnish source material changes behavior, we re-ran the benchmark with the original Finnish press release and a Finnish task prompt ("Tiivistä seuraava Puolustusministeriön tiedote. Sisällytä kaikki keskeiset tiedot."). Single run per model (higher variance, but directionally useful).
+
+### Finnish Results (1 run, 84 judge calls)
+
+```
+Model                                      Fabricated Addit      Contradiction   Entity Substitut   Numerical Distor     Temporal Drift   Hedging Removal    Hedging Addition   Framing Shift /    Scope Creep / Co   Omission of Crit   Composite Claim    Instruction Leak
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+anthropic/claude-sonnet-4.6                        0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
+google/gemini-2.5-flash                          100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)
+mistralai/mistral-small-2603                     100% (1/1)         100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)
+nvidia/nemotron-3-super-120b-a12b:free             0% (0/1)         100% (1/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
+openai/gpt-5.4-mini                                0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
+qwen/qwen3.5-122b-a10b                             0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
+qwen/qwen3.5-9b                                    0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)
+```
+
+### English vs Finnish Comparison
+
+| Model | English | Finnish | Change |
+|---|---|---|---|
+| qwen/qwen3.5-122b-a10b | 19.4% | **8.3%** | improved |
+| openai/gpt-5.4-mini | **5.6%** | 16.7% | worse |
+| anthropic/claude-sonnet-4.6 | 27.8% | 33.3% | worse |
+| qwen/qwen3.5-9b | 36.1% | 41.7% | worse |
+| nvidia/nemotron-3-super-120b-a12b | 16.7% | 41.7% | much worse |
+| google/gemini-2.5-flash | 36.1% | 50.0% | worse |
+| mistralai/mistral-small-2603 | 22.2% | **66.7%** | much worse |
+
+### Finnish Eval Notes
+
+**Most models did worse on Finnish**, as expected — Finnish is lower-resource and morphologically complex. Temporal drift became universal (every model flagged), likely because Finnish tense/aspect is harder to preserve in summarization.
+
+**Mistral collapsed.** 66.7% failure rate with 100% critical. It wrote "pudotettiin" (were shot down) instead of "pudonnut" (crashed/fell down) — the source says drones fell to the ground, Mistral says they were taken down. Hit 8 of 12 failure modes.
+
+**Qwen 122b improved.** Only 8.3% failure rate — better than its English run. It preserved "harhautuneet" and "tämänhetkisten tietojen mukaan". May be more careful when working within Finnish text rather than cross-language summarization.
+
+**Temporal drift is universal in Finnish.** Every model was flagged. Finnish tense and aspect nuances are harder to preserve than English equivalents.
+
+**Still no "Russian drones" fabrication**, even with Finnish source text. We don't know what model HS uses, what system prompt it has, what additional context is fed into the pipeline, or whether it's a fine-tuned or older model. Their setup may have included context (e.g. recent news, geopolitical priors, or retrieval-augmented context) that primed the fabrication in ways our isolated press-release-only test does not replicate.
 
 ## Could an LLM Judge Have Prevented the HS Error?
 
@@ -174,8 +218,16 @@ This is a textbook **fabricated addition** — the most critical failure mode in
 
 ## Evaluation Metadata
 
+**English eval:**
 - **Judge model:** anthropic/claude-opus-4.6
 - **Runs per model:** 3
 - **Total judge calls:** 252
 - **Total judge cost:** ~$2.34
-- **Eval case:** Finnish MoD press release on suspected drone territorial violation (2026-03-29)
+
+**Finnish eval:**
+- **Judge model:** anthropic/claude-opus-4.6
+- **Runs per model:** 1
+- **Total judge calls:** 84
+- **Total judge cost:** ~$1.10
+
+**Eval case:** Finnish MoD press release on suspected drone territorial violation (2026-03-29)

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. The source's factual claims about drone sightings, crashes, police cordons, and the minister's statement are all rendered without added uncertainty. The only notable change is that the minister's direct quote is paraphrased, but the paraphrase does not introduce hedging \u2014 it states he 'kommentoi tapausta vakavana' and that authorities 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti,' which accurately reflects the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. The source's factual claims about drone sightings, crashes, police cordons, and the minister's statement are all rendered without added uncertainty. The only notable change is that the minister's direct quote is paraphrased, but the paraphrase does not introduce hedging \u2014 it states he 'kommentoi tapausta vakavana' and that authorities 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti,' which accurately reflects the source.\"\n}\n```",
+  "judge_prompt_tokens": 739,
+  "judge_completion_tokens": 185,
+  "judge_cost_usd": 0.00832,
+  "timestamp": 1774947888.34603
+}

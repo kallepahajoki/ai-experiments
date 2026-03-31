@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The output replaces 'hyvin vakavasti' with 'eritt\u00e4in vakavasti', subtly intensifying the minister's quoted language. While both mean 'very seriously' / 'extremely seriously', 'eritt\u00e4in' carries a slightly stronger connotation than 'hyvin' in Finnish, which constitutes a minor framing shift in the paraphrased quote. Otherwise the summary is tonally faithful to the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"eritt\u00e4in vakavasti\",\n      \"issue\": \"The source uses 'hyvin vakavasti' (very seriously), but the output changes this to 'eritt\u00e4in vakavasti' (extremely seriously), which is a slight intensification of the minister's stated tone.\"\n    },\n    {\n      \"output_phrase\": \"reagoivat heti\",\n      \"issue\": \"The source uses 'v\u00e4litt\u00f6m\u00e4sti' (immediately), which is faithfully close to 'heti' (right away/immediately). This is a minor synonym substitution but not a significant framing shift.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The output replaces 'hyvin vakavasti' with 'eritt\u00e4in vakavasti', subtly intensifying the minister's quoted language. While both mean 'very seriously' / 'extremely seriously', 'eritt\u00e4in' carries a slightly stronger connotation than 'hyvin' in Finnish, which constitutes a minor framing shift in the paraphrased quote. Otherwise the summary is tonally faithful to the source.\"\n}\n```",
+  "judge_prompt_tokens": 736,
+  "judge_completion_tokens": 297,
+  "judge_cost_usd": 0.011105,
+  "timestamp": 1774947888.347062
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source content. Minor wording differences (e.g., 'lenokit' vs 'lennokkeja', 'l\u00e4hetti' vs 'on ollut paikalla') are paraphrases rather than contradictions. All key facts \u2014 the Sunday morning detections, the F/A-18 identification mission, two drones falling near Kouvola, police cordoning off areas, and Minister H\u00e4kk\u00e4nen's statement \u2014 are consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source content. Minor wording differences (e.g., 'lenokit' vs 'lennokkeja', 'l\u00e4hetti' vs 'on ollut paikalla') are paraphrases rather than contradictions. All key facts \u2014 the Sunday morning detections, the F/A-18 identification mission, two drones falling near Kouvola, police cordoning off areas, and Minister H\u00e4kk\u00e4nen's statement \u2014 are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 655,
+  "judge_completion_tokens": 152,
+  "judge_cost_usd": 0.007075,
+  "timestamp": 1774947888.347183
+}

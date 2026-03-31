@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The output introduces a fabricated institutional label ('Puolustusministeri\u00f6n tiedote'), changes 'muutamia' (a few) to 'useita' (several) which inflates the scale, and uses 'pudotuspaikat' instead of the neutral 'alueet'. The minister's quote is also editorially paraphrased, losing the emphasis 'hyvin vakavasti'. While mostly faithful, these shifts collectively introduce subtle editorial framing not present in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Puolustusministeri\u00f6n tiedote: Droonihavaintoja ja -pudotuksia Kaakkois-Suomessa\",\n      \"issue\": \"The title labels this as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin), but the source does not identify itself as such. This adds an institutional framing not present in the original.\"\n    },\n    {\n      \"output_phrase\": \"pudotuspaikat\",\n      \"issue\": \"The word 'pudotuspaikat' (crash/drop sites) is slightly more dramatic/specific terminology than the source's neutral 'alueet' (areas). Minor editorial shift.\"\n    },\n    {\n      \"output_phrase\": \"kommentoi tapausta vakavana\",\n      \"issue\": \"The source quotes the minister saying 'Suhtaudumme asiaan hyvin vakavasti' (we take the matter very seriously). The summary rephrases this as 'kommentoi tapausta vakavana' (commented on the incident as serious), which drops the emphasis 'hyvin' (very) and slightly softens the tone, but also editorially paraphrases a direct quote into an indirect characterization.\"\n    },\n    {\n      \"output_phrase\": \"useita\",\n      \"issue\": \"The source says 'muutamia' (a few), while the output uses 'useita' (several/multiple), which subtly inflates the number and shifts the framing to suggest more objects were detected.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The output introduces a fabricated institutional label ('Puolustusministeri\u00f6n tiedote'), changes 'muutamia' (a few) to 'useita' (several) which inflates the scale, and uses 'pudotuspaikat' instead of the neutral 'alueet'. The minister's quote is also editorially paraphrased, losing the emphasis 'hyvin vakavasti'. While mostly faithful, these shifts collectively introduce subtle editorial framing not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 764,
+  "judge_completion_tokens": 526,
+  "judge_cost_usd": 0.01697,
+  "timestamp": 1774947888.346067
+}

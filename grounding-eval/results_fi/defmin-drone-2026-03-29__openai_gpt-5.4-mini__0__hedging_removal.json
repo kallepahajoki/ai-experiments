@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The key hedging expression 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved as 'T\u00e4m\u00e4nhetkisten tietojen mukaan' in the output. The characterization 'harhautunut' (strayed) is also retained. Minor wording changes such as 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti' and 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'heti' are stylistic rather than hedging-related. No critical hedging was removed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"on harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 the word 'harhautunut' (strayed/wandered) implies accidental/uncertain origin rather than deliberate intrusion.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"T\u00e4m\u00e4nhetkisten tietojen mukaan\"\n    },\n    {\n      \"expression\": \"on harhautunut\",\n      \"preserved\": true,\n      \"output_version\": \"Suomen alueelle on harhautunut lennokkeja\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The key hedging expression 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved as 'T\u00e4m\u00e4nhetkisten tietojen mukaan' in the output. The characterization 'harhautunut' (strayed) is also retained. Minor wording changes such as 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti' and 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'heti' are stylistic rather than hedging-related. No critical hedging was removed.\"\n}\n```",
+  "judge_prompt_tokens": 797,
+  "judge_completion_tokens": 451,
+  "judge_cost_usd": 0.01526,
+  "timestamp": 1774947888.347025
+}

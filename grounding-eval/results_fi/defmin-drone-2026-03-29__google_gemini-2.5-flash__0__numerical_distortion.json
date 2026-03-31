@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source uses 'muutamia' (a few) to describe the number of observed objects, while the output uses 'useita' (several), which implies a somewhat larger quantity. The number of drones that fell (two) is accurately reported.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"2 (total drones fallen)\"],\n  \"numbers_in_output\": [\"useita (several)\", \"kaksi (two drones)\", \"2 (total drones fallen)\"],\n  \"distortions\": [\n    {\"output_value\": \"useita (several)\", \"source_value\": \"muutamia (a few)\", \"explanation\": \"The source says 'muutamia' (a few) objects were observed, while the output says 'useita' (several/multiple), which slightly inflates the quantity implied.\"}\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source uses 'muutamia' (a few) to describe the number of observed objects, while the output uses 'useita' (several), which implies a somewhat larger quantity. The number of drones that fell (two) is accurately reported.\"\n}\n```",
+  "judge_prompt_tokens": 757,
+  "judge_completion_tokens": 255,
+  "judge_cost_usd": 0.01016,
+  "timestamp": 1774947888.345904
+}

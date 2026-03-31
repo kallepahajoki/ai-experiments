@@ -33,9 +33,11 @@ def load_all_cases(eval_dir: Path) -> list[dict]:
     return cases
 
 
-def build_messages(case: dict) -> list[dict]:
-    source_text = case["source"].get("text_en") or case["source"]["text_fi"]
-    task_prompt = case["task_prompt"]
+def build_messages(case: dict, source_key: str = "text_en") -> list[dict]:
+    source_text = case["source"].get(source_key) or case["source"]["text_fi"]
+    task_prompt = case.get("task_prompt_fi") if source_key == "text_fi" else case["task_prompt"]
+    if task_prompt is None:
+        task_prompt = case["task_prompt"]
 
     return [
         {
@@ -51,8 +53,9 @@ def generate_outputs(
     models: list[str],
     runs_per_model: int = 3,
     temperature: float = 0.3,
+    source_key: str = "text_en",
 ) -> list[GeneratedOutput]:
-    messages = build_messages(case)
+    messages = build_messages(case, source_key=source_key)
     outputs = []
 
     for model in models:

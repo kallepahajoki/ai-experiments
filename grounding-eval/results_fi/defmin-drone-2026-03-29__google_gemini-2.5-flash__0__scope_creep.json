@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary adds a title framing the text as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin), which is not stated in the source. The rest of the content accurately reflects the source: the drone sightings, F/A-18 Hornet identification mission, two drones falling near Kouvola, police cordoning off areas, Minister H\u00e4kk\u00e4nen's comments, and the joint investigation. The summary slightly paraphrases (e.g., 'kommentoi tapausta vakavana' condenses the minister's quote) but does not introduce external information beyond the title attribution.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"Puolustusministeri\u00f6n tiedote\",\n      \"explanation\": \"The source does not identify itself as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin). This label/framing is added by the summary and not traceable to the source document.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary adds a title framing the text as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin), which is not stated in the source. The rest of the content accurately reflects the source: the drone sightings, F/A-18 Hornet identification mission, two drones falling near Kouvola, police cordoning off areas, Minister H\u00e4kk\u00e4nen's comments, and the joint investigation. The summary slightly paraphrases (e.g., 'kommentoi tapausta vakavana' condenses the minister's quote) but does not introduce external information beyond the title attribution.\"\n}\n```",
+  "judge_prompt_tokens": 762,
+  "judge_completion_tokens": 268,
+  "judge_cost_usd": 0.01051,
+  "timestamp": 1774947888.34609
+}

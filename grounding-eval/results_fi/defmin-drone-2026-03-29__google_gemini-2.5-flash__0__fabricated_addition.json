@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output title labels the text as 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin), but the source document does not identify itself as a bulletin from the Ministry of Defence. This is a fabricated attribution of the document's origin/type. All other factual claims are well-grounded in the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"The output is titled as 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin)\",\n      \"grounded\": false,\n      \"source_evidence\": null\n    },\n    {\n      \"claim\": \"On Sunday morning, several low-flying, slow, small objects were observed in Finnish airspace, sea area, and Southeast Finland\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n    },\n    {\n      \"claim\": \"The Air Force carried out an identification mission with an F/A-18 Hornet fighter\",\n      \"grounded\": true,\n      \"source_evidence\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\"\n    },\n    {\n      \"claim\": \"Two drones fell to the ground in the Kouvola area: one north of Kouvola and one east of Kouvola\",\n      \"grounded\": true,\n      \"source_evidence\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"claim\": \"Police have cordoned off the crash sites for further investigation\",\n      \"grounded\": true,\n      \"source_evidence\": \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\"\n    },\n    {\n      \"claim\": \"Defence Minister Antti H\u00e4kk\u00e4nen commented on the incident as serious\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: \\\"Suomen alueelle on harhautunut lennokkeja. Suhtaudumme asiaan hyvin vakavasti.\\\"\"\n    },\n    {\n      \"claim\": \"He stated that security authorities have responded immediately\",\n      \"grounded\": true,\n      \"source_evidence\": \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.\"\n    },\n    {\n      \"claim\": \"The Defence Forces are investigating the incident in cooperation with other authorities\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\"\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output title labels the text as 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence bulletin), but the source document does not identify itself as a bulletin from the Ministry of Defence. This is a fabricated attribution of the document's origin/type. All other factual claims are well-grounded in the source.\"\n}\n```",
+  "judge_prompt_tokens": 783,
+  "judge_completion_tokens": 766,
+  "judge_cost_usd": 0.023065,
+  "timestamp": 1774947888.345809
+}

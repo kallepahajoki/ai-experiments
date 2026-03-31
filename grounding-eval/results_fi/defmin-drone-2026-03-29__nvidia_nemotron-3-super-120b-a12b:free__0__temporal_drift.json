@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The summary shifts two present-perfect constructions ('on ollut paikalla', 'on pudonnut') to simple past ('l\u00e4hetti', 'putosi'), and drops the temporal qualifier 't\u00e4m\u00e4n hetken' from 'tietojen mukaan'. These are minor tense drifts that slightly alter the temporal framing from recent/ongoing relevance to completed past events. No dates, times, or event ordering are changed. The drifts are real but relatively small in impact.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect \u2013 ongoing/recent)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"l\u00e4hetti paikalle (simple past)\",\n    \"putosi maahan (simple past)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"Tiedon mukaan\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti paikalle (simple past \u2013 'l\u00e4hetti')\",\n      \"source_temporal\": \"on ollut paikalla (present perfect \u2013 'on ollut')\",\n      \"explanation\": \"The source uses the present perfect 'on ollut paikalla', implying the Air Force has been / is on scene. The summary shifts this to the simple past 'l\u00e4hetti', which both changes the tense and subtly reframes the action from 'has been present' to 'sent'. This is a minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"putosi maahan (simple past \u2013 'putosi')\",\n      \"source_temporal\": \"on pudonnut maahan (present perfect \u2013 'on pudonnut')\",\n      \"explanation\": \"The source uses the present perfect 'on pudonnut', indicating a recently completed event with present relevance. The summary converts this to the simple past 'putosi', slightly shifting the temporal framing.\"\n    },\n    {\n      \"output_temporal\": \"Tiedon mukaan\",\n      \"source_temporal\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"explanation\": \"The source specifies 'according to current information' (t\u00e4m\u00e4n hetken), emphasizing the provisional, present-moment nature of the data. The summary drops this temporal qualifier, reducing it to a generic 'according to information'. This is a minor loss of temporal nuance.\"\n    },\n    {\n      \"output_temporal\": \"useita\",\n      \"source_temporal\": \"muutamia\",\n      \"explanation\": \"Not strictly temporal, but 'muutamia' (a few) was changed to 'useita' (several), which is a factual quantity drift rather than temporal. Noted for completeness but not a temporal drift per se.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The summary shifts two present-perfect constructions ('on ollut paikalla', 'on pudonnut') to simple past ('l\u00e4hetti', 'putosi'), and drops the temporal qualifier 't\u00e4m\u00e4n hetken' from 'tietojen mukaan'. These are minor tense drifts that slightly alter the temporal framing from recent/ongoing relevance to completed past events. No dates, times, or event ordering are changed. The drifts are real but relatively small in impact.\"\n}\n```",
+  "judge_prompt_tokens": 734,
+  "judge_completion_tokens": 740,
+  "judge_cost_usd": 0.02217,
+  "timestamp": 1774947888.346727
+}

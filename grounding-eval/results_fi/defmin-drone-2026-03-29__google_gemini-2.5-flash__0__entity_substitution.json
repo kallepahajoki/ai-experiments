@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-2.5-flash",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output correspond to entities present in the source. 'Puolustusministeri\u00f6' (Defence Ministry) appears in the output title but is a minor derivation from 'Puolustusministeri' (Defence Minister) in the source \u2014 this is an organizational reference related to the minister mentioned, not a substitution of a different entity. All locations (Suomi, Kaakkois-Suomi, Kouvola), persons (Antti H\u00e4kk\u00e4nen), and organizations (Ilmavoimat, Poliisi, Puolustusvoimat) match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Puolustusministeri\u00f6\", \"Suomi\", \"Kaakkois-Suomi\", \"Ilmavoimat\", \"F/A-18 Hornet\", \"Kouvola\", \"Poliisi\", \"Antti H\u00e4kk\u00e4nen\", \"Puolustusvoimat\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output correspond to entities present in the source. 'Puolustusministeri\u00f6' (Defence Ministry) appears in the output title but is a minor derivation from 'Puolustusministeri' (Defence Minister) in the source \u2014 this is an organizational reference related to the minister mentioned, not a substitution of a different entity. All locations (Suomi, Kaakkois-Suomi, Kouvola), persons (Antti H\u00e4kk\u00e4nen), and organizations (Ilmavoimat, Poliisi, Puolustusvoimat) match the source.\"\n}\n```",
+  "judge_prompt_tokens": 793,
+  "judge_completion_tokens": 268,
+  "judge_cost_usd": 0.010665,
+  "timestamp": 1774947888.345877
+}

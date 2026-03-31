@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source document. It mentions slow-flying small objects detected over sea areas and Southeast Finland, the F/A-18 Hornet identification mission, two drones falling near Kouvola (north and east), police cordoning off areas, Minister H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory, and the joint investigation. The word 'useita' (several) for 'muutamia' (a few) is a slight softening but not a direct contradiction. 'Kouvolassa' is a minor simplification of 'Kouvolan pohjoispuolella/it\u00e4puolella' but the details are then specified correctly. No outright contradictions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source document. It mentions slow-flying small objects detected over sea areas and Southeast Finland, the F/A-18 Hornet identification mission, two drones falling near Kouvola (north and east), police cordoning off areas, Minister H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory, and the joint investigation. The word 'useita' (several) for 'muutamia' (a few) is a slight softening but not a direct contradiction. 'Kouvolassa' is a minor simplification of 'Kouvolan pohjoispuolella/it\u00e4puolella' but the details are then specified correctly. No outright contradictions were found.\"\n}\n```",
+  "judge_prompt_tokens": 674,
+  "judge_completion_tokens": 203,
+  "judge_cost_usd": 0.008445,
+  "timestamp": 1774947888.3453708
+}

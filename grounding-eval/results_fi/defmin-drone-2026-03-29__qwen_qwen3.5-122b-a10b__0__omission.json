@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output omits the description of the objects as 'slow' and 'small' (hitaita pieni\u00e4), and notably omits the Defense Minister's statement that 'security authorities have reacted immediately' (Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti). The latter is a high-importance omission as it conveys the government's immediate response posture, though not critical as the overall meaning of the summary remains largely intact.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Kohteet olivat hitaita ja pieni\u00e4 (hitaita pieni\u00e4 kohteita)\", \"importance\": \"medium\"},\n    {\"fact\": \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\", \"importance\": \"high\"},\n    {\"fact\": \"H\u00e4kk\u00e4sen suora lainaus sis\u00e4lsi kolme erillist\u00e4 lausetta, joista 'Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti' on j\u00e4tetty pois\", \"importance\": \"high\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output omits the description of the objects as 'slow' and 'small' (hitaita pieni\u00e4), and notably omits the Defense Minister's statement that 'security authorities have reacted immediately' (Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti). The latter is a high-importance omission as it conveys the government's immediate response posture, though not critical as the overall meaning of the summary remains largely intact.\"\n}\n```",
+  "judge_prompt_tokens": 699,
+  "judge_completion_tokens": 600,
+  "judge_cost_usd": 0.018495,
+  "timestamp": 1774947888.347361
+}

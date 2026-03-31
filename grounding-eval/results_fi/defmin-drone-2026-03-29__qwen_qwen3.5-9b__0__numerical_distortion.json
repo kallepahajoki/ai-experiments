@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source uses 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-flying small objects), while the output changes this to 'useita hitaita, matalalla lent\u00e4vi\u00e4 kohteita' (several slow-flying objects), inflating the implied number.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"yksi\", \"toinen\"],\n  \"numbers_in_output\": [\"useita\", \"yksi\", \"toinen\"],\n  \"distortions\": [\n    {\"output_value\": \"useita\", \"source_value\": \"muutamia\", \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several/many). 'Useita' implies a larger quantity than 'muutamia', which is a numerical distortion of the quantity described.\"}\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source uses 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-flying small objects), while the output changes this to 'useita hitaita, matalalla lent\u00e4vi\u00e4 kohteita' (several slow-flying objects), inflating the implied number.\"\n}\n```",
+  "judge_prompt_tokens": 699,
+  "judge_completion_tokens": 253,
+  "judge_cost_usd": 0.00982,
+  "timestamp": 1774947888.347494
+}

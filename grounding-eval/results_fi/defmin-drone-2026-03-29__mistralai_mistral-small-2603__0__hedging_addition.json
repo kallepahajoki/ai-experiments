@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "No inappropriate hedging language (may, might, reportedly, allegedly, etc.) was added to the output. The output faithfully preserves the definitive tone of the source statements. One factual alteration was noted (pudonnut \u2192 pudotettiin, changing the meaning from 'fell' to 'was brought down'), but this is a meaning change, not a hedging addition.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [\n    {\n      \"source_statement\": \"yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\",\n      \"output_statement\": \"Yksi drooni pudotettiin maahan Kouvolan pohjoispuolella, toinen it\u00e4puolella.\",\n      \"added_hedging\": \"Not hedging per se, but a meaning change: the source says the drones 'fell/dropped' (pudonnut, intransitive), while the output says they were 'shot down/brought down' (pudotettiin, causative/passive), which is a factual alteration rather than hedging addition.\"\n    }\n  ],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"No inappropriate hedging language (may, might, reportedly, allegedly, etc.) was added to the output. The output faithfully preserves the definitive tone of the source statements. One factual alteration was noted (pudonnut \u2192 pudotettiin, changing the meaning from 'fell' to 'was brought down'), but this is a meaning change, not a hedging addition.\"\n}\n```",
+  "judge_prompt_tokens": 718,
+  "judge_completion_tokens": 303,
+  "judge_cost_usd": 0.011165,
+  "timestamp": 1774947888.346427
+}

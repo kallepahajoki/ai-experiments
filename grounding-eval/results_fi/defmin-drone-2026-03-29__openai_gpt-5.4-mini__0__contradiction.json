@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The summary is highly faithful to the source. The only notable difference is the substitution of 'hyvin vakavasti' with 'eritt\u00e4in vakavasti', which is a minor wording change that slightly intensifies the meaning but does not constitute a clear factual contradiction. All key facts (locations, drone incidents, minister's statements, authorities involved) are accurately represented.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"asiaan suhtaudutaan eritt\u00e4in vakavasti\",\n      \"source_statement\": \"Suhtaudumme asiaan hyvin vakavasti.\",\n      \"explanation\": \"The source says 'hyvin vakavasti' (very seriously), while the output changes this to 'eritt\u00e4in vakavasti' (extremely seriously). While both convey seriousness, the specific wording has been altered, with 'eritt\u00e4in' being a stronger intensifier than 'hyvin'. This is a minor discrepancy rather than a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary is highly faithful to the source. The only notable difference is the substitution of 'hyvin vakavasti' with 'eritt\u00e4in vakavasti', which is a minor wording change that slightly intensifies the meaning but does not constitute a clear factual contradiction. All key facts (locations, drone incidents, minister's statements, authorities involved) are accurately represented.\"\n}\n```",
+  "judge_prompt_tokens": 702,
+  "judge_completion_tokens": 266,
+  "judge_cost_usd": 0.01016,
+  "timestamp": 1774947888.3469281
+}

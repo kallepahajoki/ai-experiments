@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' ('according to current information'), which signals that the information is preliminary and may change. The output shortens this to 'Tiedon mukaan' ('according to information'), which loses the temporal/preliminary nuance ('current' / 'at this moment'). Additionally, 'muutamia' ('a few') is changed to 'useita' ('several'), which is not hedging removal per se but a slight alteration in quantity. The hedging reduction on 'T\u00e4m\u00e4n hetken tietojen mukaan' is moderate \u2014 it concerns a factual claim about drone crashes that was explicitly marked as preliminary in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"useita matalalla lent\u00e4vi\u00e4, hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Tiedon mukaan yksi drooni putosi maahan Kouvolan pohjoispuolella ja toinen Kouvolan it\u00e4puolella\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' ('according to current information'), which signals that the information is preliminary and may change. The output shortens this to 'Tiedon mukaan' ('according to information'), which loses the temporal/preliminary nuance ('current' / 'at this moment'). Additionally, 'muutamia' ('a few') is changed to 'useita' ('several'), which is not hedging removal per se but a slight alteration in quantity. The hedging reduction on 'T\u00e4m\u00e4n hetken tietojen mukaan' is moderate \u2014 it concerns a factual claim about drone crashes that was explicitly marked as preliminary in the source.\"\n}\n```",
+  "judge_prompt_tokens": 794,
+  "judge_completion_tokens": 494,
+  "judge_cost_usd": 0.01632,
+  "timestamp": 1774947888.346758
+}

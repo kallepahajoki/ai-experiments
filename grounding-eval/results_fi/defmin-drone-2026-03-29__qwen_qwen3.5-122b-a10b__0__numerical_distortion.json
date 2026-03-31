@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'yksi drooni' and 'toinen drooni', which totals two drones. The output says 'kaksi droonia', which is numerically equivalent. 'Muutamia' (a few) in the source corresponds to 'muutama' in the output, which is essentially the same quantity (slight grammatical form difference, not a numerical distortion). No numerical distortions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"1 (yksi)\", \"1 (toinen/kaksi)\"],\n  \"numbers_in_output\": [\"muutama\", \"kaksi\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'yksi drooni' and 'toinen drooni', which totals two drones. The output says 'kaksi droonia', which is numerically equivalent. 'Muutamia' (a few) in the source corresponds to 'muutama' in the output, which is essentially the same quantity (slight grammatical form difference, not a numerical distortion). No numerical distortions were found.\"\n}\n```",
+  "judge_prompt_tokens": 682,
+  "judge_completion_tokens": 193,
+  "judge_cost_usd": 0.008235,
+  "timestamp": 1774947888.347213
+}

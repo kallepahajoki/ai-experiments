@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The most notable temporal drift is the tense change from present perfect 'on ollut paikalla' (has been present) to simple past 'tutki' (investigated), shifting the framing from an ongoing/recent situation to a completed past action. Additionally, the collapsing of the minister's two-part statement loses the temporal nuance of 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti' (have reacted immediately).",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect - ongoing/recent)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"toteaa (present tense)\",\n    \"on harhautunut (present perfect)\",\n    \"Suhtaudumme (present tense)\",\n    \"ovat reagoineet (present perfect)\",\n    \"v\u00e4litt\u00f6m\u00e4sti\",\n    \"tutkii (present tense)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"sunnuntai-aamuna\",\n    \"tutki (past tense - imperfect)\",\n    \"pudonnut (past participle, missing auxiliary 'on')\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"vahvistaa (present tense)\",\n    \"on harhautunut (present perfect)\",\n    \"k\u00e4sitell\u00e4\u00e4n (present passive)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"tutki (past tense imperfect)\",\n      \"source_temporal\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 (present perfect, indicating ongoing/recent involvement)\",\n      \"explanation\": \"The source uses present perfect 'on ollut paikalla' suggesting the Air Force has been present (recent/ongoing action). The summary changes this to simple past 'tutki' (investigated), which shifts the temporal framing from an ongoing/recent situation to a completed past event.\"\n    },\n    {\n      \"output_temporal\": \"vahvistaa (confirms)\",\n      \"source_temporal\": \"toteaa (states)\",\n      \"explanation\": \"Minor semantic shift: 'toteaa' (states) is changed to 'vahvistaa' (confirms), which slightly alters the communicative act but is not strictly a temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"k\u00e4sitell\u00e4\u00e4n vakavasti (is being handled seriously)\",\n      \"source_temporal\": \"Suhtaudumme asiaan hyvin vakavasti... Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti (We take this very seriously... Security authorities have reacted immediately)\",\n      \"explanation\": \"The source has two distinct statements: an attitude ('suhtaudumme hyvin vakavasti') and a completed action ('ovat reagoineet v\u00e4litt\u00f6m\u00e4sti'). The summary collapses these into a single present passive 'k\u00e4sitell\u00e4\u00e4n vakavasti', losing the present perfect 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti' (have reacted immediately) which conveyed that immediate action had already been taken.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The most notable temporal drift is the tense change from present perfect 'on ollut paikalla' (has been present) to simple past 'tutki' (investigated), shifting the framing from an ongoing/recent situation to a completed past action. Additionally, the collapsing of the minister's two-part statement loses the temporal nuance of 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti' (have reacted immediately).\"\n}\n```",
+  "judge_prompt_tokens": 707,
+  "judge_completion_tokens": 801,
+  "judge_cost_usd": 0.02356,
+  "timestamp": 1774947888.3475342
+}

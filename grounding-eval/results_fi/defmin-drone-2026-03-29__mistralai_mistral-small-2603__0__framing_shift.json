@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The most significant framing shift is changing 'on pudonnut maahan' (fell down) to 'pudotettiin maahan' (were brought down), which introduces an implied causal action (shoot-down) not stated in the source. Additionally, the minister's statement is editorially characterized with 'korosti' (emphasized), and the initial detection of unidentified objects is prematurely labeled as drones.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"pudotettiin maahan\",\n      \"issue\": \"The source uses the passive/intransitive 'on pudonnut maahan' (fell/dropped down), implying the drones fell on their own. The summary uses 'pudotettiin maahan' (were brought down/shot down), which implies deliberate action by authorities \u2014 introducing causality not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission). The summary rephrases this as 'l\u00e4hetti' (sent/dispatched), adding a slightly more active/decisive framing not explicitly in the source.\"\n    },\n    {\n      \"output_phrase\": \"korosti asian vakavuutta ja viranomaisten nopeaa toimintaa\",\n      \"issue\": \"The word 'korosti' (emphasized/stressed) is editorial. The source simply quotes the minister stating facts ('Suhtaudumme asiaan hyvin vakavasti' and 'reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti'). 'Korosti' adds interpretive framing about the minister's rhetorical intent. Also 'nopeaa toimintaa' (quick action) is a slight reframing of 'v\u00e4litt\u00f6m\u00e4sti' (immediately).\"\n    },\n    {\n      \"output_phrase\": \"dronet\",\n      \"issue\": \"Minor: the source describes the objects as 'matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (low-flying slow small objects) and only later refers to drones that fell. The parenthetical '(dronet)' equates the initial unidentified objects with drones, which the source does not explicitly do at the detection stage.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The most significant framing shift is changing 'on pudonnut maahan' (fell down) to 'pudotettiin maahan' (were brought down), which introduces an implied causal action (shoot-down) not stated in the source. Additionally, the minister's statement is editorially characterized with 'korosti' (emphasized), and the initial detection of unidentified objects is prematurely labeled as drones.\"\n}\n```",
+  "judge_prompt_tokens": 743,
+  "judge_completion_tokens": 611,
+  "judge_cost_usd": 0.01899,
+  "timestamp": 1774947888.3464699
+}

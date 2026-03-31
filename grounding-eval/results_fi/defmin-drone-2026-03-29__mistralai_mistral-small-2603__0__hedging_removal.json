@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.97,
+    "evidence": "The output removes the critical qualifier 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the information about the drones' locations was preliminary. More seriously, the output changes 'on pudonnut maahan' (fell/came down \u2014 intransitive, cause unspecified) to 'pudotettiin maahan' (was brought/shot down \u2014 causative, implying deliberate action), which is a factual distortion beyond mere hedging removal. The minister's hedging term 'harhautunut' (strayed) is also lost.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"on pudonnut maahan\",\n      \"context\": \"yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella \u2014 the source says the drones 'fell/dropped down' (pudonnut), not that they were shot down (pudotettiin)\"\n    },\n    {\n      \"expression\": \"on harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 the minister says drones 'strayed' into Finnish territory, implying accidental/uncertain origin\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Yksi drooni pudotettiin maahan Kouvolan pohjoispuolella, toinen it\u00e4puolella. \u2014 The qualifier 'according to current information' is completely dropped.\"\n    },\n    {\n      \"expression\": \"on pudonnut maahan (fell/came down)\",\n      \"preserved\": false,\n      \"output_version\": \"Yksi drooni pudotettiin maahan \u2014 changed from intransitive 'pudonnut' (fell down) to causative 'pudotettiin' (was shot/brought down), implying deliberate action not stated in the source.\"\n    },\n    {\n      \"expression\": \"on harhautunut (strayed)\",\n      \"preserved\": false,\n      \"output_version\": \"The summary omits the minister's characterization that drones 'strayed' into Finnish airspace, instead just noting he 'emphasized the seriousness'.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.97,\n  \"evidence\": \"The output removes the critical qualifier 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the information about the drones' locations was preliminary. More seriously, the output changes 'on pudonnut maahan' (fell/came down \u2014 intransitive, cause unspecified) to 'pudotettiin maahan' (was brought/shot down \u2014 causative, implying deliberate action), which is a factual distortion beyond mere hedging removal. The minister's hedging term 'harhautunut' (strayed) is also lost.\"\n}\n```",
+  "judge_prompt_tokens": 804,
+  "judge_completion_tokens": 690,
+  "judge_cost_usd": 0.02127,
+  "timestamp": 1774947888.346399
+}

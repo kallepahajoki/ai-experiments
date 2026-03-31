@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "content": "Sunnuntaiaamuna Suomen ilmatilassa merialueella ja Kaakkois\u2011Suomessa havaittiin useita matalalla lent\u00e4vi\u00e4, hitaita pieni\u00e4 kohteita. Ilmavoimat l\u00e4hetti paikalle F/A\u201118 Hornet\u2011h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n. Tiedon mukaan yksi drooni putosi maahan Kouvolan pohjoispuolella ja toinen Kouvolan it\u00e4puolella; poliisi on erist\u00e4nyt kyseiset alueet lis\u00e4tutkimuksia varten. Puolustusministeri Antti H\u00e4kk\u00e4nen kommentoi, ett\u00e4 Suomen alueelle on harhautunut lennokkeja, asiaan suhtaudutaan hyvin vakavasti ja turvallisuusviranomaiset ovat reagoineet v\u00e4litt\u00f6m\u00e4sti. Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.",
+  "prompt_tokens": 251,
+  "completion_tokens": 332,
+  "cost_usd": 0.0,
+  "latency_ms": 27726.402041997062,
+  "timestamp": 1774947693.860302
+}

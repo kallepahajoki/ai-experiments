@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The source uses 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-flying small objects at low altitude), but the summary changes this to 'useita matalalent\u00e4vi\u00e4 pieni\u00e4 kohteita' (several low-flying small objects), inflating the implied number.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"useita (several)\", \"kaksi (two)\", \"1 (yksi)\", \"1 (toinen)\", \"F/A-18\"],\n  \"distortions\": [\n    {\n      \"output_value\": \"useita (several)\",\n      \"source_value\": \"muutamia (a few)\",\n      \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several/multiple), which implies a larger quantity than the original.\"\n    }\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source uses 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-flying small objects at low altitude), but the summary changes this to 'useita matalalent\u00e4vi\u00e4 pieni\u00e4 kohteita' (several low-flying small objects), inflating the implied number.\"\n}\n```",
+  "judge_prompt_tokens": 701,
+  "judge_completion_tokens": 289,
+  "judge_cost_usd": 0.01073,
+  "timestamp": 1774947888.3454452
+}

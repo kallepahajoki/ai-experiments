@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The two drone locations are correctly reported as separate events. The minister's statements are faithfully summarized. No causal connectors are used to fabricate relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The two drone locations are correctly reported as separate events. The minister's statements are faithfully summarized. No causal connectors are used to fabricate relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 710,
+  "judge_completion_tokens": 100,
+  "judge_cost_usd": 0.00605,
+  "timestamp": 1774947888.3457332
+}

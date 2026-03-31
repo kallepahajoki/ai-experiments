@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "Two tense/voice drifts detected: (1) 'on pudonnut maahan' (has fallen) \u2192 'pudotettiin' (was brought down), changing intransitive to causative passive and altering the factual meaning; (2) 'on ollut paikalla' (has been on site) \u2192 'l\u00e4hetti' (sent), shifting from present perfect continuous state to simple past action.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"t\u00e4m\u00e4n hetken tietojen mukaan\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Yksi drooni pudotettiin maahan\",\n      \"source_temporal\": \"yksi drooni on pudonnut maahan\",\n      \"explanation\": \"The source uses 'on pudonnut' (has fallen/dropped \u2014 intransitive, indicating the drone fell on its own), while the summary uses 'pudotettiin' (was shot/brought down \u2014 passive causative), which changes the meaning from an autonomous crash to an active downing by authorities. This also constitutes a subtle tense/voice shift: the source's present perfect intransitive becomes a passive past tense implying deliberate action.\"\n    },\n    {\n      \"output_temporal\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n      \"explanation\": \"The source uses present perfect 'on ollut paikalla' (has been on site), indicating an ongoing or recently completed state. The summary uses simple past 'l\u00e4hetti' (sent), which shifts the tense and slightly reframes the event as a completed discrete action rather than an ongoing presence.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"Two tense/voice drifts detected: (1) 'on pudonnut maahan' (has fallen) \u2192 'pudotettiin' (was brought down), changing intransitive to causative passive and altering the factual meaning; (2) 'on ollut paikalla' (has been on site) \u2192 'l\u00e4hetti' (sent), shifting from present perfect continuous state to simple past action.\"\n}\n```",
+  "judge_prompt_tokens": 744,
+  "judge_completion_tokens": 506,
+  "judge_cost_usd": 0.01637,
+  "timestamp": 1774947888.346352
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All named entities in the output (Suomi, Kaakkois-Suomi, Ilmavoimat, F/A-18 Hornet, Kouvola, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. 'Puolustusministeri\u00f6n tiedote' is an editorial framing label added by the summary, not a substitution of a source entity. The word 'pudotettiin' (was shot down) vs source 'pudonnut' (fell/dropped) is a factual distortion but not an entity substitution.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Suomen\", \"Kaakkois-Suomessa\", \"F/A-18 Hornet\", \"Kouvolan\", \"Puolustusministeri\u00f6\", \"Antti H\u00e4kk\u00e4nen\", \"Puolustusvoimat\", \"Ilmavoimat\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Puolustusministeri\u00f6n tiedotteesta\",\n      \"source_entity\": \"N/A\",\n      \"explanation\": \"The source does not identify itself as a 'Puolustusministeri\u00f6n tiedote' (Defence Ministry press release). This is an added label, not an entity substitution per se.\"\n    }\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All named entities in the output (Suomi, Kaakkois-Suomi, Ilmavoimat, F/A-18 Hornet, Kouvola, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. 'Puolustusministeri\u00f6n tiedote' is an editorial framing label added by the summary, not a substitution of a source entity. The word 'pudotettiin' (was shot down) vs source 'pudonnut' (fell/dropped) is a factual distortion but not an entity substitution.\"\n}\n```",
+  "judge_prompt_tokens": 772,
+  "judge_completion_tokens": 353,
+  "judge_cost_usd": 0.012685,
+  "timestamp": 1774947888.3462908
+}

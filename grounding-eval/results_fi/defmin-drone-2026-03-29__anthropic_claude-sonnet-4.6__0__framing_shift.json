@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "Two minor framing shifts detected: (1) the minister's direct quote is paraphrased with 'korosti' (emphasized), adding editorial characterization of tone beyond the neutral 'toteaa' (states) in the source; (2) 'on ollut paikalla' (has been present) is reframed as 'l\u00e4hetti' (dispatched), subtly adding a more action-oriented framing. Both are minor and do not significantly distort the meaning, but they introduce slight editorial nuance.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"korosti viranomaisten suhtautuvan asiaan vakavasti\",\n      \"issue\": \"The word 'korosti' (emphasized/stressed) introduces an editorial characterization of the minister's tone. The source simply states 'toteaa' (states) and quotes him directly saying 'Suhtaudumme asiaan hyvin vakavasti.' The summary reframes a direct statement as an act of emphasis, adding a slight dramatic nuance not present in the original.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission), which is a neutral description of presence. The summary rephrases this as 'l\u00e4hetti' (sent/dispatched), which subtly implies a more active, responsive action framing than the original passive description.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"Two minor framing shifts detected: (1) the minister's direct quote is paraphrased with 'korosti' (emphasized), adding editorial characterization of tone beyond the neutral 'toteaa' (states) in the source; (2) 'on ollut paikalla' (has been present) is reframed as 'l\u00e4hetti' (dispatched), subtly adding a more action-oriented framing. Both are minor and do not significantly distort the meaning, but they introduce slight editorial nuance.\"\n}\n```",
+  "judge_prompt_tokens": 708,
+  "judge_completion_tokens": 417,
+  "judge_cost_usd": 0.013965,
+  "timestamp": 1774947888.345632
+}

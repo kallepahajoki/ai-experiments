@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' Minor wording changes like 'Tiedon mukaan' instead of 'T\u00e4m\u00e4n hetken tietojen mukaan' and 'kommentoi' instead of 'toteaa' do not constitute inappropriate hedging; they are stylistic variations that do not introduce uncertainty where the source states facts definitively.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' Minor wording changes like 'Tiedon mukaan' instead of 'T\u00e4m\u00e4n hetken tietojen mukaan' and 'kommentoi' instead of 'toteaa' do not constitute inappropriate hedging; they are stylistic variations that do not introduce uncertainty where the source states facts definitively.\"\n}\n```",
+  "judge_prompt_tokens": 708,
+  "judge_completion_tokens": 157,
+  "judge_cost_usd": 0.007465,
+  "timestamp": 1774947888.346773
+}

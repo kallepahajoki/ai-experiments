@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. Minor wording changes (e.g., 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti', 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'heti') are stylistic variations that do not introduce uncertainty.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. Minor wording changes (e.g., 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti', 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'heti') are stylistic variations that do not introduce uncertainty.\"\n}\n```",
+  "judge_prompt_tokens": 711,
+  "judge_completion_tokens": 142,
+  "judge_cost_usd": 0.007105,
+  "timestamp": 1774947888.347039
+}

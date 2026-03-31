@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source uses 'muutamia' (a few) to describe the detected objects, while the summary uses 'useita' (several), which conveys a somewhat larger quantity.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"useita\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"F/A-18\"],\n  \"distortions\": [\n    {\"output_value\": \"useita\", \"source_value\": \"muutamia\", \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several/multiple). 'Useita' implies a larger quantity than 'muutamia' in Finnish, which is a numerical distortion.\"}\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source uses 'muutamia' (a few) to describe the detected objects, while the summary uses 'useita' (several), which conveys a somewhat larger quantity.\"\n}\n```",
+  "judge_prompt_tokens": 726,
+  "judge_completion_tokens": 251,
+  "judge_cost_usd": 0.009905,
+  "timestamp": 1774947888.346677
+}

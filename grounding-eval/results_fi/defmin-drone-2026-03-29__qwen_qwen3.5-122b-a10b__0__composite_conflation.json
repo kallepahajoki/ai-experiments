@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The two drone locations (north and east of Kouvola) are presented as separate facts joined by 'ja' (and), which matches the source. The minister's statements are accurately paraphrased. No causal connectors introduce relationships not present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The two drone locations (north and east of Kouvola) are presented as separate facts joined by 'ja' (and), which matches the source. The minister's statements are accurately paraphrased. No causal connectors introduce relationships not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 691,
+  "judge_completion_tokens": 122,
+  "judge_cost_usd": 0.006505,
+  "timestamp": 1774947888.347383
+}

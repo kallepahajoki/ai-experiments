@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.8,
+    "evidence": "The output is largely faithful in tone and content. The verb choice 'l\u00e4hetti' introduces a slightly more active/decisive framing compared to the source's stative construction, but this is a minor rephrasing rather than a meaningful editorial shift. No loaded language, dramatic framing, or implied causality was introduced. Overall tone remains neutral and factual.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18-h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source uses passive/stative phrasing 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission), while the output uses the more active and decisive 'l\u00e4hetti' (sent), which subtly adds a sense of deliberate responsive action not explicitly framed that way in the source.\"\n    },\n    {\n      \"output_phrase\": \"lenokit ovat harhautuneet Suomeen\",\n      \"issue\": \"Minor: the source quotes the minister saying 'Suomen alueelle on harhautunut lennokkeja' (drones have strayed into Finland's territory). The output rephrases this into indirect speech but changes 'lennokkeja' to 'lenokit' (with a typo) and slightly shifts from the indefinite 'lennokkeja' to the definite 'lenokit', implying these are the specific observed drones rather than drones in general. This is a very minor framing nuance.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.8,\n  \"evidence\": \"The output is largely faithful in tone and content. The verb choice 'l\u00e4hetti' introduces a slightly more active/decisive framing compared to the source's stative construction, but this is a minor rephrasing rather than a meaningful editorial shift. No loaded language, dramatic framing, or implied causality was introduced. Overall tone remains neutral and factual.\"\n}\n```",
+  "judge_prompt_tokens": 689,
+  "judge_completion_tokens": 410,
+  "judge_cost_usd": 0.013695,
+  "timestamp": 1774947888.3473191
+}

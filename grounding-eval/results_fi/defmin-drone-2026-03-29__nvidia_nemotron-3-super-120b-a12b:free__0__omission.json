@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output covers all key facts from the source. The qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' is slightly weakened to 'tiedon mukaan', losing the emphasis on the preliminary nature of the information. The word 'muutamia' (a few) is rendered as 'useita' (several), which is a minor inaccuracy rather than an omission. No critical information is missing.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella.\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella.\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja.\",\n    \"Suhtaudumme asiaan hyvin vakavasti.\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Source uses qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) about the drones falling, indicating preliminary/uncertain information. Output uses weaker 'tiedon mukaan' which partially captures this but loses the temporal qualifier 't\u00e4m\u00e4n hetken' (at this moment).\", \"importance\": \"medium\"},\n    {\"fact\": \"Source says 'muutamia' (a few) objects were detected; output says 'useita' (several), which is a slight change in quantity characterization rather than an omission, but worth noting.\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output covers all key facts from the source. The qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' is slightly weakened to 'tiedon mukaan', losing the emphasis on the preliminary nature of the information. The word 'muutamia' (a few) is rendered as 'useita' (several), which is a minor inaccuracy rather than an omission. No critical information is missing.\"\n}\n```",
+  "judge_prompt_tokens": 743,
+  "judge_completion_tokens": 596,
+  "judge_cost_usd": 0.018615,
+  "timestamp": 1774947888.346829
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-small-2603",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The source uses 'on pudonnut maahan' (has fallen to the ground), an intransitive construction, while the summary uses 'pudotettiin maahan' (was brought/shot down), a causative/transitive construction, implying the drones were actively downed rather than falling on their own.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Yksi drooni pudotettiin maahan Kouvolan pohjoispuolella, toinen it\u00e4puolella.\",\n      \"source_statement\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\",\n      \"explanation\": \"The source says the drones 'pudonnut' (fell/dropped) on their own, using an intransitive verb. The summary says 'pudotettiin' (were shot down/brought down), using a causative/transitive verb, implying active intervention. This changes the meaning from the drones falling by themselves to being actively taken down.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The source uses 'on pudonnut maahan' (has fallen to the ground), an intransitive construction, while the summary uses 'pudotettiin maahan' (was brought/shot down), a causative/transitive construction, implying the drones were actively downed rather than falling on their own.\"\n}\n```",
+  "judge_prompt_tokens": 709,
+  "judge_completion_tokens": 301,
+  "judge_cost_usd": 0.01107,
+  "timestamp": 1774947888.346263
+}

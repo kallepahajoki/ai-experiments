@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-9b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.4,
+    "evidence": "The only potential discrepancy is 'muutamia' vs 'useita'. The source uses 'muutamia' (a few) while the output uses 'useita' (several). These are not exact synonyms \u2014 'muutamia' suggests fewer items than 'useita' \u2014 but this is more of an imprecision than a direct contradiction. The output also omits the word 'pieni\u00e4' (small) but omission is not contradiction. Otherwise the summary is faithful to the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"useita hitaita, matalalla lent\u00e4vi\u00e4 kohteita\",\n      \"source_statement\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several/multiple). While both indicate more than one, 'useita' implies a larger number than 'muutamia', which is a subtle but meaningful difference in quantity. However, this is borderline rather than a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.4,\n  \"evidence\": \"The only potential discrepancy is 'muutamia' vs 'useita'. The source uses 'muutamia' (a few) while the output uses 'useita' (several). These are not exact synonyms \u2014 'muutamia' suggests fewer items than 'useita' \u2014 but this is more of an imprecision than a direct contradiction. The output also omits the word 'pieni\u00e4' (small) but omission is not contradiction. Otherwise the summary is faithful to the source.\"\n}\n```",
+  "judge_prompt_tokens": 672,
+  "judge_completion_tokens": 304,
+  "judge_cost_usd": 0.01096,
+  "timestamp": 1774947888.347459
+}

@@ -43,6 +43,7 @@ def cmd_generate(args):
                 client, case, models,
                 runs_per_model=args.runs,
                 temperature=args.temperature,
+                source_key=args.source_key,
             )
             save_outputs(outputs, output_dir)
             for o in outputs:
@@ -68,8 +69,14 @@ def cmd_evaluate(args):
     print(f"Evaluating {len(outputs)} output(s) with judge {judge_model}")
     print(f"Failure modes: {modes_desc}")
 
+    source_key = args.source_key
+    concurrency = args.concurrency
+
     with OpenRouterClient() as client:
-        results = evaluate_all(client, cases_dir, outputs, judge_model, mode_ids)
+        results = evaluate_all(
+            client, cases_dir, outputs, judge_model, mode_ids,
+            concurrency=concurrency, source_key=source_key,
+        )
         save_results(results, results_dir)
 
     detected_count = sum(1 for r in results if r.verdict.detected)
@@ -109,6 +116,7 @@ def main():
     gen.add_argument("--output", type=str, default="outputs", help="Output directory")
     gen.add_argument("--runs", type=int, default=3, help="Runs per model")
     gen.add_argument("--temperature", type=float, default=0.3, help="Sampling temperature")
+    gen.add_argument("--source-key", type=str, default="text_en", help="Source text key (text_en or text_fi)")
     gen.set_defaults(func=cmd_generate)
 
     # evaluate
@@ -118,6 +126,8 @@ def main():
     ev.add_argument("--results", type=str, default="results", help="Results directory")
     ev.add_argument("--judge", type=str, default=DEFAULT_JUDGE_MODEL, help="Judge model ID")
     ev.add_argument("--modes", type=str, default=None, help="Comma-separated failure mode IDs")
+    ev.add_argument("--concurrency", type=int, default=10, help="Max concurrent judge calls")
+    ev.add_argument("--source-key", type=str, default="text_en", help="Source text key (text_en or text_fi)")
     ev.set_defaults(func=cmd_evaluate)
 
     # report
