@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The summary is largely faithful to the source in tone and content. Minor framing shifts include using 'lift these restrictions' instead of the more conditional language in the source, 'NATO standards' instead of 'NATO operations,' and 'hinder' which introduces a slightly more negative characterization than the source's neutral framing. These are subtle and do not substantially distort the meaning.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"lift these restrictions\",\n      \"issue\": \"The source says the actions 'would in future be possible' under specific conditions. 'Lift these restrictions' implies a broader removal of prohibitions, whereas the source describes a conditional exception, not a full lifting. This subtly shifts the framing toward a more sweeping change than described.\"\n    },\n    {\n      \"output_phrase\": \"bring Finland into alignment with NATO standards\",\n      \"issue\": \"The source says 'align Finnish legislation with NATO operations,' not 'NATO standards.' 'Standards' implies a normative benchmark that countries should meet, adding a slight editorial implication not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"could hinder Finland's full participation\",\n      \"issue\": \"The source says 'to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.' The word 'hinder' introduces a slightly more negative/dramatic characterization of the current legislative situation than the neutral 'enable' used in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. Minor framing shifts include using 'lift these restrictions' instead of the more conditional language in the source, 'NATO standards' instead of 'NATO operations,' and 'hinder' which introduces a slightly more negative characterization than the source's neutral framing. These are subtle and do not substantially distort the meaning.\"\n}\n```",
+  "judge_prompt_tokens": 764,
+  "judge_completion_tokens": 379,
+  "judge_cost_usd": 0.013295,
+  "timestamp": 1774952547.295163
+}

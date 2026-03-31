@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output preserves the correct event sequence (detection \u2192 Hornet deployment \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation) and the correct time reference (Sunday morning). The minor tense shifts from present perfect to simple past are stylistic rather than substantive temporal misrepresentations. No dates, times, or event orderings are materially altered.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"have been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"states (present tense)\",\n    \"have strayed (present perfect)\",\n    \"take (present tense)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"was deployed (past tense)\",\n    \"crashed (past tense)\",\n    \"have secured (present perfect)\",\n    \"confirmed (past tense)\",\n    \"strayed (past tense)\",\n    \"responded (past tense)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"the Finnish Air Force detected\",\n      \"source_temporal\": \"Several low-flying, slow-moving small objects were detected\",\n      \"explanation\": \"The source says objects 'were detected' (passive, not attributing detection specifically to the Air Force). The output attributes the detection to 'the Finnish Air Force,' whereas the source only says the Air Force responded with a Hornet for identification. This is more of an attribution shift than a temporal drift, but the tense is consistent (past).\"\n    },\n    {\n      \"output_temporal\": \"was deployed (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site,' implying an ongoing state at the time of reporting. The output shifts to simple past 'was deployed,' which is a minor tense change but does not significantly misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (past tense)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the output uses past tense 'confirmed.' This is a minor tense shift but does not alter the event sequence or meaning materially.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output preserves the correct event sequence (detection \u2192 Hornet deployment \u2192 crashes \u2192 police securing sites \u2192 minister's statement \u2192 ongoing investigation) and the correct time reference (Sunday morning). The minor tense shifts from present perfect to simple past are stylistic rather than substantive temporal misrepresentations. No dates, times, or event orderings are materially altered.\"\n}\n```",
+  "judge_prompt_tokens": 495,
+  "judge_completion_tokens": 607,
+  "judge_cost_usd": 0.01765,
+  "timestamp": 1774952547.293795
+}

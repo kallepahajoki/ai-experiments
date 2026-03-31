@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "content": "**Summary of the Finnish Ministry of Defence Press Release:**\n\nThe Finnish Ministry of Defence has submitted a proposal to amend the **Nuclear Energy Act** and the **Criminal Code** for public consultation. The key aim is to **remove legal barriers** that currently prevent Finland from fully participating in **NATO\u2019s deterrence and collective defence** as part of its military alliance obligations.\n\n### **Key Proposed Changes:**\n- Under current law, **bringing, transporting, delivering, or possessing nuclear explosives in Finland is entirely prohibited**.\n- The new proposal would **allow these activities** if they are **directly related to Finland\u2019s military defence, NATO\u2019s collective defence, or defence cooperation** (e.g., transit or logistical support).\n- The change would **align Finnish legislation with NATO standards**, as most member states do not have such restrictions.\n\n### **Purpose & Security Context:**\n- The amendment is driven by the need to **strengthen Finland\u2019s security** in an **unpredictable operational environment**.\n- It aims to ensure that **NATO\u2019s deterrence\u2014including all its components\u2014remains credible** and raises the threshold for potential military aggression against Finland.\n\n### **Clarifications on Nuclear Weapons:**\n- The proposal **does not mean Finland is seeking nuclear weapons** or their deployment on its territory.\n- **No plans exist within NATO for nuclear weapons to be stationed in Finland**.\n- **Acquisition, manufacture, development, and detonation of nuclear explosives will remain illegal in all circumstances**.\n\n### **Consultation Timeline:**\n- The **public consultation period ends on 2 April 2026**.\n\nThis legislative update is framed as a **technical adjustment** to ensure Finland can fully integrate into NATO\u2019s defence framework while maintaining its long-standing non-nuclear stance.",
+  "prompt_tokens": 276,
+  "completion_tokens": 363,
+  "cost_usd": 0.0006825,
+  "latency_ms": 31192.71870900411,
+  "timestamp": 1774951357.7591941
+}

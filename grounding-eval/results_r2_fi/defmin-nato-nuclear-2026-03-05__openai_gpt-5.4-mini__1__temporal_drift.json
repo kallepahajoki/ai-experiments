@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "Two tense shifts detected: (1) 'l\u00e4hett\u00e4\u00e4' (present) \u2192 'on l\u00e4hett\u00e4nyt' (perfect), shifting the framing from an ongoing/announced action to a completed one; (2) 's\u00e4ilyv\u00e4t' (indicative present) \u2192 's\u00e4ilyisiv\u00e4t' (conditional), weakening a definitive statement into a conditional one. The date 2.4.2026 is correctly preserved and event ordering is accurate. The drifts are relatively minor but represent genuine temporal/modal shifts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 (present tense \u2013 sends)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t (remain \u2013 present tense)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"on l\u00e4hett\u00e4nyt (perfect tense \u2013 has sent)\",\n    \"Nykyisin (currently)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyisiv\u00e4t jatkossakin (would remain in the future \u2013 conditional)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hett\u00e4nyt (perfect tense \u2013 has sent)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 (present tense \u2013 sends)\",\n      \"explanation\": \"The source uses the present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the action is happening now or is being announced. The summary shifts this to the perfect tense 'on l\u00e4hett\u00e4nyt' (has sent), implying the action is already completed. This is a minor tense drift, though in Finnish news language the difference is subtle and both can describe a recent action.\"\n    },\n    {\n      \"output_temporal\": \"s\u00e4ilyisiv\u00e4t jatkossakin (conditional \u2013 would remain)\",\n      \"source_temporal\": \"s\u00e4ilyv\u00e4t (present indicative \u2013 remain)\",\n      \"explanation\": \"The source uses the indicative 's\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa' (remain criminalized in all situations), stating it as a definitive fact. The summary uses the conditional 's\u00e4ilyisiv\u00e4t' (would remain), which softens the assertion and introduces a degree of uncertainty not present in the source.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"Two tense shifts detected: (1) 'l\u00e4hett\u00e4\u00e4' (present) \u2192 'on l\u00e4hett\u00e4nyt' (perfect), shifting the framing from an ongoing/announced action to a completed one; (2) 's\u00e4ilyv\u00e4t' (indicative present) \u2192 's\u00e4ilyisiv\u00e4t' (conditional), weakening a definitive statement into a conditional one. The date 2.4.2026 is correctly preserved and event ordering is accurate. The drifts are relatively minor but represent genuine temporal/modal shifts.\"\n}\n```",
+  "judge_prompt_tokens": 1210,
+  "judge_completion_tokens": 627,
+  "judge_cost_usd": 0.021725,
+  "timestamp": 1774952603.9190059
+}

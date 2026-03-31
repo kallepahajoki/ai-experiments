@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses 'is sending a proposal' (present progressive, indicating the action is in progress or about to happen), while the output uses 'has proposed' (present perfect, indicating a completed action). This is a minor temporal drift in tense that slightly changes the status of the proposal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present progressive)\",\n    \"Under current legislation (present)\",\n    \"would in future be possible (conditional future)\",\n    \"do not have (present)\",\n    \"would align (conditional)\",\n    \"is based on (present)\",\n    \"is not about (present)\",\n    \"does not seek (present)\",\n    \"nor is such deployment planned (present)\",\n    \"remain criminalised (present)\",\n    \"ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed (present perfect)\",\n    \"is currently completely prohibited (present)\",\n    \"would be permitted (conditional)\",\n    \"do not have (present)\",\n    \"aims to maximize (present)\",\n    \"is not seeking (present progressive)\",\n    \"no such deployment is planned (present)\",\n    \"remain criminalized (present)\",\n    \"ends on 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed (present perfect)\",\n      \"source_temporal\": \"is sending (present progressive \u2014 action in progress)\",\n      \"explanation\": \"The source says the Ministry 'is sending' the proposal for consultation, indicating an ongoing or imminent action. The output says the Ministry 'has proposed,' which implies the action is already completed. This is a minor tense shift from present progressive to present perfect, slightly misrepresenting the stage of the process.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses 'is sending a proposal' (present progressive, indicating the action is in progress or about to happen), while the output uses 'has proposed' (present perfect, indicating a completed action). This is a minor temporal drift in tense that slightly changes the status of the proposal.\"\n}\n```",
+  "judge_prompt_tokens": 734,
+  "judge_completion_tokens": 441,
+  "judge_cost_usd": 0.014695,
+  "timestamp": 1774952547.298343
+}

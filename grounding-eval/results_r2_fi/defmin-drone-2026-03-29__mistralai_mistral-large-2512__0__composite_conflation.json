@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The two drone locations are correctly presented as separate events. The minister's statements are accurately paraphrased. The phrase 'Ilmavoimat l\u00e4hetti' is a slight rephrasing of 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' but does not constitute a composite conflation \u2014 it's a minor paraphrase rather than a merging of two separate facts into a false relationship.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The two drone locations are correctly presented as separate events. The minister's statements are accurately paraphrased. The phrase 'Ilmavoimat l\u00e4hetti' is a slight rephrasing of 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' but does not constitute a composite conflation \u2014 it's a minor paraphrase rather than a merging of two separate facts into a false relationship.\"\n}\n```",
+  "judge_prompt_tokens": 762,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.007835,
+  "timestamp": 1774952603.912619
+}

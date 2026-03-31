@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the source in both content and tone. It uses neutral, factual language throughout, accurately paraphrasing the source without introducing editorial language, loaded words, dramatic framing, or implied causality. The minister's quote is faithfully rendered in indirect speech without embellishment. Minor wording changes (e.g., 'entered Finnish territory' vs. 'strayed into Finnish territory') are neutral and do not shift framing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the source in both content and tone. It uses neutral, factual language throughout, accurately paraphrasing the source without introducing editorial language, loaded words, dramatic framing, or implied causality. The minister's quote is faithfully rendered in indirect speech without embellishment. Minor wording changes (e.g., 'entered Finnish territory' vs. 'strayed into Finnish territory') are neutral and do not shift framing.\"\n}\n```",
+  "judge_prompt_tokens": 473,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.00594,
+  "timestamp": 1774952547.293344
+}

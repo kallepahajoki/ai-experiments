@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "content": "**Summary of the Finnish Ministry of Defence Press Release:**\n\nThe Finnish Ministry of Defence has submitted a proposal to amend the **Nuclear Energy Act** and the **Criminal Code** for public consultation. The key goal is to **remove legal barriers** to Finland\u2019s military defence within NATO, ensuring full integration into the alliance\u2019s **deterrence and collective defence** mechanisms.\n\n### **Key Changes Proposed:**\n- Under current law, **bringing, transporting, delivering, or possessing nuclear explosives in Finland is entirely prohibited**.\n- The new proposal would **allow these activities** if they are **directly related to Finland\u2019s military defence, NATO\u2019s collective defence, or defence cooperation**.\n- This aligns Finnish legislation with **NATO standards**, as most member states do not have such restrictions.\n\n### **Purpose & Security Considerations:**\n- The amendment aims to **strengthen Finland\u2019s security** in an **unpredictable operational environment**.\n- It seeks to ensure that **NATO\u2019s deterrence\u2014including all its components\u2014remains credible**, raising the threshold for potential military aggression.\n\n### **Clarifications on Nuclear Weapons:**\n- The proposal **does not mean Finland is seeking nuclear weapons** on its territory.\n- Finland **does not intend to host nuclear weapons**, nor is such deployment planned by NATO.\n- **Acquisition, manufacture, development, and detonation of nuclear explosives remain illegal** under all circumstances.\n\n### **Consultation Timeline:**\n- The **public consultation period ends on 2 April 2026**.\n\nThis legislative change is framed as a **technical adjustment** to support Finland\u2019s NATO membership while maintaining strict non-proliferation commitments.",
+  "prompt_tokens": 276,
+  "completion_tokens": 341,
+  "cost_usd": 0.0006495,
+  "latency_ms": 6926.887041001464,
+  "timestamp": 1774951364.686185
+}

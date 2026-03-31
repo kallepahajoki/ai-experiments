@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The output is largely faithful but introduces minor framing shifts: 'rapidly changing' is added to describe the security environment, 'stresses' adds editorial emphasis, 'However' introduces implied tension, and 'does not want' subtly shifts the register from policy language to more subjective phrasing. Individually these are minor, but collectively they introduce a slightly more dramatic and editorialized tone than the neutral source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"rapidly changing and unpredictable security environment\",\n      \"issue\": \"The source says 'difficult-to-predict operational environment.' The output adds 'rapidly changing,' which is not in the source and introduces a sense of urgency/dynamism not present in the original. It also shifts 'operational environment' to 'security environment,' subtly broadening the framing.\"\n    },\n    {\n      \"output_phrase\": \"The ministry stresses\",\n      \"issue\": \"The source simply states the information as a factual clarification. Using 'stresses' implies emphasis or defensiveness on the part of the ministry, adding editorial tone not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"The ministry says\",\n      \"issue\": \"Minor attribution framing \u2014 the source presents these as straightforward factual statements, not as claims attributed to the ministry. This subtly shifts the framing to suggest these are the ministry's assertions rather than neutral facts.\"\n    },\n    {\n      \"output_phrase\": \"However, the acquisition, manufacture, development, and detonation of nuclear explosives would remain criminalized under all circumstances.\",\n      \"issue\": \"The word 'However' introduces a contrastive/concessive tone implying tension between the preceding statement and this one, which is not present in the source where the two points are stated independently.\"\n    },\n    {\n      \"output_phrase\": \"Finland does not want nuclear weapons deployed in its territory\",\n      \"issue\": \"The source says 'Finland does not seek the deployment of nuclear weapons on its territory.' Changing 'does not seek' to 'does not want' subtly shifts from a policy position to an expression of desire, adding a slightly more emotional or subjective framing.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The output is largely faithful but introduces minor framing shifts: 'rapidly changing' is added to describe the security environment, 'stresses' adds editorial emphasis, 'However' introduces implied tension, and 'does not want' subtly shifts the register from policy language to more subjective phrasing. Individually these are minor, but collectively they introduce a slightly more dramatic and editorialized tone than the neutral source.\"\n}\n```",
+  "judge_prompt_tokens": 728,
+  "judge_completion_tokens": 542,
+  "judge_cost_usd": 0.01719,
+  "timestamp": 1774952547.297591
+}

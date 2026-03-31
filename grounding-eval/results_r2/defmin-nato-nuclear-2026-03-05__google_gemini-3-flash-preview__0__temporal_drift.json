@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The date '2 April 2026' is correctly rendered as 'April 2, 2026'. The event sequence is preserved: proposal sent for consultation, consultation ends on the specified date. The tense shifts noted are minor and do not constitute material temporal drift \u2014 they are stylistic rephrasing rather than misrepresentation of when events occurred or will occur.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense, current action)\",\n    \"Under current legislation (present)\",\n    \"in future (future tense)\",\n    \"remains criminalised (present)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed (present perfect)\",\n    \"seeks to lift (present tense)\",\n    \"current absolute ban (present)\",\n    \"aims to ensure (present)\",\n    \"will remain strictly criminalized (future)\",\n    \"has been sent (present perfect)\",\n    \"scheduled to end on April 2, 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed (present perfect, suggesting completed action)\",\n      \"source_temporal\": \"is sending (present tense, ongoing action)\",\n      \"explanation\": \"Minor tense shift: the source says the Ministry 'is sending' the proposal (present continuous, implying the action is currently underway), while the output says it 'has proposed' (present perfect, implying the action is completed). This is a slight temporal drift but does not materially misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"will remain strictly criminalized (future tense)\",\n      \"source_temporal\": \"remain criminalised in all circumstances (present tense)\",\n      \"explanation\": \"The source states these actions 'remain criminalised' (present tense, current state), while the output says they 'will remain strictly criminalized' (future tense). This is a minor tense shift but does not misrepresent the factual content significantly.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The date '2 April 2026' is correctly rendered as 'April 2, 2026'. The event sequence is preserved: proposal sent for consultation, consultation ends on the specified date. The tense shifts noted are minor and do not constitute material temporal drift \u2014 they are stylistic rephrasing rather than misrepresentation of when events occurred or will occur.\"\n}\n```",
+  "judge_prompt_tokens": 756,
+  "judge_completion_tokens": 508,
+  "judge_cost_usd": 0.01648,
+  "timestamp": 1774952547.295521
+}

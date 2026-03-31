@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful to the source. The only notable issue is the attribution to 'The Finnish Ministry of Defence' as the reporting entity, which is not stated in the source. However, this is more of an attribution addition than a composite conflation of two separate facts into a false combined or causal claim. No causal connectors are misused, and no two independent facts are merged into a false relationship.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence reported that several low-flying, slow-moving small objects were detected in Finnish airspace on Sunday morning\",\n      \"source_facts\": [\"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace\", \"The source does not attribute this report to the Finnish Ministry of Defence specifically\"],\n      \"explanation\": \"The source does not specify that the 'Finnish Ministry of Defence' reported the detection. The source presents the detection as a general statement and separately quotes the Defense Minister. The summary attributes the report to the Ministry of Defence, which is a minor conflation/attribution error but not strictly a composite conflation of two separate facts into a false combined claim.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful to the source. The only notable issue is the attribution to 'The Finnish Ministry of Defence' as the reporting entity, which is not stated in the source. However, this is more of an attribution addition than a composite conflation of two separate facts into a false combined or causal claim. No causal connectors are misused, and no two independent facts are merged into a false relationship.\"\n}\n```",
+  "judge_prompt_tokens": 489,
+  "judge_completion_tokens": 294,
+  "judge_cost_usd": 0.009795,
+  "timestamp": 1774952547.292883
+}

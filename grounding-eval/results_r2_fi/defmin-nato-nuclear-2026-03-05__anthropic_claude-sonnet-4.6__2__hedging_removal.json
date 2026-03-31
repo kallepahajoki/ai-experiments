@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses conditional language ('olisivat jatkossa mahdollisia' = would be possible in the future, and 'liittyisiv\u00e4t' = would be related to), reflecting that this is a proposal with conditional framing. The output changes this to 'sallittaisiin jatkossa, kun ne liittyv\u00e4t' (would be allowed, when they relate to), which is slightly more assertive \u2014 replacing 'would be possible' with 'would be allowed' and changing the conditional 'liittyisiv\u00e4t' (would relate) to the indicative 'liittyv\u00e4t' (relate). However, the output does retain 'Esityksen mukaan' (according to the proposal), which partially preserves the proposal-stage framing. Also, 'jos' (if) is changed to 'kun' (when), which removes conditionality. This is a minor hedging removal since the overall context of it being a proposal is maintained, but the conditional nuance is somewhat flattened.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen...\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\", \"preserved\": false, \"output_version\": \"Esityksen mukaan n\u00e4m\u00e4 toimet sallittaisiin jatkossa, kun ne liittyv\u00e4t...\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses conditional language ('olisivat jatkossa mahdollisia' = would be possible in the future, and 'liittyisiv\u00e4t' = would be related to), reflecting that this is a proposal with conditional framing. The output changes this to 'sallittaisiin jatkossa, kun ne liittyv\u00e4t' (would be allowed, when they relate to), which is slightly more assertive \u2014 replacing 'would be possible' with 'would be allowed' and changing the conditional 'liittyisiv\u00e4t' (would relate) to the indicative 'liittyv\u00e4t' (relate). However, the output does retain 'Esityksen mukaan' (according to the proposal), which partially preserves the proposal-stage framing. Also, 'jos' (if) is changed to 'kun' (when), which removes conditionality. This is a minor hedging removal since the overall context of it being a proposal is maintained, but the conditional nuance is somewhat flattened.\"\n}\n```",
+  "judge_prompt_tokens": 1310,
+  "judge_completion_tokens": 448,
+  "judge_cost_usd": 0.01775,
+  "timestamp": 1774952603.916113
+}

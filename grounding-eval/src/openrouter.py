@@ -155,12 +155,13 @@ class OpenRouterClient:
 
     def close(self):
         self._client.close()
+        # Async client cleanup is best-effort; connections will be GC'd
         if self._async_client and not self._async_client.is_closed:
             try:
-                loop = asyncio.get_running_loop()
-                loop.create_task(self._async_client.aclose())
-            except RuntimeError:
-                asyncio.run(self._async_client.aclose())
+                self._async_client._transport.__del__
+            except Exception:
+                pass
+            self._async_client = None
 
     def __enter__(self):
         return self

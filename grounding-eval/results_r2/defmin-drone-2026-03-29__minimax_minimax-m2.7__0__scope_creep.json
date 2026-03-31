@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The summary introduces the attribution 'Finnish Ministry of Defence' which is not in the source, adds the concept of 'intercept' and 'scrambled' beyond what the source states (only 'identification' and 'on-site'), and rephrases 'secured' as 'cordoned off.' These are minor scope/accuracy issues rather than major external knowledge additions.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"the Finnish Ministry of Defence reported\",\n      \"explanation\": \"The source does not attribute the report to the Finnish Ministry of Defence. The source simply states facts and quotes the Defense Minister, but does not specify who issued the report.\"\n    },\n    {\n      \"output_content\": \"scrambled an F/A\u201118 Hornet to intercept and identify the objects\",\n      \"explanation\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' and 'intercept' are not in the source \u2014 the source only mentions identification, not interception.\"\n    },\n    {\n      \"output_content\": \"Police have cordoned off both crash sites\",\n      \"explanation\": \"The source says 'Police have secured the areas for further investigation.' The term 'cordoned off' is an embellishment not present in the source, which uses 'secured.'\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary introduces the attribution 'Finnish Ministry of Defence' which is not in the source, adds the concept of 'intercept' and 'scrambled' beyond what the source states (only 'identification' and 'on-site'), and rephrases 'secured' as 'cordoned off.' These are minor scope/accuracy issues rather than major external knowledge additions.\"\n}\n```",
+  "judge_prompt_tokens": 495,
+  "judge_completion_tokens": 359,
+  "judge_cost_usd": 0.01145,
+  "timestamp": 1774952547.2916732
+}

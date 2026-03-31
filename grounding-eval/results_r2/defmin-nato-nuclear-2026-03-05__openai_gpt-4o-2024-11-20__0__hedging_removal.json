@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The source states 'Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO' \u2014 distinguishing between Finland's position and NATO's planning. The output collapses this into 'Finland does not seek or plan to deploy nuclear weapons on its territory,' which omits the NATO planning dimension and subtly reattributes the planning aspect solely to Finland. This is a minor hedging/nuance removal rather than a classic hedging-to-fact conversion. The source text itself is largely factual and declarative with minimal hedging language, so there are limited opportunities for hedging removal. The 'difficult-to-predict' to 'unpredictable' change is a minor paraphrase that largely preserves the meaning.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable operational environment\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": false, \"output_version\": \"Finland does not seek or plan to deploy nuclear weapons on its territory\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The source states 'Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO' \u2014 distinguishing between Finland's position and NATO's planning. The output collapses this into 'Finland does not seek or plan to deploy nuclear weapons on its territory,' which omits the NATO planning dimension and subtly reattributes the planning aspect solely to Finland. This is a minor hedging/nuance removal rather than a classic hedging-to-fact conversion. The source text itself is largely factual and declarative with minimal hedging language, so there are limited opportunities for hedging removal. The 'difficult-to-predict' to 'unpredictable' change is a minor paraphrase that largely preserves the meaning.\"\n}\n```",
+  "judge_prompt_tokens": 717,
+  "judge_completion_tokens": 380,
+  "judge_cost_usd": 0.013085,
+  "timestamp": 1774952547.29702
+}

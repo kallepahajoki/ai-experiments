@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output attributes the report to 'The Finnish Ministry of Defence,' but the source document does not specify who issued the report. This is a minor scope creep where the model inferred or added an attribution not present in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"The Finnish Ministry of Defence reported that\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source presents the information without specifying a particular reporting body (other than quoting the Defense Minister and mentioning the Defence Forces investigating).\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output attributes the report to 'The Finnish Ministry of Defence,' but the source document does not specify who issued the report. This is a minor scope creep where the model inferred or added an attribution not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 485,
+  "judge_completion_tokens": 171,
+  "judge_cost_usd": 0.0067,
+  "timestamp": 1774952547.2928572
+}

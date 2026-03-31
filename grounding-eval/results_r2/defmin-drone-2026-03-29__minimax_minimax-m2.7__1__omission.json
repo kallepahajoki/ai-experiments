@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output covers all key facts from the source. Minor wording differences exist (e.g., 'cordoned off' vs 'secured', 'forensic investigation' vs 'further investigation', 'scrambled...to intercept and identify' vs 'on-site...for identification') but these are paraphrases rather than omissions. The phrase 'intercept' slightly embellishes the source which only says 'identification,' but this is an accuracy/addition issue rather than an omission issue.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects were detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"The Air Force used an F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said they take this very seriously\",\n    \"Security authorities responded immediately\",\n    \"The Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output covers all key facts from the source. Minor wording differences exist (e.g., 'cordoned off' vs 'secured', 'forensic investigation' vs 'further investigation', 'scrambled...to intercept and identify' vs 'on-site...for identification') but these are paraphrases rather than omissions. The phrase 'intercept' slightly embellishes the source which only says 'identification,' but this is an accuracy/addition issue rather than an omission issue.\"\n}\n```",
+  "judge_prompt_tokens": 513,
+  "judge_completion_tokens": 326,
+  "judge_cost_usd": 0.010715,
+  "timestamp": 1774952547.2919512
+}

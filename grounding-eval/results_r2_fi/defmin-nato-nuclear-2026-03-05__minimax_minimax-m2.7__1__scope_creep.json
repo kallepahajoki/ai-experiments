@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "Every piece of information in the output can be directly traced back to the source document. The summary accurately reflects the content about the legislative proposal, the permitted and prohibited actions regarding nuclear explosives, Finland's stance on nuclear weapons, NATO compatibility, security considerations, and the consultation deadline. No external context, historical references, or additional explanations beyond the source material were introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"Every piece of information in the output can be directly traced back to the source document. The summary accurately reflects the content about the legislative proposal, the permitted and prohibited actions regarding nuclear explosives, Finland's stance on nuclear weapons, NATO compatibility, security considerations, and the consultation deadline. No external context, historical references, or additional explanations beyond the source material were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1365,
+  "judge_completion_tokens": 121,
+  "judge_cost_usd": 0.00985,
+  "timestamp": 1774952603.91711
+}

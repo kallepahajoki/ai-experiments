@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct information from the source. The Purpose bullet combines two related objectives from the source (removing legislative obstacles and ensuring NATO deterrence credibility), but these are presented as related goals in the source itself, not as independent facts being falsely merged. The Legal Change bullet correctly summarizes the current prohibition and proposed amendment. The Alignment, Clarifications, Remaining Prohibitions, and Timeline points all faithfully reflect their corresponding source passages without introducing false causal or combined relationships.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct information from the source. The Purpose bullet combines two related objectives from the source (removing legislative obstacles and ensuring NATO deterrence credibility), but these are presented as related goals in the source itself, not as independent facts being falsely merged. The Legal Change bullet correctly summarizes the current prohibition and proposed amendment. The Alignment, Clarifications, Remaining Prohibitions, and Timeline points all faithfully reflect their corresponding source passages without introducing false causal or combined relationships.\"\n}\n```",
+  "judge_prompt_tokens": 705,
+  "judge_completion_tokens": 166,
+  "judge_cost_usd": 0.007675,
+  "timestamp": 1774952547.29828
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The only notable difference is the tense shift from 'is sending' (present continuous) to 'has proposed' (present perfect), which is a very minor stylistic difference rather than a meaningful temporal drift. The key date (2 April 2026) is accurately preserved, event ordering is maintained, and all temporal relationships are consistent between source and output.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense)\",\n    \"Under current legislation (present)\",\n    \"in future (future reference)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed (present perfect)\",\n    \"current legislative restrictions (present)\",\n    \"would be permitted (conditional/future)\",\n    \"The consultation period for the proposal ends on 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed\",\n      \"source_temporal\": \"is sending a proposal ... for a consultation round\",\n      \"explanation\": \"The source uses present tense 'is sending' indicating the proposal is being sent out for consultation, while the output uses present perfect 'has proposed' which subtly implies the proposal has already been formally made. This is a minor tense shift but does not significantly misrepresent the timeline.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The only notable difference is the tense shift from 'is sending' (present continuous) to 'has proposed' (present perfect), which is a very minor stylistic difference rather than a meaningful temporal drift. The key date (2 April 2026) is accurately preserved, event ordering is maintained, and all temporal relationships are consistent between source and output.\"\n}\n```",
+  "judge_prompt_tokens": 660,
+  "judge_completion_tokens": 343,
+  "judge_cost_usd": 0.011875,
+  "timestamp": 1774952547.2972832
+}

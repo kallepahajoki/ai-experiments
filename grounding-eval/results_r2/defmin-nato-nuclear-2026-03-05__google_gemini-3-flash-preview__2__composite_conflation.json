@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately represents the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct information from the source. The objective statement combines elements from multiple source paragraphs (removing legislative obstacles, fully utilizing NATO's deterrence, credible deterrence in unpredictable environment) but these are genuinely related objectives stated in the source, not independent facts being falsely merged. The phrase 'international defence cooperation' slightly broadens the source's 'defence cooperation' but does not constitute a composite conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately represents the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct information from the source. The objective statement combines elements from multiple source paragraphs (removing legislative obstacles, fully utilizing NATO's deterrence, credible deterrence in unpredictable environment) but these are genuinely related objectives stated in the source, not independent facts being falsely merged. The phrase 'international defence cooperation' slightly broadens the source's 'defence cooperation' but does not constitute a composite conflation.\"\n}\n```",
+  "judge_prompt_tokens": 763,
+  "judge_completion_tokens": 157,
+  "judge_cost_usd": 0.00774,
+  "timestamp": 1774952547.295876
+}

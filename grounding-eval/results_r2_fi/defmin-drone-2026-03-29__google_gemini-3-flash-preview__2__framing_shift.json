@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.82,
+    "evidence": "The summary is largely faithful to the source in tone and content. It uses neutral, factual language consistent with the original. The minor issues identified are more about subtle categorization choices (e.g., labeling a section 'Viranomaisarvio') and a slight nuance in verb aspect ('tunnisti' vs 'tunnistusteht\u00e4v\u00e4ss\u00e4'), but these do not constitute meaningful editorial tone shifts, loaded language, or implied causality. The overall framing remains neutral and informational.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ilmavoimat tunnisti kohteita Hornet-h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n      \"issue\": \"The source says the Air Force was present on an identification mission ('tunnistusteht\u00e4v\u00e4ss\u00e4'), not that it successfully identified the objects. This subtly shifts the framing from an ongoing task to a completed action, slightly altering the meaning, though this is more of an accuracy nuance than a framing shift.\"\n    },\n    {\n      \"output_phrase\": \"Viranomaisarvio\",\n      \"issue\": \"The label 'Viranomaisarvio' (authority assessment) frames the defense minister's statement as an official assessment/evaluation, which adds a slight editorial categorization not present in the source. The source simply quotes the minister without labeling it as an 'assessment'.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.82,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. It uses neutral, factual language consistent with the original. The minor issues identified are more about subtle categorization choices (e.g., labeling a section 'Viranomaisarvio') and a slight nuance in verb aspect ('tunnisti' vs 'tunnistusteht\u00e4v\u00e4ss\u00e4'), but these do not constitute meaningful editorial tone shifts, loaded language, or implied causality. The overall framing remains neutral and informational.\"\n}\n```",
+  "judge_prompt_tokens": 773,
+  "judge_completion_tokens": 355,
+  "judge_cost_usd": 0.01274,
+  "timestamp": 1774952603.911743
+}

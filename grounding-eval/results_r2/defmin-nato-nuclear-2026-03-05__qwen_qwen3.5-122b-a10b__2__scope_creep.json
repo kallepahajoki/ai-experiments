@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.35,
+    "evidence": "The output is very faithful to the source. The only potential scope creep is the addition of the word 'public' before 'consultation period,' which is not explicitly stated in the source document. All other content maps directly to the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"submitted a proposal\",\n      \"explanation\": \"The source says the Ministry is 'sending a proposal... for a consultation round,' not that it has been 'submitted.' This is a minor wording difference but could imply the action is already completed. However, this is more of a paraphrase issue than scope creep.\"\n    },\n    {\n      \"output_content\": \"public consultation period\",\n      \"explanation\": \"The source says 'consultation round' and 'consultation period' but does not explicitly describe it as 'public.' While consultation rounds in legislative processes are typically public, the word 'public' is not in the source. This is a very minor addition from general knowledge.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.35,\n  \"evidence\": \"The output is very faithful to the source. The only potential scope creep is the addition of the word 'public' before 'consultation period,' which is not explicitly stated in the source document. All other content maps directly to the source.\"\n}\n```",
+  "judge_prompt_tokens": 729,
+  "judge_completion_tokens": 264,
+  "judge_cost_usd": 0.010245,
+  "timestamp": 1774952547.298141
+}

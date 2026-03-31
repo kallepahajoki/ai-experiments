@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The output slightly elevates the certainty of identification by using 'confirmed' where the source uses the more cautious 'according to current information,' and implies all detected objects were drones rather than just the two that crashed. Otherwise, the tone and framing are closely aligned with the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"which were confirmed to be drones\",\n      \"issue\": \"The source says 'According to current information, one drone has crashed...' which is tentative language. The output uses 'confirmed,' which implies a higher degree of certainty than the source conveys. Additionally, the source only identifies two of the 'several' objects as drones; the output implies all detected objects were confirmed as drones.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The output slightly elevates the certainty of identification by using 'confirmed' where the source uses the more cautious 'according to current information,' and implies all detected objects were drones rather than just the two that crashed. Otherwise, the tone and framing are closely aligned with the source.\"\n}\n```",
+  "judge_prompt_tokens": 505,
+  "judge_completion_tokens": 213,
+  "judge_cost_usd": 0.00785,
+  "timestamp": 1774952547.294545
+}

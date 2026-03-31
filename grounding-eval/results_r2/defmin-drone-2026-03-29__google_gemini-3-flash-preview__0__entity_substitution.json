@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All named entities in the output correspond to entities mentioned in the source. 'Finnish Ministry of Defence' is a reasonable contextual framing (the source is a press release from that context). 'Finnish Air Force' corresponds to 'Air Force' in the source. 'Finnish Police' corresponds to 'Police' in the source. All locations (Southeast Finland, Kouvola) and the person (Antti H\u00e4kk\u00e4nen) match the source exactly. No entity substitutions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\n    \"Finnish Ministry of Defence\",\n    \"Finnish Air Force\",\n    \"Southeast Finland\",\n    \"F/A-18 Hornet\",\n    \"Kouvola\",\n    \"Finnish Police\",\n    \"Defence Forces\",\n    \"Antti H\u00e4kk\u00e4nen\"\n  ],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All named entities in the output correspond to entities mentioned in the source. 'Finnish Ministry of Defence' is a reasonable contextual framing (the source is a press release from that context). 'Finnish Air Force' corresponds to 'Air Force' in the source. 'Finnish Police' corresponds to 'Police' in the source. All locations (Southeast Finland, Kouvola) and the person (Antti H\u00e4kk\u00e4nen) match the source exactly. No entity substitutions were found.\"\n}\n```",
+  "judge_prompt_tokens": 573,
+  "judge_completion_tokens": 230,
+  "judge_cost_usd": 0.008615,
+  "timestamp": 1774952547.290411
+}

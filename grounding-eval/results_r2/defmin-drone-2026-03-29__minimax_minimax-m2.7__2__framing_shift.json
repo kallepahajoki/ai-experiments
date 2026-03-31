@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful but introduces 'scrambled' (dramatic military connotation not in source), 'forensic investigation' (elevates tone beyond 'further investigation'), and speculative specifics like 'border guard' not present in the original.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"scrambled an F/A-18 Hornet fighter\",\n      \"issue\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' introduces a more dramatic, militaristic tone implying urgency and emergency response not conveyed by the neutral original phrasing.\"\n    },\n    {\n      \"output_phrase\": \"forensic investigation\",\n      \"issue\": \"The source says 'further investigation.' Adding 'forensic' implies a specific type of criminal/scientific investigation not mentioned in the source, subtly elevating the seriousness of the framing.\"\n    },\n    {\n      \"output_phrase\": \"(police, border guard, etc.)\",\n      \"issue\": \"The source says 'other authorities' without specifying border guard. While police are mentioned elsewhere, 'border guard' is an addition not present in the source, introducing speculative detail.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful but introduces 'scrambled' (dramatic military connotation not in source), 'forensic investigation' (elevates tone beyond 'further investigation'), and speculative specifics like 'border guard' not present in the original.\"\n}\n```",
+  "judge_prompt_tokens": 536,
+  "judge_completion_tokens": 335,
+  "judge_cost_usd": 0.011055,
+  "timestamp": 1774952547.292144
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.65,
+    "evidence": "The source uses conditional language ('olisivat jatkossa mahdollisia') which the output renders as 'olisi sallittua' \u2014 this is still conditional ('olisi') so the hedging is largely preserved. The word 'sallittua' (permitted) is slightly stronger than 'mahdollisia' (possible), but the conditional form is maintained. The proposal nature ('esitet\u00e4\u00e4n'/'esitt\u00e4\u00e4') is preserved. The omission of 'eik\u00e4 sellaista ole Natossa suunnitteilla' is more of an omission than hedging removal. Overall, no significant hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"},\n    {\"expression\": \"esitet\u00e4\u00e4n\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"},\n    {\"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\", \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia (conditional)\", \"preserved\": false, \"output_version\": \"Jatkossa ydinr\u00e4j\u00e4hteiden tuominen Suomeen, kuljettaminen ja hallussapito olisi sallittua \u2014 uses 'olisi' which is conditional, partially preserved but 'sallittua' is stronger than 'mahdollisia'\"},\n    {\"expression\": \"esitet\u00e4\u00e4n (proposed)\", \"preserved\": true, \"output_version\": \"Puolustusministeri\u00f6 esitt\u00e4\u00e4 muutoksia \u2014 the proposal nature is preserved\"},\n    {\"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\", \"preserved\": false, \"output_version\": \"This detail about NATO not planning such placement is omitted from the output\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.65,\n  \"evidence\": \"The source uses conditional language ('olisivat jatkossa mahdollisia') which the output renders as 'olisi sallittua' \u2014 this is still conditional ('olisi') so the hedging is largely preserved. The word 'sallittua' (permitted) is slightly stronger than 'mahdollisia' (possible), but the conditional form is maintained. The proposal nature ('esitet\u00e4\u00e4n'/'esitt\u00e4\u00e4') is preserved. The omission of 'eik\u00e4 sellaista ole Natossa suunnitteilla' is more of an omission than hedging removal. Overall, no significant hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 1238,
+  "judge_completion_tokens": 582,
+  "judge_cost_usd": 0.02074,
+  "timestamp": 1774952603.916505
+}

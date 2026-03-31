@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source says 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends), while the summary says 'Lakiesitys on l\u00e4hetetty lausuntokierrokselle' (perfect tense: has been sent). This is a tense shift from present to past/perfect, though it is a minor drift as the meaning is largely preserved. All dates (2.4.2026) and event ordering are correctly represented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense - sends for consultation)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina (remain criminalized)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Jatkossa (in the future)\",\n    \"Nykyisin n\u00e4m\u00e4 toimet on kielletty (currently these actions are prohibited)\",\n    \"pysyv\u00e4t edelleen rikoksina (remain crimes)\",\n    \"on l\u00e4hetetty lausuntokierrokselle (has been sent for consultation)\",\n    \"p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hetetty lausuntokierrokselle (has been sent - past/perfect tense)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (sends - present tense)\",\n      \"explanation\": \"The source uses present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the ministry is sending the proposal for consultation. The summary uses the perfect tense 'on l\u00e4hetetty' (has been sent), implying the action has already been completed. This is a minor tense shift but does not significantly misrepresent the timeline.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends), while the summary says 'Lakiesitys on l\u00e4hetetty lausuntokierrokselle' (perfect tense: has been sent). This is a tense shift from present to past/perfect, though it is a minor drift as the meaning is largely preserved. All dates (2.4.2026) and event ordering are correctly represented.\"\n}\n```",
+  "judge_prompt_tokens": 1188,
+  "judge_completion_tokens": 510,
+  "judge_cost_usd": 0.01869,
+  "timestamp": 1774952603.916673
+}

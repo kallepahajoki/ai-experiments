@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output introduces 'The Finnish Ministry of Defence reported that...' as the source of the information, but the original text does not attribute the report to the Ministry of Defence. This is an entity addition/fabrication rather than a direct substitution of one entity for another, but it introduces an entity not present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"Finnish\", \"Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Finnish Ministry of Defence\",\n      \"source_entity\": \"(none)\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source simply states facts without attributing them to a specific reporting organization. The Defense Minister is quoted, but the Ministry of Defence is not mentioned as the source of the report.\"\n    }\n  ],\n  \"substitution_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output introduces 'The Finnish Ministry of Defence reported that...' as the source of the information, but the original text does not attribute the report to the Ministry of Defence. This is an entity addition/fabrication rather than a direct substitution of one entity for another, but it introduces an entity not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 516,
+  "judge_completion_tokens": 254,
+  "judge_cost_usd": 0.00893,
+  "timestamp": 1774952547.2927868
+}

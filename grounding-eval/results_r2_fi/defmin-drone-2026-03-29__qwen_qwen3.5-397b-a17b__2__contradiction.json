@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses 'tunnistusteht\u00e4v\u00e4ss\u00e4' (on an identification mission), indicating the task was in progress, while the summary states 'tunnisti kohteet' (identified the objects), implying the task was completed. This is a minor but meaningful difference in the status of the identification effort.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Ilmavoimat tunnisti kohteet F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"source_statement\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"explanation\": \"The source says the Air Force was present on an identification mission with an F/A-18 Hornet, meaning the identification task was ongoing. The output states the Air Force identified the objects, implying the identification was completed. This subtly changes the meaning from an ongoing task to a completed action.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses 'tunnistusteht\u00e4v\u00e4ss\u00e4' (on an identification mission), indicating the task was in progress, while the summary states 'tunnisti kohteet' (identified the objects), implying the task was completed. This is a minor but meaningful difference in the status of the identification effort.\"\n}\n```",
+  "judge_prompt_tokens": 656,
+  "judge_completion_tokens": 270,
+  "judge_cost_usd": 0.01003,
+  "timestamp": 1774952603.915487
+}

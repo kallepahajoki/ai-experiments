@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source text is largely factual and declarative in nature, describing a legislative proposal. There is minimal hedging language in the source. The output faithfully preserves the propositional nature of the bill (it is a proposal, not enacted law), and preserves the clarification that no deployment is planned. No instances of hedging removal were identified.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"sending a proposal\", \"context\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\"},\n    {\"expression\": \"The bill proposes that\", \"context\": \"The bill proposes that these actions would in future be possible if they were related to Finland's military defence, NATO's collective defence, or defence cooperation.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"sending a proposal\", \"preserved\": true, \"output_version\": \"has proposed amendments to the Nuclear Energy Act and the Criminal Code for a consultation round\"},\n    {\"expression\": \"The bill proposes that\", \"preserved\": true, \"output_version\": \"Proposed Change: These actions would be permitted if related to Finland's military defence, NATO's collective defence, or defence cooperation.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"no such deployment is planned within NATO\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source text is largely factual and declarative in nature, describing a legislative proposal. There is minimal hedging language in the source. The output faithfully preserves the propositional nature of the bill (it is a proposal, not enacted law), and preserves the clarification that no deployment is planned. No instances of hedging removal were identified.\"\n}\n```",
+  "judge_prompt_tokens": 794,
+  "judge_completion_tokens": 390,
+  "judge_cost_usd": 0.01372,
+  "timestamp": 1774952547.298357
+}

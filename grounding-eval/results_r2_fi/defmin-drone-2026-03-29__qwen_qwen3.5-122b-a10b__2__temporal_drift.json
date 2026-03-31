@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.88,
+    "evidence": "The summary systematically shifts present perfect tenses (on ollut, on pudonnut, on harhautunut) to simple past (l\u00e4hetti, putosi, harhautuivat), which changes the temporal framing from recently completed/still-relevant events to completed past events. Additionally, the summary introduces a causal sequence ('Tapahtuman seurauksena') implying the Air Force action caused the drones to fall, which is not stated in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect - ongoing/completed)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntai-aamuna\",\n    \"l\u00e4hetti (simple past)\",\n    \"putosi (simple past)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"harhautuivat (simple past)\",\n    \"suhtaudutaan (present passive)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past - 'sent')\",\n      \"source_temporal\": \"on ollut paikalla (present perfect - 'has been present')\",\n      \"explanation\": \"The source uses present perfect 'on ollut paikalla' (has been on site), indicating an ongoing or recently completed state. The summary changes this to simple past 'l\u00e4hetti' (sent), which also introduces a causal/sequential nuance ('sent for the task') not explicitly in the source. This is a tense shift from present perfect to simple past.\"\n    },\n    {\n      \"output_temporal\": \"putosi (simple past - 'fell')\",\n      \"source_temporal\": \"on pudonnut (present perfect - 'has fallen')\",\n      \"explanation\": \"The source uses present perfect 'on pudonnut' (has fallen/dropped), conveying recent relevance. The summary shifts to simple past 'putosi' (fell), altering the temporal framing.\"\n    },\n    {\n      \"output_temporal\": \"harhautuivat (simple past - 'strayed')\",\n      \"source_temporal\": \"on harhautunut (present perfect - 'has strayed')\",\n      \"explanation\": \"The source quote uses present perfect 'on harhautunut' (has strayed), but the summary renders this as simple past 'harhautuivat' (strayed), shifting the tense.\"\n    },\n    {\n      \"output_temporal\": \"Tapahtuman seurauksena kaksi droonia putosi\",\n      \"source_temporal\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut... ja toinen drooni...\",\n      \"explanation\": \"The summary introduces a causal framing ('Tapahtuman seurauksena' \u2014 'as a consequence of the event') suggesting the drones fell as a result of the Air Force's action. The source does not establish this causal link; it simply reports that according to current information, drones have fallen. This reorders/reframes the event relationship.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.88,\n  \"evidence\": \"The summary systematically shifts present perfect tenses (on ollut, on pudonnut, on harhautunut) to simple past (l\u00e4hetti, putosi, harhautuivat), which changes the temporal framing from recently completed/still-relevant events to completed past events. Additionally, the summary introduces a causal sequence ('Tapahtuman seurauksena') implying the Air Force action caused the drones to fall, which is not stated in the source.\"\n}\n```",
+  "judge_prompt_tokens": 717,
+  "judge_completion_tokens": 818,
+  "judge_cost_usd": 0.024035,
+  "timestamp": 1774952603.914942
+}

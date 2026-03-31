@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The minister's quotes are paraphrased but retain the same independent statements. The drone incidents are reported separately as in the source. Minor wording changes ('jatkotutkimuksia' instead of 'lis\u00e4tutkimuksia', 'eritt\u00e4in vakavasti' instead of 'hyvin vakavasti') are paraphrasing differences, not composite conflations.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The minister's quotes are paraphrased but retain the same independent statements. The drone incidents are reported separately as in the source. Minor wording changes ('jatkotutkimuksia' instead of 'lis\u00e4tutkimuksia', 'eritt\u00e4in vakavasti' instead of 'hyvin vakavasti') are paraphrasing differences, not composite conflations.\"\n}\n```",
+  "judge_prompt_tokens": 740,
+  "judge_completion_tokens": 150,
+  "judge_cost_usd": 0.00745,
+  "timestamp": 1774952603.913955
+}

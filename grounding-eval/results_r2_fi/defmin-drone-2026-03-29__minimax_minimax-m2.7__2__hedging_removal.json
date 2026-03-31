@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the information about the two drones falling is preliminary and may change. The output replaces this with 'T\u00e4h\u00e4n menness\u00e4' (so far), which partially conveys temporality but loses the explicit epistemic hedging that the information is based on current/preliminary data. Additionally, 'muutamia' (a few) is replaced with 'useita' (several), which is a slight amplification rather than hedging removal per se, but changes the degree of certainty about the number of objects. The more significant issue is the removal of 'T\u00e4m\u00e4n hetken tietojen mukaan' on the critical claim about drones having fallen.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"T\u00e4h\u00e4n menness\u00e4 kaksi droonia on pudonnut: toinen Kouvolan pohjoispuolella ja toinen Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"useita matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the information about the two drones falling is preliminary and may change. The output replaces this with 'T\u00e4h\u00e4n menness\u00e4' (so far), which partially conveys temporality but loses the explicit epistemic hedging that the information is based on current/preliminary data. Additionally, 'muutamia' (a few) is replaced with 'useita' (several), which is a slight amplification rather than hedging removal per se, but changes the degree of certainty about the number of objects. The more significant issue is the removal of 'T\u00e4m\u00e4n hetken tietojen mukaan' on the critical claim about drones having fallen.\"\n}\n```",
+  "judge_prompt_tokens": 808,
+  "judge_completion_tokens": 510,
+  "judge_cost_usd": 0.01679,
+  "timestamp": 1774952603.912302
+}

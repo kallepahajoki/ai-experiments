@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "All claims in the output are directly supported by the source document. No fabricated additions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"The Finnish Ministry of Defence has initiated a consultation period for a proposal to amend the Nuclear Energy Act and the Criminal Code.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\"\n    },\n    {\n      \"claim\": \"The primary objective is to remove legislative barriers that currently hinder Finland's military defence within NATO and to ensure the full utilisation of the alliance's deterrence and collective defence capabilities.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The purpose of the proposal is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\"\n    },\n    {\n      \"claim\": \"Finnish law currently completely prohibits the bringing, transport, delivery, or possession of nuclear explosives within the country.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Under current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited.\"\n    },\n    {\n      \"claim\": \"The amendment would permit these actions if they are related to Finland's military defence, NATO's collective defence, or defence cooperation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The bill proposes that these actions would in future be possible if they were related to Finland's military defence, NATO's collective defence, or defence cooperation.\"\n    },\n    {\n      \"claim\": \"This change aligns Finnish legislation with the majority of NATO member states, most of whom do not have comparable restrictions.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The majority of NATO member states do not have comparable legislative restrictions. The bill would align Finnish legislation with NATO operations.\"\n    },\n    {\n      \"claim\": \"The Ministry states that Finland is not seeking the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"\n    },\n    {\n      \"claim\": \"The acquisition, manufacture, development, and detonation of nuclear explosives will remain criminalised in all circumstances.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The acquisition, manufacture, development, and detonation of nuclear explosives remain criminalised in all circumstances.\"\n    },\n    {\n      \"claim\": \"The consultation period ends on 2 April 2026.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The consultation period ends on 2 April 2026.\"\n    }\n  ],\n  \"fabricated_additions_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"All claims in the output are directly supported by the source document. No fabricated additions were found.\"\n}\n```",
+  "judge_prompt_tokens": 740,
+  "judge_completion_tokens": 678,
+  "judge_cost_usd": 0.02065,
+  "timestamp": 1774952547.297787
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All numerical values in the output match the source. 'Several' low-flying objects is preserved. The two drones (one north of Kouvola, another east of Kouvola) are accurately represented. The F/A-18 Hornet designation is correct. No numerical distortions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\", \"two (implied by one + another)\"],\n  \"numbers_in_output\": [\"several\", \"two\", \"one\", \"another\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All numerical values in the output match the source. 'Several' low-flying objects is preserved. The two drones (one north of Kouvola, another east of Kouvola) are accurately represented. The F/A-18 Hornet designation is correct. No numerical distortions were found.\"\n}\n```",
+  "judge_prompt_tokens": 524,
+  "judge_completion_tokens": 162,
+  "judge_cost_usd": 0.00667,
+  "timestamp": 1774952547.292455
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source document. The descriptions of the drone sightings, the F/A-18 Hornet identification mission, the two drone crash locations (north and east of Kouvola), police cordoning off the areas, Minister H\u00e4kk\u00e4nen's statement about stray drones, and the joint investigation by the Defence Forces and other authorities all match the source. The summary uses slightly condensed language (e.g., 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' becomes 'matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita', omitting 'hitaita' and 'muutamia') but this is simplification rather than contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source document. The descriptions of the drone sightings, the F/A-18 Hornet identification mission, the two drone crash locations (north and east of Kouvola), police cordoning off the areas, Minister H\u00e4kk\u00e4nen's statement about stray drones, and the joint investigation by the Defence Forces and other authorities all match the source. The summary uses slightly condensed language (e.g., 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' becomes 'matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita', omitting 'hitaita' and 'muutamia') but this is simplification rather than contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 739,
+  "judge_completion_tokens": 204,
+  "judge_cost_usd": 0.008795,
+  "timestamp": 1774952603.911576
+}

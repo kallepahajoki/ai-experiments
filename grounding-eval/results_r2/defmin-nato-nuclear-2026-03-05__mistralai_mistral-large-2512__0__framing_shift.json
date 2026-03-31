@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful but introduces several editorial additions: speculative examples ('transit or logistical support'), characterization of the proposal as a 'technical adjustment', reference to a 'long-standing non-nuclear stance', directional framing of 'aggression against Finland', and the notion of 'alliance obligations'. These collectively add interpretive and editorial layers not present in the neutral source text.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"strengthen Finland's security\",\n      \"issue\": \"The source says 'maximise Finland's security', not 'strengthen'. 'Maximise' is a stronger and more specific term; 'strengthen' subtly softens the stated ambition.\"\n    },\n    {\n      \"output_phrase\": \"raises the threshold for potential military aggression against Finland\",\n      \"issue\": \"The source says 'forms the highest possible threshold for military action'. The output adds 'aggression against Finland', which introduces a directional framing (implying Finland as a target of aggression) and an adversarial implication not explicitly stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"(e.g., transit or logistical support)\",\n      \"issue\": \"This parenthetical example is not in the source and introduces speculative specificity about what the allowed activities might entail, which constitutes editorial interpretation.\"\n    },\n    {\n      \"output_phrase\": \"This legislative update is framed as a technical adjustment\",\n      \"issue\": \"The source does not characterize the proposal as a 'technical adjustment'. This is an editorial characterization added by the summary that minimizes the significance of the change. The meta-commentary about how it is 'framed' also introduces an analytical/editorial layer not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"maintaining its long-standing non-nuclear stance\",\n      \"issue\": \"The source does not reference a 'long-standing non-nuclear stance'. This adds historical/political context and editorial characterization not present in the original text.\"\n    },\n    {\n      \"output_phrase\": \"as part of its military alliance obligations\",\n      \"issue\": \"The source says 'as part of the alliance' without specifying 'obligations'. Adding 'obligations' introduces an implication of binding duty not explicitly stated in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful but introduces several editorial additions: speculative examples ('transit or logistical support'), characterization of the proposal as a 'technical adjustment', reference to a 'long-standing non-nuclear stance', directional framing of 'aggression against Finland', and the notion of 'alliance obligations'. These collectively add interpretive and editorial layers not present in the neutral source text.\"\n}\n```",
+  "judge_prompt_tokens": 853,
+  "judge_completion_tokens": 571,
+  "judge_cost_usd": 0.01854,
+  "timestamp": 1774952547.296491
+}

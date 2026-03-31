@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The summary introduces minor framing shifts: 'toteaa' becomes 'vahvisti' (adding authority), 'on ollut paikalla' becomes 'l\u00e4hetti paikalle' (adding decisiveness), and the minister's words are editorially characterized with 'korosti'. These are subtle but collectively shift the tone toward a more action-oriented and authoritative narrative than the neutral source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"vahvisti\",\n      \"issue\": \"The source uses 'toteaa' (states), while the summary uses 'vahvisti' (confirmed), which implies a stronger authoritative act and adds a nuance of official confirmation not present in the original wording.\"\n    },\n    {\n      \"output_phrase\": \"korosti viranomaisten suhtautuvan asiaan vakavasti\",\n      \"issue\": \"The source says 'Suhtaudumme asiaan hyvin vakavasti' (we take this very seriously), while the summary uses 'korosti' (emphasized/stressed), which adds editorial characterization of the minister's tone. Also, 'hyvin vakavasti' (very seriously) is reduced to just 'vakavasti' (seriously), slightly downplaying the original emphasis.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti paikalle\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla' (the Air Force has been on site), a passive/stative description, while the summary uses 'l\u00e4hetti paikalle' (sent to the scene), which implies a more active, decisive dispatch action \u2014 a subtle framing shift toward a more action-oriented narrative.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The summary introduces minor framing shifts: 'toteaa' becomes 'vahvisti' (adding authority), 'on ollut paikalla' becomes 'l\u00e4hetti paikalle' (adding decisiveness), and the minister's words are editorially characterized with 'korosti'. These are subtle but collectively shift the tone toward a more action-oriented and authoritative narrative than the neutral source.\"\n}\n```",
+  "judge_prompt_tokens": 713,
+  "judge_completion_tokens": 443,
+  "judge_cost_usd": 0.01464,
+  "timestamp": 1774952603.9110558
+}

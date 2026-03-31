@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The source text is largely factual and declarative in nature, with relatively little hedging language. The output faithfully preserves the conditional and propositional framing of the bill (it is a proposal, not enacted law), maintains that Finland is not seeking nuclear weapons deployment, and preserves the statement that no such deployment is planned. No significant hedging was removed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"is sending a proposal\", \"context\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\"},\n    {\"expression\": \"proposes that these actions would in future be possible\", \"context\": \"The bill proposes that these actions would in future be possible if they were related to Finland's military defence\"},\n    {\"expression\": \"difficult-to-predict operational environment\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"is sending a proposal\", \"preserved\": true, \"output_version\": \"has proposed amendments \u2014 the proposal framing is maintained, though 'is sending' becomes 'has proposed', which is a minor tense shift rather than hedging removal\"},\n    {\"expression\": \"proposes that these actions would in future be possible\", \"preserved\": true, \"output_version\": \"The bill seeks to lift current prohibitions... provided these actions are related to \u2014 the propositional/conditional nature is preserved through 'seeks to'\"},\n    {\"expression\": \"difficult-to-predict operational environment\", \"preserved\": true, \"output_version\": \"unpredictable security environment \u2014 equivalent meaning preserved\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"There are currently no plans within NATO to deploy nuclear weapons to Finland.\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source text is largely factual and declarative in nature, with relatively little hedging language. The output faithfully preserves the conditional and propositional framing of the bill (it is a proposal, not enacted law), maintains that Finland is not seeking nuclear weapons deployment, and preserves the statement that no such deployment is planned. No significant hedging was removed.\"\n}\n```",
+  "judge_prompt_tokens": 822,
+  "judge_completion_tokens": 504,
+  "judge_cost_usd": 0.01671,
+  "timestamp": 1774952547.295827
+}

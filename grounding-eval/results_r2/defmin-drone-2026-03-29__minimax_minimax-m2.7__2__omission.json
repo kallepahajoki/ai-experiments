@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully captures all key facts from the source, including the qualifier 'according to current information,' the locations, the response details, the ministerial quote, and the joint investigation. The only notable deviation is the output's speculative addition of 'border guard, etc.' which is not in the source, but no important information from the source is missing.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force used an F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"This information is qualified as 'according to current information'\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said they take this very seriously\",\n    \"Security authorities responded immediately\",\n    \"The Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The output adds 'border guard, etc.' as examples of other authorities, which is not in the source \u2014 this is an addition rather than an omission, but worth noting\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully captures all key facts from the source, including the qualifier 'according to current information,' the locations, the response details, the ministerial quote, and the joint investigation. The only notable deviation is the output's speculative addition of 'border guard, etc.' which is not in the source, but no important information from the source is missing.\"\n}\n```",
+  "judge_prompt_tokens": 546,
+  "judge_completion_tokens": 356,
+  "judge_cost_usd": 0.01163,
+  "timestamp": 1774952547.292185
+}

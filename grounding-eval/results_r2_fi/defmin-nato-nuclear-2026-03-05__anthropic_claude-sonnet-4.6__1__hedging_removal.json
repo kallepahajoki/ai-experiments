@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The source uses the conditional 'olisivat jatkossa mahdollisia' (would be possible in the future), and the output renders this as 'olisi jatkossa sallittua' (would be permitted in the future). While the output changes 'mahdollisia' (possible) to 'sallittua' (permitted), which is a slight semantic shift making it sound more definitive, both versions still use the conditional mood ('olisi'/'olisivat'), preserving the core hedging that this is a proposal, not enacted law. The phrase about NATO not planning nuclear weapons placement is preserved. Overall, no significant hedging removal was found \u2014 the conditional/proposal framing is maintained throughout the summary.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"preserved\": false,\n      \"output_version\": \"olisi jatkossa sallittua\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"preserved\": true,\n      \"output_version\": \"sellaista ei ole suunnitteilla\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses the conditional 'olisivat jatkossa mahdollisia' (would be possible in the future), and the output renders this as 'olisi jatkossa sallittua' (would be permitted in the future). While the output changes 'mahdollisia' (possible) to 'sallittua' (permitted), which is a slight semantic shift making it sound more definitive, both versions still use the conditional mood ('olisi'/'olisivat'), preserving the core hedging that this is a proposal, not enacted law. The phrase about NATO not planning nuclear weapons placement is preserved. Overall, no significant hedging removal was found \u2014 the conditional/proposal framing is maintained throughout the summary.\"\n}\n```",
+  "judge_prompt_tokens": 1283,
+  "judge_completion_tokens": 484,
+  "judge_cost_usd": 0.018515,
+  "timestamp": 1774952603.91594
+}

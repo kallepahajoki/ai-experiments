@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The source states 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends/is sending), while the summary states 'Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle' (present perfect: has sent). This shifts the temporal framing from an ongoing/announced action to a completed one. All other temporal elements (the deadline 2.4.2026, future conditional forms, present-tense descriptions of what remains criminalized) are faithfully preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 (present tense \u2013 sends)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t (remain \u2013 present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"on l\u00e4hett\u00e4nyt (perfect tense \u2013 has sent)\",\n    \"Nykyinen laki (current law)\",\n    \"lakimuutoksen my\u00f6t\u00e4 (with the law change \u2013 future/conditional)\",\n    \"pysyv\u00e4t edelleen (remain still \u2013 present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hett\u00e4nyt (has sent \u2013 present perfect, completed action)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 (sends \u2013 present tense, ongoing/announced action)\",\n      \"explanation\": \"The source uses the present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the action is being announced or is in progress. The summary shifts this to the present perfect 'on l\u00e4hett\u00e4nyt' (has sent), implying the action is already completed. This is a minor tense drift that subtly changes the temporal framing of the event.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source states 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends/is sending), while the summary states 'Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle' (present perfect: has sent). This shifts the temporal framing from an ongoing/announced action to a completed one. All other temporal elements (the deadline 2.4.2026, future conditional forms, present-tense descriptions of what remains criminalized) are faithfully preserved.\"\n}\n```",
+  "judge_prompt_tokens": 1128,
+  "judge_completion_tokens": 504,
+  "judge_cost_usd": 0.01824,
+  "timestamp": 1774952603.918418
+}

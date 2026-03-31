@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The source uses conditional forms ('olisivat', 'liittyisiv\u00e4t') because it describes a legislative proposal, not enacted law. The output mostly preserves the conditional nature by using 'olisivat jatkossa sallittuja', though it shifts 'liittyisiv\u00e4t' (conditional) to 'liittyv\u00e4t' (indicative), which is a minor reduction in conditionality. However, the overall framing as a proposal ('Ehdotus', 'lausuntokierros') is preserved, so the reader understands these are proposed changes, not enacted ones. The hedging changes are very minor and do not materially misrepresent the source's uncertainty level.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"},\n    {\"expression\": \"liittyisiv\u00e4t\", \"context\": \"jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\"},\n    {\"expression\": \"esitet\u00e4\u00e4n\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia / olisivat jatkossa sallittuja\", \"preserved\": true, \"output_version\": \"olisivat jatkossa sallittuja, jos ne liittyv\u00e4t Suomen sotilaalliseen puolustukseen\"},\n    {\"expression\": \"liittyisiv\u00e4t\", \"preserved\": false, \"output_version\": \"jos ne liittyv\u00e4t\" },\n    {\"expression\": \"esitet\u00e4\u00e4n\", \"preserved\": false, \"output_version\": \"The summary presents the changes more directly under 'Keskeiset muutokset' without explicitly noting it is a proposal being presented\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses conditional forms ('olisivat', 'liittyisiv\u00e4t') because it describes a legislative proposal, not enacted law. The output mostly preserves the conditional nature by using 'olisivat jatkossa sallittuja', though it shifts 'liittyisiv\u00e4t' (conditional) to 'liittyv\u00e4t' (indicative), which is a minor reduction in conditionality. However, the overall framing as a proposal ('Ehdotus', 'lausuntokierros') is preserved, so the reader understands these are proposed changes, not enacted ones. The hedging changes are very minor and do not materially misrepresent the source's uncertainty level.\"\n}\n```",
+  "judge_prompt_tokens": 1428,
+  "judge_completion_tokens": 562,
+  "judge_cost_usd": 0.02119,
+  "timestamp": 1774952603.917081
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.55,
+    "evidence": "The output is largely faithful to the source. The attribution to the 'Ministry of Defence' is unsupported but not a direct contradiction of any source statement. The addition of 'intercept' goes beyond the source but doesn't directly contradict it \u2014 it adds an unsupported claim rather than stating the opposite of something in the source. These are more accurately described as embellishments/unsupported additions rather than outright contradictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"the Finnish Ministry of Defence reported that several low\u2011flying, slow\u2011moving small objects (identified as drones) were detected\",\n      \"source_statement\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\",\n      \"explanation\": \"The source does not attribute the report to the 'Ministry of Defence.' The source mentions the Defence Forces and the Defense Minister, but does not say the Ministry of Defence issued the report. This is a minor attribution error rather than a direct factual contradiction.\"\n    },\n    {\n      \"output_statement\": \"The Air Force scrambled an F/A\u201118 Hornet to intercept and identify the objects.\",\n      \"source_statement\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\",\n      \"explanation\": \"The source says the Hornet was used for 'identification,' while the output adds 'intercept,' which is not stated in the source. This introduces an action (interception) not supported by the source.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.55,\n  \"evidence\": \"The output is largely faithful to the source. The attribution to the 'Ministry of Defence' is unsupported but not a direct contradiction of any source statement. The addition of 'intercept' goes beyond the source but doesn't directly contradict it \u2014 it adds an unsupported claim rather than stating the opposite of something in the source. These are more accurately described as embellishments/unsupported additions rather than outright contradictions.\"\n}\n```",
+  "judge_prompt_tokens": 463,
+  "judge_completion_tokens": 391,
+  "judge_cost_usd": 0.01209,
+  "timestamp": 1774952547.291442
+}

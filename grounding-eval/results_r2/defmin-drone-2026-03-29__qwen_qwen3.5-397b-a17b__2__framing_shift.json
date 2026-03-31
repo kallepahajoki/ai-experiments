@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The output is largely faithful but introduces minor framing shifts: 'confirmed' instead of 'states,' 'emphasizing' to characterize the minister's tone, and 'subsequently' implying a causal/temporal sequence. These are subtle editorial choices not present in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"confirmed that drones strayed into Finnish territory\",\n      \"issue\": \"The source uses 'states' while the output uses 'confirmed,' which subtly adds a sense of authoritative verification not present in the original. 'Confirmed' implies independent corroboration, whereas 'states' is more neutral.\"\n    },\n    {\n      \"output_phrase\": \"emphasizing that the incident is being taken seriously\",\n      \"issue\": \"The source quotes the minister saying 'We take this very seriously' as a direct statement. Using 'emphasizing' adds an editorial characterization of the minister's rhetorical intent, slightly dramatizing the tone.\"\n    },\n    {\n      \"output_phrase\": \"Two drones subsequently crashed\",\n      \"issue\": \"The word 'subsequently' introduces a temporal/causal sequencing that is not explicitly stated in the source. The source says 'according to current information, one drone has crashed...' without implying the crashes followed the detection as a direct consequence or sequence.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The output is largely faithful but introduces minor framing shifts: 'confirmed' instead of 'states,' 'emphasizing' to characterize the minister's tone, and 'subsequently' implying a causal/temporal sequence. These are subtle editorial choices not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 461,
+  "judge_completion_tokens": 347,
+  "judge_cost_usd": 0.01098,
+  "timestamp": 1774952547.295004
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source says the Ministry 'is sending a proposal... for a consultation round' (present continuous, suggesting the process is underway or imminent), while the output says the Ministry 'has submitted a bill... for public consultation' (present perfect, implying the action is already completed). This is a minor tense drift that slightly misrepresents the stage of the process. All other temporal elements, including the consultation deadline of 2 April 2026 and the conditional future tenses, are accurately preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal (present tense, ongoing action)\",\n    \"Under current legislation (present)\",\n    \"would in future be possible (conditional future)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted a bill (present perfect, completed action)\",\n    \"currently prohibit (present)\",\n    \"allowing these actions when they are linked (present/conditional future)\",\n    \"would remain criminal offenses (conditional future)\",\n    \"The consultation period runs until 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a bill\",\n      \"source_temporal\": \"is sending a proposal\",\n      \"explanation\": \"The source uses present continuous 'is sending' indicating the action is in progress or about to happen. The output uses present perfect 'has submitted' which implies the action is already completed. This is a subtle tense shift from an ongoing/imminent action to a completed one.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says the Ministry 'is sending a proposal... for a consultation round' (present continuous, suggesting the process is underway or imminent), while the output says the Ministry 'has submitted a bill... for public consultation' (present perfect, implying the action is already completed). This is a minor tense drift that slightly misrepresents the stage of the process. All other temporal elements, including the consultation deadline of 2 April 2026 and the conditional future tenses, are accurately preserved.\"\n}\n```",
+  "judge_prompt_tokens": 676,
+  "judge_completion_tokens": 396,
+  "judge_cost_usd": 0.01328,
+  "timestamp": 1774952547.295941
+}

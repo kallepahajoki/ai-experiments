@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document's key points. The current law prohibits 'bringing a nuclear explosive into Finland, or its transport, delivery, or possession,' and the output summarizes this as prohibiting 'the transport, delivery, or possession of nuclear explosives in Finland,' omitting the 'bringing into Finland' element. This is an omission rather than a contradiction. All other statements align with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence has submitted a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation period ending on 2 April 2026.\",\n      \"source_statement\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n      \"explanation\": \"The source says the Ministry is 'sending' the proposal for a consultation round, meaning it is initiating the process. The output says the Ministry 'has submitted' the proposal, which could be seen as a minor tense difference but is not a direct contradiction. However, this is borderline and not a clear factual conflict.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document's key points. The current law prohibits 'bringing a nuclear explosive into Finland, or its transport, delivery, or possession,' and the output summarizes this as prohibiting 'the transport, delivery, or possession of nuclear explosives in Finland,' omitting the 'bringing into Finland' element. This is an omission rather than a contradiction. All other statements align with the source.\"\n}\n```",
+  "judge_prompt_tokens": 667,
+  "judge_completion_tokens": 289,
+  "judge_cost_usd": 0.01056,
+  "timestamp": 1774952547.297915
+}

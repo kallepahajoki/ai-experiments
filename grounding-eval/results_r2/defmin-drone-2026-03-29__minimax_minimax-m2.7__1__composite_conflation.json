@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary adds 'intercept' to the Air Force's mission, which the source describes only as 'identification.' This merges an assumed interception role with the stated identification role into a single combined claim. The 'forensic investigation' and 'cordoned off' language is more embellishment than conflation. Overall, the conflations are relatively minor.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Police have cordoned off both crash sites for forensic investigation.\",\n      \"source_facts\": [\"Police have secured the areas for further investigation.\"],\n      \"explanation\": \"The source says police 'secured the areas for further investigation.' The summary embellishes this to 'cordoned off both crash sites for forensic investigation,' adding the specific method ('cordoned off') and characterizing the investigation as 'forensic,' neither of which is stated in the source. However, this is more of an embellishment than a composite conflation of two separate facts.\"\n    },\n    {\n      \"output_statement\": \"The Finnish Air Force scrambled an F/A\u201118 Hornet to intercept and identify the objects.\",\n      \"source_facts\": [\"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"],\n      \"explanation\": \"The source says the Air Force was 'on-site with an F/A-18 Hornet fighter for identification.' The summary adds 'intercept and' before 'identify,' merging an unstated interception mission with the stated identification mission. The source only mentions identification, not interception.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary adds 'intercept' to the Air Force's mission, which the source describes only as 'identification.' This merges an assumed interception role with the stated identification role into a single combined claim. The 'forensic investigation' and 'cordoned off' language is more embellishment than conflation. Overall, the conflations are relatively minor.\"\n}\n```",
+  "judge_prompt_tokens": 505,
+  "judge_completion_tokens": 399,
+  "judge_cost_usd": 0.0125,
+  "timestamp": 1774952547.291978
+}

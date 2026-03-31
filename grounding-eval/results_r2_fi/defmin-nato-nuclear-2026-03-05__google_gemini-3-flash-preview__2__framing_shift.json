@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary introduces minor editorial framing: the headline reframes 'fully utilizing' NATO's deterrent as 'strengthening' it, and the word 'vain' (only/just) minimizes the legislative change to mere NATO compatibility, omitting the broader security rationale stated in the source. These are subtle shifts but introduce editorial tone not present in the neutral source text.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Muutoksella halutaan vain saattaa lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden kanssa\",\n      \"issue\": \"The word 'vain' (only/just) is an editorial addition that minimizes the scope of the change. The source presents compatibility with NATO as one of several reasons (including maximizing security in an unpredictable environment and ensuring credible deterrence), not as the sole purpose. This downplays the significance of the legislative change.\"\n    },\n    {\n      \"output_phrase\": \"sallittua\",\n      \"issue\": \"The source uses 'mahdollisia' (possible/permitted), while the summary uses 'sallittua' (allowed/permitted). This is a minor shift \u2014 'sallittua' has a slightly more permissive connotation than 'mahdollisia', though both are close in meaning.\"\n    },\n    {\n      \"output_phrase\": \"Naton pelotteen vahvistamiseksi\",\n      \"issue\": \"The headline uses 'vahvistamiseksi' (to strengthen), but the source says 't\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi' (to fully utilize). 'Strengthening' implies the deterrent itself is being made stronger, while 'fully utilizing' means removing barriers to accessing an existing deterrent. This is a subtle but meaningful framing shift.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary introduces minor editorial framing: the headline reframes 'fully utilizing' NATO's deterrent as 'strengthening' it, and the word 'vain' (only/just) minimizes the legislative change to mere NATO compatibility, omitting the broader security rationale stated in the source. These are subtle shifts but introduce editorial tone not present in the neutral source text.\"\n}\n```",
+  "judge_prompt_tokens": 1187,
+  "judge_completion_tokens": 471,
+  "judge_cost_usd": 0.01771,
+  "timestamp": 1774952603.9167209
+}

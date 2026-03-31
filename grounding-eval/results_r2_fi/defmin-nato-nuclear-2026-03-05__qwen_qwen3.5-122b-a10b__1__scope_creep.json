@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately reflects the key points: the legislative proposal to amend nuclear energy and criminal law, the removal of restrictions on bringing/transporting/possessing nuclear explosives for defense purposes, the alignment with other NATO countries' legislation, the clarification that Finland is not seeking nuclear weapons on its territory, the permanent criminalization of acquiring/manufacturing/developing/detonating nuclear explosives, and the consultation deadline of 2.4.2026. The phrase 'yhten\u00e4ist\u00e4\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 muiden Nato-maiden kanssa' is a reasonable paraphrase of the source's statement that most NATO countries lack such restrictions and that the proposal aligns Finnish legislation with NATO operations.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately reflects the key points: the legislative proposal to amend nuclear energy and criminal law, the removal of restrictions on bringing/transporting/possessing nuclear explosives for defense purposes, the alignment with other NATO countries' legislation, the clarification that Finland is not seeking nuclear weapons on its territory, the permanent criminalization of acquiring/manufacturing/developing/detonating nuclear explosives, and the consultation deadline of 2.4.2026. The phrase 'yhten\u00e4ist\u00e4\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 muiden Nato-maiden kanssa' is a reasonable paraphrase of the source's statement that most NATO countries lack such restrictions and that the proposal aligns Finnish legislation with NATO operations.\"\n}\n```",
+  "judge_prompt_tokens": 1118,
+  "judge_completion_tokens": 212,
+  "judge_cost_usd": 0.01089,
+  "timestamp": 1774952603.919636
+}

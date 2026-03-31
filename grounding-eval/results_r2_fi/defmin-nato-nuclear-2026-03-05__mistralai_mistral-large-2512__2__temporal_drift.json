@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions in the output faithfully reflect the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current actions, conditional for proposed changes, and future-oriented language for intended outcomes. Event ordering is preserved accurately. No temporal drift detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, indicating current/ongoing action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa mahdollisia (possible in the future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa (remain criminalized in all situations)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, matching source)\",\n    \"Nykyinen t\u00e4ydellinen kielto (current complete ban)\",\n    \"poistettaisiin (conditional, would be removed)\",\n    \"olisivat jatkossa mahdollisia (would be possible in the future)\",\n    \"pysyv\u00e4t kiellettyin\u00e4 kaikissa tilanteissa (remain prohibited in all situations)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions in the output faithfully reflect the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current actions, conditional for proposed changes, and future-oriented language for intended outcomes. Event ordering is preserved accurately. No temporal drift detected.\"\n}\n```",
+  "judge_prompt_tokens": 1278,
+  "judge_completion_tokens": 373,
+  "judge_cost_usd": 0.015715,
+  "timestamp": 1774952603.91801
+}

@@ -55,19 +55,22 @@ Uses the full Turku NER corpus (~800 docs, 11k entities) and FiNER/Digitoday (~3
 
 Motivated by a real incident: on 2026-03-29, Helsingin Sanomat's AI press release tool [fabricated a Russia attribution](https://www.hs.fi/paakirjoitukset/art-2000011912865.html) for a Finnish MoD drone press release that contained no country information. The erroneous breaking news was live for three minutes before correction.
 
-First eval case uses that same MoD press release. Results from 7 models (3 runs each, 252 judge evaluations):
+Two eval cases: the drone incident press release, and a NATO nuclear law amendment proposal (sensitive — contains critical hedging and explicit denials). Benchmarked 8 models across both English and Finnish, 3 runs each, judged by Claude Opus 4.6 via OpenRouter (1,152 judge calls per language).
+
+English results (2 cases × 8 models × 3 runs):
 
 | Model | Overall failure rate | Critical failure rate | Notable patterns |
 |---|---|---|---|
-| openai/gpt-5.4-mini | **5.6%** | **0.0%** | Cleanest — preserved hedging, neutral tone |
-| nvidia/nemotron-3-super-120b-a12b | 16.7% | 33.3% | Invented "radar" as detection method |
-| qwen/qwen3.5-122b-a10b | 19.4% | 0.0% | 100% hedging removal, zero fabrication |
-| mistralai/mistral-small-2603 | 22.2% | 16.7% | One run replaced "preliminary" with "confirmed" |
-| anthropic/claude-sonnet-4.6 | 27.8% | 33.3% | "Unauthorized drones", "scrambled" — editorial embellishment |
-| google/gemini-2.5-flash | 36.1% | 50.0% | 100% fabrication, instruction leakage, temporal drift |
-| qwen/qwen3.5-9b | 36.1% | 33.3% | Failed across 9 of 12 modes |
+| openai/gpt-5.4-mini | **9.7%** | 16.7% | Lowest overall, clean and terse |
+| anthropic/claude-sonnet-4.6 | 16.7% | 8.3% | Persistent editorial tone |
+| qwen/qwen3.5-397b-a17b | 16.7% | **0.0%** | Zero critical failures |
+| qwen/qwen3.5-122b-a10b | 18.1% | **0.0%** | Zero critical, barely behind 397b |
+| google/gemini-3-flash-preview | 25.0% | 16.7% | 83% instruction leakage |
+| openai/gpt-4o-2024-11-20 | 29.2% | 33.3% | 50% entity substitution, 83% hedging removal |
+| minimax/minimax-m2.7 | 31.9% | 33.3% | Heavy fabrication and scope creep |
+| mistralai/mistral-large-2512 | 40.3% | 58.3% | 100% fabrication, 100% scope creep |
 
-Key finding: framing shift (adding editorial tone) was detected in every model. No model faithfully preserved the Finnish minister's word "harhautunut" (strayed, implying accidental) — it became "unauthorized", "intrusion", or "entered". A single fabricated-addition judge call (~$0.01) would have caught the HS error before publication.
+Finnish results tell a different story — MiniMax M2.7 wins (16.7%), GPT 5.4 mini falls to 27.8%, and Qwen 397b is the most consistent across languages. A single fabricated-addition judge call (~$0.01) would have caught the HS error before publication.
 
 ### [`nextjs-server-boundary-finetune/`](nextjs-server-boundary-finetune/)
 

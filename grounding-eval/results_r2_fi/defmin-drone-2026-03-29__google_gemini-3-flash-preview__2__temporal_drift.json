@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output preserves the key temporal expression 'sunnuntaiaamuna' (minor orthographic difference: hyphen removed, but same meaning). The event sequence is maintained: observation of objects \u2192 Air Force response \u2192 two drones fell near Kouvola \u2192 police cordoned off areas \u2192 minister's statement \u2192 ongoing investigation. Tenses are consistent with the source. No dates, times, or event ordering have been altered. The omission of 'T\u00e4m\u00e4n hetken tietojen mukaan' and 'v\u00e4litt\u00f6m\u00e4sti' does not constitute temporal drift, as no incorrect temporal information was introduced.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntaiaamuna\"],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output preserves the key temporal expression 'sunnuntaiaamuna' (minor orthographic difference: hyphen removed, but same meaning). The event sequence is maintained: observation of objects \u2192 Air Force response \u2192 two drones fell near Kouvola \u2192 police cordoned off areas \u2192 minister's statement \u2192 ongoing investigation. Tenses are consistent with the source. No dates, times, or event ordering have been altered. The omission of 'T\u00e4m\u00e4n hetken tietojen mukaan' and 'v\u00e4litt\u00f6m\u00e4sti' does not constitute temporal drift, as no incorrect temporal information was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 774,
+  "judge_completion_tokens": 232,
+  "judge_cost_usd": 0.00967,
+  "timestamp": 1774952603.911672
+}

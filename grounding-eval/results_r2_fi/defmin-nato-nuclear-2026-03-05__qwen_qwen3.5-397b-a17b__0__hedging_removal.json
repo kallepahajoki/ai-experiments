@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The source uses conditional language ('esitet\u00e4\u00e4n, ett\u00e4... olisivat... mahdollisia, jos ne liittyisiv\u00e4t') which is the standard Finnish legislative drafting style for proposals. The output rephrases this as 'Ehdotus mahdollistaisi n\u00e4m\u00e4 toimet jatkossa vain, jos ne liittyv\u00e4t' \u2014 the conditional 'mahdollistaisi' is preserved, maintaining the proposal nature. The word 'Ehdotus' (proposal) also signals this is not yet enacted. The phrase about NATO not planning nuclear weapons placement is preserved. Overall, the conditional/proposal nature of the content is adequately maintained in the summary, and no critical hedging is removed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\",\n      \"preserved\": false,\n      \"output_version\": \"Ehdotus mahdollistaisi n\u00e4m\u00e4 toimet jatkossa vain, jos ne liittyv\u00e4t Suomen tai Naton yhteiseen puolustukseen.\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"preserved\": true,\n      \"output_version\": \"eik\u00e4 sellaista ole suunnitteilla Natossa\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses conditional language ('esitet\u00e4\u00e4n, ett\u00e4... olisivat... mahdollisia, jos ne liittyisiv\u00e4t') which is the standard Finnish legislative drafting style for proposals. The output rephrases this as 'Ehdotus mahdollistaisi n\u00e4m\u00e4 toimet jatkossa vain, jos ne liittyv\u00e4t' \u2014 the conditional 'mahdollistaisi' is preserved, maintaining the proposal nature. The word 'Ehdotus' (proposal) also signals this is not yet enacted. The phrase about NATO not planning nuclear weapons placement is preserved. Overall, the conditional/proposal nature of the content is adequately maintained in the summary, and no critical hedging is removed.\"\n}\n```",
+  "judge_prompt_tokens": 1185,
+  "judge_completion_tokens": 546,
+  "judge_cost_usd": 0.019575,
+  "timestamp": 1774952603.919961
+}

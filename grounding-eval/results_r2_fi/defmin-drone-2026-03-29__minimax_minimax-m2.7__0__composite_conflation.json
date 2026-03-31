@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.93,
+    "evidence": "The summary faithfully separates the individual facts from the source without merging independent facts into false causal or combined claims. Each bullet point corresponds to distinct information in the source. The minister's comment is slightly paraphrased ('eritt\u00e4in vakavasti' vs. 'hyvin vakavasti') but no composite conflation occurs. The drone crashes are presented as two separate events, matching the source. No causal connectors are used to link unrelated facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.93,\n  \"evidence\": \"The summary faithfully separates the individual facts from the source without merging independent facts into false causal or combined claims. Each bullet point corresponds to distinct information in the source. The minister's comment is slightly paraphrased ('eritt\u00e4in vakavasti' vs. 'hyvin vakavasti') but no composite conflation occurs. The drone crashes are presented as two separate events, matching the source. No causal connectors are used to link unrelated facts.\"\n}\n```",
+  "judge_prompt_tokens": 807,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.00761,
+  "timestamp": 1774952603.911993
+}

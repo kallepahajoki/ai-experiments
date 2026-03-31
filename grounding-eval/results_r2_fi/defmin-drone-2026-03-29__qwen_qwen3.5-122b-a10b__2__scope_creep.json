@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output introduces a label ('Puolustusministeri\u00f6n tiedote') not present in the source and implies a causal relationship between the F/A-18 identification mission and the drones falling, which the source does not state.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"Puolustusministeri\u00f6n tiedotteen tiivistys\",\n      \"explanation\": \"The source document does not identify itself as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release). This label is added by the model and not traceable to the source.\"\n    },\n    {\n      \"output_content\": \"Tapahtuman seurauksena kaksi droonia putosi maahan\",\n      \"explanation\": \"The source says two drones fell to the ground ('on pudonnut maahan'), but the output adds the causal framing 'Tapahtuman seurauksena' (as a consequence of the event), implying the F/A-18 mission caused the drones to fall. The source does not establish this causal link.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output introduces a label ('Puolustusministeri\u00f6n tiedote') not present in the source and implies a causal relationship between the F/A-18 identification mission and the drones falling, which the source does not state.\"\n}\n```",
+  "judge_prompt_tokens": 714,
+  "judge_completion_tokens": 296,
+  "judge_cost_usd": 0.01097,
+  "timestamp": 1774952603.915019
+}

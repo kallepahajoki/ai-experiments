@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source uses 'muutamia' (a few) to describe the detected objects, while the output uses 'useita' (several), which suggests a greater number. The count of two drones and the F/A-18 designation are accurately preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"useita (several)\", \"kaksi (two)\", \"F/A-18\"],\n  \"distortions\": [\n    {\n      \"output_value\": \"useita (several)\",\n      \"source_value\": \"muutamia (a few)\",\n      \"explanation\": \"'Muutamia' (a few) was changed to 'useita' (several), which implies a larger quantity than the source indicates.\"\n    }\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source uses 'muutamia' (a few) to describe the detected objects, while the output uses 'useita' (several), which suggests a greater number. The count of two drones and the F/A-18 designation are accurately preserved.\"\n}\n```",
+  "judge_prompt_tokens": 740,
+  "judge_completion_tokens": 249,
+  "judge_cost_usd": 0.009925,
+  "timestamp": 1774952603.912253
+}

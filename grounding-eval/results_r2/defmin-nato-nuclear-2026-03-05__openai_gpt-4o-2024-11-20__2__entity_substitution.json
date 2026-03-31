@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.98,
+    "evidence": "All named entities in the output (Finnish Ministry of Defence, NATO, Finland) correspond accurately to entities in the source (Ministry of Defence, NATO, Finland). 'Finnish Ministry of Defence' is a minor naming variation of 'The Ministry of Defence' given the context clearly refers to Finland's ministry. No entity substitutions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"NATO\", \"Finland\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.98,\n  \"evidence\": \"All named entities in the output (Finnish Ministry of Defence, NATO, Finland) correspond accurately to entities in the source (Ministry of Defence, NATO, Finland). 'Finnish Ministry of Defence' is a minor naming variation of 'The Ministry of Defence' given the context clearly refers to Finland's ministry. No entity substitutions were found.\"\n}\n```",
+  "judge_prompt_tokens": 688,
+  "judge_completion_tokens": 134,
+  "judge_cost_usd": 0.00679,
+  "timestamp": 1774952547.297264
+}

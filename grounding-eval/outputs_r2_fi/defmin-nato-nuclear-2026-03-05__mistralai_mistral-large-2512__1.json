@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "content": "**Tiivistelm\u00e4 Puolustusministeri\u00f6n tiedotteesta:**\n\nPuolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle esityksen **ydinenergialain ja rikoslain muuttamisesta**, jotta Suomen sotilaallinen puolustus ja Naton yhteinen puolustus (mukaan lukien pelote) voidaan hy\u00f6dynt\u00e4\u00e4 t\u00e4ysim\u00e4\u00e4r\u00e4isesti.\n\n**Keskeiset muutokset:**\n- Nykyinen **t\u00e4ydellinen kielto** ydinr\u00e4j\u00e4hteiden tuomiselle, kuljettamiselle, toimittamiselle tai hallussapidolle Suomessa poistettaisiin.\n- N\u00e4m\u00e4 toimet olisivat jatkossa **sallittuja**, jos ne liittyv\u00e4t **Suomen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n**.\n- Tavoitteena on **yhdenmukaistaa Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 Naton k\u00e4yt\u00e4nt\u00f6jen kanssa**, sill\u00e4 useimmilla Naton mailla ei ole vastaavia rajoituksia.\n\n**Taustat ja tavoitteet:**\n- Muutos perustuu **turvallisuustarpeeseen** ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4.\n- Pyrkimyksen\u00e4 on **vahvistaa Naton pelotteen uskottavuutta** ja nostaa sotilaallisten toimien kynnyst\u00e4.\n- **Ei ole kyse ydinaseiden hankinnasta tai sijoittamisesta Suomeen** \u2013 Natolla ei ole suunnitelmia ydinaseiden sijoittamisesta Suomeen.\n- **Ydinaseiden hankinta, valmistus, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen** pysyv\u00e4t **rikoksina kaikissa tilanteissa**.\n\n**Aikataulu:**\n- **Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026**.",
+  "prompt_tokens": 478,
+  "completion_tokens": 419,
+  "cost_usd": 0.0008675,
+  "latency_ms": 10485.239707995788,
+  "timestamp": 1774951704.296148
+}

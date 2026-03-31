@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The output makes two minor framing changes: it slightly intensifies the minister's language ('eritt\u00e4in' vs 'hyvin') and reframes the Air Force's presence from a stative description to an active dispatch action. These are subtle shifts but do introduce slightly different editorial tone compared to the neutral source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"tilanne otetaan eritt\u00e4in vakavasti\",\n      \"issue\": \"The source uses 'hyvin vakavasti' (very seriously), but the output changes this to 'eritt\u00e4in vakavasti' (extremely seriously), which is a slight intensification of the minister's stated tone.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti paikalle F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been on site), a passive/stative description. The output rephrases as 'l\u00e4hetti paikalle' (sent to the scene), which introduces a more active, decisive action framing not explicitly in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The output makes two minor framing changes: it slightly intensifies the minister's language ('eritt\u00e4in' vs 'hyvin') and reframes the Air Force's presence from a stative description to an active dispatch action. These are subtle shifts but do introduce slightly different editorial tone compared to the neutral source.\"\n}\n```",
+  "judge_prompt_tokens": 740,
+  "judge_completion_tokens": 329,
+  "judge_cost_usd": 0.011925,
+  "timestamp": 1774952603.9141178
+}

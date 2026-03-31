@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.93,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The key facts are presented separately and faithfully. The phrase 'Two drones have since crashed' uses 'since' as a temporal marker rather than a causal connector, and accurately reflects the source's statement that drones crashed. Minister H\u00e4kk\u00e4nen's statements are paraphrased accurately without conflation. No causal connectors (because, caused, led to, due to, resulting in) are used to create false relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.93,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The key facts are presented separately and faithfully. The phrase 'Two drones have since crashed' uses 'since' as a temporal marker rather than a causal connector, and accurately reflects the source's statement that drones crashed. Minister H\u00e4kk\u00e4nen's statements are paraphrased accurately without conflation. No causal connectors (because, caused, led to, due to, resulting in) are used to create false relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 512,
+  "judge_completion_tokens": 160,
+  "judge_cost_usd": 0.00656,
+  "timestamp": 1774952547.290296
+}

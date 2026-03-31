@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary preserves the correct temporal anchoring ('Sunday morning'), the correct sequence of events (detection \u2192 Air Force response \u2192 crashes found \u2192 police securing sites \u2192 investigation), and no dates or times are fabricated or reordered. Minor tense shifts from present perfect to simple past occur but do not misrepresent the event timeline or sequence.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"have been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"were detected (past tense)\",\n    \"deployed (past tense)\",\n    \"have been confirmed down (present perfect)\",\n    \"crashed (past tense)\",\n    \"have secured (present perfect)\",\n    \"are working (present continuous)\",\n    \"confirmed (past tense)\",\n    \"strayed (past tense)\",\n    \"is being taken (present passive)\",\n    \"responded (past tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect (suggesting ongoing relevance) to simple past. This is a slight change but does not materially misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"Two drones have been confirmed down\",\n      \"source_temporal\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The source uses cautious language ('According to current information') and says drones 'crashed,' while the summary says they 'have been confirmed down,' which slightly elevates the certainty. However, this is more of a nuance/hedging issue than a temporal drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary preserves the correct temporal anchoring ('Sunday morning'), the correct sequence of events (detection \u2192 Air Force response \u2192 crashes found \u2192 police securing sites \u2192 investigation), and no dates or times are fabricated or reordered. Minor tense shifts from present perfect to simple past occur but do not misrepresent the event timeline or sequence.\"\n}\n```",
+  "judge_prompt_tokens": 544,
+  "judge_completion_tokens": 504,
+  "judge_cost_usd": 0.01532,
+  "timestamp": 1774952547.2908301
+}

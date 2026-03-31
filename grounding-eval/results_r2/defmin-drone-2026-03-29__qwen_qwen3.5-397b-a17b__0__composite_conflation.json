@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The output states the Hornet deployment led to confirmation that the objects were drones ('deployed...to identify the objects, which were confirmed to be drones'), but the source does not explicitly connect the Hornet's identification role to the confirmation that the objects were drones. The source separately mentions drones crashing and the minister referring to drones, but does not say the Hornet confirmed them as drones. This is a mild composite conflation merging two independent facts into a causal/sequential relationship.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The Finnish Air Force deployed an F/A-18 Hornet fighter to identify the objects, which were confirmed to be drones.\",\n      \"source_facts\": [\n        \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\",\n        \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n      ],\n      \"explanation\": \"The source says the Air Force deployed a Hornet for identification and separately mentions drones crashed near Kouvola. The source does not explicitly state that the Hornet identification process confirmed the objects were drones. The summary merges the deployment for identification with a conclusion ('confirmed to be drones') that is not directly stated as a result of the Hornet's identification effort. However, the source does refer to them as drones in the Defense Minister's statement and in the crash reports, so the confirmation that they were drones is loosely supported, though the causal link to the Hornet identification is not explicitly made in the source.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The output states the Hornet deployment led to confirmation that the objects were drones ('deployed...to identify the objects, which were confirmed to be drones'), but the source does not explicitly connect the Hornet's identification role to the confirmation that the objects were drones. The source separately mentions drones crashing and the minister referring to drones, but does not say the Hornet confirmed them as drones. This is a mild composite conflation merging two independent facts into a causal/sequential relationship.\"\n}\n```",
+  "judge_prompt_tokens": 507,
+  "judge_completion_tokens": 402,
+  "judge_cost_usd": 0.012585,
+  "timestamp": 1774952547.294612
+}

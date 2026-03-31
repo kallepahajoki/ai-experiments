@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.93,
+    "evidence": "The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the claim about two drones falling to the ground. The source explicitly marked this as preliminary/current information, but the output presents it as established fact ('Kaksi droonia putosi maahan'). Additionally, the source says the Air Force 'was present on an identification mission' (tunnistusteht\u00e4v\u00e4ss\u00e4), but the output states 'Ilmavoimat tunnisti tilanteen' (the Air Force identified the situation), which upgrades an ongoing task to a completed action. The qualifier 'muutamia' (a few/some) was also dropped, though this is a minor detail.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\"\n    },\n    {\n      \"expression\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4\",\n      \"context\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita (no 'muutamia' qualifier)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Kaksi droonia putosi maahan: toinen Kouvolan pohjoispuolelle ja toinen it\u00e4puolelle. (presented as established fact without 'according to current information')\"\n    },\n    {\n      \"expression\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4\",\n      \"preserved\": false,\n      \"output_version\": \"Ilmavoimat tunnisti tilanteen F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4 (changed from 'was present on an identification mission' to 'identified the situation', implying completed identification)\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.93,\n  \"evidence\": \"The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the claim about two drones falling to the ground. The source explicitly marked this as preliminary/current information, but the output presents it as established fact ('Kaksi droonia putosi maahan'). Additionally, the source says the Air Force 'was present on an identification mission' (tunnistusteht\u00e4v\u00e4ss\u00e4), but the output states 'Ilmavoimat tunnisti tilanteen' (the Air Force identified the situation), which upgrades an ongoing task to a completed action. The qualifier 'muutamia' (a few/some) was also dropped, though this is a minor detail.\"\n}\n```",
+  "judge_prompt_tokens": 802,
+  "judge_completion_tokens": 682,
+  "judge_cost_usd": 0.02106,
+  "timestamp": 1774952603.912771
+}

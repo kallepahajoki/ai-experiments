@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful in tone and content. The most notable framing shift is the substitution of 'hyvin vakavasti' with 'eritt\u00e4in vakavasti', which subtly intensifies the minister's stated level of concern. The other change ('lis\u00e4tutkimuksia' \u2192 'jatkotutkimuksia') is a near-synonym swap with negligible framing impact. Overall, the shift is minor.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"tilanne otetaan eritt\u00e4in vakavasti\",\n      \"issue\": \"The source quotes the minister saying 'hyvin vakavasti' (very seriously), but the summary changes this to 'eritt\u00e4in vakavasti' (extremely seriously), which is a slight intensification of the original wording.\"\n    },\n    {\n      \"output_phrase\": \"jatkotutkimuksia varten\",\n      \"issue\": \"The source says 'lis\u00e4tutkimuksia varten' (for further investigations), while the summary uses 'jatkotutkimuksia varten' (for follow-up investigations). This is a minor lexical substitution but does not significantly shift framing.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful in tone and content. The most notable framing shift is the substitution of 'hyvin vakavasti' with 'eritt\u00e4in vakavasti', which subtly intensifies the minister's stated level of concern. The other change ('lis\u00e4tutkimuksia' \u2192 'jatkotutkimuksia') is a near-synonym swap with negligible framing impact. Overall, the shift is minor.\"\n}\n```",
+  "judge_prompt_tokens": 738,
+  "judge_completion_tokens": 322,
+  "judge_cost_usd": 0.01174,
+  "timestamp": 1774952603.913911
+}

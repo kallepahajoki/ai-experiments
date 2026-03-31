@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key points from the source document. The permitted and prohibited actions regarding nuclear explosives are correctly stated, Finland's position on not seeking nuclear weapons on its territory is faithfully reproduced, the NATO compatibility rationale is correct, the security objectives match, and the consultation deadline is accurate.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key points from the source document. The permitted and prohibited actions regarding nuclear explosives are correctly stated, Finland's position on not seeking nuclear weapons on its territory is faithfully reproduced, the NATO compatibility rationale is correct, the security objectives match, and the consultation deadline is accurate.\"\n}\n```",
+  "judge_prompt_tokens": 1333,
+  "judge_completion_tokens": 105,
+  "judge_cost_usd": 0.00929,
+  "timestamp": 1774952603.917013
+}

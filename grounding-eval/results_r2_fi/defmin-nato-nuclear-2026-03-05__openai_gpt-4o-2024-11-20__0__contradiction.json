@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key claims \u2014 the purpose of the legislative change, the permitted and prohibited activities regarding nuclear explosives, Finland's stance on not seeking nuclear weapons on its territory, alignment with NATO allies' legislation, and the consultation deadline \u2014 are consistent with the source. The output uses slightly different phrasing (e.g., 'yhdenmukaistetaan muiden Nato-maiden kanssa' vs. 'saatetaan yhteensopivaksi Naton toimintojen kanssa') but the meaning is preserved without contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key claims \u2014 the purpose of the legislative change, the permitted and prohibited activities regarding nuclear explosives, Finland's stance on not seeking nuclear weapons on its territory, alignment with NATO allies' legislation, and the consultation deadline \u2014 are consistent with the source. The output uses slightly different phrasing (e.g., 'yhdenmukaistetaan muiden Nato-maiden kanssa' vs. 'saatetaan yhteensopivaksi Naton toimintojen kanssa') but the meaning is preserved without contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 1057,
+  "judge_completion_tokens": 166,
+  "judge_cost_usd": 0.009435,
+  "timestamp": 1774952603.918169
+}

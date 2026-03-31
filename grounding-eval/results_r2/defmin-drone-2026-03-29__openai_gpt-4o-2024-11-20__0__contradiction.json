@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The summary is largely faithful to the source. The only notable discrepancy is the attribution of the report to 'The Finnish Ministry of Defence,' which is not stated in the source. The source does not specify who issued the report. This is an unsupported addition/inference rather than a direct contradiction of any source statement. All other details \u2014 the detection of objects, the F/A-18 deployment, the two drone crash locations, the police securing the areas, the H\u00e4kk\u00e4nen quote, and the joint investigation \u2014 accurately reflect the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence reported that several low-flying, slow-moving small objects were detected in Finnish airspace\",\n      \"source_statement\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source presents the information without specifying a particular reporting entity (other than quoting Defense Minister Antti H\u00e4kk\u00e4nen and mentioning the Defence Forces are investigating). Attributing the report to the Ministry of Defence is an addition, though not strictly a contradiction of what was said \u2014 it's more of an unsupported attribution. However, this is a minor inaccuracy rather than a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary is largely faithful to the source. The only notable discrepancy is the attribution of the report to 'The Finnish Ministry of Defence,' which is not stated in the source. The source does not specify who issued the report. This is an unsupported addition/inference rather than a direct contradiction of any source statement. All other details \u2014 the detection of objects, the F/A-18 deployment, the two drone crash locations, the police securing the areas, the H\u00e4kk\u00e4nen quote, and the joint investigation \u2014 accurately reflect the source.\"\n}\n```",
+  "judge_prompt_tokens": 453,
+  "judge_completion_tokens": 339,
+  "judge_cost_usd": 0.01074,
+  "timestamp": 1774952547.292774
+}

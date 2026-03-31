@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source says 'The Ministry of Defence is sending a proposal' (present continuous, ongoing/imminent action), while the output says 'has submitted a proposal' (present perfect, completed action). This is a subtle tense drift from an in-progress action to a completed one. All other temporal elements (the 2 April 2026 date, future tense for proposed changes, current law descriptions) are accurately represented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal... for a consultation round\",\n    \"Under current legislation\",\n    \"in future\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted a proposal for consultation\",\n    \"consultation period running until 2 April 2026\",\n    \"Current law\",\n    \"The proposed amendment would lift these restrictions\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal for consultation\",\n      \"source_temporal\": \"is sending a proposal... for a consultation round\",\n      \"explanation\": \"The source uses present continuous tense ('is sending'), indicating the action is currently in progress or imminent. The summary uses present perfect ('has submitted'), which implies the action is already completed. This is a minor tense shift that slightly misrepresents the stage of the process.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says 'The Ministry of Defence is sending a proposal' (present continuous, ongoing/imminent action), while the output says 'has submitted a proposal' (present perfect, completed action). This is a subtle tense drift from an in-progress action to a completed one. All other temporal elements (the 2 April 2026 date, future tense for proposed changes, current law descriptions) are accurately represented.\"\n}\n```",
+  "judge_prompt_tokens": 742,
+  "judge_completion_tokens": 351,
+  "judge_cost_usd": 0.012485,
+  "timestamp": 1774952547.295268
+}

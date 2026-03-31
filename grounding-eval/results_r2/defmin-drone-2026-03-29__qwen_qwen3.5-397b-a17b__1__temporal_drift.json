@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "Multiple minor tense shifts from present perfect to simple past (e.g., 'has been on-site' \u2192 'deployed', 'have responded' \u2192 'responded', 'have strayed' \u2192 'strayed') and from present tense to past tense ('states' \u2192 'confirmed'). These shifts subtly change the temporal framing from ongoing/recently completed actions to completed past events. No wrong dates, reordered events, or temporal bleed were found. The drifts are minor and do not materially misrepresent the timeline.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has been\", \"have crashed\", \"have secured\", \"take\", \"have responded\", \"have strayed\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"were detected\", \"deployed\", \"have crashed\", \"have secured\", \"confirmed\", \"strayed\", \"is being taken\", \"responded\", \"are currently investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"were detected (past tense)\",\n      \"source_temporal\": \"were detected (past tense)\",\n      \"explanation\": \"No drift here; both use past tense for the detection event.\"\n    },\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect ('has been on-site'), implying the action is ongoing/recently completed and still relevant. The output uses simple past ('deployed'), which shifts the temporal framing to a completed past action. This is a minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (simple past)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, indicating a current/direct statement. The output changes this to 'confirmed' (simple past), subtly altering the temporal framing.\"\n    },\n    {\n      \"output_temporal\": \"responded (simple past)\",\n      \"source_temporal\": \"have responded immediately (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'have responded,' while the output uses simple past 'responded.' Minor tense shift.\"\n    },\n    {\n      \"output_temporal\": \"strayed (simple past)\",\n      \"source_temporal\": \"have strayed (present perfect)\",\n      \"explanation\": \"Source uses present perfect 'have strayed'; output uses simple past 'strayed.' Minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"are currently investigating\",\n      \"source_temporal\": \"are investigating\",\n      \"explanation\": \"The addition of 'currently' slightly emphasizes the present moment but does not constitute a meaningful temporal drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"Multiple minor tense shifts from present perfect to simple past (e.g., 'has been on-site' \u2192 'deployed', 'have responded' \u2192 'responded', 'have strayed' \u2192 'strayed') and from present tense to past tense ('states' \u2192 'confirmed'). These shifts subtly change the temporal framing from ongoing/recently completed actions to completed past events. No wrong dates, reordered events, or temporal bleed were found. The drifts are minor and do not materially misrepresent the timeline.\"\n}\n```",
+  "judge_prompt_tokens": 476,
+  "judge_completion_tokens": 686,
+  "judge_cost_usd": 0.01953,
+  "timestamp": 1774952547.294754
+}

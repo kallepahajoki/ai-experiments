@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All factual claims in the output are directly grounded in the source document. No fabricated additions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, the Finnish Air Force detected several small, slow-moving, low-flying objects in Finnish airspace over sea areas and Southeast Finland.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Air Force deployed an F/A-18 Hornet fighter jet to identify the objects.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"Two drones have been confirmed down: one north of Kouvola and another east of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"The Finnish Police have secured the crash sites for further investigation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"The Defence Forces are working alongside other authorities to look into the incident.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    },\n    {\n      \"claim\": \"Defense Minister Antti H\u00e4kk\u00e4nen confirmed that drones strayed into Finnish territory.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Drones have strayed into Finnish territory.\\\"\"\n    },\n    {\n      \"claim\": \"H\u00e4kk\u00e4nen stated that the situation is being taken 'very seriously'.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"We take this very seriously.\\\"\"\n    },\n    {\n      \"claim\": \"H\u00e4kk\u00e4nen stated that security authorities responded immediately.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Security authorities have responded immediately.\\\"\"\n    }\n  ],\n  \"fabricated_additions_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All factual claims in the output are directly grounded in the source document. No fabricated additions were found.\"\n}\n```",
+  "judge_prompt_tokens": 563,
+  "judge_completion_tokens": 568,
+  "judge_cost_usd": 0.017015,
+  "timestamp": 1774952547.290366
+}

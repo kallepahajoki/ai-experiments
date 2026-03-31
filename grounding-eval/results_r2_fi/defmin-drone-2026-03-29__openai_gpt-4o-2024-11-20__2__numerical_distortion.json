@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values and quantities in the output match the source. The numbers F/A-18, one drone (yksi drooni), and another drone (toinen drooni) are consistent. The word 'muutamia' (a few) from the source is not explicitly repeated but the output does not contradict it either \u2014 it simply omits the quantifier while keeping the plural form.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"F/A-18\", \"yksi (one)\", \"toinen (second/another)\"],\n  \"numbers_in_output\": [\"F/A-18\", \"yksi (one)\", \"toinen (second/another)\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values and quantities in the output match the source. The numbers F/A-18, one drone (yksi drooni), and another drone (toinen drooni) are consistent. The word 'muutamia' (a few) from the source is not explicitly repeated but the output does not contradict it either \u2014 it simply omits the quantifier while keeping the plural form.\"\n}\n```",
+  "judge_prompt_tokens": 692,
+  "judge_completion_tokens": 202,
+  "judge_cost_usd": 0.00851,
+  "timestamp": 1774952603.913589
+}

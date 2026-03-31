@@ -13,12 +13,13 @@ from .report import generate_report
 
 DEFAULT_SUBJECT_MODELS = [
     "anthropic/claude-sonnet-4.6",
-    "google/gemini-2.5-flash",
-    "nvidia/nemotron-3-super-120b-a12b:free",
-    "mistralai/mistral-small-2603",
+    "google/gemini-3-flash-preview",
+    "mistralai/mistral-large-2512",
     "openai/gpt-5.4-mini",
+    "openai/gpt-4o-2024-11-20",
     "qwen/qwen3.5-122b-a10b",
-    "qwen/qwen3.5-9b",
+    "qwen/qwen3.5-397b-a17b",
+    "minimax/minimax-m2.7",
 ]
 
 DEFAULT_JUDGE_MODEL = "anthropic/claude-opus-4.6"

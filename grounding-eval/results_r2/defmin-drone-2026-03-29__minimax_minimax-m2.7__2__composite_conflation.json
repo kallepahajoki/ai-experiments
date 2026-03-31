@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output largely mirrors the source accurately. The minor issues found (adding 'border guard' as an example authority, and changing 'further investigation' to 'forensic investigation') are embellishments/inaccuracies rather than true composite conflations where two independent facts are merged into a false combined or causal claim. No causal connectors are used to fabricate relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The Defence Forces are working jointly with other authorities (police, border guard, etc.) to investigate the incident.\",\n      \"source_facts\": [\n        \"The Defence Forces are investigating the incident together with other authorities.\",\n        \"Police have secured the areas for further investigation.\"\n      ],\n      \"explanation\": \"The source mentions 'other authorities' without specifying which ones beyond police. The output adds 'border guard, etc.' in parentheses, which is not stated in the source. However, this is more of an embellishment than a composite conflation. The parenthetical is presented as illustrative ('etc.') rather than definitive, but it still introduces information not in the source.\"\n    },\n    {\n      \"output_statement\": \"Police have secured both crash sites for forensic investigation.\",\n      \"source_facts\": [\n        \"Police have secured the areas for further investigation.\"\n      ],\n      \"explanation\": \"The source says 'further investigation,' not 'forensic investigation.' The word 'forensic' adds a specificity not present in the source. This is a minor embellishment rather than a true composite conflation.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output largely mirrors the source accurately. The minor issues found (adding 'border guard' as an example authority, and changing 'further investigation' to 'forensic investigation') are embellishments/inaccuracies rather than true composite conflations where two independent facts are merged into a false combined or causal claim. No causal connectors are used to fabricate relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 538,
+  "judge_completion_tokens": 395,
+  "judge_cost_usd": 0.012565,
+  "timestamp": 1774952547.292203
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All numerical values in the output match the source. 'Two drones' correctly corresponds to 'one drone...and another' in the source. The F/A-18 designation is preserved. No rounding, unit changes, or magnitude errors detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"Sunday morning\", \"one drone\", \"another (drone)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"Sunday morning\", \"Two drones\", \"one (north of Kouvola)\", \"one (east of Kouvola)\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All numerical values in the output match the source. 'Two drones' correctly corresponds to 'one drone...and another' in the source. The F/A-18 designation is preserved. No rounding, unit changes, or magnitude errors detected.\"\n}\n```",
+  "judge_prompt_tokens": 475,
+  "judge_completion_tokens": 173,
+  "judge_cost_usd": 0.0067,
+  "timestamp": 1774952547.289706
+}

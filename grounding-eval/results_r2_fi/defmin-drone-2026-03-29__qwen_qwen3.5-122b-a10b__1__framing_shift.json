@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The output introduces a false source attribution ('Puolustusministeri\u00f6n tiedotteen mukaan') not present in the original, which frames the text as an official ministry statement. Additionally, the minister's emphasis 'hyvin vakavasti' is softened to 'vakavasti', slightly altering the conveyed seriousness. These are minor but real framing shifts.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Puolustusministeri\u00f6n tiedotteen mukaan\",\n      \"issue\": \"The source does not identify itself as a Ministry of Defence press release ('puolustusministeri\u00f6n tiedote'). This attribution is fabricated and frames the text as an official governmental communiqu\u00e9, which is not stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"asiaan suhtaudutaan vakavasti\",\n      \"issue\": \"The source quote uses the stronger phrasing 'hyvin vakavasti' (very seriously). Dropping 'hyvin' slightly downplays the minister's stated tone, subtly shifting the framing.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The output introduces a false source attribution ('Puolustusministeri\u00f6n tiedotteen mukaan') not present in the original, which frames the text as an official ministry statement. Additionally, the minister's emphasis 'hyvin vakavasti' is softened to 'vakavasti', slightly altering the conveyed seriousness. These are minor but real framing shifts.\"\n}\n```",
+  "judge_prompt_tokens": 729,
+  "judge_completion_tokens": 295,
+  "judge_cost_usd": 0.01102,
+  "timestamp": 1774952603.914774
+}

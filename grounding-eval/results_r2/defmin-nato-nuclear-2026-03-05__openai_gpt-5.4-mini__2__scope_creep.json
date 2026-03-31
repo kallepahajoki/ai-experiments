@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely follows the source document. All key points are traceable to the source. The minor attribution difference ('the government says' vs. the source's neutral statement) is a slight paraphrase choice rather than introduction of external knowledge. No background context, historical references, or external details were added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"The government says most NATO countries do not have similar restrictions\", \"explanation\": \"The source attributes this to the bill/proposal context, not specifically to 'the government.' This is a minor attribution shift but the underlying fact ('The majority of NATO member states do not have comparable legislative restrictions') is in the source.\"}\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely follows the source document. All key points are traceable to the source. The minor attribution difference ('the government says' vs. the source's neutral statement) is a slight paraphrase choice rather than introduction of external knowledge. No background context, historical references, or external details were added.\"\n}\n```",
+  "judge_prompt_tokens": 726,
+  "judge_completion_tokens": 185,
+  "judge_cost_usd": 0.008255,
+  "timestamp": 1774952547.2977438
+}

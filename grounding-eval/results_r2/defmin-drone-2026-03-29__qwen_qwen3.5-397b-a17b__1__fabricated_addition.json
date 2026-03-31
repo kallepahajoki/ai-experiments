@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All claims in the output are well-grounded in the source document. The output uses 'crash sites' instead of 'areas' which is a minor paraphrase but not a fabrication since the context clearly refers to crash locations. The word 'confirmed' is used instead of 'states' but this is a stylistic choice, not a fabricated addition.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, several low-flying, slow-moving objects were detected in Finnish airspace over sea areas and Southeast Finland.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Finnish Air Force deployed an F/A-18 Hornet fighter for identification.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"Two drones have crashed: one north of Kouvola and another east of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"Police have secured the crash sites for further investigation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"Defense Minister Antti H\u00e4kk\u00e4nen confirmed that the drones strayed into Finnish territory.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory.\\\"\"\n    },\n    {\n      \"claim\": \"H\u00e4kk\u00e4nen stated that the incident is being taken very seriously.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"We take this very seriously.\\\"\"\n    },\n    {\n      \"claim\": \"Security authorities responded immediately.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The Defence Forces are currently investigating the incident together with other authorities.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    }\n  ],\n  \"fabricated_additions_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All claims in the output are well-grounded in the source document. The output uses 'crash sites' instead of 'areas' which is a minor paraphrase but not a fabrication since the context clearly refers to crash locations. The word 'confirmed' is used instead of 'states' but this is a stylistic choice, not a fabricated addition.\"\n}\n```",
+  "judge_prompt_tokens": 494,
+  "judge_completion_tokens": 614,
+  "judge_cost_usd": 0.01782,
+  "timestamp": 1774952547.29466
+}

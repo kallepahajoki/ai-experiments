@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., aligning with NATO operations and enhancing military defence, ensuring deterrence credibility and providing a threshold against military action) are consistent with the source. The phrase 'provide a strong threshold against military threats' slightly paraphrases 'forms the highest possible threshold for military action,' but this is a minor rewording rather than a conflation. The two purposes mentioned together (align with NATO operations and enhance Finland's military defence) are both stated in the source as objectives of the proposal and are not falsely merged.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., aligning with NATO operations and enhancing military defence, ensuring deterrence credibility and providing a threshold against military action) are consistent with the source. The phrase 'provide a strong threshold against military threats' slightly paraphrases 'forms the highest possible threshold for military action,' but this is a minor rewording rather than a conflation. The two purposes mentioned together (align with NATO operations and enhance Finland's military defence) are both stated in the source as objectives of the proposal and are not falsely merged.\"\n}\n```",
+  "judge_prompt_tokens": 661,
+  "judge_completion_tokens": 181,
+  "judge_cost_usd": 0.00783,
+  "timestamp": 1774952547.29735
+}

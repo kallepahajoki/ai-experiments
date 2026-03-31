@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.5,
+    "evidence": "The source uses conditional language ('olisivat jatkossa mahdollisia' = 'would be possible in the future') and the framing that this is a proposal ('esitet\u00e4\u00e4n' = 'it is proposed'). The output changes 'mahdollisia' (possible) to 'sallittuja' (permitted/allowed), which is a slight strengthening of the language \u2014 'possible' is softer than 'allowed/permitted'. However, the output does retain the conditional form 'olisivat' and 'poistettaisiin' (would be removed), which preserves the sense that this is still a proposal. The shift from 'possible' to 'allowed' is a minor hedging removal but not a critical distortion, since the context of a legislative proposal is maintained. Overall, the hedging removal is minor rather than severe.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"esitet\u00e4\u00e4n\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"preserved\": false,\n      \"output_version\": \"N\u00e4m\u00e4 toimet olisivat jatkossa sallittuja\"\n    },\n    {\n      \"expression\": \"esitet\u00e4\u00e4n (lakiesityksess\u00e4 esitet\u00e4\u00e4n)\",\n      \"preserved\": false,\n      \"output_version\": \"Nykyinen t\u00e4ydellinen kielto... poistettaisiin\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"preserved\": true,\n      \"output_version\": \"Natolla ei ole suunnitelmia ydinaseiden sijoittamisesta Suomeen\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.5,\n  \"evidence\": \"The source uses conditional language ('olisivat jatkossa mahdollisia' = 'would be possible in the future') and the framing that this is a proposal ('esitet\u00e4\u00e4n' = 'it is proposed'). The output changes 'mahdollisia' (possible) to 'sallittuja' (permitted/allowed), which is a slight strengthening of the language \u2014 'possible' is softer than 'allowed/permitted'. However, the output does retain the conditional form 'olisivat' and 'poistettaisiin' (would be removed), which preserves the sense that this is still a proposal. The shift from 'possible' to 'allowed' is a minor hedging removal but not a critical distortion, since the context of a legislative proposal is maintained. Overall, the hedging removal is minor rather than severe.\"\n}\n```",
+  "judge_prompt_tokens": 1359,
+  "judge_completion_tokens": 646,
+  "judge_cost_usd": 0.022945,
+  "timestamp": 1774952603.917829
+}

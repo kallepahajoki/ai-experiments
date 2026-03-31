@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All key temporal expressions and event ordering are faithfully preserved. 'Sunday morning' is correctly retained. The sequence \u2014 detection, Air Force response, crashes, police securing sites, minister's statement, joint investigation \u2014 matches the source. Minor tense shifts (present perfect to simple past) are natural for summary writing and do not constitute meaningful temporal drift. The word 'intercept' and 'forensic' are semantic additions rather than temporal misrepresentations.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"latest information\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"scrambled an F/A\u201118 Hornet to intercept and identify\",\n      \"source_temporal\": \"has been on-site with an F/A-18 Hornet fighter for identification\",\n      \"explanation\": \"The source says the Air Force 'has been on-site' for identification, using present perfect to indicate an ongoing state. The summary says the Air Force 'scrambled' a Hornet 'to intercept and identify,' introducing the word 'intercept' which is not in the source and slightly reframing the action. However, this is more of a semantic addition than a temporal drift. The tense shift from present perfect ('has been on-site') to simple past ('scrambled') is a minor tense change but is reasonable in a summary context.\"\n    },\n    {\n      \"output_temporal\": \"cordoned off both crash sites for forensic investigation\",\n      \"source_temporal\": \"Police have secured the areas for further investigation\",\n      \"explanation\": \"The source says 'secured the areas for further investigation'; the summary says 'cordoned off both crash sites for forensic investigation.' 'Forensic' is an embellishment not in the source, but temporally this is not a drift \u2014 the timing and sequence are preserved.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All key temporal expressions and event ordering are faithfully preserved. 'Sunday morning' is correctly retained. The sequence \u2014 detection, Air Force response, crashes, police securing sites, minister's statement, joint investigation \u2014 matches the source. Minor tense shifts (present perfect to simple past) are natural for summary writing and do not constitute meaningful temporal drift. The word 'intercept' and 'forensic' are semantic additions rather than temporal misrepresentations.\"\n}\n```",
+  "judge_prompt_tokens": 504,
+  "judge_completion_tokens": 472,
+  "judge_cost_usd": 0.01432,
+  "timestamp": 1774952547.291873
+}

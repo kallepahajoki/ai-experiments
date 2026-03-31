@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary is largely faithful but introduces several subtle framing shifts: 'especially those involving nuclear explosives' adds editorial emphasis; 'against aggression' replaces the neutral 'for military action' with a loaded term implying hostile intent; 'unpredictable strategic environment' shifts from the source's 'difficult-to-predict operational environment'; and 'acquire or host' introduces language not in the source. These are minor but collectively introduce a slightly more dramatic and editorialized tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"especially those involving nuclear explosives\",\n      \"issue\": \"The source says 'fully utilise NATO's deterrence and collective defence' without singling out nuclear explosives as a special emphasis. Adding 'especially' introduces editorial prioritization not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"unpredictable strategic environment\",\n      \"issue\": \"The source says 'difficult-to-predict operational environment.' Changing 'operational' to 'strategic' subtly shifts the framing to a broader geopolitical context, and 'unpredictable' is a slight tonal shift from 'difficult-to-predict.'\"\n    },\n    {\n      \"output_phrase\": \"against aggression\",\n      \"issue\": \"The source says 'the highest possible threshold for military action.' Replacing 'military action' with 'aggression' introduces a loaded, evaluative term implying hostile intent by potential adversaries, which is not stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"No intention to acquire or host nuclear weapons\",\n      \"issue\": \"The source says Finland does not 'seek the deployment of nuclear weapons on its territory.' The word 'acquire' is not used in the source in this context (acquisition is mentioned only in the criminalisation clause), and 'host' adds a connotation not present in the original.\"\n    },\n    {\n      \"output_phrase\": \"nuclear arms\",\n      \"issue\": \"The source consistently uses 'nuclear weapons' or 'nuclear explosives.' 'Nuclear arms' is a minor synonym substitution but carries slightly different connotations.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary is largely faithful but introduces several subtle framing shifts: 'especially those involving nuclear explosives' adds editorial emphasis; 'against aggression' replaces the neutral 'for military action' with a loaded term implying hostile intent; 'unpredictable strategic environment' shifts from the source's 'difficult-to-predict operational environment'; and 'acquire or host' introduces language not in the source. These are minor but collectively introduce a slightly more dramatic and editorialized tone.\"\n}\n```",
+  "judge_prompt_tokens": 831,
+  "judge_completion_tokens": 537,
+  "judge_cost_usd": 0.01758,
+  "timestamp": 1774952547.296122
+}

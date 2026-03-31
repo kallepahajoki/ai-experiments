@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) and the correct time reference (Sunday morning). The tense shifts observed (present perfect \u2192 simple past, present \u2192 past) are minor and consistent with standard summarization and reported speech conventions. No dates, times, or event orderings are misrepresented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"has been\", \"have crashed\", \"have secured\", \"states\", \"have strayed\", \"take\", \"have responded\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"were detected\", \"responded\", \"crashed\", \"have secured\", \"said\", \"had entered\", \"is being taken\", \"responding\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"were detected (past tense)\",\n      \"source_temporal\": \"were detected (past tense)\",\n      \"explanation\": \"No drift \u2014 both use past tense for the detection event.\"\n    },\n    {\n      \"output_temporal\": \"responded (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect (implying ongoing presence) to simple past (implying completed action). This slightly changes the temporal nuance but does not misrepresent the event itself.\"\n    },\n    {\n      \"output_temporal\": \"crashed (simple past)\",\n      \"source_temporal\": \"have crashed (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect to simple past. The event is the same but the present perfect in the source suggests recency/relevance to the present moment, while simple past is more neutral. Not a significant factual drift.\"\n    },\n    {\n      \"output_temporal\": \"said (simple past)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"Tense shift from present tense ('states') to past tense ('said'). This is a standard and acceptable journalistic paraphrase convention when summarizing quotes, not a meaningful temporal distortion.\"\n    },\n    {\n      \"output_temporal\": \"had entered (past perfect)\",\n      \"source_temporal\": \"have strayed (present perfect)\",\n      \"explanation\": \"Shift from present perfect to past perfect. This changes the temporal framing from current relevance to a completed past action relative to the minister's statement. Minor tense adjustment consistent with reported speech conventions.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) and the correct time reference (Sunday morning). The tense shifts observed (present perfect \u2192 simple past, present \u2192 past) are minor and consistent with standard summarization and reported speech conventions. No dates, times, or event orderings are misrepresented.\"\n}\n```",
+  "judge_prompt_tokens": 472,
+  "judge_completion_tokens": 608,
+  "judge_cost_usd": 0.01756,
+  "timestamp": 1774952547.293451
+}

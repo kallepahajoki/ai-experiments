@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.8,
+    "evidence": "Two tense shifts detected: (1) 'on ollut paikalla' (present perfect, ongoing state) \u2192 'l\u00e4hetti' (simple past, completed action); (2) 'on pudonnut' (present perfect) \u2192 'putosi' (simple past). Both shifts move from present perfect to simple past, altering the temporal framing from recent/ongoing relevance to completed past events. While the factual content is largely preserved, the temporal nuance is systematically changed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on ollut paikalla (present perfect \u2013 ongoing/completed)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"sunnuntai-aamuna\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"l\u00e4hetti (simple past)\",\n    \"putosi (simple past)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past \u2013 'l\u00e4hetti tunnistusteht\u00e4v\u00e4\u00e4n')\",\n      \"source_temporal\": \"on ollut paikalla (present perfect \u2013 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4')\",\n      \"explanation\": \"The source uses the present perfect 'on ollut paikalla' (has been present), implying an ongoing or recently completed state. The summary changes this to the simple past 'l\u00e4hetti' (sent), which shifts the temporal framing from a continuing state to a completed, discrete past action. It also changes the semantic nuance from 'being on scene' to 'dispatching'.\"\n    },\n    {\n      \"output_temporal\": \"putosi (simple past \u2013 'kaksi droonia putosi maahan')\",\n      \"source_temporal\": \"on pudonnut (present perfect \u2013 'yksi drooni on pudonnut maahan \u2026 toinen drooni [on pudonnut]')\",\n      \"explanation\": \"The source uses the present perfect 'on pudonnut' (has fallen), indicating recent relevance. The summary shifts to the simple past 'putosi' (fell), which distances the event temporally and removes the present-relevance nuance of the perfect tense.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.8,\n  \"evidence\": \"Two tense shifts detected: (1) 'on ollut paikalla' (present perfect, ongoing state) \u2192 'l\u00e4hetti' (simple past, completed action); (2) 'on pudonnut' (present perfect) \u2192 'putosi' (simple past). Both shifts move from present perfect to simple past, altering the temporal framing from recent/ongoing relevance to completed past events. While the factual content is largely preserved, the temporal nuance is systematically changed.\"\n}\n```",
+  "judge_prompt_tokens": 730,
+  "judge_completion_tokens": 638,
+  "judge_cost_usd": 0.0196,
+  "timestamp": 1774952603.9147189
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All numbers, quantities, and identifiers in the output match the source exactly: 'muutamia' (a few), 'F/A-18', 'yksi' (one), and 'toinen' (another/second) are all faithfully reproduced.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"F/A-18\", \"yksi\", \"toinen\"],\n  \"numbers_in_output\": [\"muutamia\", \"F/A-18\", \"yksi\", \"toinen\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All numbers, quantities, and identifiers in the output match the source exactly: 'muutamia' (a few), 'F/A-18', 'yksi' (one), and 'toinen' (another/second) are all faithfully reproduced.\"\n}\n```",
+  "judge_prompt_tokens": 731,
+  "judge_completion_tokens": 169,
+  "judge_cost_usd": 0.00788,
+  "timestamp": 1774952603.9138188
+}

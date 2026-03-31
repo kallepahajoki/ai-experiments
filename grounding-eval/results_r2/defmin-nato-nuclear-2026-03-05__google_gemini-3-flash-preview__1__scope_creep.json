@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The summary largely stays faithful to the source document. The flagged issues are mostly minor paraphrasing choices that slightly alter connotation (e.g., 'aggression' vs 'action,' 'standard' alliance operations, 'official' defence cooperation, 'integrate' vs 'utilise') but do not introduce substantive external knowledge or background context from training data. No geopolitical context, historical references, or explanations beyond the source were added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"import\", \"explanation\": \"The source uses the phrase 'bringing a nuclear explosive into Finland,' while the summary uses the word 'import.' This is a minor paraphrase but 'import' could carry specific legal/trade connotations not present in the source. However, this is arguably a reasonable synonym rather than scope creep.\"},\n    {\"output_content\": \"within Finnish territory\", \"explanation\": \"The source says 'into Finland' rather than 'within Finnish territory.' This is a minor paraphrase and not substantive scope creep.\"},\n    {\"output_content\": \"against military aggression\", \"explanation\": \"The source says 'the highest possible threshold for military action,' while the summary says 'against military aggression.' The word 'aggression' adds a connotation not explicitly present in the source, which uses the more neutral term 'military action.'\"},\n    {\"output_content\": \"standard alliance operations\", \"explanation\": \"The source says the bill would 'align Finnish legislation with NATO operations.' The summary rephrases this as 'standard alliance operations,' adding the word 'standard' which is not in the source.\"},\n    {\"output_content\": \"official defence cooperation\", \"explanation\": \"The source says 'defence cooperation' while the summary adds the qualifier 'official,' which is not present in the source.\"},\n    {\"output_content\": \"stationed on its territory\", \"explanation\": \"The source uses 'deployment of nuclear weapons on its territory' while the summary uses 'stationed.' This is a paraphrase but 'stationed' implies a slightly different concept than 'deployment.' Minor.\"},\n    {\"output_content\": \"fully integrate Finland into NATO's deterrence and collective defence framework\", \"explanation\": \"The source says 'fully utilise NATO's deterrence and collective defence.' The summary rephrases this as 'fully integrate Finland into' the framework, which subtly changes the meaning from utilization to integration. This is a minor interpretive shift.\"}\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary largely stays faithful to the source document. The flagged issues are mostly minor paraphrasing choices that slightly alter connotation (e.g., 'aggression' vs 'action,' 'standard' alliance operations, 'official' defence cooperation, 'integrate' vs 'utilise') but do not introduce substantive external knowledge or background context from training data. No geopolitical context, historical references, or explanations beyond the source were added.\"\n}\n```",
+  "judge_prompt_tokens": 788,
+  "judge_completion_tokens": 593,
+  "judge_cost_usd": 0.018765,
+  "timestamp": 1774952547.295708
+}

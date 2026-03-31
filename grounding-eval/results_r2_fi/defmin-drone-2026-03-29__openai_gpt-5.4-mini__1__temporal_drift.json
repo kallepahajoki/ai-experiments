@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "Two minor tense shifts were detected: (1) 'on ollut paikalla' (perfect, has been on site) \u2192 'l\u00e4hetti' (past, sent), and (2) 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti' (perfect, have reacted immediately) \u2192 'reagoivat heti' (present, react immediately). These are relatively minor drifts that do not fundamentally misrepresent the timeline but do alter the aspectual/temporal nuance of the original statements.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"l\u00e4hetti paikalle (simple past)\",\n    \"T\u00e4m\u00e4nhetkisten tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"reagoivat siihen heti (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti paikalle (simple past / imperfekti)\",\n      \"source_temporal\": \"on ollut paikalla (present perfect / perfekti)\",\n      \"explanation\": \"The source uses the Finnish perfect tense 'on ollut paikalla' (has been on site), indicating an ongoing or recently completed state. The summary changes this to the simple past 'l\u00e4hetti' (sent), which is a slight tense shift and also reframes the action from 'being present' to 'sending'. This is a minor tense drift but does not significantly alter the temporal meaning.\"\n    },\n    {\n      \"output_temporal\": \"reagoivat siihen heti (present tense)\",\n      \"source_temporal\": \"ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti (present perfect)\",\n      \"explanation\": \"The source uses the perfect tense 'ovat reagoineet' (have reacted), indicating a completed action. The summary changes this to the present tense 'reagoivat' (react), which shifts the temporal framing from a completed past action to a general/ongoing present action. Minor tense drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"Two minor tense shifts were detected: (1) 'on ollut paikalla' (perfect, has been on site) \u2192 'l\u00e4hetti' (past, sent), and (2) 'ovat reagoineet v\u00e4litt\u00f6m\u00e4sti' (perfect, have reacted immediately) \u2192 'reagoivat heti' (present, react immediately). These are relatively minor drifts that do not fundamentally misrepresent the timeline but do alter the aspectual/temporal nuance of the original statements.\"\n}\n```",
+  "judge_prompt_tokens": 741,
+  "judge_completion_tokens": 622,
+  "judge_cost_usd": 0.019255,
+  "timestamp": 1774952603.9140759
+}

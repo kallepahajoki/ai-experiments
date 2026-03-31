@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., the amendment enabling full leverage of NATO's deterrence, alignment with other NATO members, the distinction that Finland is not seeking nuclear weapons on its territory) are all present in the source. The phrase 'bring Finnish law into line with the majority of NATO members, which do not have comparable restrictions, and would enable Finland to fully leverage NATO's deterrence' combines two points from the source, but both are stated as purposes of the bill in the source itself, so presenting them together is faithful rather than conflating independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., the amendment enabling full leverage of NATO's deterrence, alignment with other NATO members, the distinction that Finland is not seeking nuclear weapons on its territory) are all present in the source. The phrase 'bring Finnish law into line with the majority of NATO members, which do not have comparable restrictions, and would enable Finland to fully leverage NATO's deterrence' combines two points from the source, but both are stated as purposes of the bill in the source itself, so presenting them together is faithful rather than conflating independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 677,
+  "judge_completion_tokens": 181,
+  "judge_cost_usd": 0.00791,
+  "timestamp": 1774952547.296016
+}

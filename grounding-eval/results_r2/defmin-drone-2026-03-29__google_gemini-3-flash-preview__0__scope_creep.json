@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be directly traced to the source document. The summary accurately reflects the source content without adding external context, historical references, or background information. Minor wording differences (e.g., 'confirmed down' vs 'crashed', 'crash sites' vs 'areas') are reasonable paraphrases rather than additions of new information.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be directly traced to the source document. The summary accurately reflects the source content without adding external context, historical references, or background information. Minor wording differences (e.g., 'confirmed down' vs 'crashed', 'crash sites' vs 'areas') are reasonable paraphrases rather than additions of new information.\"\n}\n```",
+  "judge_prompt_tokens": 542,
+  "judge_completion_tokens": 122,
+  "judge_cost_usd": 0.00576,
+  "timestamp": 1774952547.290575
+}

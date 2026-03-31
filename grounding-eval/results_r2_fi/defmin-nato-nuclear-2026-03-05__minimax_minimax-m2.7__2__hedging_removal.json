@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses conditional language ('esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia') to describe the legislative proposal \u2014 it is a proposal being sent for consultation, not yet enacted. The output rephrases this as 'Salli n\u00e4m\u00e4 toimet, kun ne liittyv\u00e4t...' (Allow these actions when they relate to...), which drops the conditional/propositional framing and presents the change more as a decided action. However, the output does note elsewhere that the proposal is on a consultation round ('Esitys on l\u00e4hetetty lausuntokierrokselle'), which partially mitigates the hedging removal. The severity is moderate since the overall context makes clear this is still a proposal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"},\n    {\"expression\": \"esitet\u00e4\u00e4n\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"},\n    {\"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\", \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia / esitet\u00e4\u00e4n\", \"preserved\": false, \"output_version\": \"Salli n\u00e4m\u00e4 toimet, kun ne liittyv\u00e4t \u2014 the output uses imperative 'Salli' (Allow) framing the proposal as a directive rather than a conditional proposal\"},\n    {\"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\", \"preserved\": true, \"output_version\": \"sellaista ei ole Natossa suunnitteilla\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses conditional language ('esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia') to describe the legislative proposal \u2014 it is a proposal being sent for consultation, not yet enacted. The output rephrases this as 'Salli n\u00e4m\u00e4 toimet, kun ne liittyv\u00e4t...' (Allow these actions when they relate to...), which drops the conditional/propositional framing and presents the change more as a decided action. However, the output does note elsewhere that the proposal is on a consultation round ('Esitys on l\u00e4hetetty lausuntokierrokselle'), which partially mitigates the hedging removal. The severity is moderate since the overall context makes clear this is still a proposal.\"\n}\n```",
+  "judge_prompt_tokens": 1405,
+  "judge_completion_tokens": 535,
+  "judge_cost_usd": 0.0204,
+  "timestamp": 1774952603.917278
+}

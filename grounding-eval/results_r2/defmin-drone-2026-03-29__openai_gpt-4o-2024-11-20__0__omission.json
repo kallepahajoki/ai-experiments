@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output covers all major facts from the source. The main omission is the hedging qualifier 'According to current information' which signals that the drone crash information was preliminary and potentially subject to revision. This is a meaningful caveat but not critical as it doesn't fundamentally change the meaning. The output also adds an attribution to 'The Finnish Ministry of Defence' not present in the source, but that is a hallucination issue rather than an omission.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory\",\n    \"Security authorities responded immediately\",\n    \"Defence Forces investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The qualifier 'According to current information' before the drone crash details, indicating the information may be preliminary/subject to change\", \"importance\": \"medium\"},\n    {\"fact\": \"The output attributes the report to 'The Finnish Ministry of Defence' which is not stated in the source\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output covers all major facts from the source. The main omission is the hedging qualifier 'According to current information' which signals that the drone crash information was preliminary and potentially subject to revision. This is a meaningful caveat but not critical as it doesn't fundamentally change the meaning. The output also adds an attribution to 'The Finnish Ministry of Defence' not present in the source, but that is a hallucination issue rather than an omission.\"\n}\n```",
+  "judge_prompt_tokens": 497,
+  "judge_completion_tokens": 372,
+  "judge_cost_usd": 0.011785,
+  "timestamp": 1774952547.292872
+}

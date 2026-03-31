@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The source mentions 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-flying small objects), and the summary says 'useita matalalla lent\u00e4vi\u00e4 pieni\u00e4 drooneja' \u2014 this is a slight interpretive shift (calling them 'drooneja' instead of 'kohteita' and 'useita' instead of 'muutamia') but not a composite conflation. The summary's statement about H\u00e4kk\u00e4nen ('pit\u00e4\u00e4 tapausta vakavana ja vahvistaa viranomaisten reagoineen v\u00e4litt\u00f6m\u00e4sti') combines two parts of his quote, but both statements are from the same quote and accurately represent his position without creating a false causal link.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The source mentions 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-flying small objects), and the summary says 'useita matalalla lent\u00e4vi\u00e4 pieni\u00e4 drooneja' \u2014 this is a slight interpretive shift (calling them 'drooneja' instead of 'kohteita' and 'useita' instead of 'muutamia') but not a composite conflation. The summary's statement about H\u00e4kk\u00e4nen ('pit\u00e4\u00e4 tapausta vakavana ja vahvistaa viranomaisten reagoineen v\u00e4litt\u00f6m\u00e4sti') combines two parts of his quote, but both statements are from the same quote and accurately represent his position without creating a false causal link.\"\n}\n```",
+  "judge_prompt_tokens": 718,
+  "judge_completion_tokens": 235,
+  "judge_cost_usd": 0.009465,
+  "timestamp": 1774952603.910879
+}

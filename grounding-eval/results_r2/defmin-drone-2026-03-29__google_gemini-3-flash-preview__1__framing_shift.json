@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The headline uses 'Incursions' which carries a connotation of deliberate hostile penetration, whereas the source neutrally describes drones that 'strayed into Finnish territory.' Additionally, 'confirmed down' adds a military-operational register not present in the source. The rest of the summary is tonally faithful.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Drone Incursions in Southeast Finland\",\n      \"issue\": \"The word 'Incursions' introduces a more militaristic/aggressive framing than the source, which uses neutral language like 'strayed into Finnish territory' and 'detected... in Finnish airspace.' 'Incursion' implies a deliberate hostile entry, which is not established in the source.\"\n    },\n    {\n      \"output_phrase\": \"Two drones have been confirmed down\",\n      \"issue\": \"The phrase 'confirmed down' has a slightly more dramatic, military-operational tone compared to the source's straightforward 'one drone has crashed... and another east of Kouvola.' The source does not use the word 'confirmed' in relation to the crashes.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The headline uses 'Incursions' which carries a connotation of deliberate hostile penetration, whereas the source neutrally describes drones that 'strayed into Finnish territory.' Additionally, 'confirmed down' adds a military-operational register not present in the source. The rest of the summary is tonally faithful.\"\n}\n```",
+  "judge_prompt_tokens": 543,
+  "judge_completion_tokens": 303,
+  "judge_cost_usd": 0.01029,
+  "timestamp": 1774952547.290899
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "All named entities in the output match those in the source. 'Finnish Ministry of Defence' is a minor naming variation of 'The Ministry of Defence' with the addition of the contextually accurate adjective 'Finnish'. All other entities (Finland, NATO, Nuclear Energy Act, Criminal Code) appear identically in both source and output.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"Finland\", \"NATO\", \"Nuclear Energy Act\", \"Criminal Code\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"All named entities in the output match those in the source. 'Finnish Ministry of Defence' is a minor naming variation of 'The Ministry of Defence' with the addition of the contextually accurate adjective 'Finnish'. All other entities (Finland, NATO, Nuclear Energy Act, Criminal Code) appear identically in both source and output.\"\n}\n```",
+  "judge_prompt_tokens": 762,
+  "judge_completion_tokens": 144,
+  "judge_cost_usd": 0.00741,
+  "timestamp": 1774952547.298319
+}

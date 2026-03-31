@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The main temporal drift is the tense change from present perfect 'on ollut paikalla' (has been present) to simple past 'l\u00e4hetti' (sent), which alters both the tense and the action described. Additionally, the hedged 'according to current information' framing is replaced with 'confirmed', changing the temporal certainty of the information.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect - ongoing/completed)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"tutkii (present tense)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"l\u00e4hetti (past tense - simple past)\",\n    \"on vahvistettu pudonneen (present perfect passive)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past, implying a discrete completed action of sending)\",\n      \"source_temporal\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 (present perfect, indicating has been present on an identification mission)\",\n      \"explanation\": \"The source uses present perfect 'on ollut paikalla' (has been present), indicating an ongoing or recently completed state of being on scene. The summary changes this to simple past 'l\u00e4hetti' (sent), which shifts the meaning from 'has been present on the mission' to 'sent a jet', altering both the tense and the nuance (being present vs. dispatching). This is a tense drift from present perfect to simple past.\"\n    },\n    {\n      \"output_temporal\": \"on vahvistettu pudonneen (confirmed to have fallen)\",\n      \"source_temporal\": \"T\u00e4m\u00e4n hetken tietojen mukaan... on pudonnut (according to current information... has fallen)\",\n      \"explanation\": \"The source hedges with 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), indicating preliminary/tentative status. The summary uses 'on vahvistettu' (has been confirmed), which implies a stronger, more definitive confirmation than the source warrants. While not strictly a temporal drift, it changes the epistemic temporal framing from provisional to confirmed.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The main temporal drift is the tense change from present perfect 'on ollut paikalla' (has been present) to simple past 'l\u00e4hetti' (sent), which alters both the tense and the action described. Additionally, the hedged 'according to current information' framing is replaced with 'confirmed', changing the temporal certainty of the information.\"\n}\n```",
+  "judge_prompt_tokens": 717,
+  "judge_completion_tokens": 618,
+  "judge_cost_usd": 0.019035,
+  "timestamp": 1774952603.910753
+}

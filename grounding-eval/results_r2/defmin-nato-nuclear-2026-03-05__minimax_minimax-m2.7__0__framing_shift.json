@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The output is largely faithful in tone and content. Minor framing shifts include the use of 'broader,' 'leverage' instead of 'utilise,' 'submitted a bill' instead of 'sending a proposal for consultation,' and the contrastive connector 'Nevertheless.' These are subtle editorial choices that slightly alter tone but do not substantially distort the source's meaning.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"submitted a bill\",\n      \"issue\": \"The source says the Ministry is 'sending a proposal... for a consultation round,' not that it has 'submitted a bill.' 'Submitted a bill' implies a more advanced legislative stage and slightly more decisive framing than the source's language of sending a proposal for consultation.\"\n    },\n    {\n      \"output_phrase\": \"broader defence\u2011cooperation efforts\",\n      \"issue\": \"The word 'broader' is an editorial addition not present in the source. The source simply says 'defence cooperation' without characterizing its scope.\"\n    },\n    {\n      \"output_phrase\": \"fully leverage\",\n      \"issue\": \"The source uses 'fully utilise,' which is neutral. 'Leverage' carries a slightly more strategic/assertive connotation, though this is a minor shift.\"\n    },\n    {\n      \"output_phrase\": \"Nevertheless\",\n      \"issue\": \"The use of 'Nevertheless' introduces a contrastive/concessive tone implying tension between the proposal and the continued criminalization, which is not present in the source's straightforward sequential presentation.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The output is largely faithful in tone and content. Minor framing shifts include the use of 'broader,' 'leverage' instead of 'utilise,' 'submitted a bill' instead of 'sending a proposal for consultation,' and the contrastive connector 'Nevertheless.' These are subtle editorial choices that slightly alter tone but do not substantially distort the source's meaning.\"\n}\n```",
+  "judge_prompt_tokens": 675,
+  "judge_completion_tokens": 393,
+  "judge_cost_usd": 0.0132,
+  "timestamp": 1774952547.295976
+}

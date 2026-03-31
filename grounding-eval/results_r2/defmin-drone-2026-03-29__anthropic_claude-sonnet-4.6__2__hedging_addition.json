@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. All key facts are presented as definitively as in the source. The phrase 'have since crashed' accurately reflects the source's 'one drone has crashed... and another east of Kouvola.' The minister's statements are presented without added uncertainty.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. All key facts are presented as definitively as in the source. The phrase 'have since crashed' accurately reflects the source's 'one drone has crashed... and another east of Kouvola.' The minister's statements are presented without added uncertainty.\"\n}\n```",
+  "judge_prompt_tokens": 485,
+  "judge_completion_tokens": 142,
+  "judge_cost_usd": 0.005975,
+  "timestamp": 1774952547.290186
+}

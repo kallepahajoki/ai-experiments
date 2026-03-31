@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the critical claim about two drones falling to the ground near Kouvola. The output presents this as established fact. Additionally, the source says the Air Force was present on an identification mission ('tunnistusteht\u00e4v\u00e4ss\u00e4'), but the output states 'Ilmavoimat tunnisti kohteita' (the Air Force identified the objects), converting an ongoing task into a completed action. The minister's hedged framing ('harhautunut' \u2014 strayed/wandered) is also lost.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja. (Minister H\u00e4kk\u00e4nen's characterization implies the drones strayed/wandered in, suggesting unintentionality \u2014 a hedged framing of the incursion)\"\n    },\n    {\n      \"expression\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4\",\n      \"context\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4. (The source says the Air Force was present on an identification mission, not that it completed identification)\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"kaksi droonia on pudonnut maahan Kouvolan alueella (stated as established fact without the 'according to current information' qualifier)\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"preserved\": false,\n      \"output_version\": \"The minister's characterization that drones 'strayed' into Finnish territory is omitted; the output only paraphrases the seriousness aspect.\"\n    },\n    {\n      \"expression\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4\",\n      \"preserved\": false,\n      \"output_version\": \"Ilmavoimat tunnisti kohteita F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4 (changed from 'was present on an identification mission' to 'identified the objects', implying completed identification)\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the critical claim about two drones falling to the ground near Kouvola. The output presents this as established fact. Additionally, the source says the Air Force was present on an identification mission ('tunnistusteht\u00e4v\u00e4ss\u00e4'), but the output states 'Ilmavoimat tunnisti kohteita' (the Air Force identified the objects), converting an ongoing task into a completed action. The minister's hedged framing ('harhautunut' \u2014 strayed/wandered) is also lost.\"\n}\n```",
+  "judge_prompt_tokens": 731,
+  "judge_completion_tokens": 695,
+  "judge_cost_usd": 0.02103,
+  "timestamp": 1774952603.91342
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All named entities in the output correspond to entities mentioned in the source. 'Finnish Ministry of Defence' is a reasonable framing for the press release origin. 'Finnish Air Force' corresponds to 'Air Force' in the source. 'Finnish Police' corresponds to 'Police' in the source. All other entities match directly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\n    \"Finnish Ministry of Defence\",\n    \"Southeast Finland\",\n    \"Finnish Air Force\",\n    \"F/A-18 Hornet\",\n    \"Kouvola\",\n    \"Finnish Police\",\n    \"Defence Forces\",\n    \"Antti H\u00e4kk\u00e4nen\"\n  ],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All named entities in the output correspond to entities mentioned in the source. 'Finnish Ministry of Defence' is a reasonable framing for the press release origin. 'Finnish Air Force' corresponds to 'Air Force' in the source. 'Finnish Police' corresponds to 'Police' in the source. All other entities match directly.\"\n}\n```",
+  "judge_prompt_tokens": 572,
+  "judge_completion_tokens": 193,
+  "judge_cost_usd": 0.007685,
+  "timestamp": 1774952547.29076
+}

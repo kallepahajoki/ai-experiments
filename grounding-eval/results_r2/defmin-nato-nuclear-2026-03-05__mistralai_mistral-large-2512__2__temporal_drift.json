@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal\" (present progressive, indicating current/ongoing action),\n    \"Under current legislation\" (present),\n    \"in future\" (future re",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal\" (present progressive, indicating current/ongoing action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference),\n    \"The consultation period ends on 2 April 2026\" (future date),\n    \"remain criminalised\" (present/future continuity)\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted a proposal\" (present perfect, indicating completed action),\n    \"Currently\" (present),\n    \"The new bill would allow\" (conditional future),\n    \"The public consultation period ends on 2 April 2026\" (future date),\n    \"will remain criminalised\" (future continuity),\n    \"long-standing non-nuclear stance\" (implied historical duration)\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal\",\n      \"source_temporal\": \"is sending a proposal\",\n      \"explanation\": \"The source uses 'is sending' (present progressive), indicating the proposal is being sent or is in the process of being sent for consultation. The output uses 'has submitted' (present perfect), which implies the action is already completed. This is a subtle tense shift from an ongoing/imminent action to a completed one, though the practical difference is minor.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says the Ministry 'is sending' the proposal (present progressive, suggesting the action is current/in progress), while the summary states it 'has submitted' the proposal (present perfect, suggesting the action is completed). This is a tense drift from ongoing to completed action. All other temporal elements\u2014the consultation deadline of 2 April 2026, the future-oriented nature of the proposed changes, and the continued criminalization\u2014are accurately represented.\"\n}\n```",
+  "judge_prompt_tokens": 844,
+  "judge_completion_tokens": 443,
+  "judge_cost_usd": 0.015295,
+  "timestamp": 1774952547.29685
+}

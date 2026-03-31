@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately paraphrases the source content without introducing external knowledge, background context, or additional details beyond what is provided. Minor wording differences such as 'muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4' (vs. 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4') and 'Naton k\u00e4yt\u00e4nt\u00f6jen' (vs. 'Naton toimintojen') are reasonable paraphrases that do not constitute scope creep.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately paraphrases the source content without introducing external knowledge, background context, or additional details beyond what is provided. Minor wording differences such as 'muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4' (vs. 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4') and 'Naton k\u00e4yt\u00e4nt\u00f6jen' (vs. 'Naton toimintojen') are reasonable paraphrases that do not constitute scope creep.\"\n}\n```",
+  "judge_prompt_tokens": 1169,
+  "judge_completion_tokens": 172,
+  "judge_cost_usd": 0.010145,
+  "timestamp": 1774952603.918678
+}

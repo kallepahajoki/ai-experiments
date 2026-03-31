@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary is largely faithful to the source in tone and content. The only notable framing shift is the use of 'hindering' instead of the source's more neutral 'to enable,' which subtly implies the current legislation is an active impediment rather than simply something that needs adjustment. The rest of the summary accurately reflects the source without editorial language or dramatic framing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"hindering Finland's military defence\",\n      \"issue\": \"The source uses the neutral phrase 'to enable Finland's military defence,' meaning the obstacles simply need to be removed to allow something. 'Hindering' introduces a slightly more negative/editorial connotation, implying the current law is actively obstructing or impeding defence, which adds a subtle evaluative framing not present in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. The only notable framing shift is the use of 'hindering' instead of the source's more neutral 'to enable,' which subtly implies the current legislation is an active impediment rather than simply something that needs adjustment. The rest of the summary accurately reflects the source without editorial language or dramatic framing.\"\n}\n```",
+  "judge_prompt_tokens": 733,
+  "judge_completion_tokens": 228,
+  "judge_cost_usd": 0.009365,
+  "timestamp": 1774952547.298372
+}

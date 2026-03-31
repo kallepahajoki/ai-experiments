@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The most notable framing shift is replacing the neutral 'toteaa' (states) with 'korostaa' (emphasizes), which introduces an editorial characterization of the minister's tone not present in the source. The change from 'v\u00e4litt\u00f6m\u00e4sti' to 'nopeasti' is a minor semantic shift. Additionally, the source mentions objects were detected over sea areas ('merialueella') which is omitted, but that is an omission rather than a framing issue.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"korostaa\",\n      \"issue\": \"The source uses the neutral verb 'toteaa' (states), while the output uses 'korostaa' (emphasizes/stresses), which adds editorial tone suggesting the minister was being forceful or insistent, rather than simply stating.\"\n    },\n    {\n      \"output_phrase\": \"nopeasti\",\n      \"issue\": \"The source says 'v\u00e4litt\u00f6m\u00e4sti' (immediately), while the output uses 'nopeasti' (quickly). While similar, 'v\u00e4litt\u00f6m\u00e4sti' is stronger and more precise; 'nopeasti' is a slight softening/shift in meaning.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The most notable framing shift is replacing the neutral 'toteaa' (states) with 'korostaa' (emphasizes), which introduces an editorial characterization of the minister's tone not present in the source. The change from 'v\u00e4litt\u00f6m\u00e4sti' to 'nopeasti' is a minor semantic shift. Additionally, the source mentions objects were detected over sea areas ('merialueella') which is omitted, but that is an omission rather than a framing issue.\"\n}\n```",
+  "judge_prompt_tokens": 670,
+  "judge_completion_tokens": 317,
+  "judge_cost_usd": 0.011275,
+  "timestamp": 1774952603.913446
+}

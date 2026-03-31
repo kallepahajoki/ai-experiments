@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source content. It mentions the key points: the legislative proposal to amend nuclear energy and criminal law, the purpose of removing legal obstacles for NATO cooperation, the current prohibition on nuclear explosives, the conditions under which they would be permitted, Finland not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026. The output omits the explicit mention of 'Naton yhteiseen puolustukseen' as a separate condition (listing only 'Suomen sotilaalliseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n'), but this is an omission rather than a contradiction. No statements in the output directly conflict with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source content. It mentions the key points: the legislative proposal to amend nuclear energy and criminal law, the purpose of removing legal obstacles for NATO cooperation, the current prohibition on nuclear explosives, the conditions under which they would be permitted, Finland not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026. The output omits the explicit mention of 'Naton yhteiseen puolustukseen' as a separate condition (listing only 'Suomen sotilaalliseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n'), but this is an omission rather than a contradiction. No statements in the output directly conflict with the source.\"\n}\n```",
+  "judge_prompt_tokens": 1113,
+  "judge_completion_tokens": 214,
+  "judge_cost_usd": 0.010915,
+  "timestamp": 1774952603.920319
+}

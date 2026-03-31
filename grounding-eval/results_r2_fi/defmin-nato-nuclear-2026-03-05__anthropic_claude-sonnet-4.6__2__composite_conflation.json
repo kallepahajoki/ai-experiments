@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The connection between NATO compatibility and the legislative change is present in the source. The statement about NATO deterrence and raising the threshold for military action are both part of the same goal described in the source. All relationships presented in the summary match those in the source text.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The connection between NATO compatibility and the legislative change is present in the source. The statement about NATO deterrence and raising the threshold for military action are both part of the same goal described in the source. All relationships presented in the summary match those in the source text.\"\n}\n```",
+  "judge_prompt_tokens": 1251,
+  "judge_completion_tokens": 117,
+  "judge_cost_usd": 0.00918,
+  "timestamp": 1774952603.916181
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output begins with a meta-commentary line 'T\u00e4ss\u00e4 on tiivistelm\u00e4 puolustusministeri\u00f6n tiedotteesta:' ('Here is a summary of the Ministry of Defence's announcement:'), which is a task acknowledgment/framing statement rather than part of the actual summary content.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [\n    {\"text\": \"T\u00e4ss\u00e4 on tiivistelm\u00e4 puolustusministeri\u00f6n tiedotteesta:\", \"type\": \"meta_commentary\"}\n  ],\n  \"leakage_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output begins with a meta-commentary line 'T\u00e4ss\u00e4 on tiivistelm\u00e4 puolustusministeri\u00f6n tiedotteesta:' ('Here is a summary of the Ministry of Defence's announcement:'), which is a task acknowledgment/framing statement rather than part of the actual summary content.\"\n}\n```",
+  "judge_prompt_tokens": 1186,
+  "judge_completion_tokens": 156,
+  "judge_cost_usd": 0.00983,
+  "timestamp": 1774952603.91659
+}

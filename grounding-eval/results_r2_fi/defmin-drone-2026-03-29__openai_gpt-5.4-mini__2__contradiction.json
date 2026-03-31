@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The output changes 'muutamia' (a few) to 'useita' (several) and 'hyvin vakavasti' to 'eritt\u00e4in vakavasti', both of which alter the meaning from the source, though the second is a borderline case.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"havaittiin useita matalalla lent\u00e4vi\u00e4, hitaita ja pieni\u00e4 kohteita\",\n      \"source_statement\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several/multiple). 'Useita' implies a larger number than 'muutamia', which is a subtle but meaningful difference.\"\n    },\n    {\n      \"output_statement\": \"asiaan suhtaudutaan eritt\u00e4in vakavasti\",\n      \"source_statement\": \"Suhtaudumme asiaan hyvin vakavasti\",\n      \"explanation\": \"The source uses 'hyvin vakavasti' (very seriously), while the output changes this to 'eritt\u00e4in vakavasti' (extremely seriously). While close in meaning, the wording has been altered, with 'eritt\u00e4in' being a stronger intensifier than 'hyvin'.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The output changes 'muutamia' (a few) to 'useita' (several) and 'hyvin vakavasti' to 'eritt\u00e4in vakavasti', both of which alter the meaning from the source, though the second is a borderline case.\"\n}\n```",
+  "judge_prompt_tokens": 697,
+  "judge_completion_tokens": 374,
+  "judge_cost_usd": 0.012835,
+  "timestamp": 1774952603.914222
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output drops this hedging entirely and presents the crashes as established fact ('Two drones subsequently crashed'). This is a moderately significant hedging removal, as it concerns the factual details of the incident which were explicitly marked as preliminary in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones subsequently crashed, one north and one east of Kouvola, where police have secured the areas for investigation.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output drops this hedging entirely and presents the crashes as established fact ('Two drones subsequently crashed'). This is a moderately significant hedging removal, as it concerns the factual details of the incident which were explicitly marked as preliminary in the source.\"\n}\n```",
+  "judge_prompt_tokens": 522,
+  "judge_completion_tokens": 253,
+  "judge_cost_usd": 0.008935,
+  "timestamp": 1774952547.294987
+}

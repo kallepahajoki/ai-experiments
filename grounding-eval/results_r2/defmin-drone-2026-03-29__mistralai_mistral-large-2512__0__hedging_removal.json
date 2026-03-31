@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The key hedging expression 'According to current information' is preserved in the output. The source's other statements are presented as factual (e.g., objects were detected, Air Force deployed, police secured areas, minister's quote), and the output mirrors this factual tone without adding or removing uncertainty. The output faithfully retains the conditional framing around the drone crash details.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to current information: One drone crashed north of Kouvola / Another drone crashed east of Kouvola\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The key hedging expression 'According to current information' is preserved in the output. The source's other statements are presented as factual (e.g., objects were detected, Air Force deployed, police secured areas, minister's quote), and the output mirrors this factual tone without adding or removing uncertainty. The output faithfully retains the conditional framing around the drone crash details.\"\n}\n```",
+  "judge_prompt_tokens": 570,
+  "judge_completion_tokens": 252,
+  "judge_cost_usd": 0.00915,
+  "timestamp": 1774952547.292327
+}

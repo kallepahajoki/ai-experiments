@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source says the Ministry 'is sending' the proposal for consultation, suggesting the process is being launched, while the output says it 'has initiated' the consultation, implying it is already underway. This is a subtle tense drift from present continuous to present perfect. All other temporal elements (date of 2 April 2026, future tense for proposed changes, current prohibitions) are accurately represented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal... for a consultation round\",\n    \"Under current legislation\",\n    \"in future\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has initiated a consultation\",\n    \"Currently\",\n    \"would allow\",\n    \"will remain criminalized\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has initiated a consultation\",\n      \"source_temporal\": \"is sending a proposal... for a consultation round\",\n      \"explanation\": \"The source uses present continuous ('is sending'), indicating the action is in progress or about to happen. The output uses present perfect ('has initiated'), which implies the action is already completed. This is a minor tense shift but could misrepresent the stage of the process.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source says the Ministry 'is sending' the proposal for consultation, suggesting the process is being launched, while the output says it 'has initiated' the consultation, implying it is already underway. This is a subtle tense drift from present continuous to present perfect. All other temporal elements (date of 2 April 2026, future tense for proposed changes, current prohibitions) are accurately represented.\"\n}\n```",
+  "judge_prompt_tokens": 704,
+  "judge_completion_tokens": 344,
+  "judge_cost_usd": 0.01212,
+  "timestamp": 1774952547.298223
+}

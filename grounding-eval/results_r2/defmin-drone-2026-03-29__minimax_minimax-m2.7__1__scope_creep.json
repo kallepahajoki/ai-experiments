@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The summary introduces the terms 'scrambled,' 'intercept,' 'cordoned off,' and 'forensic investigation,' which embellish or reinterpret the source's more neutral language ('on-site for identification,' 'secured the areas for further investigation'). These are minor paraphrasing liberties rather than major external knowledge additions, but they do introduce connotations not supported by the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"scrambled an F/A\u201118 Hornet to intercept and identify the objects\",\n      \"explanation\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' and 'intercept' are not in the source. 'Scrambled' implies a specific military rapid-response procedure, and 'intercept' goes beyond 'identification.'\"\n    },\n    {\n      \"output_content\": \"cordoned off both crash sites for forensic investigation\",\n      \"explanation\": \"The source says 'Police have secured the areas for further investigation.' The terms 'cordoned off' and 'forensic investigation' are not in the source. 'Forensic' adds a specific investigative connotation not present in the original.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary introduces the terms 'scrambled,' 'intercept,' 'cordoned off,' and 'forensic investigation,' which embellish or reinterpret the source's more neutral language ('on-site for identification,' 'secured the areas for further investigation'). These are minor paraphrasing liberties rather than major external knowledge additions, but they do introduce connotations not supported by the source.\"\n}\n```",
+  "judge_prompt_tokens": 501,
+  "judge_completion_tokens": 341,
+  "judge_cost_usd": 0.01103,
+  "timestamp": 1774952547.2919328
+}

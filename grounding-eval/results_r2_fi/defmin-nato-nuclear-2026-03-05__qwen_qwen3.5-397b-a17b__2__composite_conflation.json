@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source distinguishes between compatibility with NATO's operations and the fact that most NATO countries lack similar restrictions. The summary merges these into a single claim about making legislation compatible with the majority of NATO countries.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Muutoksella Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 saatetaan yhteensopivaksi valtaosan Nato-maiden kanssa.\",\n      \"source_facts\": [\n        \"Valtaosalla Nato-maista ei ole vastaavia lains\u00e4\u00e4d\u00e4nn\u00f6llisi\u00e4 rajoitteita.\",\n        \"Lakiesityksell\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 saatetaan yhteensopivaksi Naton toimintojen kanssa.\"\n      ],\n      \"explanation\": \"The source says the legislation is made compatible with NATO's operations/functions ('Naton toimintojen kanssa'), and separately notes that most NATO countries lack similar restrictions. The summary merges these into 'compatible with the majority of NATO countries', conflating compatibility with NATO operations with alignment with other NATO countries' legislation.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source distinguishes between compatibility with NATO's operations and the fact that most NATO countries lack similar restrictions. The summary merges these into a single claim about making legislation compatible with the majority of NATO countries.\"\n}\n```",
+  "judge_prompt_tokens": 1149,
+  "judge_completion_tokens": 298,
+  "judge_cost_usd": 0.013195,
+  "timestamp": 1774952603.9204748
+}

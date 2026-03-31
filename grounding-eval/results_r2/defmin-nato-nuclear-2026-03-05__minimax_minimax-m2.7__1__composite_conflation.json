@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "The summary's goal statement adds 'especially those involving nuclear explosives' and 'alliance obligations' by merging the general purpose statement with details from the nuclear explosives prohibition paragraph. While the overall thrust is accurate (the bill is about nuclear explosives), the source's goal statement does not specifically highlight nuclear explosives with 'especially' nor frame it as 'alliance obligations.' This is a minor conflation that slightly reshapes emphasis rather than creating a fundamentally false claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Remove the legal obstacles that currently prevent Finland from using NATO's deterrence and collective\u2011defence capabilities, especially those involving nuclear explosives, as part of its alliance obligations.\",\n      \"source_facts\": [\n        \"The purpose of the proposal is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\",\n        \"Under current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited.\"\n      ],\n      \"explanation\": \"The source states the goal is to remove legislative obstacles to fully utilise NATO's deterrence and collective defence. It does not specifically single out 'especially those involving nuclear explosives' as part of the goal statement. The summary merges the general goal of removing legislative obstacles with the specific detail about nuclear explosives from a separate paragraph, adding the qualifier 'especially those involving nuclear explosives' which creates a slightly different emphasis than the source. However, this is a relatively minor conflation since the bill is indeed about nuclear explosives. Additionally, the phrase 'as part of its alliance obligations' is an interpretation not directly stated in the source \u2014 the source says 'as part of the alliance' referring to military defence, not specifically 'alliance obligations.'\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"The summary's goal statement adds 'especially those involving nuclear explosives' and 'alliance obligations' by merging the general purpose statement with details from the nuclear explosives prohibition paragraph. While the overall thrust is accurate (the bill is about nuclear explosives), the source's goal statement does not specifically highlight nuclear explosives with 'especially' nor frame it as 'alliance obligations.' This is a minor conflation that slightly reshapes emphasis rather than creating a fundamentally false claim.\"\n}\n```",
+  "judge_prompt_tokens": 833,
+  "judge_completion_tokens": 431,
+  "judge_cost_usd": 0.01494,
+  "timestamp": 1774952547.2961652
+}

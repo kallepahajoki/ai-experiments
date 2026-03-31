@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions in the output faithfully reflect the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current law, conditional/future for proposed changes. Event ordering is preserved (current situation \u2192 proposed change \u2192 limitations/caveats \u2192 deadline). No temporal drift detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, ongoing/near-future action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (current law)\",\n    \"jatkossa (in the future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, matching source)\",\n    \"Nykyisin n\u00e4m\u00e4 toimet ovat ehdottomasti kiellettyj\u00e4 (currently, present tense)\",\n    \"jatkossa sallittua (in the future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\",\n    \"pysyv\u00e4t kriminalisoituina kaikissa tilanteissa (remain criminalized)\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions in the output faithfully reflect the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current law, conditional/future for proposed changes. Event ordering is preserved (current situation \u2192 proposed change \u2192 limitations/caveats \u2192 deadline). No temporal drift detected.\"\n}\n```",
+  "judge_prompt_tokens": 1223,
+  "judge_completion_tokens": 335,
+  "judge_cost_usd": 0.01449,
+  "timestamp": 1774952603.9159172
+}

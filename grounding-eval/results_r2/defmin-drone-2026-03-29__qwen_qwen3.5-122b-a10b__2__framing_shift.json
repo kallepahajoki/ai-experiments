@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "Minor framing shifts detected: 'states' was changed to 'confirmed' (slightly stronger epistemic framing) and 'emphasizing' was added as an editorial characterization of the minister's tone. These are subtle and do not significantly distort the source, but they introduce slight editorial interpretation.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"confirmed that drones strayed into Finnish territory\", \"issue\": \"The source uses 'states' while the summary uses 'confirmed', which adds a slightly stronger sense of authoritative validation not present in the original. However, this is a minor shift.\"},\n    {\"output_phrase\": \"emphasizing that the incident is being taken seriously\", \"issue\": \"The source quotes the minister saying 'We take this very seriously' \u2014 the word 'emphasizing' adds an editorial characterization of the minister's rhetorical intent that is not explicitly stated in the source.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"Minor framing shifts detected: 'states' was changed to 'confirmed' (slightly stronger epistemic framing) and 'emphasizing' was added as an editorial characterization of the minister's tone. These are subtle and do not significantly distort the source, but they introduce slight editorial interpretation.\"\n}\n```",
+  "judge_prompt_tokens": 523,
+  "judge_completion_tokens": 243,
+  "judge_cost_usd": 0.00869,
+  "timestamp": 1774952547.294285
+}

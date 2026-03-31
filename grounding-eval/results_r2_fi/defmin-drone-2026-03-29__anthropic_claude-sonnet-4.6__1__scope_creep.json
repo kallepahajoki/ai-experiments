@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the source without adding external context, historical references, or background information. Minor phrasing differences (e.g., 'useita' vs 'muutamia', 'l\u00e4hetti' vs 'on ollut paikalla', 'vahvistettu pudonneen' vs 'on pudonnut') are paraphrasing choices rather than scope creep, though 'vahvistettu' slightly strengthens the language beyond the source's 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information). This is a minor interpretive shift but not external knowledge.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the source without adding external context, historical references, or background information. Minor phrasing differences (e.g., 'useita' vs 'muutamia', 'l\u00e4hetti' vs 'on ollut paikalla', 'vahvistettu pudonneen' vs 'on pudonnut') are paraphrasing choices rather than scope creep, though 'vahvistettu' slightly strengthens the language beyond the source's 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information). This is a minor interpretive shift but not external knowledge.\"\n}\n```",
+  "judge_prompt_tokens": 714,
+  "judge_completion_tokens": 198,
+  "judge_cost_usd": 0.00852,
+  "timestamp": 1774952603.91084
+}

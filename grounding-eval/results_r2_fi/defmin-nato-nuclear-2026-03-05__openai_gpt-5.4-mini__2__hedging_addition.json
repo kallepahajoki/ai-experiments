@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source definitively states that acquisition, manufacture, development, and detonation of nuclear explosives 'remain' criminalized ('s\u00e4ilyv\u00e4t kriminalisoituina'). The output changes this to the conditional mood 's\u00e4ilyisiv\u00e4t' ('would remain'), introducing hedging where the source was definitive. However, this could also be interpreted as reflecting the conditional nature of a legislative proposal (the law hasn't been passed yet), so the hedging is somewhat contextually understandable but still deviates from the source's definitive tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [\n    {\n      \"source_statement\": \"Ydinr\u00e4j\u00e4hteiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa.\",\n      \"output_statement\": \"Ydinr\u00e4j\u00e4hteiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen s\u00e4ilyisiv\u00e4t edelleen rikoksina kaikissa tilanteissa.\",\n      \"added_hedging\": \"The source uses the indicative 's\u00e4ilyv\u00e4t' (remain), stating it as a definitive fact, while the output uses the conditional 's\u00e4ilyisiv\u00e4t' (would remain), adding uncertainty.\"\n    }\n  ],\n  \"hedging_addition_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source definitively states that acquisition, manufacture, development, and detonation of nuclear explosives 'remain' criminalized ('s\u00e4ilyv\u00e4t kriminalisoituina'). The output changes this to the conditional mood 's\u00e4ilyisiv\u00e4t' ('would remain'), introducing hedging where the source was definitive. However, this could also be interpreted as reflecting the conditional nature of a legislative proposal (the law hasn't been passed yet), so the hedging is somewhat contextually understandable but still deviates from the source's definitive tone.\"\n}\n```",
+  "judge_prompt_tokens": 1188,
+  "judge_completion_tokens": 346,
+  "judge_cost_usd": 0.01459,
+  "timestamp": 1774952603.919253
+}

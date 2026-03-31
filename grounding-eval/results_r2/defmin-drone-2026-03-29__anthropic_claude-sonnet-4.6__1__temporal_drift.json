@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary faithfully preserves 'Sunday morning' as the time reference and maintains the correct event ordering: detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 joint investigation. The addition of 'subsequently' is a minor inferential embellishment but does not constitute a meaningful temporal drift. All tenses and event sequences are consistent with the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"subsequently\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"subsequently\",\n      \"source_temporal\": \"(no explicit temporal sequencing for crashes)\",\n      \"explanation\": \"The source states 'According to current information, one drone has crashed north of Kouvola and another east of Kouvola' without specifying that the crashes happened after detection/identification. The summary adds 'subsequently' which implies a clear temporal sequence (detection \u2192 identification \u2192 crashing) that is not explicitly stated in the source. However, this is a minor inferential addition rather than a clear misrepresentation, as the logical sequence is reasonable.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary faithfully preserves 'Sunday morning' as the time reference and maintains the correct event ordering: detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 joint investigation. The addition of 'subsequently' is a minor inferential embellishment but does not constitute a meaningful temporal drift. All tenses and event sequences are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 483,
+  "judge_completion_tokens": 293,
+  "judge_cost_usd": 0.00974,
+  "timestamp": 1774952547.289739
+}

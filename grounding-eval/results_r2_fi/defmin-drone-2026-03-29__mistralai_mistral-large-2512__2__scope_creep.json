@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary labels the source as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release), but the source text does not identify its origin or type. All other content in the summary accurately reflects the source without adding external information.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"Puolustusministeri\u00f6n tiedotteesta\", \"explanation\": \"The source document does not identify itself as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release). The summary adds this attribution, which is not stated in the source.\"}\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary labels the source as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release), but the source text does not identify its origin or type. All other content in the summary accurately reflects the source without adding external information.\"\n}\n```",
+  "judge_prompt_tokens": 758,
+  "judge_completion_tokens": 176,
+  "judge_cost_usd": 0.00819,
+  "timestamp": 1774952603.913017
+}

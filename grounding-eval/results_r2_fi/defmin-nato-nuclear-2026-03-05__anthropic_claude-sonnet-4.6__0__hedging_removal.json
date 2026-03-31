@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The source uses conditional mood ('olisivat mahdollisia, jos ne liittyisiv\u00e4t') indicating a proposal with conditions. The output changes 'jos ne liittyisiv\u00e4t' (if they were related to) to 'kun ne liittyv\u00e4t' (when they relate to), which shifts from a conditional/hypothetical framing to a more factual/temporal framing. However, the output does retain 'Esityksen mukaan' and 'sallittaisiin' (conditional), partially preserving the proposal nature. The shift from 'jos' (if) to 'kun' (when) is a minor hedging removal, making the conditions sound more like established criteria rather than proposed conditions. This is relatively minor since the overall context of it being a proposal is maintained.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"},\n    {\"expression\": \"olisivat\", \"context\": \"n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia (conditional mood indicating this is a proposal, not yet enacted)\"},\n    {\"expression\": \"liittyisiv\u00e4t\", \"context\": \"jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen (conditional mood)\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\", \"preserved\": false, \"output_version\": \"Esityksen mukaan n\u00e4m\u00e4 toimet sallittaisiin jatkossa, kun ne liittyv\u00e4t\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The source uses conditional mood ('olisivat mahdollisia, jos ne liittyisiv\u00e4t') indicating a proposal with conditions. The output changes 'jos ne liittyisiv\u00e4t' (if they were related to) to 'kun ne liittyv\u00e4t' (when they relate to), which shifts from a conditional/hypothetical framing to a more factual/temporal framing. However, the output does retain 'Esityksen mukaan' and 'sallittaisiin' (conditional), partially preserving the proposal nature. The shift from 'jos' (if) to 'kun' (when) is a minor hedging removal, making the conditions sound more like established criteria rather than proposed conditions. This is relatively minor since the overall context of it being a proposal is maintained.\"\n}\n```",
+  "judge_prompt_tokens": 1294,
+  "judge_completion_tokens": 485,
+  "judge_cost_usd": 0.018595,
+  "timestamp": 1774952603.9157581
+}

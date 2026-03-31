@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully mirrors the neutral, informational tone of the source. It does not introduce evaluative language, loaded words, dramatic framing, or implied causality beyond what is stated in the source. The phrasing 'Ministeri\u00f6 t\u00e4sment\u00e4\u00e4' is a minor editorial choice (the source does not use the word 't\u00e4sment\u00e4\u00e4'), but it is a neutral verb that does not shift the framing in a meaningful way. All key claims and qualifications from the source are preserved without added editorial spin.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully mirrors the neutral, informational tone of the source. It does not introduce evaluative language, loaded words, dramatic framing, or implied causality beyond what is stated in the source. The phrasing 'Ministeri\u00f6 t\u00e4sment\u00e4\u00e4' is a minor editorial choice (the source does not use the word 't\u00e4sment\u00e4\u00e4'), but it is a neutral verb that does not shift the framing in a meaningful way. All key claims and qualifications from the source are preserved without added editorial spin.\"\n}\n```",
+  "judge_prompt_tokens": 1147,
+  "judge_completion_tokens": 159,
+  "judge_cost_usd": 0.00971,
+  "timestamp": 1774952603.920416
+}

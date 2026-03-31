@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output contains only a structured summary of the source text in Finnish. There are no instruction echoes, system prompt fragments, or meta-commentary about the task. The heading 'Tiivistelm\u00e4' is simply the Finnish word for 'summary' and serves as a natural title for the output rather than an instruction leak.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [],\n  \"leakage_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output contains only a structured summary of the source text in Finnish. There are no instruction echoes, system prompt fragments, or meta-commentary about the task. The heading 'Tiivistelm\u00e4' is simply the Finnish word for 'summary' and serves as a natural title for the output rather than an instruction leak.\"\n}\n```",
+  "judge_prompt_tokens": 1376,
+  "judge_completion_tokens": 117,
+  "judge_cost_usd": 0.009805,
+  "timestamp": 1774952603.917158
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The output is largely faithful to the source in tone and content. There are minor lexical substitutions ('vahvistaa' vs 'varmistaa', 'turvallisuustilanteessa' vs 'toimintaymp\u00e4rist\u00f6ss\u00e4', 'k\u00e4yt\u00e4nt\u00f6jen' vs 'toimintojen') that introduce subtle framing differences, but none are dramatic or clearly editorial. The overall neutral, factual tone of the source is preserved.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"vahvistaa uskottavaa pelotetta\",\n      \"issue\": \"The source says the goal is to ensure ('varmistaa') that NATO's deterrent is credible and forms the highest possible threshold. The output rephrases this as 'strengthen credible deterrence' ('vahvistaa uskottavaa pelotetta'), which subtly shifts the framing from ensuring/maintaining to actively strengthening, introducing a slightly more assertive tone not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"turvallisuustilanteessa\",\n      \"issue\": \"The source uses 'toimintaymp\u00e4rist\u00f6ss\u00e4' (operating environment), while the output uses 'turvallisuustilanteessa' (security situation). This is a minor lexical substitution that slightly narrows the framing to security specifically, though the shift is subtle.\"\n    },\n    {\n      \"output_phrase\": \"Naton k\u00e4yt\u00e4nt\u00f6jen\",\n      \"issue\": \"The source says 'Naton toimintojen kanssa' (NATO's operations/functions), while the output says 'Naton k\u00e4yt\u00e4nt\u00f6jen kanssa' (NATO's practices). This is a minor substitution that slightly shifts the meaning from operational compatibility to alignment with practices.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. There are minor lexical substitutions ('vahvistaa' vs 'varmistaa', 'turvallisuustilanteessa' vs 'toimintaymp\u00e4rist\u00f6ss\u00e4', 'k\u00e4yt\u00e4nt\u00f6jen' vs 'toimintojen') that introduce subtle framing differences, but none are dramatic or clearly editorial. The overall neutral, factual tone of the source is preserved.\"\n}\n```",
+  "judge_prompt_tokens": 1209,
+  "judge_completion_tokens": 461,
+  "judge_cost_usd": 0.01757,
+  "timestamp": 1774952603.9190662
+}

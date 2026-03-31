@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary is largely faithful but introduces several subtle editorial shifts: 'military aggression' instead of the neutral 'military action,' 'strictly criminalized' adding an intensifier, 'fully integrate' reframing 'fully utilise,' and 'standard alliance operations' editorializing 'NATO operations.' These are minor but collectively introduce a slightly more dramatic and evaluative tone than the neutral source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"against military aggression\",\n      \"issue\": \"The source uses the neutral phrase 'threshold for military action.' Replacing 'action' with 'aggression' introduces a value judgment and loaded language not present in the original, implying hostile intent by potential adversaries.\"\n    },\n    {\n      \"output_phrase\": \"fully integrate Finland into NATO's deterrence and collective defence framework\",\n      \"issue\": \"The source says 'fully utilise NATO's deterrence and collective defence' and 'enable Finland's military defence as part of the alliance.' The word 'integrate' subtly shifts the framing from removing obstacles to a deeper structural merging, which is a slight editorial recharacterization.\"\n    },\n    {\n      \"output_phrase\": \"strictly criminalized\",\n      \"issue\": \"The source says 'remain criminalised in all circumstances.' The addition of 'strictly' is an intensifier not present in the source, adding editorial emphasis.\"\n    },\n    {\n      \"output_phrase\": \"standard alliance operations\",\n      \"issue\": \"The source says 'NATO operations.' Adding 'standard' introduces an editorial characterization suggesting normalcy that is not explicitly stated in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary is largely faithful but introduces several subtle editorial shifts: 'military aggression' instead of the neutral 'military action,' 'strictly criminalized' adding an intensifier, 'fully integrate' reframing 'fully utilise,' and 'standard alliance operations' editorializing 'NATO operations.' These are minor but collectively introduce a slightly more dramatic and evaluative tone than the neutral source.\"\n}\n```",
+  "judge_prompt_tokens": 790,
+  "judge_completion_tokens": 416,
+  "judge_cost_usd": 0.01435,
+  "timestamp": 1774952547.295694
+}

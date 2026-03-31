@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "content": "**Tiivistelm\u00e4 \u2013 Puolustusministeri\u00f6n tiedote (lausuntokierros)**  \n\n- **Ehdotus:** Muutetaan ydinenergia\u2011 ja rikoslains\u00e4\u00e4d\u00e4nt\u00f6\u00e4.  \n- **Tavoite:** Poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet, jotka est\u00e4v\u00e4t Suomen sotilaallisen puolustuksen toteuttamisen osana liittokuntaa sek\u00e4 Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4isen hy\u00f6dynt\u00e4misen.  \n\n### Keskeiset muutokset  \n- **Sallitut toimet:** Ydinr\u00e4j\u00e4hteen **tuonti, kuljetus, toimitus ja hallussapito** olisivat jatkossa sallittuja, jos ne liittyv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n.  \n- **Kiellettyn\u00e4 s\u00e4ilyy:** Ydinr\u00e4j\u00e4hteiden **hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen** pysyv\u00e4t rikosoikeudellisesti kiellettyin\u00e4 kaikissa tilanteissa.  \n\n### Suomen kanta  \n- Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 Natossa ole suunnitteilla sellaisen sijoittamista.  \n\n### NATO\u2011yhteensopivuus  \n- Suurin osa Nato\u2011maista ei aseta vastaavia rajoituksia; esitys saattaa Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n yhteensopivaksi Naton toimintojen kanssa.  \n\n### Turvallisuusn\u00e4k\u00f6kohdat  \n- Tavoitteena on **maksimoida Suomen turvallisuus** vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4 ja varmistaa, ett\u00e4 Naton pelote on uskottava ja muodostaa mahdollisimman korkea kynnys sotilaallisille toimille.  \n\n### Aikataulu  \n- Lausuntokierros p\u00e4\u00e4ttyy **2.4.2026**.  ",
+  "prompt_tokens": 597,
+  "completion_tokens": 1160,
+  "cost_usd": 0.0015711,
+  "latency_ms": 29385.567834004178,
+  "timestamp": 1774951983.6626
+}

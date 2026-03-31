@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The final sentence of the summary introduces the characterization 'technical adjustment' (not in source) and links it to 'non-proliferation commitments' (not in source), merging the purpose of the legislative change with the continued criminal prohibitions into a single framed statement that goes beyond what the source states.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"This legislative change is framed as a **technical adjustment** to support Finland's NATO membership while maintaining strict non-proliferation commitments.\",\n      \"source_facts\": [\n        \"The bill proposes removing legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\",\n        \"The acquisition, manufacture, development, and detonation of nuclear explosives remain criminalised in all circumstances.\"\n      ],\n      \"explanation\": \"The source never describes this as a 'technical adjustment' nor frames it in terms of 'non-proliferation commitments.' The summary merges the legislative change purpose with the continued criminalization of certain activities and recharacterizes both using language not found in the source. The term 'non-proliferation commitments' conflates the domestic criminal prohibitions on acquisition/manufacture/development/detonation with international non-proliferation frameworks, which the source does not mention.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The final sentence of the summary introduces the characterization 'technical adjustment' (not in source) and links it to 'non-proliferation commitments' (not in source), merging the purpose of the legislative change with the continued criminal prohibitions into a single framed statement that goes beyond what the source states.\"\n}\n```",
+  "judge_prompt_tokens": 830,
+  "judge_completion_tokens": 332,
+  "judge_cost_usd": 0.01245,
+  "timestamp": 1774952547.296742
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely neutral and faithful to the source. The only notable differences are minor omissions (dropping 'hyvin' from 'hyvin vakavasti' and the immediate-response statement), which slightly soften the tone but do not introduce new editorial framing, loaded language, or implied causality. No dramatic or evaluative language is added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Puolustusministeri Antti H\u00e4kk\u00e4sen mukaan kyseess\u00e4 ovat Suomen alueelle harhautuneet lennokit, ja asiaan suhtaudutaan vakavasti.\",\n      \"issue\": \"Minor downplaying: the source quote says 'Suhtaudumme asiaan hyvin vakavasti' (very seriously), but the summary omits 'hyvin' (very), slightly softening the stated gravity. Also omits the minister's statement that authorities reacted immediately ('reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti').\"\n    },\n    {\n      \"output_phrase\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"issue\": \"The word 'muutamia' (several) and 'hitaita' (slow) from the source are dropped in the summary ('matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita'), which slightly reduces the descriptive precision but does not add framing.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely neutral and faithful to the source. The only notable differences are minor omissions (dropping 'hyvin' from 'hyvin vakavasti' and the immediate-response statement), which slightly soften the tone but do not introduce new editorial framing, loaded language, or implied causality. No dramatic or evaluative language is added.\"\n}\n```",
+  "judge_prompt_tokens": 760,
+  "judge_completion_tokens": 371,
+  "judge_cost_usd": 0.013075,
+  "timestamp": 1774952603.911465
+}

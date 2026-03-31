@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false combined or causal claims. The first sentence combines two purposes mentioned in the source (aligning with NATO operations and enhancing military defence capabilities), but both are indeed stated as purposes of the proposal in the source. The 'However' connector linking the deterrence aim with the clarification that Finland does not seek nuclear weapons deployment mirrors the source's own structure, where these points are presented in close proximity as related clarifications. No false causal or combined relationships were identified.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false combined or causal claims. The first sentence combines two purposes mentioned in the source (aligning with NATO operations and enhancing military defence capabilities), but both are indeed stated as purposes of the proposal in the source. The 'However' connector linking the deterrence aim with the clarification that Finland does not seek nuclear weapons deployment mirrors the source's own structure, where these points are presented in close proximity as related clarifications. No false causal or combined relationships were identified.\"\n}\n```",
+  "judge_prompt_tokens": 658,
+  "judge_completion_tokens": 154,
+  "judge_cost_usd": 0.00714,
+  "timestamp": 1774952547.2970712
+}

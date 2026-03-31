@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output covers all major facts from the source. Two relatively minor details are omitted: the specific language about deterrence forming 'the highest possible threshold for military action' and the phrase 'including all its components' regarding NATO's deterrence. These are nuances rather than critical omissions, as the output does convey the general idea of ensuring NATO's deterrence is credible. All key conditions, caveats, negations, and legal/safety language are preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for consultation.\",\n    \"The purpose is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\",\n    \"Under current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited.\",\n    \"The bill proposes these actions would be possible if related to Finland's military defence, NATO's collective defence, or defence cooperation.\",\n    \"The majority of NATO member states do not have comparable legislative restrictions.\",\n    \"The bill would align Finnish legislation with NATO operations.\",\n    \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\",\n    \"The objective is to ensure NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\",\n    \"The legislative amendment is not about Finland seeking nuclear weapons on its territory.\",\n    \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\",\n    \"The acquisition, manufacture, development, and detonation of nuclear explosives remain criminalised in all circumstances.\",\n    \"The consultation period ends on 2 April 2026.\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"The objective includes forming 'the highest possible threshold for military action' \u2014 this specific phrasing about deterrence creating a threshold against military action is missing from the output.\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"The source says 'including all its components' when referring to NATO's deterrence \u2014 the output omits this qualifier which implies nuclear deterrence is one component among others.\",\n      \"importance\": \"medium\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output covers all major facts from the source. Two relatively minor details are omitted: the specific language about deterrence forming 'the highest possible threshold for military action' and the phrase 'including all its components' regarding NATO's deterrence. These are nuances rather than critical omissions, as the output does convey the general idea of ensuring NATO's deterrence is credible. All key conditions, caveats, negations, and legal/safety language are preserved.\"\n}\n```",
+  "judge_prompt_tokens": 738,
+  "judge_completion_tokens": 558,
+  "judge_cost_usd": 0.01764,
+  "timestamp": 1774952547.2976189
+}

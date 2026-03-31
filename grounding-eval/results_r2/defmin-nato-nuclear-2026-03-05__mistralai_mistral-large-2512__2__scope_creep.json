@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The most notable scope creep is the final sentence referring to Finland's 'long-standing non-nuclear stance,' which introduces historical/geopolitical context not present in the source. Other issues are relatively minor paraphrasing differences.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"ensuring full integration into the alliance's deterrence and collective defence mechanisms\",\n      \"explanation\": \"The source says 'to fully utilise NATO's deterrence and collective defence' \u2014 the word 'integration' and 'mechanisms' are not in the source. 'Full integration' adds a nuance not explicitly stated, though this is a minor paraphrase rather than clear scope creep.\"\n    },\n    {\n      \"output_content\": \"acts as a strong deterrent against military threats\",\n      \"explanation\": \"The source says 'forms the highest possible threshold for military action.' The output rephrases this as 'acts as a strong deterrent against military threats,' which is a reasonable paraphrase but introduces the phrase 'military threats' which is not in the source.\"\n    },\n    {\n      \"output_content\": \"This legislative change is framed as a practical step to ensure Finland's full participation in NATO's defence framework while maintaining its long-standing non-nuclear stance.\",\n      \"explanation\": \"The phrase 'long-standing non-nuclear stance' introduces background context about Finland's historical position on nuclear weapons that is not mentioned in the source document. The source only states Finland does not seek deployment, not that it has a 'long-standing non-nuclear stance.' Additionally, 'practical step' and 'full participation in NATO's defence framework' are editorial characterizations not directly from the source.\"\n    },\n    {\n      \"output_content\": \"submitted a proposal\",\n      \"explanation\": \"The source says 'sending a proposal... for a consultation round,' not that it has been 'submitted.' This is a minor wording difference but 'submitted' could imply a different stage in the process.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The most notable scope creep is the final sentence referring to Finland's 'long-standing non-nuclear stance,' which introduces historical/geopolitical context not present in the source. Other issues are relatively minor paraphrasing differences.\"\n}\n```",
+  "judge_prompt_tokens": 841,
+  "judge_completion_tokens": 488,
+  "judge_cost_usd": 0.016405,
+  "timestamp": 1774952547.296906
+}

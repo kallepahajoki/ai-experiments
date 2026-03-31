@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely neutral and faithful to the source. The only minor note is the use of 'confirmed' instead of 'states,' which slightly elevates the authority of the minister's words but does not materially change the framing. No dramatic language, opinion words, or causal implications were introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"confirmed that drones strayed into Finnish territory\", \"issue\": \"The source uses 'states' while the summary uses 'confirmed,' which adds a slightly stronger sense of authoritative validation not present in the original. However, this is a minor shift.\"}\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely neutral and faithful to the source. The only minor note is the use of 'confirmed' instead of 'states,' which slightly elevates the authority of the minister's words but does not materially change the framing. No dramatic language, opinion words, or causal implications were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 524,
+  "judge_completion_tokens": 177,
+  "judge_cost_usd": 0.007045,
+  "timestamp": 1774952547.294058
+}

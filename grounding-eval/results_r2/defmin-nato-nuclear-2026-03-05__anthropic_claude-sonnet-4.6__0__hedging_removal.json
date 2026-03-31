@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source text is largely factual and declarative, describing a legislative proposal and its rationale. There is very little hedging or uncertainty language in the source. The phrase 'difficult-to-predict' is a mild hedge preserved in the output as 'unpredictable.' No instances of hedging removal were found; the output faithfully represents the certainty level of the source material.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable environment\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source text is largely factual and declarative, describing a legislative proposal and its rationale. There is very little hedging or uncertainty language in the source. The phrase 'difficult-to-predict' is a mild hedge preserved in the output as 'unpredictable.' No instances of hedging removal were found; the output faithfully represents the certainty level of the source material.\"\n}\n```",
+  "judge_prompt_tokens": 825,
+  "judge_completion_tokens": 220,
+  "judge_cost_usd": 0.009625,
+  "timestamp": 1774952547.2951412
+}

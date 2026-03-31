@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may', 'might', 'reportedly', or 'allegedly' has been added. The conditional forms used (e.g., 'poistettaisiin', 'olisivat') appropriately reflect the fact that this is a legislative proposal (esitys) being sent for consultation, which is consistent with the source's own use of conditional forms ('olisivat jatkossa mahdollisia').",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may', 'might', 'reportedly', or 'allegedly' has been added. The conditional forms used (e.g., 'poistettaisiin', 'olisivat') appropriately reflect the fact that this is a legislative proposal (esitys) being sent for consultation, which is consistent with the source's own use of conditional forms ('olisivat jatkossa mahdollisia').\"\n}\n```",
+  "judge_prompt_tokens": 1273,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.01039,
+  "timestamp": 1774952603.9178398
+}

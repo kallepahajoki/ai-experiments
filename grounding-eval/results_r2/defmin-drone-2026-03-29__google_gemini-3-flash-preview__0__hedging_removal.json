@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The source uses 'According to current information' to hedge the claim about the two drone crashes, indicating that this was preliminary information subject to change. The output not only drops this hedging but actively strengthens the claim by using the word 'confirmed,' presenting the information as established fact rather than a preliminary assessment.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones have been confirmed down: one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source uses 'According to current information' to hedge the claim about the two drone crashes, indicating that this was preliminary information subject to change. The output not only drops this hedging but actively strengthens the claim by using the word 'confirmed,' presenting the information as established fact rather than a preliminary assessment.\"\n}\n```",
+  "judge_prompt_tokens": 605,
+  "judge_completion_tokens": 236,
+  "judge_cost_usd": 0.008925,
+  "timestamp": 1774952547.290516
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary introduces the characterization of the change as a 'technical adjustment' and references 'non-proliferation commitments,' neither of which appear in the source document. These represent model-generated framing and context beyond what the source provides.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"technical adjustment\",\n      \"explanation\": \"The source does not characterize the legislative change as a 'technical adjustment.' This is an interpretive framing added by the model that is not present in the source document.\"\n    },\n    {\n      \"output_content\": \"maintaining strict non-proliferation commitments\",\n      \"explanation\": \"The source does not mention 'non-proliferation commitments' or use that term. While the source notes that acquisition, manufacture, development, and detonation remain criminalized, the concept of 'non-proliferation commitments' introduces a broader policy framework not referenced in the source.\"\n    },\n    {\n      \"output_content\": \"raising the threshold for potential military aggression\",\n      \"explanation\": \"The source says 'forms the highest possible threshold for military action.' The output rephrases this as 'raising the threshold for potential military aggression,' which subtly changes the meaning by specifying 'aggression' rather than the more neutral 'military action' used in the source. This is a minor interpretive addition.\"\n    },\n    {\n      \"output_content\": \"submitted a proposal\",\n      \"explanation\": \"The source says the Ministry is 'sending a proposal... for a consultation round,' not that it has 'submitted' it. This is a minor wording difference but does not introduce external information.\"\n    },\n    {\n      \"output_content\": \"ensuring full integration into the alliance's deterrence and collective defence mechanisms\",\n      \"explanation\": \"The source says 'to fully utilise NATO's deterrence and collective defence.' The phrase 'full integration' and 'mechanisms' are slight reframings, but 'full integration' introduces a concept not explicitly stated in the source, which talks about 'fully utilising' rather than 'integrating into.'\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary introduces the characterization of the change as a 'technical adjustment' and references 'non-proliferation commitments,' neither of which appear in the source document. These represent model-generated framing and context beyond what the source provides.\"\n}\n```",
+  "judge_prompt_tokens": 826,
+  "judge_completion_tokens": 516,
+  "judge_cost_usd": 0.01703,
+  "timestamp": 1774952547.2967172
+}

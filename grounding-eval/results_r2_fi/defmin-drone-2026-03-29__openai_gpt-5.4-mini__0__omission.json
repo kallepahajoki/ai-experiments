@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output covers all key facts from the source: the detection of slow, low-flying small objects in Finnish airspace, the F/A-18 Hornet identification mission, two drones falling near Kouvola, police cordoning off areas, Defense Minister H\u00e4kk\u00e4nen's statement about stray drones and serious response, and the joint investigation by the Defence Forces and other authorities. Minor wording differences (hyvin vs eritt\u00e4in, lis\u00e4tutkimuksia vs jatkotutkimuksia) are paraphrases rather than omissions.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The source uses 'hyvin vakavasti' (very seriously) while the output changes it to 'eritt\u00e4in vakavasti' (extremely seriously) \u2014 a minor paraphrase shift but not an omission per se\", \"importance\": \"low\"},\n    {\"fact\": \"The source says 'lis\u00e4tutkimuksia' (further investigations) while the output says 'jatkotutkimuksia' (follow-up investigations) \u2014 synonymous, not a true omission\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output covers all key facts from the source: the detection of slow, low-flying small objects in Finnish airspace, the F/A-18 Hornet identification mission, two drones falling near Kouvola, police cordoning off areas, Defense Minister H\u00e4kk\u00e4nen's statement about stray drones and serious response, and the joint investigation by the Defence Forces and other authorities. Minor wording differences (hyvin vs eritt\u00e4in, lis\u00e4tutkimuksia vs jatkotutkimuksia) are paraphrases rather than omissions.\"\n}\n```",
+  "judge_prompt_tokens": 748,
+  "judge_completion_tokens": 598,
+  "judge_cost_usd": 0.01869,
+  "timestamp": 1774952603.9139452
+}

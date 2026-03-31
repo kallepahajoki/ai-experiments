@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful to the source in tone and content. The only minor framing issue is the use of 'emphasizing,' which introduces a slight editorial characterization of the minister's statement. The source neutrally quotes him; it does not describe him as 'emphasizing' anything. This is a very mild framing shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"emphasizing that the situation is being taken very seriously\", \"issue\": \"The word 'emphasizing' adds editorial characterization of the minister's tone that is not present in the source. The source simply reports his statement without describing how he delivered it.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. The only minor framing issue is the use of 'emphasizing,' which introduces a slight editorial characterization of the minister's statement. The source neutrally quotes him; it does not describe him as 'emphasizing' anything. This is a very mild framing shift.\"\n}\n```",
+  "judge_prompt_tokens": 509,
+  "judge_completion_tokens": 182,
+  "judge_cost_usd": 0.007095,
+  "timestamp": 1774952547.2923489
+}

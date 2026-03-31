@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The date '2 April 2026' is correctly rendered as 'April 2, 2026'. The event sequence is preserved accurately. The only temporal differences are minor tense shifts from present continuous ('is sending') to present perfect ('has proposed'/'has been sent'), which do not materially misrepresent the timeline or event ordering. All other temporal relationships and facts are faithfully represented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense, ongoing action)\",\n    \"Under current legislation (present)\",\n    \"in future (future reference)\",\n    \"remains criminalised (present)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed (present perfect)\",\n    \"seeks to remove (present)\",\n    \"would only be permitted (conditional future)\",\n    \"will remain strictly criminalized (future)\",\n    \"has been sent (present perfect)\",\n    \"is scheduled to end on April 2, 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed (present perfect, suggesting completed action)\",\n      \"source_temporal\": \"is sending (present tense, ongoing action)\",\n      \"explanation\": \"Minor tense shift: the source uses present continuous 'is sending' suggesting the action is currently underway, while the output uses present perfect 'has proposed' suggesting it is already completed. This is a slight temporal drift but does not significantly misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"has been sent (present perfect)\",\n      \"source_temporal\": \"is sending (present continuous)\",\n      \"explanation\": \"Same drift as above: the source indicates the proposal is being sent now, while the output implies it has already been sent. Minor but notable tense change.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The date '2 April 2026' is correctly rendered as 'April 2, 2026'. The event sequence is preserved accurately. The only temporal differences are minor tense shifts from present continuous ('is sending') to present perfect ('has proposed'/'has been sent'), which do not materially misrepresent the timeline or event ordering. All other temporal relationships and facts are faithfully represented.\"\n}\n```",
+  "judge_prompt_tokens": 791,
+  "judge_completion_tokens": 459,
+  "judge_cost_usd": 0.01543,
+  "timestamp": 1774952547.295664
+}

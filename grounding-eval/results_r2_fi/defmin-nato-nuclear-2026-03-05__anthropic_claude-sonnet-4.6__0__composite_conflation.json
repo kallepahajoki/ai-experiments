@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false combined or causal claims. The bullet points under 'Tavoitteet' each correspond to separate statements in the source. The statement about NATO compatibility ('Saatetaan Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden k\u00e4yt\u00e4nt\u00f6jen kanssa') faithfully reflects the source's mention that most NATO countries lack such legislative restrictions and that the proposal aligns Finnish legislation with NATO operations. No causal connectors are used to fabricate relationships not present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false combined or causal claims. The bullet points under 'Tavoitteet' each correspond to separate statements in the source. The statement about NATO compatibility ('Saatetaan Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden k\u00e4yt\u00e4nt\u00f6jen kanssa') faithfully reflects the source's mention that most NATO countries lack such legislative restrictions and that the proposal aligns Finnish legislation with NATO operations. No causal connectors are used to fabricate relationships not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 1235,
+  "judge_completion_tokens": 172,
+  "judge_cost_usd": 0.010475,
+  "timestamp": 1774952603.915829
+}

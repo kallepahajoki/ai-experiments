@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "All named entities in the output match those in the source. 'Antti H\u00e4kk\u00e4sen' is the genitive form of 'Antti H\u00e4kk\u00e4nen' from the source, which is a normal grammatical variation, not a substitution. All locations (Suomen, Kaakkois-Suomessa, Kouvolan), organizations (Ilmavoimat, Poliisi, Puolustusvoimat), and other entities (F/A-18 Hornet) are consistent with the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Suomen\", \"Kaakkois-Suomessa\", \"Ilmavoimat\", \"F/A-18 Hornet\", \"Kouvolan\", \"Poliisi\", \"Antti H\u00e4kk\u00e4sen\", \"Puolustusvoimat\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"All named entities in the output match those in the source. 'Antti H\u00e4kk\u00e4sen' is the genitive form of 'Antti H\u00e4kk\u00e4nen' from the source, which is a normal grammatical variation, not a substitution. All locations (Suomen, Kaakkois-Suomessa, Kouvolan), organizations (Ilmavoimat, Poliisi, Puolustusvoimat), and other entities (F/A-18 Hornet) are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 767,
+  "judge_completion_tokens": 242,
+  "judge_cost_usd": 0.009885,
+  "timestamp": 1774952603.9138079
+}

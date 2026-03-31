@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false combined or causal claims. The rationale section lists three separate points that correspond to distinct statements in the source. The phrase 'serves as the highest possible threshold against military aggression' is a minor rewording of 'forms the highest possible threshold for military action,' but this is a paraphrase rather than a conflation. The description of the proposal as having been 'submitted' rather than 'sending' is a minor wording difference but not a conflation. All relationships presented in the output match those in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false combined or causal claims. The rationale section lists three separate points that correspond to distinct statements in the source. The phrase 'serves as the highest possible threshold against military aggression' is a minor rewording of 'forms the highest possible threshold for military action,' but this is a paraphrase rather than a conflation. The description of the proposal as having been 'submitted' rather than 'sending' is a minor wording difference but not a conflation. All relationships presented in the output match those in the source.\"\n}\n```",
+  "judge_prompt_tokens": 737,
+  "judge_completion_tokens": 168,
+  "judge_cost_usd": 0.007885,
+  "timestamp": 1774952547.296319
+}

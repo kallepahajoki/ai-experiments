@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The most notable framing shift is the use of 'Incursions' in the headline, which carries a more aggressive, deliberate connotation than the source's 'strayed into Finnish territory.' The source maintains a neutral, factual tone throughout, while 'incursion' implies intentional unauthorized entry. 'Confirmed down' is a minor shift from 'crashed' with slightly more military register.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"Drone Incursions in Southeast Finland\", \"issue\": \"The source uses neutral language like 'strayed into Finnish territory' and 'detected...objects.' The word 'incursions' introduces a more militaristic/aggressive framing not present in the source, implying deliberate unauthorized entry rather than the more ambiguous 'strayed.'\"},\n    {\"output_phrase\": \"Two drones have been confirmed down\", \"issue\": \"The source says one drone 'crashed' north of Kouvola and another east of Kouvola. 'Confirmed down' has a slightly more militaristic tone compared to the neutral 'crashed' used in the source, though this is a minor shift.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The most notable framing shift is the use of 'Incursions' in the headline, which carries a more aggressive, deliberate connotation than the source's 'strayed into Finnish territory.' The source maintains a neutral, factual tone throughout, while 'incursion' implies intentional unauthorized entry. 'Confirmed down' is a minor shift from 'crashed' with slightly more military register.\"\n}\n```",
+  "judge_prompt_tokens": 544,
+  "judge_completion_tokens": 304,
+  "judge_cost_usd": 0.01032,
+  "timestamp": 1774952547.290559
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "Multiple tense shifts detected: present perfect \u2192 simple past for drone crashes and Air Force presence, and present tense \u2192 simple past for the minister's statement. While these shifts are common in summarization and don't drastically alter the meaning, they do represent systematic temporal drift from present-relevance framing to completed-past framing. No date/time errors or event reordering were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect - ongoing/completed)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"tutkii (present tense)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"putosi (simple past)\",\n    \"l\u00e4hetti (simple past)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"vahvisti (simple past)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"putosi (simple past - 'putosi maahan')\",\n      \"source_temporal\": \"on pudonnut (present perfect - 'on pudonnut maahan')\",\n      \"explanation\": \"The source uses present perfect ('on pudonnut'), indicating a recently completed event with present relevance. The summary shifts to simple past ('putosi'), which is a minor tense change but alters the temporal framing from present-relevance to a completed past event.\"\n    },\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past - 'Ilmavoimat l\u00e4hetti paikalle')\",\n      \"source_temporal\": \"on ollut paikalla (present perfect - 'Ilmavoimat on ollut paikalla')\",\n      \"explanation\": \"The source says the Air Force 'has been on site' (present perfect, implying ongoing presence), while the summary says the Air Force 'sent' a jet (simple past), which reframes the ongoing presence as a completed dispatching action. This is both a tense shift and a slight semantic change.\"\n    },\n    {\n      \"output_temporal\": \"vahvisti (simple past - 'H\u00e4kk\u00e4nen vahvisti')\",\n      \"source_temporal\": \"toteaa (present tense - 'H\u00e4kk\u00e4nen toteaa')\",\n      \"explanation\": \"The source uses present tense 'toteaa' (states), typical of news reporting for direct quotes. The summary shifts to simple past 'vahvisti' (confirmed), changing the temporal framing from a present-tense statement to a past-tense confirmation.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"Multiple tense shifts detected: present perfect \u2192 simple past for drone crashes and Air Force presence, and present tense \u2192 simple past for the minister's statement. While these shifts are common in summarization and don't drastically alter the meaning, they do represent systematic temporal drift from present-relevance framing to completed-past framing. No date/time errors or event reordering were found.\"\n}\n```",
+  "judge_prompt_tokens": 714,
+  "judge_completion_tokens": 680,
+  "judge_cost_usd": 0.02057,
+  "timestamp": 1774952603.910998
+}

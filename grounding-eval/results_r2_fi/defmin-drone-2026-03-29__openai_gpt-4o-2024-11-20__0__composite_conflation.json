@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.3,
+    "evidence": "The output mostly faithfully summarizes the source. The only notable issue is the omission of 'merialueella' (sea area) as a separate observation location, which is more of an omission than a composite conflation. There are no false causal claims or merged independent facts presented as causally related. The summary does not introduce causal connectors that misrepresent the source relationships.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Sunnuntaiaamuna Suomen ilmatilassa Kaakkois-Suomessa havaittiin matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita.\",\n      \"source_facts\": [\n        \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n      ],\n      \"explanation\": \"The summary omits 'merialueella' (sea area) and merges the observation locations into just 'Kaakkois-Suomessa', dropping one of the distinct areas where objects were detected. The source lists both the sea area and Southeast Finland as separate observation locations, but the summary presents only Southeast Finland.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.3,\n  \"evidence\": \"The output mostly faithfully summarizes the source. The only notable issue is the omission of 'merialueella' (sea area) as a separate observation location, which is more of an omission than a composite conflation. There are no false causal claims or merged independent facts presented as causally related. The summary does not introduce causal connectors that misrepresent the source relationships.\"\n}\n```",
+  "judge_prompt_tokens": 697,
+  "judge_completion_tokens": 331,
+  "judge_cost_usd": 0.01176,
+  "timestamp": 1774952603.913284
+}

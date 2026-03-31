@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds accurately to information in the source. The relationships stated (e.g., the purpose of the law change, the conditions under which activities would be permitted, the clarifications about not seeking nuclear weapons) all match the source. No causal connectors are used to fabricate relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds accurately to information in the source. The relationships stated (e.g., the purpose of the law change, the conditions under which activities would be permitted, the clarifications about not seeking nuclear weapons) all match the source. No causal connectors are used to fabricate relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 1346,
+  "judge_completion_tokens": 129,
+  "judge_cost_usd": 0.009955,
+  "timestamp": 1774952603.91739
+}

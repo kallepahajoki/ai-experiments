@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source uses conditional forms ('olisivat mahdollisia', 'liittyisiv\u00e4t') because it describes a legislative proposal, not enacted law. The output preserves this conditionality with 'mahdollistettaisiin' (conditional form). The slight shift from 'liittyisiv\u00e4t' (conditional) to 'liittyv\u00e4t' (indicative) in the subordinate clause is very minor and does not materially change the meaning, as the main verb 'mahdollistettaisiin' already signals the proposal nature. No significant hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"liittyisiv\u00e4t\",\n      \"context\": \"jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia / liittyisiv\u00e4t\",\n      \"preserved\": true,\n      \"output_version\": \"mahdollistettaisiin ydinr\u00e4j\u00e4hteiden tuominen, kuljettaminen, toimittaminen ja hallussapito, jos ne liittyv\u00e4t Suomen tai Naton puolustukseen\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source uses conditional forms ('olisivat mahdollisia', 'liittyisiv\u00e4t') because it describes a legislative proposal, not enacted law. The output preserves this conditionality with 'mahdollistettaisiin' (conditional form). The slight shift from 'liittyisiv\u00e4t' (conditional) to 'liittyv\u00e4t' (indicative) in the subordinate clause is very minor and does not materially change the meaning, as the main verb 'mahdollistettaisiin' already signals the proposal nature. No significant hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 1140,
+  "judge_completion_tokens": 454,
+  "judge_cost_usd": 0.01705,
+  "timestamp": 1774952603.9201689
+}

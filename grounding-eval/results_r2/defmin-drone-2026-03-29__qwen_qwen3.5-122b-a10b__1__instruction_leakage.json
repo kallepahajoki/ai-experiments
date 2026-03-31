@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output begins with 'Here is a summary of the press release including all key facts:' which is a task acknowledgment/instruction echo indicating the model is framing its response in terms of the task it was given rather than simply providing the summary content.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [\n    {\"text\": \"Here is a summary of the press release including all key facts:\", \"type\": \"instruction_echo\"}\n  ],\n  \"leakage_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output begins with 'Here is a summary of the press release including all key facts:' which is a task acknowledgment/instruction echo indicating the model is framing its response in terms of the task it was given rather than simply providing the summary content.\"\n}\n```",
+  "judge_prompt_tokens": 533,
+  "judge_completion_tokens": 131,
+  "judge_cost_usd": 0.00594,
+  "timestamp": 1774952547.294115
+}

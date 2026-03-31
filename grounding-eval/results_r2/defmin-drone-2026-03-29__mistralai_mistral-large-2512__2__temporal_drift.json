@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary changes 'current information' to 'preliminary information' (minor semantic/temporal nuance shift) and shifts the tense of the minister's quote from present perfect ('have strayed') to past perfect ('had entered'). It also adds 'unintentionally' which is not explicitly stated in the source. The overall event sequence and main temporal markers (Sunday morning, immediately) are preserved correctly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"immediately\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"preliminary information\", \"immediately\", \"at this time\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"the drones had entered Finnish territory unintentionally\",\n      \"source_temporal\": \"Drones have strayed into Finnish territory\",\n      \"explanation\": \"The source quote says 'Drones have strayed into Finnish territory' \u2014 the word 'strayed' means wandered or drifted, not necessarily 'unintentionally.' The summary adds the explicit qualifier 'unintentionally,' which is an interpretive addition. While 'strayed' can imply lack of intent, the original does not explicitly state this. This is more of a semantic drift than a temporal one, but the tense also shifted from present perfect ('have strayed') to past perfect ('had entered'), which is a minor tense change.\"\n    },\n    {\n      \"output_temporal\": \"preliminary information\",\n      \"source_temporal\": \"current information\",\n      \"explanation\": \"'Current information' and 'preliminary information' are not identical. 'Current' refers to what is known at the present time, while 'preliminary' implies early-stage or initial findings. This is a subtle semantic shift rather than a strict temporal drift, but it alters the temporal nuance of the information's status.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary changes 'current information' to 'preliminary information' (minor semantic/temporal nuance shift) and shifts the tense of the minister's quote from present perfect ('have strayed') to past perfect ('had entered'). It also adds 'unintentionally' which is not explicitly stated in the source. The overall event sequence and main temporal markers (Sunday morning, immediately) are preserved correctly.\"\n}\n```",
+  "judge_prompt_tokens": 533,
+  "judge_completion_tokens": 453,
+  "judge_cost_usd": 0.01399,
+  "timestamp": 1774952547.2926238
+}

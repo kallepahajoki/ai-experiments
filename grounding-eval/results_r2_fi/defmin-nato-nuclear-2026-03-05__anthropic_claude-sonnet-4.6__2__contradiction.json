@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key points from the source document. The changes described (allowing nuclear explosive transport/possession for NATO defense purposes), the goals (NATO deterrence credibility, legislative compatibility), the caveats (Finland not seeking nuclear weapons on its territory, acquisition/manufacturing/development/detonation remaining criminalized), and the consultation deadline (2.4.2026) all match the source without contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key points from the source document. The changes described (allowing nuclear explosive transport/possession for NATO defense purposes), the goals (NATO deterrence credibility, legislative compatibility), the caveats (Finland not seeking nuclear weapons on its territory, acquisition/manufacturing/development/detonation remaining criminalized), and the consultation deadline (2.4.2026) all match the source without contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 1215,
+  "judge_completion_tokens": 128,
+  "judge_cost_usd": 0.009275,
+  "timestamp": 1774952603.91606
+}

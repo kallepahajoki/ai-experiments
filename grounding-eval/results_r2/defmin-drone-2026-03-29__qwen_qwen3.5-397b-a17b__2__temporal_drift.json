@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "Multiple minor tense shifts from present perfect to simple past throughout the summary, and the addition of 'subsequently' implying a temporal sequence not explicitly stated in the source. These are relatively minor drifts that do not fundamentally misrepresent the timeline but do alter temporal nuance.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"has been\", \"have crashed\", \"have secured\", \"states\", \"have strayed\", \"have responded\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"were detected\", \"deployed\", \"crashed\", \"have secured\", \"confirmed\", \"strayed\", \"responded\", \"are currently investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"deployed (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site' suggesting an ongoing or recently completed action, while the summary uses simple past 'deployed', shifting the temporal framing slightly. This is a minor tense change but does not significantly misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"crashed (simple past)\",\n      \"source_temporal\": \"have crashed (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'have crashed' indicating recent relevance, while the summary uses simple past 'crashed'. Minor tense shift but does not materially alter meaning.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (simple past)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the summary uses past tense 'confirmed'. This subtly changes the temporal framing from a current statement to a completed action, and also changes the speech act from 'states' to 'confirmed', which slightly alters nuance.\"\n    },\n    {\n      \"output_temporal\": \"responded (simple past)\",\n      \"source_temporal\": \"have responded (present perfect)\",\n      \"explanation\": \"Minor tense shift from present perfect to simple past. Does not significantly alter the temporal meaning.\"\n    },\n    {\n      \"output_temporal\": \"Two drones subsequently crashed\",\n      \"source_temporal\": \"one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The word 'subsequently' adds a temporal sequencing implication (that the crashes happened after detection/deployment) which, while reasonable, is not explicitly stated in the source. The source presents the crashes as reported information without explicit causal/temporal ordering relative to the Hornet deployment.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"Multiple minor tense shifts from present perfect to simple past throughout the summary, and the addition of 'subsequently' implying a temporal sequence not explicitly stated in the source. These are relatively minor drifts that do not fundamentally misrepresent the timeline but do alter temporal nuance.\"\n}\n```",
+  "judge_prompt_tokens": 462,
+  "judge_completion_tokens": 642,
+  "judge_cost_usd": 0.01836,
+  "timestamp": 1774952547.29497
+}

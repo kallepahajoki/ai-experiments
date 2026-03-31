@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions in the output faithfully match those in the source. The date 2.4.2026 is correctly reproduced. Tenses are preserved: present tense for current law, conditional for proposed changes, and the future/ongoing sense for the consultation round. Event ordering is consistent with the source. No temporal drift detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, ongoing action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (current law)\",\n    \"on t\u00e4ysin kielletty\u00e4 (present, current state)\",\n    \"olisivat jatkossa mahdollisia (conditional future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa (remain, present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, ongoing action)\",\n    \"Voimassa oleva laki (current law)\",\n    \"ovat t\u00e4ysin kiellettyj\u00e4 (present, current state)\",\n    \"Salli\u00adtai\u00adsiin (conditional future)\",\n    \"s\u00e4ilyv\u00e4t rikosoikeudellisesti kiellettyin\u00e4 kaikissa tilanteissa (remain, present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions in the output faithfully match those in the source. The date 2.4.2026 is correctly reproduced. Tenses are preserved: present tense for current law, conditional for proposed changes, and the future/ongoing sense for the consultation round. Event ordering is consistent with the source. No temporal drift detected.\"\n}\n```",
+  "judge_prompt_tokens": 1338,
+  "judge_completion_tokens": 396,
+  "judge_cost_usd": 0.01659,
+  "timestamp": 1774952603.916867
+}

@@ -15,190 +15,123 @@
 - **Composite Claim Conflation** [high]: Model merges two separate statements into one, creating a false combined claim.
 - **Instruction Leakage / Prompt Injection Echo** [medium]: Model echoes system prompt fragments or meta-instructions into output.
 
-## Model × Failure Mode Matrix
+---
+
+## Round 2 Results (8 models, 2 eval cases, 3 runs each)
+
+Eval cases:
+1. **Drone incident** — MoD press release on suspected territorial violation by drones in Southeast Finland (2026-03-29)
+2. **NATO nuclear law amendment** — MoD press release proposing amendments to nuclear energy and criminal law to align with NATO (2026-03-05). Extremely sensitive: a proposal for consultation, not a decision; contains explicit denial that Finland seeks nuclear weapons.
+
+### English Results
 
 ```
 Model                                      Fabricated Addit      Contradiction   Entity Substitut   Numerical Distor     Temporal Drift   Hedging Removal    Hedging Addition   Framing Shift /    Scope Creep / Co   Omission of Crit   Composite Claim    Instruction Leak
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-anthropic/claude-sonnet-4.6                       67% (2/3)           0% (0/3)           0% (0/3)           0% (0/3)           0% (0/3)         100% (3/3)           0% (0/3)         100% (3/3)          67% (2/3)           0% (0/3)           0% (0/3)           0% (0/3)
-google/gemini-2.5-flash                          100% (3/3)           0% (0/3)           0% (0/3)           0% (0/3)         100% (3/3)           0% (0/3)           0% (0/3)         100% (3/3)          33% (1/3)           0% (0/3)           0% (0/3)         100% (3/3)
-mistralai/mistral-small-2603                      33% (1/3)           0% (0/3)           0% (0/3)           0% (0/3)          33% (1/3)          33% (1/3)          33% (1/3)         100% (3/3)           0% (0/3)           0% (0/3)           0% (0/3)          33% (1/3)
-nvidia/nemotron-3-super-120b-a12b:free            33% (1/3)          33% (1/3)           0% (0/3)           0% (0/3)           0% (0/3)          67% (2/3)           0% (0/3)          33% (1/3)          33% (1/3)           0% (0/3)           0% (0/3)           0% (0/3)
-openai/gpt-5.4-mini                                0% (0/3)           0% (0/3)           0% (0/3)           0% (0/3)          33% (1/3)           0% (0/3)           0% (0/3)          33% (1/3)           0% (0/3)           0% (0/3)           0% (0/3)           0% (0/3)
-qwen/qwen3.5-122b-a10b                             0% (0/3)           0% (0/3)           0% (0/3)           0% (0/3)          33% (1/3)         100% (3/3)           0% (0/3)          67% (2/3)           0% (0/3)           0% (0/3)           0% (0/3)          33% (1/3)
-qwen/qwen3.5-9b                                   33% (1/3)          33% (1/3)          33% (1/3)           0% (0/3)          33% (1/3)          67% (2/3)           0% (0/3)         100% (3/3)          33% (1/3)           0% (0/3)          67% (2/3)          33% (1/3)
+anthropic/claude-sonnet-4.6                       17% (1/6)           0% (0/6)           0% (0/6)           0% (0/6)          33% (2/6)          50% (3/6)           0% (0/6)          83% (5/6)          17% (1/6)           0% (0/6)           0% (0/6)           0% (0/6)
+google/gemini-3-flash-preview                     33% (2/6)           0% (0/6)           0% (0/6)           0% (0/6)          17% (1/6)          50% (3/6)           0% (0/6)         100% (6/6)          17% (1/6)           0% (0/6)           0% (0/6)          83% (5/6)
+minimax/minimax-m2.7                              67% (4/6)           0% (0/6)          17% (1/6)           0% (0/6)          50% (3/6)          33% (2/6)           0% (0/6)         100% (6/6)          67% (4/6)           0% (0/6)          50% (3/6)           0% (0/6)
+mistralai/mistral-large-2512                     100% (6/6)          17% (1/6)           0% (0/6)           0% (0/6)          50% (3/6)          17% (1/6)          17% (1/6)         100% (6/6)         100% (6/6)           0% (0/6)          17% (1/6)          67% (4/6)
+openai/gpt-4o-2024-11-20                          50% (3/6)          17% (1/6)          50% (3/6)           0% (0/6)          17% (1/6)          83% (5/6)           0% (0/6)          83% (5/6)          50% (3/6)           0% (0/6)           0% (0/6)           0% (0/6)
+openai/gpt-5.4-mini                               33% (2/6)           0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)          67% (4/6)          17% (1/6)           0% (0/6)           0% (0/6)           0% (0/6)
+qwen/qwen3.5-122b-a10b                             0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)          17% (1/6)          83% (5/6)           0% (0/6)          50% (3/6)          17% (1/6)           0% (0/6)          17% (1/6)          33% (2/6)
+qwen/qwen3.5-397b-a17b                             0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)          67% (4/6)          33% (2/6)           0% (0/6)          67% (4/6)           0% (0/6)           0% (0/6)          33% (2/6)           0% (0/6)
 ```
 
-## Per-Model Summary
+| Model | Overall | Critical | Key pattern |
+|---|---|---|---|
+| **openai/gpt-5.4-mini** | **9.7%** | 16.7% | Lowest overall, clean and terse |
+| anthropic/claude-sonnet-4.6 | 16.7% | 8.3% | Improved from R1, still editorializes |
+| qwen/qwen3.5-397b-a17b | 16.7% | **0.0%** | Zero critical failures |
+| qwen/qwen3.5-122b-a10b | 18.1% | **0.0%** | Zero critical, barely behind 397b |
+| google/gemini-3-flash-preview | 25.0% | 16.7% | Better than Gemini 2.5 Flash was |
+| openai/gpt-4o-2024-11-20 | 29.2% | 33.3% | Disappointing — 50% entity substitution, 83% hedging removal |
+| minimax/minimax-m2.7 | 31.9% | 33.3% | Heavy fabrication and scope creep |
+| mistralai/mistral-large-2512 | **40.3%** | **58.3%** | 100% fabrication, 100% scope creep |
 
-## anthropic/claude-sonnet-4.6
-  Overall failure rate: 27.8% (10/36)
-  Critical failure rate: 33.3% (2/6)
-  Total judge cost: $0.3523
-  Detected failure modes:
-    - Framing Shift / Sentiment Injection: 100% (3/3)
-    - Hedging Removal (Certainty Inflation): 100% (3/3)
-    - Fabricated Addition: 67% (2/3)
-    - Scope Creep / Context Bleed: 67% (2/3)
-
-## google/gemini-2.5-flash
-  Overall failure rate: 36.1% (13/36)
-  Critical failure rate: 50.0% (3/6)
-  Total judge cost: $0.3378
-  Detected failure modes:
-    - Fabricated Addition: 100% (3/3)
-    - Framing Shift / Sentiment Injection: 100% (3/3)
-    - Instruction Leakage / Prompt Injection Echo: 100% (3/3)
-    - Temporal Drift: 100% (3/3)
-    - Scope Creep / Context Bleed: 33% (1/3)
-
-## mistralai/mistral-small-2603
-  Overall failure rate: 22.2% (8/36)
-  Critical failure rate: 16.7% (1/6)
-  Total judge cost: $0.3095
-  Detected failure modes:
-    - Framing Shift / Sentiment Injection: 100% (3/3)
-    - Fabricated Addition: 33% (1/3)
-    - Hedging Addition (Certainty Deflation): 33% (1/3)
-    - Hedging Removal (Certainty Inflation): 33% (1/3)
-    - Instruction Leakage / Prompt Injection Echo: 33% (1/3)
-    - Temporal Drift: 33% (1/3)
-
-## nvidia/nemotron-3-super-120b-a12b:free
-  Overall failure rate: 16.7% (6/36)
-  Critical failure rate: 33.3% (2/6)
-  Total judge cost: $0.3048
-  Detected failure modes:
-    - Hedging Removal (Certainty Inflation): 67% (2/3)
-    - Contradiction: 33% (1/3)
-    - Fabricated Addition: 33% (1/3)
-    - Framing Shift / Sentiment Injection: 33% (1/3)
-    - Scope Creep / Context Bleed: 33% (1/3)
-
-## openai/gpt-5.4-mini
-  Overall failure rate: 5.6% (2/36)
-  Critical failure rate: 0.0% (0/6)
-  Total judge cost: $0.2761
-  Detected failure modes:
-    - Framing Shift / Sentiment Injection: 33% (1/3)
-    - Temporal Drift: 33% (1/3)
-
-## qwen/qwen3.5-122b-a10b
-  Overall failure rate: 19.4% (7/36)
-  Critical failure rate: 0.0% (0/6)
-  Total judge cost: $0.3040
-  Detected failure modes:
-    - Hedging Removal (Certainty Inflation): 100% (3/3)
-    - Framing Shift / Sentiment Injection: 67% (2/3)
-    - Instruction Leakage / Prompt Injection Echo: 33% (1/3)
-    - Temporal Drift: 33% (1/3)
-
-## qwen/qwen3.5-9b
-  Overall failure rate: 36.1% (13/36)
-  Critical failure rate: 33.3% (2/6)
-  Total judge cost: $0.3513
-  Detected failure modes:
-    - Framing Shift / Sentiment Injection: 100% (3/3)
-    - Composite Claim Conflation: 67% (2/3)
-    - Hedging Removal (Certainty Inflation): 67% (2/3)
-    - Contradiction: 33% (1/3)
-    - Entity Substitution: 33% (1/3)
-    - Fabricated Addition: 33% (1/3)
-    - Instruction Leakage / Prompt Injection Echo: 33% (1/3)
-    - Scope Creep / Context Bleed: 33% (1/3)
-    - Temporal Drift: 33% (1/3)
-
----
-
-## Model-by-Model Deep Dive
-
-### openai/gpt-5.4-mini — The Gold Standard (5.6% failure rate)
-
-The cleanest performer by far. All three runs are nearly identical, terse, factual prose. It preserves "according to current information" consistently, attributes the quote properly to Häkkänen, and uses neutral verbs ("responded", "said", "entered"). The only flags were minor: one run reattributed "immediately" from the minister's quote about security authorities to the Air Force's response, and one run used "entered" instead of "strayed into" which loses the accidental connotation. Remarkably disciplined output.
-
-### anthropic/claude-sonnet-4.6 — Editorially Aggressive (27.8% failure rate)
-
-Every single run has the same two problems:
-1. **"Unauthorized Drones"** in the heading — the source says "suspected territorial violation" and the minister says drones "strayed" (harhautunut, implying accidental). "Unauthorized" fabricates intent.
-2. **"scrambled"** an F/A-18 — the source says "has been on-site for identification". "Scrambled" is military jargon for emergency rapid deployment, adding drama not in the source.
-
-It also drops "according to current information" every time, presenting preliminary crash details as established fact. Sonnet 4.6 consistently produces well-structured, professional-looking output that would pass a casual human review — which makes its errors more dangerous than a sloppy model's.
-
-### google/gemini-2.5-flash — Worst Critical Failure Rate (50%)
-
-**100% fabricated addition**, but interestingly not the HS-style "Russian drones" fabrication. Instead, every run calls it a "Finnish Ministry of Defence press release" — the source text never identifies its origin. Every run also titles it "Airspace Intrusion" which converts the minister's "strayed into" (accidental) into "intrusion" (deliberate). Plus 100% instruction leakage — every run starts with "Here's a summary of..." echoing the task prompt. And 100% temporal drift — consistently shifts present perfect ("has been on-site") to simple past ("deployed"), subtly making an ongoing situation sound concluded.
-
-### nvidia/nemotron-3-super-120b-a12b:free — Invents Detection Methods (16.7%)
-
-Lowest overall failure rate among the non-GPT models, but its errors are specific and interesting. One run fabricated **"Finnish radar"** as the detection method — the source says objects were "detected" without specifying how. Another run changed "investigating together with other authorities" to "leading the investigation" — a small word change that shifts the power dynamic. These are the kind of subtle distortions that could matter in diplomatic/security reporting.
-
-### mistralai/mistral-small-2603 — The Overcorrector (22.2%)
-
-Generally solid, but run 1 is notable: it replaced "according to current information" with **"confirmed"** — the exact opposite of hedging. The source explicitly marks crash info as preliminary; Mistral stated it as definitively verified. This is the single most dangerous hedging removal in the entire benchmark. Runs 0 and 2 were much better, showing variance in reliability. Also the only model flagged for hedging *addition* — one run softened definitive statements.
-
-### qwen/qwen3.5-122b-a10b — Consistent Hedging Dropper (19.4%)
-
-Zero critical failures (no fabrication, no contradiction), but **100% hedging removal**. Every single run drops "according to current information". It also consistently uses "confirmed" for the minister's statement where the source uses the neutral "states" (toteaa). The larger Qwen model is factually disciplined but systematically inflates certainty — it would make a poor newsroom tool despite being "accurate".
-
-### qwen/qwen3.5-9b — Small Model Chaos (36.1%)
-
-Tied worst with Gemini Flash but for different reasons. This model fails across **9 of 12 failure modes** — the most scattered failure profile. It conflates the minister's statement with a "Ministry of Defence report", merges separate facts with "subsequently" implying causation, substitutes entities, and removes hedging. Run 1 was the worst single output in the entire benchmark. This is what a model looks like when it doesn't have enough capacity to faithfully reproduce source material.
-
----
-
-## Cross-Cutting Patterns
-
-**Framing shift is universal.** Every model was flagged at least once. LLMs fundamentally want to editorialize — "stated" becomes "confirmed" or "emphasized", neutral events get dramatic verbs.
-
-**"harhautunut" (strayed) is a litmus test.** The Finnish minister chose this word carefully — it implies accidental incursion, not hostile intent. Sonnet 4.6 turned it into "unauthorized", Gemini into "intrusion", GPT 5.4 mini into "entered" (neutral but losing the accidental implication). No model preserved the accidental connotation faithfully.
-
-**Nobody fabricated "Russian drones".** The specific HS hallucination didn't reproduce here — not in the English eval, and not in the Finnish eval either (see below). We don't know what model HS uses, its system prompt, what other context is fed alongside the press release, or whether it's a fine-tuned model. The fabrication likely arose from a combination of factors specific to their pipeline, not just the source language. What we can say: a judge call checking the output against the source would have caught it regardless.
-
-**Cost vs quality is dramatic.** GPT 5.4 mini at $0.0007/run massively outperformed Sonnet 4.6 on faithfulness. The cheapest model was the most truthful.
-
----
-
-## Finnish-Language Eval
-
-The English eval gave models a pre-translated source, removing the challenge of working with Finnish text. To test whether Finnish source material changes behavior, we re-ran the benchmark with the original Finnish press release and a Finnish task prompt ("Tiivistä seuraava Puolustusministeriön tiedote. Sisällytä kaikki keskeiset tiedot."). Single run per model (higher variance, but directionally useful).
-
-### Finnish Results (1 run, 84 judge calls)
+### Finnish Results
 
 ```
 Model                                      Fabricated Addit      Contradiction   Entity Substitut   Numerical Distor     Temporal Drift   Hedging Removal    Hedging Addition   Framing Shift /    Scope Creep / Co   Omission of Crit   Composite Claim    Instruction Leak
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-anthropic/claude-sonnet-4.6                        0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
-google/gemini-2.5-flash                          100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)
-mistralai/mistral-small-2603                     100% (1/1)         100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)
-nvidia/nemotron-3-super-120b-a12b:free             0% (0/1)         100% (1/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
-openai/gpt-5.4-mini                                0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
-qwen/qwen3.5-122b-a10b                             0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)           0% (0/1)
-qwen/qwen3.5-9b                                    0% (0/1)           0% (0/1)           0% (0/1)         100% (1/1)         100% (1/1)         100% (1/1)           0% (0/1)         100% (1/1)           0% (0/1)           0% (0/1)         100% (1/1)           0% (0/1)
+anthropic/claude-sonnet-4.6                       17% (1/6)          17% (1/6)           0% (0/6)          50% (3/6)          67% (4/6)          83% (5/6)           0% (0/6)          67% (4/6)           0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)
+google/gemini-3-flash-preview                     50% (3/6)          17% (1/6)           0% (0/6)          17% (1/6)          50% (3/6)          50% (3/6)           0% (0/6)          33% (2/6)          33% (2/6)           0% (0/6)          33% (2/6)         100% (6/6)
+minimax/minimax-m2.7                               0% (0/6)          33% (2/6)           0% (0/6)          17% (1/6)          50% (3/6)          67% (4/6)          17% (1/6)          17% (1/6)           0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)
+mistralai/mistral-large-2512                      50% (3/6)           0% (0/6)          17% (1/6)           0% (0/6)          50% (3/6)          83% (5/6)           0% (0/6)          83% (5/6)          50% (3/6)           0% (0/6)           0% (0/6)           0% (0/6)
+openai/gpt-4o-2024-11-20                           0% (0/6)           0% (0/6)           0% (0/6)           0% (0/6)          83% (5/6)          83% (5/6)           0% (0/6)          67% (4/6)           0% (0/6)          17% (1/6)          33% (2/6)           0% (0/6)
+openai/gpt-5.4-mini                               17% (1/6)          17% (1/6)           0% (0/6)          17% (1/6)         100% (6/6)          50% (3/6)          33% (2/6)          83% (5/6)           0% (0/6)           0% (0/6)          17% (1/6)           0% (0/6)
+qwen/qwen3.5-122b-a10b                            33% (2/6)          17% (1/6)           0% (0/6)           0% (0/6)         100% (6/6)          50% (3/6)           0% (0/6)          50% (3/6)          33% (2/6)           0% (0/6)          50% (3/6)          17% (1/6)
+qwen/qwen3.5-397b-a17b                            17% (1/6)          17% (1/6)           0% (0/6)           0% (0/6)          83% (5/6)          50% (3/6)           0% (0/6)          50% (3/6)           0% (0/6)          17% (1/6)          33% (2/6)           0% (0/6)
 ```
+
+| Model | Overall | Critical | Key pattern |
+|---|---|---|---|
+| **minimax/minimax-m2.7** | **16.7%** | 16.7% | Surprise Finnish winner, zero fabrication |
+| qwen/qwen3.5-397b-a17b | 22.2% | 16.7% | Consistent across languages |
+| openai/gpt-4o-2024-11-20 | 23.6% | **0.0%** | Zero critical in Finnish, redeems itself |
+| anthropic/claude-sonnet-4.6 | 25.0% | 16.7% | Stable, 83% hedging removal persists |
+| mistralai/mistral-large-2512 | 27.8% | 25.0% | Much better than English (40.3%) |
+| openai/gpt-5.4-mini | 27.8% | 16.7% | 100% temporal drift — loses edge in Finnish |
+| qwen/qwen3.5-122b-a10b | 29.2% | 25.0% | Worse than 397b in Finnish |
+| google/gemini-3-flash-preview | 31.9% | 33.3% | 100% instruction leakage persists |
 
 ### English vs Finnish Comparison
 
 | Model | English | Finnish | Change |
 |---|---|---|---|
-| qwen/qwen3.5-122b-a10b | 19.4% | **8.3%** | improved |
-| openai/gpt-5.4-mini | **5.6%** | 16.7% | worse |
-| anthropic/claude-sonnet-4.6 | 27.8% | 33.3% | worse |
-| qwen/qwen3.5-9b | 36.1% | 41.7% | worse |
-| nvidia/nemotron-3-super-120b-a12b | 16.7% | 41.7% | much worse |
-| google/gemini-2.5-flash | 36.1% | 50.0% | worse |
-| mistralai/mistral-small-2603 | 22.2% | **66.7%** | much worse |
+| minimax/minimax-m2.7 | 31.9% | **16.7%** | much improved |
+| qwen/qwen3.5-397b-a17b | 16.7% | 22.2% | slightly worse |
+| openai/gpt-4o-2024-11-20 | 29.2% | 23.6% | improved |
+| anthropic/claude-sonnet-4.6 | 16.7% | 25.0% | worse |
+| mistralai/mistral-large-2512 | 40.3% | 27.8% | much improved |
+| openai/gpt-5.4-mini | **9.7%** | 27.8% | much worse |
+| qwen/qwen3.5-122b-a10b | 18.1% | 29.2% | worse |
+| google/gemini-3-flash-preview | 25.0% | 31.9% | worse |
 
-### Finnish Eval Notes
+---
 
-**Most models did worse on Finnish**, as expected — Finnish is lower-resource and morphologically complex. Temporal drift became universal (every model flagged), likely because Finnish tense/aspect is harder to preserve in summarization.
+## Analysis
 
-**Mistral collapsed.** 66.7% failure rate with 100% critical. It wrote "pudotettiin" (were shot down) instead of "pudonnut" (crashed/fell down) — the source says drones fell to the ground, Mistral says they were taken down. Hit 8 of 12 failure modes.
+### Model Rankings
 
-**Qwen 122b improved.** Only 8.3% failure rate — better than its English run. It preserved "harhautuneet" and "tämänhetkisten tietojen mukaan". May be more careful when working within Finnish text rather than cross-language summarization.
+**Best English summarizer: GPT 5.4 Mini (9.7%).** Terse, factual, disciplined. But falls off significantly in Finnish (27.8%), suggesting its faithfulness advantage is partly tied to English fluency rather than deep source-grounding ability.
 
-**Temporal drift is universal in Finnish.** Every model was flagged. Finnish tense and aspect nuances are harder to preserve than English equivalents.
+**Best Finnish summarizer: MiniMax M2.7 (16.7%).** A surprise — this model was mediocre in English (31.9%) but excelled in Finnish with zero fabrication. Wild swing suggests language-specific training strengths.
 
-**Still no "Russian drones" fabrication**, even with Finnish source text. We don't know what model HS uses, what system prompt it has, what additional context is fed into the pipeline, or whether it's a fine-tuned or older model. Their setup may have included context (e.g. recent news, geopolitical priors, or retrieval-augmented context) that primed the fabrication in ways our isolated press-release-only test does not replicate.
+**Most consistent across languages: Qwen 3.5 397B (16.7% EN / 22.2% FI).** Zero critical failures in English, modest degradation in Finnish. The most predictable model in the benchmark.
+
+**Most improved model: Mistral Large 2512.** Terrible in English (40.3%, 100% fabrication) but mid-pack in Finnish (27.8%). The English fabrication was systematic scope creep and attribution errors, not Finnish-language issues.
+
+### Qwen 122B vs 397B
+
+| | 122B | 397B |
+|---|---|---|
+| English | 18.1% | 16.7% |
+| Finnish | 29.2% | 22.2% |
+| Critical (EN) | 0.0% | 0.0% |
+| Critical (FI) | 25.0% | 16.7% |
+
+Nearly identical in English, but the 397B pulls ahead in Finnish — lower failure rate, fewer critical failures. The extra parameters help most where the task is hardest. Both models maintain zero critical failures in English, making them the safest choice for high-stakes summarization when used in English.
+
+### GPT-4o: An Iconic Model's Blind Spots
+
+GPT-4o-2024-11-20 at 29.2% English failure rate was the weakest OpenAI model tested — worse than GPT 5.4 mini by 3x. Notable problems: 50% entity substitution (swapping organizations), 83% hedging removal (presenting proposals as decisions). However, it redeemed itself in Finnish with zero critical failures, suggesting its English errors are editorial choices rather than comprehension failures.
+
+### The Nuclear Case Effect
+
+Adding the NATO nuclear law amendment case raised failure rates across the board. This case is harder: longer source, more hedging language, critical negations ("Finland does NOT seek nuclear weapons"), and a legally precise distinction between what would be allowed (transit/possession) and what stays criminalised (acquisition/manufacture/detonation). Models that were clean on the drone case stumbled here — the nuclear topic attracted more scope creep and framing shifts.
+
+### Persistent Patterns
+
+**Framing shift remains near-universal.** 6 of 8 models hit 67%+ in English. LLMs editorialize by default.
+
+**Hedging removal is the silent killer.** Most models drop uncertainty language at 50%+ rates. For newsroom use, this is arguably more dangerous than outright fabrication — a reader won't question a summary that sounds confident.
+
+**Instruction leakage is a Gemini problem.** 83-100% across both languages and both rounds. The "Here's a summary of..." prefix is baked into Gemini's behavior.
+
+**Nobody fabricated "Russian drones"** — across either round, either language, or any model. The specific HS hallucination remains unreproduced. We don't know what model HS uses, its system prompt, what additional context (e.g. recent news, geopolitical priors, retrieval-augmented context) is fed alongside the press release, or whether it's a fine-tuned or older model. A judge call checking the output against the source would have caught it regardless of the cause.
+
+---
 
 ## Could an LLM Judge Have Prevented the HS Error?
 
@@ -215,19 +148,64 @@ This is a textbook **fabricated addition** — the most critical failure mode in
 - Running the full 12-mode evaluation on every press release HS processes in a day (estimate ~50-100 alerts): **$6-12/day**
 - Using a cheaper judge (Sonnet 4.6 at ~$0.003/M input): **under $1/day** for all alerts
 
+---
+
+## Round 1 Results (archived)
+
+Initial exploratory round with 7 models, 1 eval case (drone incident only), 3 runs per model in English and 1 run in Finnish. These results used different models (Gemini 2.5 Flash, Mistral Small 2603, Nemotron 120B, Qwen 9B) and are preserved for reference but superseded by Round 2.
+
+### Round 1 English (1 case, 3 runs, 7 models)
+
+| Model | Overall | Critical |
+|---|---|---|
+| openai/gpt-5.4-mini | **5.6%** | **0.0%** |
+| nvidia/nemotron-3-super-120b-a12b:free | 16.7% | 33.3% |
+| qwen/qwen3.5-122b-a10b | 19.4% | 0.0% |
+| mistralai/mistral-small-2603 | 22.2% | 16.7% |
+| anthropic/claude-sonnet-4.6 | 27.8% | 33.3% |
+| google/gemini-2.5-flash | 36.1% | 50.0% |
+| qwen/qwen3.5-9b | 36.1% | 33.3% |
+
+### Round 1 Finnish (1 case, 1 run, 7 models)
+
+| Model | Overall | Critical |
+|---|---|---|
+| qwen/qwen3.5-122b-a10b | **8.3%** | 0.0% |
+| openai/gpt-5.4-mini | 16.7% | 0.0% |
+| anthropic/claude-sonnet-4.6 | 33.3% | 0.0% |
+| nvidia/nemotron-3-super-120b-a12b:free | 41.7% | 50.0% |
+| qwen/qwen3.5-9b | 41.7% | 0.0% |
+| google/gemini-2.5-flash | 50.0% | 50.0% |
+| mistralai/mistral-small-2603 | **66.7%** | **100.0%** |
+
+---
 
 ## Evaluation Metadata
 
-**English eval:**
+**Round 2 English:**
+- **Judge model:** anthropic/claude-opus-4.6
+- **Subject models:** 8 (claude-sonnet-4.6, gemini-3-flash-preview, mistral-large-2512, gpt-5.4-mini, gpt-4o-2024-11-20, qwen3.5-122b-a10b, qwen3.5-397b-a17b, minimax-m2.7)
+- **Eval cases:** 2 (drone incident, NATO nuclear amendment)
+- **Runs per model:** 3
+- **Total judge calls:** 576
+- **Total judge cost:** ~$6.00
+
+**Round 2 Finnish:**
+- **Judge model:** anthropic/claude-opus-4.6
+- **Subject models:** 8 (same as above)
+- **Eval cases:** 2
+- **Runs per model:** 3
+- **Total judge calls:** 576
+- **Total judge cost:** ~$8.28
+
+**Round 1 English:**
 - **Judge model:** anthropic/claude-opus-4.6
 - **Runs per model:** 3
 - **Total judge calls:** 252
 - **Total judge cost:** ~$2.34
 
-**Finnish eval:**
+**Round 1 Finnish:**
 - **Judge model:** anthropic/claude-opus-4.6
 - **Runs per model:** 1
 - **Total judge calls:** 84
 - **Total judge cost:** ~$1.10
-
-**Eval case:** Finnish MoD press release on suspected drone territorial violation (2026-03-29)

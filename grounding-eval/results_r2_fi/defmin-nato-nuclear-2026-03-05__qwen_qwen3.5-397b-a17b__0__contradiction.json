@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source document. All key points are faithfully represented: the legislative proposal to amend nuclear energy and criminal law, the purpose of removing legal barriers for NATO cooperation, the current prohibition on nuclear explosives, the conditions under which they would be permitted, Finland not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline of 2.4.2026. No statements in the output contradict the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source document. All key points are faithfully represented: the legislative proposal to amend nuclear energy and criminal law, the purpose of removing legal barriers for NATO cooperation, the current prohibition on nuclear explosives, the conditions under which they would be permitted, Finland not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline of 2.4.2026. No statements in the output contradict the source.\"\n}\n```",
+  "judge_prompt_tokens": 1090,
+  "judge_completion_tokens": 145,
+  "judge_cost_usd": 0.009075,
+  "timestamp": 1774952603.919907
+}

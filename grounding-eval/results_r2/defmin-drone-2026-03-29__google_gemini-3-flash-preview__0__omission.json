@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output covers all key facts from the source. The only notable omission is the hedging phrase 'According to current information' which qualifies the drone crash reports as preliminary. The output states the crashes as 'confirmed' which slightly overstates the certainty compared to the source's more cautious language, but this is a medium-level issue rather than a critical omission.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects were detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"The Air Force deployed an F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone has crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said they take this very seriously\",\n    \"Security authorities responded immediately\",\n    \"The Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The qualifier 'According to current information' before the drone crash details, indicating preliminary/uncertain information\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output covers all key facts from the source. The only notable omission is the hedging phrase 'According to current information' which qualifies the drone crash reports as preliminary. The output states the crashes as 'confirmed' which slightly overstates the certainty compared to the source's more cautious language, but this is a medium-level issue rather than a critical omission.\"\n}\n```",
+  "judge_prompt_tokens": 554,
+  "judge_completion_tokens": 337,
+  "judge_cost_usd": 0.011195,
+  "timestamp": 1774952547.290616
+}

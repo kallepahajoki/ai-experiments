@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All numerical values in the output match the source. The number 'two' is a valid summation of 'one' and 'another.' The only minor issue is the word 'confirmed' vs. 'according to current information,' but this is a qualitative/certainty distinction rather than a numerical distortion.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\", \"F/A-18\"],\n  \"numbers_in_output\": [\"several\", \"Two\", \"one\", \"another\", \"F/A-18\"],\n  \"distortions\": [\n    {\"output_value\": \"Two drones were confirmed\", \"source_value\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola\", \"explanation\": \"The source says 'according to current information' indicating preliminary/uncertain information, while the output says 'Two drones were confirmed,' which implies certainty not present in the source. However, the count of two is numerically accurate (one + another = two).\"}\n  ],\n  \"distortion_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All numerical values in the output match the source. The number 'two' is a valid summation of 'one' and 'another.' The only minor issue is the word 'confirmed' vs. 'according to current information,' but this is a qualitative/certainty distinction rather than a numerical distortion.\"\n}\n```",
+  "judge_prompt_tokens": 480,
+  "judge_completion_tokens": 273,
+  "judge_cost_usd": 0.009225,
+  "timestamp": 1774952547.2927969
+}

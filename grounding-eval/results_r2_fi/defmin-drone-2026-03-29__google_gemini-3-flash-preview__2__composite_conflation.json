@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The summary groups the Hornet identification mission and the drone crashes under a single 'Toimenpiteet' (Actions) bullet point, creating an implied sequential/causal link. The source presents these as independent facts without connecting them. The conflation is subtle \u2014 no explicit causal language is used, but the juxtaposition under one heading suggests relatedness not established in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Ilmavoimat tunnisti kohteita Hornet-h\u00e4vitt\u00e4j\u00e4ll\u00e4. Kaksi droonia on pudonnut maahan Kouvolan pohjois- ja it\u00e4puolelle.\",\n      \"source_facts\": [\n        \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n        \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n      ],\n      \"explanation\": \"By placing these two facts together under 'Toimenpiteet' (Actions), the summary subtly implies that the Hornet's identification mission and the drones falling are part of the same sequence of actions, potentially suggesting the Hornet caused the drones to fall. The source presents these as separate facts with no stated causal or sequential relationship \u2014 the Hornet was on an identification mission, and separately, two drones fell. However, this is a relatively mild conflation as no explicit causal connector is used.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The summary groups the Hornet identification mission and the drone crashes under a single 'Toimenpiteet' (Actions) bullet point, creating an implied sequential/causal link. The source presents these as independent facts without connecting them. The conflation is subtle \u2014 no explicit causal language is used, but the juxtaposition under one heading suggests relatedness not established in the source.\"\n}\n```",
+  "judge_prompt_tokens": 775,
+  "judge_completion_tokens": 402,
+  "judge_cost_usd": 0.013925,
+  "timestamp": 1774952603.911807
+}

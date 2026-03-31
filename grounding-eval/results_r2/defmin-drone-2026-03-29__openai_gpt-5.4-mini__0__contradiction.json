@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "The output accurately reflects all statements from the source document. The details about the detected objects, the Air Force response, the drone crash locations, the police securing the areas, Defense Minister H\u00e4kk\u00e4nen's statement, and the joint investigation are all consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"The output accurately reflects all statements from the source document. The details about the detected objects, the Air Force response, the drone crash locations, the police securing the areas, Defense Minister H\u00e4kk\u00e4nen's statement, and the joint investigation are all consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 439,
+  "judge_completion_tokens": 98,
+  "judge_cost_usd": 0.004645,
+  "timestamp": 1774952547.293269
+}

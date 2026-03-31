@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "content": "On Sunday morning, several low-flying, slow-moving objects were detected in Finnish airspace over sea areas and Southeast Finland. The Finnish Air Force deployed an F/A-18 Hornet fighter to identify the objects, which were confirmed to be drones.\n\n**Key details include:**\n*   **Crash Sites:** One drone crashed north of Kouvola and another east of Kouvola.\n*   **Security Response:** Police have secured the crash areas for investigation.\n*   **Official Statement:** Defense Minister Antti H\u00e4kk\u00e4nen confirmed the drones strayed into Finnish territory, stating that authorities responded immediately and are taking the incident very seriously.\n*   **Ongoing Action:** The Defence Forces are investigating the incident together with other authorities.",
+  "prompt_tokens": 153,
+  "completion_tokens": 1175,
+  "cost_usd": 0.00280917,
+  "latency_ms": 23249.360582994996,
+  "timestamp": 1774951181.532215
+}

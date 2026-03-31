@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output covers all key facts from the source comprehensively: the proposed amendments to the Nuclear Energy Act and Criminal Code, the current prohibitions, the proposed conditions for allowing nuclear explosive-related activities, alignment with NATO standards, the security rationale, the clarification that Finland is not seeking nuclear weapons deployment, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline. No critical or high-importance omissions were found. The summary actually adds some interpretive language (e.g., 'technical adjustment', 'transit or logistical support') not in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n    \"The purpose is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\",\n    \"Under current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited.\",\n    \"The bill proposes these actions would be possible if related to Finland's military defence, NATO's collective defence, or defence cooperation.\",\n    \"The majority of NATO member states do not have comparable legislative restrictions.\",\n    \"The bill would align Finnish legislation with NATO operations.\",\n    \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\",\n    \"The objective is to ensure NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\",\n    \"The legislative amendment is not about Finland seeking nuclear weapons on its territory.\",\n    \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\",\n    \"The acquisition, manufacture, development, and detonation of nuclear explosives remain criminalised in all circumstances.\",\n    \"The consultation period ends on 2 April 2026.\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The summary adds '(e.g., transit or logistical support)' which is not in the source \u2014 this is an addition rather than an omission, but worth noting.\", \"importance\": \"low\"},\n    {\"fact\": \"The summary characterizes the change as a 'technical adjustment' which is an editorial addition not present in the source.\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output covers all key facts from the source comprehensively: the proposed amendments to the Nuclear Energy Act and Criminal Code, the current prohibitions, the proposed conditions for allowing nuclear explosive-related activities, alignment with NATO standards, the security rationale, the clarification that Finland is not seeking nuclear weapons deployment, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline. No critical or high-importance omissions were found. The summary actually adds some interpretive language (e.g., 'technical adjustment', 'transit or logistical support') not in the source.\"\n}\n```",
+  "judge_prompt_tokens": 863,
+  "judge_completion_tokens": 563,
+  "judge_cost_usd": 0.01839,
+  "timestamp": 1774952547.296541
+}

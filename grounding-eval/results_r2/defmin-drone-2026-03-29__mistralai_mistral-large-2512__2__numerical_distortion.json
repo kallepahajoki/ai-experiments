@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: \n\nI'll carefully extract and compare all numbers, quantities, and units from both the source and output.\n\n**Source extraction:**\n- \"Several\" (low-flying, slow-moving small objects)\n- \"Sunday morning\"\n",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "\n\nI'll carefully extract and compare all numbers, quantities, and units from both the source and output.\n\n**Source extraction:**\n- \"Several\" (low-flying, slow-moving small objects)\n- \"Sunday morning\"\n- \"F/A-18 Hornet fighter\" (one fighter)\n- \"one drone\" (crashed north of Kouvola)\n- \"another\" (east of Kouvola) \u2192 two drones total\n\n**Output extraction:**\n- \"several\" (low-flying, slow-moving small objects)\n- \"Sunday morning\"\n- \"F/A-18 Hornet fighter jet\" (one fighter)\n- \"two drones crashed\" (one north of Kouvola, another east)\n\n**Checking for semantic distortions:**\n\nThe source says: \"Drones have strayed into Finnish territory.\" The output says: \"the drones had entered Finnish territory unintentionally.\" The word \"strayed\" can imply unintentional entry, but the source doesn't explicitly say \"unintentionally\" \u2014 this is an interpretive addition rather than a numerical distortion, so it falls outside the scope of this evaluation.\n\nAll numerical values align correctly.\n\n```json\n{\n  \"numbers_in_source\": [\n    \"Several (small objects)\",\n    \"Sunday morning\",\n    \"F/A-18 (one fighter)\",\n    \"one drone (north of Kouvola)\",\n    \"another (east of Kouvola) \u2014 two drones total\"\n  ],\n  \"numbers_in_output\": [\n    \"several (small objects)\",\n    \"Sunday morning\",\n    \"F/A-18 (one fighter jet)\",\n    \"two drones crashed\",\n    \"one north of Kouvola\",\n    \"another east of the city\"\n  ],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numbers, quantities, and units in the output match the source. 'Several' objects, one F/A-18 Hornet, two drones (one north, one east of Kouvola) \u2014 all consistent.\"\n}\n```",
+  "judge_prompt_tokens": 525,
+  "judge_completion_tokens": 503,
+  "judge_cost_usd": 0.0152,
+  "timestamp": 1774952547.2926059
+}

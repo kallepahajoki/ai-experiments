@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely neutral and faithful to the source's tone. The only minor issue is a slight rephrasing of 'compatible with NATO operations' to 'harmonize with other NATO countries', which is a subtle shift in framing but does not introduce editorial tone, loaded language, or bias. The summary maintains the factual, informational tone of the source without adding evaluative language or dramatic framing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"yhten\u00e4ist\u00e4\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 muiden Nato-maiden kanssa\",\n      \"issue\": \"The source says 'saatetaan yhteensopivaksi Naton toimintojen kanssa' (made compatible with NATO's operations). The summary reframes this as 'harmonizing/unifying Finland's legislation with other NATO countries', which subtly shifts the framing from operational compatibility to legislative harmonization among member states. This is a minor reframing but not a significant editorial shift.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely neutral and faithful to the source's tone. The only minor issue is a slight rephrasing of 'compatible with NATO operations' to 'harmonize with other NATO countries', which is a subtle shift in framing but does not introduce editorial tone, loaded language, or bias. The summary maintains the factual, informational tone of the source without adding evaluative language or dramatic framing.\"\n}\n```",
+  "judge_prompt_tokens": 1120,
+  "judge_completion_tokens": 267,
+  "judge_cost_usd": 0.012275,
+  "timestamp": 1774952603.9196212
+}

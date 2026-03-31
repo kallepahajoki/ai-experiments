@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "Two minor tense drifts detected: (1) 'has been on-site' (present perfect continuous, ongoing) changed to 'was deployed' (simple past, completed); (2) 'According to current information' (hedged, provisional) changed to 'It has been confirmed' (definitive). Event ordering is preserved correctly. No wrong dates or reordered events.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"have been on-site\", \"have secured\", \"has crashed\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"on Sunday morning\", \"has been confirmed\", \"have secured\", \"was deployed\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"It has been confirmed that one drone crashed\",\n      \"source_temporal\": \"According to current information, one drone has crashed\",\n      \"explanation\": \"The source uses the hedging phrase 'According to current information,' indicating preliminary/tentative reporting. The summary replaces this with 'It has been confirmed,' which implies definitive confirmation \u2014 a subtle shift in certainty rather than a strict temporal drift, but it changes the temporal status of the information from provisional to confirmed.\"\n    },\n    {\n      \"output_temporal\": \"An F/A-18 Hornet fighter from the Air Force was deployed for identification\",\n      \"source_temporal\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification\",\n      \"explanation\": \"The source uses present perfect continuous ('has been on-site'), implying an ongoing presence. The summary uses simple past ('was deployed'), which shifts the tense to suggest a completed past action rather than a continuing one. This is a minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"The Finnish Ministry of Defence reported\",\n      \"source_temporal\": \"(no attribution to the Ministry of Defence as the reporting entity)\",\n      \"explanation\": \"The source does not attribute the report to 'The Finnish Ministry of Defence.' The summary introduces this attribution, but this is more of a factual/source drift than a temporal one. No temporal issue here specifically.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"Two minor tense drifts detected: (1) 'has been on-site' (present perfect continuous, ongoing) changed to 'was deployed' (simple past, completed); (2) 'According to current information' (hedged, provisional) changed to 'It has been confirmed' (definitive). Event ordering is preserved correctly. No wrong dates or reordered events.\"\n}\n```",
+  "judge_prompt_tokens": 490,
+  "judge_completion_tokens": 527,
+  "judge_cost_usd": 0.015625,
+  "timestamp": 1774952547.2931352
+}

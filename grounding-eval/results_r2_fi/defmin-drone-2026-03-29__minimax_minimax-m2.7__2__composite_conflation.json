@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully reflects the source without merging independent facts into false causal or combined claims. The two drone locations are presented as separate events (as in the source). The minister's statements are accurately paraphrased. No causal connectors introduce relationships not present in the source. The phrase 'kyse on lennokeista, jotka ovat harhautuneet Suomen alueelle, ja asiaan suhtaudutaan hyvin vakavasti' accurately combines statements from the same quote without creating a false causal link.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully reflects the source without merging independent facts into false causal or combined claims. The two drone locations are presented as separate events (as in the source). The minister's statements are accurately paraphrased. No causal connectors introduce relationships not present in the source. The phrase 'kyse on lennokeista, jotka ovat harhautuneet Suomen alueelle, ja asiaan suhtaudutaan hyvin vakavasti' accurately combines statements from the same quote without creating a false causal link.\"\n}\n```",
+  "judge_prompt_tokens": 749,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.00777,
+  "timestamp": 1774952603.9123971
+}

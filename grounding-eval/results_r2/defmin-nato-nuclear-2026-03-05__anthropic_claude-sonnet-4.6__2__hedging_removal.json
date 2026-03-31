@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source text is written in a straightforward, factual tone describing a legislative proposal. It does not contain hedging language such as 'suspected,' 'alleged,' 'reportedly,' 'may,' 'might,' 'could,' 'appears to,' or similar uncertainty markers. The statements are presented as definitive facts about the proposal, its purpose, and its scope. The output faithfully mirrors this factual tone without introducing or removing any hedging.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [],\n  \"hedging_preserved_in_output\": [],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source text is written in a straightforward, factual tone describing a legislative proposal. It does not contain hedging language such as 'suspected,' 'alleged,' 'reportedly,' 'may,' 'might,' 'could,' 'appears to,' or similar uncertainty markers. The statements are presented as definitive facts about the proposal, its purpose, and its scope. The output faithfully mirrors this factual tone without introducing or removing any hedging.\"\n}\n```",
+  "judge_prompt_tokens": 790,
+  "judge_completion_tokens": 160,
+  "judge_cost_usd": 0.00795,
+  "timestamp": 1774952547.295407
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The output is largely faithful to the source in content and tone. However, minor framing shifts are present: 'the government says' introduces distancing attribution, 'stresses' adds editorial characterization of the ministry's communicative intent, and 'at the same time' introduces an implied contrast not present in the source. These are subtle and do not significantly distort the meaning, but they do introduce slight editorial framing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"The government says the change is meant to\",\n      \"issue\": \"The source does not use the phrase 'the government says,' which introduces a subtle distancing/attribution frame implying the claim may be debatable. The source presents the rationale straightforwardly as 'The proposal is based on the need to...' without hedging attribution.\"\n    },\n    {\n      \"output_phrase\": \"The ministry stresses that\",\n      \"issue\": \"The word 'stresses' adds editorial characterization of the ministry's tone, implying emphasis or defensiveness. The source simply states the information without any verb suggesting emphasis.\"\n    },\n    {\n      \"output_phrase\": \"At the same time\",\n      \"issue\": \"This transitional phrase subtly implies a tension or contrast between allowing nuclear transport and keeping other nuclear activities criminalized. The source presents these as separate, straightforward facts without suggesting juxtaposition or irony.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The output is largely faithful to the source in content and tone. However, minor framing shifts are present: 'the government says' introduces distancing attribution, 'stresses' adds editorial characterization of the ministry's communicative intent, and 'at the same time' introduces an implied contrast not present in the source. These are subtle and do not significantly distort the meaning, but they do introduce slight editorial framing.\"\n}\n```",
+  "judge_prompt_tokens": 737,
+  "judge_completion_tokens": 358,
+  "judge_cost_usd": 0.012635,
+  "timestamp": 1774952547.2974331
+}

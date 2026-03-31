@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values and quantities in the output match the source. The word 'muutamia' (a few) is omitted in the output but no number is distorted.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"yksi\", \"toinen\", \"F/A-18\"],\n  \"numbers_in_output\": [\"yksi\", \"toinen\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values and quantities in the output match the source. The word 'muutamia' (a few) is omitted in the output but no number is distorted.\"\n}\n```",
+  "judge_prompt_tokens": 688,
+  "judge_completion_tokens": 139,
+  "judge_cost_usd": 0.006915,
+  "timestamp": 1774952603.913146
+}

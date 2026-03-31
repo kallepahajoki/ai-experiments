@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely follows the source document. All key claims\u2014removal of legislative obstacles, alignment with NATO members, the emphasis that Finland is not seeking nuclear weapons on its territory, continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline\u2014are directly traceable to the source. Minor wording differences (e.g., 'submitted a bill' vs. 'sending a proposal,' 'public consultation' vs. 'consultation round') do not introduce substantive external information or background context beyond what the source provides.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"submitted a bill\",\n      \"explanation\": \"The source says the Ministry is 'sending a proposal... for a consultation round,' not that a bill has been formally 'submitted.' This is a minor rephrasing but does not introduce external knowledge.\"\n    },\n    {\n      \"output_content\": \"public consultation\",\n      \"explanation\": \"The source says 'consultation round' without specifying it is 'public.' The word 'public' is an inference, though a reasonable one, and does not clearly draw on external knowledge.\"\n    }\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely follows the source document. All key claims\u2014removal of legislative obstacles, alignment with NATO members, the emphasis that Finland is not seeking nuclear weapons on its territory, continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline\u2014are directly traceable to the source. Minor wording differences (e.g., 'submitted a bill' vs. 'sending a proposal,' 'public consultation' vs. 'consultation round') do not introduce substantive external information or background context beyond what the source provides.\"\n}\n```",
+  "judge_prompt_tokens": 673,
+  "judge_completion_tokens": 293,
+  "judge_cost_usd": 0.01069,
+  "timestamp": 1774952547.295989
+}

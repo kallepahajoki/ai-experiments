@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "All named entities in the output (Puolustusministeri\u00f6, Nato, Suomi) are present in the source. The output uses 'Nato' where the source uses both 'Nato' and 'liittokuntaa' (alliance), but this is a clarification/minor rephrasing, not an entity substitution. No entities were replaced with different ones.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Puolustusministeri\u00f6\", \"Nato\", \"Suomi\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"All named entities in the output (Puolustusministeri\u00f6, Nato, Suomi) are present in the source. The output uses 'Nato' where the source uses both 'Nato' and 'liittokuntaa' (alliance), but this is a clarification/minor rephrasing, not an entity substitution. No entities were replaced with different ones.\"\n}\n```",
+  "judge_prompt_tokens": 1120,
+  "judge_completion_tokens": 157,
+  "judge_cost_usd": 0.009525,
+  "timestamp": 1774952603.918179
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false causal or combined claims. The summary condenses information but maintains the relationships present in the source. For example, the goals of removing legislative barriers, maximizing security, and ensuring deterrence credibility are all stated in the source as objectives of the proposal. The statement about NATO compatibility and the majority of NATO countries is a fair condensation of two related sentences in the source. The mention of 'puolustusyhteisty\u00f6h\u00f6n' (defense cooperation) from the source is omitted in the summary's description of permitted activities, but this is an omission rather than a conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false causal or combined claims. The summary condenses information but maintains the relationships present in the source. For example, the goals of removing legislative barriers, maximizing security, and ensuring deterrence credibility are all stated in the source as objectives of the proposal. The statement about NATO compatibility and the majority of NATO countries is a fair condensation of two related sentences in the source. The mention of 'puolustusyhteisty\u00f6h\u00f6n' (defense cooperation) from the source is omitted in the summary's description of permitted activities, but this is an omission rather than a conflation.\"\n}\n```",
+  "judge_prompt_tokens": 1126,
+  "judge_completion_tokens": 182,
+  "judge_cost_usd": 0.01018,
+  "timestamp": 1774952603.920019
+}

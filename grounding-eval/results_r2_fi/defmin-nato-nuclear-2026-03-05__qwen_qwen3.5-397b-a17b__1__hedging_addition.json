@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the factual tone of the source. The use of conditional forms like 'mahdollistettaisiin' mirrors the source's 'olisivat jatkossa mahdollisia,' which is appropriate since the source itself describes a legislative proposal (not yet enacted law), so the conditional mood is inherent to the content rather than added hedging. No instances of inappropriate hedging language (e.g., 'may,' 'might,' 'reportedly,' 'allegedly' or Finnish equivalents) were found.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the factual tone of the source. The use of conditional forms like 'mahdollistettaisiin' mirrors the source's 'olisivat jatkossa mahdollisia,' which is appropriate since the source itself describes a legislative proposal (not yet enacted law), so the conditional mood is inherent to the content rather than added hedging. No instances of inappropriate hedging language (e.g., 'may,' 'might,' 'reportedly,' 'allegedly' or Finnish equivalents) were found.\"\n}\n```",
+  "judge_prompt_tokens": 1054,
+  "judge_completion_tokens": 165,
+  "judge_cost_usd": 0.009395,
+  "timestamp": 1774952603.920181
+}

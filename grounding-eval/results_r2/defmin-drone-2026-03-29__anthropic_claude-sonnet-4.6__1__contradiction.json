@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source document. All key details \u2014 the detection of low-flying objects on Sunday morning, the F/A-18 Hornet scramble, the two drone crash locations (north and east of Kouvola), police securing the areas, Defense Minister H\u00e4kk\u00e4nen's statements, and the joint investigation \u2014 are consistent with the source. The summary uses 'scrambled' which is a reasonable inference for deploying a fighter jet, and 'confirmed the incursion' which aligns with 'Drones have strayed into Finnish territory.' No contradictions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source document. All key details \u2014 the detection of low-flying objects on Sunday morning, the F/A-18 Hornet scramble, the two drone crash locations (north and east of Kouvola), police securing the areas, Defense Minister H\u00e4kk\u00e4nen's statements, and the joint investigation \u2014 are consistent with the source. The summary uses 'scrambled' which is a reasonable inference for deploying a fighter jet, and 'confirmed the incursion' which aligns with 'Drones have strayed into Finnish territory.' No contradictions were found.\"\n}\n```",
+  "judge_prompt_tokens": 448,
+  "judge_completion_tokens": 171,
+  "judge_cost_usd": 0.006515,
+  "timestamp": 1774952547.289662
+}

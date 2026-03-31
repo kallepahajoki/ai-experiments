@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "All named entities in the output (Suomen, Kaakkois-Suomessa, F/A-18 Hornet, Kouvolan, Antti H\u00e4kk\u00e4nen, Puolustusvoimat, Ilmavoimat, Poliisi) match the source exactly. No entity has been substituted or replaced.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Suomen\", \"Kaakkois-Suomessa\", \"F/A-18 Hornet\", \"Kouvolan\", \"Antti H\u00e4kk\u00e4nen\", \"Puolustusvoimat\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"All named entities in the output (Suomen, Kaakkois-Suomessa, F/A-18 Hornet, Kouvolan, Antti H\u00e4kk\u00e4nen, Puolustusvoimat, Ilmavoimat, Poliisi) match the source exactly. No entity has been substituted or replaced.\"\n}\n```",
+  "judge_prompt_tokens": 724,
+  "judge_completion_tokens": 186,
+  "judge_cost_usd": 0.00827,
+  "timestamp": 1774952603.913135
+}

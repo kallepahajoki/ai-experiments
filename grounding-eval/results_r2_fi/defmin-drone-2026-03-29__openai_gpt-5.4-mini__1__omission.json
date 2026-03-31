@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output covers all key facts from the source. Minor paraphrasing differences exist (e.g., 'lis\u00e4tutkimuksia' \u2192 'jatkotutkimuksia', 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti', 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'heti') but these are stylistic and do not change meaning. No substantive information is omitted.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output covers all key facts from the source. Minor paraphrasing differences exist (e.g., 'lis\u00e4tutkimuksia' \u2192 'jatkotutkimuksia', 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti', 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'heti') but these are stylistic and do not change meaning. No substantive information is omitted.\"\n}\n```",
+  "judge_prompt_tokens": 750,
+  "judge_completion_tokens": 445,
+  "judge_cost_usd": 0.014875,
+  "timestamp": 1774952603.9141471
+}

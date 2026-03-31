@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'yksi drooni' (one drone) and 'toinen drooni' (a second drone), totaling two drones. The output says 'Kaksi droonia' (two drones), which is a faithful consolidation. The source says 'muutamia' (a few) objects were observed, and the output drops this quantifier but does not numerically distort it. F/A-18 is preserved correctly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"F/A-18\", \"yksi\", \"toinen\"],\n  \"numbers_in_output\": [\"F/A-18\", \"Kaksi\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'yksi drooni' (one drone) and 'toinen drooni' (a second drone), totaling two drones. The output says 'Kaksi droonia' (two drones), which is a faithful consolidation. The source says 'muutamia' (a few) objects were observed, and the output drops this quantifier but does not numerically distort it. F/A-18 is preserved correctly.\"\n}\n```",
+  "judge_prompt_tokens": 681,
+  "judge_completion_tokens": 198,
+  "judge_cost_usd": 0.008355,
+  "timestamp": 1774952603.9153438
+}

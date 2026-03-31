@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the key points: the detection of slow-flying small objects in Finnish airspace over sea areas and Southeast Finland on Sunday morning, the F/A-18 Hornet identification mission, two drones falling near Kouvola (north and east), police cordoning off the areas, Defense Minister H\u00e4kk\u00e4nen's statement about stray drones, and the joint investigation by the Defence Forces and other authorities. The label 'Puolustusministeri\u00f6n tiedote' (Defense Ministry bulletin) is a reasonable characterization of the source but is not explicitly stated in the source \u2014 however, this is a framing/formatting choice rather than added factual content from external knowledge.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the key points: the detection of slow-flying small objects in Finnish airspace over sea areas and Southeast Finland on Sunday morning, the F/A-18 Hornet identification mission, two drones falling near Kouvola (north and east), police cordoning off the areas, Defense Minister H\u00e4kk\u00e4nen's statement about stray drones, and the joint investigation by the Defence Forces and other authorities. The label 'Puolustusministeri\u00f6n tiedote' (Defense Ministry bulletin) is a reasonable characterization of the source but is not explicitly stated in the source \u2014 however, this is a framing/formatting choice rather than added factual content from external knowledge.\"\n}\n```",
+  "judge_prompt_tokens": 771,
+  "judge_completion_tokens": 211,
+  "judge_cost_usd": 0.00913,
+  "timestamp": 1774952603.911766
+}

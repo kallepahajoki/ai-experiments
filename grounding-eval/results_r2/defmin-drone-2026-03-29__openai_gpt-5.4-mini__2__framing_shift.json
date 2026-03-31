@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "The summary is largely faithful in tone and content. The only minor framing shift is the replacement of 'We' with 'the government,' which slightly broadens the attribution beyond what the source states. No dramatic language, loaded words, or implied causality were introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"the government takes the incident very seriously\", \"issue\": \"The source quotes H\u00e4kk\u00e4nen saying 'We take this very seriously' \u2014 the summary replaces 'We' with 'the government,' which subtly shifts attribution and implies a broader governmental stance not explicitly stated in the source.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"The summary is largely faithful in tone and content. The only minor framing shift is the replacement of 'We' with 'the government,' which slightly broadens the attribution beyond what the source states. No dramatic language, loaded words, or implied causality were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 471,
+  "judge_completion_tokens": 178,
+  "judge_cost_usd": 0.006805,
+  "timestamp": 1774952547.293605
+}

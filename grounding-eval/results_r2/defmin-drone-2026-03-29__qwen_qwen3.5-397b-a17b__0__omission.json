@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output omits the qualifier 'According to current information' which hedges the certainty of the drone crash reports, and instead presents the crashes as confirmed facts. It also omits the descriptor 'small' for the objects. The qualifier omission is notable as it changes the epistemic status of the crash information from preliminary to definitive, though the overall narrative is largely preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen made a statement about the incident\",\n    \"H\u00e4kk\u00e4nen stated: 'Drones have strayed into Finnish territory'\",\n    \"H\u00e4kk\u00e4nen stated: 'We take this very seriously'\",\n    \"H\u00e4kk\u00e4nen stated: 'Security authorities have responded immediately'\",\n    \"The Defence Forces are investigating together with other authorities\",\n    \"The objects were described as 'small objects'\",\n    \"The qualifier 'According to current information' was used regarding the drone crashes\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"The objects were described as 'small objects'\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"The qualifier 'According to current information' was used when describing the drone crashes, indicating preliminary/uncertain findings\",\n      \"importance\": \"high\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output omits the qualifier 'According to current information' which hedges the certainty of the drone crash reports, and instead presents the crashes as confirmed facts. It also omits the descriptor 'small' for the objects. The qualifier omission is notable as it changes the epistemic status of the crash information from preliminary to definitive, though the overall narrative is largely preserved.\"\n}\n```",
+  "judge_prompt_tokens": 515,
+  "judge_completion_tokens": 442,
+  "judge_cost_usd": 0.013625,
+  "timestamp": 1774952547.29459
+}

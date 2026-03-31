@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct information from the source. The 'Objective' bullet combines two sentences from the source ('maximize security in an unpredictable operational environment' and 'ensure NATO's deterrence forms the highest possible threshold for military action'), but these are presented together in the source as related objectives within the same paragraph, so this is not a conflation. The 'Purpose' bullet similarly reflects the source's stated purpose accurately without introducing false causal relationships.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct information from the source. The 'Objective' bullet combines two sentences from the source ('maximize security in an unpredictable operational environment' and 'ensure NATO's deterrence forms the highest possible threshold for military action'), but these are presented together in the source as related objectives within the same paragraph, so this is not a conflation. The 'Purpose' bullet similarly reflects the source's stated purpose accurately without introducing false causal relationships.\"\n}\n```",
+  "judge_prompt_tokens": 737,
+  "judge_completion_tokens": 163,
+  "judge_cost_usd": 0.00776,
+  "timestamp": 1774952547.298573
+}

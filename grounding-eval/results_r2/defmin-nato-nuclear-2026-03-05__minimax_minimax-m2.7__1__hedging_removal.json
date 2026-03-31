@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The source text is largely a factual government press release describing a legislative proposal, and contains very little hedging or uncertainty language. The conditional/future-oriented language ('would', 'proposes') is preserved in the output. The statement about no planned deployment is faithfully reproduced. No instances were found where the output converts uncertain or conditional claims into established facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"would in future be possible\", \"context\": \"The bill proposes that these actions would in future be possible if they were related to Finland's military defence...\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable strategic environment\"},\n    {\"expression\": \"would in future be possible\", \"preserved\": true, \"output_version\": \"The bill would allow those actions if they are linked to...\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"no deployment of nuclear arms is planned by Finland or by NATO\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The source text is largely a factual government press release describing a legislative proposal, and contains very little hedging or uncertainty language. The conditional/future-oriented language ('would', 'proposes') is preserved in the output. The statement about no planned deployment is faithfully reproduced. No instances were found where the output converts uncertain or conditional claims into established facts.\"\n}\n```",
+  "judge_prompt_tokens": 892,
+  "judge_completion_tokens": 367,
+  "judge_cost_usd": 0.013635,
+  "timestamp": 1774952547.2961018
+}

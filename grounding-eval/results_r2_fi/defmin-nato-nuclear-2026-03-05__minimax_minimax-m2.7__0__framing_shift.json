@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the neutral, factual tone of the source document. It uses nearly identical phrasing and structure without introducing editorial language, loaded terms, dramatic framing, or implied causality. The bullet-point format is a structural change but does not alter the tone or meaning. No evaluative or opinion words were detected.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the neutral, factual tone of the source document. It uses nearly identical phrasing and structure without introducing editorial language, loaded terms, dramatic framing, or implied causality. The bullet-point format is a structural change but does not alter the tone or meaning. No evaluative or opinion words were detected.\"\n}\n```",
+  "judge_prompt_tokens": 1337,
+  "judge_completion_tokens": 116,
+  "judge_cost_usd": 0.009585,
+  "timestamp": 1774952603.9169102
+}

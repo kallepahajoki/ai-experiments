@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses hedging language ('t\u00e4m\u00e4n hetken tietojen mukaan') while the summary states the drone crashes were 'confirmed' ('vahvistettu'), which overstates the certainty. This is a mild contradiction regarding the degree of confirmation.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Kaksi droonin on vahvistettu pudonneen maahan\",\n      \"source_statement\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\",\n      \"explanation\": \"The source says 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), indicating preliminary/unconfirmed information. The summary uses 'vahvistettu' (confirmed), which implies a stronger level of certainty than the source conveys.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses hedging language ('t\u00e4m\u00e4n hetken tietojen mukaan') while the summary states the drone crashes were 'confirmed' ('vahvistettu'), which overstates the certainty. This is a mild contradiction regarding the degree of confirmation.\"\n}\n```",
+  "judge_prompt_tokens": 682,
+  "judge_completion_tokens": 255,
+  "judge_cost_usd": 0.009785,
+  "timestamp": 1774952603.910675
+}

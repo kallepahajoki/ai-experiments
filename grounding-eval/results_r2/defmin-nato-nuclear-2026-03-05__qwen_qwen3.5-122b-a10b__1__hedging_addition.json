@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reproduces the definitive statements from the source without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' All key claims are presented with the same level of certainty as in the source. The phrase 'The Ministry states' used for the clarification point is an accurate attribution rather than hedging, as the source does indeed present this as a statement from the Ministry/proposal.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reproduces the definitive statements from the source without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' All key claims are presented with the same level of certainty as in the source. The phrase 'The Ministry states' used for the clarification point is an accurate attribution rather than hedging, as the source does indeed present this as a statement from the Ministry/proposal.\"\n}\n```",
+  "judge_prompt_tokens": 676,
+  "judge_completion_tokens": 141,
+  "judge_cost_usd": 0.006905,
+  "timestamp": 1774952547.297984
+}

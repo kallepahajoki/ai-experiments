@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.8,
+    "evidence": "The phrase 'Tapahtuman seurauksena' (as a result of the event) in the output creates a causal implication between the detection/identification events and the drones falling, whereas the source presents the drone crashes as separate factual observations without attributing causation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Tapahtuman seurauksena kaksi droonia on pudonnut maahan Kouvolan pohjois- ja it\u00e4puolella.\",\n      \"source_facts\": [\n        \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n        \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n      ],\n      \"explanation\": \"The output uses 'Tapahtuman seurauksena' (as a consequence of the event), implying a causal link between the detection/identification operation and the drones falling. The source simply states that according to current information, two drones fell \u2014 it does not establish any causal relationship between the Air Force's identification mission and the drones crashing. These are presented as independent facts in the source.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.8,\n  \"evidence\": \"The phrase 'Tapahtuman seurauksena' (as a result of the event) in the output creates a causal implication between the detection/identification events and the drones falling, whereas the source presents the drone crashes as separate factual observations without attributing causation.\"\n}\n```",
+  "judge_prompt_tokens": 692,
+  "judge_completion_tokens": 355,
+  "judge_cost_usd": 0.012335,
+  "timestamp": 1774952603.915277
+}

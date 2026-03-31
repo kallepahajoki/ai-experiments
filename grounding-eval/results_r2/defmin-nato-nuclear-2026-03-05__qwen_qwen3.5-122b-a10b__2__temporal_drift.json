@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal\" (present progressive, indicating current/ongoing action),\n    \"Under current legislation\" (present),\n    \"in future\" (future re",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal\" (present progressive, indicating current/ongoing action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference),\n    \"would in future be possible\" (conditional future),\n    \"do not have\" (present),\n    \"would align\" (conditional future),\n    \"is not about\" (present),\n    \"does not seek\" (present),\n    \"nor is such deployment planned\" (present),\n    \"remain criminalised\" (present),\n    \"ends on 2 April 2026\" (future date)\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted a proposal\" (present perfect, completed action),\n    \"ending on 2 April 2026\" (future date),\n    \"is currently completely prohibited\" (present),\n    \"would become permissible\" (conditional future),\n    \"do not have\" (present),\n    \"aligns\" (present),\n    \"aims to maximise\" (present),\n    \"is seeking\" (present progressive),\n    \"nor is such deployment planned\" (present),\n    \"remain criminalised\" (present)\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal\",\n      \"source_temporal\": \"is sending a proposal\",\n      \"explanation\": \"The source uses 'is sending' (present progressive, indicating the action is in progress or about to happen), while the output uses 'has submitted' (present perfect, indicating a completed action). This shifts the temporal status of the proposal from being in the process of being sent to having already been submitted. This is a minor tense drift but changes the implied stage of the process.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present progressive, ongoing/imminent), while the output says 'The Finnish Ministry of Defence has submitted a proposal... for a public consultation period' (present perfect, completed). This shifts the event from in-progress to completed.\"\n}\n```",
+  "judge_prompt_tokens": 732,
+  "judge_completion_tokens": 507,
+  "judge_cost_usd": 0.016335,
+  "timestamp": 1774952547.298099
+}

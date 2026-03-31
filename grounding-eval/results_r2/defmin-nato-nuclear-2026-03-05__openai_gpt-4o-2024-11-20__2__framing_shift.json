@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "Minor framing shifts detected: 'enable' changed to 'enhance' adds a slightly promotional tone; 'emphasizes' adds editorial characterization of the proposal's rhetorical intent; and the rephrasing of 'highest possible threshold for military action' to 'strong threshold against military threats' subtly shifts both the strength qualifier and the object of the threshold. These are relatively minor shifts and the overall summary remains largely faithful to the source's neutral tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"enhance Finland's military defence\",\n      \"issue\": \"The source says 'enable Finland's military defence' and 'fully utilise NATO's deterrence and collective defence.' The word 'enhance' introduces a slightly more positive/promotional framing than the neutral 'enable' used in the source.\"\n    },\n    {\n      \"output_phrase\": \"provide a strong threshold against military threats\",\n      \"issue\": \"The source says 'forms the highest possible threshold for military action.' The output changes 'highest possible threshold for military action' to 'strong threshold against military threats,' which subtly reframes the concept \u2014 'military action' (neutral) becomes 'military threats' (more loaded), and 'highest possible' becomes merely 'strong,' which is actually a downgrade but also a different characterization.\"\n    },\n    {\n      \"output_phrase\": \"The proposal emphasizes\",\n      \"issue\": \"The source simply states the fact. Using 'emphasizes' implies the proposal is making a deliberate rhetorical effort to stress a point, which adds an editorial characterization of the document's tone not present in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"Minor framing shifts detected: 'enable' changed to 'enhance' adds a slightly promotional tone; 'emphasizes' adds editorial characterization of the proposal's rhetorical intent; and the rephrasing of 'highest possible threshold for military action' to 'strong threshold against military threats' subtly shifts both the strength qualifier and the object of the threshold. These are relatively minor shifts and the overall summary remains largely faithful to the source's neutral tone.\"\n}\n```",
+  "judge_prompt_tokens": 659,
+  "judge_completion_tokens": 412,
+  "judge_cost_usd": 0.013595,
+  "timestamp": 1774952547.297318
+}

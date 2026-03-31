@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "The first case merges the fighter jet's identification mission with the drones falling in a single coordinated sentence, potentially implying a sequential/causal link not present in the source. The second case is a standard summarization of quotes from the same speaker and is not problematic. Overall, the conflation is mild.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n, ja kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle.\",\n      \"source_facts\": [\n        \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n        \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n      ],\n      \"explanation\": \"The output links the F/A-18 Hornet identification mission and the drones falling to the ground in a single sentence connected by 'ja' (and), which could imply a sequential or causal relationship (the fighter was sent, and then drones fell). The source presents these as separate facts without any stated connection between the fighter's presence and the drones falling. However, this is a relatively mild conflation \u2014 the connector 'ja' is not strongly causal.\"\n    },\n    {\n      \"output_statement\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen luonnehti tapausta vakavaksi ja totesi turvallisuusviranomaisten reagoineen v\u00e4litt\u00f6m\u00e4sti.\",\n      \"source_facts\": [\n        \"Suhtaudumme asiaan hyvin vakavasti.\",\n        \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.\"\n      ],\n      \"explanation\": \"The output merges two separate statements by H\u00e4kk\u00e4nen into one paraphrased sentence. While the source quotes him saying 'We take this very seriously' and separately 'Security authorities have reacted immediately,' the summary combines these into 'characterized the incident as serious and stated authorities reacted immediately.' This is a minor merge but does not create a false claim \u2014 both statements are attributed to the same person in the same context. This is acceptable summarization rather than a problematic conflation.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"The first case merges the fighter jet's identification mission with the drones falling in a single coordinated sentence, potentially implying a sequential/causal link not present in the source. The second case is a standard summarization of quotes from the same speaker and is not problematic. Overall, the conflation is mild.\"\n}\n```",
+  "judge_prompt_tokens": 688,
+  "judge_completion_tokens": 612,
+  "judge_cost_usd": 0.01874,
+  "timestamp": 1774952603.9146008
+}

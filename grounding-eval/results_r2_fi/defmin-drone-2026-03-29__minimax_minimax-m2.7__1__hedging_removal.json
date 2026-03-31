@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The key hedging expression 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved in the output as 'T\u00e4m\u00e4nhetkisten tietojen mukaan'. The minister's characterization of the drones as having 'strayed' (harhautunut) is also preserved. The output faithfully maintains the conditional/preliminary nature of the information. No significant hedging removal was detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja. (Minister's statement implying the drones strayed/wandered in, suggesting unintentionality \u2014 this is a characterization, not a hedge per se)\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"T\u00e4m\u00e4nhetkisten tietojen mukaan kaksi droonia on pudonnut\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"preserved\": true,\n      \"output_version\": \"kyseess\u00e4 ovat Suomen alueelle harhautuneet lennokit\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The key hedging expression 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved in the output as 'T\u00e4m\u00e4nhetkisten tietojen mukaan'. The minister's characterization of the drones as having 'strayed' (harhautunut) is also preserved. The output faithfully maintains the conditional/preliminary nature of the information. No significant hedging removal was detected.\"\n}\n```",
+  "judge_prompt_tokens": 819,
+  "judge_completion_tokens": 438,
+  "judge_cost_usd": 0.015045,
+  "timestamp": 1774952603.912108
+}

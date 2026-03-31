@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The summary adds the interpretation 'unintentionally' to describe how the drones entered Finnish territory, whereas the source uses the word 'strayed' without explicitly characterizing intent. Additionally, the closing sentence 'No further details were provided at this time' is an editorial remark not found in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"the drones had entered Finnish territory unintentionally\",\n      \"explanation\": \"The source says 'Drones have strayed into Finnish territory.' The word 'strayed' could imply unintentional entry, but the summary explicitly adds the word 'unintentionally,' which is an interpretive addition. The source does not explicitly state the drones entered 'unintentionally.'\"\n    },\n    {\n      \"output_content\": \"No further details were provided at this time.\",\n      \"explanation\": \"This is an editorial addition not present in the source document. The source simply ends without such a meta-statement.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The summary adds the interpretation 'unintentionally' to describe how the drones entered Finnish territory, whereas the source uses the word 'strayed' without explicitly characterizing intent. Additionally, the closing sentence 'No further details were provided at this time' is an editorial remark not found in the source.\"\n}\n```",
+  "judge_prompt_tokens": 530,
+  "judge_completion_tokens": 270,
+  "judge_cost_usd": 0.0094,
+  "timestamp": 1774952547.2926772
+}

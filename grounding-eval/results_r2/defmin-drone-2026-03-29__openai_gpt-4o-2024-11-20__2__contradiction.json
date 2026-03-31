@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The output changes 'According to current information' to 'It has been confirmed,' which misrepresents the certainty level of the source. The attribution to the 'Finnish Ministry of Defence' is not supported by the source but is more of an unsupported addition than a direct contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence reported that several low-flying, slow-moving small objects were detected in Finnish airspace\",\n      \"source_statement\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source presents the information without specifying a particular reporting body (other than quoting Defense Minister Antti H\u00e4kk\u00e4nen and mentioning the Defence Forces are investigating). Attributing the report to the Ministry of Defence is an addition, not directly a contradiction, but it subtly misrepresents the source.\"\n    },\n    {\n      \"output_statement\": \"It has been confirmed that one drone crashed north of Kouvola and another east of Kouvola.\",\n      \"source_statement\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\",\n      \"explanation\": \"The source uses the hedging phrase 'According to current information,' indicating the details are preliminary and not fully confirmed. The output states 'It has been confirmed,' which implies a higher degree of certainty than the source conveys. This is incompatible with the cautious tone of the source.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The output changes 'According to current information' to 'It has been confirmed,' which misrepresents the certainty level of the source. The attribution to the 'Finnish Ministry of Defence' is not supported by the source but is more of an unsupported addition than a direct contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 455,
+  "judge_completion_tokens": 404,
+  "judge_cost_usd": 0.012375,
+  "timestamp": 1774952547.29308
+}

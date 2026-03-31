@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All named entities in the output (Suomi, Kaakkois-Suomi, Ilmavoimat, Hornet (from F/A-18 Hornet), Kouvola, Poliisi, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. The output introduces 'Puolustusministeri\u00f6' as the source of the press release, which is not stated in the original, but this is an attribution/framing addition rather than a substitution of one entity for another.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Puolustusministeri\u00f6\", \"Suomi\", \"Kaakkois-Suomi\", \"Ilmavoimat\", \"Hornet\", \"Kouvola\", \"Poliisi\", \"Antti H\u00e4kk\u00e4nen\", \"Puolustusvoimat\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Puolustusministeri\u00f6\",\n      \"source_entity\": \"N/A\",\n      \"explanation\": \"The output refers to this as a 'Puolustusministeri\u00f6n tiedote' (Defence Ministry press release), but the source does not identify itself as a press release from the Defence Ministry. However, this is a framing/attribution issue rather than an entity substitution per se. The source does mention 'Puolustusministeri' (Defence Minister) and 'Puolustusvoimat', so this is a minor inferential addition, not a substitution of one entity for another.\"\n    }\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All named entities in the output (Suomi, Kaakkois-Suomi, Ilmavoimat, Hornet (from F/A-18 Hornet), Kouvola, Poliisi, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. The output introduces 'Puolustusministeri\u00f6' as the source of the press release, which is not stated in the original, but this is an attribution/framing addition rather than a substitution of one entity for another.\"\n}\n```",
+  "judge_prompt_tokens": 802,
+  "judge_completion_tokens": 402,
+  "judge_cost_usd": 0.01406,
+  "timestamp": 1774952603.9116218
+}

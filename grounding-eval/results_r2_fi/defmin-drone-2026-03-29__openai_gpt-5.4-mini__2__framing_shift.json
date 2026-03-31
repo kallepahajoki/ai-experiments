@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "Two instances of subtle intensification: 'muutamia' changed to 'useita' (amplifying quantity) and 'hyvin vakavasti' changed to 'eritt\u00e4in vakavasti' (amplifying seriousness). Both shifts make the event sound more dramatic than the source conveys.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"useita\",\n      \"issue\": \"The source says 'muutamia' (a few), but the output uses 'useita' (several), which subtly amplifies the scale of the event.\"\n    },\n    {\n      \"output_phrase\": \"eritt\u00e4in vakavasti\",\n      \"issue\": \"The source quotes the minister as saying 'hyvin vakavasti' (very seriously), but the output changes this to 'eritt\u00e4in vakavasti' (extremely seriously), which intensifies the tone beyond what was stated.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"Two instances of subtle intensification: 'muutamia' changed to 'useita' (amplifying quantity) and 'hyvin vakavasti' changed to 'eritt\u00e4in vakavasti' (amplifying seriousness). Both shifts make the event sound more dramatic than the source conveys.\"\n}\n```",
+  "judge_prompt_tokens": 731,
+  "judge_completion_tokens": 256,
+  "judge_cost_usd": 0.010055,
+  "timestamp": 1774952603.914329
+}

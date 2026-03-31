@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values in the output match the source. The source mentions 'one drone crashed north of Kouvola and another east of Kouvola,' which the output correctly summarizes as 'two drones crashed \u2013 one north of Kouvola and another east of Kouvola.' No rounding, unit changes, or magnitude errors were found. The mention of 'border guard' in the output is an addition not in the source, but it is not a numerical distortion.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"Sunday morning\", \"one drone\", \"another (drone)\", \"two drones (implied)\"],\n  \"numbers_in_output\": [\"Sunday morning\", \"two drones\", \"one (north of Kouvola)\", \"another (east of Kouvola)\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values in the output match the source. The source mentions 'one drone crashed north of Kouvola and another east of Kouvola,' which the output correctly summarizes as 'two drones crashed \u2013 one north of Kouvola and another east of Kouvola.' No rounding, unit changes, or magnitude errors were found. The mention of 'border guard' in the output is an addition not in the source, but it is not a numerical distortion.\"\n}\n```",
+  "judge_prompt_tokens": 529,
+  "judge_completion_tokens": 218,
+  "judge_cost_usd": 0.008095,
+  "timestamp": 1774952547.2920718
+}

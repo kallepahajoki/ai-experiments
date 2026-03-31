@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds to information present in the source. The crashes are reported as separate events (north and east of Kouvola), the investigation involves both police and Defence Forces as stated in the source, and the minister's quote is faithfully represented. No causal connectors are used to fabricate relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds to information present in the source. The crashes are reported as separate events (north and east of Kouvola), the investigation involves both police and Defence Forces as stated in the source, and the minister's quote is faithfully represented. No causal connectors are used to fabricate relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 546,
+  "judge_completion_tokens": 131,
+  "judge_cost_usd": 0.006005,
+  "timestamp": 1774952547.290633
+}

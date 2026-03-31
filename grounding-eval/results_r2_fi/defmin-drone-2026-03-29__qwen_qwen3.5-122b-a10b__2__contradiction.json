@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.7,
+    "evidence": "The summary is largely faithful to the source. The only notable issue is the phrase 'Tapahtuman seurauksena' which implies causality between the fighter jet mission and the drones falling, whereas the source merely reports both facts without linking them causally. However, this is more of an unsupported implication than a direct contradiction of a stated fact, so no clear-cut contradiction is found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Tapahtuman seurauksena kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle\",\n      \"source_statement\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\",\n      \"explanation\": \"The output uses the phrase 'Tapahtuman seurauksena' (as a consequence of the event), implying the drones fell as a result of the fighter jet's intervention. The source simply states that according to current information, drones fell \u2014 it does not establish a causal link to the F/A-18's identification mission. This introduces a causal relationship not present in the source, though it is more of an unsupported inference than a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.7,\n  \"evidence\": \"The summary is largely faithful to the source. The only notable issue is the phrase 'Tapahtuman seurauksena' which implies causality between the fighter jet mission and the drones falling, whereas the source merely reports both facts without linking them causally. However, this is more of an unsupported implication than a direct contradiction of a stated fact, so no clear-cut contradiction is found.\"\n}\n```",
+  "judge_prompt_tokens": 682,
+  "judge_completion_tokens": 343,
+  "judge_cost_usd": 0.011985,
+  "timestamp": 1774952603.9148731
+}

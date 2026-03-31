@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "Two tense shifts detected: (1) 'on ollut paikalla' (perfect/ongoing) \u2192 'l\u00e4hetti' (simple past, discrete action), and (2) 'toteaa' (present tense) \u2192 'ilmoitti' (past tense). These are minor temporal drifts that slightly alter the temporal framing but do not fundamentally misrepresent the event sequence or dates.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistamaan kohteita.\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"explanation\": \"The source uses the perfect tense 'on ollut paikalla' (has been present), indicating an ongoing/completed state. The output changes this to the simple past 'l\u00e4hetti' (sent), which shifts the aspect from a state of being present to a discrete sending action. This is a tense/aspect change, though the temporal meaning is only mildly altered.\"\n    },\n    {\n      \"output_temporal\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen ilmoitti\",\n      \"source_temporal\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa\",\n      \"explanation\": \"The source uses the present tense 'toteaa' (states), while the output changes it to the past tense 'ilmoitti' (announced). This is a present\u2192past tense shift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"Two tense shifts detected: (1) 'on ollut paikalla' (perfect/ongoing) \u2192 'l\u00e4hetti' (simple past, discrete action), and (2) 'toteaa' (present tense) \u2192 'ilmoitti' (past tense). These are minor temporal drifts that slightly alter the temporal framing but do not fundamentally misrepresent the event sequence or dates.\"\n}\n```",
+  "judge_prompt_tokens": 761,
+  "judge_completion_tokens": 497,
+  "judge_cost_usd": 0.01623,
+  "timestamp": 1774952603.9125
+}

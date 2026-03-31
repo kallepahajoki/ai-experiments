@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions in the output faithfully match those in the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current actions, future references for proposed changes, and the ongoing state of criminalization is preserved. Event ordering is maintained accurately. No temporal drift detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, indicating current/near-future action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (current law)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina (remain criminalized)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense)\",\n    \"Nykyisin (currently)\",\n    \"jatkossa (in the future)\",\n    \"pysyv\u00e4t kriminalisoituina (remain criminalized)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions in the output faithfully match those in the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current actions, future references for proposed changes, and the ongoing state of criminalization is preserved. Event ordering is maintained accurately. No temporal drift detected.\"\n}\n```",
+  "judge_prompt_tokens": 1250,
+  "judge_completion_tokens": 317,
+  "judge_cost_usd": 0.014175,
+  "timestamp": 1774952603.916095
+}

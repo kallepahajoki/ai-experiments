@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The most notable framing shift is the replacement of the neutral phrase 'military action' with the loaded term 'military aggression,' which introduces an editorial judgment about the nature of potential threats. The source deliberately uses neutral language ('military action') without characterizing it as aggression. The rest of the summary is largely faithful to the source in tone and content.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"against military aggression\",\n      \"issue\": \"The source says 'the highest possible threshold for military action,' which is neutral. Replacing 'military action' with 'military aggression' introduces a loaded, evaluative term that implies hostile intent by a potential adversary, adding editorial framing not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"in an unpredictable operational environment\",\n      \"issue\": \"Minor rephrasing of 'difficult-to-predict operational environment.' While close in meaning, 'unpredictable' is slightly more dramatic/absolute than 'difficult-to-predict,' though this is a marginal shift.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The most notable framing shift is the replacement of the neutral phrase 'military action' with the loaded term 'military aggression,' which introduces an editorial judgment about the nature of potential threats. The source deliberately uses neutral language ('military action') without characterizing it as aggression. The rest of the summary is largely faithful to the source in tone and content.\"\n}\n```",
+  "judge_prompt_tokens": 735,
+  "judge_completion_tokens": 287,
+  "judge_cost_usd": 0.01085,
+  "timestamp": 1774952547.296277
+}

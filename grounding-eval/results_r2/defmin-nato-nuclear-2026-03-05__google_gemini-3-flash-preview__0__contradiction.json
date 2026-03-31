@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key points from the source document. The proposed legislative change, its purpose, alignment with NATO, the clarification about no nuclear weapons deployment, remaining prohibitions, and the consultation timeline are all consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key points from the source document. The proposed legislative change, its purpose, alignment with NATO, the clarification about no nuclear weapons deployment, remaining prohibitions, and the consultation timeline are all consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 721,
+  "judge_completion_tokens": 91,
+  "judge_cost_usd": 0.00588,
+  "timestamp": 1774952547.295489
+}

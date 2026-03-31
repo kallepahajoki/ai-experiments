@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output covers all the main points of the source. Minor omissions include the specific phrase about NATO's deterrent 'including all its components' and the detail about forming 'the highest possible threshold for military actions.' The output uses 'vahvistaa' (strengthen) instead of 'maksimoida' (maximize) regarding Finland's security, which slightly softens the language but does not critically alter the meaning. All key conditions, caveats, and legal qualifiers are preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle esityksen ydinenergia- ja rikoslain muuttamisesta\",\n    \"Esityksen tarkoitus on poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa sek\u00e4 Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 ydinr\u00e4j\u00e4hteen tuominen Suomeen tai sen kuljettaminen, toimittaminen tai hallussapito on t\u00e4ysin kielletty\u00e4\",\n    \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\",\n    \"Valtaosalla Nato-maista ei ole vastaavia lains\u00e4\u00e4d\u00e4nn\u00f6llisi\u00e4 rajoitteita\",\n    \"Lakiesityksell\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 saatetaan yhteensopivaksi Naton toimintojen kanssa\",\n    \"Esitys perustuu tarpeeseen maksimoida Suomen turvallisuus vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n    \"Tavoitteena on varmistaa, ett\u00e4 Naton pelote, sis\u00e4lt\u00e4en kaikki sen osa-alueet, on uskottava ja muodostaa mahdollisimman korkean kynnyksen sotilaallisille toimille\",\n    \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla\",\n    \"Ydinr\u00e4j\u00e4hteiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"Naton pelotteen tulee sis\u00e4lt\u00e4\u00e4 kaikki sen osa-alueet (sis\u00e4lt\u00e4en kaikki sen osa-alueet)\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"Pelotteen tulee muodostaa mahdollisimman korkean kynnyksen sotilaallisille toimille\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"Esitys perustuu tarpeeseen maksimoida Suomen turvallisuus (output says 'vahvistaa' instead of 'maksimoida', which is a softening but not a full omission)\",\n      \"importance\": \"low\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output covers all the main points of the source. Minor omissions include the specific phrase about NATO's deterrent 'including all its components' and the detail about forming 'the highest possible threshold for military actions.' The output uses 'vahvistaa' (strengthen) instead of 'maksimoida' (maximize) regarding Finland's security, which slightly softens the language but does not critically alter the meaning. All key conditions, caveats, and legal qualifiers are preserved.\"\n}\n```",
+  "judge_prompt_tokens": 1285,
+  "judge_completion_tokens": 918,
+  "judge_cost_usd": 0.029375,
+  "timestamp": 1774952603.9188979
+}

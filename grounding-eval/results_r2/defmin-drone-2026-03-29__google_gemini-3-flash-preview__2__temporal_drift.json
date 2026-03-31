@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 deployment \u2192 crashes \u2192 police securing sites \u2192 investigation) and the correct temporal anchor ('Sunday morning'). The tense shifts observed (present perfect \u2192 simple past, present \u2192 past) are minor and typical of summarization style rather than substantive temporal misrepresentation. No dates, times, or event ordering are materially altered.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has crashed\", \"have secured\", \"have strayed\", \"take\", \"have responded\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"detected\", \"deployed\", \"have crashed\", \"have secured\", \"are working\", \"confirmed\", \"strayed\", \"is being taken\", \"responded\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"detected (simple past)\",\n      \"source_temporal\": \"were detected (simple past passive)\",\n      \"explanation\": \"Minor voice change but same tense; no meaningful drift.\"\n    },\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect ('has been on-site'), implying an ongoing action at the time of the report. The summary uses simple past ('deployed'), which shifts the temporal framing to a completed action. This is a minor tense drift but does not significantly misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (simple past)\",\n      \"source_temporal\": \"states (simple present)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the summary uses past tense 'confirmed'. This is a minor tense shift typical of reported speech conversion, not a substantive temporal misrepresentation.\"\n    },\n    {\n      \"output_temporal\": \"responded (simple past)\",\n      \"source_temporal\": \"have responded (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'have responded immediately' while the summary uses simple past 'responded immediately'. Minor tense shift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 deployment \u2192 crashes \u2192 police securing sites \u2192 investigation) and the correct temporal anchor ('Sunday morning'). The tense shifts observed (present perfect \u2192 simple past, present \u2192 past) are minor and typical of summarization style rather than substantive temporal misrepresentation. No dates, times, or event ordering are materially altered.\"\n}\n```",
+  "judge_prompt_tokens": 546,
+  "judge_completion_tokens": 518,
+  "judge_cost_usd": 0.01568,
+  "timestamp": 1774952547.2911649
+}

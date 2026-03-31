@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The summary introduces the framing that the source is a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release), which is not stated in the source. Otherwise, the content closely follows the source material, with only minor paraphrasing (e.g., 'lenokit' instead of 'lennokkeja', slight rewording of H\u00e4kk\u00e4nen's quote).",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"Puolustusministeri\u00f6n tiedotteen mukaan\",\n      \"explanation\": \"The source does not identify itself as a press release ('tiedote') from the Ministry of Defence ('Puolustusministeri\u00f6'). This attribution is added by the model and not traceable to the source document.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary introduces the framing that the source is a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release), which is not stated in the source. Otherwise, the content closely follows the source material, with only minor paraphrasing (e.g., 'lenokit' instead of 'lennokkeja', slight rewording of H\u00e4kk\u00e4nen's quote).\"\n}\n```",
+  "judge_prompt_tokens": 727,
+  "judge_completion_tokens": 222,
+  "judge_cost_usd": 0.009185,
+  "timestamp": 1774952603.914786
+}

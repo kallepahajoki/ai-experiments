@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct statements in the source. The causal/purposive relationships mentioned (e.g., 'intended to remove legislative obstacles,' 'driven by the need to ensure NATO's deterrence remains credible') are faithfully represented from the source. The statement about the consultation period and the proposal submission are both from the source and their combination in the opening sentence is factually accurate, not a conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct statements in the source. The causal/purposive relationships mentioned (e.g., 'intended to remove legislative obstacles,' 'driven by the need to ensure NATO's deterrence remains credible') are faithfully represented from the source. The statement about the consultation period and the proposal submission are both from the source and their combination in the opening sentence is factually accurate, not a conflation.\"\n}\n```",
+  "judge_prompt_tokens": 743,
+  "judge_completion_tokens": 152,
+  "judge_cost_usd": 0.007515,
+  "timestamp": 1774952547.29533
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output omits the important caveat 'According to current information' which qualifies the drone crash reports as preliminary. The output states the crashes as confirmed facts ('It has been confirmed that...'), which actually changes the meaning from tentative to definitive. Additionally, the output introduces 'Finnish Ministry of Defence' as the source, which is not stated in the original.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"According to current information, another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory\",\n    \"H\u00e4kk\u00e4nen stated security authorities responded immediately\",\n    \"Defence Forces investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The qualifier 'According to current information' before the drone crash details, indicating the information was preliminary and subject to change\", \"importance\": \"high\"},\n    {\"fact\": \"The source does not attribute the report to the 'Finnish Ministry of Defence' \u2014 the output adds this attribution which is not in the source\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output omits the important caveat 'According to current information' which qualifies the drone crash reports as preliminary. The output states the crashes as confirmed facts ('It has been confirmed that...'), which actually changes the meaning from tentative to definitive. Additionally, the output introduces 'Finnish Ministry of Defence' as the source, which is not stated in the original.\"\n}\n```",
+  "judge_prompt_tokens": 499,
+  "judge_completion_tokens": 371,
+  "judge_cost_usd": 0.01177,
+  "timestamp": 1774952547.2932181
+}

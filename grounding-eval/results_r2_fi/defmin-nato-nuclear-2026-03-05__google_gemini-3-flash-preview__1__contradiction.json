@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source document. Key claims about the legislative change, its purpose, restrictions, and timeline all align with the source. The summary mentions 'ydinr\u00e4j\u00e4hteiden valmistus, hankkiminen ja r\u00e4j\u00e4ytt\u00e4minen' staying criminalized, which matches the source's 'hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen' \u2014 though 'kehitt\u00e4minen' (development) is omitted in the summary, this is an omission rather than a contradiction. All stated facts are compatible with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source document. Key claims about the legislative change, its purpose, restrictions, and timeline all align with the source. The summary mentions 'ydinr\u00e4j\u00e4hteiden valmistus, hankkiminen ja r\u00e4j\u00e4ytt\u00e4minen' staying criminalized, which matches the source's 'hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen' \u2014 though 'kehitt\u00e4minen' (development) is omitted in the summary, this is an omission rather than a contradiction. All stated facts are compatible with the source.\"\n}\n```",
+  "judge_prompt_tokens": 1143,
+  "judge_completion_tokens": 172,
+  "judge_cost_usd": 0.010015,
+  "timestamp": 1774952603.9164422
+}

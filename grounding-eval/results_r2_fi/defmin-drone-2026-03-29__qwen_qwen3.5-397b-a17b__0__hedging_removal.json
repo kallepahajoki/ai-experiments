@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the claim about two drones falling to the ground near Kouvola. The source explicitly marked this as preliminary/current information, but the output presents it as established fact ('Tapahtuman seurauksena kaksi droonia on pudonnut maahan'). Additionally, the output adds a causal framing ('Tapahtuman seurauksena' \u2014 as a consequence of the event) that is not present in the source. The omission of 'muutamia' is a minor detail loss. The omission of 'harhautunut' removes the minister's specific (softening) characterization of the incident.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 implies the drones strayed/wandered in (accidental framing), which is a hedging/softening expression regarding intent\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Tapahtuman seurauksena kaksi droonia on pudonnut maahan Kouvolan pohjois- ja it\u00e4puolella. (presented as established fact without the qualifier 'according to current information')\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita (the quantifier 'muutamia' / 'a few' is dropped, though this is a minor detail)\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"preserved\": false,\n      \"output_version\": \"The minister's characterization of drones having 'strayed' into Finnish airspace is not explicitly included in the output summary of his statement.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the claim about two drones falling to the ground near Kouvola. The source explicitly marked this as preliminary/current information, but the output presents it as established fact ('Tapahtuman seurauksena kaksi droonia on pudonnut maahan'). Additionally, the output adds a causal framing ('Tapahtuman seurauksena' \u2014 as a consequence of the event) that is not present in the source. The omission of 'muutamia' is a minor detail loss. The omission of 'harhautunut' removes the minister's specific (softening) characterization of the incident.\"\n}\n```",
+  "judge_prompt_tokens": 751,
+  "judge_completion_tokens": 673,
+  "judge_cost_usd": 0.02058,
+  "timestamp": 1774952603.915201
+}

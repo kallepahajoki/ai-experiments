@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output maintains a neutral, factual tone consistent with the source. It accurately summarizes the key points without introducing editorial language, loaded terms, dramatic framing, or implied causality. The language choices ('linjaisi', 'poistettaisiin', 'tavoite') are neutral and closely mirror the source's own phrasing. The structured format is a presentational choice but does not introduce bias. The omission of the phrase about maximizing security in an unpredictable environment slightly reduces context but does not constitute a framing shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output maintains a neutral, factual tone consistent with the source. It accurately summarizes the key points without introducing editorial language, loaded terms, dramatic framing, or implied causality. The language choices ('linjaisi', 'poistettaisiin', 'tavoite') are neutral and closely mirror the source's own phrasing. The structured format is a presentational choice but does not introduce bias. The omission of the phrase about maximizing security in an unpredictable environment slightly reduces context but does not constitute a framing shift.\"\n}\n```",
+  "judge_prompt_tokens": 1133,
+  "judge_completion_tokens": 164,
+  "judge_cost_usd": 0.009765,
+  "timestamp": 1774952603.919801
+}

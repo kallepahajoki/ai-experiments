@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The summary is largely faithful in tone and content. The only notable framing shift is the use of 'korostaa' (emphasizes/stresses), which adds an editorial characterization of the ministry's rhetorical stance not found in the neutral, declarative source text. The rest of the summary accurately reflects the source without introducing loaded language or bias.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ministeri\u00f6 korostaa\",\n      \"issue\": \"The source simply states the facts ('Lains\u00e4\u00e4d\u00e4nt\u00f6muutoksessa ei ole kyse siit\u00e4...') without attributing emphasis. The verb 'korostaa' (emphasizes/stresses) introduces an editorial characterization of the ministry's communicative intent that is not present in the source text.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The summary is largely faithful in tone and content. The only notable framing shift is the use of 'korostaa' (emphasizes/stresses), which adds an editorial characterization of the ministry's rhetorical stance not found in the neutral, declarative source text. The rest of the summary accurately reflects the source without introducing loaded language or bias.\"\n}\n```",
+  "judge_prompt_tokens": 1124,
+  "judge_completion_tokens": 222,
+  "judge_cost_usd": 0.01117,
+  "timestamp": 1774952603.919978
+}

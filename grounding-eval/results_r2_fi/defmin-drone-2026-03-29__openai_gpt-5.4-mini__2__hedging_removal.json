@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which is a clear temporal hedge indicating information may change. The output shortens this to 'Tietojen mukaan' (according to information), removing the 'current moment' qualifier but retaining some hedging. Additionally, 'muutamia' (a few) is changed to 'useita' (several), which is a subtle shift away from the source's more modest quantifier. 'Hyvin vakavasti' (very seriously) is intensified to 'eritt\u00e4in vakavasti' (extremely seriously). These are relatively minor hedging removals/modifications; no critical factual claims had their uncertainty fully stripped.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"muutamia\", \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"},\n    {\"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\"},\n    {\"expression\": \"hyvin vakavasti\", \"context\": \"Suhtaudumme asiaan hyvin vakavasti\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"muutamia\", \"preserved\": false, \"output_version\": \"useita \u2014 changes 'a few' to 'several', slightly amplifying rather than hedging\"},\n    {\"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"preserved\": true, \"output_version\": \"Tietojen mukaan \u2014 shortened but the hedging sense ('according to information') is partially preserved\"},\n    {\"expression\": \"hyvin vakavasti\", \"preserved\": false, \"output_version\": \"eritt\u00e4in vakavasti \u2014 'very seriously' changed to 'extremely seriously', an intensification\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which is a clear temporal hedge indicating information may change. The output shortens this to 'Tietojen mukaan' (according to information), removing the 'current moment' qualifier but retaining some hedging. Additionally, 'muutamia' (a few) is changed to 'useita' (several), which is a subtle shift away from the source's more modest quantifier. 'Hyvin vakavasti' (very seriously) is intensified to 'eritt\u00e4in vakavasti' (extremely seriously). These are relatively minor hedging removals/modifications; no critical factual claims had their uncertainty fully stripped.\"\n}\n```",
+  "judge_prompt_tokens": 792,
+  "judge_completion_tokens": 512,
+  "judge_cost_usd": 0.01676,
+  "timestamp": 1774952603.914305
+}

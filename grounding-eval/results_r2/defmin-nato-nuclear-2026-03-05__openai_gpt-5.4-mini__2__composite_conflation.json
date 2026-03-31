@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds accurately to information in the source. The phrase 'strengthen Finland's security' is a minor paraphrase of 'maximise Finland's security,' but this does not constitute a composite conflation. The two independent source statements about most NATO members not having comparable restrictions and the bill aligning Finnish legislation with NATO operations are presented as two related but distinct claims joined by 'and,' which mirrors the source structure where they appear in consecutive sentences. No false causal or combined relationships were introduced.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds accurately to information in the source. The phrase 'strengthen Finland's security' is a minor paraphrase of 'maximise Finland's security,' but this does not constitute a composite conflation. The two independent source statements about most NATO members not having comparable restrictions and the bill aligning Finnish legislation with NATO operations are presented as two related but distinct claims joined by 'and,' which mirrors the source structure where they appear in consecutive sentences. No false causal or combined relationships were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 730,
+  "judge_completion_tokens": 169,
+  "judge_cost_usd": 0.007875,
+  "timestamp": 1774952547.297763
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": true,
+    "confidence": 0.88,
+    "evidence": "H\u00e4kk\u00e4sen lausunto 'Suomen alueelle on harhautunut lennokkeja' on merkitt\u00e4v\u00e4, koska sana 'harhautunut' viittaa tahattomaan rajanylitykseen, mik\u00e4 muuttaa tapahtuman tulkintaa olennaisesti. Lis\u00e4ksi 't\u00e4m\u00e4n hetken tietojen mukaan' -varaus puuttuu, mik\u00e4 on t\u00e4rke\u00e4 caveat droonien putoamisesta.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin kohteita sunnuntai-aamuna\",\n    \"Kohteet olivat matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Havaittiin muutamia kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Kohteet kuvattiin 'hitaiksi' (hitaita) \u2014 t\u00e4m\u00e4 ominaisuus puuttuu tiivistelm\u00e4st\u00e4\", \"importance\": \"medium\"},\n    {\"fact\": \"Tieto perustui 't\u00e4m\u00e4n hetken tietoihin' (t\u00e4m\u00e4n hetken tietojen mukaan) \u2014 t\u00e4m\u00e4 varaus/caveat puuttuu\", \"importance\": \"high\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen totesi nimenomaan, ett\u00e4 lennokit olivat 'harhautuneet' Suomen alueelle (harhautunut), mik\u00e4 viittaa tahattomaan tunkeutumiseen \u2014 t\u00e4m\u00e4 merkitt\u00e4v\u00e4 kuvaus puuttuu\", \"importance\": \"critical\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen viittasi 'turvallisuusviranomaisiin' (turvallisuusviranomaiset), tiivistelm\u00e4ss\u00e4 vain 'viranomaiset'\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": true,\n  \"confidence\": 0.88,\n  \"evidence\": \"H\u00e4kk\u00e4sen lausunto 'Suomen alueelle on harhautunut lennokkeja' on merkitt\u00e4v\u00e4, koska sana 'harhautunut' viittaa tahattomaan rajanylitykseen, mik\u00e4 muuttaa tapahtuman tulkintaa olennaisesti. Lis\u00e4ksi 't\u00e4m\u00e4n hetken tietojen mukaan' -varaus puuttuu, mik\u00e4 on t\u00e4rke\u00e4 caveat droonien putoamisesta.\"\n}\n```",
+  "judge_prompt_tokens": 700,
+  "judge_completion_tokens": 757,
+  "judge_cost_usd": 0.022425,
+  "timestamp": 1774952603.915259
+}

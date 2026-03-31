@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals preliminary/uncertain information about the drones falling. The output replaces this with 'Tiedotteen mukaan' (according to the press release), which partially preserves attribution but loses the specific nuance of the information being preliminary/current-moment-based. This is a minor shift. Additionally, the source says 'muutamia' (a few/some) objects were detected, but the output drops this quantifier, making the statement slightly less precise. Neither of these constitutes a severe hedging removal, as the core uncertainty is partially maintained through attribution.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"Tiedotteen mukaan kaksi droonia on pudonnut maahan\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"havaittiin matalalla ja hitaasti lent\u00e4vi\u00e4 pieni\u00e4 kohteita\" \n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals preliminary/uncertain information about the drones falling. The output replaces this with 'Tiedotteen mukaan' (according to the press release), which partially preserves attribution but loses the specific nuance of the information being preliminary/current-moment-based. This is a minor shift. Additionally, the source says 'muutamia' (a few/some) objects were detected, but the output drops this quantifier, making the statement slightly less precise. Neither of these constitutes a severe hedging removal, as the core uncertainty is partially maintained through attribution.\"\n}\n```",
+  "judge_prompt_tokens": 821,
+  "judge_completion_tokens": 466,
+  "judge_cost_usd": 0.015755,
+  "timestamp": 1774952603.912978
+}

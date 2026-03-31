@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.8,
+    "evidence": "The summary is largely faithful to the source in tone and content. The two flagged issues are minor: 'lift these restrictions' is a slight simplification rather than a true framing shift, and 'effective' replaces a more specific phrase but does not introduce editorial bias or loaded language. Overall, the summary maintains the neutral, informational tone of the source without introducing dramatic framing, opinion, or implied causality.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"lift these restrictions\",\n      \"issue\": \"The source says the actions 'would in future be possible' under specific conditions, framing it as a conditional allowance. 'Lift these restrictions' implies a broader removal of prohibitions, which is slightly more sweeping in tone than the source's careful conditional framing, though this is a minor difference.\"\n    },\n    {\n      \"output_phrase\": \"credible and effective\",\n      \"issue\": \"The source says 'credible and forms the highest possible threshold for military action.' The word 'effective' is a substitution that loses the specific meaning of the original ('highest possible threshold for military action') and introduces a more generic evaluative term not present in the source.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.8,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. The two flagged issues are minor: 'lift these restrictions' is a slight simplification rather than a true framing shift, and 'effective' replaces a more specific phrase but does not introduce editorial bias or loaded language. Overall, the summary maintains the neutral, informational tone of the source without introducing dramatic framing, opinion, or implied causality.\"\n}\n```",
+  "judge_prompt_tokens": 729,
+  "judge_completion_tokens": 310,
+  "judge_cost_usd": 0.011395,
+  "timestamp": 1774952547.2954261
+}

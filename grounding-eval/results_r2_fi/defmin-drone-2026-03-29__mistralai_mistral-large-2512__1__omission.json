@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.88,
+    "evidence": "The summary omits the caveat 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualifies the drone crash information as preliminary. This is a meaningful qualifier but not critical as it doesn't fundamentally change the meaning. The word 'muutamia' (a few) is somewhat lost, but the summary does use the plural 'kohteita'. The summary also slightly changes 'tunnistusteht\u00e4v\u00e4ss\u00e4' (identification mission) to 'tunnisti tilanteen' (identified the situation), which subtly shifts meaning but is minor.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"The qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) indicating the drone crash details are preliminary/subject to change\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"The qualifier 'muutamia' (a few/several) specifying the number of detected objects was more than two\",\n      \"importance\": \"low\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.88,\n  \"evidence\": \"The summary omits the caveat 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualifies the drone crash information as preliminary. This is a meaningful qualifier but not critical as it doesn't fundamentally change the meaning. The word 'muutamia' (a few) is somewhat lost, but the summary does use the plural 'kohteita'. The summary also slightly changes 'tunnistusteht\u00e4v\u00e4ss\u00e4' (identification mission) to 'tunnisti tilanteen' (identified the situation), which subtly shifts meaning but is minor.\"\n}\n```",
+  "judge_prompt_tokens": 751,
+  "judge_completion_tokens": 592,
+  "judge_cost_usd": 0.018555,
+  "timestamp": 1774952603.912831
+}

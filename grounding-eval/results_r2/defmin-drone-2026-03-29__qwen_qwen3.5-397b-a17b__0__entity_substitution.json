@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All named entities in the output match those in the source. 'Finnish Air Force' is a reasonable expansion of 'The Air Force' given the Finnish context. All locations (Kouvola, Finnish airspace, Southeast Finland), people (Antti H\u00e4kk\u00e4nen), and organizations (Defence Forces, Police) are consistent with the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish\", \"Finnish Air Force\", \"F/A-18 Hornet\", \"Kouvola\", \"Antti H\u00e4kk\u00e4nen\", \"Defence Forces\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All named entities in the output match those in the source. 'Finnish Air Force' is a reasonable expansion of 'The Air Force' given the Finnish context. All locations (Kouvola, Finnish airspace, Southeast Finland), people (Antti H\u00e4kk\u00e4nen), and organizations (Defence Forces, Police) are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 534,
+  "judge_completion_tokens": 166,
+  "judge_cost_usd": 0.00682,
+  "timestamp": 1774952547.294425
+}

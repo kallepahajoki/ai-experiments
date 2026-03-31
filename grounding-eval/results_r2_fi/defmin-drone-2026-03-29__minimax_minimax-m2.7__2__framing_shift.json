@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output is largely faithful to the source in tone and framing. The only notable difference is the substitution of 'muutamia' (a few) with 'useita' (several), which slightly amplifies the number of objects detected. However, this is a minor lexical choice difference rather than a clear editorial or dramatic framing shift. No loaded language, opinion words, implied causality, or dramatic framing were introduced. The minister's quote is accurately paraphrased in indirect speech without added editorial tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"useita\",\n      \"issue\": \"The source says 'muutamia' (a few), while the output uses 'useita' (several), which slightly amplifies the scale of the event. This is more of a factual nuance shift but can contribute to a more dramatic framing.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output is largely faithful to the source in tone and framing. The only notable difference is the substitution of 'muutamia' (a few) with 'useita' (several), which slightly amplifies the number of objects detected. However, this is a minor lexical choice difference rather than a clear editorial or dramatic framing shift. No loaded language, opinion words, implied causality, or dramatic framing were introduced. The minister's quote is accurately paraphrased in indirect speech without added editorial tone.\"\n}\n```",
+  "judge_prompt_tokens": 747,
+  "judge_completion_tokens": 240,
+  "judge_cost_usd": 0.009735,
+  "timestamp": 1774952603.912353
+}

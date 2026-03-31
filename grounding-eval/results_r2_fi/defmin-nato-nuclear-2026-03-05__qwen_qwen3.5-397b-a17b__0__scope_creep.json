@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the key points: the legislative proposal to amend nuclear energy and criminal law, the purpose of removing legal barriers for NATO cooperation, the current prohibition on nuclear explosives, the conditions under which they would be permitted, compatibility with other NATO countries' legislation, the emphasis that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline of 2.4.2026. The attribution to 'Ministeri\u00f6' (ministry) in the third paragraph is a reasonable shortening of 'Puolustusministeri\u00f6' from the source. No external knowledge or context was added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the key points: the legislative proposal to amend nuclear energy and criminal law, the purpose of removing legal barriers for NATO cooperation, the current prohibition on nuclear explosives, the conditions under which they would be permitted, compatibility with other NATO countries' legislation, the emphasis that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline of 2.4.2026. The attribution to 'Ministeri\u00f6' (ministry) in the third paragraph is a reasonable shortening of 'Puolustusministeri\u00f6' from the source. No external knowledge or context was added.\"\n}\n```",
+  "judge_prompt_tokens": 1122,
+  "judge_completion_tokens": 204,
+  "judge_cost_usd": 0.01071,
+  "timestamp": 1774952603.919988
+}

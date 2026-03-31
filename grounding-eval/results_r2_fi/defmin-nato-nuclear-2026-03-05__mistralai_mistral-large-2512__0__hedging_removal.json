@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source uses conditional forms ('olisivat', 'liittyisiv\u00e4t') and proposal language ('esitet\u00e4\u00e4n') to indicate these are proposed changes, not enacted ones. The output preserves this conditionality with forms like 'poistettaisiin', 'voitaisiin sallia'. The statement about NATO not planning nuclear weapons placement in Finland is also preserved. No significant hedging removal was detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen...\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\",\n      \"preserved\": true,\n      \"output_version\": \"N\u00e4it\u00e4 toimia voitaisiin jatkossa sallia, jos ne liittyv\u00e4t... (uses conditional 'voitaisiin' and 'poistettaisiin')\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"preserved\": true,\n      \"output_version\": \"Ei tavoitella ydinaseiden sijoittamista Suomeen \u2013 Natolla ei ole suunnitelmia siit\u00e4.\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source uses conditional forms ('olisivat', 'liittyisiv\u00e4t') and proposal language ('esitet\u00e4\u00e4n') to indicate these are proposed changes, not enacted ones. The output preserves this conditionality with forms like 'poistettaisiin', 'voitaisiin sallia'. The statement about NATO not planning nuclear weapons placement in Finland is also preserved. No significant hedging removal was detected.\"\n}\n```",
+  "judge_prompt_tokens": 1345,
+  "judge_completion_tokens": 492,
+  "judge_cost_usd": 0.019025,
+  "timestamp": 1774952603.917575
+}

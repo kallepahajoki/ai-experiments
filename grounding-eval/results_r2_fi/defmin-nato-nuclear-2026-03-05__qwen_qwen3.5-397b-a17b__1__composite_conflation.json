@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false causal or combined claims. The first paragraph combines two goals mentioned separately in the source (removing legislative obstacles for NATO cooperation and maximizing Finland's security), but both are indeed stated purposes of the proposal in the source, so combining them is a fair summary rather than a conflation. The statement about making legislation compatible 'with other NATO countries' slightly simplifies the source's 'compatible with NATO's operations' but does not create a false merged claim. All other statements faithfully represent the source relationships.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false causal or combined claims. The first paragraph combines two goals mentioned separately in the source (removing legislative obstacles for NATO cooperation and maximizing Finland's security), but both are indeed stated purposes of the proposal in the source, so combining them is a fair summary rather than a conflation. The statement about making legislation compatible 'with other NATO countries' slightly simplifies the source's 'compatible with NATO's operations' but does not create a false merged claim. All other statements faithfully represent the source relationships.\"\n}\n```",
+  "judge_prompt_tokens": 1081,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.00943,
+  "timestamp": 1774952603.9202402
+}

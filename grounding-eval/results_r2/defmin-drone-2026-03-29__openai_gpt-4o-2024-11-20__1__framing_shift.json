@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary is largely faithful in tone but introduces minor framing shifts: 'confirmed' replaces the source's hedged 'according to current information,' 'emphasized' editorializes the minister's delivery beyond the neutral 'states,' and the attribution to the 'Ministry of Defence' is not in the source. These are subtle shifts rather than dramatic reframing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Two drones were confirmed to have crashed\",\n      \"issue\": \"The source uses hedging language 'According to current information,' indicating uncertainty, while the summary uses 'confirmed,' which implies definitive verification not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"emphasized the seriousness of the incident\",\n      \"issue\": \"The word 'emphasized' adds editorial characterization of the minister's tone. The source simply says he 'states' his remarks. While he does say 'We take this very seriously,' describing his delivery as 'emphasized' introduces a framing of forcefulness not explicitly in the source.\"\n    },\n    {\n      \"output_phrase\": \"The Finnish Ministry of Defence reported\",\n      \"issue\": \"The source does not attribute the initial detection report to the Ministry of Defence specifically. The source presents the information without a clear named attribution for the detection details, only attributing the quote to the Defense Minister and noting the Defence Forces are investigating.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary is largely faithful in tone but introduces minor framing shifts: 'confirmed' replaces the source's hedged 'according to current information,' 'emphasized' editorializes the minister's delivery beyond the neutral 'states,' and the attribution to the 'Ministry of Defence' is not in the source. These are subtle shifts rather than dramatic reframing.\"\n}\n```",
+  "judge_prompt_tokens": 475,
+  "judge_completion_tokens": 359,
+  "judge_cost_usd": 0.01135,
+  "timestamp": 1774952547.293
+}

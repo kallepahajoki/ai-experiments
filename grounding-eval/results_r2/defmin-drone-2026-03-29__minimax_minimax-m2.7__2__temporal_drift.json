@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All temporal expressions (Sunday morning, current information, immediately) are faithfully preserved. The event sequence \u2014 detection, Air Force response, drone crashes, police securing areas, minister's statement, joint investigation \u2014 matches the source ordering. Tenses are consistent. No dates/times are altered. The minor issues noted (forensic vs. further, addition of border guard) are factual embellishments, not temporal drifts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"immediately\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"current information\", \"immediately\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"forensic investigation\",\n      \"source_temporal\": \"further investigation\",\n      \"explanation\": \"The source says 'further investigation' while the output says 'forensic investigation'. This is a semantic change rather than a temporal drift, but worth noting. Not strictly temporal.\"\n    },\n    {\n      \"output_temporal\": \"(police, border guard, etc.)\",\n      \"source_temporal\": \"other authorities\",\n      \"explanation\": \"The output adds 'border guard' which is not mentioned in the source. This is fabricated detail, not temporal drift per se.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All temporal expressions (Sunday morning, current information, immediately) are faithfully preserved. The event sequence \u2014 detection, Air Force response, drone crashes, police securing areas, minister's statement, joint investigation \u2014 matches the source ordering. Tenses are consistent. No dates/times are altered. The minor issues noted (forensic vs. further, addition of border guard) are factual embellishments, not temporal drifts.\"\n}\n```",
+  "judge_prompt_tokens": 537,
+  "judge_completion_tokens": 315,
+  "judge_cost_usd": 0.01056,
+  "timestamp": 1774952547.292096
+}

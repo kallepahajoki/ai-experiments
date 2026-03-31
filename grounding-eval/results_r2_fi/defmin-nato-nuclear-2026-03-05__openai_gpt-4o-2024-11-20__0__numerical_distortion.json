@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "The only numerical value in the source is the date 2.4.2026, which is accurately reproduced in the output.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"2.4.2026\"],\n  \"numbers_in_output\": [\"2.4.2026\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"The only numerical value in the source is the date 2.4.2026, which is accurately reproduced in the output.\"\n}\n```",
+  "judge_prompt_tokens": 1084,
+  "judge_completion_tokens": 106,
+  "judge_cost_usd": 0.00807,
+  "timestamp": 1774952603.918188
+}

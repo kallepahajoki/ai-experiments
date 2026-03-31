@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source document. All key points are correctly represented: the purpose of the legislative change (removing legal obstacles for NATO cooperation), the specific changes (allowing transport/possession of nuclear explosives for defense purposes), the maintained restrictions (acquisition, manufacturing, development, and detonation remain criminalized), the clarification that Finland is not seeking nuclear weapons on its territory, and the consultation deadline of 2.4.2026. No statements in the output contradict the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source document. All key points are correctly represented: the purpose of the legislative change (removing legal obstacles for NATO cooperation), the specific changes (allowing transport/possession of nuclear explosives for defense purposes), the maintained restrictions (acquisition, manufacturing, development, and detonation remain criminalized), the clarification that Finland is not seeking nuclear weapons on its territory, and the consultation deadline of 2.4.2026. No statements in the output contradict the source.\"\n}\n```",
+  "judge_prompt_tokens": 1153,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.00934,
+  "timestamp": 1774952603.9166348
+}

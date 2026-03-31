@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output is largely faithful to the source. The only notable issue is the omission of 'bringing a nuclear explosive into Finland' from the list of prohibited activities, but the output does not directly contradict any source statement. All key claims \u2014 the purpose of the amendments, the alignment with NATO, the continued criminalization of acquisition/manufacture/development/detonation, the consultation deadline, and the clarification that Finland is not seeking nuclear weapons deployment \u2014 are accurately reflected.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The proposal seeks to remove current legislative restrictions that completely prohibit the transport, delivery, or possession of nuclear explosives in Finland.\",\n      \"source_statement\": \"Under current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited.\",\n      \"explanation\": \"The output omits 'bringing a nuclear explosive into Finland' from the list of currently prohibited actions. While this is an omission rather than a direct contradiction, the source explicitly includes 'bringing a nuclear explosive into Finland' as one of the prohibited actions that would be amended. However, this is more of an incomplete statement than a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output is largely faithful to the source. The only notable issue is the omission of 'bringing a nuclear explosive into Finland' from the list of prohibited activities, but the output does not directly contradict any source statement. All key claims \u2014 the purpose of the amendments, the alignment with NATO, the continued criminalization of acquisition/manufacture/development/detonation, the consultation deadline, and the clarification that Finland is not seeking nuclear weapons deployment \u2014 are accurately reflected.\"\n}\n```",
+  "judge_prompt_tokens": 625,
+  "judge_completion_tokens": 291,
+  "judge_cost_usd": 0.0104,
+  "timestamp": 1774952547.297257
+}

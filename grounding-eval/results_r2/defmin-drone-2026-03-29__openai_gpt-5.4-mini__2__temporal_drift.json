@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All temporal expressions are faithfully preserved. The event sequence (detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) is maintained. Tense changes from present to past are appropriate conversions from direct quotation to reported speech and do not constitute temporal drift.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"current information\", \"immediately\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"Current information\", \"immediately\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Defence Minister Antti H\u00e4kk\u00e4nen said the drones had entered Finnish territory and that the government takes the incident very seriously\",\n      \"source_temporal\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory. We take this very seriously.\\\"\",\n      \"explanation\": \"The output attributes 'the government takes the incident very seriously' to H\u00e4kk\u00e4nen, whereas the source uses 'We take this very seriously.' The substitution of 'the government' for 'We' is a minor attribution shift but not a temporal drift. The tense shift from present tense direct quote ('states', 'have strayed', 'take') to past tense indirect speech ('said', 'had entered', 'takes') is a standard and appropriate conversion from direct to indirect speech, not a temporal misrepresentation.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All temporal expressions are faithfully preserved. The event sequence (detection \u2192 Air Force response \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) is maintained. Tense changes from present to past are appropriate conversions from direct quotation to reported speech and do not constitute temporal drift.\"\n}\n```",
+  "judge_prompt_tokens": 472,
+  "judge_completion_tokens": 354,
+  "judge_cost_usd": 0.01121,
+  "timestamp": 1774952547.293576
+}

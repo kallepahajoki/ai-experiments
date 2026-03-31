@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary introduces minor framing shifts: 'toteaa' (states) is changed to 'korostaa' (emphasizes), adding editorial weight to the minister's words; 'v\u00e4litt\u00f6m\u00e4sti' is softened to 'nopeasti'; and the Air Force's presence is reframed from a stative description to an active dispatch action. Also, the source mentions observations over sea areas ('merialueella') which is omitted, though that is an omission rather than a framing issue. The shifts are subtle but collectively introduce a slightly more action-oriented and editorially charged tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"korostaa\",\n      \"issue\": \"The source uses the neutral verb 'toteaa' (states), while the summary uses 'korostaa' (emphasizes/stresses), which adds editorial tone suggesting the minister was being forceful or insistent, rather than simply stating.\"\n    },\n    {\n      \"output_phrase\": \"nopeasti\",\n      \"issue\": \"The source says 'v\u00e4litt\u00f6m\u00e4sti' (immediately), while the summary uses 'nopeasti' (quickly). While close in meaning, 'v\u00e4litt\u00f6m\u00e4sti' is a stronger and more specific term than 'nopeasti', slightly softening the original characterization.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission), a passive/stative description. The summary rephrases this as 'l\u00e4hetti' (sent), introducing an active, more decisive-sounding action framing not explicitly in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary introduces minor framing shifts: 'toteaa' (states) is changed to 'korostaa' (emphasizes), adding editorial weight to the minister's words; 'v\u00e4litt\u00f6m\u00e4sti' is softened to 'nopeasti'; and the Air Force's presence is reframed from a stative description to an active dispatch action. Also, the source mentions observations over sea areas ('merialueella') which is omitted, though that is an omission rather than a framing issue. The shifts are subtle but collectively introduce a slightly more action-oriented and editorially charged tone.\"\n}\n```",
+  "judge_prompt_tokens": 695,
+  "judge_completion_tokens": 473,
+  "judge_cost_usd": 0.0153,
+  "timestamp": 1774952603.913234
+}

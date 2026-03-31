@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the source in both content and tone. It uses neutral, factual language throughout. The minister's direct quote is accurately paraphrased into indirect speech without adding editorial tone or loaded language. No evaluative language, dramatic framing, or implied causality was introduced. Minor wording changes (e.g., 'strayed into' became 'entered') are neutral and do not constitute a framing shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the source in both content and tone. It uses neutral, factual language throughout. The minister's direct quote is accurately paraphrased into indirect speech without adding editorial tone or loaded language. No evaluative language, dramatic framing, or implied causality was introduced. Minor wording changes (e.g., 'strayed into' became 'entered') are neutral and do not constitute a framing shift.\"\n}\n```",
+  "judge_prompt_tokens": 471,
+  "judge_completion_tokens": 138,
+  "judge_cost_usd": 0.005805,
+  "timestamp": 1774952547.293477
+}

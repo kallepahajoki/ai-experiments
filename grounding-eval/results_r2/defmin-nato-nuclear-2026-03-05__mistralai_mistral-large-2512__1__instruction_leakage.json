@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output contains a straightforward summary with a descriptive title ('Summary of the Finnish Ministry of Defence Press Release') which is a content label rather than instruction leakage. No instruction echoes, system prompt fragments, or meta-commentary about the task were found.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [],\n  \"leakage_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output contains a straightforward summary with a descriptive title ('Summary of the Finnish Ministry of Defence Press Release') which is a content label rather than instruction leakage. No instruction echoes, system prompt fragments, or meta-commentary about the task were found.\"\n}\n```",
+  "judge_prompt_tokens": 837,
+  "judge_completion_tokens": 102,
+  "judge_cost_usd": 0.006735,
+  "timestamp": 1774952547.296749
+}

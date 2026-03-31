@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "Every piece of information in the output can be directly traced to the source document. The summary accurately reflects the source's content about the proposed amendments, current legislation, alignment with NATO members, clarification about not seeking deployment, remaining restrictions, and the consultation timeline. No external context, historical references, or additional explanations beyond the source material were introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"Every piece of information in the output can be directly traced to the source document. The summary accurately reflects the source's content about the proposed amendments, current legislation, alignment with NATO members, clarification about not seeking deployment, remaining restrictions, and the consultation timeline. No external context, historical references, or additional explanations beyond the source material were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 719,
+  "judge_completion_tokens": 117,
+  "judge_cost_usd": 0.00652,
+  "timestamp": 1774952547.297859
+}

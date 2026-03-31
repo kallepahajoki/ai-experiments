@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reflects the source material without merging independent facts into false combined or causal claims. Each section of the summary corresponds accurately to distinct statements in the source. The relationships presented (e.g., permitted actions being conditional on defense purposes, NATO compatibility rationale) are directly stated in the source and not fabricated through conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reflects the source material without merging independent facts into false combined or causal claims. Each section of the summary corresponds accurately to distinct statements in the source. The relationships presented (e.g., permitted actions being conditional on defense purposes, NATO compatibility rationale) are directly stated in the source and not fabricated through conflation.\"\n}\n```",
+  "judge_prompt_tokens": 1369,
+  "judge_completion_tokens": 114,
+  "judge_cost_usd": 0.009695,
+  "timestamp": 1774952603.9171488
+}

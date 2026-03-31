@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.8,
+    "evidence": "The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present continuous, indicating an ongoing or imminent action), while the output says 'The Finnish Ministry of Defence has submitted a proposal... for public consultation' (present perfect, indicating a completed action). This represents a temporal drift from an in-progress action to a completed one.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal... for a consultation round\",\n    \"Under current legislation\",\n    \"would in future be possible\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted a proposal... for public consultation\",\n    \"Under current law\",\n    \"The new proposal would allow these activities\",\n    \"The public consultation period ends on 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal\",\n      \"source_temporal\": \"is sending a proposal\",\n      \"explanation\": \"The source uses present continuous tense ('is sending'), indicating the action is currently in progress or about to happen. The output uses present perfect ('has submitted'), which implies the action has already been completed. This is a tense shift that subtly changes the temporal status of the event from ongoing/imminent to completed.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.8,\n  \"evidence\": \"The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present continuous, indicating an ongoing or imminent action), while the output says 'The Finnish Ministry of Defence has submitted a proposal... for public consultation' (present perfect, indicating a completed action). This represents a temporal drift from an in-progress action to a completed one.\"\n}\n```",
+  "judge_prompt_tokens": 829,
+  "judge_completion_tokens": 344,
+  "judge_cost_usd": 0.012745,
+  "timestamp": 1774952547.296663
+}

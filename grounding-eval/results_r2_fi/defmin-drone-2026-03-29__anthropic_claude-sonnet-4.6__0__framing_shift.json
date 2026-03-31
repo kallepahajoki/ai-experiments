@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary introduces subtle framing shifts through verb choices: 'vahvisti' (confirmed) instead of 'toteaa' (states), 'korosti' (emphasized) instead of a neutral quotation, and 'l\u00e4hetti' (sent) instead of 'on ollut paikalla' (has been present). These changes collectively add a slightly more decisive and authoritative editorial tone compared to the neutral source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"vahvisti\",\n      \"issue\": \"The source uses 'toteaa' (states), while the summary uses 'vahvisti' (confirmed), which implies a stronger authoritative act and adds a sense of official confirmation not present in the original neutral statement.\"\n    },\n    {\n      \"output_phrase\": \"korosti\",\n      \"issue\": \"The source quotes the minister saying 'Suhtaudumme asiaan hyvin vakavasti' as a direct statement. The summary uses 'korosti' (emphasized/stressed), which adds editorial characterization of the minister's tone not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present), a passive/stative description. The summary reframes this as 'l\u00e4hetti' (sent), which implies a more active, decisive response action.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary introduces subtle framing shifts through verb choices: 'vahvisti' (confirmed) instead of 'toteaa' (states), 'korosti' (emphasized) instead of a neutral quotation, and 'l\u00e4hetti' (sent) instead of 'on ollut paikalla' (has been present). These changes collectively add a slightly more decisive and authoritative editorial tone compared to the neutral source.\"\n}\n```",
+  "judge_prompt_tokens": 699,
+  "judge_completion_tokens": 408,
+  "judge_cost_usd": 0.013695,
+  "timestamp": 1774952603.910555
+}

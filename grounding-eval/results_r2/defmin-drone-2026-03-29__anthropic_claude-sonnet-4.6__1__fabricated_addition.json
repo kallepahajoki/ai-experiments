@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All claims in the output are well-grounded in the source document. The word 'scrambled' is a slight editorial embellishment compared to 'has been on-site with,' and 'relevant' is added before 'authorities,' but these are minor paraphrasing choices rather than fabricated factual claims. No substantive fabricated additions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, Finnish authorities detected multiple low-flying, slow-moving small objects (drones) over sea areas and Southeast Finland.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Air Force scrambled an F/A-18 Hornet fighter jet to identify the objects.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"Two drones subsequently crashed \u2014 one north of Kouvola and one east of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"Police secured both sites for investigation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"Defense Minister Antti H\u00e4kk\u00e4nen confirmed the incursion.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory.\\\"\"\n    },\n    {\n      \"claim\": \"He described it as a serious matter.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"We take this very seriously.\\\"\"\n    },\n    {\n      \"claim\": \"He stated that security authorities responded immediately.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The Defence Forces are conducting a joint investigation with other relevant authorities.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    }\n  ],\n  \"fabricated_additions_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All claims in the output are well-grounded in the source document. The word 'scrambled' is a slight editorial embellishment compared to 'has been on-site with,' and 'relevant' is added before 'authorities,' but these are minor paraphrasing choices rather than fabricated factual claims. No substantive fabricated additions were found.\"\n}\n```",
+  "judge_prompt_tokens": 501,
+  "judge_completion_tokens": 607,
+  "judge_cost_usd": 0.01768,
+  "timestamp": 1774952547.28964
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) to hedge the claim about two drones falling, indicating the information is preliminary and may change. The output drops this qualifier entirely and presents the drone crashes as established fact. This is a meaningful hedging removal on a critical factual claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita (no quantifier 'muutamia' but not a hedging removal per se, just a minor detail omission)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Kaksi droonia on pudonnut maahan Kouvolan pohjois- ja it\u00e4puolella \u2014 stated as established fact without the qualifier 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information)\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) to hedge the claim about two drones falling, indicating the information is preliminary and may change. The output drops this qualifier entirely and presents the drone crashes as established fact. This is a meaningful hedging removal on a critical factual claim.\"\n}\n```",
+  "judge_prompt_tokens": 749,
+  "judge_completion_tokens": 449,
+  "judge_cost_usd": 0.01497,
+  "timestamp": 1774952603.915384
+}

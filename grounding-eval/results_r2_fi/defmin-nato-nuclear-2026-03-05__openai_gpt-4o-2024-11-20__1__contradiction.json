@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. Key claims about the legislative proposal, its purpose, the current legal situation, the proposed changes, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026 all align with the source. The output uses slightly different wording (e.g., 'vahvistamiseksi' instead of 'mahdollistamiseksi') but these are paraphrases rather than contradictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. Key claims about the legislative proposal, its purpose, the current legal situation, the proposed changes, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026 all align with the source. The output uses slightly different wording (e.g., 'vahvistamiseksi' instead of 'mahdollistamiseksi') but these are paraphrases rather than contradictions.\"\n}\n```",
+  "judge_prompt_tokens": 1093,
+  "judge_completion_tokens": 163,
+  "judge_cost_usd": 0.00954,
+  "timestamp": 1774952603.918375
+}

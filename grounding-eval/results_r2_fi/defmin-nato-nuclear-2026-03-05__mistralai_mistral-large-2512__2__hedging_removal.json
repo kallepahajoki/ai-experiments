@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.5,
+    "evidence": "The source uses conditional verb forms ('olisivat', 'liittyisiv\u00e4t') to reflect that this is a legislative proposal, not yet enacted law. The output partially preserves the conditional ('olisivat') but changes 'liittyisiv\u00e4t' (conditional) to 'liittyv\u00e4t' (indicative), slightly reducing the hedging. However, the overall framing as a proposal ('esitys', 'lausuntokierrokselle') is maintained in the output's introduction. The hedging removal is minor and does not fundamentally misrepresent the content, as the output still clearly frames this as a proposal under consultation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"liittyisiv\u00e4t\",\n      \"context\": \"jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\"\n    },\n    {\n      \"expression\": \"esitet\u00e4\u00e4n\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia / liittyisiv\u00e4t\",\n      \"preserved\": false,\n      \"output_version\": \"N\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyv\u00e4t Suomen tai Naton puolustukseen \u2013 conditional 'olisivat' is preserved but 'liittyisiv\u00e4t' (conditional) is changed to 'liittyv\u00e4t' (indicative)\"\n    },\n    {\n      \"expression\": \"esitet\u00e4\u00e4n (proposed)\",\n      \"preserved\": false,\n      \"output_version\": \"Nykyinen t\u00e4ydellinen kielto... poistettaisiin \u2013 the framing that this is a proposal ('esitet\u00e4\u00e4n') is partially lost in the bullet point structure, though the intro mentions 'esityksen'\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"preserved\": false,\n      \"output_version\": \"eik\u00e4 Natolla ole suunnitelmia siit\u00e4 \u2013 slight rephrasing but meaning preserved adequately\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.5,\n  \"evidence\": \"The source uses conditional verb forms ('olisivat', 'liittyisiv\u00e4t') to reflect that this is a legislative proposal, not yet enacted law. The output partially preserves the conditional ('olisivat') but changes 'liittyisiv\u00e4t' (conditional) to 'liittyv\u00e4t' (indicative), slightly reducing the hedging. However, the overall framing as a proposal ('esitys', 'lausuntokierrokselle') is maintained in the output's introduction. The hedging removal is minor and does not fundamentally misrepresent the content, as the output still clearly frames this as a proposal under consultation.\"\n}\n```",
+  "judge_prompt_tokens": 1338,
+  "judge_completion_tokens": 763,
+  "judge_cost_usd": 0.025765,
+  "timestamp": 1774952603.9180539
+}

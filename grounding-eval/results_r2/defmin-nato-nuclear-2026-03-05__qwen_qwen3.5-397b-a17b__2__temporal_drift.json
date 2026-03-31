@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All dates match (2 April 2026). Event ordering is preserved. The only minor difference is 'is sending' vs 'has launched,' which is a slight tense shift but does not materially misrepresent the timeline or sequence of events. All other temporal relationships and tenses are faithfully represented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense - current action)\",\n    \"Under current legislation (present)\",\n    \"in future (future reference)\",\n    \"ends on 2 April 2026\",\n    \"remain criminalised (present/future)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has launched (present perfect - completed action)\",\n    \"ending on 2 April 2026\",\n    \"currently hinder (present)\",\n    \"would become permissible (conditional future)\",\n    \"do not have (present)\",\n    \"is not seeking (present)\",\n    \"nor is such deployment planned (present)\",\n    \"remain criminalized (present/future)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has launched a consultation period\",\n      \"source_temporal\": \"is sending a proposal... for a consultation round\",\n      \"explanation\": \"The source uses 'is sending' (present continuous), indicating the proposal is being sent out for consultation. The output uses 'has launched' (present perfect), which implies the consultation period has already begun. This is a minor tense shift but arguably a reasonable inference since the consultation period has a defined end date. The drift is minimal.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All dates match (2 April 2026). Event ordering is preserved. The only minor difference is 'is sending' vs 'has launched,' which is a slight tense shift but does not materially misrepresent the timeline or sequence of events. All other temporal relationships and tenses are faithfully represented.\"\n}\n```",
+  "judge_prompt_tokens": 736,
+  "judge_completion_tokens": 396,
+  "judge_cost_usd": 0.01358,
+  "timestamp": 1774952547.29849
+}

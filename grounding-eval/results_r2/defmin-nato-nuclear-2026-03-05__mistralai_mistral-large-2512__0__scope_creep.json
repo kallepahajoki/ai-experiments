@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The output adds illustrative examples ('transit or logistical support'), characterizes the proposal as a 'technical adjustment' (not in source), references Finland's 'long-standing non-nuclear stance' (background knowledge not in source), specifies 'aggression against Finland' where the source is more general, and substitutes 'NATO standards' for 'NATO operations.'",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"(e.g., transit or logistical support)\",\n      \"explanation\": \"The source does not mention 'transit or logistical support' as examples. These are inferred or added by the model as illustrative examples not present in the source document.\"\n    },\n    {\n      \"output_content\": \"raises the threshold for potential military aggression against Finland\",\n      \"explanation\": \"The source says 'forms the highest possible threshold for military action' \u2014 it does not specifically say 'military aggression against Finland.' The model has interpreted and narrowed the meaning beyond what the source states.\"\n    },\n    {\n      \"output_content\": \"This legislative update is framed as a technical adjustment to ensure Finland can fully integrate into NATO's defence framework while maintaining its long-standing non-nuclear stance.\",\n      \"explanation\": \"The source does not describe this as a 'technical adjustment,' nor does it reference Finland's 'long-standing non-nuclear stance.' These are characterizations and historical context added by the model from general knowledge.\"\n    },\n    {\n      \"output_content\": \"align Finnish legislation with NATO standards\",\n      \"explanation\": \"The source says the bill would 'align Finnish legislation with NATO operations,' not 'NATO standards.' 'Standards' is a slight reinterpretation.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output adds illustrative examples ('transit or logistical support'), characterizes the proposal as a 'technical adjustment' (not in source), references Finland's 'long-standing non-nuclear stance' (background knowledge not in source), specifies 'aggression against Finland' where the source is more general, and substitutes 'NATO standards' for 'NATO operations.'\"\n}\n```",
+  "judge_prompt_tokens": 851,
+  "judge_completion_tokens": 430,
+  "judge_cost_usd": 0.015005,
+  "timestamp": 1774952547.2965162
+}

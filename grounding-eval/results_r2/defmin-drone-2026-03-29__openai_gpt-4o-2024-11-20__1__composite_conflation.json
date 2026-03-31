@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each statement in the summary corresponds accurately to information in the source. The attribution to 'The Finnish Ministry of Defence' rather than the source's implicit narrator is a minor framing choice but does not constitute a composite conflation of two separate facts. All relationships presented (e.g., drones crashing, police securing areas, Defence Forces investigating with other authorities) match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. Each statement in the summary corresponds accurately to information in the source. The attribution to 'The Finnish Ministry of Defence' rather than the source's implicit narrator is a minor framing choice but does not constitute a composite conflation of two separate facts. All relationships presented (e.g., drones crashing, police securing areas, Defence Forces investigating with other authorities) match the source.\"\n}\n```",
+  "judge_prompt_tokens": 477,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.00596,
+  "timestamp": 1774952547.2930272
+}

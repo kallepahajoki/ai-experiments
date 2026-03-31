@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The output is largely faithful to the source in tone and content. Minor framing shifts include the addition of 'standard' before 'NATO operations' (implying normalcy), 'strictly' before 'criminalized' (editorial intensifier), 'lift the current absolute ban' (slightly more dramatic than the source's phrasing), and 'collective defence strategy' where the source just says 'operations.' These are subtle and do not substantially distort the source's meaning, but they do introduce mild editorial coloring.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"align national legislation with NATO's collective defence strategy\",\n      \"issue\": \"The source says 'align Finnish legislation with NATO operations' \u2014 adding 'collective defence strategy' introduces a slightly more specific strategic framing not present in the source's neutral phrasing.\"\n    },\n    {\n      \"output_phrase\": \"lift the current absolute ban\",\n      \"issue\": \"The source says the actions are 'completely prohibited.' While 'absolute ban' is close in meaning, 'lift' has a slightly more dramatic connotation than the source's neutral 'these actions would in future be possible.' The source frames it as enabling future possibility, not 'lifting a ban.'\"\n    },\n    {\n      \"output_phrase\": \"standard NATO operations\",\n      \"issue\": \"The source says 'NATO operations' without the qualifier 'standard.' Adding 'standard' implies a normative judgment that these operations are routine/normal, which is editorial framing.\"\n    },\n    {\n      \"output_phrase\": \"maximize security in an unpredictable environment\",\n      \"issue\": \"The source says 'maximise Finland's security in a difficult-to-predict operational environment.' Dropping 'Finland's' and 'operational' slightly generalizes the framing, and 'unpredictable' is a minor simplification of 'difficult-to-predict,' though this is a very minor shift.\"\n    },\n    {\n      \"output_phrase\": \"strictly criminalized\",\n      \"issue\": \"The source says 'remain criminalised in all circumstances.' The word 'strictly' adds an intensifying editorial qualifier not present in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. Minor framing shifts include the addition of 'standard' before 'NATO operations' (implying normalcy), 'strictly' before 'criminalized' (editorial intensifier), 'lift the current absolute ban' (slightly more dramatic than the source's phrasing), and 'collective defence strategy' where the source just says 'operations.' These are subtle and do not substantially distort the source's meaning, but they do introduce mild editorial coloring.\"\n}\n```",
+  "judge_prompt_tokens": 755,
+  "judge_completion_tokens": 540,
+  "judge_cost_usd": 0.017275,
+  "timestamp": 1774952547.295558
+}

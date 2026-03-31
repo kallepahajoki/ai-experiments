@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The output introduces several subtle framing shifts: attributing the report to the 'Finnish Ministry of Defence' (not in source), upgrading tentative 'according to current information' to definitive 'it has been confirmed,' and adding editorial characterization ('emphasized the seriousness of the situation') to a neutrally attributed quote. These shifts collectively make the summary sound more authoritative and dramatic than the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"The Finnish Ministry of Defence reported\",\n      \"issue\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source presents the information without a specific institutional attribution for the initial detection report, only attributing a quote to the Defense Minister. This adds an implied official source not explicitly stated.\"\n    },\n    {\n      \"output_phrase\": \"It has been confirmed that\",\n      \"issue\": \"The source says 'According to current information,' which conveys tentativeness and uncertainty. 'It has been confirmed' implies definitive verification, which is a stronger and more authoritative framing than the original.\"\n    },\n    {\n      \"output_phrase\": \"emphasized the seriousness of the situation\",\n      \"issue\": \"The source simply says 'Defense Minister Antti H\u00e4kk\u00e4nen states.' The word 'emphasized' adds editorial characterization of how the statement was delivered, and 'the seriousness of the situation' is an interpretive framing not present in the source's neutral attribution.\"\n    },\n    {\n      \"output_phrase\": \"crash sites\",\n      \"issue\": \"Minor framing shift: the source says 'the areas,' while 'crash sites' is slightly more dramatic and specific terminology, though largely consistent with the context.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The output introduces several subtle framing shifts: attributing the report to the 'Finnish Ministry of Defence' (not in source), upgrading tentative 'according to current information' to definitive 'it has been confirmed,' and adding editorial characterization ('emphasized the seriousness of the situation') to a neutrally attributed quote. These shifts collectively make the summary sound more authoritative and dramatic than the source.\"\n}\n```",
+  "judge_prompt_tokens": 489,
+  "judge_completion_tokens": 434,
+  "judge_cost_usd": 0.013295,
+  "timestamp": 1774952547.293171
+}

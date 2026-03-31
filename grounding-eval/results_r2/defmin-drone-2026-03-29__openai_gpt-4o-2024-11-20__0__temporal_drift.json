@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "All temporal expressions and event sequencing in the output faithfully match the source. 'Sunday morning' is preserved, tenses are consistent (past tense for events, present perfect for police securing areas, present tense for ongoing investigation), and the order of events (detection \u2192 F/A-18 deployment \u2192 drone crashes confirmed \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) is maintained. The only minor discrepancy is the attribution to 'The Finnish Ministry of Defence' as the reporting entity, which is not in the source but is not a temporal drift issue.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\"],\n  \"temporal_expressions_output\": [\"on Sunday morning\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"The Finnish Ministry of Defence reported\",\n      \"source_temporal\": \"(no attribution to the Ministry of Defence as the reporting entity)\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source presents the information without specifying a reporting entity (other than quoting Defense Minister Antti H\u00e4kk\u00e4nen). This is a factual/attribution issue rather than a strictly temporal one, but it does not constitute temporal drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"All temporal expressions and event sequencing in the output faithfully match the source. 'Sunday morning' is preserved, tenses are consistent (past tense for events, present perfect for police securing areas, present tense for ongoing investigation), and the order of events (detection \u2192 F/A-18 deployment \u2192 drone crashes confirmed \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) is maintained. The only minor discrepancy is the attribution to 'The Finnish Ministry of Defence' as the reporting entity, which is not in the source but is not a temporal drift issue.\"\n}\n```",
+  "judge_prompt_tokens": 488,
+  "judge_completion_tokens": 307,
+  "judge_cost_usd": 0.010115,
+  "timestamp": 1774952547.292811
+}

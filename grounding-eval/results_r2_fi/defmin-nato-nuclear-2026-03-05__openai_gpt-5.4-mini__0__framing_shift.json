@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful but introduces minor framing shifts: 'korostaa' editorializes the Ministry's tone, 'vahvistaa' softens 'maksimoida', 'samalle tasolle' reframes compatibility as equalization, and 'kuitenkin' adds a contrastive nuance. These are subtle rather than dramatic shifts.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"samalle tasolle kuin valtaosassa Nato-maita\",\n      \"issue\": \"The source says 'yhteensopivaksi Naton toimintojen kanssa' (compatible with NATO operations) and notes most NATO countries lack such restrictions. The summary rephrases this as bringing legislation 'to the same level as' most NATO countries, which subtly reframes compatibility with NATO operations into a comparison/equalization with other countries' legislation \u2014 a slight editorial shift in framing.\"\n    },\n    {\n      \"output_phrase\": \"vahvistaa Suomen turvallisuutta\",\n      \"issue\": \"The source uses 'maksimoida Suomen turvallisuus' (maximize Finland's security). 'Vahvistaa' (strengthen) is a softer, less ambitious term than 'maksimoida' (maximize), subtly toning down the stated objective.\"\n    },\n    {\n      \"output_phrase\": \"Puolustusministeri\u00f6 korostaa\",\n      \"issue\": \"The source simply states the fact ('Lains\u00e4\u00e4d\u00e4nt\u00f6muutoksessa ei ole kyse siit\u00e4...'). Adding 'korostaa' (emphasizes/stresses) introduces an editorial characterization of the Ministry's communicative intent not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"pysyv\u00e4t kuitenkin edelleen kiellettyin\u00e4\",\n      \"issue\": \"The word 'kuitenkin' (however) adds a contrastive/concessive tone not present in the source, subtly implying a tension or counterbalance that the source does not editorialize about.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful but introduces minor framing shifts: 'korostaa' editorializes the Ministry's tone, 'vahvistaa' softens 'maksimoida', 'samalle tasolle' reframes compatibility as equalization, and 'kuitenkin' adds a contrastive nuance. These are subtle rather than dramatic shifts.\"\n}\n```",
+  "judge_prompt_tokens": 1275,
+  "judge_completion_tokens": 531,
+  "judge_cost_usd": 0.01965,
+  "timestamp": 1774952603.9188669
+}

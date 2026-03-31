@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All dates, tenses, and event sequences in the output faithfully match the source. The consultation deadline of 2 April 2026 is correctly reproduced. The present/future tense framing is preserved throughout. No events are reordered. No temporal bleed from training data is detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present progressive)\",\n    \"Under current legislation (present)\",\n    \"in future (future reference)\",\n    \"would in future be possible (conditional future)\",\n    \"do not have (present)\",\n    \"would align (conditional future)\",\n    \"is not about (present)\",\n    \"does not seek (present)\",\n    \"nor is such deployment planned (present)\",\n    \"remain criminalised (present/future)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"is sending (present progressive)\",\n    \"Under current law (present)\",\n    \"The proposed amendment would allow (conditional future)\",\n    \"do not have (present)\",\n    \"would align (conditional future)\",\n    \"is not (present)\",\n    \"does not seek (present)\",\n    \"is not planning (present progressive)\",\n    \"would remain criminalized (conditional future)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"NATO is not planning it\",\n      \"source_temporal\": \"nor is such deployment planned within NATO\",\n      \"explanation\": \"Minor rephrasing from passive 'is planned' to active 'is not planning it' \u2014 this slightly shifts the nuance (from 'no such plan exists' to 'NATO is not actively planning'), but the temporal framing remains present tense. This is a very minor semantic shift, not a true temporal drift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All dates, tenses, and event sequences in the output faithfully match the source. The consultation deadline of 2 April 2026 is correctly reproduced. The present/future tense framing is preserved throughout. No events are reordered. No temporal bleed from training data is detected.\"\n}\n```",
+  "judge_prompt_tokens": 729,
+  "judge_completion_tokens": 464,
+  "judge_cost_usd": 0.015245,
+  "timestamp": 1774952547.297703
+}

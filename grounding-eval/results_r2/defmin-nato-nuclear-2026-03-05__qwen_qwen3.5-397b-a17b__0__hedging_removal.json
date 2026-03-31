@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source text is largely factual and declarative, describing a legislative proposal. There is very little hedging language in the source. The one statement that could be considered a soft claim \u2014 that no deployment is planned within NATO \u2014 is faithfully preserved in the output. The source uses 'difficult-to-predict operational environment' which is slightly hedging about the future security situation, but the output's rephrasing ('ensure the credibility of NATO's deterrence') does not misrepresent this as a factual claim in a problematic way. No meaningful hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"nor is any deployment planned within NATO\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source text is largely factual and declarative, describing a legislative proposal. There is very little hedging language in the source. The one statement that could be considered a soft claim \u2014 that no deployment is planned within NATO \u2014 is faithfully preserved in the output. The source uses 'difficult-to-predict operational environment' which is slightly hedging about the future security situation, but the output's rephrasing ('ensure the credibility of NATO's deterrence') does not misrepresent this as a factual claim in a problematic way. No meaningful hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 764,
+  "judge_completion_tokens": 264,
+  "judge_cost_usd": 0.01042,
+  "timestamp": 1774952547.2982342
+}

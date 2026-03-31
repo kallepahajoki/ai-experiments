@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully represents the relationships stated in the source. The causal connections mentioned (e.g., the change is based on security needs, the goal is to strengthen NATO deterrence credibility) are directly supported by the source text. The merging of 'Suomen sotilaallinen puolustus' and 'Naton yhteinen puolustus (mukaan lukien pelote)' in the opening sentence accurately reflects the source's stated purpose. No independent facts have been falsely merged into combined or causal claims.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully represents the relationships stated in the source. The causal connections mentioned (e.g., the change is based on security needs, the goal is to strengthen NATO deterrence credibility) are directly supported by the source text. The merging of 'Suomen sotilaallinen puolustus' and 'Naton yhteinen puolustus (mukaan lukien pelote)' in the opening sentence accurately reflects the source's stated purpose. No independent facts have been falsely merged into combined or causal claims.\"\n}\n```",
+  "judge_prompt_tokens": 1300,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.010525,
+  "timestamp": 1774952603.9179142
+}

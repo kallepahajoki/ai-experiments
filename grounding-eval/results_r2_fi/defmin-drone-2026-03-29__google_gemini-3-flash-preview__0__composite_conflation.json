@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The bullet points faithfully separate the observation, actions taken, official assessment, and follow-up investigations. The grouping of the two drone crash locations ('Kouvolan pohjois- ja it\u00e4puolelle') under 'Toimenpiteet' alongside the Air Force identification is a reasonable organizational choice that does not create a false causal link \u2014 the source also presents these facts in close proximity. The word 'useita' (several) is a slight softening of 'muutamia' (a few), but this is a minor wording difference, not a conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The bullet points faithfully separate the observation, actions taken, official assessment, and follow-up investigations. The grouping of the two drone crash locations ('Kouvolan pohjois- ja it\u00e4puolelle') under 'Toimenpiteet' alongside the Air Force identification is a reasonable organizational choice that does not create a false causal link \u2014 the source also presents these facts in close proximity. The word 'useita' (several) is a slight softening of 'muutamia' (a few), but this is a minor wording difference, not a conflation.\"\n}\n```",
+  "judge_prompt_tokens": 777,
+  "judge_completion_tokens": 191,
+  "judge_cost_usd": 0.00866,
+  "timestamp": 1774952603.911327
+}

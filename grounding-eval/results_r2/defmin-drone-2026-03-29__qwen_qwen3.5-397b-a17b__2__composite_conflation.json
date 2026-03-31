@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The output uses 'subsequently' to link the F/A-18 deployment with the drone crashes, implying the crashes followed from or were related to the fighter's actions. The source presents the crashes as separate information ('According to current information') without connecting them to the Hornet's identification efforts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Two drones subsequently crashed, one north and one east of Kouvola, where police have secured the areas for investigation.\",\n      \"source_facts\": [\n        \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\",\n        \"Police have secured the areas for further investigation.\"\n      ],\n      \"explanation\": \"The word 'subsequently' implies a temporal/causal sequence suggesting the drones crashed as a consequence of or after the F/A-18 deployment. The source does not establish any causal or sequential link between the Hornet's identification mission and the drones crashing. These are presented as independent facts in the source.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The output uses 'subsequently' to link the F/A-18 deployment with the drone crashes, implying the crashes followed from or were related to the fighter's actions. The source presents the crashes as separate information ('According to current information') without connecting them to the Hornet's identification efforts.\"\n}\n```",
+  "judge_prompt_tokens": 463,
+  "judge_completion_tokens": 275,
+  "judge_cost_usd": 0.00919,
+  "timestamp": 1774952547.295033
+}

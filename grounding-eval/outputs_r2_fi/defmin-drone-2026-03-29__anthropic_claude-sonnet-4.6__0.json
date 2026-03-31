@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "content": "## Tiivistelm\u00e4\n\nSunnuntaiaamuna Suomen ilmatilassa havaittiin useita matalalent\u00e4vi\u00e4 pieni\u00e4 kohteita merialueella ja Kaakkois-Suomessa. Kaksi dronea putosi maahan Kouvolan pohjoispuolelle ja it\u00e4puolelle, ja poliisi on erist\u00e4nyt alueet tutkimuksia varten. Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n.\n\nPuolustusministeri Antti H\u00e4kk\u00e4nen vahvisti, ett\u00e4 lennokit ovat harhautuneet Suomen alueelle, ja korosti viranomaisten suhtautuvan asiaan vakavasti. Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.",
+  "prompt_tokens": 313,
+  "completion_tokens": 222,
+  "cost_usd": 0.004269,
+  "latency_ms": 4572.029417002341,
+  "timestamp": 1774951404.524032
+}

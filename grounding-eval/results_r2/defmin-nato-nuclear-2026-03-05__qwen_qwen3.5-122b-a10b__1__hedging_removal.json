@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "Two minor instances of hedging removal: (1) 'is sending' becomes 'has submitted,' changing an ongoing action to a completed one; (2) 'The bill would align' becomes 'This amendment aligns,' dropping the conditional 'would' and presenting the alignment as established fact rather than contingent on the bill's passage. Neither involves critical claims about suspected wrongdoing or major uncertainty, so the severity is low.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"is sending\", \"context\": \"The Ministry of Defence is sending a proposal... for a consultation round \u2014 implies the proposal is being sent, not yet submitted/finalized\"},\n    {\"expression\": \"proposes that these actions would in future be possible\", \"context\": \"The bill proposes that these actions would in future be possible if they were related to Finland's military defence \u2014 conditional/proposed change, not enacted\"},\n    {\"expression\": \"would align\", \"context\": \"The bill would align Finnish legislation with NATO operations \u2014 conditional on passage\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"is sending\", \"preserved\": false, \"output_version\": \"has submitted a proposal \u2014 changes 'is sending' (in progress) to 'has submitted' (completed action), slightly stronger but minor\"},\n    {\"expression\": \"proposes that these actions would in future be possible\", \"preserved\": true, \"output_version\": \"The proposal would allow these actions if they are related to...\"},\n    {\"expression\": \"would align\", \"preserved\": true, \"output_version\": \"This amendment aligns Finnish legislation \u2014 drops 'would' conditionality, presenting alignment as a fact of the amendment rather than conditional on passage\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"Two minor instances of hedging removal: (1) 'is sending' becomes 'has submitted,' changing an ongoing action to a completed one; (2) 'The bill would align' becomes 'This amendment aligns,' dropping the conditional 'would' and presenting the alignment as established fact rather than contingent on the bill's passage. Neither involves critical claims about suspected wrongdoing or major uncertainty, so the severity is low.\"\n}\n```",
+  "judge_prompt_tokens": 762,
+  "judge_completion_tokens": 421,
+  "judge_cost_usd": 0.014335,
+  "timestamp": 1774952547.2979782
+}

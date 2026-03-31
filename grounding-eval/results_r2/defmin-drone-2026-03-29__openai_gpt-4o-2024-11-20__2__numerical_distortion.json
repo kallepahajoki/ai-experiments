@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values and quantities in the output match those in the source. 'Several' objects detected, 'one' drone north of Kouvola, 'another' east of Kouvola \u2014 all consistent.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\"],\n  \"numbers_in_output\": [\"several\", \"one\", \"another\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values and quantities in the output match those in the source. 'Several' objects detected, 'one' drone north of Kouvola, 'another' east of Kouvola \u2014 all consistent.\"\n}\n```",
+  "judge_prompt_tokens": 482,
+  "judge_completion_tokens": 128,
+  "judge_cost_usd": 0.00561,
+  "timestamp": 1774952547.2931042
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. The summary accurately separates the detection event, the Air Force response, the drone crashes, the minister's statement, and the ongoing investigation. The minister's quote is paraphrased but preserves the original meaning without introducing causal links not present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. The summary accurately separates the detection event, the Air Force response, the drone crashes, the minister's statement, and the ongoing investigation. The minister's quote is paraphrased but preserves the original meaning without introducing causal links not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 473,
+  "judge_completion_tokens": 119,
+  "judge_cost_usd": 0.00534,
+  "timestamp": 1774952547.29366
+}

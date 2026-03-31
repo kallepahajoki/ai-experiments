@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the source without adding external context, historical references, or explanations beyond what is provided. Minor wording differences (e.g., 'korostaa' instead of 'toteaa', 'nopeasti' instead of 'v\u00e4litt\u00f6m\u00e4sti') are paraphrasing choices that do not introduce new information. The omission of 'merialueella' (sea area) from the location description is a minor detail loss but not scope creep.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the source without adding external context, historical references, or explanations beyond what is provided. Minor wording differences (e.g., 'korostaa' instead of 'toteaa', 'nopeasti' instead of 'v\u00e4litt\u00f6m\u00e4sti') are paraphrasing choices that do not introduce new information. The omission of 'merialueella' (sea area) from the location description is a minor detail loss but not scope creep.\"\n}\n```",
+  "judge_prompt_tokens": 693,
+  "judge_completion_tokens": 166,
+  "judge_cost_usd": 0.007615,
+  "timestamp": 1774952603.913245
+}

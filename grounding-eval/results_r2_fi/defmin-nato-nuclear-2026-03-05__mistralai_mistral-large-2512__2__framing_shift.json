@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The summary is largely faithful to the source in tone and content. The most notable framing shift is the use of 'vahvistaminen' (strengthening) instead of 'varmistaa' (ensure), which subtly changes the framing from maintaining credibility to actively enhancing it. The replacement of 'vaikeasti ennakoitavassa' with 'ep\u00e4varmassa' is a minor semantic difference. Overall, the summary is well-structured and avoids dramatic or editorializing language, so the framing shifts are minor.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Naton pelotteen uskottavuuden vahvistaminen\",\n      \"issue\": \"The source says the goal is to 'varmistaa' (ensure) that NATO's deterrent is credible, not to 'vahvistaa' (strengthen) it. 'Vahvistaminen' implies an active enhancement or escalation, whereas the source frames it as maintaining/ensuring existing credibility. This is a subtle but meaningful framing shift.\"\n    },\n    {\n      \"output_phrase\": \"ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n      \"issue\": \"The source uses 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' (difficult to predict), which is a more specific and neutral descriptor. 'Ep\u00e4varmassa' (uncertain) is a slightly different characterization, though this is a minor semantic shift rather than a strong framing issue.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. The most notable framing shift is the use of 'vahvistaminen' (strengthening) instead of 'varmistaa' (ensure), which subtly changes the framing from maintaining credibility to actively enhancing it. The replacement of 'vaikeasti ennakoitavassa' with 'ep\u00e4varmassa' is a minor semantic difference. Overall, the summary is well-structured and avoids dramatic or editorializing language, so the framing shifts are minor.\"\n}\n```",
+  "judge_prompt_tokens": 1277,
+  "judge_completion_tokens": 393,
+  "judge_cost_usd": 0.01621,
+  "timestamp": 1774952603.91808
+}

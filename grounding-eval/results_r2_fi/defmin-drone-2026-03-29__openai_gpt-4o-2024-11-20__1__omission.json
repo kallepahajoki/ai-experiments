@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.82,
+    "evidence": "Merkitt\u00e4vimm\u00e4t puutteet ovat merialueen mainitsematta j\u00e4tt\u00e4minen havaintoalueena, 't\u00e4m\u00e4n hetken tietojen mukaan' -varauksen puuttuminen (joka muuttaa tiedon varmuusastetta), sek\u00e4 H\u00e4kk\u00e4sen k\u00e4ytt\u00e4m\u00e4n 'harhautunut'-sanan puuttuminen, joka kuvaa tapahtuman luonnetta. Mik\u00e4\u00e4n yksitt\u00e4inen puute ei ole kriittinen, mutta yhdess\u00e4 ne heikent\u00e4v\u00e4t tiivistelm\u00e4n tarkkuutta.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Havainnot tehtiin sunnuntai-aamuna\",\n    \"Havainnot tehtiin Suomen ilmatilassa merialueella ja Kaakkois-Suomessa\",\n    \"Kohteita oli muutamia\",\n    \"Kohteet olivat matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat oli paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan (caveat) yksi drooni on pudonnut Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa asiasta\",\n    \"Suomen alueelle on harhautunut lennokkeja (H\u00e4kk\u00e4sen kuvaus)\",\n    \"Asiaan suhtaudutaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Havainnot tehtiin my\u00f6s merialueella, ei pelk\u00e4st\u00e4\u00e4n Kaakkois-Suomessa\", \"importance\": \"high\"},\n    {\"fact\": \"Kohteet kuvattiin hitaiksi (hitaita), mik\u00e4 puuttuu tiivistelm\u00e4st\u00e4\", \"importance\": \"medium\"},\n    {\"fact\": \"Tieto droonien putoamisesta oli varustettu varauksella 't\u00e4m\u00e4n hetken tietojen mukaan'\", \"importance\": \"high\"},\n    {\"fact\": \"Yksi drooni putosi Kouvolan pohjoispuolella ja toinen Kouvolan it\u00e4puolella \u2013 tarkat sijainnit korvattu yleisell\u00e4 'Kouvolan alueella'\", \"importance\": \"medium\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen kuvasi lennokkien 'harhautuneen' Suomen alueelle\", \"importance\": \"high\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen k\u00e4ytti sanaa 'v\u00e4litt\u00f6m\u00e4sti', tiivistelm\u00e4ss\u00e4 'nopeasti'\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.82,\n  \"evidence\": \"Merkitt\u00e4vimm\u00e4t puutteet ovat merialueen mainitsematta j\u00e4tt\u00e4minen havaintoalueena, 't\u00e4m\u00e4n hetken tietojen mukaan' -varauksen puuttuminen (joka muuttaa tiedon varmuusastetta), sek\u00e4 H\u00e4kk\u00e4sen k\u00e4ytt\u00e4m\u00e4n 'harhautunut'-sanan puuttuminen, joka kuvaa tapahtuman luonnetta. Mik\u00e4\u00e4n yksitt\u00e4inen puute ei ole kriittinen, mutta yhdess\u00e4 ne heikent\u00e4v\u00e4t tiivistelm\u00e4n tarkkuutta.\"\n}\n```",
+  "judge_prompt_tokens": 680,
+  "judge_completion_tokens": 835,
+  "judge_cost_usd": 0.024275,
+  "timestamp": 1774952603.913488
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false combined or causal claims. The relationships presented (e.g., amendments aiming to support NATO defence, current prohibitions being modified for military defence purposes, Finland not seeking deployment) are all faithfully represented as stated in the source. The causal/purposive connections ('aim to support,' 'intended to enhance') correctly reflect the source's stated objectives. The summary properly keeps separate the facts about what remains criminalized versus what would be permitted.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false combined or causal claims. The relationships presented (e.g., amendments aiming to support NATO defence, current prohibitions being modified for military defence purposes, Finland not seeking deployment) are all faithfully represented as stated in the source. The causal/purposive connections ('aim to support,' 'intended to enhance') correctly reflect the source's stated objectives. The summary properly keeps separate the facts about what remains criminalized versus what would be permitted.\"\n}\n```",
+  "judge_prompt_tokens": 663,
+  "judge_completion_tokens": 150,
+  "judge_cost_usd": 0.007065,
+  "timestamp": 1774952547.297216
+}

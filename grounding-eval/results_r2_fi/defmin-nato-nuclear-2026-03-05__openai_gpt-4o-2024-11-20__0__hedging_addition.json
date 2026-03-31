@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. The conditional 'sallisi' (would allow) appropriately reflects the source's use of 'olisivat jatkossa mahdollisia' (would be possible in the future), which is conditional because it is a legislative proposal, not yet enacted law. This is not inappropriate hedging but accurate representation of the proposal's status.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added. The conditional 'sallisi' (would allow) appropriately reflects the source's use of 'olisivat jatkossa mahdollisia' (would be possible in the future), which is conditional because it is a legislative proposal, not yet enacted law. This is not inappropriate hedging but accurate representation of the proposal's status.\"\n}\n```",
+  "judge_prompt_tokens": 1066,
+  "judge_completion_tokens": 162,
+  "judge_cost_usd": 0.00938,
+  "timestamp": 1774952603.918256
+}

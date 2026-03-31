@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source's definitive statements without adding inappropriate hedging language. The conditional 'poistettaisiin' and 'olisivat' forms used in the output appropriately reflect the fact that this is a legislative proposal (esitys) being sent for consultation, which the source itself presents in conditional terms ('esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia'). No instances of 'may', 'might', 'reportedly', 'allegedly' or equivalent Finnish hedging terms were added to factual statements.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source's definitive statements without adding inappropriate hedging language. The conditional 'poistettaisiin' and 'olisivat' forms used in the output appropriately reflect the fact that this is a legislative proposal (esitys) being sent for consultation, which the source itself presents in conditional terms ('esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia'). No instances of 'may', 'might', 'reportedly', 'allegedly' or equivalent Finnish hedging terms were added to factual statements.\"\n}\n```",
+  "judge_prompt_tokens": 1108,
+  "judge_completion_tokens": 174,
+  "judge_cost_usd": 0.00989,
+  "timestamp": 1774952603.91979
+}

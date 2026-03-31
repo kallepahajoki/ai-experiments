@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary accurately reflects the source document's key points. The only notable addition is the characterization of the change as a 'technical adjustment,' which is an editorial framing not present in the source, but this is an embellishment rather than a contradiction. All substantive claims in the output align with the source material.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence has submitted a proposal to amend the Nuclear Energy Act and the Criminal Code for public consultation.\",\n      \"source_statement\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n      \"explanation\": \"The source says the Ministry is 'sending' the proposal for consultation, implying it is in the process of doing so. The output says it 'has submitted' the proposal, which could be seen as a minor tense difference but is not a direct contradiction. However, the output adds the word 'public' to describe the consultation, which is not specified in the source. This is an addition rather than a contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary accurately reflects the source document's key points. The only notable addition is the characterization of the change as a 'technical adjustment,' which is an editorial framing not present in the source, but this is an embellishment rather than a contradiction. All substantive claims in the output align with the source material.\"\n}\n```",
+  "judge_prompt_tokens": 794,
+  "judge_completion_tokens": 276,
+  "judge_cost_usd": 0.01087,
+  "timestamp": 1774952547.296633
+}

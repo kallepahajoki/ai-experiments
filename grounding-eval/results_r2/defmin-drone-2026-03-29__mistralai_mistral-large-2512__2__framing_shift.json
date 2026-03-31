@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The most significant framing shift is the interpretation of 'strayed into Finnish territory' as 'entered Finnish territory unintentionally,' which adds a specific intent characterization not explicitly stated in the source. The source's use of 'strayed' is ambiguous and could carry different connotations. Other minor issues include substituting 'preliminary' for 'current' and adding an editorial closing line.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"the drones had entered Finnish territory unintentionally\",\n      \"issue\": \"The source says 'Drones have strayed into Finnish territory,' which could mean unintentional entry but does not explicitly state 'unintentionally.' The word 'strayed' is ambiguous and could also imply unauthorized entry. The summary adds an interpretive gloss ('unintentionally') that introduces a specific causal/intentional framing not definitively present in the source.\"\n    },\n    {\n      \"output_phrase\": \"preliminary information\",\n      \"issue\": \"Minor: the source says 'current information,' not 'preliminary information.' While similar, 'preliminary' subtly implies the information may be less reliable or subject to change, which is a slight editorial shift.\"\n    },\n    {\n      \"output_phrase\": \"No further details were provided at this time\",\n      \"issue\": \"This is an added editorial statement not present in the source. While arguably a reasonable inference, it frames the communication as notably limited, which is an editorial addition.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The most significant framing shift is the interpretation of 'strayed into Finnish territory' as 'entered Finnish territory unintentionally,' which adds a specific intent characterization not explicitly stated in the source. The source's use of 'strayed' is ambiguous and could carry different connotations. Other minor issues include substituting 'preliminary' for 'current' and adding an editorial closing line.\"\n}\n```",
+  "judge_prompt_tokens": 532,
+  "judge_completion_tokens": 383,
+  "judge_cost_usd": 0.012235,
+  "timestamp": 1774952547.2926679
+}

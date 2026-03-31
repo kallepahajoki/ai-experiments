@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions and event orderings in the output faithfully reflect the source. The date 2.4.2026 is correctly reproduced. Tenses (present for current state, conditional for proposed changes, present for what remains prohibited) are consistent with the source. Event sequencing (proposal \u2192 changes \u2192 Finland's stance \u2192 NATO compatibility \u2192 timeline) is logically preserved without reordering of causally or temporally linked events.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense \u2013 ongoing action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (current legislation)\",\n    \"olisivat jatkossa mahdollisia (conditional future \u2013 would be possible in the future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa (remain criminalized)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Muutetaan ydinenergia\u2011 ja rikoslains\u00e4\u00e4d\u00e4nt\u00f6\u00e4 (present tense \u2013 proposal to amend)\",\n    \"olisivat jatkossa sallittuja (conditional future \u2013 would be permitted in the future)\",\n    \"pysyv\u00e4t rikosoikeudellisesti kiellettyin\u00e4 kaikissa tilanteissa (remain criminally prohibited)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions and event orderings in the output faithfully reflect the source. The date 2.4.2026 is correctly reproduced. Tenses (present for current state, conditional for proposed changes, present for what remains prohibited) are consistent with the source. Event sequencing (proposal \u2192 changes \u2192 Finland's stance \u2192 NATO compatibility \u2192 timeline) is logically preserved without reordering of causally or temporally linked events.\"\n}\n```",
+  "judge_prompt_tokens": 1368,
+  "judge_completion_tokens": 393,
+  "judge_cost_usd": 0.016665,
+  "timestamp": 1774952603.917056
+}

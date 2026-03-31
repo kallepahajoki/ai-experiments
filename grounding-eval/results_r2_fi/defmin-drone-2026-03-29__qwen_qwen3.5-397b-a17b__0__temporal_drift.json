@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary contains minor tense shifts: 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (present perfect, ongoing) \u2192 'suoritti' (simple past, completed); 'ovat reagoineet' (present perfect) \u2192 'reagoivat' (present tense). These alter the temporal aspect of the events, though the overall event sequence and date (sunnuntai-aamuna) are preserved correctly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Ilmavoimat suoritti tunnistuksen\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4\",\n      \"explanation\": \"The source uses the present perfect ('on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4'), implying an ongoing or recently completed state. The output changes this to simple past tense ('suoritti tunnistuksen'), which implies a completed, discrete action. This is a tense shift from present perfect (ongoing) to simple past (completed).\"\n    },\n    {\n      \"output_temporal\": \"viranomaiset reagoivat v\u00e4litt\u00f6m\u00e4sti\",\n      \"source_temporal\": \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n      \"explanation\": \"The source uses the present perfect ('ovat reagoineet'), indicating the response has already taken place. The output uses the present tense ('reagoivat'), which could be interpreted as a general/habitual or ongoing action rather than a completed one. This is a tense shift from perfect to present.\"\n    },\n    {\n      \"output_temporal\": \"Tapahtuman seurauksena kaksi droonia on pudonnut\",\n      \"source_temporal\": \"yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\",\n      \"explanation\": \"The source states the drone falls as factual findings ('T\u00e4m\u00e4n hetken tietojen mukaan' \u2014 according to current information). The output rephrases this as 'Tapahtuman seurauksena' (as a consequence of the event), which introduces a causal framing not present in the source. While not strictly a temporal drift, it subtly reorders the logical/causal relationship of events.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary contains minor tense shifts: 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (present perfect, ongoing) \u2192 'suoritti' (simple past, completed); 'ovat reagoineet' (present perfect) \u2192 'reagoivat' (present tense). These alter the temporal aspect of the events, though the overall event sequence and date (sunnuntai-aamuna) are preserved correctly.\"\n}\n```",
+  "judge_prompt_tokens": 691,
+  "judge_completion_tokens": 656,
+  "judge_cost_usd": 0.019855,
+  "timestamp": 1774952603.915173
+}

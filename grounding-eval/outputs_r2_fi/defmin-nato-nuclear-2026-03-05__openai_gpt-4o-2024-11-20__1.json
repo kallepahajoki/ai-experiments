@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "content": "Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle esityksen ydinenergia- ja rikoslain muuttamisesta. Esityksen tavoitteena on poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen vahvistamiseksi osana Natoa ja sen yhteist\u00e4 puolustusta. Nykyinen laki kielt\u00e4\u00e4 ydinr\u00e4j\u00e4hteiden tuomisen, kuljettamisen, toimittamisen ja hallussapidon Suomessa, mutta lakimuutoksen my\u00f6t\u00e4 n\u00e4m\u00e4 olisivat mahdollisia, jos ne liittyv\u00e4t Suomen puolustukseen tai Naton toimintaan. \n\nEsitys ei tarkoita, ett\u00e4 Suomi tavoittelisi ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole suunnitteilla. Ydinr\u00e4j\u00e4hteiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen pysyv\u00e4t edelleen rikoksina. Muutoksella pyrit\u00e4\u00e4n varmistamaan Naton pelotteen uskottavuus ja Suomen turvallisuus muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4. Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026.",
+  "prompt_tokens": 441,
+  "completion_tokens": 244,
+  "cost_usd": 0.0035425,
+  "latency_ms": 2873.043208004674,
+  "timestamp": 1774951725.609091
+}

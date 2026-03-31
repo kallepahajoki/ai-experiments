@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "content": "**Tiivistelm\u00e4 Puolustusministeri\u00f6n tiedotteesta:**\n\nPuolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle esityksen **ydinenergialain ja rikoslain muuttamisesta**, jotta Suomen sotilaallinen puolustus voisi t\u00e4ysim\u00e4\u00e4r\u00e4isesti hy\u00f6dynt\u00e4\u00e4 **Naton pelotetta ja yhteist\u00e4 puolustusta**.\n\n**Keskeiset muutokset:**\n- Nykyinen **t\u00e4ydellinen kielto** ydinr\u00e4j\u00e4hteiden tuomiselle, kuljettamiselle, toimittamiselle tai hallussapidolle Suomessa poistettaisiin.\n- N\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, **jos ne liittyv\u00e4t Suomen tai Naton puolustukseen tai puolustusyhteisty\u00f6h\u00f6n**.\n- Muutos yhdenmukaistaisi Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n **Naton k\u00e4yt\u00e4nt\u00f6jen kanssa**, sill\u00e4 useimmilla Naton mailla ei ole vastaavia rajoituksia.\n\n**Tavoitteet:**\n- **Turvallisuuden maksimoiminen** ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4.\n- **Naton pelotteen uskottavuuden** vahvistaminen, mukaan lukien kaikki sen osa-alueet.\n- **Ei ydinaseiden sijoittamista Suomeen** \u2013 Suomi ei tavoittele niit\u00e4, eik\u00e4 Natolla ole suunnitelmia siit\u00e4.\n\n**S\u00e4ilyv\u00e4t kiellot:**\n- Ydinr\u00e4j\u00e4hteiden **hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen** pysyv\u00e4t kiellettyin\u00e4 kaikissa tilanteissa.\n\n**Aikataulu:**\n- Lausuntokierros p\u00e4\u00e4ttyy **2.4.2026**.",
+  "prompt_tokens": 478,
+  "completion_tokens": 390,
+  "cost_usd": 0.000824,
+  "latency_ms": 9142.841207998572,
+  "timestamp": 1774951713.439123
+}

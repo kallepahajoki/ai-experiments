@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The numbers and quantities in the output are consistent with the source. 'Kaksi droonia' is a faithful summary of 'yksi drooni... ja toinen drooni.' The qualifier 'muutamia' (several/a few) in the source is not explicitly reproduced but is not contradicted either. No numerical distortions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (several)\", \"F/A-18\", \"yksi (one)\", \"toinen (second/another)\"],\n  \"numbers_in_output\": [\"F/A-18\", \"kaksi (two)\", \"toinen (one)\", \"toinen (another)\"],\n  \"distortions\": [\n    {\n      \"output_value\": \"kaksi droonia (two drones)\",\n      \"source_value\": \"yksi drooni... ja toinen drooni (one drone... and another drone)\",\n      \"explanation\": \"While 'kaksi' (two) is a reasonable inference from 'one... and another,' the source does not explicitly state 'two drones' \u2014 it describes them individually. This is a minor rephrasing but numerically equivalent, so not a true distortion.\"\n    }\n  ],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The numbers and quantities in the output are consistent with the source. 'Kaksi droonia' is a faithful summary of 'yksi drooni... ja toinen drooni.' The qualifier 'muutamia' (several/a few) in the source is not explicitly reproduced but is not contradicted either. No numerical distortions were found.\"\n}\n```",
+  "judge_prompt_tokens": 753,
+  "judge_completion_tokens": 315,
+  "judge_cost_usd": 0.01164,
+  "timestamp": 1774952603.9129338
+}

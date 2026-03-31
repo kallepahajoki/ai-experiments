@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "content": "The Finnish Ministry of Defence is sending for consultation a proposal to amend the **Nuclear Energy Act** and the **Criminal Code** so that Finland can remove legal obstacles to fully participate in **NATO\u2019s deterrence and collective defence**.\n\nKey points:\n- Under current law, **bringing a nuclear explosive into Finland, transporting it, delivering it, or possessing it is completely prohibited**.\n- The proposed amendment would allow these actions **only if they are connected to Finland\u2019s military defence, NATO collective defence, or defence cooperation**.\n- The aim is to align Finnish law with the practices of **most other NATO member states**, which do not have similar restrictions.\n- The government says the change is meant to **maximize Finland\u2019s security** in an unpredictable security environment and to ensure that **NATO\u2019s deterrence remains credible**.\n- The ministry stresses that this **does not mean Finland is seeking nuclear weapons on its territory**; Finland does not seek such deployment, and **NATO has no such deployment plans** for Finland.\n- At the same time, the **acquisition, manufacture, development, and detonation** of nuclear explosives would **remain criminalized in all circumstances**.\n- The consultation period ends on **2 April 2026**.",
+  "prompt_tokens": 276,
+  "completion_tokens": 258,
+  "cost_usd": 0.001368,
+  "latency_ms": 1842.7638339926489,
+  "timestamp": 1774951374.994402
+}

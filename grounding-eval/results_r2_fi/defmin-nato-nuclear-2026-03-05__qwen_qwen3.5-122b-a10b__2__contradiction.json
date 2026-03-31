@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key points \u2014 the legislative change removing the ban on import/transport/possession of nuclear explosives for defense purposes, the retained prohibitions on acquisition/manufacturing/development/detonation, Finland not seeking nuclear weapons on its territory, alignment with most NATO countries' legislation, and the consultation deadline of 2.4.2026 \u2014 are consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key points \u2014 the legislative change removing the ban on import/transport/possession of nuclear explosives for defense purposes, the retained prohibitions on acquisition/manufacturing/development/detonation, Finland not seeking nuclear weapons on its territory, alignment with most NATO countries' legislation, and the consultation deadline of 2.4.2026 \u2014 are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 1099,
+  "judge_completion_tokens": 127,
+  "judge_cost_usd": 0.00867,
+  "timestamp": 1774952603.919722
+}

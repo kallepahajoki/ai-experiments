@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output contains only a well-structured summary of the source text with a descriptive heading. There are no instruction echoes, system prompt fragments, or meta-commentary about the task.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [],\n  \"leakage_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output contains only a well-structured summary of the source text with a descriptive heading. There are no instruction echoes, system prompt fragments, or meta-commentary about the task.\"\n}\n```",
+  "judge_prompt_tokens": 725,
+  "judge_completion_tokens": 86,
+  "judge_cost_usd": 0.005775,
+  "timestamp": 1774952603.910888
+}

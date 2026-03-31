@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be directly traced to the source document. The summary accurately paraphrases the source without introducing external knowledge, background context, or additional details beyond what was provided. Minor phrasing differences like 'blanket prohibition' and 'unpredictable operational environment' are reasonable paraphrases of the source's 'completely prohibited' and 'difficult-to-predict operational environment' respectively.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be directly traced to the source document. The summary accurately paraphrases the source without introducing external knowledge, background context, or additional details beyond what was provided. Minor phrasing differences like 'blanket prohibition' and 'unpredictable operational environment' are reasonable paraphrases of the source's 'completely prohibited' and 'difficult-to-predict operational environment' respectively.\"\n}\n```",
+  "judge_prompt_tokens": 654,
+  "judge_completion_tokens": 136,
+  "judge_cost_usd": 0.00667,
+  "timestamp": 1774952547.297051
+}

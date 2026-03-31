@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4' (present perfect, emphasizing ongoing presence), while the summary renders this as 'Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n' (simple past 'l\u00e4hetti', implying a completed dispatching action). This is a tense change from present perfect to simple past and a slight reframing of the event. All other temporal elements and event ordering are faithfully preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaina aamulla\",\n    \"l\u00e4hetti (past tense / imperfekti)\",\n    \"on pudonnut (present perfect)\",\n    \"on eristetty (present perfect passive)\",\n    \"ovat reagoineet v\u00e4litt\u00f6m\u00e4sti (present perfect)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti (past tense / imperfekti)\",\n      \"source_temporal\": \"on ollut paikalla (present perfect / perfekti)\",\n      \"explanation\": \"The source uses the present perfect 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present for an identification mission), implying an ongoing or recently completed state. The summary changes this to the simple past 'l\u00e4hetti' (sent), which is a slight tense shift and also a semantic shift (from 'has been on scene' to 'sent'). This is a minor tense drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4' (present perfect, emphasizing ongoing presence), while the summary renders this as 'Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n' (simple past 'l\u00e4hetti', implying a completed dispatching action). This is a tense change from present perfect to simple past and a slight reframing of the event. All other temporal elements and event ordering are faithfully preserved.\"\n}\n```",
+  "judge_prompt_tokens": 806,
+  "judge_completion_tokens": 517,
+  "judge_cost_usd": 0.016955,
+  "timestamp": 1774952603.9119081
+}

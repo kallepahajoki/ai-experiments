@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'yksi drooni' (one drone) fell north of Kouvola and 'toinen drooni' (another drone) fell east of Kouvola, totaling two drones. The output says 'Kaksi droonia putosi maahan' (two drones fell), which is a correct summation. The F/A-18 designation is preserved. The source says 'muutamia' (a few) objects were detected, and the output says 'matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' without specifying the exact quantity but doesn't contradict the source. No numerical distortions found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"kaksi (two) droonia\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'yksi drooni' (one drone) fell north of Kouvola and 'toinen drooni' (another drone) fell east of Kouvola, totaling two drones. The output says 'Kaksi droonia putosi maahan' (two drones fell), which is a correct summation. The F/A-18 designation is preserved. The source says 'muutamia' (a few) objects were detected, and the output says 'matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' without specifying the exact quantity but doesn't contradict the source. No numerical distortions found.\"\n}\n```",
+  "judge_prompt_tokens": 734,
+  "judge_completion_tokens": 264,
+  "judge_cost_usd": 0.01027,
+  "timestamp": 1774952603.912717
+}

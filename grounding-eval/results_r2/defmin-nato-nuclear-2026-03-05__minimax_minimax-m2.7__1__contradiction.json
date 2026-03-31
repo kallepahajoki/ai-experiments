@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key points from the source document. Each bullet point in the output corresponds faithfully to statements in the source. The goal, current prohibition, planned amendment, NATO alignment, security rationale, no-deployment clarification, continued criminalisation, and consultation deadline are all consistent with the source. The phrase 'especially those involving nuclear explosives' in the Goal bullet is an interpretive addition but not a contradiction. The phrase 'serves as the highest possible threshold against aggression' slightly rewords 'forms the highest possible threshold for military action' but is not contradictory.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key points from the source document. Each bullet point in the output corresponds faithfully to statements in the source. The goal, current prohibition, planned amendment, NATO alignment, security rationale, no-deployment clarification, continued criminalisation, and consultation deadline are all consistent with the source. The phrase 'especially those involving nuclear explosives' in the Goal bullet is an interpretive addition but not a contradiction. The phrase 'serves as the highest possible threshold against aggression' slightly rewords 'forms the highest possible threshold for military action' but is not contradictory.\"\n}\n```",
+  "judge_prompt_tokens": 797,
+  "judge_completion_tokens": 167,
+  "judge_cost_usd": 0.00816,
+  "timestamp": 1774952547.2960582
+}

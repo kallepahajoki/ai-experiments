@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.8,
+    "evidence": "The summary largely maintains the neutral, informational tone of the source. The minor differences identified (e.g., 'sallittuja' vs 'mahdollisia', active vs passive construction regarding NATO plans) are subtle and do not constitute significant editorial framing shifts. No loaded language, dramatic framing, or implied causality was introduced. The overall tone remains factual and aligned with the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"sallittuja\",\n      \"issue\": \"The source uses the more cautious phrasing 'olisivat jatkossa mahdollisia' (would be possible in the future), while the summary uses 'sallittuja' (permitted/allowed), which is a slightly stronger and more definitive framing than the source's conditional language.\"\n    },\n    {\n      \"output_phrase\": \"Suomi ei edelleenk\u00e4\u00e4n tavoittele ydinaseita alueelleen, eik\u00e4 Nato suunnittele niiden sijoittamista Suomeen\",\n      \"issue\": \"The source says 'eik\u00e4 sellaista ole Natossa suunnitteilla' (no such thing is being planned in NATO), while the summary rephrases this as 'eik\u00e4 Nato suunnittele niiden sijoittamista Suomeen' (NATO is not planning to place them in Finland). The source's phrasing is a passive statement about the absence of plans, while the summary's active construction subtly shifts the framing, though the factual content is essentially the same.\"\n    },\n    {\n      \"output_phrase\": \"Ydinaseiden valmistus, hankkiminen ja r\u00e4j\u00e4ytt\u00e4minen pysyv\u00e4t rikoksina\",\n      \"issue\": \"The source also includes 'kehitt\u00e4minen' (development) in the list of actions that remain criminalized. The omission slightly underrepresents the scope of restrictions, though this is more an accuracy issue than a framing issue.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.8,\n  \"evidence\": \"The summary largely maintains the neutral, informational tone of the source. The minor differences identified (e.g., 'sallittuja' vs 'mahdollisia', active vs passive construction regarding NATO plans) are subtle and do not constitute significant editorial framing shifts. No loaded language, dramatic framing, or implied causality was introduced. The overall tone remains factual and aligned with the source.\"\n}\n```",
+  "judge_prompt_tokens": 1162,
+  "judge_completion_tokens": 502,
+  "judge_cost_usd": 0.01836,
+  "timestamp": 1774952603.916327
+}

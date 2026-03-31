@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "Multiple tense shifts from present perfect and present tense in the source to simple past tense in the summary. While these are relatively minor and common in summarization (especially in Finnish where press releases often use present perfect for recency), they collectively shift the temporal framing from an ongoing/just-completed situation to a completed past narrative. No wrong dates, reordered events, or temporal bleed were found. The event sequence is preserved correctly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Kaksi droonia putosi maahan\",\n      \"source_temporal\": \"yksi drooni on pudonnut maahan ... ja toinen drooni\",\n      \"explanation\": \"The source uses the present perfect tense ('on pudonnut' \u2014 has fallen), indicating a recently completed event with present relevance. The summary shifts to simple past tense ('putosi' \u2014 fell), which is a minor tense change. This slightly alters the temporal framing from an ongoing/just-completed situation to a completed past event.\"\n    },\n    {\n      \"output_temporal\": \"Ilmavoimat tunnisti tilanteen F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n      \"explanation\": \"The source uses the present perfect ('on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' \u2014 has been present on an identification mission), implying an ongoing or recently ongoing state. The summary uses simple past ('tunnisti' \u2014 identified) and also subtly changes the meaning from 'being present on an identification mission' to 'identified the situation', which is both a tense shift and a slight semantic shift.\"\n    },\n    {\n      \"output_temporal\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen ilmoitti\",\n      \"source_temporal\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa\",\n      \"explanation\": \"The source uses present tense ('toteaa' \u2014 states), typical of press release style indicating a current statement. The summary shifts to past tense ('ilmoitti' \u2014 announced/informed), moving the temporal framing from present to past.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"Multiple tense shifts from present perfect and present tense in the source to simple past tense in the summary. While these are relatively minor and common in summarization (especially in Finnish where press releases often use present perfect for recency), they collectively shift the temporal framing from an ongoing/just-completed situation to a completed past narrative. No wrong dates, reordered events, or temporal bleed were found. The event sequence is preserved correctly.\"\n}\n```",
+  "judge_prompt_tokens": 742,
+  "judge_completion_tokens": 635,
+  "judge_cost_usd": 0.019585,
+  "timestamp": 1774952603.912746
+}

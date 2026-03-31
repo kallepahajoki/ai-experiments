@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source's definitive statements without adding inappropriate hedging language. The statements are presented with the same level of certainty as in the source. Words like 'proposed,' 'aims,' and 'emphasized' accurately reflect the nature of the actions described (it is indeed a proposal, it does aim at certain goals, and the Ministry did emphasize certain points). No instances of 'may,' 'might,' 'reportedly,' 'allegedly,' or other hedging terms were inappropriately added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source's definitive statements without adding inappropriate hedging language. The statements are presented with the same level of certainty as in the source. Words like 'proposed,' 'aims,' and 'emphasized' accurately reflect the nature of the actions described (it is indeed a proposal, it does aim at certain goals, and the Ministry did emphasize certain points). No instances of 'may,' 'might,' 'reportedly,' 'allegedly,' or other hedging terms were inappropriately added.\"\n}\n```",
+  "judge_prompt_tokens": 631,
+  "judge_completion_tokens": 158,
+  "judge_cost_usd": 0.007105,
+  "timestamp": 1774952547.297028
+}

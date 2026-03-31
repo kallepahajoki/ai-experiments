@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "content": "T\u00e4ss\u00e4 on tiivistelm\u00e4 puolustusministeri\u00f6n tiedotteesta:\n\nPuolustusministeri\u00f6 esitt\u00e4\u00e4 muutoksia ydinenergia- ja rikoslakiin poistaakseen esteet Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iselt\u00e4 hy\u00f6dynt\u00e4miselt\u00e4.\n\n**Keskeiset kohdat:**\n*   **Lains\u00e4\u00e4d\u00e4nn\u00f6n muutos:** Jatkossa ydinr\u00e4j\u00e4hteiden tuominen Suomeen, kuljettaminen ja hallussapito olisi sallittua, jos se liittyy Suomen tai Naton sotilaalliseen puolustukseen. Nykyisin n\u00e4m\u00e4 ovat t\u00e4ysin kiellettyj\u00e4.\n*   **Tavoite:** Maksimoida Suomen turvallisuus ja varmistaa Naton pelotteen uskottavuus muuttuneessa toimintaymp\u00e4rist\u00f6ss\u00e4. Muutos saattaa Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n linjaan muiden Nato-maiden kanssa.\n*   **Rajoitukset:** Suomi ei edelleenk\u00e4\u00e4n tavoittele ydinaseiden sijoittamista alueelleen. Ydinr\u00e4j\u00e4hteiden valmistus, hankkiminen ja r\u00e4j\u00e4ytt\u00e4minen s\u00e4ilyv\u00e4t rikoksina kaikissa tilanteissa.\n*   **Aikataulu:** Esitys on l\u00e4hetetty lausuntokierrokselle, joka p\u00e4\u00e4ttyy 2.4.2026.",
+  "prompt_tokens": 477,
+  "completion_tokens": 310,
+  "cost_usd": 0.0011685,
+  "latency_ms": 3068.744208998396,
+  "timestamp": 1774951681.4026399
+}

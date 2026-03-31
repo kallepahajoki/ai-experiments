@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source document. Key claims about the law change, its purpose, restrictions remaining in place, Finland not seeking nuclear weapons, and the consultation deadline all align with the source. The summary mentions 'ydinaseiden valmistus, hankkiminen ja r\u00e4j\u00e4ytt\u00e4minen' staying criminal, which corresponds to the source's 'hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen' \u2014 the omission of 'kehitt\u00e4minen' (development) is a minor omission but not a contradiction. No statements in the output say the opposite of what the source states.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source document. Key claims about the law change, its purpose, restrictions remaining in place, Finland not seeking nuclear weapons, and the consultation deadline all align with the source. The summary mentions 'ydinaseiden valmistus, hankkiminen ja r\u00e4j\u00e4ytt\u00e4minen' staying criminal, which corresponds to the source's 'hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen' \u2014 the omission of 'kehitt\u00e4minen' (development) is a minor omission but not a contradiction. No statements in the output say the opposite of what the source states.\"\n}\n```",
+  "judge_prompt_tokens": 1128,
+  "judge_completion_tokens": 181,
+  "judge_cost_usd": 0.010165,
+  "timestamp": 1774952603.916233
+}

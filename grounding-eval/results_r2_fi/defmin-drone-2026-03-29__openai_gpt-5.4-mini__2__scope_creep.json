@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely follows the source document without introducing external background context, historical references, or explanations beyond what the source provides. The two flagged issues are minor wording inaccuracies (muutamia\u2192useita, hyvin\u2192eritt\u00e4in) rather than scope creep from training data or general knowledge.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"useita matalalla lent\u00e4vi\u00e4\",\n      \"explanation\": \"The source says 'muutamia' (a few), but the output says 'useita' (several). This is a slight alteration but not scope creep from external knowledge \u2014 it's more of a mistranslation/inaccuracy.\"\n    },\n    {\n      \"output_content\": \"asiaan suhtaudutaan eritt\u00e4in vakavasti\",\n      \"explanation\": \"The source says 'hyvin vakavasti' (very seriously), but the output says 'eritt\u00e4in vakavasti' (extremely seriously). This is a minor wording change but not scope creep from external knowledge.\"\n    }\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely follows the source document without introducing external background context, historical references, or explanations beyond what the source provides. The two flagged issues are minor wording inaccuracies (muutamia\u2192useita, hyvin\u2192eritt\u00e4in) rather than scope creep from training data or general knowledge.\"\n}\n```",
+  "judge_prompt_tokens": 729,
+  "judge_completion_tokens": 288,
+  "judge_cost_usd": 0.010845,
+  "timestamp": 1774952603.914346
+}

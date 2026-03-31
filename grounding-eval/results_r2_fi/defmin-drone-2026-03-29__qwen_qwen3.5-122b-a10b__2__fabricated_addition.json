@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The output introduces the framing that this is a 'Puolustusministeri\u00f6n tiedote' (a press release from the Ministry of Defence). The source document does not identify itself as being from the Ministry of Defence. While the Defence Minister is quoted, the source does not attribute the document to the Ministry of Defence specifically.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"Sunnuntai-aamuna havaittiin Suomen ilmatilassa, merialueella ja Kaakkois-Suomessa matalalla lent\u00e4vi\u00e4 hitaita kohteita.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n    },\n    {\n      \"claim\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\"\n    },\n    {\n      \"claim\": \"Tapahtuman seurauksena kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle.\",\n      \"grounded\": true,\n      \"source_evidence\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"claim\": \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\"\n    },\n    {\n      \"claim\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa, ett\u00e4 lennokit harhautuivat Suomen alueelle.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: \\\"Suomen alueelle on harhautunut lennokkeja.\\\"\"\n    },\n    {\n      \"claim\": \"Asiaan suhtaudutaan vakavasti.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suhtaudumme asiaan hyvin vakavasti.\"\n    },\n    {\n      \"claim\": \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\"\n    },\n    {\n      \"claim\": \"Tiedote on Puolustusministeri\u00f6n tiedote.\",\n      \"grounded\": false,\n      \"source_evidence\": null\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output introduces the framing that this is a 'Puolustusministeri\u00f6n tiedote' (a press release from the Ministry of Defence). The source document does not identify itself as being from the Ministry of Defence. While the Defence Minister is quoted, the source does not attribute the document to the Ministry of Defence specifically.\"\n}\n```",
+  "judge_prompt_tokens": 735,
+  "judge_completion_tokens": 815,
+  "judge_cost_usd": 0.02405,
+  "timestamp": 1774952603.914856
+}

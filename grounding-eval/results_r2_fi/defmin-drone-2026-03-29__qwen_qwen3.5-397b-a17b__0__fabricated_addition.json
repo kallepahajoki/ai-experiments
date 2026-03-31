@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The phrase 'Tapahtuman seurauksena' (as a consequence of the event) introduces a causal implication not present in the source. The source simply states that two drones fell, without suggesting they fell as a consequence of any particular action or event. This is a minor but notable addition of implied causation. Otherwise, the summary is faithful to the source, though it omits the descriptor 'hitaita' (slow) from the original description of the objects.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"Suomen ilmatilassa havaittiin sunnuntai-aamuna matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita merialueella ja Kaakkois-Suomessa.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n    },\n    {\n      \"claim\": \"Ilmavoimat suoritti tunnistuksen F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\"\n    },\n    {\n      \"claim\": \"Tapahtuman seurauksena kaksi droonia on pudonnut maahan Kouvolan pohjois- ja it\u00e4puolella.\",\n      \"grounded\": false,\n      \"source_evidence\": \"The source says 'yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella' \u2014 the facts about two drones falling are correct, but the phrase 'Tapahtuman seurauksena' (as a consequence of the event) implies a causal link (e.g., that the drones fell as a result of some action) that is not stated in the source. The source simply reports that drones fell, without attributing causation.\"\n    },\n    {\n      \"claim\": \"Poliisi on erist\u00e4nyt alueet tutkimuksia varten.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\"\n    },\n    {\n      \"claim\": \"Puolustusministeri Antti H\u00e4kk\u00e4sen mukaan asiaan suhtaudutaan hyvin vakavasti.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suhtaudumme asiaan hyvin vakavasti.\"\n    },\n    {\n      \"claim\": \"Viranomaiset reagoivat v\u00e4litt\u00f6m\u00e4sti.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.\"\n    },\n    {\n      \"claim\": \"Puolustusvoimat tutkii tapahtumaa yhteisty\u00f6ss\u00e4 muiden viranomaisten kanssa.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\"\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The phrase 'Tapahtuman seurauksena' (as a consequence of the event) introduces a causal implication not present in the source. The source simply states that two drones fell, without suggesting they fell as a consequence of any particular action or event. This is a minor but notable addition of implied causation. Otherwise, the summary is faithful to the source, though it omits the descriptor 'hitaita' (slow) from the original description of the objects.\"\n}\n```",
+  "judge_prompt_tokens": 709,
+  "judge_completion_tokens": 859,
+  "judge_cost_usd": 0.02502,
+  "timestamp": 1774952603.915113
+}

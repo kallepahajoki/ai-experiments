@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the key points: the legislative proposal to amend nuclear energy and criminal law, the purpose of enabling NATO's full deterrence, the specific acts that would be permitted (bringing, transporting, delivering, possessing nuclear explosives for defense purposes), Finland not seeking nuclear weapons on its territory, the continued criminalization of acquiring/manufacturing/developing/detonating nuclear explosives, compatibility with other NATO countries' legislation, and the consultation deadline of 2.4.2026. The term 'rikoksina' (crimes) is a reasonable paraphrase of 'kriminalisoituina' (criminalized) from the source. No external context or training data knowledge was added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the key points: the legislative proposal to amend nuclear energy and criminal law, the purpose of enabling NATO's full deterrence, the specific acts that would be permitted (bringing, transporting, delivering, possessing nuclear explosives for defense purposes), Finland not seeking nuclear weapons on its territory, the continued criminalization of acquiring/manufacturing/developing/detonating nuclear explosives, compatibility with other NATO countries' legislation, and the consultation deadline of 2.4.2026. The term 'rikoksina' (crimes) is a reasonable paraphrase of 'kriminalisoituina' (criminalized) from the source. No external context or training data knowledge was added.\"\n}\n```",
+  "judge_prompt_tokens": 1077,
+  "judge_completion_tokens": 210,
+  "judge_cost_usd": 0.010635,
+  "timestamp": 1774952603.920203
+}

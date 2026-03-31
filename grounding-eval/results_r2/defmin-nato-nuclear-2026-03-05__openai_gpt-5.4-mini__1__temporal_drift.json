@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "All key dates (2 April 2026), tenses, and event sequences are faithfully preserved. The only notable difference is a minor paraphrase ('difficult-to-predict operational environment' \u2192 'rapidly changing and unpredictable security environment') which introduces a slight temporal connotation ('rapidly changing') not in the source, but this does not constitute a meaningful temporal drift in terms of dates, times, tenses, or event ordering.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense)\",\n    \"Under current legislation (present)\",\n    \"in future (future reference)\",\n    \"The consultation period ends on 2 April 2026\",\n    \"remain criminalised (present/future)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"is sending (present tense)\",\n    \"At present (present)\",\n    \"would be permitted (conditional/future)\",\n    \"runs until 2 April 2026\",\n    \"would remain criminalized (conditional/future)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"a rapidly changing and unpredictable security environment\",\n      \"source_temporal\": \"a difficult-to-predict operational environment\",\n      \"explanation\": \"The source says 'difficult-to-predict operational environment.' The output changes this to 'rapidly changing and unpredictable security environment,' introducing the temporal/dynamic notion of 'rapidly changing' which is not present in the source. While 'unpredictable' is a reasonable paraphrase of 'difficult-to-predict,' 'rapidly changing' adds a temporal characterization not found in the original. This is a minor embellishment rather than a strict temporal drift in dates or event ordering.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"All key dates (2 April 2026), tenses, and event sequences are faithfully preserved. The only notable difference is a minor paraphrase ('difficult-to-predict operational environment' \u2192 'rapidly changing and unpredictable security environment') which introduces a slight temporal connotation ('rapidly changing') not in the source, but this does not constitute a meaningful temporal drift in terms of dates, times, tenses, or event ordering.\"\n}\n```",
+  "judge_prompt_tokens": 729,
+  "judge_completion_tokens": 433,
+  "judge_cost_usd": 0.01447,
+  "timestamp": 1774952547.2975519
+}

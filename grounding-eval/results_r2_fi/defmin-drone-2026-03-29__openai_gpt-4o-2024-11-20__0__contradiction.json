@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.8,
+    "evidence": "The summary is largely faithful to the source. The main differences are omissions (sea area, 'slow' descriptor, 'muutamia'/several) rather than direct contradictions. The word 'nopeasti' (quickly) replaces 'v\u00e4litt\u00f6m\u00e4sti' (immediately) which is a minor paraphrase difference but not a true contradiction. No statement in the output directly says the opposite of what the source states.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Sunnuntaiaamuna Suomen ilmatilassa Kaakkois-Suomessa havaittiin matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita.\",\n      \"source_statement\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n      \"explanation\": \"The summary omits 'merialueella' (sea area) as a location where objects were detected, and also omits 'hitaita' (slow) as a descriptor. While these are omissions rather than direct contradictions, the phrasing narrows the location to only Kaakkois-Suomi, which could be seen as slightly misleading but not a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.8,\n  \"evidence\": \"The summary is largely faithful to the source. The main differences are omissions (sea area, 'slow' descriptor, 'muutamia'/several) rather than direct contradictions. The word 'nopeasti' (quickly) replaces 'v\u00e4litt\u00f6m\u00e4sti' (immediately) which is a minor paraphrase difference but not a true contradiction. No statement in the output directly says the opposite of what the source states.\"\n}\n```",
+  "judge_prompt_tokens": 661,
+  "judge_completion_tokens": 348,
+  "judge_cost_usd": 0.012005,
+  "timestamp": 1774952603.913124
+}

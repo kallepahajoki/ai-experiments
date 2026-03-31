@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely follows the source document without introducing external knowledge, historical context, or background information beyond what is provided. The minor rephrasing identified does not constitute scope creep from training data or general knowledge \u2014 it is a paraphrase variation rather than added information.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"provide a strong threshold against military threats\",\n      \"explanation\": \"The source says 'forms the highest possible threshold for military action,' not 'a strong threshold against military threats.' The rephrasing subtly changes the meaning \u2014 'military action' in the source refers to deterring adversaries from taking military action, while 'military threats' is a broader and slightly different concept. However, this is more of a paraphrase issue than scope creep.\"\n    }\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely follows the source document without introducing external knowledge, historical context, or background information beyond what is provided. The minor rephrasing identified does not constitute scope creep from training data or general knowledge \u2014 it is a paraphrase variation rather than added information.\"\n}\n```",
+  "judge_prompt_tokens": 657,
+  "judge_completion_tokens": 215,
+  "judge_cost_usd": 0.00866,
+  "timestamp": 1774952547.297329
+}

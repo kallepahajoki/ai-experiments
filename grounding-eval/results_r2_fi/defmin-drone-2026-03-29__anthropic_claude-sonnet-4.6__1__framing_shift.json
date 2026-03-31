@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.78,
+    "evidence": "The output introduces several subtle framing shifts: it amplifies quantity ('muutamia' \u2192 'useita'), removes ambiguity by labeling unidentified objects as drones, adds certainty not present in the source ('vahvistettu' vs. 't\u00e4m\u00e4n hetken tietojen mukaan'), and slightly alters the minister's quoted tone. None are dramatic distortions, but collectively they shift the framing toward greater definitiveness and slightly heightened scale.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"useita matalalla lent\u00e4vi\u00e4 pieni\u00e4 drooneja\",\n      \"issue\": \"The source says 'muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' (a few slow-moving small objects). The output changes 'muutamia' (a few) to 'useita' (several/multiple), slightly amplifying the scale, and replaces the neutral 'kohteita' (objects) with 'drooneja' (drones), removing the ambiguity present in the source. The word 'hitaita' (slow) is also omitted.\"\n    },\n    {\n      \"output_phrase\": \"Kaksi droonin on vahvistettu pudonneen maahan\",\n      \"issue\": \"The source says 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which conveys tentativeness. The output uses 'vahvistettu' (confirmed), which implies a higher degree of certainty than the source provides.\"\n    },\n    {\n      \"output_phrase\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen pit\u00e4\u00e4 tapausta vakavana\",\n      \"issue\": \"Minor reframing: the source quotes H\u00e4kk\u00e4nen saying 'Suhtaudumme asiaan hyvin vakavasti' (we take the matter very seriously). The output paraphrases this as 'pit\u00e4\u00e4 tapausta vakavana' (considers the incident serious), dropping 'hyvin' (very) and the collective 'we', subtly softening and personalizing the statement.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.78,\n  \"evidence\": \"The output introduces several subtle framing shifts: it amplifies quantity ('muutamia' \u2192 'useita'), removes ambiguity by labeling unidentified objects as drones, adds certainty not present in the source ('vahvistettu' vs. 't\u00e4m\u00e4n hetken tietojen mukaan'), and slightly alters the minister's quoted tone. None are dramatic distortions, but collectively they shift the framing toward greater definitiveness and slightly heightened scale.\"\n}\n```",
+  "judge_prompt_tokens": 716,
+  "judge_completion_tokens": 537,
+  "judge_cost_usd": 0.017005,
+  "timestamp": 1774952603.91083
+}

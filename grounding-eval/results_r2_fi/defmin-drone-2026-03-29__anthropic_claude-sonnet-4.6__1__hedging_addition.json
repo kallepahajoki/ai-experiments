@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language (e.g., 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'ilmeisesti') has been added. The factual claims about drone sightings, the F/A-18 deployment, the two drones falling, police cordoning off areas, and the minister's statements are all presented with the same certainty as in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language (e.g., 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'ilmeisesti') has been added. The factual claims about drone sightings, the F/A-18 deployment, the two drones falling, police cordoning off areas, and the minister's statements are all presented with the same certainty as in the source.\"\n}\n```",
+  "judge_prompt_tokens": 691,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.00748,
+  "timestamp": 1774952603.910808
+}

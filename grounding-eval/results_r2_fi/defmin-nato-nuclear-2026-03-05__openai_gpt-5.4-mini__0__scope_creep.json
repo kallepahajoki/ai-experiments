@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully summarizes the source document without introducing external information. All claims in the output can be traced back to the source. Minor wording differences (e.g., 'vahvistaa Suomen turvallisuutta' vs. 'maksimoida Suomen turvallisuus', 'samalle tasolle' vs. 'yhteensopivaksi') are paraphrases that do not introduce new factual content beyond what the source provides.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully summarizes the source document without introducing external information. All claims in the output can be traced back to the source. Minor wording differences (e.g., 'vahvistaa Suomen turvallisuutta' vs. 'maksimoida Suomen turvallisuus', 'samalle tasolle' vs. 'yhteensopivaksi') are paraphrases that do not introduce new factual content beyond what the source provides.\"\n}\n```",
+  "judge_prompt_tokens": 1273,
+  "judge_completion_tokens": 154,
+  "judge_cost_usd": 0.010215,
+  "timestamp": 1774952603.918876
+}

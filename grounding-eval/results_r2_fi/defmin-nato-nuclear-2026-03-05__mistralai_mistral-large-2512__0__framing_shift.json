@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary is largely faithful but introduces minor framing shifts: 'integrating' instead of 'removing obstacles', 'strengthening credibility' instead of 'ensuring credibility', and framing the change as 'removing a complete ban' rather than 'enabling conditional exceptions'. These are subtle editorial choices that slightly alter the tone from the neutral, careful language of the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"jotta Suomen sotilaallinen puolustus voidaan integroida t\u00e4ysim\u00e4\u00e4r\u00e4isesti Naton yhteiseen puolustukseen ja pelotteeseen\",\n      \"issue\": \"The source says the purpose is to 'remove legislative obstacles' ('poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet') to enable defense as part of an alliance and to fully utilize NATO's deterrence. The summary reframes this as 'integrating' Finland's defense into NATO, which introduces a slightly different causal/purposive framing \u2014 'integration' implies a deeper structural merging not explicitly stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"Naton pelotteen uskottavuuden vahvistaminen\",\n      \"issue\": \"The source says the goal is to 'ensure' ('varmistaa') that NATO's deterrent is credible. The summary uses 'vahvistaminen' (strengthening/reinforcing), which implies the deterrent currently lacks credibility and needs to be bolstered \u2014 a subtle editorial shift from the neutral 'ensuring' in the source.\"\n    },\n    {\n      \"output_phrase\": \"ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n      \"issue\": \"The source uses 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' (difficult to predict/hard to anticipate operating environment). The summary simplifies this to 'ep\u00e4varmassa' (uncertain), which is a minor tonal shift \u2014 'uncertain' is slightly less specific than 'hard to anticipate' but not dramatically different.\"\n    },\n    {\n      \"output_phrase\": \"Nykyinen t\u00e4ydellinen kielto... poistettaisiin\",\n      \"issue\": \"The source says these activities would be 'made possible' ('olisivat jatkossa mahdollisia') under certain conditions. Saying the 'complete ban would be removed' is factually accurate but frames the change more dramatically as a removal of a prohibition rather than as enabling specific conditional exceptions.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary is largely faithful but introduces minor framing shifts: 'integrating' instead of 'removing obstacles', 'strengthening credibility' instead of 'ensuring credibility', and framing the change as 'removing a complete ban' rather than 'enabling conditional exceptions'. These are subtle editorial choices that slightly alter the tone from the neutral, careful language of the source.\"\n}\n```",
+  "judge_prompt_tokens": 1284,
+  "judge_completion_tokens": 619,
+  "judge_cost_usd": 0.021895,
+  "timestamp": 1774952603.917614
+}

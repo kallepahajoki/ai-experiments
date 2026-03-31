@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. The summary accurately reflects the relationships present in the source: the legislative change is linked to NATO compatibility and defense purposes as stated in the original, and no new causal connections are introduced. The phrase 'Suomen puolustukseen tai Naton toimintaan' is a reasonable condensation of the source's 'Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n' without creating a false conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. The summary accurately reflects the relationships present in the source: the legislative change is linked to NATO compatibility and defense purposes as stated in the original, and no new causal connections are introduced. The phrase 'Suomen puolustukseen tai Naton toimintaan' is a reasonable condensation of the source's 'Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n' without creating a false conflation.\"\n}\n```",
+  "judge_prompt_tokens": 1129,
+  "judge_completion_tokens": 180,
+  "judge_cost_usd": 0.010145,
+  "timestamp": 1774952603.9185212
+}

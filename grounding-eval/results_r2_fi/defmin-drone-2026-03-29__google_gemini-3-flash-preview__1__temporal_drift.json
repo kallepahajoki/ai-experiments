@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary preserves the key temporal expression 'sunnuntaiaamuna' (Sunday morning) accurately, matching the source's 'sunnuntai-aamuna'. The event sequence is maintained: (1) objects detected Sunday morning, (2) Air Force responded with Hornet, (3) two drones found fallen near Kouvola, (4) police cordoned off areas, (5) investigation ongoing. Tenses are consistent with the source. The omission of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) and 'v\u00e4litt\u00f6m\u00e4sti' (immediately) does not constitute temporal drift, just minor detail omission. No reordering, tense shifts, or date errors detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntaiaamuna\"],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary preserves the key temporal expression 'sunnuntaiaamuna' (Sunday morning) accurately, matching the source's 'sunnuntai-aamuna'. The event sequence is maintained: (1) objects detected Sunday morning, (2) Air Force responded with Hornet, (3) two drones found fallen near Kouvola, (4) police cordoned off areas, (5) investigation ongoing. Tenses are consistent with the source. The omission of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) and 'v\u00e4litt\u00f6m\u00e4sti' (immediately) does not constitute temporal drift, just minor detail omission. No reordering, tense shifts, or date errors detected.\"\n}\n```",
+  "judge_prompt_tokens": 761,
+  "judge_completion_tokens": 265,
+  "judge_cost_usd": 0.01043,
+  "timestamp": 1774952603.9114099
+}

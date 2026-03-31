@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "Minor tense shift from present 'l\u00e4hett\u00e4\u00e4' to perfect 'on l\u00e4hetetty'. The date 2.4.2026 is correctly preserved. Event ordering is accurate. All other temporal relationships are faithfully represented. The drift is minor and does not materially alter the meaning.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense - sends for consultation)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina (remain criminalized)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Jatkossa (in the future)\",\n    \"Nykyisin n\u00e4m\u00e4 ovat t\u00e4ysin kiellettyj\u00e4 (currently these are fully prohibited)\",\n    \"ei edelleenk\u00e4\u00e4n tavoittele (still does not seek)\",\n    \"pysyv\u00e4t rikoksina (remain crimes)\",\n    \"on l\u00e4hetetty lausuntokierrokselle (has been sent for consultation)\",\n    \"p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hetetty lausuntokierrokselle (has been sent - past/perfect tense)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (sends - present tense)\",\n      \"explanation\": \"The source uses present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the action is happening now or is being announced. The output uses the perfect tense 'on l\u00e4hetetty' (has been sent), shifting it slightly to a completed past action. This is a minor tense drift but does not significantly misrepresent the event.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"Minor tense shift from present 'l\u00e4hett\u00e4\u00e4' to perfect 'on l\u00e4hetetty'. The date 2.4.2026 is correctly preserved. Event ordering is accurate. All other temporal relationships are faithfully represented. The drift is minor and does not materially alter the meaning.\"\n}\n```",
+  "judge_prompt_tokens": 1163,
+  "judge_completion_tokens": 486,
+  "judge_cost_usd": 0.017965,
+  "timestamp": 1774952603.9162712
+}

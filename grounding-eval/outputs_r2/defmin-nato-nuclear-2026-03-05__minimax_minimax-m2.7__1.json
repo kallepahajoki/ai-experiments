@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "content": "**Summary of the Finnish Ministry of Defence press release**\n\n- **Proposal for legislative change** \u2013 The Ministry of Defence has sent a bill to amend the Nuclear Energy Act and the Criminal Code to a public\u2011consultation round.  \n- **Goal** \u2013 Remove the legal obstacles that currently prevent Finland from using NATO\u2019s deterrence and collective\u2011defence capabilities, especially those involving nuclear explosives, as part of its alliance obligations.  \n- **Current prohibition** \u2013 Finnish law now bans the import, transport, delivery, or possession of any nuclear explosive in the country.  \n- **Planned amendment** \u2013 The bill would allow those actions **if they are linked to** Finland\u2019s own military defence, NATO\u2019s collective defence, or defence\u2011cooperation activities.  \n- **Alignment with NATO** \u2013 Most NATO members do not have comparable restrictions; the change would bring Finnish legislation in line with NATO operational practices.  \n- **Security rationale** \u2013 The amendment is driven by the need to maximize Finland\u2019s security in an unpredictable strategic environment and to ensure NATO\u2019s deterrence (including all its components) remains credible and serves as the highest possible threshold against aggression.  \n- **No intention to acquire or host nuclear weapons** \u2013 The proposal explicitly clarifies that Finland is **not seeking** nuclear weapons on its territory and that no deployment of nuclear arms is planned by Finland or by NATO.  \n- **Continued criminalisation** \u2013 The acquisition, manufacture, development, and detonation of nuclear explosives remain illegal in all circumstances under the amended law.  \n- **Consultation deadline** \u2013 Comments on the bill must be submitted by **2\u202fApril\u202f2026**.",
+  "prompt_tokens": 308,
+  "completion_tokens": 1651,
+  "cost_usd": 0.0041472,
+  "latency_ms": 29446.311666004476,
+  "timestamp": 1774951556.53142
+}

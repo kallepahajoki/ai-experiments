@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately paraphrases the source without adding external knowledge or context. Minor wording differences (e.g., 'korostaa' instead of 'toteaa', 'nopeasti' instead of 'v\u00e4litt\u00f6m\u00e4sti', omission of 'merialueella') are paraphrasing choices rather than scope creep \u2014 they don't introduce new information from outside the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately paraphrases the source without adding external knowledge or context. Minor wording differences (e.g., 'korostaa' instead of 'toteaa', 'nopeasti' instead of 'v\u00e4litt\u00f6m\u00e4sti', omission of 'merialueella') are paraphrasing choices rather than scope creep \u2014 they don't introduce new information from outside the source.\"\n}\n```",
+  "judge_prompt_tokens": 697,
+  "judge_completion_tokens": 149,
+  "judge_cost_usd": 0.00721,
+  "timestamp": 1774952603.913706
+}

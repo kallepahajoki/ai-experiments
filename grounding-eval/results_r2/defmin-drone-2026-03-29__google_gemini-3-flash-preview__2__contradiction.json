@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key details from the source document. The detection of objects, the F/A-18 Hornet deployment, the two drone crashes north and east of Kouvola, the police securing the areas, the Defence Forces investigating with other authorities, and the Defense Minister's statement are all faithfully represented without any contradictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key details from the source document. The detection of objects, the F/A-18 Hornet deployment, the two drone crashes north and east of Kouvola, the police securing the areas, the Defence Forces investigating with other authorities, and the Defense Minister's statement are all faithfully represented without any contradictions.\"\n}\n```",
+  "judge_prompt_tokens": 511,
+  "judge_completion_tokens": 115,
+  "judge_cost_usd": 0.00543,
+  "timestamp": 1774952547.291061
+}

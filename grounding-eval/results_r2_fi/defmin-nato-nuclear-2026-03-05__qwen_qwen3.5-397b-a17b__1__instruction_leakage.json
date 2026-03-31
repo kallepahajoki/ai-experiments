@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "The output contains only a straightforward summary of the source text in Finnish with no instruction-like language, system prompt fragments, or meta-commentary about the task.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [],\n  \"leakage_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"The output contains only a straightforward summary of the source text in Finnish with no instruction-like language, system prompt fragments, or meta-commentary about the task.\"\n}\n```",
+  "judge_prompt_tokens": 1088,
+  "judge_completion_tokens": 81,
+  "judge_cost_usd": 0.007465,
+  "timestamp": 1774952603.920249
+}

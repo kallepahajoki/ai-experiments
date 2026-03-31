@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.5,
+    "evidence": "The summary is very faithful to the source overall. The only minor issue is the characterization of NATO operations as 'standard NATO operational practices,' which adds a slight interpretive gloss not present in the source. All other facts and details are directly traceable to the source document.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"standard NATO operational practices\", \"explanation\": \"The source says 'The bill would align Finnish legislation with NATO operations' and that most NATO members don't have comparable restrictions. The phrase 'standard NATO operational practices' is an interpretive addition \u2014 the source doesn't use the word 'standard' or 'operational practices.'\"}\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.5,\n  \"evidence\": \"The summary is very faithful to the source overall. The only minor issue is the characterization of NATO operations as 'standard NATO operational practices,' which adds a slight interpretive gloss not present in the source. All other facts and details are directly traceable to the source document.\"\n}\n```",
+  "judge_prompt_tokens": 759,
+  "judge_completion_tokens": 183,
+  "judge_cost_usd": 0.00837,
+  "timestamp": 1774952547.2958562
+}

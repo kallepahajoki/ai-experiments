@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key details \u2014 the detection of low-flying objects on Sunday morning, the deployment of an F/A-18 Hornet, the two drone crashes north and east of Kouvola, police securing the areas, Defense Minister H\u00e4kk\u00e4nen's statements, and the joint investigation \u2014 are consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key details \u2014 the detection of low-flying objects on Sunday morning, the deployment of an F/A-18 Hornet, the two drone crashes north and east of Kouvola, police securing the areas, Defense Minister H\u00e4kk\u00e4nen's statements, and the joint investigation \u2014 are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 427,
+  "judge_completion_tokens": 119,
+  "judge_cost_usd": 0.00511,
+  "timestamp": 1774952547.2949078
+}

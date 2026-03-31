@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The summary follows the same structure as the source: observations, drone landings, police response, minister's statement, and ongoing investigation. Minor wording changes (e.g., 'l\u00e4hetti paikalle' instead of 'on ollut paikalla', 'jatkotutkimuksia' instead of 'lis\u00e4tutkimuksia', 'eritt\u00e4in vakavasti' instead of 'hyvin vakavasti') are paraphrases rather than conflations. No causal connectors are introduced that don't exist in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output faithfully summarizes the source without merging independent facts into false causal or combined claims. The summary follows the same structure as the source: observations, drone landings, police response, minister's statement, and ongoing investigation. Minor wording changes (e.g., 'l\u00e4hetti paikalle' instead of 'on ollut paikalla', 'jatkotutkimuksia' instead of 'lis\u00e4tutkimuksia', 'eritt\u00e4in vakavasti' instead of 'hyvin vakavasti') are paraphrases rather than conflations. No causal connectors are introduced that don't exist in the source.\"\n}\n```",
+  "judge_prompt_tokens": 742,
+  "judge_completion_tokens": 189,
+  "judge_cost_usd": 0.008435,
+  "timestamp": 1774952603.9141572
+}

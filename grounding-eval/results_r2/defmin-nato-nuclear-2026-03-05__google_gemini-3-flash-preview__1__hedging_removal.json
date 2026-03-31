@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The source text is largely factual and declarative, with very little hedging language. The source describes a legislative proposal and its rationale in straightforward terms. The output faithfully represents the key claims. The omission of 'difficult-to-predict operational environment' is a minor detail loss rather than hedging removal. The phrase 'nor is such deployment planned' is preserved. No instances were found where the output converts uncertain or conditional claims into established facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict operational environment\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict operational environment\", \"preserved\": false, \"output_version\": \"This contextual framing is omitted entirely from the output.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"nor are there any plans within NATO to deploy them there\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source text is largely factual and declarative, with very little hedging language. The source describes a legislative proposal and its rationale in straightforward terms. The output faithfully represents the key claims. The omission of 'difficult-to-predict operational environment' is a minor detail loss rather than hedging removal. The phrase 'nor is such deployment planned' is preserved. No instances were found where the output converts uncertain or conditional claims into established facts.\"\n}\n```",
+  "judge_prompt_tokens": 851,
+  "judge_completion_tokens": 323,
+  "judge_cost_usd": 0.01233,
+  "timestamp": 1774952547.295676
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The summary is largely faithful in tone and content. The use of 'korostaa' introduces a mild editorial characterization of the ministry's communication style, and there are minor word-level semantic shifts ('vahvistaa' vs 'maksimoida', 'ep\u00e4varma' vs 'vaikeasti ennakoitava'), but none of these rise to the level of introducing bias, loaded language, or significant editorial framing. The overall neutral, informational tone of the source is preserved.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ministeri\u00f6 korostaa\",\n      \"issue\": \"The source simply states the fact ('Lains\u00e4\u00e4d\u00e4nt\u00f6muutoksessa ei ole kyse siit\u00e4...') without attributing emphasis or rhetorical intent. Using 'korostaa' (emphasizes/stresses) introduces an editorial characterization of the ministry's communicative stance, subtly implying the ministry is being defensive or making a particular rhetorical effort.\"\n    },\n    {\n      \"output_phrase\": \"vahvistaa Suomen turvallisuutta\",\n      \"issue\": \"The source uses 'maksimoida Suomen turvallisuus' (maximize Finland's security). Replacing 'maximize' with 'strengthen' slightly softens the stated ambition, though this is a minor semantic shift rather than a strong framing issue.\"\n    },\n    {\n      \"output_phrase\": \"ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n      \"issue\": \"The source says 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' (difficult to predict/hard to anticipate security environment). 'Ep\u00e4varma' (uncertain) is a slight simplification but not a significant framing shift.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary is largely faithful in tone and content. The use of 'korostaa' introduces a mild editorial characterization of the ministry's communication style, and there are minor word-level semantic shifts ('vahvistaa' vs 'maksimoida', 'ep\u00e4varma' vs 'vaikeasti ennakoitava'), but none of these rise to the level of introducing bias, loaded language, or significant editorial framing. The overall neutral, informational tone of the source is preserved.\"\n}\n```",
+  "judge_prompt_tokens": 1213,
+  "judge_completion_tokens": 455,
+  "judge_cost_usd": 0.01744,
+  "timestamp": 1774952603.9192698
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key points from the source document. The legislative changes, objectives, retained prohibitions, and timeline are all consistent with the source. No statements in the output contradict or are incompatible with the source material.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key points from the source document. The legislative changes, objectives, retained prohibitions, and timeline are all consistent with the source. No statements in the output contradict or are incompatible with the source material.\"\n}\n```",
+  "judge_prompt_tokens": 1250,
+  "judge_completion_tokens": 91,
+  "judge_cost_usd": 0.008525,
+  "timestamp": 1774952603.917504
+}

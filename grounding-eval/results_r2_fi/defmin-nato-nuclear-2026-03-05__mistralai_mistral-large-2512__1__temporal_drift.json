@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions in the output faithfully reflect those in the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current state, conditional for proposed changes, and future/present for what remains criminalized. Event ordering is preserved. No temporal drift detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, ongoing action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (current legislation)\",\n    \"olisivat jatkossa mahdollisia (conditional future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa (remain, present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\",\n    \"ei ole Natossa suunnitteilla (not being planned)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, ongoing action)\",\n    \"Nykyinen t\u00e4ydellinen kielto... poistettaisiin (conditional future)\",\n    \"olisivat jatkossa sallittuja (conditional future)\",\n    \"pysyv\u00e4t rikoksina kaikissa tilanteissa (remain, present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\",\n    \"Natolla ei ole suunnitelmia ydinaseiden sijoittamisesta Suomeen (present, no plans)\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions in the output faithfully reflect those in the source. The date 2.4.2026 is correctly reproduced. Tenses are consistent: present tense for current state, conditional for proposed changes, and future/present for what remains criminalized. Event ordering is preserved. No temporal drift detected.\"\n}\n```",
+  "judge_prompt_tokens": 1299,
+  "judge_completion_tokens": 406,
+  "judge_cost_usd": 0.016645,
+  "timestamp": 1774952603.917793
+}

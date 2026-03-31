@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'muutamia' (several) objects detected, one drone fell north of Kouvola and another east of Kouvola, totaling two drones. The output correctly states 'Kaksi droonia' (two drones). The F/A-18 designation is omitted but the aircraft type (Hornet) is preserved. No numerical distortions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (several)\", \"F/A-18\", \"yksi (one)\", \"toinen (second/another)\", \"kaksi (two, implied by yksi + toinen)\"],\n  \"numbers_in_output\": [\"kaksi (two)\", \"Hornet\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'muutamia' (several) objects detected, one drone fell north of Kouvola and another east of Kouvola, totaling two drones. The output correctly states 'Kaksi droonia' (two drones). The F/A-18 designation is omitted but the aircraft type (Hornet) is preserved. No numerical distortions were found.\"\n}\n```",
+  "judge_prompt_tokens": 766,
+  "judge_completion_tokens": 208,
+  "judge_cost_usd": 0.00903,
+  "timestamp": 1774952603.9116402
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source says 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends for consultation), while the output says 'on aloittanut lausuntokierroksen' (present perfect: has started the consultation round). This is a tense shift from present to present perfect. All other temporal elements (the deadline 2.4.2026, conditional tenses for proposed changes, present tense for current law) are accurately preserved. The drift is minor and does not materially misrepresent the timeline.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense - sends for consultation)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"on t\u00e4ysin kielletty\u00e4 (is completely prohibited - present)\",\n    \"olisivat jatkossa mahdollisia (would be possible in the future - conditional)\",\n    \"ei ole vastaavia lains\u00e4\u00e4d\u00e4nn\u00f6llisi\u00e4 rajoitteita (do not have similar restrictions - present)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina kaikissa tilanteissa (remain criminalized in all situations - present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026 (consultation round ends 2.4.2026)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"on aloittanut lausuntokierroksen (has started the consultation round - present perfect)\",\n    \"Nykyinen t\u00e4ydellinen kielto (current complete ban - present)\",\n    \"poistettaisiin (would be removed - conditional)\",\n    \"Useimmilla Nato-mailla ei ole vastaavia rajoitteita (most NATO countries do not have similar restrictions - present)\",\n    \"pysyv\u00e4t rikoksina kaikissa tilanteissa (remain crimes in all situations - present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026 (consultation round ends 2.4.2026)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on aloittanut lausuntokierroksen (has started the consultation round - present perfect, implying completed action)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (sends for consultation round - present tense)\",\n      \"explanation\": \"The source uses the present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the ministry is sending the proposal for consultation. The output changes this to 'on aloittanut' (has started), which is present perfect and implies the consultation round has already been initiated. This is a minor tense shift from present to present perfect, slightly altering the temporal framing, though the practical meaning is similar.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source says 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends for consultation), while the output says 'on aloittanut lausuntokierroksen' (present perfect: has started the consultation round). This is a tense shift from present to present perfect. All other temporal elements (the deadline 2.4.2026, conditional tenses for proposed changes, present tense for current law) are accurately preserved. The drift is minor and does not materially misrepresent the timeline.\"\n}\n```",
+  "judge_prompt_tokens": 1312,
+  "judge_completion_tokens": 701,
+  "judge_cost_usd": 0.024085,
+  "timestamp": 1774952603.9194
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'yksi drooni' (one drone) and 'toinen drooni' (a second drone), totaling two drones. The output says 'kaksi droonia' (two drones), which is numerically equivalent. The F/A-18 designation is preserved. The source says 'muutamia' (a few) objects were observed; the output omits the specific word 'muutamia' but does not introduce a conflicting number. No numerical distortions found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"1 (yksi drooni)\", \"1 (toinen drooni)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"kaksi (two) droonia\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'yksi drooni' (one drone) and 'toinen drooni' (a second drone), totaling two drones. The output says 'kaksi droonia' (two drones), which is numerically equivalent. The F/A-18 designation is preserved. The source says 'muutamia' (a few) objects were observed; the output omits the specific word 'muutamia' but does not introduce a conflicting number. No numerical distortions found.\"\n}\n```",
+  "judge_prompt_tokens": 683,
+  "judge_completion_tokens": 228,
+  "judge_cost_usd": 0.009115,
+  "timestamp": 1774952603.9151459
+}

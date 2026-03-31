@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The source discusses alignment with NATO operations and credible deterrence in separate paragraphs with distinct framing. The output combines them with a participial clause ('ensuring') that creates a causal/consequential link not explicitly stated in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"This amendment aligns Finnish legislation with the majority of NATO member states, which do not have comparable restrictions, ensuring NATO deterrence remains credible.\",\n      \"source_facts\": [\n        \"The bill would align Finnish legislation with NATO operations. The majority of NATO member states do not have comparable legislative restrictions.\",\n        \"The objective is to ensure that NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\"\n      ],\n      \"explanation\": \"The source presents the alignment with NATO member states and the objective of ensuring credible deterrence as separate points. The output merges them into a single causal/consequential statement, implying that the alignment itself ensures credible deterrence, whereas the source treats the credibility of deterrence as a separate objective tied to maximising Finland's security in an unpredictable operational environment.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The source discusses alignment with NATO operations and credible deterrence in separate paragraphs with distinct framing. The output combines them with a participial clause ('ensuring') that creates a causal/consequential link not explicitly stated in the source.\"\n}\n```",
+  "judge_prompt_tokens": 703,
+  "judge_completion_tokens": 294,
+  "judge_cost_usd": 0.010865,
+  "timestamp": 1774952547.298027
+}

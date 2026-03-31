@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful in tone, but introduces minor framing shifts: the Air Force's role is reframed from a stative presence to an active dispatch ('l\u00e4hetti'), the minister's verb is shifted from neutral 'toteaa' to more authoritative 'ilmoitti', and the qualifier 'hyvin' (very) is dropped from 'vakavasti'. These are subtle changes that slightly alter the editorial tone without major distortion.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistamaan kohteita\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission), which is a passive/stative description. The output rephrases this as 'l\u00e4hetti...tunnistamaan' (sent...to identify), which introduces a more active, decisive action framing not explicitly stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen ilmoitti\",\n      \"issue\": \"The source uses 'toteaa' (states/remarks), a neutral verb. 'Ilmoitti' (announced/declared) carries a slightly more formal/authoritative tone, though this is a minor shift.\"\n    },\n    {\n      \"output_phrase\": \"asiaan suhtaudutaan vakavasti\",\n      \"issue\": \"The source says 'hyvin vakavasti' (very seriously). Dropping 'hyvin' slightly downplays the emphasis present in the original statement.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful in tone, but introduces minor framing shifts: the Air Force's role is reframed from a stative presence to an active dispatch ('l\u00e4hetti'), the minister's verb is shifted from neutral 'toteaa' to more authoritative 'ilmoitti', and the qualifier 'hyvin' (very) is dropped from 'vakavasti'. These are subtle changes that slightly alter the editorial tone without major distortion.\"\n}\n```",
+  "judge_prompt_tokens": 760,
+  "judge_completion_tokens": 437,
+  "judge_cost_usd": 0.014725,
+  "timestamp": 1774952603.912569
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output is a close, neutral, and well-structured summary of the source. The only minor issue is the use of 'hinder' instead of the source's more neutral phrasing 'remove legislative obstacles to enable,' but this is a very slight tonal difference and does not constitute a meaningful framing shift. No dramatic language, editorializing, implied causality, or bias was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"currently hinder Finland's military defence within NATO\",\n      \"issue\": \"The source says 'remove legislative obstacles to enable Finland's military defence as part of the alliance.' The word 'hinder' introduces a slightly more negative/editorial connotation than the neutral 'obstacles to enable,' implying active impediment rather than simply the absence of enablement. However, this is a minor shade of difference.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output is a close, neutral, and well-structured summary of the source. The only minor issue is the use of 'hinder' instead of the source's more neutral phrasing 'remove legislative obstacles to enable,' but this is a very slight tonal difference and does not constitute a meaningful framing shift. No dramatic language, editorializing, implied causality, or bias was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 735,
+  "judge_completion_tokens": 235,
+  "judge_cost_usd": 0.00955,
+  "timestamp": 1774952547.298528
+}

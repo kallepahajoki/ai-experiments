@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.8,
+    "evidence": "Multiple tense shifts from present perfect/present to simple past throughout the summary. The source consistently uses present perfect (on pudonnut, on ollut, on erist\u00e4nyt) and present tense (toteaa, tutkii) to convey immediacy and ongoing relevance, while the summary converts several of these to simple past tense (putosi, l\u00e4hetti, vahvisti), shifting the temporal framing from 'just happened / still relevant' to 'happened in the past'. The event ordering is preserved, but the tense changes represent temporal drift.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (perfect tense - completed action)\",\n    \"on ollut paikalla (perfect tense - has been present)\",\n    \"on erist\u00e4nyt (perfect tense)\",\n    \"tutkii (present tense - ongoing)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"putosi (simple past tense)\",\n    \"on erist\u00e4nyt (perfect tense)\",\n    \"l\u00e4hetti (simple past tense)\",\n    \"vahvisti (simple past tense)\",\n    \"ovat harhautuneet (perfect tense)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"putosi (simple past - 'fell')\",\n      \"source_temporal\": \"on pudonnut (present perfect - 'has fallen')\",\n      \"explanation\": \"The source uses present perfect 'on pudonnut' indicating a recently completed action with present relevance, while the summary shifts to simple past 'putosi', which is a tense change. This is a minor drift but changes the temporal framing.\"\n    },\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past - 'sent')\",\n      \"source_temporal\": \"on ollut paikalla (present perfect - 'has been present')\",\n      \"explanation\": \"The source says the Air Force 'has been present' (on ollut paikalla) using present perfect, implying ongoing or recently completed presence. The summary changes this to 'l\u00e4hetti' (sent), simple past tense, which shifts the temporal framing and also slightly changes the meaning from 'has been on scene' to 'sent'.\"\n    },\n    {\n      \"output_temporal\": \"vahvisti (simple past - 'confirmed')\",\n      \"source_temporal\": \"toteaa (present tense - 'states')\",\n      \"explanation\": \"The source uses present tense 'toteaa' (states), while the summary shifts to simple past 'vahvisti' (confirmed). This changes the temporal perspective from a current statement to a past action.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.8,\n  \"evidence\": \"Multiple tense shifts from present perfect/present to simple past throughout the summary. The source consistently uses present perfect (on pudonnut, on ollut, on erist\u00e4nyt) and present tense (toteaa, tutkii) to convey immediacy and ongoing relevance, while the summary converts several of these to simple past tense (putosi, l\u00e4hetti, vahvisti), shifting the temporal framing from 'just happened / still relevant' to 'happened in the past'. The event ordering is preserved, but the tense changes represent temporal drift.\"\n}\n```",
+  "judge_prompt_tokens": 700,
+  "judge_completion_tokens": 705,
+  "judge_cost_usd": 0.021125,
+  "timestamp": 1774952603.91046
+}

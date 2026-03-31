@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key points from the source document. The purpose, legal changes, alignment with NATO, clarifications about not seeking nuclear weapons, remaining prohibitions, and the consultation timeline are all consistent with the source. The only minor omission is that the source mentions 'bringing a nuclear explosive into Finland' as part of the current prohibition, but this is not a contradiction\u2014just a slight simplification in the output's description of the current law.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key points from the source document. The purpose, legal changes, alignment with NATO, clarifications about not seeking nuclear weapons, remaining prohibitions, and the consultation timeline are all consistent with the source. The only minor omission is that the source mentions 'bringing a nuclear explosive into Finland' as part of the current prohibition, but this is not a contradiction\u2014just a slight simplification in the output's description of the current law.\"\n}\n```",
+  "judge_prompt_tokens": 669,
+  "judge_completion_tokens": 136,
+  "judge_cost_usd": 0.006745,
+  "timestamp": 1774952547.298196
+}

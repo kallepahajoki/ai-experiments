@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the tone and language of the source document. It uses nearly identical phrasing throughout, maintaining the neutral, informational register of the original. Key terms like 'poistetaan lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet,' 't\u00e4ysim\u00e4\u00e4r\u00e4iselt\u00e4 hy\u00f6dynt\u00e4miselt\u00e4,' 'uskottava pelote,' and 'kriminalisoituina' are drawn directly from the source. No evaluative language, dramatic framing, loaded words, or implied causality beyond what the source states were detected. The summary is structured with headers for clarity but does not introduce editorial tone or bias.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the tone and language of the source document. It uses nearly identical phrasing throughout, maintaining the neutral, informational register of the original. Key terms like 'poistetaan lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet,' 't\u00e4ysim\u00e4\u00e4r\u00e4iselt\u00e4 hy\u00f6dynt\u00e4miselt\u00e4,' 'uskottava pelote,' and 'kriminalisoituina' are drawn directly from the source. No evaluative language, dramatic framing, loaded words, or implied causality beyond what the source states were detected. The summary is structured with headers for clarity but does not introduce editorial tone or bias.\"\n}\n```",
+  "judge_prompt_tokens": 1222,
+  "judge_completion_tokens": 185,
+  "judge_cost_usd": 0.010735,
+  "timestamp": 1774952603.915961
+}

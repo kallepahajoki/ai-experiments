@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "Output kattaa p\u00e4\u00e4asialliset faktat hyvin. Pieni\u00e4 omissioita ovat kohteiden kuvaaminen 'hitaiksi' ja 'pieniksi' sek\u00e4 sanan 'hyvin' puuttuminen ilmaisusta 'hyvin vakavasti'. N\u00e4m\u00e4 eiv\u00e4t ole kriittisi\u00e4 mutta muuttavat hieman s\u00e4vy\u00e4.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin kohteita sunnuntai-aamuna\",\n    \"Kohteet olivat matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Havaittiin muutamia kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Kohteet kuvattiin 'hitaiksi' ja 'pieniksi' \u2014 output mainitsee vain 'matalalla lent\u00e4vi\u00e4 kohteita'\", \"importance\": \"medium\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen sanoi 'hyvin vakavasti', output sanoo vain 'vakavasti' \u2014 s\u00e4vyn lievent\u00e4minen\", \"importance\": \"medium\"},\n    {\"fact\": \"Output lis\u00e4\u00e4 'Puolustusministeri\u00f6n tiedotteen mukaan', mit\u00e4 l\u00e4hteess\u00e4 ei mainita \u2014 t\u00e4m\u00e4 on lis\u00e4ys, ei omissio\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"Output kattaa p\u00e4\u00e4asialliset faktat hyvin. Pieni\u00e4 omissioita ovat kohteiden kuvaaminen 'hitaiksi' ja 'pieniksi' sek\u00e4 sanan 'hyvin' puuttuminen ilmaisusta 'hyvin vakavasti'. N\u00e4m\u00e4 eiv\u00e4t ole kriittisi\u00e4 mutta muuttavat hieman s\u00e4vy\u00e4.\"\n}\n```",
+  "judge_prompt_tokens": 739,
+  "judge_completion_tokens": 630,
+  "judge_cost_usd": 0.019445,
+  "timestamp": 1774952603.914809
+}

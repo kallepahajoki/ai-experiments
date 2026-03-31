@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All temporal expressions in the output match those in the source. The date 2.4.2026 is correctly preserved. Tenses are consistent: present tense for the ministry's action, conditional for proposed changes, and present/future continuity for what remains criminalized. Event ordering is preserved: proposal description \u2192 what it would change \u2192 what it would not change \u2192 what remains criminal \u2192 consultation deadline.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, indicating current/ongoing action)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (present: in current legislation)\",\n    \"jatkossa mahdollisia (in the future, would be possible)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina (remain criminalized - present/future continuity)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"l\u00e4hett\u00e4\u00e4 lausuntokierrokselle (present tense, matching source)\",\n    \"mahdollistettaisiin (conditional, would be made possible - future/conditional)\",\n    \"s\u00e4ilyv\u00e4t rikoksina (remain crimes - present/future continuity)\",\n    \"ei ole suunnitteilla (not being planned - present)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All temporal expressions in the output match those in the source. The date 2.4.2026 is correctly preserved. Tenses are consistent: present tense for the ministry's action, conditional for proposed changes, and present/future continuity for what remains criminalized. Event ordering is preserved: proposal description \u2192 what it would change \u2192 what it would not change \u2192 what remains criminal \u2192 consultation deadline.\"\n}\n```",
+  "judge_prompt_tokens": 1080,
+  "judge_completion_tokens": 370,
+  "judge_cost_usd": 0.01465,
+  "timestamp": 1774952603.920141
+}

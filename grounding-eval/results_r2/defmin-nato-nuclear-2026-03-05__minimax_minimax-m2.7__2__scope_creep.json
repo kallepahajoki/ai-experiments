@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary closely follows the source document. The issues identified are minor paraphrasing differences rather than true scope creep (introducing external knowledge or background context not in the source). No geopolitical context, historical references, or explanations beyond the source material were added. The summary is a faithful representation of the source content.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"serves as the highest possible threshold against military aggression\",\n      \"explanation\": \"The source says 'forms the highest possible threshold for military action.' The output rephrases this as 'against military aggression,' which adds an interpretive nuance not present in the source. The source uses the neutral term 'military action' rather than 'military aggression.'\"\n    },\n    {\n      \"output_content\": \"The Finnish Ministry of Defence has submitted a proposal\",\n      \"explanation\": \"The source says the Ministry is 'sending a proposal... for a consultation round,' not that it has 'submitted' it. This is a minor wording difference but 'submitted' could imply a different stage in the process than 'sending for consultation.'\"\n    }\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary closely follows the source document. The issues identified are minor paraphrasing differences rather than true scope creep (introducing external knowledge or background context not in the source). No geopolitical context, historical references, or explanations beyond the source material were added. The summary is a faithful representation of the source content.\"\n}\n```",
+  "judge_prompt_tokens": 733,
+  "judge_completion_tokens": 294,
+  "judge_cost_usd": 0.011015,
+  "timestamp": 1774952547.296287
+}

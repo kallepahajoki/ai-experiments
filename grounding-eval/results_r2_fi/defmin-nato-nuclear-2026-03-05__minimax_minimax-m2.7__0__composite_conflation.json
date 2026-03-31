@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds accurately to the information presented in the source. The 'Tavoite' bullet combines two sentences from the source (maximizing security and ensuring NATO deterrence), but these are presented together in the source as related goals under the same paragraph, so this is not a conflation. No causal connectors are used to fabricate relationships not present in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds accurately to the information presented in the source. The 'Tavoite' bullet combines two sentences from the source (maximizing security and ensuring NATO deterrence), but these are presented together in the source as related goals under the same paragraph, so this is not a conflation. No causal connectors are used to fabricate relationships not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 1339,
+  "judge_completion_tokens": 144,
+  "judge_cost_usd": 0.010295,
+  "timestamp": 1774952603.91696
+}

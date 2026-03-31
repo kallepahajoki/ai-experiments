@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The minister's quote uses 'hyvin vakavasti' but the summary rephrases it as 'eritt\u00e4in vakavasti', which is a minor but real alteration of the quoted statement.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"asia otetaan eritt\u00e4in vakavasti\",\n      \"source_statement\": \"Suhtaudumme asiaan hyvin vakavasti.\",\n      \"explanation\": \"The source says 'hyvin vakavasti' (very seriously), but the summary changes this to 'eritt\u00e4in vakavasti' (extremely seriously). While the difference is subtle, it alters the minister's direct quote \u2014 'eritt\u00e4in' is a stronger intensifier than 'hyvin' in Finnish.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The minister's quote uses 'hyvin vakavasti' but the summary rephrases it as 'eritt\u00e4in vakavasti', which is a minor but real alteration of the quoted statement.\"\n}\n```",
+  "judge_prompt_tokens": 771,
+  "judge_completion_tokens": 215,
+  "judge_cost_usd": 0.00923,
+  "timestamp": 1774952603.911865
+}

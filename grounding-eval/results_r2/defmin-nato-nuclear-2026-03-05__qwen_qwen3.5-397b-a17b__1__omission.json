@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output covers virtually all key facts from the source. The only minor omissions are the specific phrasing about forming 'the highest possible threshold for military action' and the mention of 'all its components' of NATO deterrence. These are relatively minor details that do not critically change the meaning of the summary.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n    \"The purpose is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\",\n    \"Under current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited.\",\n    \"The bill proposes these actions would be possible if related to Finland's military defence, NATO's collective defence, or defence cooperation.\",\n    \"The majority of NATO member states do not have comparable legislative restrictions.\",\n    \"The bill would align Finnish legislation with NATO operations.\",\n    \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\",\n    \"The objective is to ensure NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\",\n    \"The legislative amendment is not about Finland seeking nuclear weapons on its territory.\",\n    \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\",\n    \"The acquisition, manufacture, development, and detonation of nuclear explosives remain criminalised in all circumstances.\",\n    \"The consultation period ends on 2 April 2026.\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The objective includes forming the highest possible threshold for military action.\", \"importance\": \"medium\"},\n    {\"fact\": \"NATO's deterrence includes 'all its components' as specified in the source.\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output covers virtually all key facts from the source. The only minor omissions are the specific phrasing about forming 'the highest possible threshold for military action' and the mention of 'all its components' of NATO deterrence. These are relatively minor details that do not critically change the meaning of the summary.\"\n}\n```",
+  "judge_prompt_tokens": 743,
+  "judge_completion_tokens": 469,
+  "judge_cost_usd": 0.01544,
+  "timestamp": 1774952547.29839
+}

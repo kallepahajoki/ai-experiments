@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key points from the source document. The only minor discrepancy is the tense used ('has submitted' vs 'is sending'), which is a very slight temporal difference rather than a substantive contradiction. All factual claims in the summary \u2014 about current prohibitions, proposed changes, alignment with NATO, security rationale, clarifications about not seeking nuclear weapons, continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline \u2014 faithfully match the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence has submitted a proposal to amend the Nuclear Energy Act and the Criminal Code for public consultation.\",\n      \"source_statement\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n      \"explanation\": \"The source says the Ministry is 'sending' the proposal for a consultation round, implying it is in the process of being sent. The output says it 'has submitted' the proposal, which implies it has already been completed. This is a minor temporal nuance but not a direct contradiction of fact.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key points from the source document. The only minor discrepancy is the tense used ('has submitted' vs 'is sending'), which is a very slight temporal difference rather than a substantive contradiction. All factual claims in the summary \u2014 about current prohibitions, proposed changes, alignment with NATO, security rationale, clarifications about not seeking nuclear weapons, continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline \u2014 faithfully match the source.\"\n}\n```",
+  "judge_prompt_tokens": 809,
+  "judge_completion_tokens": 289,
+  "judge_cost_usd": 0.01127,
+  "timestamp": 1774952547.2968
+}

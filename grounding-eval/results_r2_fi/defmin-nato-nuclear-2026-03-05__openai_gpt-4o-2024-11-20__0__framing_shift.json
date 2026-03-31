@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully mirrors the neutral, informational tone of the source. It does not introduce evaluative language, loaded words, dramatic framing, or implied causality beyond what is stated in the original. Minor wording differences (e.g., 'toteuttamiselle' vs. 'mahdollistamiseksi', 'yhdenmukaistetaan' vs. 'saatetaan yhteensopivaksi') are stylistic paraphrases that do not shift the framing or introduce bias.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully mirrors the neutral, informational tone of the source. It does not introduce evaluative language, loaded words, dramatic framing, or implied causality beyond what is stated in the original. Minor wording differences (e.g., 'toteuttamiselle' vs. 'mahdollistamiseksi', 'yhdenmukaistetaan' vs. 'saatetaan yhteensopivaksi') are stylistic paraphrases that do not shift the framing or introduce bias.\"\n}\n```",
+  "judge_prompt_tokens": 1091,
+  "judge_completion_tokens": 163,
+  "judge_cost_usd": 0.00953,
+  "timestamp": 1774952603.9182699
+}

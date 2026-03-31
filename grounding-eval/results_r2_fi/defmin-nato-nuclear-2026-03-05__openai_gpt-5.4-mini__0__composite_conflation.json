@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully represents the relationships present in the source. The causal and contextual connections made in the summary (e.g., the purpose of removing legislative barriers to enable NATO deterrence, the background need to strengthen security) all correspond to relationships explicitly stated in the source. The merging of 'vahvistaa Suomen turvallisuutta' with 'varmistaa, ett\u00e4 Naton pelote on uskottava' in the third paragraph reflects the source's own combined statement about maximizing Finland's security and ensuring NATO's deterrent is credible. No independent facts are falsely merged into new causal or combined claims.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully represents the relationships present in the source. The causal and contextual connections made in the summary (e.g., the purpose of removing legislative barriers to enable NATO deterrence, the background need to strengthen security) all correspond to relationships explicitly stated in the source. The merging of 'vahvistaa Suomen turvallisuutta' with 'varmistaa, ett\u00e4 Naton pelote on uskottava' in the third paragraph reflects the source's own combined statement about maximizing Finland's security and ensuring NATO's deterrent is credible. No independent facts are falsely merged into new causal or combined claims.\"\n}\n```",
+  "judge_prompt_tokens": 1277,
+  "judge_completion_tokens": 182,
+  "judge_cost_usd": 0.010935,
+  "timestamp": 1774952603.9189088
+}

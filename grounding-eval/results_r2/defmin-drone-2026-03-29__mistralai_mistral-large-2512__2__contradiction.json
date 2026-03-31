@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The output adds the word 'unintentionally' to characterize the drones' entry into Finnish territory. The source says 'Drones have strayed into Finnish territory' \u2014 while 'strayed' can imply unintentional movement, the minister's statement does not explicitly say 'unintentionally,' and the summary's phrasing ('entered Finnish territory unintentionally') presents an interpretation as fact that could conflict with the deliberately serious and non-committal tone of the original statement.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Defence Minister Antti H\u00e4kk\u00e4nen stated that the drones had entered Finnish territory unintentionally\",\n      \"source_statement\": \"Drones have strayed into Finnish territory. We take this very seriously.\",\n      \"explanation\": \"The source quotes H\u00e4kk\u00e4nen saying drones 'strayed into' Finnish territory, but does not characterize this as 'unintentional.' The word 'strayed' could imply unintentional entry, but the minister's statement does not explicitly say 'unintentionally.' More importantly, the summary adds an interpretive gloss ('unintentionally') that is not directly stated in the source, and the original statement is ambiguous \u2014 it could also be read as a neutral or even accusatory description. This is a subtle addition/interpretation rather than a direct quote, potentially misrepresenting the minister's stance.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The output adds the word 'unintentionally' to characterize the drones' entry into Finnish territory. The source says 'Drones have strayed into Finnish territory' \u2014 while 'strayed' can imply unintentional movement, the minister's statement does not explicitly say 'unintentionally,' and the summary's phrasing ('entered Finnish territory unintentionally') presents an interpretation as fact that could conflict with the deliberately serious and non-committal tone of the original statement.\"\n}\n```",
+  "judge_prompt_tokens": 498,
+  "judge_completion_tokens": 360,
+  "judge_cost_usd": 0.01149,
+  "timestamp": 1774952547.292576
+}

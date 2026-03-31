@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully reflects the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., the purpose of the legislative change, the conditions under which nuclear explosives could be brought/transported, the alignment with NATO countries) all correspond accurately to relationships present in the source. The summary condenses but does not conflate separate facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully reflects the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., the purpose of the legislative change, the conditions under which nuclear explosives could be brought/transported, the alignment with NATO countries) all correspond accurately to relationships present in the source. The summary condenses but does not conflate separate facts.\"\n}\n```",
+  "judge_prompt_tokens": 1093,
+  "judge_completion_tokens": 124,
+  "judge_cost_usd": 0.008565,
+  "timestamp": 1774952603.918318
+}

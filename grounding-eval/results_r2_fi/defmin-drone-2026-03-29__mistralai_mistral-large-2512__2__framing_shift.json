@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful in tone and content. Two minor issues were found: (1) rephrasing the Air Force's presence as an active dispatch ('l\u00e4hetti') introduces slightly more decisive/dramatic framing than the source's stative description, and (2) the omission of 'hyvin' (very) from 'hyvin vakavasti' slightly softens the minister's stated seriousness. Neither constitutes a major framing shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistamaan kohteita\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission), which is a passive/stative description. The summary rephrases this as 'l\u00e4hetti...tunnistamaan' (sent...to identify), introducing a more active, decisive action framing not explicitly stated in the source.\"\n    },\n    {\n      \"output_phrase\": \"asiaan suhtaudutaan vakavasti\",\n      \"issue\": \"Minor tonal softening: the source quote says 'hyvin vakavasti' (very seriously), but the summary drops 'hyvin' (very), slightly downplaying the minister's stated emphasis.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful in tone and content. Two minor issues were found: (1) rephrasing the Air Force's presence as an active dispatch ('l\u00e4hetti') introduces slightly more decisive/dramatic framing than the source's stative description, and (2) the omission of 'hyvin' (very) from 'hyvin vakavasti' slightly softens the minister's stated seriousness. Neither constitutes a major framing shift.\"\n}\n```",
+  "judge_prompt_tokens": 760,
+  "judge_completion_tokens": 360,
+  "judge_cost_usd": 0.0128,
+  "timestamp": 1774952603.913004
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary introduces minor framing shifts: it removes the hedging language ('t\u00e4m\u00e4n hetken tietojen mukaan'), rephrases H\u00e4kk\u00e4nen's quoted stance about taking the matter seriously into a characterization of the event as serious, and omits his specific 'harhautunut' (strayed) framing. These are subtle shifts rather than dramatic reframing, but they slightly alter the cautious, provisional tone of the original.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"H\u00e4kk\u00e4nen luonnehti tapausta vakavaksi\",\n      \"issue\": \"The source quotes H\u00e4kk\u00e4nen saying 'Suhtaudumme asiaan hyvin vakavasti' (we take the matter very seriously), which describes their attitude/response. The summary rephrases this as H\u00e4kk\u00e4nen 'characterizing the incident as serious' (luonnehti tapausta vakavaksi), which subtly shifts from describing the government's stance to an editorial characterization of the event itself. Additionally, 'hyvin vakavasti' (very seriously) is softened to just 'vakavaksi' (serious).\"\n    },\n    {\n      \"output_phrase\": \"harhautunut lennokkeja\",\n      \"issue\": \"The source includes H\u00e4kk\u00e4nen's specific framing that drones 'strayed' (harhautunut) into Finnish territory, which is a notable word choice implying accidental entry. The summary omits this detail entirely, removing a nuanced framing element from the minister's statement.\"\n    },\n    {\n      \"output_phrase\": \"kaksi droonia putosi maahan\",\n      \"issue\": \"The source says 'yksi drooni on pudonnut maahan... ja toinen drooni...' (one drone has fallen... and another drone...) using the present perfect tense with cautious phrasing ('t\u00e4m\u00e4n hetken tietojen mukaan' \u2014 according to current information). The summary drops the hedging qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' and uses a more definitive past tense 'putosi', making the statement sound more certain than the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary introduces minor framing shifts: it removes the hedging language ('t\u00e4m\u00e4n hetken tietojen mukaan'), rephrases H\u00e4kk\u00e4nen's quoted stance about taking the matter seriously into a characterization of the event as serious, and omits his specific 'harhautunut' (strayed) framing. These are subtle shifts rather than dramatic reframing, but they slightly alter the cautious, provisional tone of the original.\"\n}\n```",
+  "judge_prompt_tokens": 686,
+  "judge_completion_tokens": 544,
+  "judge_cost_usd": 0.01703,
+  "timestamp": 1774952603.914537
+}

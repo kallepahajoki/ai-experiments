@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "There are minor tense shifts from present perfect to simple past in a couple of places (e.g., 'has been on-site' \u2192 'deployed', 'have responded' \u2192 'responded'), but no dates, times, or event sequences are misrepresented. The event ordering is faithfully preserved. The drifts are stylistic rather than substantively misleading.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has crashed\", \"have secured\", \"have strayed\", \"have responded\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"deployed\", \"have been confirmed down\", \"have secured\", \"responded\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"The Air Force deployed an F/A-18 Hornet fighter jet\",\n      \"source_temporal\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification\",\n      \"explanation\": \"The source uses present perfect continuous ('has been on-site'), implying an ongoing presence, while the output uses simple past ('deployed'), shifting the tense to a completed action. This is a minor tense drift but does not significantly misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"Two drones have been confirmed down\",\n      \"source_temporal\": \"one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The source says 'has crashed' (present perfect), and the output says 'have been confirmed down'. The tense is roughly preserved (present perfect), but 'confirmed down' adds a nuance of official confirmation not explicitly stated in the source. This is more of a semantic shift than a temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"security authorities responded immediately\",\n      \"source_temporal\": \"Security authorities have responded immediately\",\n      \"explanation\": \"The source uses present perfect ('have responded'), while the output uses simple past ('responded'). Minor tense shift from present perfect to simple past.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"There are minor tense shifts from present perfect to simple past in a couple of places (e.g., 'has been on-site' \u2192 'deployed', 'have responded' \u2192 'responded'), but no dates, times, or event sequences are misrepresented. The event ordering is faithfully preserved. The drifts are stylistic rather than substantively misleading.\"\n}\n```",
+  "judge_prompt_tokens": 545,
+  "judge_completion_tokens": 505,
+  "judge_cost_usd": 0.01535,
+  "timestamp": 1774952547.2904892
+}

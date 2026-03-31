@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present progressive, ongoing/imminent), while the output says 'The Ministry of Defence has sent a bill... to a public-consultation round' (present perfect, completed). This shifts the temporal framing from an action in progress to one already completed. All other temporal elements (deadline of 2 April 2026, future conditional tenses, present-tense descriptions of current law) are accurately preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present progressive)\",\n    \"Under current legislation (present)\",\n    \"would in future be possible (conditional future)\",\n    \"The consultation period ends on 2 April 2026 (future)\",\n    \"remain criminalised (present/future)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has sent (present perfect)\",\n    \"currently prevent (present)\",\n    \"now bans (present)\",\n    \"would allow (conditional future)\",\n    \"2 April 2026 (future deadline)\",\n    \"remain illegal (present/future)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has sent (present perfect \u2014 implying completed action)\",\n      \"source_temporal\": \"is sending (present progressive \u2014 implying ongoing action)\",\n      \"explanation\": \"The source uses 'is sending,' indicating the action is in progress or imminent. The summary uses 'has sent,' which implies the action is already completed. This is a minor tense shift but does not significantly misrepresent the timeline.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present progressive, ongoing/imminent), while the output says 'The Ministry of Defence has sent a bill... to a public-consultation round' (present perfect, completed). This shifts the temporal framing from an action in progress to one already completed. All other temporal elements (deadline of 2 April 2026, future conditional tenses, present-tense descriptions of current law) are accurately preserved.\"\n}\n```",
+  "judge_prompt_tokens": 832,
+  "judge_completion_tokens": 400,
+  "judge_cost_usd": 0.01416,
+  "timestamp": 1774952547.2960892
+}

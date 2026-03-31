@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "The only numerical value in the source is the consultation deadline of 2 April 2026, which is accurately reproduced in the output.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"2 April 2026\"],\n  \"numbers_in_output\": [\"2 April 2026\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"The only numerical value in the source is the consultation deadline of 2 April 2026, which is accurately reproduced in the output.\"\n}\n```",
+  "judge_prompt_tokens": 728,
+  "judge_completion_tokens": 108,
+  "judge_cost_usd": 0.00634,
+  "timestamp": 1774952547.298472
+}

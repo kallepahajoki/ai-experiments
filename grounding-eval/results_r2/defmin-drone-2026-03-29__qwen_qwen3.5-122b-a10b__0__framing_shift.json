@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output closely mirrors the neutral, factual tone of the source. It does not introduce evaluative language, dramatic framing, or implied causality. The summary accurately attributes statements to the Defense Minister and uses language consistent with the source. The only minor difference is attributing detection to 'the Finnish Air Force' rather than the passive 'were detected,' but this is a reasonable inference from the context (the Air Force responded with a Hornet) and does not constitute a framing shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output closely mirrors the neutral, factual tone of the source. It does not introduce evaluative language, dramatic framing, or implied causality. The summary accurately attributes statements to the Defense Minister and uses language consistent with the source. The only minor difference is attributing detection to 'the Finnish Air Force' rather than the passive 'were detected,' but this is a reasonable inference from the context (the Air Force responded with a Hornet) and does not constitute a framing shift.\"\n}\n```",
+  "judge_prompt_tokens": 494,
+  "judge_completion_tokens": 150,
+  "judge_cost_usd": 0.00622,
+  "timestamp": 1774952547.293836
+}

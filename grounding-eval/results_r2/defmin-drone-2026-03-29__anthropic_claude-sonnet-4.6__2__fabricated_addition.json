@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.82,
+    "evidence": "The summary's headline uses the word 'Unauthorized' to describe the drones. While the source says drones 'strayed into Finnish territory' and the situation was taken 'very seriously,' the source never explicitly characterizes them as 'unauthorized.' This is an inference/editorialization rather than a directly grounded claim, though it is a relatively minor one given the context.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, multiple low-flying, slow-moving small objects were detected in Finnish airspace\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"Objects were detected over sea areas and Southeast Finland\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Finnish Air Force scrambled an F/A-18 Hornet fighter jet to identify the objects\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"Two drones have since crashed \u2014 one north of Kouvola and one east of Kouvola\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"Police have secured both crash sites for further investigation\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"The Finnish Defence Forces are investigating the incident in cooperation with other authorities\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    },\n    {\n      \"claim\": \"Defence Minister Antti H\u00e4kk\u00e4nen described the situation as serious\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"We take this very seriously.\\\"\"\n    },\n    {\n      \"claim\": \"H\u00e4kk\u00e4nen confirmed that the drones had strayed into Finnish territory\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Drones have strayed into Finnish territory.\\\"\"\n    },\n    {\n      \"claim\": \"H\u00e4kk\u00e4nen confirmed that security authorities had responded immediately\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The drones were described as 'unauthorized'\",\n      \"grounded\": false,\n      \"source_evidence\": null\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.82,\n  \"evidence\": \"The summary's headline uses the word 'Unauthorized' to describe the drones. While the source says drones 'strayed into Finnish territory' and the situation was taken 'very seriously,' the source never explicitly characterizes them as 'unauthorized.' This is an inference/editorialization rather than a directly grounded claim, though it is a relatively minor one given the context.\"\n}\n```",
+  "judge_prompt_tokens": 529,
+  "judge_completion_tokens": 713,
+  "judge_cost_usd": 0.02047,
+  "timestamp": 1774952547.290028
+}

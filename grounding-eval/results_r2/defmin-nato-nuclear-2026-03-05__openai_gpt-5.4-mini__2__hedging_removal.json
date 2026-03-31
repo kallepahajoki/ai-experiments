@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source text is largely factual and declarative, containing very little hedging or uncertainty language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are adequately preserved in the output. The phrase 'difficult-to-predict' is rendered as 'unpredictable,' which is a close paraphrase. No critical hedging was removed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable security environment\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"and NATO is not planning it\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source text is largely factual and declarative, containing very little hedging or uncertainty language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are adequately preserved in the output. The phrase 'difficult-to-predict' is rendered as 'unpredictable,' which is a close paraphrase. No critical hedging was removed.\"\n}\n```",
+  "judge_prompt_tokens": 789,
+  "judge_completion_tokens": 297,
+  "judge_cost_usd": 0.01137,
+  "timestamp": 1774952547.297714
+}

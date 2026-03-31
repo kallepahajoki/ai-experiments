@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "The output is largely faithful to the source in tone and content. Minor framing shifts include characterizing NATO practices as 'standard' (editorial addition), adding 'strictly' as an intensifier not in the source, and substituting 'security environment' for 'operational environment.' These are subtle and do not significantly distort the source's meaning or introduce strong bias.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"standard NATO operational practices\",\n      \"issue\": \"The source says the bill would 'align Finnish legislation with NATO operations' and that most NATO members don't have comparable restrictions. The word 'standard' is an editorial addition that normalizes the practice more than the source does.\"\n    },\n    {\n      \"output_phrase\": \"strictly illegal and criminalized\",\n      \"issue\": \"The source says 'remain criminalised in all circumstances.' Adding 'strictly illegal' is redundant intensifying language not present in the source, slightly editorializing the emphasis.\"\n    },\n    {\n      \"output_phrase\": \"unpredictable security environment\",\n      \"issue\": \"The source uses 'difficult-to-predict operational environment.' Changing 'operational' to 'security' subtly shifts the framing, though this is minor.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. Minor framing shifts include characterizing NATO practices as 'standard' (editorial addition), adding 'strictly' as an intensifier not in the source, and substituting 'security environment' for 'operational environment.' These are subtle and do not significantly distort the source's meaning or introduce strong bias.\"\n}\n```",
+  "judge_prompt_tokens": 761,
+  "judge_completion_tokens": 327,
+  "judge_cost_usd": 0.01198,
+  "timestamp": 1774952547.295846
+}

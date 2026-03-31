@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful to the source in tone and content. The minor issues identified are small stylistic or word-choice differences rather than meaningful editorial framing shifts. There is no loaded language, dramatic framing, opinion injection, or implied causality not present in the source. The summary maintains the neutral, informational tone of the original.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Salli n\u00e4m\u00e4 toimet\",\n      \"issue\": \"The imperative/command form 'Salli' (Allow/Permit) introduces a slightly different tone compared to the source's conditional phrasing 'olisivat jatkossa mahdollisia' (would be possible in the future). The source uses a more cautious conditional construction, while the summary uses a more direct imperative framing. This is a minor stylistic shift.\"\n    },\n    {\n      \"output_phrase\": \"ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n      \"issue\": \"The source says 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' (difficult to predict/anticipate), which the summary renders as 'ep\u00e4varmassa' (uncertain). While close in meaning, 'ep\u00e4varma' is slightly less specific than 'vaikeasti ennakoitava' \u2014 the original emphasizes unpredictability rather than general uncertainty. This is a minor semantic shift.\"\n    },\n    {\n      \"output_phrase\": \"mahdollisille sotilaallisille toimille\",\n      \"issue\": \"The source says 'sotilaallisille toimille' (military actions) without the qualifier 'mahdollisille' (possible). Adding 'mahdollisille' slightly softens the framing compared to the source, which states the threshold more directly.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. The minor issues identified are small stylistic or word-choice differences rather than meaningful editorial framing shifts. There is no loaded language, dramatic framing, opinion injection, or implied causality not present in the source. The summary maintains the neutral, informational tone of the original.\"\n}\n```",
+  "judge_prompt_tokens": 1344,
+  "judge_completion_tokens": 457,
+  "judge_cost_usd": 0.018145,
+  "timestamp": 1774952603.9173272
+}

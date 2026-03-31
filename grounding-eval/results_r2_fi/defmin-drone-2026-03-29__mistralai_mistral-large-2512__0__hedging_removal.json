@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the information about the two downed drones is preliminary and may change. The output replaces this with 'Tiedotteen mukaan' (according to the announcement), which is a generic source attribution but loses the sense of preliminary/evolving information. This is a moderate hedging removal on a factual claim about drones having fallen. Additionally, the quantifier 'muutamia' (a few) is dropped, which is a minor detail loss.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 this implies accidental straying, a characterization by the minister rather than established fact\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Tiedotteen mukaan kaksi droonia on pudonnut maahan \u2014 'Tiedotteen mukaan' is a weaker attribution than 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals preliminary/evolving information. The output replaces it with a generic source attribution.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"The output omits 'muutamia' (a few), simply saying 'matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' without the quantifier.\"\n    },\n    {\n      \"expression\": \"harhautunut (minister's characterization)\",\n      \"preserved\": true,\n      \"output_version\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen ilmoitti, ett\u00e4 kyse on Suomen alueelle harhautuneista lennokeista \u2014 preserved and attributed to the minister.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the information about the two downed drones is preliminary and may change. The output replaces this with 'Tiedotteen mukaan' (according to the announcement), which is a generic source attribution but loses the sense of preliminary/evolving information. This is a moderate hedging removal on a factual claim about drones having fallen. Additionally, the quantifier 'muutamia' (a few) is dropped, which is a minor detail loss.\"\n}\n```",
+  "judge_prompt_tokens": 821,
+  "judge_completion_tokens": 663,
+  "judge_cost_usd": 0.02068,
+  "timestamp": 1774952603.91254
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\" (present progressive, indicating current/imminent action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference fo",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\" (present progressive, indicating current/imminent action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference for proposed changes),\n    \"would in future be possible\" (conditional future),\n    \"do not have\" (present tense),\n    \"would align\" (conditional future),\n    \"is not about\" (present),\n    \"does not seek\" (present),\n    \"nor is such deployment planned\" (present),\n    \"remain criminalised\" (present/future continuity),\n    \"ends on 2 April 2026\" (future date)\n  ],\n  \"temporal_expressions_output\": [\n    \"has initiated\" (present perfect, indicating completed action),\n    \"currently\" (present),\n    \"currently completely prohibits\" (present),\n    \"would permit\" (conditional future),\n    \"aligns\" (present tense),\n    \"do not have\" (present),\n    \"is not seeking\" (present progressive),\n    \"nor is such deployment planned\" (present),\n    \"will remain criminalised\" (future),\n    \"ends on 2 April 2026\" (future date)\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has initiated a consultation period\",\n      \"source_temporal\": \"is sending a proposal ... for a consultation round\",\n      \"explanation\": \"The source uses present progressive 'is sending', indicating the action is in progress or imminent. The output uses present perfect 'has initiated', which implies the action is already completed. This is a subtle tense shift but could misrepresent the stage of the process.\"\n    },\n    {\n      \"output_temporal\": \"This change aligns Finnish legislation\",\n      \"source_temporal\": \"The bill would align Finnish legislation\",\n      \"explanation\": \"The source uses conditional 'would align', indicating a future/hypothetical outcome if the bill passes. The output uses present tense 'aligns', which implies the alignment is already happening or is a certainty, removing the conditional nature.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"Two tense shifts detected: (1) 'is sending' \u2192 'has initiated' shifts from ongoing/imminent to completed action; (2) 'would align' (conditional future) \u2192 'aligns' (present tense) removes the conditional nature of the proposed legislative change, presenting a hypothetical future outcome as a current fact.\"\n}\n```",
+  "judge_prompt_tokens": 722,
+  "judge_completion_tokens": 595,
+  "judge_cost_usd": 0.018485,
+  "timestamp": 1774952547.297824
+}

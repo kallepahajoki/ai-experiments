@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language (may, might, reportedly, allegedly, or Finnish equivalents like 'mahdollisesti', 'v\u00e4itetysti') has been added. The source's factual claims about drone sightings, crashes, police cordons, and the minister's statements are all rendered as definitive facts in the summary. One minor note: the source says 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) regarding the two drones falling, which itself contains a slight qualification, and the output actually removes this qualification by stating the crashes more definitively \u2014 but this is the opposite of hedging addition.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language (may, might, reportedly, allegedly, or Finnish equivalents like 'mahdollisesti', 'v\u00e4itetysti') has been added. The source's factual claims about drone sightings, crashes, police cordons, and the minister's statements are all rendered as definitive facts in the summary. One minor note: the source says 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) regarding the two drones falling, which itself contains a slight qualification, and the output actually removes this qualification by stating the crashes more definitively \u2014 but this is the opposite of hedging addition.\"\n}\n```",
+  "judge_prompt_tokens": 674,
+  "judge_completion_tokens": 201,
+  "judge_cost_usd": 0.008395,
+  "timestamp": 1774952603.910523
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false causal or combined claims. The summary correctly separates the key points: the legislative change, the retained prohibitions, the goal/context, and the timeline. The statement about NATO alignment ('Muutos linjaisi Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n useimpien Nato-maiden kanssa') is presented alongside the statement about not seeking nuclear weapons on Finnish territory, but these are listed as separate bullet sub-points under 'Tavoite' rather than being causally linked. Both facts are present in the source and their juxtaposition does not create a false combined claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false causal or combined claims. The summary correctly separates the key points: the legislative change, the retained prohibitions, the goal/context, and the timeline. The statement about NATO alignment ('Muutos linjaisi Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n useimpien Nato-maiden kanssa') is presented alongside the statement about not seeking nuclear weapons on Finnish territory, but these are listed as separate bullet sub-points under 'Tavoite' rather than being causally linked. Both facts are present in the source and their juxtaposition does not create a false combined claim.\"\n}\n```",
+  "judge_prompt_tokens": 1135,
+  "judge_completion_tokens": 182,
+  "judge_cost_usd": 0.010225,
+  "timestamp": 1774952603.9198442
+}

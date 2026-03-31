@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The source qualifies the information about the two drones falling with 'T\u00e4m\u00e4n hetken tietojen mukaan' ('according to current information'), indicating preliminary/uncertain status. The output presents this as established fact without any such qualifier. This is a moderately significant hedging removal as it concerns a key factual claim about the drone incidents.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Kaksi droonia on pudonnut maahan \u2013 yksi Kouvolan pohjoispuolella, toinen Kouvolan it\u00e4puolella.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source qualifies the information about the two drones falling with 'T\u00e4m\u00e4n hetken tietojen mukaan' ('according to current information'), indicating preliminary/uncertain status. The output presents this as established fact without any such qualifier. This is a moderately significant hedging removal as it concerns a key factual claim about the drone incidents.\"\n}\n```",
+  "judge_prompt_tokens": 866,
+  "judge_completion_tokens": 302,
+  "judge_cost_usd": 0.01188,
+  "timestamp": 1774952603.911926
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The summary is largely faithful to the source in tone and content. There are minor framing shifts: 'varmistaa' (ensure) is rendered as 'vahvistaa' (strengthen), which subtly implies a more active/ambitious goal than the source states. The overall neutral, informational tone of the source is preserved reasonably well, and no dramatic or loaded language is introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"vahvistaa Naton pelotteen uskottavuutta\",\n      \"issue\": \"The source says the goal is to ensure ('varmistaa') that NATO's deterrent is credible, not to 'strengthen' ('vahvistaa') it. 'Vahvistaa' implies an active enhancement beyond the current state, while the source uses more neutral language about ensuring/maintaining credibility.\"\n    },\n    {\n      \"output_phrase\": \"Ei ole kyse ydinaseiden hankinnasta tai sijoittamisesta Suomeen\",\n      \"issue\": \"Minor framing shift: the source specifically says Finland is not seeking to have nuclear weapons placed on its territory ('Suomi ei tavoittele ydinaseiden sijoittamista alueelleen'). The summary combines this with 'hankinta' (acquisition), which in the source is mentioned separately in the context of remaining criminalized activities (hankkiminen). This conflation slightly alters the framing but is not severely misleading.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. There are minor framing shifts: 'varmistaa' (ensure) is rendered as 'vahvistaa' (strengthen), which subtly implies a more active/ambitious goal than the source states. The overall neutral, informational tone of the source is preserved reasonably well, and no dramatic or loaded language is introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1298,
+  "judge_completion_tokens": 379,
+  "judge_cost_usd": 0.015965,
+  "timestamp": 1774952603.917862
+}

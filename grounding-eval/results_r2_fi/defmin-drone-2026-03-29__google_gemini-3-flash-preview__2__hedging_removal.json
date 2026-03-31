@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the claim about two drones having fallen near Kouvola. The source explicitly signals that this information is preliminary and based on what is known at the time, but the output presents it as established fact. This is a moderately significant hedging removal since it concerns the core factual claims of the report. The dropping of 'muutamia' is a minor detail omission. The minister's characterization is properly attributed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 this is the minister's characterization, implying accidental straying rather than established fact about intent\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Kaksi droonia on pudonnut maahan Kouvolan pohjois- ja it\u00e4puolelle. \u2014 presented as established fact without the qualifier 'according to current information'\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita \u2014 the word 'muutamia' (a few) is dropped, though this is a minor detail\"\n    },\n    {\n      \"expression\": \"harhautuneet (minister's characterization)\",\n      \"preserved\": true,\n      \"output_version\": \"Puolustusministeri Antti H\u00e4kk\u00e4sen mukaan kyseess\u00e4 ovat Suomen alueelle harhautuneet lennokit \u2014 properly attributed to the minister\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the claim about two drones having fallen near Kouvola. The source explicitly signals that this information is preliminary and based on what is known at the time, but the output presents it as established fact. This is a moderately significant hedging removal since it concerns the core factual claims of the report. The dropping of 'muutamia' is a minor detail omission. The minister's characterization is properly attributed.\"\n}\n```",
+  "judge_prompt_tokens": 834,
+  "judge_completion_tokens": 624,
+  "judge_cost_usd": 0.01977,
+  "timestamp": 1774952603.911712
+}

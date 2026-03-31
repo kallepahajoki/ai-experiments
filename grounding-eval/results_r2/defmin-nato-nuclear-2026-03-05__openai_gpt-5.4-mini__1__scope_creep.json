@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The output is largely faithful to the source. The one issue is the embellishment of 'difficult-to-predict operational environment' into 'rapidly changing and unpredictable security environment,' introducing the concept of 'rapidly changing' which is not in the source and altering 'operational' to 'security.'",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"in a rapidly changing and unpredictable security environment\",\n      \"explanation\": \"The source says 'difficult-to-predict operational environment.' The output adds 'rapidly changing' which is not stated in the source, and changes 'operational environment' to 'security environment.'\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The output is largely faithful to the source. The one issue is the embellishment of 'difficult-to-predict operational environment' into 'rapidly changing and unpredictable security environment,' introducing the concept of 'rapidly changing' which is not in the source and altering 'operational' to 'security.'\"\n}\n```",
+  "judge_prompt_tokens": 726,
+  "judge_completion_tokens": 194,
+  "judge_cost_usd": 0.00848,
+  "timestamp": 1774952547.297599
+}

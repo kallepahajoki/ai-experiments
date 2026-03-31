@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.78,
+    "evidence": "The summary is largely faithful but introduces several subtle framing shifts: characterizing the change as a 'practical step,' adding the concept of a 'long-standing non-nuclear stance' not in the source, replacing 'fully utilise' with 'full integration,' changing 'NATO operations' to 'NATO standards,' and paraphrasing 'highest possible threshold for military action' as 'strong deterrent against military threats.' These collectively add editorial tone and implied characterizations beyond the neutral source text.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"strengthen Finland's security\",\n      \"issue\": \"The source says 'maximise Finland's security', which is a stronger and more specific term. 'Strengthen' subtly softens the original language, though this is a minor shift.\"\n    },\n    {\n      \"output_phrase\": \"acts as a strong deterrent against military threats\",\n      \"issue\": \"The source says 'forms the highest possible threshold for military action.' The output replaces precise, neutral language with the more editorialized 'strong deterrent against military threats,' which introduces a slightly different framing and loses the specific meaning of 'highest possible threshold.'\"\n    },\n    {\n      \"output_phrase\": \"ensuring full integration into the alliance's deterrence and collective defence mechanisms\",\n      \"issue\": \"The source says 'to fully utilise NATO's deterrence and collective defence.' 'Full integration' implies a broader organizational merging not stated in the source; 'fully utilise' is about making use of existing capabilities, not integration.\"\n    },\n    {\n      \"output_phrase\": \"This legislative change is framed as a practical step\",\n      \"issue\": \"The source does not describe the change as 'a practical step.' This is editorial characterization added by the summary, introducing an evaluative tone not present in the original.\"\n    },\n    {\n      \"output_phrase\": \"maintaining its long-standing non-nuclear stance\",\n      \"issue\": \"The source does not reference a 'long-standing non-nuclear stance.' This is an inference and editorial addition that introduces historical framing and characterization not present in the source material.\"\n    },\n    {\n      \"output_phrase\": \"align Finnish legislation with NATO standards\",\n      \"issue\": \"The source says 'align Finnish legislation with NATO operations,' not 'NATO standards.' 'Standards' implies a normative benchmark, which is a subtle but meaningful framing shift.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.78,\n  \"evidence\": \"The summary is largely faithful but introduces several subtle framing shifts: characterizing the change as a 'practical step,' adding the concept of a 'long-standing non-nuclear stance' not in the source, replacing 'fully utilise' with 'full integration,' changing 'NATO operations' to 'NATO standards,' and paraphrasing 'highest possible threshold for military action' as 'strong deterrent against military threats.' These collectively add editorial tone and implied characterizations beyond the neutral source text.\"\n}\n```",
+  "judge_prompt_tokens": 843,
+  "judge_completion_tokens": 595,
+  "judge_cost_usd": 0.01909,
+  "timestamp": 1774952547.296889
+}

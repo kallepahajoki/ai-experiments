@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.8,
+    "evidence": "No clear composite conflation was found where two independent facts are merged into a single false combined or causal claim. The issues identified are minor: an unsupported attribution to the 'Ministry of Defence' and a slight elevation of certainty from 'according to current information' to 'confirmed.' There are no causal connectors (because, caused, led to, due to, resulting in) that create false relationships between independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence reported that several low-flying, slow-moving small objects were detected in Finnish airspace on Sunday morning\",\n      \"source_facts\": [\"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace\", \"The source does not attribute this report specifically to the Finnish Ministry of Defence\"],\n      \"explanation\": \"The source does not specify who reported the detection of the objects. The summary attributes the report to 'The Finnish Ministry of Defence,' which is not stated in the source. While the Defence Forces and Defense Minister are mentioned, the source does not say the Ministry of Defence itself issued the report. This is a minor attribution conflation rather than a merging of two separate facts into a false causal claim.\"\n    },\n    {\n      \"output_statement\": \"It has been confirmed that one drone crashed north of Kouvola and another east of Kouvola.\",\n      \"source_facts\": [\"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"],\n      \"explanation\": \"The source uses the hedging phrase 'According to current information,' suggesting the information is preliminary. The summary replaces this with 'It has been confirmed,' which elevates the certainty level. This is more of a distortion than a composite conflation.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.8,\n  \"evidence\": \"No clear composite conflation was found where two independent facts are merged into a single false combined or causal claim. The issues identified are minor: an unsupported attribution to the 'Ministry of Defence' and a slight elevation of certainty from 'according to current information' to 'confirmed.' There are no causal connectors (because, caused, led to, due to, resulting in) that create false relationships between independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 491,
+  "judge_completion_tokens": 440,
+  "judge_cost_usd": 0.013455,
+  "timestamp": 1774952547.293233
+}

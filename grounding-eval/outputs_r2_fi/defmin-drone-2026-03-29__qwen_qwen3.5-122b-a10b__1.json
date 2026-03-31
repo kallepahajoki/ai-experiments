@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "content": "Puolustusministeri\u00f6n tiedotteen mukaan sunnuntai-aamuna havaittiin Suomen ilmatilassa, merialueella ja Kaakkois-Suomessa matalalla lent\u00e4vi\u00e4 kohteita. Ilmavoimat l\u00e4hetti tunnistusteht\u00e4v\u00e4\u00e4n F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n. T\u00e4m\u00e4n hetken tietojen mukaan kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle, ja poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\n\nPuolustusministeri Antti H\u00e4kk\u00e4nen toteaa, ett\u00e4 lenokit ovat harhautuneet Suomen alueelle ja asiaan suhtaudutaan vakavasti. Turvallisuusviranomaiset ovat reagoineet v\u00e4litt\u00f6m\u00e4sti. Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.",
+  "prompt_tokens": 249,
+  "completion_tokens": 1884,
+  "cost_usd": 0.00398346,
+  "latency_ms": 11258.08687499375,
+  "timestamp": 1774951475.762033
+}

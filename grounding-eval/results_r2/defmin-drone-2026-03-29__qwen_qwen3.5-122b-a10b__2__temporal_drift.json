@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct date ('Sunday morning'), the correct sequence of events (detection \u2192 military response \u2192 crashes \u2192 police securing sites \u2192 official statement \u2192 ongoing investigation), and all temporal relationships. The minor tense shifts (present perfect to simple past, present to past) are stylistic differences common in summarization and do not constitute meaningful temporal drift or misrepresentation of when events occurred.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"has been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"deployed (past tense)\",\n    \"crashed (past tense)\",\n    \"have secured (present perfect)\",\n    \"confirmed (past tense)\",\n    \"strayed (past tense)\",\n    \"responded (past tense)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"deployed (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site' suggesting an ongoing or recently completed action, while the summary uses simple past 'deployed', which is a minor tense shift but does not materially misrepresent the event.\"\n    },\n    {\n      \"output_temporal\": \"crashed (simple past)\",\n      \"source_temporal\": \"has crashed (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has crashed' while the summary uses simple past 'crashed'. This is a minor tense shift but does not change the factual meaning significantly.\"\n    },\n    {\n      \"output_temporal\": \"confirmed (past tense)\",\n      \"source_temporal\": \"states (present tense)\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's statement, while the summary uses past tense 'confirmed'. This is a minor tense shift typical of summarization and does not misrepresent the content.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct date ('Sunday morning'), the correct sequence of events (detection \u2192 military response \u2192 crashes \u2192 police securing sites \u2192 official statement \u2192 ongoing investigation), and all temporal relationships. The minor tense shifts (present perfect to simple past, present to past) are stylistic differences common in summarization and do not constitute meaningful temporal drift or misrepresentation of when events occurred.\"\n}\n```",
+  "judge_prompt_tokens": 524,
+  "judge_completion_tokens": 545,
+  "judge_cost_usd": 0.016245,
+  "timestamp": 1774952547.294231
+}

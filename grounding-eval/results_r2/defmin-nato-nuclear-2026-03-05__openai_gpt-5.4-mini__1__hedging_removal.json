@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source text is largely factual and declarative, describing a legislative proposal and its rationale. There is very little hedging or uncertainty language in the source. The phrase 'difficult-to-predict operational environment' is slightly softened/rephrased to 'rapidly changing and unpredictable security environment' in the output, but this is a minor paraphrase rather than a meaningful removal of hedging \u2014 both convey uncertainty about the future environment. No critical claims involving suspicion, allegation, or conditionality were present in the source, so there is no significant hedging removal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": false, \"output_version\": \"rapidly changing and unpredictable security environment\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source text is largely factual and declarative, describing a legislative proposal and its rationale. There is very little hedging or uncertainty language in the source. The phrase 'difficult-to-predict operational environment' is slightly softened/rephrased to 'rapidly changing and unpredictable security environment' in the output, but this is a minor paraphrase rather than a meaningful removal of hedging \u2014 both convey uncertainty about the future environment. No critical claims involving suspicion, allegation, or conditionality were present in the source, so there is no significant hedging removal.\"\n}\n```",
+  "judge_prompt_tokens": 789,
+  "judge_completion_tokens": 267,
+  "judge_cost_usd": 0.01062,
+  "timestamp": 1774952547.2975638
+}

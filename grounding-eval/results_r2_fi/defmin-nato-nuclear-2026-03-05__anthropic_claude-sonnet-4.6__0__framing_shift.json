@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The summary is largely faithful to the source in tone and content. There are minor framing differences: 'vahvistetaan' and 'korotetaan' introduce slightly more assertive/active language compared to the source's 'varmistaa' (ensure). The shift from 'olisivat mahdollisia' to 'sallittaisiin' is very minor. Overall the summary maintains a neutral, factual tone closely matching the source, so any framing shift is minimal.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Vahvistetaan Naton uskottavaa pelotetta ja korotetaan kynnyst\u00e4 sotilaallisille toimille\",\n      \"issue\": \"The source says the goal is to 'varmistaa' (ensure) that the deterrent is credible and forms the highest possible threshold. The summary uses 'vahvistetaan' (strengthen/reinforce) and 'korotetaan' (raise/elevate), which imply active improvement beyond the current state, whereas the source language is about ensuring/maintaining credibility. This introduces a slightly more assertive framing than the original.\"\n    },\n    {\n      \"output_phrase\": \"sallittaisiin\",\n      \"issue\": \"The source uses 'olisivat jatkossa mahdollisia' (would be possible in the future), which is a more neutral and permissive framing. 'Sallittaisiin' (would be permitted/allowed) is slightly more active but this is a minor difference and largely synonymous in legal context.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. There are minor framing differences: 'vahvistetaan' and 'korotetaan' introduce slightly more assertive/active language compared to the source's 'varmistaa' (ensure). The shift from 'olisivat mahdollisia' to 'sallittaisiin' is very minor. Overall the summary maintains a neutral, factual tone closely matching the source, so any framing shift is minimal.\"\n}\n```",
+  "judge_prompt_tokens": 1233,
+  "judge_completion_tokens": 406,
+  "judge_cost_usd": 0.016315,
+  "timestamp": 1774952603.915783
+}

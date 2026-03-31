@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The most notable omission is the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the drone crash details were preliminary. This is important as it conveys uncertainty. Also, H\u00e4kk\u00e4nen's specific statement that drones had 'strayed' (harhautunut) into Finnish airspace is omitted, which provides a characterization of the incident. Neither rises to 'critical' level but the qualifier is high importance as it changes the certainty of the claims.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: 'Suomen alueelle on harhautunut lennokkeja.'\",\n    \"H\u00e4kk\u00e4nen: 'Suhtaudumme asiaan hyvin vakavasti.'\",\n    \"H\u00e4kk\u00e4nen: 'Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.'\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"Qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) \u2014 indicating the information about the drones falling was preliminary/uncertain\",\n      \"importance\": \"high\"\n    },\n    {\n      \"fact\": \"H\u00e4kk\u00e4nen's characterization that the drones had 'strayed' (harhautunut) into Finnish territory\",\n      \"importance\": \"high\"\n    },\n    {\n      \"fact\": \"The objects were described as 'pieni\u00e4' (small) in the source\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"The source says 'muutamia' (a few) objects, which is omitted in the output\",\n      \"importance\": \"low\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The most notable omission is the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which signals that the drone crash details were preliminary. This is important as it conveys uncertainty. Also, H\u00e4kk\u00e4nen's specific statement that drones had 'strayed' (harhautunut) into Finnish airspace is omitted, which provides a characterization of the incident. Neither rises to 'critical' level but the qualifier is high importance as it changes the certainty of the claims.\"\n}\n```",
+  "judge_prompt_tokens": 696,
+  "judge_completion_tokens": 677,
+  "judge_cost_usd": 0.020405,
+  "timestamp": 1774952603.914575
+}

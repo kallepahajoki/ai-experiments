@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output is a faithful summary of the source document. Minor wording changes such as 'lis\u00e4tutkimuksia' \u2192 'jatkotutkimuksia' and 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti' are paraphrases that do not introduce new information beyond what the source provides. All facts, names, locations, and quotes are traceable to the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output is a faithful summary of the source document. Minor wording changes such as 'lis\u00e4tutkimuksia' \u2192 'jatkotutkimuksia' and 'hyvin vakavasti' \u2192 'eritt\u00e4in vakavasti' are paraphrases that do not introduce new information beyond what the source provides. All facts, names, locations, and quotes are traceable to the source.\"\n}\n```",
+  "judge_prompt_tokens": 736,
+  "judge_completion_tokens": 139,
+  "judge_cost_usd": 0.007155,
+  "timestamp": 1774952603.913921
+}

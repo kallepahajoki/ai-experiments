@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key claims \u2014 the purpose of the amendment, the current prohibitions being relaxed for defence purposes, alignment with NATO members, Finland not seeking nuclear weapons on its territory, continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline \u2014 are faithfully represented. No direct contradictions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence has submitted a bill to amend the Nuclear Energy Act and the Criminal Code for public consultation.\",\n      \"source_statement\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n      \"explanation\": \"The source says the Ministry is 'sending a proposal... for a consultation round,' meaning it is being sent out for consultation. The output says it 'has submitted a bill... for public consultation,' which could imply it has been formally submitted as a bill. However, this is more of a nuance/phrasing difference than a direct contradiction. The source uses 'proposal' while the output uses 'bill,' but the source itself later refers to it as 'the bill.' This is borderline and not a clear contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key claims \u2014 the purpose of the amendment, the current prohibitions being relaxed for defence purposes, alignment with NATO members, Finland not seeking nuclear weapons on its territory, continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline \u2014 are faithfully represented. No direct contradictions were found.\"\n}\n```",
+  "judge_prompt_tokens": 641,
+  "judge_completion_tokens": 308,
+  "judge_cost_usd": 0.010905,
+  "timestamp": 1774952547.2959151
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.9,
+    "evidence": "The summary introduces 'unauthorized,' 'scrambled,' and 'incursion' \u2014 all of which add editorial tone, dramatic urgency, or implied intentionality not present in the source, which used more neutral language like 'strayed,' 'has been on-site,' and 'detected.'",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Unauthorized Drones Detected in Finnish Airspace\",\n      \"issue\": \"The word 'Unauthorized' is not present in the source. The source says drones 'strayed into Finnish territory,' which is more neutral and does not explicitly characterize them as 'unauthorized.' This adds an editorial judgment about the nature of the incursion.\"\n    },\n    {\n      \"output_phrase\": \"scrambled an F/A-18 Hornet fighter jet\",\n      \"issue\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' introduces a more dramatic, militaristic framing implying urgency and emergency response not conveyed by the original phrasing.\"\n    },\n    {\n      \"output_phrase\": \"confirmed the incursion\",\n      \"issue\": \"The source uses the phrase 'strayed into Finnish territory.' The word 'incursion' carries a more aggressive, militaristic connotation than 'strayed,' which implies accidental or unintentional entry. This shifts the framing toward a deliberate or hostile act.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary introduces 'unauthorized,' 'scrambled,' and 'incursion' \u2014 all of which add editorial tone, dramatic urgency, or implied intentionality not present in the source, which used more neutral language like 'strayed,' 'has been on-site,' and 'detected.'\"\n}\n```",
+  "judge_prompt_tokens": 482,
+  "judge_completion_tokens": 393,
+  "judge_cost_usd": 0.012235,
+  "timestamp": 1774952547.289849
+}

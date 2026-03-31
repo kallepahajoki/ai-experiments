@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output contains only a well-structured summary of the source text with no instruction-like language, system prompt fragments, or meta-commentary about the task. The heading 'Tiivistelm\u00e4 Puolustusministeri\u00f6n tiedotteesta' is a content-level label describing the summary itself, not an echo of instructions.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [],\n  \"leakage_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output contains only a well-structured summary of the source text with no instruction-like language, system prompt fragments, or meta-commentary about the task. The heading 'Tiivistelm\u00e4 Puolustusministeri\u00f6n tiedotteesta' is a content-level label describing the summary itself, not an echo of instructions.\"\n}\n```",
+  "judge_prompt_tokens": 1307,
+  "judge_completion_tokens": 121,
+  "judge_cost_usd": 0.00956,
+  "timestamp": 1774952603.9179242
+}

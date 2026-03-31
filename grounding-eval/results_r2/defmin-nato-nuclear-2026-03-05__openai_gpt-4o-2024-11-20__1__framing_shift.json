@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output is largely faithful to the source in tone and content. Minor wording differences ('enhance' vs 'maximise', 'unpredictable' vs 'difficult-to-predict', 'allow their presence') exist but do not introduce significant editorial bias, loaded language, or implied causality not present in the source. The summary maintains the neutral, informational tone of the original.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"enhance Finland's security\",\n      \"issue\": \"The source uses 'maximise Finland's security', which is a stronger and more specific term. 'Enhance' is a slight softening but not a major framing shift.\"\n    },\n    {\n      \"output_phrase\": \"unpredictable operational environment\",\n      \"issue\": \"The source says 'difficult-to-predict operational environment'. 'Unpredictable' is slightly more absolute/dramatic than 'difficult-to-predict', though the difference is minor.\"\n    },\n    {\n      \"output_phrase\": \"allow their presence\",\n      \"issue\": \"The source specifies 'bringing a nuclear explosive into Finland, or its transport, delivery, or possession' would be possible. 'Allow their presence' is a broader, slightly more casual paraphrase that could imply a more permissive stance than the source's specific conditional framing.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. Minor wording differences ('enhance' vs 'maximise', 'unpredictable' vs 'difficult-to-predict', 'allow their presence') exist but do not introduce significant editorial bias, loaded language, or implied causality not present in the source. The summary maintains the neutral, informational tone of the original.\"\n}\n```",
+  "judge_prompt_tokens": 661,
+  "judge_completion_tokens": 351,
+  "judge_cost_usd": 0.01208,
+  "timestamp": 1774952547.2971861
+}

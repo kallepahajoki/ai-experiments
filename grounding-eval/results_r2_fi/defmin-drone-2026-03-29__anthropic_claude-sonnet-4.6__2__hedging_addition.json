@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language (e.g., 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'ilmeisesti') has been added. All factual claims from the source are presented as facts in the summary.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language (e.g., 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'ilmeisesti') has been added. All factual claims from the source are presented as facts in the summary.\"\n}\n```",
+  "judge_prompt_tokens": 688,
+  "judge_completion_tokens": 127,
+  "judge_cost_usd": 0.006615,
+  "timestamp": 1774952603.911037
+}

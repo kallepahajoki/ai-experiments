@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source document's key points. The summary correctly states the purpose of the legislative change, the conditions under which nuclear explosives could be brought/transported/held, that Finland is not seeking nuclear weapons on its territory, that acquisition/manufacturing/development/detonation remain criminalized, and the consultation deadline. The output uses 'ydinaseiden' (nuclear weapons) in place of 'ydinr\u00e4j\u00e4hteiden' (nuclear explosives) when discussing what remains criminalized, but this is a minor terminological simplification rather than a direct contradiction, as the source itself uses both terms in close proximity. The phrase about compatibility with 'other NATO countries' slightly rephrases the source's 'NATO operations' but is not a direct contradiction given the source also mentions that most NATO countries lack such restrictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source document's key points. The summary correctly states the purpose of the legislative change, the conditions under which nuclear explosives could be brought/transported/held, that Finland is not seeking nuclear weapons on its territory, that acquisition/manufacturing/development/detonation remain criminalized, and the consultation deadline. The output uses 'ydinaseiden' (nuclear weapons) in place of 'ydinr\u00e4j\u00e4hteiden' (nuclear explosives) when discussing what remains criminalized, but this is a minor terminological simplification rather than a direct contradiction, as the source itself uses both terms in close proximity. The phrase about compatibility with 'other NATO countries' slightly rephrases the source's 'NATO operations' but is not a direct contradiction given the source also mentions that most NATO countries lack such restrictions.\"\n}\n```",
+  "judge_prompt_tokens": 1045,
+  "judge_completion_tokens": 217,
+  "judge_cost_usd": 0.01065,
+  "timestamp": 1774952603.92007
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output accurately reflects the source material without merging independent facts into false combined or causal claims. The causal/purposive connections stated (e.g., lifting the ban to ensure NATO deterrence credibility, aligning with NATO to maximize security) are supported by the source. The statement about alignment with NATO and maximizing security combines two points from the source ('The bill would align Finnish legislation with NATO operations' and 'The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment'), but these are presented as complementary goals in the source as well, not as independent unrelated facts being falsely merged.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output accurately reflects the source material without merging independent facts into false combined or causal claims. The causal/purposive connections stated (e.g., lifting the ban to ensure NATO deterrence credibility, aligning with NATO to maximize security) are supported by the source. The statement about alignment with NATO and maximizing security combines two points from the source ('The bill would align Finnish legislation with NATO operations' and 'The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment'), but these are presented as complementary goals in the source as well, not as independent unrelated facts being falsely merged.\"\n}\n```",
+  "judge_prompt_tokens": 757,
+  "judge_completion_tokens": 180,
+  "judge_cost_usd": 0.008285,
+  "timestamp": 1774952547.2955918
+}

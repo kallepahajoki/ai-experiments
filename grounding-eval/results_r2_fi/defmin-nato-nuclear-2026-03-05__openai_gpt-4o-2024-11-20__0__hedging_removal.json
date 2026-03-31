@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses conditional forms ('olisivat mahdollisia', 'liittyisiv\u00e4t') to describe what the legislative proposal would allow, reflecting that this is a proposal not yet enacted. The output partially preserves this with 'sallisi' (conditional) but drops the conditionality in 'jos ne liittyv\u00e4t' (indicative instead of conditional 'liittyisiv\u00e4t'). The change from 'l\u00e4hett\u00e4\u00e4' (sends/is sending) to 'on l\u00e4hett\u00e4nyt' (has sent) is a minor tense shift rather than true hedging removal. The conditional-to-indicative shift in 'liittyisiv\u00e4t' \u2192 'liittyv\u00e4t' is relatively minor since the overall proposal context is maintained with 'sallisi'. Overall, the hedging removals are minor and do not fundamentally misrepresent the content.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen...\"\n    },\n    {\n      \"expression\": \"liittyisiv\u00e4t\",\n      \"context\": \"jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\"\n    },\n    {\n      \"expression\": \"l\u00e4hett\u00e4\u00e4\",\n      \"context\": \"Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle esityksen\" \n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\",\n      \"preserved\": false,\n      \"output_version\": \"Esitys sallisi ydinr\u00e4j\u00e4hteiden tuomisen, kuljettamisen, toimittamisen ja hallussapidon\"\n    },\n    {\n      \"expression\": \"liittyisiv\u00e4t\",\n      \"preserved\": false,\n      \"output_version\": \"jos ne liittyv\u00e4t Suomen puolustukseen tai Naton toimintaan\"\n    },\n    {\n      \"expression\": \"l\u00e4hett\u00e4\u00e4 (present tense, indicating upcoming action)\",\n      \"preserved\": false,\n      \"output_version\": \"Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt (perfect tense, indicating completed action)\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses conditional forms ('olisivat mahdollisia', 'liittyisiv\u00e4t') to describe what the legislative proposal would allow, reflecting that this is a proposal not yet enacted. The output partially preserves this with 'sallisi' (conditional) but drops the conditionality in 'jos ne liittyv\u00e4t' (indicative instead of conditional 'liittyisiv\u00e4t'). The change from 'l\u00e4hett\u00e4\u00e4' (sends/is sending) to 'on l\u00e4hett\u00e4nyt' (has sent) is a minor tense shift rather than true hedging removal. The conditional-to-indicative shift in 'liittyisiv\u00e4t' \u2192 'liittyv\u00e4t' is relatively minor since the overall proposal context is maintained with 'sallisi'. Overall, the hedging removals are minor and do not fundamentally misrepresent the content.\"\n}\n```",
+  "judge_prompt_tokens": 1152,
+  "judge_completion_tokens": 683,
+  "judge_cost_usd": 0.022835,
+  "timestamp": 1774952603.9182441
+}

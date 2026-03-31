@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "Every piece of information in the output can be directly traced back to the source document. The summary accurately reflects the key points: the legislative proposal being sent for consultation, the current ban on nuclear explosives, the proposed changes allowing certain activities related to NATO defense, the goal of aligning Finnish legislation with NATO operations, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026. No external context, historical references, or additional explanations beyond the source were introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"Every piece of information in the output can be directly traced back to the source document. The summary accurately reflects the key points: the legislative proposal being sent for consultation, the current ban on nuclear explosives, the proposed changes allowing certain activities related to NATO defense, the goal of aligning Finnish legislation with NATO operations, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026. No external context, historical references, or additional explanations beyond the source were introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1247,
+  "judge_completion_tokens": 169,
+  "judge_cost_usd": 0.01046,
+  "timestamp": 1774952603.91615
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The source text is largely factual and declarative, describing a legislative proposal. There is very little hedging or uncertainty language in the source. The phrase 'difficult-to-predict operational environment' provides context for the proposal's rationale but is not a hedge about the truth of a claim. The output omits this phrase but does not convert any uncertain or conditional claims into established facts. The source's conditional language ('would in future be possible if') is preserved in the output ('would permit these actions if'). The statement that Finland 'does not seek' deployment and deployment is not 'planned' is faithfully reflected. No hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": false, \"output_version\": \"This detail about the difficult-to-predict operational environment was omitted entirely from the output, but this is an omission rather than a hedging removal converting uncertainty to certainty.\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The source text is largely factual and declarative, describing a legislative proposal. There is very little hedging or uncertainty language in the source. The phrase 'difficult-to-predict operational environment' provides context for the proposal's rationale but is not a hedge about the truth of a claim. The output omits this phrase but does not convert any uncertain or conditional claims into established facts. The source's conditional language ('would in future be possible if') is preserved in the output ('would permit these actions if'). The statement that Finland 'does not seek' deployment and deployment is not 'planned' is faithfully reflected. No hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 782,
+  "judge_completion_tokens": 307,
+  "judge_cost_usd": 0.011585,
+  "timestamp": 1774952547.297834
+}

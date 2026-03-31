@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "The output faithfully reflects all key details from the source document without any contradictory statements. The locations, events, quotes, and attributions all match the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"The output faithfully reflects all key details from the source document without any contradictory statements. The locations, events, quotes, and attributions all match the source.\"\n}\n```",
+  "judge_prompt_tokens": 437,
+  "judge_completion_tokens": 77,
+  "judge_cost_usd": 0.00411,
+  "timestamp": 1774952547.293406
+}

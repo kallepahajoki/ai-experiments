@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary shifts two perfect-tense verbs ('on pudonnut', 'on ollut paikalla') to simple past ('putosi', 'l\u00e4hetti'). In Finnish, the perfect tense conveys present relevance of a past event, while the simple past (imperfekti) frames events as completed and more distant. This constitutes a minor but real tense drift. The event ordering remains correct and no dates/times are altered. The overall temporal meaning is largely preserved despite the tense shifts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (perfect tense)\",\n    \"on ollut paikalla (perfect tense)\",\n    \"on erist\u00e4nyt (perfect tense)\",\n    \"ovat reagoineet (perfect tense)\",\n    \"tutkii (present tense)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaiaamuna\",\n    \"T\u00e4m\u00e4nhetkisten tietojen mukaan\",\n    \"putosi (simple past tense)\",\n    \"l\u00e4hetti (simple past tense)\",\n    \"on erist\u00e4nyt (perfect tense)\",\n    \"ovat reagoineet (perfect tense)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"putosi (simple past / imperfekti)\",\n      \"source_temporal\": \"on pudonnut (perfect / perfekti)\",\n      \"explanation\": \"The source uses the Finnish perfect tense 'on pudonnut' (has fallen), indicating a completed action with present relevance. The summary shifts to simple past 'putosi' (fell). This is a minor tense change but does not significantly alter the meaning.\"\n    },\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past / imperfekti)\",\n      \"source_temporal\": \"on ollut paikalla (perfect / perfekti)\",\n      \"explanation\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (the Air Force has been on site for an identification mission) using the perfect tense, emphasizing ongoing presence/relevance. The summary rewrites this as 'Ilmavoimat l\u00e4hetti... tunnistusteht\u00e4v\u00e4\u00e4n' (the Air Force sent... for an identification mission), shifting to simple past and also slightly changing the framing from 'being present' to 'sending'. This is a tense drift from perfect to simple past.\"\n    },\n    {\n      \"output_temporal\": \"merialueella \u2014 omitted\",\n      \"source_temporal\": \"merialueella ja Kaakkois-Suomessa\",\n      \"explanation\": \"The source mentions objects were detected both over the sea area ('merialueella') and in Southeast Finland. The summary omits the sea area reference, narrowing the spatial/temporal scope of the initial detection event. This is more of an omission than a temporal drift per se.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary shifts two perfect-tense verbs ('on pudonnut', 'on ollut paikalla') to simple past ('putosi', 'l\u00e4hetti'). In Finnish, the perfect tense conveys present relevance of a past event, while the simple past (imperfekti) frames events as completed and more distant. This constitutes a minor but real tense drift. The event ordering remains correct and no dates/times are altered. The overall temporal meaning is largely preserved despite the tense shifts.\"\n}\n```",
+  "judge_prompt_tokens": 700,
+  "judge_completion_tokens": 756,
+  "judge_cost_usd": 0.0224,
+  "timestamp": 1774952603.9136388
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source text is a factual description of a legislative proposal and does not contain hedging or uncertainty language such as 'suspected,' 'alleged,' 'reportedly,' 'may,' 'might,' 'could,' 'appears to,' etc. The statements are presented as definitive descriptions of the proposal, its purpose, and its scope. The output faithfully mirrors this tone without introducing or removing any hedging.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [],\n  \"hedging_preserved_in_output\": [],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source text is a factual description of a legislative proposal and does not contain hedging or uncertainty language such as 'suspected,' 'alleged,' 'reportedly,' 'may,' 'might,' 'could,' 'appears to,' etc. The statements are presented as definitive descriptions of the proposal, its purpose, and its scope. The output faithfully mirrors this tone without introducing or removing any hedging.\"\n}\n```",
+  "judge_prompt_tokens": 798,
+  "judge_completion_tokens": 151,
+  "judge_cost_usd": 0.007765,
+  "timestamp": 1774952547.297416
+}

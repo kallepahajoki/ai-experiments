@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output states 'two drones have crashed: one north of Kouvola and another east of Kouvola,' which is a faithful representation of the source's 'one drone has crashed north of Kouvola and another east of Kouvola.' The number 'two' is an accurate summation of 'one' and 'another.' All other numbers and quantities match the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"several\", \"one\", \"another\", \"F/A-18\"],\n  \"numbers_in_output\": [\"several\", \"two\", \"one\", \"another\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output states 'two drones have crashed: one north of Kouvola and another east of Kouvola,' which is a faithful representation of the source's 'one drone has crashed north of Kouvola and another east of Kouvola.' The number 'two' is an accurate summation of 'one' and 'another.' All other numbers and quantities match the source.\"\n}\n```",
+  "judge_prompt_tokens": 468,
+  "judge_completion_tokens": 185,
+  "judge_cost_usd": 0.006965,
+  "timestamp": 1774952547.294707
+}

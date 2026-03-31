@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All named entities in the output (Suomi, Kaakkois-Suomi, Ilmavoimat, F/A-18 Hornet, Kouvola, Poliisi, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. The reference to 'Puolustusministeri\u00f6n tiedote' is an inferred framing label rather than a substitution of one entity for another.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Suomi\", \"Kaakkois-Suomi\", \"F/A-18 Hornet\", \"Kouvola\", \"Poliisi\", \"Antti H\u00e4kk\u00e4nen\", \"Puolustusministeri\u00f6\", \"Puolustusvoimat\", \"Ilmavoimat\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Puolustusministeri\u00f6 (Puolustusministeri\u00f6n tiedotteesta)\",\n      \"source_entity\": \"N/A\",\n      \"explanation\": \"The output labels the summary as being from a 'Puolustusministeri\u00f6n tiedote' (Defence Ministry press release), but the source does not identify itself as a Defence Ministry press release. This is an added attribution, not strictly an entity substitution of one entity for another.\"\n    }\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All named entities in the output (Suomi, Kaakkois-Suomi, Ilmavoimat, F/A-18 Hornet, Kouvola, Poliisi, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. The reference to 'Puolustusministeri\u00f6n tiedote' is an inferred framing label rather than a substitution of one entity for another.\"\n}\n```",
+  "judge_prompt_tokens": 789,
+  "judge_completion_tokens": 352,
+  "judge_cost_usd": 0.012745,
+  "timestamp": 1774952603.912912
+}

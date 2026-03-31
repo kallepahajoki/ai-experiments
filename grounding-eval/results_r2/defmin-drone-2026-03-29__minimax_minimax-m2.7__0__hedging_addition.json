@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source. All key facts are stated without added hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The source's definitive statements about drone detection, crashes, police securing areas, and the minister's quotes are all rendered with equivalent certainty in the output.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source. All key facts are stated without added hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The source's definitive statements about drone detection, crashes, police securing areas, and the minister's quotes are all rendered with equivalent certainty in the output.\"\n}\n```",
+  "judge_prompt_tokens": 472,
+  "judge_completion_tokens": 123,
+  "judge_cost_usd": 0.005435,
+  "timestamp": 1774952547.291606
+}

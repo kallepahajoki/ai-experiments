@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added to statements that were presented as facts in the source. The output uses bold formatting and direct language consistent with the source's certainty. The phrase 'e.g., transit or logistical support' is an added example/elaboration rather than hedging, and the final sentence characterizing the update as a 'technical adjustment' is an editorial addition but not hedging of a source fact.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly' has been added to statements that were presented as facts in the source. The output uses bold formatting and direct language consistent with the source's certainty. The phrase 'e.g., transit or logistical support' is an added example/elaboration rather than hedging, and the final sentence characterizing the update as a 'technical adjustment' is an editorial addition but not hedging of a source fact.\"\n}\n```",
+  "judge_prompt_tokens": 828,
+  "judge_completion_tokens": 171,
+  "judge_cost_usd": 0.008415,
+  "timestamp": 1774952547.296472
+}

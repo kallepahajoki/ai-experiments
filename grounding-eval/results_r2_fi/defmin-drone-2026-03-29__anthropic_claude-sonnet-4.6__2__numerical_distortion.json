@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source says 'muutamia' (a few) objects were observed, but the summary says 'useita' (several), which exaggerates the quantity. The drone count (two) is consistent with the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia (a few)\", \"yksi (one)\", \"toinen (another/second)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"useita (several)\", \"Kaksi (two)\", \"F/A-18\"],\n  \"distortions\": [\n    {\n      \"output_value\": \"useita (several)\",\n      \"source_value\": \"muutamia (a few)\",\n      \"explanation\": \"'Muutamia' (a few) was changed to 'useita' (several), which implies a larger quantity than the source indicates.\"\n    },\n    {\n      \"output_value\": \"Kaksi (two)\",\n      \"source_value\": \"yksi ... ja toinen (one ... and another)\",\n      \"explanation\": \"While 'one and another' does equal two, the source describes them individually; the summary consolidates to 'kaksi'. This is not a distortion per se, but a rephrasing. The count is accurate.\"\n    }\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source says 'muutamia' (a few) objects were observed, but the summary says 'useita' (several), which exaggerates the quantity. The drone count (two) is consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 706,
+  "judge_completion_tokens": 332,
+  "judge_cost_usd": 0.01183,
+  "timestamp": 1774952603.910965
+}

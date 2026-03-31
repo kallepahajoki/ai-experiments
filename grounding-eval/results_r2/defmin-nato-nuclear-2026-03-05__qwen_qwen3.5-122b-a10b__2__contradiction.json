@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key facts from the source document. The only minor discrepancy is the use of 'submitted' vs. 'sending' and the addition of 'public' before 'consultation period,' but these do not constitute direct contradictions of the source material. All substantive claims in the output are consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence has submitted a proposal to amend the Nuclear Energy Act and the Criminal Code for a public consultation period ending on 2 April 2026.\",\n      \"source_statement\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n      \"explanation\": \"The source says the Ministry is 'sending' the proposal for a consultation round, implying it is being sent out for consultation. The output says it has 'submitted' the proposal, which could imply a different action. However, this is a minor nuance. More notably, the source says 'consultation round' while the output says 'public consultation period' \u2014 adding 'public' is an assumption but not a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key facts from the source document. The only minor discrepancy is the use of 'submitted' vs. 'sending' and the addition of 'public' before 'consultation period,' but these do not constitute direct contradictions of the source material. All substantive claims in the output are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 697,
+  "judge_completion_tokens": 297,
+  "judge_cost_usd": 0.01091,
+  "timestamp": 1774952547.298066
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\" (present progressive, indicating current/imminent action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference),\n",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\" (present progressive, indicating current/imminent action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference),\n    \"The consultation period ends on 2 April 2026\" (future date)\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted\" (present perfect, indicating completed action),\n    \"consultation period running until 2 April 2026\" (future date),\n    \"Current law\" (present),\n    \"would lift these restrictions\" (conditional/future),\n    \"remain criminalised\" (present)\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal for consultation\",\n      \"source_temporal\": \"is sending a proposal ... for a consultation round\",\n      \"explanation\": \"The source uses 'is sending' (present progressive), indicating the action is in progress or imminent. The output uses 'has submitted' (present perfect), implying the action is already completed. This is a subtle tense shift that changes the status of the proposal from being in the process of being sent to already having been submitted.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says the Ministry 'is sending' the proposal (present progressive, suggesting ongoing/imminent action), while the output says it 'has submitted' the proposal (present perfect, suggesting completed action). This is a minor tense drift that slightly misrepresents the stage of the process. All other temporal elements (the 2 April 2026 deadline, future conditional tenses for proposed changes, present tense for current law) are accurately preserved.\"\n}\n```",
+  "judge_prompt_tokens": 730,
+  "judge_completion_tokens": 408,
+  "judge_cost_usd": 0.01385,
+  "timestamp": 1774952547.295399
+}

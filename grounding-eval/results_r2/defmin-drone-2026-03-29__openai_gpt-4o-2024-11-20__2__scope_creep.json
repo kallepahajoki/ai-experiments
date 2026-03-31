@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The output attributes the report to the 'Finnish Ministry of Defence,' which is not stated in the source. Additionally, the phrase 'According to current information' is replaced with 'It has been confirmed that,' which alters the certainty level beyond what the source conveys.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"The Finnish Ministry of Defence reported that\",\n      \"explanation\": \"The source does not attribute the report to the 'Finnish Ministry of Defence.' The source does not specify who issued the initial report \u2014 it simply states the facts. The attribution to the Ministry of Defence appears to be inferred or added from general knowledge.\"\n    },\n    {\n      \"output_content\": \"It has been confirmed that\",\n      \"explanation\": \"The source says 'According to current information,' which conveys a degree of tentativeness. Replacing this with 'It has been confirmed that' subtly changes the meaning by presenting the information as definitively confirmed, which goes beyond what the source states.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output attributes the report to the 'Finnish Ministry of Defence,' which is not stated in the source. Additionally, the phrase 'According to current information' is replaced with 'It has been confirmed that,' which alters the certainty level beyond what the source conveys.\"\n}\n```",
+  "judge_prompt_tokens": 487,
+  "judge_completion_tokens": 267,
+  "judge_cost_usd": 0.00911,
+  "timestamp": 1774952547.293185
+}

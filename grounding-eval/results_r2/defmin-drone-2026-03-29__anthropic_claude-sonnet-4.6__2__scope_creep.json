@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The summary title uses the word 'Unauthorized' which is not in the source, and 'scrambled' adds a nuance not present in the original text. These are relatively minor inferences rather than major scope creep from external knowledge, but they do go slightly beyond what the source explicitly states.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"scrambled an F/A-18 Hornet fighter jet\", \"explanation\": \"The source says 'The Air Force has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' is not in the source and adds a connotation of urgent military deployment that goes slightly beyond the source's neutral phrasing. However, this is a minor paraphrase rather than introducing new factual information.\"},\n    {\"output_content\": \"Unauthorized Drones Detected in Finnish Airspace\", \"explanation\": \"The word 'Unauthorized' does not appear in the source. The source says drones 'strayed into Finnish territory,' which could imply they were unauthorized, but the explicit characterization as 'unauthorized' is an inference not directly stated in the source.\"}\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The summary title uses the word 'Unauthorized' which is not in the source, and 'scrambled' adds a nuance not present in the original text. These are relatively minor inferences rather than major scope creep from external knowledge, but they do go slightly beyond what the source explicitly states.\"\n}\n```",
+  "judge_prompt_tokens": 508,
+  "judge_completion_tokens": 301,
+  "judge_cost_usd": 0.010065,
+  "timestamp": 1774952547.290241
+}

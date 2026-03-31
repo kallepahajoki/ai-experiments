@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key points from the source document. The proposed changes, objectives, alignment with NATO, what is not changing, and the timeline all match the source. No statements in the output contradict or are incompatible with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key points from the source document. The proposed changes, objectives, alignment with NATO, what is not changing, and the timeline all match the source. No statements in the output contradict or are incompatible with the source.\"\n}\n```",
+  "judge_prompt_tokens": 727,
+  "judge_completion_tokens": 94,
+  "judge_cost_usd": 0.005985,
+  "timestamp": 1774952547.2957802
+}

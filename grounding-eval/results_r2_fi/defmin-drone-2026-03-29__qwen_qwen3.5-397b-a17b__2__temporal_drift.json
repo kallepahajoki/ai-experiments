@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The summary shifts tenses in two places (present perfect \u2192 simple past for 'tunnisti' and 'harhautuivat') and drops the temporal qualifier 'T\u00e4m\u00e4n hetken' which indicated the provisional nature of the information. The most notable drift is changing 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on identification mission) to 'tunnisti kohteet' (identified the targets), which both changes the tense and implies successful identification that the source does not confirm.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\", \"Tietojen mukaan\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Ilmavoimat tunnisti kohteet F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"explanation\": \"The source uses the perfect tense 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on an identification mission), indicating an ongoing or recently completed state. The summary changes this to the simple past 'tunnisti kohteet' (identified the targets), which implies a completed, discrete action. This is a tense shift and also subtly changes the meaning from being present on an identification mission to having successfully identified the objects.\"\n    },\n    {\n      \"output_temporal\": \"lennokit harhautuivat Suomen alueelle\",\n      \"source_temporal\": \"Suomen alueelle on harhautunut lennokkeja\",\n      \"explanation\": \"The source uses the present perfect 'on harhautunut' (have strayed), while the summary uses the simple past 'harhautuivat' (strayed). This is a tense change from present perfect to simple past, though the semantic impact is minor in Finnish context.\"\n    },\n    {\n      \"output_temporal\": \"Tietojen mukaan\",\n      \"source_temporal\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"explanation\": \"The source specifies 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), emphasizing the provisional, present-moment nature of the information. The summary drops 'T\u00e4m\u00e4n hetken' (current moment), losing the temporal qualifier that signals the information may be preliminary and subject to change.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The summary shifts tenses in two places (present perfect \u2192 simple past for 'tunnisti' and 'harhautuivat') and drops the temporal qualifier 'T\u00e4m\u00e4n hetken' which indicated the provisional nature of the information. The most notable drift is changing 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present on identification mission) to 'tunnisti kohteet' (identified the targets), which both changes the tense and implies successful identification that the source does not confirm.\"\n}\n```",
+  "judge_prompt_tokens": 691,
+  "judge_completion_tokens": 665,
+  "judge_cost_usd": 0.02008,
+  "timestamp": 1774952603.91554
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output captures all key facts from the source, including the detection details, drone crashes and their locations, police securing the areas, the Defense Minister's statement with its key points, and the joint investigation. The added sentence 'No further details were provided at this time' is an inference but not an omission issue. All important qualifiers like 'According to current information' are reflected in the output.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen made a statement\",\n    \"H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen stated they take this very seriously\",\n    \"H\u00e4kk\u00e4nen stated security authorities responded immediately\",\n    \"Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output captures all key facts from the source, including the detection details, drone crashes and their locations, police securing the areas, the Defense Minister's statement with its key points, and the joint investigation. The added sentence 'No further details were provided at this time' is an inference but not an omission issue. All important qualifiers like 'According to current information' are reflected in the output.\"\n}\n```",
+  "judge_prompt_tokens": 541,
+  "judge_completion_tokens": 312,
+  "judge_cost_usd": 0.010505,
+  "timestamp": 1774952547.2925189
+}

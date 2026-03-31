@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source states 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends/is sending), while the output states 'Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle' (perfect tense: has sent). This shifts the temporal perspective from an ongoing/announced action to a completed one. All other temporal elements (the deadline 2.4.2026, future conditional for allowed activities, continued criminalization) are faithfully preserved. The drift is minor and arguably natural in summarization context, but it is a tense change.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 (present tense \u2013 sends)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t kriminalisoituina (remain criminalized \u2013 present tense)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"on l\u00e4hett\u00e4nyt (perfect tense \u2013 has sent)\",\n    \"Nykyisin (currently)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyisiv\u00e4t edelleen rikoksina (would remain crimes \u2013 conditional)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hett\u00e4nyt (has sent \u2013 perfect/completed action)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 (sends \u2013 present tense, ongoing/announced action)\",\n      \"explanation\": \"The source uses the present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the action is being announced or is in progress. The summary shifts to the perfect tense 'on l\u00e4hett\u00e4nyt' (has sent), implying the action is already completed. This is a minor tense drift but changes the temporal framing of the event.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source states 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends/is sending), while the output states 'Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle' (perfect tense: has sent). This shifts the temporal perspective from an ongoing/announced action to a completed one. All other temporal elements (the deadline 2.4.2026, future conditional for allowed activities, continued criminalization) are faithfully preserved. The drift is minor and arguably natural in summarization context, but it is a tense change.\"\n}\n```",
+  "judge_prompt_tokens": 1214,
+  "judge_completion_tokens": 516,
+  "judge_cost_usd": 0.01897,
+  "timestamp": 1774952603.919213
+}

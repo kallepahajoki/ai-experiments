@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary omits the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), presenting the drone crashes as confirmed facts rather than preliminary information. It also omits the characterization that the drones had 'strayed' (harhautunut) into Finnish airspace, which is a meaningful framing detail from the Defense Minister's statement suggesting accidental rather than intentional incursion. The descriptor 'hitaita' (slow) for the objects is also missing but is of lower importance.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen kommentoi asiaa\",\n    \"H\u00e4kk\u00e4sen mukaan Suomen alueelle on harhautunut lennokkeja\",\n    \"H\u00e4kk\u00e4nen suhtautuu asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"Kohteet kuvattiin 'hitaiksi' (slow-moving) \u2013 t\u00e4m\u00e4 ominaisuus puuttuu tiivistelm\u00e4st\u00e4\",\n      \"importance\": \"low\"\n    },\n    {\n      \"fact\": \"Tiedot droonien putoamisesta perustuvat 't\u00e4m\u00e4n hetken tietoihin' (qualifier: based on current information) \u2013 t\u00e4m\u00e4 varaus puuttuu tiivistelm\u00e4st\u00e4, jossa putoaminen esitet\u00e4\u00e4n vahvistettuna faktana\",\n      \"importance\": \"high\"\n    },\n    {\n      \"fact\": \"H\u00e4kk\u00e4sen mukaan lennokit olivat 'harhautuneet' Suomen alueelle \u2013 t\u00e4m\u00e4 sanavalinta (implying accidental straying) puuttuu tiivistelm\u00e4st\u00e4\",\n      \"importance\": \"high\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary omits the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), presenting the drone crashes as confirmed facts rather than preliminary information. It also omits the characterization that the drones had 'strayed' (harhautunut) into Finnish airspace, which is a meaningful framing detail from the Defense Minister's statement suggesting accidental rather than intentional incursion. The descriptor 'hitaita' (slow) for the objects is also missing but is of lower importance.\"\n}\n```",
+  "judge_prompt_tokens": 726,
+  "judge_completion_tokens": 711,
+  "judge_cost_usd": 0.021405,
+  "timestamp": 1774952603.910866
+}

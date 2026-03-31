@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'one drone' north of Kouvola and 'another' east of Kouvola, which totals two drones. The output says 'Two drones subsequently crashed, one north and one east of Kouvola,' which is numerically consistent. The F/A-18 designation is preserved accurately.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"one (drone)\", \"another (drone)\", \"F/A-18\"],\n  \"numbers_in_output\": [\"Two (drones)\", \"one\", \"one\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'one drone' north of Kouvola and 'another' east of Kouvola, which totals two drones. The output says 'Two drones subsequently crashed, one north and one east of Kouvola,' which is numerically consistent. The F/A-18 designation is preserved accurately.\"\n}\n```",
+  "judge_prompt_tokens": 454,
+  "judge_completion_tokens": 172,
+  "judge_cost_usd": 0.00657,
+  "timestamp": 1774952547.2949371
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The key facts are presented separately and faithfully. The statement about H\u00e4kk\u00e4nen 'confirmed the drones had entered Finnish territory, calling the incident serious and noting that security authorities responded immediately' is a fair paraphrase of his quoted statement without introducing false causal links. No causal connectors are used inappropriately.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The key facts are presented separately and faithfully. The statement about H\u00e4kk\u00e4nen 'confirmed the drones had entered Finnish territory, calling the incident serious and noting that security authorities responded immediately' is a fair paraphrase of his quoted statement without introducing false causal links. No causal connectors are used inappropriately.\"\n}\n```",
+  "judge_prompt_tokens": 507,
+  "judge_completion_tokens": 133,
+  "judge_cost_usd": 0.00586,
+  "timestamp": 1774952547.2895548
+}

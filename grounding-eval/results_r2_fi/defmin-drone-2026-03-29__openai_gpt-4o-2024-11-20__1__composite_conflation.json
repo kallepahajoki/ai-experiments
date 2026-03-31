@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The output connects the Air Force identification mission and the drone crashes in a single sentence with 'ja', potentially implying a causal or sequential link (that the identification mission led to or was directly related to the drones falling). The source presents these as separate facts. Additionally, two distinct drone crash locations are merged into the vague 'Kouvolan alueella'. However, the conflation is relatively mild \u2014 no explicit causal connector like 'because' or 'resulting in' is used.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Sunnuntaiaamuna Suomen ilmatilassa Kaakkois-Suomessa havaittiin matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita.\",\n      \"source_facts\": [\n        \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n      ],\n      \"explanation\": \"The output drops 'merialueella' (sea area), making it seem like the observations were only in Kaakkois-Suomi. This merges two separate observation locations (sea area AND Southeast Finland) into just one. However, this is more of an omission than a composite conflation.\"\n    },\n    {\n      \"output_statement\": \"Ilmavoimat tunnisti kohteita F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4, ja kaksi droonia on pudonnut maahan Kouvolan alueella.\",\n      \"source_facts\": [\n        \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n        \"yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n      ],\n      \"explanation\": \"The source states the Air Force was present on an identification mission and separately that two drones fell in different specific locations (north and east of Kouvola). The output merges these into a single flowing sentence connected with 'ja', which could imply a causal or sequential relationship (identification led to drones falling). Additionally, the specific locations (north and east of Kouvola) are merged into the vaguer 'Kouvolan alueella'. This is a mild conflation but the causal/sequential link is not explicitly stated in the source.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The output connects the Air Force identification mission and the drone crashes in a single sentence with 'ja', potentially implying a causal or sequential link (that the identification mission led to or was directly related to the drones falling). The source presents these as separate facts. Additionally, two distinct drone crash locations are merged into the vague 'Kouvolan alueella'. However, the conflation is relatively mild \u2014 no explicit causal connector like 'because' or 'resulting in' is used.\"\n}\n```",
+  "judge_prompt_tokens": 672,
+  "judge_completion_tokens": 620,
+  "judge_cost_usd": 0.01886,
+  "timestamp": 1774952603.913515
+}

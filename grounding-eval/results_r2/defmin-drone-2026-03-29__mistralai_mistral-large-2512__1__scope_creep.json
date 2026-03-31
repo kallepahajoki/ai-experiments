@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The summary is largely faithful to the source. The only minor scope issue is the added editorial statement 'No further details were provided at this time,' which is an inference not explicitly present in the source document. All other details (F/A-18 Hornet, two drones, Kouvola locations, H\u00e4kk\u00e4nen's quote, Defence Forces investigating) are directly traceable to the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"No further details were provided at this time.\", \"explanation\": \"This editorial comment is not stated in the source document. It is an inference added by the model.\"}\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary is largely faithful to the source. The only minor scope issue is the added editorial statement 'No further details were provided at this time,' which is an inference not explicitly present in the source document. All other details (F/A-18 Hornet, two drones, Kouvola locations, H\u00e4kk\u00e4nen's quote, Defence Forces investigating) are directly traceable to the source.\"\n}\n```",
+  "judge_prompt_tokens": 529,
+  "judge_completion_tokens": 178,
+  "judge_cost_usd": 0.007095,
+  "timestamp": 1774952547.292507
+}

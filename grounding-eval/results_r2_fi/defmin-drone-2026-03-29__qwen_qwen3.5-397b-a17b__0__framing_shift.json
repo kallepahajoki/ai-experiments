@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source neutrally reports that drones were found on the ground ('yksi drooni on pudonnut maahan... ja toinen drooni...') as separate factual statements. The output reframes this with 'Tapahtuman seurauksena' which introduces a causal implication not present in the original, suggesting the drones fell as a result of the events (potentially the interception), which is not stated or implied in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Tapahtuman seurauksena kaksi droonia on pudonnut maahan\",\n      \"issue\": \"The phrase 'Tapahtuman seurauksena' (as a consequence of the event) introduces an implied causal link suggesting the drones fell as a result of some action (e.g., the fighter jet's identification mission). The source simply states that according to current information, one drone fell north of Kouvola and another east of Kouvola, without implying any causality or that the drones fell 'as a consequence' of anything.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source neutrally reports that drones were found on the ground ('yksi drooni on pudonnut maahan... ja toinen drooni...') as separate factual statements. The output reframes this with 'Tapahtuman seurauksena' which introduces a causal implication not present in the original, suggesting the drones fell as a result of the events (potentially the interception), which is not stated or implied in the source.\"\n}\n```",
+  "judge_prompt_tokens": 690,
+  "judge_completion_tokens": 288,
+  "judge_cost_usd": 0.01065,
+  "timestamp": 1774952603.915224
+}

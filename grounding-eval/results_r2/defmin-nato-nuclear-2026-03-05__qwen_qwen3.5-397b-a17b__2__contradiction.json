@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key statements from the source document. Each bullet point in the summary corresponds faithfully to information in the source, including the purpose, current law, proposed changes, alignment with NATO members, clarification about not seeking deployment, remaining prohibitions, and the objective. No statements in the output contradict or are incompatible with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key statements from the source document. Each bullet point in the summary corresponds faithfully to information in the source, including the purpose, current law, proposed changes, alignment with NATO members, clarification about not seeking deployment, remaining prohibitions, and the objective. No statements in the output contradict or are incompatible with the source.\"\n}\n```",
+  "judge_prompt_tokens": 701,
+  "judge_completion_tokens": 116,
+  "judge_cost_usd": 0.006405,
+  "timestamp": 1774952547.298453
+}

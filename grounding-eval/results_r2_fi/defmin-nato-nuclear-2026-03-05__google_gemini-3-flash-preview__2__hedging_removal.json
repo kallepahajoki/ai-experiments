@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The source uses conditional language ('olisivat jatkossa mahdollisia' - would be possible in the future) and the output uses 'olisi sallittua' (would be permitted), which also retains the conditional mood ('olisi'). The word 'esitet\u00e4\u00e4n' (is proposed) is somewhat dropped since the output states the change more directly, but the conditional verb form is preserved. The source describes a legislative proposal sent for consultation, and the output correctly frames it as a proposal ('esitt\u00e4\u00e4 muutoksia', 'Lakiesitys on l\u00e4hetetty lausuntokierrokselle'). The shift from 'mahdollisia' (possible) to 'sallittua' (permitted) is a minor semantic shift but not a significant hedging removal. Overall, no critical hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"esitet\u00e4\u00e4n\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia / esitet\u00e4\u00e4n\",\n      \"preserved\": false,\n      \"output_version\": \"Jatkossa ydinr\u00e4j\u00e4hteiden tuominen Suomeen, kuljettaminen tai hallussapito olisi sallittua\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses conditional language ('olisivat jatkossa mahdollisia' - would be possible in the future) and the output uses 'olisi sallittua' (would be permitted), which also retains the conditional mood ('olisi'). The word 'esitet\u00e4\u00e4n' (is proposed) is somewhat dropped since the output states the change more directly, but the conditional verb form is preserved. The source describes a legislative proposal sent for consultation, and the output correctly frames it as a proposal ('esitt\u00e4\u00e4 muutoksia', 'Lakiesitys on l\u00e4hetetty lausuntokierrokselle'). The shift from 'mahdollisia' (possible) to 'sallittua' (permitted) is a minor semantic shift but not a significant hedging removal. Overall, no critical hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 1248,
+  "judge_completion_tokens": 465,
+  "judge_cost_usd": 0.017865,
+  "timestamp": 1774952603.9166908
+}

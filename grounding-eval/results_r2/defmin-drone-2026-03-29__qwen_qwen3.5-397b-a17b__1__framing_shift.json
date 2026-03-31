@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The only notable framing shift is the use of 'confirmed' instead of 'states' when attributing the Defense Minister's words. This is a minor but real shift from neutral attribution to one implying authoritative verification. The rest of the summary is tonally faithful to the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\"output_phrase\": \"Defense Minister Antti H\u00e4kk\u00e4nen confirmed that the drones strayed into Finnish territory\", \"issue\": \"The source uses 'states' while the output uses 'confirmed,' which subtly shifts the framing from a statement/claim to an established fact. 'Confirmed' implies prior knowledge or verification that is not present in the source.\"}\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The only notable framing shift is the use of 'confirmed' instead of 'states' when attributing the Defense Minister's words. This is a minor but real shift from neutral attribution to one implying authoritative verification. The rest of the summary is tonally faithful to the source.\"\n}\n```",
+  "judge_prompt_tokens": 475,
+  "judge_completion_tokens": 195,
+  "judge_cost_usd": 0.00725,
+  "timestamp": 1774952547.294805
+}

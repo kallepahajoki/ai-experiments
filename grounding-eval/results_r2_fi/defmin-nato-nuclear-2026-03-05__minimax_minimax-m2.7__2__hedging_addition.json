@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The output adds the word 'mahdollisille' (possible) before 'sotilaallisille toimille' where the source simply states 'sotilaallisille toimille'. This introduces a mild hedging qualifier. The other change ('vaikeasti ennakoitavassa' \u2192 'ep\u00e4varmassa') is more of a paraphrase than hedging. Overall, the hedging addition is minor.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [\n    {\n      \"source_statement\": \"Esitys perustuu tarpeeseen maksimoida Suomen turvallisuus vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4.\",\n      \"output_statement\": \"Maksimoida Suomen turvallisuus ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4.\",\n      \"added_hedging\": \"The word 'vaikeasti ennakoitavassa' (hard to predict) was changed to 'ep\u00e4varmassa' (uncertain), which is a slight semantic shift but not really hedging addition \u2014 it's a paraphrase. This is borderline and not a clear case of hedging.\"\n    },\n    {\n      \"source_statement\": \"Varmistaa, ett\u00e4 Naton pelote, sis\u00e4lt\u00e4en kaikki sen osa-alueet, on uskottava ja muodostaa mahdollisimman korkean kynnyksen sotilaallisille toimille.\",\n      \"output_statement\": \"Varmistaa Naton pelotteen uskottavuus ja korkea kynnys mahdollisille sotilaallisille toimille.\",\n      \"added_hedging\": \"The source says 'kynnyksen sotilaallisille toimille' (threshold for military actions), while the output says 'kynnys mahdollisille sotilaallisille toimille' (threshold for possible military actions). The word 'mahdollisille' adds a hedging qualifier not present in the source.\"\n    }\n  ],\n  \"hedging_addition_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The output adds the word 'mahdollisille' (possible) before 'sotilaallisille toimille' where the source simply states 'sotilaallisille toimille'. This introduces a mild hedging qualifier. The other change ('vaikeasti ennakoitavassa' \u2192 'ep\u00e4varmassa') is more of a paraphrase than hedging. Overall, the hedging addition is minor.\"\n}\n```",
+  "judge_prompt_tokens": 1319,
+  "judge_completion_tokens": 515,
+  "judge_cost_usd": 0.01947,
+  "timestamp": 1774952603.9173
+}

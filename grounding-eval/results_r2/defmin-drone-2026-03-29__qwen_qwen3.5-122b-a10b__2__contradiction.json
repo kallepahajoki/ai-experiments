@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key facts from the source document. The detected objects, military response, drone crashes and their locations, police action, the Defense Minister's statement, and the joint investigation are all correctly represented without any contradictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key facts from the source document. The detected objects, military response, drone crashes and their locations, police action, the Defense Minister's statement, and the joint investigation are all correctly represented without any contradictions.\"\n}\n```",
+  "judge_prompt_tokens": 489,
+  "judge_completion_tokens": 90,
+  "judge_cost_usd": 0.004695,
+  "timestamp": 1774952547.294162
+}

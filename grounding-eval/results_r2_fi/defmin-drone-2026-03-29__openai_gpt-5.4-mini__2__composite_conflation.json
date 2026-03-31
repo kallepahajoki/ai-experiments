@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output faithfully represents the source facts without merging independent facts into false causal or combined claims. The summary restructures the minister's quote into indirect speech but preserves the original meaning. The word 'muutamia' (a few) is rendered as 'useita' (several), which is a slight inaccuracy but not a composite conflation. The word 'hyvin' (very) is changed to 'eritt\u00e4in' (extremely), which is a minor intensification but again not a conflation of separate facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output faithfully represents the source facts without merging independent facts into false causal or combined claims. The summary restructures the minister's quote into indirect speech but preserves the original meaning. The word 'muutamia' (a few) is rendered as 'useita' (several), which is a slight inaccuracy but not a composite conflation. The word 'hyvin' (very) is changed to 'eritt\u00e4in' (extremely), which is a minor intensification but again not a conflation of separate facts.\"\n}\n```",
+  "judge_prompt_tokens": 733,
+  "judge_completion_tokens": 160,
+  "judge_cost_usd": 0.007665,
+  "timestamp": 1774952603.91438
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source content. Minor wording differences like 'lis\u00e4tutkimuksia' vs 'jatkotutkimuksia' and 'hyvin vakavasti' vs 'eritt\u00e4in vakavasti' are paraphrases that preserve the same meaning and do not constitute contradictions. The phrase 'l\u00e4hetti paikalle' in the output is a slight interpretation of 'on ollut paikalla' in the source, but this is a minor rephrasing rather than a direct contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source content. Minor wording differences like 'lis\u00e4tutkimuksia' vs 'jatkotutkimuksia' and 'hyvin vakavasti' vs 'eritt\u00e4in vakavasti' are paraphrases that preserve the same meaning and do not constitute contradictions. The phrase 'l\u00e4hetti paikalle' in the output is a slight interpretation of 'on ollut paikalla' in the source, but this is a minor rephrasing rather than a direct contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 706,
+  "judge_completion_tokens": 161,
+  "judge_cost_usd": 0.007555,
+  "timestamp": 1774952603.914026
+}

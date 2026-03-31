@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.97,
+    "evidence": "The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output not only drops this hedging but actively strengthens the claim by stating the crashes were 'confirmed,' which goes beyond even a neutral removal of the hedge and presents the information as definitively established fact. This is a meaningful hedging removal on a substantive factual claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones were confirmed to have crashed\u2014one north of Kouvola and another east of Kouvola.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.97,\n  \"evidence\": \"The source qualifies the drone crash information with 'According to current information,' indicating that the details are preliminary and subject to change. The output not only drops this hedging but actively strengthens the claim by stating the crashes were 'confirmed,' which goes beyond even a neutral removal of the hedge and presents the information as definitively established fact. This is a meaningful hedging removal on a substantive factual claim.\"\n}\n```",
+  "judge_prompt_tokens": 548,
+  "judge_completion_tokens": 258,
+  "judge_cost_usd": 0.00919,
+  "timestamp": 1774952547.292823
+}

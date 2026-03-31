@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All numerical values in the output accurately reflect the source. 'Kaksi' correctly summarizes 'yksi...ja toinen' (one and another = two). The F/A-18 designation is preserved. 'Muutamia' is retained.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"yksi\", \"toinen\", \"F/A-18\"],\n  \"numbers_in_output\": [\"muutamia\", \"kaksi\", \"F/A-18\"],\n  \"distortions\": [\n    {\n      \"output_value\": \"kaksi droonia on pudonnut maahan\",\n      \"source_value\": \"yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\",\n      \"explanation\": \"The output says 'kaksi' (two), which is a correct numerical summary of 'yksi' (one) + 'toinen' (another) = two. This is not a distortion but a valid paraphrase.\"\n    }\n  ],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All numerical values in the output accurately reflect the source. 'Kaksi' correctly summarizes 'yksi...ja toinen' (one and another = two). The F/A-18 designation is preserved. 'Muutamia' is retained.\"\n}\n```",
+  "judge_prompt_tokens": 683,
+  "judge_completion_tokens": 292,
+  "judge_cost_usd": 0.010715,
+  "timestamp": 1774952603.915513
+}

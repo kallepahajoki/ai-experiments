@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced directly to the source document. The summary accurately reflects the key points: drones detected in Finnish airspace over sea areas and Southeast Finland on Sunday morning, two drones fell near Kouvola, police cordoned off areas, F/A-18 Hornet sent for identification, Defense Minister H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory, and the joint investigation by the Defence Forces and other authorities. The word 'vahvisti' (confirmed) is a slight interpretive choice for 'toteaa' (states), but this is a minor paraphrasing issue rather than scope creep.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced directly to the source document. The summary accurately reflects the key points: drones detected in Finnish airspace over sea areas and Southeast Finland on Sunday morning, two drones fell near Kouvola, police cordoned off areas, F/A-18 Hornet sent for identification, Defense Minister H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory, and the joint investigation by the Defence Forces and other authorities. The word 'vahvisti' (confirmed) is a slight interpretive choice for 'toteaa' (states), but this is a minor paraphrasing issue rather than scope creep.\"\n}\n```",
+  "judge_prompt_tokens": 697,
+  "judge_completion_tokens": 188,
+  "judge_cost_usd": 0.008185,
+  "timestamp": 1774952603.9105752
+}

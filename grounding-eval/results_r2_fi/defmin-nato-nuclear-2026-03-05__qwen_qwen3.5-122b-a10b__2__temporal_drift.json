@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.8,
+    "evidence": "The source says 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends/is sending), while the output says 'Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle' (perfect tense: has sent). This shifts the temporal perspective from an ongoing/announced action to a completed one. All other temporal elements (the deadline 2.4.2026, conditional forms, remaining prohibitions) are accurately preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 (present tense - sends)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t (remain - present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"on l\u00e4hett\u00e4nyt (perfect tense - has sent)\",\n    \"Nykyinen t\u00e4ydellinen kielto (current complete ban)\",\n    \"poistettaisiin (would be removed - conditional)\",\n    \"pysyv\u00e4t (remain - present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hett\u00e4nyt (has sent - perfect tense, completed action)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 (sends - present tense, ongoing/current action)\",\n      \"explanation\": \"The source uses present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the action is currently happening or being announced. The summary changes this to perfect tense 'on l\u00e4hett\u00e4nyt' (has sent), implying the action is already completed. This is a minor tense shift but changes the temporal framing of the event.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.8,\n  \"evidence\": \"The source says 'Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle' (present tense: sends/is sending), while the output says 'Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle' (perfect tense: has sent). This shifts the temporal perspective from an ongoing/announced action to a completed one. All other temporal elements (the deadline 2.4.2026, conditional forms, remaining prohibitions) are accurately preserved.\"\n}\n```",
+  "judge_prompt_tokens": 1134,
+  "judge_completion_tokens": 487,
+  "judge_cost_usd": 0.017845,
+  "timestamp": 1774952603.919759
+}

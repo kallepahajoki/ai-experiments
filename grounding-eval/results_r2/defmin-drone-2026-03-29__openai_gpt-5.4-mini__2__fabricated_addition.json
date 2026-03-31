@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The output states 'the government takes the incident very seriously,' attributing the seriousness to 'the government.' The source quote is 'We take this very seriously,' where 'we' is spoken by Defence Minister H\u00e4kk\u00e4nen and could refer to himself or the authorities broadly, but the source does not explicitly say 'the government.' This is a minor embellishment/interpretation rather than a major fabrication, but it introduces a specificity ('the government') not directly stated in the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"On Sunday morning, several low-flying, slow-moving small objects were detected in Finnish airspace over sea areas and in Southeast Finland.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace over sea areas and Southeast Finland.\"\n    },\n    {\n      \"claim\": \"The Air Force responded with an F/A-18 Hornet fighter to identify them.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"\n    },\n    {\n      \"claim\": \"Current information indicates that one drone crashed north of Kouvola and another east of Kouvola.\",\n      \"grounded\": true,\n      \"source_evidence\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"claim\": \"Police have secured both crash sites for further investigation.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Police have secured the areas for further investigation.\"\n    },\n    {\n      \"claim\": \"Defence Minister Antti H\u00e4kk\u00e4nen said the drones had entered Finnish territory.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Drones have strayed into Finnish territory.\\\"\"\n    },\n    {\n      \"claim\": \"The government takes the incident very seriously.\",\n      \"grounded\": false,\n      \"source_evidence\": null\n    },\n    {\n      \"claim\": \"Security authorities responded immediately.\",\n      \"grounded\": true,\n      \"source_evidence\": \"\\\"Security authorities have responded immediately.\\\"\"\n    },\n    {\n      \"claim\": \"The Defence Forces are investigating the incident together with other authorities.\",\n      \"grounded\": true,\n      \"source_evidence\": \"The Defence Forces are investigating the incident together with other authorities.\"\n    }\n  ],\n  \"fabricated_additions_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The output states 'the government takes the incident very seriously,' attributing the seriousness to 'the government.' The source quote is 'We take this very seriously,' where 'we' is spoken by Defence Minister H\u00e4kk\u00e4nen and could refer to himself or the authorities broadly, but the source does not explicitly say 'the government.' This is a minor embellishment/interpretation rather than a major fabrication, but it introduces a specificity ('the government') not directly stated in the source.\"\n}\n```",
+  "judge_prompt_tokens": 490,
+  "judge_completion_tokens": 616,
+  "judge_cost_usd": 0.01785,
+  "timestamp": 1774952547.293536
+}

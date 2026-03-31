@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.88,
+    "evidence": "The most significant framing shift is the introduction of implied causality with 'Tapahtuman seurauksena' (as a consequence), suggesting the Hornet's mission caused the drones to fall. The source presents these as separate facts without causal connection. Additionally, the output attributes the source to the Ministry of Defence without basis.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Tapahtuman seurauksena kaksi droonia putosi maahan\",\n      \"issue\": \"The phrase 'Tapahtuman seurauksena' (as a consequence of the event) implies a causal link between the F/A-18 identification mission and the drones falling, suggesting the fighter jet caused them to fall. The source simply states that according to current information, one drone fell north of Kouvola and another east of Kouvola, without establishing any causal relationship to the Hornet's mission.\"\n    },\n    {\n      \"output_phrase\": \"Puolustusministeri\u00f6n tiedotteen tiivistys\",\n      \"issue\": \"The output frames the source as a 'Puolustusministeri\u00f6n tiedote' (Ministry of Defence press release). The source does not identify itself as such; it quotes the Defence Minister but the origin of the text is not specified. This is an attribution not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n tunnistusteht\u00e4v\u00e4\u00e4n\",\n      \"issue\": \"The source says 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (the Air Force has been present on an identification mission), which is a neutral statement of presence. The output rephrases this as 'l\u00e4hetti' (sent/dispatched), which adds a slightly more active/responsive framing, though this is a minor shift.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.88,\n  \"evidence\": \"The most significant framing shift is the introduction of implied causality with 'Tapahtuman seurauksena' (as a consequence), suggesting the Hornet's mission caused the drones to fall. The source presents these as separate facts without causal connection. Additionally, the output attributes the source to the Ministry of Defence without basis.\"\n}\n```",
+  "judge_prompt_tokens": 716,
+  "judge_completion_tokens": 490,
+  "judge_cost_usd": 0.01583,
+  "timestamp": 1774952603.915
+}

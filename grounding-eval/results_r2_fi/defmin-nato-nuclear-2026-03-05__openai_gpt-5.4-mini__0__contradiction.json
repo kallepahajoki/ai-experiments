@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reflects the source document. All key claims \u2014 the purpose of the legislative proposal, the current prohibitions, the proposed exceptions, the alignment with other NATO countries, the security rationale, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquiring/manufacturing/developing/detonating nuclear explosives, and the consultation deadline \u2014 are accurately represented without any statements that contradict the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reflects the source document. All key claims \u2014 the purpose of the legislative proposal, the current prohibitions, the proposed exceptions, the alignment with other NATO countries, the security rationale, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquiring/manufacturing/developing/detonating nuclear explosives, and the consultation deadline \u2014 are accurately represented without any statements that contradict the source.\"\n}\n```",
+  "judge_prompt_tokens": 1241,
+  "judge_completion_tokens": 133,
+  "judge_cost_usd": 0.00953,
+  "timestamp": 1774952603.918773
+}

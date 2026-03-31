@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be directly traced to the source document. The summary accurately reflects the content about the legislative proposal to amend nuclear energy and criminal laws, the removal of the ban on nuclear explosives in defense contexts, NATO alignment, the goals of maximizing security and deterrence credibility, the statement that Finland is not seeking nuclear weapons on its territory, the remaining prohibitions, and the consultation deadline of 2.4.2026. The word 'integroida' (integrate) is a reasonable paraphrase of the source's 'mahdollistamiseksi osana liittokuntaa' and 't\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi'. No external knowledge or context beyond the source was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be directly traced to the source document. The summary accurately reflects the content about the legislative proposal to amend nuclear energy and criminal laws, the removal of the ban on nuclear explosives in defense contexts, NATO alignment, the goals of maximizing security and deterrence credibility, the statement that Finland is not seeking nuclear weapons on its territory, the remaining prohibitions, and the consultation deadline of 2.4.2026. The word 'integroida' (integrate) is a reasonable paraphrase of the source's 'mahdollistamiseksi osana liittokuntaa' and 't\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi'. No external knowledge or context beyond the source was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1282,
+  "judge_completion_tokens": 207,
+  "judge_cost_usd": 0.011585,
+  "timestamp": 1774952603.9176269
+}

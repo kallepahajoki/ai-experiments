@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "All named entities in the output (Puolustusministeri\u00f6, Suomi, Nato) are present and correctly used in the source. No entity has been substituted or replaced.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Puolustusministeri\u00f6\", \"Suomi\", \"Nato\"],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"All named entities in the output (Puolustusministeri\u00f6, Suomi, Nato) are present and correctly used in the source. No entity has been substituted or replaced.\"\n}\n```",
+  "judge_prompt_tokens": 1162,
+  "judge_completion_tokens": 113,
+  "judge_cost_usd": 0.008635,
+  "timestamp": 1774952603.919731
+}

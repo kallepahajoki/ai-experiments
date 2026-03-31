@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary preserves the key temporal marker 'sunnuntaiaamuna' (Sunday morning) accurately. The event sequence is maintained: observation \u2192 Air Force response \u2192 drones falling \u2192 police cordoning \u2192 minister's statement \u2192 ongoing investigation. Tenses are handled appropriately, with no past-to-present or future-to-past shifts. No fabricated dates or times are introduced. The omission of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) and 'v\u00e4litt\u00f6m\u00e4sti' (immediately) are minor but do not constitute temporal drift. Overall, no meaningful temporal drift is detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"Sunnuntaiaamuna\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"useita matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita\",\n      \"source_temporal\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"explanation\": \"Not strictly a temporal drift, but the summary changes 'muutamia' (a few) to 'useita' (several), which is a quantitative shift. Also omits 'hitaita' (slow). This is not a temporal issue per se.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary preserves the key temporal marker 'sunnuntaiaamuna' (Sunday morning) accurately. The event sequence is maintained: observation \u2192 Air Force response \u2192 drones falling \u2192 police cordoning \u2192 minister's statement \u2192 ongoing investigation. Tenses are handled appropriately, with no past-to-present or future-to-past shifts. No fabricated dates or times are introduced. The omission of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) and 'v\u00e4litt\u00f6m\u00e4sti' (immediately) are minor but do not constitute temporal drift. Overall, no meaningful temporal drift is detected.\"\n}\n```",
+  "judge_prompt_tokens": 776,
+  "judge_completion_tokens": 367,
+  "judge_cost_usd": 0.013055,
+  "timestamp": 1774952603.9112298
+}

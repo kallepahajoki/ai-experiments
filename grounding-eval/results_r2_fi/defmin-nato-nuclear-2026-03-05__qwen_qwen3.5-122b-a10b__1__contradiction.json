@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key points \u2014 the legislative change to allow nuclear explosive transport/possession for NATO defense purposes, the maintained prohibitions on acquisition/manufacturing/development/detonation, the clarification that Finland is not seeking nuclear weapons on its territory, and the consultation deadline of 2.4.2026 \u2014 are consistent with the source. The output's mention of aligning legislation with other NATO countries is supported by the source's statement that most NATO countries lack such legislative restrictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key points \u2014 the legislative change to allow nuclear explosive transport/possession for NATO defense purposes, the maintained prohibitions on acquisition/manufacturing/development/detonation, the clarification that Finland is not seeking nuclear weapons on its territory, and the consultation deadline of 2.4.2026 \u2014 are consistent with the source. The output's mention of aligning legislation with other NATO countries is supported by the source's statement that most NATO countries lack such legislative restrictions.\"\n}\n```",
+  "judge_prompt_tokens": 1086,
+  "judge_completion_tokens": 147,
+  "judge_cost_usd": 0.009105,
+  "timestamp": 1774952603.9195368
+}

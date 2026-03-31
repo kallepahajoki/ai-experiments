@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The source quotes the Defence Minister as saying 'Drones have strayed into Finnish territory.' The output rephrases this as 'the drones had entered Finnish territory unintentionally,' adding the qualifier 'unintentionally' which is an interpretation not explicitly stated in the source. While 'strayed' can imply lack of intent, the addition of 'unintentionally' is an editorial addition that softens the tone and adds a characterization not present in the original statement. This is more of an editorial addition/interpretation than classic hedging with words like 'may' or 'allegedly,' but it does alter the certainty and framing of the original.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [\n    {\n      \"source_statement\": \"Drones have strayed into Finnish territory.\",\n      \"output_statement\": \"the drones had entered Finnish territory unintentionally\",\n      \"added_hedging\": \"The word 'unintentionally' is added, which is not present in the source. The source says 'strayed into,' which could imply unintentional entry, but the minister's statement does not explicitly characterize it as unintentional. Adding 'unintentionally' introduces an interpretive hedge/qualification not in the original.\"\n    }\n  ],\n  \"hedging_addition_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source quotes the Defence Minister as saying 'Drones have strayed into Finnish territory.' The output rephrases this as 'the drones had entered Finnish territory unintentionally,' adding the qualifier 'unintentionally' which is an interpretation not explicitly stated in the source. While 'strayed' can imply lack of intent, the addition of 'unintentionally' is an editorial addition that softens the tone and adds a characterization not present in the original statement. This is more of an editorial addition/interpretation than classic hedging with words like 'may' or 'allegedly,' but it does alter the certainty and framing of the original.\"\n}\n```",
+  "judge_prompt_tokens": 507,
+  "judge_completion_tokens": 325,
+  "judge_cost_usd": 0.01066,
+  "timestamp": 1774952547.292655
+}

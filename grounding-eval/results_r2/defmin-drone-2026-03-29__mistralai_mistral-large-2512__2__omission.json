@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output covers all key facts from the source. The main issue is not an omission but rather a slight interpretive addition: the minister's quote says drones 'strayed into Finnish territory,' which the summary renders as 'entered Finnish territory unintentionally,' adding an explicit characterization of intent not present in the original. No critical facts are omitted.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"One drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen made a statement\",\n    \"H\u00e4kk\u00e4nen stated: 'Drones have strayed into Finnish territory'\",\n    \"H\u00e4kk\u00e4nen stated: 'We take this very seriously'\",\n    \"H\u00e4kk\u00e4nen stated: 'Security authorities have responded immediately'\",\n    \"Defence Forces are investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"The summary says drones 'entered Finnish territory unintentionally' but the source only says they 'strayed into Finnish territory' \u2014 the word 'unintentionally' is an interpretation/addition not present in the source, and the original phrasing 'strayed' is more ambiguous. This is an alteration rather than omission, but the original nuance of the quote is lost.\",\n      \"importance\": \"medium\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output covers all key facts from the source. The main issue is not an omission but rather a slight interpretive addition: the minister's quote says drones 'strayed into Finnish territory,' which the summary renders as 'entered Finnish territory unintentionally,' adding an explicit characterization of intent not present in the original. No critical facts are omitted.\"\n}\n```",
+  "judge_prompt_tokens": 542,
+  "judge_completion_tokens": 430,
+  "judge_cost_usd": 0.01346,
+  "timestamp": 1774952547.2926981
+}

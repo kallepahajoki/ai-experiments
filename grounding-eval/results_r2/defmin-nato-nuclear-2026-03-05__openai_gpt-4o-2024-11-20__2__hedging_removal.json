@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The source text is largely factual and declarative, containing very little hedging or uncertainty language. The phrase 'difficult-to-predict operational environment' is omitted in the output but this is an omission of context rather than a conversion of uncertain claims into certain ones. The key factual claims are faithfully represented without hedging being stripped. No instances were found where uncertain or conditional language was converted into established fact.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": false, \"output_version\": \"The context of a 'difficult-to-predict operational environment' is omitted entirely from the output.\"},\n    {\"expression\": \"nor is such deployment planned\", \"preserved\": true, \"output_version\": \"nor are there any plans for such deployment within NATO\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source text is largely factual and declarative, containing very little hedging or uncertainty language. The phrase 'difficult-to-predict operational environment' is omitted in the output but this is an omission of context rather than a conversion of uncertain claims into certain ones. The key factual claims are faithfully represented without hedging being stripped. No instances were found where uncertain or conditional language was converted into established fact.\"\n}\n```",
+  "judge_prompt_tokens": 720,
+  "judge_completion_tokens": 314,
+  "judge_cost_usd": 0.01145,
+  "timestamp": 1774952547.297295
+}

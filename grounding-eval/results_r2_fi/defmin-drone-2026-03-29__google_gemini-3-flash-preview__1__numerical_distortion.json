@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The source mentions 'yksi drooni' (one drone) and 'toinen drooni' (a second drone), totaling two drones. The output says 'Kaksi droonia' (two drones), which is an accurate summation. The F/A-18 designation is simplified to 'Hornet-h\u00e4vitt\u00e4j\u00e4ll\u00e4' which omits the specific designation but is not a numerical distortion per se. 'Muutamia' (a few/several) objects were observed, and the output says 'matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita' without specifying the quantity, which is acceptable. No numerical distortions found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"yksi\", \"toinen\", \"F/A-18\"],\n  \"numbers_in_output\": [\"kaksi\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The source mentions 'yksi drooni' (one drone) and 'toinen drooni' (a second drone), totaling two drones. The output says 'Kaksi droonia' (two drones), which is an accurate summation. The F/A-18 designation is simplified to 'Hornet-h\u00e4vitt\u00e4j\u00e4ll\u00e4' which omits the specific designation but is not a numerical distortion per se. 'Muutamia' (a few/several) objects were observed, and the output says 'matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita' without specifying the quantity, which is acceptable. No numerical distortions found.\"\n}\n```",
+  "judge_prompt_tokens": 753,
+  "judge_completion_tokens": 243,
+  "judge_cost_usd": 0.00984,
+  "timestamp": 1774952603.911399
+}

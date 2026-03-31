@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false combined or causal claims. Each point in the summary corresponds faithfully to statements in the source. The causal relationships presented (e.g., the change is intended to remove legislative obstacles for NATO participation) are directly supported by the source. The two facts about most NATO states not having equivalent restrictions and the amendment bringing Finland into alignment are presented together in the source as well ('The majority of NATO member states do not have comparable legislative restrictions. The bill would align Finnish legislation with NATO operations.'). No composite conflation was detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false combined or causal claims. Each point in the summary corresponds faithfully to statements in the source. The causal relationships presented (e.g., the change is intended to remove legislative obstacles for NATO participation) are directly supported by the source. The two facts about most NATO states not having equivalent restrictions and the amendment bringing Finland into alignment are presented together in the source as well ('The majority of NATO member states do not have comparable legislative restrictions. The bill would align Finnish legislation with NATO operations.'). No composite conflation was detected.\"\n}\n```",
+  "judge_prompt_tokens": 766,
+  "judge_completion_tokens": 165,
+  "judge_cost_usd": 0.007955,
+  "timestamp": 1774952547.295197
+}

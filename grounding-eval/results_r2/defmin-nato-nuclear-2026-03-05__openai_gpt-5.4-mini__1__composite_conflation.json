@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary closely follows the structure and relationships in the source. The two facts about maximizing security and ensuring NATO deterrence credibility are presented together in the same paragraph of the source, so combining them in the summary is not a conflation. The phrase 'rapidly changing' is a minor embellishment but does not constitute a composite conflation. No causal relationships are fabricated; the 'However' connector between Finland not seeking nuclear weapons and the continued criminalization of acquisition/manufacture/development/detonation accurately reflects the source's juxtaposition of these points.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The proposal is justified by the need to maximize Finland's security in a rapidly changing and unpredictable security environment and to ensure NATO's deterrence is as credible as possible.\",\n      \"source_facts\": [\n        \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\",\n        \"The objective is to ensure that NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\"\n      ],\n      \"explanation\": \"The source describes the operational environment as 'difficult-to-predict,' while the summary changes this to 'rapidly changing and unpredictable security environment,' adding the notion of 'rapidly changing' which is not in the source. However, this is more of a minor embellishment than a composite conflation. The two facts are presented together in the source as well (same paragraph), so merging them is not a conflation.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary closely follows the structure and relationships in the source. The two facts about maximizing security and ensuring NATO deterrence credibility are presented together in the same paragraph of the source, so combining them in the summary is not a conflation. The phrase 'rapidly changing' is a minor embellishment but does not constitute a composite conflation. No causal relationships are fabricated; the 'However' connector between Finland not seeking nuclear weapons and the continued criminalization of acquisition/manufacture/development/detonation accurately reflects the source's juxtaposition of these points.\"\n}\n```",
+  "judge_prompt_tokens": 730,
+  "judge_completion_tokens": 383,
+  "judge_cost_usd": 0.013225,
+  "timestamp": 1774952547.2976298
+}

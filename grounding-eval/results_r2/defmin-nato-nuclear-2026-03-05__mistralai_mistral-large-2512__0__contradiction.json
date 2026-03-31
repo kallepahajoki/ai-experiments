@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful to the source. The differences identified are minor paraphrase inaccuracies (e.g., 'NATO operations' vs. 'NATO standards,' tense of submission) and the addition of parenthetical examples like '(e.g., transit or logistical support)' and the characterization as a 'technical adjustment,' which are editorial additions not directly contradicted by the source but also not stated in it. No clear direct contradiction was found where the output states the opposite of what the source says.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Ministry of Defence has submitted a proposal to amend the Nuclear Energy Act and the Criminal Code for public consultation.\",\n      \"source_statement\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\",\n      \"explanation\": \"The source says the Ministry is 'sending' the proposal for consultation, implying it is in the process of doing so. The output says it 'has submitted' the proposal, implying it is already done. This is a minor tense difference but not a direct contradiction of fact.\"\n    },\n    {\n      \"output_statement\": \"The change would align Finnish legislation with NATO standards, as most member states do not have such restrictions.\",\n      \"source_statement\": \"The majority of NATO member states do not have comparable legislative restrictions. The bill would align Finnish legislation with NATO operations.\",\n      \"explanation\": \"The source says the bill would align Finnish legislation with 'NATO operations,' while the output says it would align with 'NATO standards.' These are different concepts \u2014 operations vs. standards \u2014 but this is more of a paraphrase inaccuracy than a direct contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful to the source. The differences identified are minor paraphrase inaccuracies (e.g., 'NATO operations' vs. 'NATO standards,' tense of submission) and the addition of parenthetical examples like '(e.g., transit or logistical support)' and the characterization as a 'technical adjustment,' which are editorial additions not directly contradicted by the source but also not stated in it. No clear direct contradiction was found where the output states the opposite of what the source says.\"\n}\n```",
+  "judge_prompt_tokens": 819,
+  "judge_completion_tokens": 422,
+  "judge_cost_usd": 0.014645,
+  "timestamp": 1774952547.2963789
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key claims \u2014 the prohibition being lifted for defence purposes, Finland not seeking nuclear weapons deployment, the continued criminalization of acquisition/manufacture/development/detonation, the security rationale, and the consultation deadline \u2014 are consistent with the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key claims \u2014 the prohibition being lifted for defence purposes, Finland not seeking nuclear weapons deployment, the continued criminalization of acquisition/manufacture/development/detonation, the security rationale, and the consultation deadline \u2014 are consistent with the source.\"\n}\n```",
+  "judge_prompt_tokens": 627,
+  "judge_completion_tokens": 101,
+  "judge_cost_usd": 0.00566,
+  "timestamp": 1774952547.297108
+}

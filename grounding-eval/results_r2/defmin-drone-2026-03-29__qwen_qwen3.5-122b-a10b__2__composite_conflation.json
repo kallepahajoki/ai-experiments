@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately separates the key facts from the source without merging independent facts into false causal or combined claims. Each bullet point corresponds to distinct information presented in the source. The military response (deploying F/A-18) is correctly presented as being for identification purposes. The two drone crashes are reported as separate outcomes without implying causation from the military response. The official statement is faithfully paraphrased. No causal connectors are used to link independent facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately separates the key facts from the source without merging independent facts into false causal or combined claims. Each bullet point corresponds to distinct information presented in the source. The military response (deploying F/A-18) is correctly presented as being for identification purposes. The two drone crashes are reported as separate outcomes without implying causation from the military response. The official statement is faithfully paraphrased. No causal connectors are used to link independent facts.\"\n}\n```",
+  "judge_prompt_tokens": 525,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.0062,
+  "timestamp": 1774952547.294337
+}

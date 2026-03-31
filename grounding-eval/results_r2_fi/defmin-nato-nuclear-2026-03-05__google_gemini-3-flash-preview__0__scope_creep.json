@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately reflects the key points: the legislative change regarding nuclear explosives, the goal of NATO compatibility and credible deterrence, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/detonation, and the consultation deadline of 2.4.2026. The term 'kehitt\u00e4minen' (development) from the source is omitted in the summary's list of remaining crimes, but no external information was added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately reflects the key points: the legislative change regarding nuclear explosives, the goal of NATO compatibility and credible deterrence, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/detonation, and the consultation deadline of 2.4.2026. The term 'kehitt\u00e4minen' (development) from the source is omitted in the summary's list of remaining crimes, but no external information was added.\"\n}\n```",
+  "judge_prompt_tokens": 1160,
+  "judge_completion_tokens": 162,
+  "judge_cost_usd": 0.00985,
+  "timestamp": 1774952603.916338
+}

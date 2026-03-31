@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be directly traced to the source document. The summary accurately reflects the key points: the legislative proposal sent for consultation, the current prohibition on nuclear explosives, the proposed changes allowing certain activities related to NATO defense, the objectives of the proposal, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026. The phrasing 'muiden Nato-maiden k\u00e4yt\u00e4nt\u00f6jen kanssa' is a reasonable paraphrase of the source's statement that most NATO countries do not have similar legislative restrictions. No external knowledge or context was added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be directly traced to the source document. The summary accurately reflects the key points: the legislative proposal sent for consultation, the current prohibition on nuclear explosives, the proposed changes allowing certain activities related to NATO defense, the objectives of the proposal, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacturing/development/detonation, and the consultation deadline of 2.4.2026. The phrasing 'muiden Nato-maiden k\u00e4yt\u00e4nt\u00f6jen kanssa' is a reasonable paraphrase of the source's statement that most NATO countries do not have similar legislative restrictions. No external knowledge or context was added.\"\n}\n```",
+  "judge_prompt_tokens": 1231,
+  "judge_completion_tokens": 194,
+  "judge_cost_usd": 0.011005,
+  "timestamp": 1774952603.9157948
+}

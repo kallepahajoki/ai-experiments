@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "All named entities in the output (Suomi, Kaakkois-Suomi, Kouvola, Ilmavoimat, F/A-18 Hornet, Poliisi, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. The mention of 'Puolustusministeri\u00f6' as the source of the press release is an inference/framing addition rather than a substitution of one entity for another.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Puolustusministeri\u00f6\", \"Suomi\", \"Kaakkois-Suomi\", \"Kouvola\", \"Ilmavoimat\", \"Hornet\", \"Poliisi\", \"Antti H\u00e4kk\u00e4nen\", \"Puolustusvoimat\"],\n  \"substitutions\": [\n    {\"output_entity\": \"Puolustusministeri\u00f6\", \"source_entity\": \"N/A\", \"explanation\": \"The output refers to this as a 'Puolustusministeri\u00f6n tiedote' (Defence Ministry press release), but the source does not identify itself as a press release from the Defence Ministry. This is an addition/inference, not strictly an entity substitution from the source.\"}\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"All named entities in the output (Suomi, Kaakkois-Suomi, Kouvola, Ilmavoimat, F/A-18 Hornet, Poliisi, Antti H\u00e4kk\u00e4nen, Puolustusvoimat) match the source. The mention of 'Puolustusministeri\u00f6' as the source of the press release is an inference/framing addition rather than a substitution of one entity for another.\"\n}\n```",
+  "judge_prompt_tokens": 804,
+  "judge_completion_tokens": 326,
+  "judge_cost_usd": 0.01217,
+  "timestamp": 1774952603.911177
+}

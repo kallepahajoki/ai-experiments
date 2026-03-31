@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.88,
+    "evidence": "The summary is largely faithful but introduces several framing shifts: most notably the final editorial sentence characterizing the change as a 'technical adjustment' with 'non-proliferation commitments' (neither term appears in the source), changing 'military action' to 'military aggression' (adding adversarial implication), inserting 'directly' as a qualifier not in the source, and using 'full integration' instead of the source's 'fully utilise.'",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"ensuring full integration into the alliance's deterrence and collective defence mechanisms\",\n      \"issue\": \"The source says 'to fully utilise NATO's deterrence and collective defence,' which is about removing obstacles to utilisation. 'Ensuring full integration' introduces a slightly different and stronger framing not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"directly related to\",\n      \"issue\": \"The source says 'related to' \u2014 adding 'directly' introduces a qualifier/narrowing not present in the original text.\"\n    },\n    {\n      \"output_phrase\": \"raising the threshold for potential military aggression\",\n      \"issue\": \"The source says 'forms the highest possible threshold for military action.' The output changes 'military action' to 'military aggression,' which is an editorializing shift \u2014 'aggression' implies hostile intent by an adversary, whereas 'military action' is more neutral.\"\n    },\n    {\n      \"output_phrase\": \"strengthen Finland's security\",\n      \"issue\": \"The source says 'maximise Finland's security.' 'Strengthen' is softer than 'maximise' \u2014 this is a subtle downgrade of the source's language, though minor.\"\n    },\n    {\n      \"output_phrase\": \"This legislative change is framed as a technical adjustment to support Finland's NATO membership while maintaining strict non-proliferation commitments.\",\n      \"issue\": \"This concluding editorial sentence is not present in the source. Characterizing the proposal as 'a technical adjustment' and referencing 'non-proliferation commitments' introduces interpretive framing and terminology not found in the original text.\"\n    },\n    {\n      \"output_phrase\": \"does not intend to host nuclear weapons\",\n      \"issue\": \"The source says 'does not seek the deployment of nuclear weapons on its territory.' Changing 'seek the deployment' to 'intend to host' subtly shifts the framing \u2014 'host' can carry different connotations than 'deployment.'\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.88,\n  \"evidence\": \"The summary is largely faithful but introduces several framing shifts: most notably the final editorial sentence characterizing the change as a 'technical adjustment' with 'non-proliferation commitments' (neither term appears in the source), changing 'military action' to 'military aggression' (adding adversarial implication), inserting 'directly' as a qualifier not in the source, and using 'full integration' instead of the source's 'fully utilise.'\"\n}\n```",
+  "judge_prompt_tokens": 828,
+  "judge_completion_tokens": 620,
+  "judge_cost_usd": 0.01964,
+  "timestamp": 1774952547.296701
+}

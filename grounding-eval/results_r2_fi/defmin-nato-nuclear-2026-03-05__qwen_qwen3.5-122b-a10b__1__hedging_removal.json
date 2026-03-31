@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The source describes a legislative proposal sent for a consultation round. The output preserves the proposal framing throughout: it uses 'esityksen' (proposal's), the conditional form 'poistettaisiin' (would be removed), and frames everything as proposed changes rather than enacted law. The hedging and conditionality of the source are adequately maintained in the output. The shift from 'l\u00e4hett\u00e4\u00e4' (sends/is sending) to 'on l\u00e4hett\u00e4nyt' (has sent) is a minor tense change but does not constitute hedging removal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"},\n    {\"expression\": \"esitet\u00e4\u00e4n\", \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia\"},\n    {\"expression\": \"poistettaisiin\", \"context\": \"The conditional form is implicit in the legislative proposal context \u2014 these are proposed changes, not enacted ones\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"olisivat jatkossa mahdollisia / esitet\u00e4\u00e4n\", \"preserved\": true, \"output_version\": \"poistettaisiin, jos toimet liittyv\u00e4t \u2014 the conditional 'poistettaisiin' is used, preserving the proposal nature\"},\n    {\"expression\": \"esitet\u00e4\u00e4n\", \"preserved\": true, \"output_version\": \"The output frames it as 'Esityksen keskeiset tiedot' (key information of the proposal), maintaining the proposal framing\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source describes a legislative proposal sent for a consultation round. The output preserves the proposal framing throughout: it uses 'esityksen' (proposal's), the conditional form 'poistettaisiin' (would be removed), and frames everything as proposed changes rather than enacted law. The hedging and conditionality of the source are adequately maintained in the output. The shift from 'l\u00e4hett\u00e4\u00e4' (sends/is sending) to 'on l\u00e4hett\u00e4nyt' (has sent) is a minor tense change but does not constitute hedging removal.\"\n}\n```",
+  "judge_prompt_tokens": 1181,
+  "judge_completion_tokens": 465,
+  "judge_cost_usd": 0.01753,
+  "timestamp": 1774952603.919599
+}

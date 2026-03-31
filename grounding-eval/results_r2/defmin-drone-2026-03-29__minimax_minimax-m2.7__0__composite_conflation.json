@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "The most notable conflation is the use of 'subsequently' linking the Hornet scramble to the drone crashes, implying a causal or sequential relationship not present in the source. The source presents the Hornet identification and the drone crashes as separate facts without connecting them causally.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"The Air Force scrambled an F/A\u201118 Hornet to intercept and identify the objects.\",\n      \"source_facts\": [\"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\"],\n      \"explanation\": \"The source says the Hornet was used for 'identification' only. The summary adds 'intercept and identify,' merging an unsupported action (interception) with the stated identification role. However, this is more of an embellishment than a composite conflation of two separate source facts.\"\n    },\n    {\n      \"output_statement\": \"Two of the drones subsequently crashed \u2013 one north of Kouvola and another east of Kouvola.\",\n      \"source_facts\": [\"one drone has crashed north of Kouvola and another east of Kouvola\"],\n      \"explanation\": \"The word 'subsequently' implies the crashes happened as a consequence of or after the Hornet's intervention, creating a temporal/causal link between the scrambling of the fighter and the drone crashes. The source does not establish any such relationship; it simply states that drones crashed and separately that the Hornet was used for identification.\"\n    },\n    {\n      \"output_statement\": \"the Finnish Ministry of Defence reported that several low\u2011flying, slow\u2011moving small objects (identified as drones) were detected\",\n      \"source_facts\": [\"Several low-flying, slow-moving small objects were detected Sunday morning in Finnish airspace\", \"Drones have strayed into Finnish territory\"],\n      \"explanation\": \"The source describes the objects as 'small objects' in one context and separately the Defence Minister refers to 'drones.' The summary merges these by parenthetically equating the detected objects with drones as if they were identified as such from the start. Also, the source does not attribute the report to the 'Ministry of Defence' specifically. This is a minor conflation.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"The most notable conflation is the use of 'subsequently' linking the Hornet scramble to the drone crashes, implying a causal or sequential relationship not present in the source. The source presents the Hornet identification and the drone crashes as separate facts without connecting them causally.\"\n}\n```",
+  "judge_prompt_tokens": 499,
+  "judge_completion_tokens": 554,
+  "judge_cost_usd": 0.016345,
+  "timestamp": 1774952547.291726
+}

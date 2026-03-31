@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The causal/purposive relationships stated (e.g., the amendment being driven by security needs, aiming to ensure NATO deterrence credibility) are faithfully represented from the source. The final editorial sentence about 'maintaining its long-standing non-nuclear stance' is an inference/editorialization but does not constitute a composite conflation of two separate source facts into a false combined claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The causal/purposive relationships stated (e.g., the amendment being driven by security needs, aiming to ensure NATO deterrence credibility) are faithfully represented from the source. The final editorial sentence about 'maintaining its long-standing non-nuclear stance' is an inference/editorialization but does not constitute a composite conflation of two separate source facts into a false combined claim.\"\n}\n```",
+  "judge_prompt_tokens": 845,
+  "judge_completion_tokens": 146,
+  "judge_cost_usd": 0.007875,
+  "timestamp": 1774952547.2969332
+}

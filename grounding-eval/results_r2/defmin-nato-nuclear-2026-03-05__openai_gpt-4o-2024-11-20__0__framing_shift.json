@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "The output is largely faithful to the source in tone and content. Minor framing shifts include 'enhance' instead of 'enable/fully utilise,' 'strengthen' instead of 'maximise,' and 'unpredictable' instead of 'difficult-to-predict.' These are subtle wording changes that slightly alter emphasis but do not constitute significant editorial bias or dramatic reframing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"enhance its military defence capabilities\",\n      \"issue\": \"The source says 'enable Finland's military defence' and 'fully utilise NATO's deterrence and collective defence.' The word 'enhance' introduces an editorial upgrade in tone \u2014 the source speaks of removing obstacles and enabling, not enhancing capabilities.\"\n    },\n    {\n      \"output_phrase\": \"lift the current blanket prohibition\",\n      \"issue\": \"The source says the actions are 'completely prohibited.' While 'blanket prohibition' is close in meaning, the word 'blanket' is a slight editorial characterization not present in the source. Minor issue.\"\n    },\n    {\n      \"output_phrase\": \"strengthen Finland's security\",\n      \"issue\": \"The source says 'maximise Finland's security.' 'Strengthen' is a softer and slightly different framing than 'maximise,' subtly altering the stated ambition.\"\n    },\n    {\n      \"output_phrase\": \"unpredictable operational environment\",\n      \"issue\": \"The source says 'difficult-to-predict operational environment.' 'Unpredictable' is slightly more absolute and dramatic than 'difficult-to-predict,' which acknowledges partial predictability.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. Minor framing shifts include 'enhance' instead of 'enable/fully utilise,' 'strengthen' instead of 'maximise,' and 'unpredictable' instead of 'difficult-to-predict.' These are subtle wording changes that slightly alter emphasis but do not constitute significant editorial bias or dramatic reframing.\"\n}\n```",
+  "judge_prompt_tokens": 656,
+  "judge_completion_tokens": 420,
+  "judge_cost_usd": 0.01378,
+  "timestamp": 1774952547.2970428
+}

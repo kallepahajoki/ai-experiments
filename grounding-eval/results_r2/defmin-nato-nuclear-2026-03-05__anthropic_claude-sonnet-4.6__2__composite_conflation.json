@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct statements in the source. The causal/purpose relationships stated (e.g., 'The aim is to remove legislative obstacles' and 'driven by the need to maximise Finland's security') are faithfully represented from the source. The statement about Finland not seeking to acquire or deploy nuclear weapons combines two closely related sentences from the source ('Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO'), but these are presented together in the source as well and are not falsely merged.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false combined or causal claims. Each bullet point corresponds to distinct statements in the source. The causal/purpose relationships stated (e.g., 'The aim is to remove legislative obstacles' and 'driven by the need to maximise Finland's security') are faithfully represented from the source. The statement about Finland not seeking to acquire or deploy nuclear weapons combines two closely related sentences from the source ('Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO'), but these are presented together in the source as well and are not falsely merged.\"\n}\n```",
+  "judge_prompt_tokens": 731,
+  "judge_completion_tokens": 178,
+  "judge_cost_usd": 0.008105,
+  "timestamp": 1774952547.295454
+}

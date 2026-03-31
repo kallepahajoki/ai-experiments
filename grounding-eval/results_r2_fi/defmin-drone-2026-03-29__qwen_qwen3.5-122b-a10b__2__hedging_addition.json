@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language (such as 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'ilmeisesti') has been added. The factual claims are presented with the same level of certainty as in the source. Minor wording changes exist (e.g., 'Ilmavoimat on ollut paikalla' \u2192 'Ilmavoimat l\u00e4hetti', 'hyvin vakavasti' \u2192 'vakavasti') but these are not instances of hedging addition; they are slight paraphrasing that does not introduce uncertainty.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language (such as 'may', 'might', 'reportedly', 'allegedly', or Finnish equivalents like 'mahdollisesti', 'ilmeisesti') has been added. The factual claims are presented with the same level of certainty as in the source. Minor wording changes exist (e.g., 'Ilmavoimat on ollut paikalla' \u2192 'Ilmavoimat l\u00e4hetti', 'hyvin vakavasti' \u2192 'vakavasti') but these are not instances of hedging addition; they are slight paraphrasing that does not introduce uncertainty.\"\n}\n```",
+  "judge_prompt_tokens": 691,
+  "judge_completion_tokens": 204,
+  "judge_cost_usd": 0.008555,
+  "timestamp": 1774952603.9149818
+}

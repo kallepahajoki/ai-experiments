@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output accurately reflects the source content. The summary faithfully conveys the key facts: objects detected in Finnish airspace over sea areas and Southeast Finland on Sunday morning, F/A-18 Hornet identification mission, two drones falling north and east of Kouvola, police cordoning off areas, Minister H\u00e4kk\u00e4nen's statement about taking the matter seriously with immediate response, and the Defence Forces investigating with other authorities. No statements in the output contradict the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output accurately reflects the source content. The summary faithfully conveys the key facts: objects detected in Finnish airspace over sea areas and Southeast Finland on Sunday morning, F/A-18 Hornet identification mission, two drones falling north and east of Kouvola, police cordoning off areas, Minister H\u00e4kk\u00e4nen's statement about taking the matter seriously with immediate response, and the Defence Forces investigating with other authorities. No statements in the output contradict the source.\"\n}\n```",
+  "judge_prompt_tokens": 656,
+  "judge_completion_tokens": 144,
+  "judge_cost_usd": 0.00688,
+  "timestamp": 1774952603.915123
+}

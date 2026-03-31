@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary closely mirrors the source's neutral, factual tone. It uses the same terminology and structure, faithfully reproducing key caveats (Finland is not seeking nuclear weapons on its territory, acquisition/manufacturing/development/detonation remain criminalized). The one minor rephrasing ('nostaa kynnys' vs. 'muodostaa korkean kynnyksen') is a negligible difference that does not meaningfully shift the framing. No editorial tone, loaded language, dramatic framing, or implied causality was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"nostaa kynnys sotilaallisille toimille mahdollisimman korkeaksi\",\n      \"issue\": \"Minor rephrasing: the source says 'muodostaa mahdollisimman korkean kynnyksen sotilaallisille toimille' (forms the highest possible threshold), while the summary uses 'nostaa kynnys' (raise the threshold), which subtly implies an active escalation rather than the source's more neutral 'forming' language. However, this is a very minor difference.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary closely mirrors the source's neutral, factual tone. It uses the same terminology and structure, faithfully reproducing key caveats (Finland is not seeking nuclear weapons on its territory, acquisition/manufacturing/development/detonation remain criminalized). The one minor rephrasing ('nostaa kynnys' vs. 'muodostaa korkean kynnyksen') is a negligible difference that does not meaningfully shift the framing. No editorial tone, loaded language, dramatic framing, or implied causality was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1249,
+  "judge_completion_tokens": 300,
+  "judge_cost_usd": 0.013745,
+  "timestamp": 1774952603.9161348
+}

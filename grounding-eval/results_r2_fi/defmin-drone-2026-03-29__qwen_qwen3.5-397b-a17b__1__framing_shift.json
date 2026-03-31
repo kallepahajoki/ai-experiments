@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output is a faithful, neutral condensation of the source. It preserves the factual content without introducing editorial tone, loaded language, or implied causality. The phrase 'asiaan suhtaudutaan hyvin vakavasti' is a close paraphrase of the minister's direct quote. No dramatic framing or opinion words were added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output is a faithful, neutral condensation of the source. It preserves the factual content without introducing editorial tone, loaded language, or implied causality. The phrase 'asiaan suhtaudutaan hyvin vakavasti' is a close paraphrase of the minister's direct quote. No dramatic framing or opinion words were added.\"\n}\n```",
+  "judge_prompt_tokens": 688,
+  "judge_completion_tokens": 121,
+  "judge_cost_usd": 0.006465,
+  "timestamp": 1774952603.915405
+}

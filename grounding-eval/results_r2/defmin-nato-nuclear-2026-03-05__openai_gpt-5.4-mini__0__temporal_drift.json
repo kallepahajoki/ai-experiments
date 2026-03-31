@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.97,
+    "evidence": "All temporal expressions in the output faithfully reflect those in the source. The date '2 April 2026' is correctly reproduced. Tenses are consistent: present tense for current state ('is sending', 'Under current law'), conditional/future for proposed changes ('would allow', 'would remain'), and the consultation deadline matches exactly. Event ordering is preserved accurately.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\",\n    \"Under current legislation\",\n    \"in future\",\n    \"ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"is sending\",\n    \"Under current law\",\n    \"proposed amendment would allow\",\n    \"ends on 2 April 2026\"\n  ],\n  \"drifts\": [],\n  \"drift_found\": false,\n  \"confidence\": 0.97,\n  \"evidence\": \"All temporal expressions in the output faithfully reflect those in the source. The date '2 April 2026' is correctly reproduced. Tenses are consistent: present tense for current state ('is sending', 'Under current law'), conditional/future for proposed changes ('would allow', 'would remain'), and the consultation deadline matches exactly. Event ordering is preserved accurately.\"\n}\n```",
+  "judge_prompt_tokens": 738,
+  "judge_completion_tokens": 215,
+  "judge_cost_usd": 0.009065,
+  "timestamp": 1774952547.29741
+}

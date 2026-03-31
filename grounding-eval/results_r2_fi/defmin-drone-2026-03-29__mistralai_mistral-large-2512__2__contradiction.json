@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects the source document. All key details match: the location (sea area and Southeast Finland), the aircraft (F/A-18 Hornet), the two drones falling (north and east of Kouvola), police cordoning off areas, Minister H\u00e4kk\u00e4nen's statement about stray drones and serious response, and the joint investigation by Defence Forces and other authorities. The phrase 'hyvin vakavasti' (very seriously) is slightly softened to 'vakavasti' (seriously) in the summary, but this is a minor omission rather than a direct contradiction.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects the source document. All key details match: the location (sea area and Southeast Finland), the aircraft (F/A-18 Hornet), the two drones falling (north and east of Kouvola), police cordoning off areas, Minister H\u00e4kk\u00e4nen's statement about stray drones and serious response, and the joint investigation by Defence Forces and other authorities. The phrase 'hyvin vakavasti' (very seriously) is slightly softened to 'vakavasti' (seriously) in the summary, but this is a minor omission rather than a direct contradiction.\"\n}\n```",
+  "judge_prompt_tokens": 726,
+  "judge_completion_tokens": 172,
+  "judge_cost_usd": 0.00793,
+  "timestamp": 1774952603.912895
+}

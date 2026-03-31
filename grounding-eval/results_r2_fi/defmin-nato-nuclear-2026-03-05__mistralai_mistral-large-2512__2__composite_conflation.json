@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The relationships presented (e.g., the purpose of the law change being to enable NATO deterrence utilization, the alignment with NATO practices because most NATO countries lack such restrictions) are all faithfully represented from the source. The statement about NATO deterrence credibility and security maximization are kept as separate goals, consistent with the source. No causal connectors introduce relationships not present in the original text.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The relationships presented (e.g., the purpose of the law change being to enable NATO deterrence utilization, the alignment with NATO practices because most NATO countries lack such restrictions) are all faithfully represented from the source. The statement about NATO deterrence credibility and security maximization are kept as separate goals, consistent with the source. No causal connectors introduce relationships not present in the original text.\"\n}\n```",
+  "judge_prompt_tokens": 1279,
+  "judge_completion_tokens": 146,
+  "judge_cost_usd": 0.010045,
+  "timestamp": 1774952603.918122
+}

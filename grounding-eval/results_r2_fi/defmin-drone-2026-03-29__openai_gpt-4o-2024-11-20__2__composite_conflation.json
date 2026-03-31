@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source mentions two distinct observation areas ('merialueella ja Kaakkois-Suomessa') but the output only mentions 'Kaakkois-Suomessa', effectively merging or omitting the sea area observation. This is more of an omission than a classic composite conflation, but it does collapse two separate geographic facts into one statement.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Sunnuntaiaamuna Suomen ilmatilassa Kaakkois-Suomessa havaittiin matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n      \"source_facts\": [\n        \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n      ],\n      \"explanation\": \"The source states objects were detected in two areas: 'merialueella' (sea area) AND 'Kaakkois-Suomessa' (Southeast Finland). The summary drops the sea area ('merialueella') and presents the detections as only occurring in Southeast Finland, merging two separate locations into one.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source mentions two distinct observation areas ('merialueella ja Kaakkois-Suomessa') but the output only mentions 'Kaakkois-Suomessa', effectively merging or omitting the sea area observation. This is more of an omission than a classic composite conflation, but it does collapse two separate geographic facts into one statement.\"\n}\n```",
+  "judge_prompt_tokens": 701,
+  "judge_completion_tokens": 328,
+  "judge_cost_usd": 0.011705,
+  "timestamp": 1774952603.913742
+}

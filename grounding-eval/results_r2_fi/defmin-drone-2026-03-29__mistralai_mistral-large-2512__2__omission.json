@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary covers all major facts well. Minor omissions include the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (based on current information) which adds a caveat about the preliminary nature of the drone information, the word 'muutamia' (several) suggesting more objects were detected than just the two that fell, and the softening of 'hyvin vakavasti' to 'vakavasti'. None of these are critical but the preliminary-information qualifier is notable as it signals uncertainty.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Sunnuntai-aamuna havaittiin kohteita Suomen ilmatilassa\",\n    \"Kohteet havaittiin merialueella ja Kaakkois-Suomessa\",\n    \"Kohteet olivat matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat oli paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni pudonnut Kouvolan pohjoispuolella\",\n    \"Toinen drooni pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen totesi lennokkien harhautuneen Suomen alueelle\",\n    \"Asiaan suhtaudutaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\",\n    \"Qualifier: 't\u00e4m\u00e4n hetken tietojen mukaan' (based on current information)\",\n    \"Qualifier: 'muutamia' kohteita (several objects)\",\n    \"Qualifier: 'hyvin vakavasti' (very seriously)\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"'T\u00e4m\u00e4n hetken tietojen mukaan' \u2014 the qualifier indicating the information about drones is preliminary/based on current information\", \"importance\": \"medium\"},\n    {\"fact\": \"'Muutamia' kohteita \u2014 the word 'several' indicating there were multiple objects detected, not just two\", \"importance\": \"medium\"},\n    {\"fact\": \"'Hyvin vakavasti' \u2014 the intensifier 'hyvin' (very) was reduced to just 'vakavasti' (seriously)\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary covers all major facts well. Minor omissions include the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (based on current information) which adds a caveat about the preliminary nature of the drone information, the word 'muutamia' (several) suggesting more objects were detected than just the two that fell, and the softening of 'hyvin vakavasti' to 'vakavasti'. None of these are critical but the preliminary-information qualifier is notable as it signals uncertainty.\"\n}\n```",
+  "judge_prompt_tokens": 770,
+  "judge_completion_tokens": 673,
+  "judge_cost_usd": 0.020675,
+  "timestamp": 1774952603.913051
+}

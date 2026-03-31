@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output states 'Two drones were confirmed to have crashed' which removes the hedging language 'According to current information' from the source, making the information sound more definitive than presented. This is a notable omission of a qualifier but does not fundamentally change the core meaning of the report.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen's statement about drones straying into Finnish territory\",\n    \"H\u00e4kk\u00e4nen stated they take this very seriously\",\n    \"Security authorities responded immediately\",\n    \"Defence Forces investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The qualifier 'According to current information' before the drone crash details, indicating the information was preliminary and potentially subject to change\", \"importance\": \"high\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output states 'Two drones were confirmed to have crashed' which removes the hedging language 'According to current information' from the source, making the information sound more definitive than presented. This is a notable omission of a qualifier but does not fundamentally change the core meaning of the report.\"\n}\n```",
+  "judge_prompt_tokens": 485,
+  "judge_completion_tokens": 321,
+  "judge_cost_usd": 0.01045,
+  "timestamp": 1774952547.29302
+}

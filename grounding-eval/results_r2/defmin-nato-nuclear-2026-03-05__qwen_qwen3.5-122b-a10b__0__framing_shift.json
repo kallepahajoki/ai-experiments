@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.35,
+    "evidence": "The output is largely faithful to the source in tone and content. Minor framing differences exist: 'hinder' is slightly more loaded than 'obstacles,' and attributing the clarification about not seeking nuclear weapons as something 'The Ministry states' introduces a subtle distancing/skeptical framing. However, these are minor and the overall tone remains neutral and informational. The output also omits the source's contextual justification about the 'difficult-to-predict operational environment,' but this is an omission rather than a framing shift.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"currently hinder Finland's military defence within NATO\",\n      \"issue\": \"The source uses the neutral phrase 'remove legislative obstacles to enable Finland's military defence.' The word 'hinder' introduces a slightly more negative/editorial connotation, implying the current legislation is actively impeding defence, whereas 'obstacles' is more neutral and factual.\"\n    },\n    {\n      \"output_phrase\": \"ensure the full utilisation of the alliance's deterrence and collective defence capabilities\",\n      \"issue\": \"The source says 'to fully utilise NATO's deterrence and collective defence.' Changing 'fully utilise' to 'ensure the full utilisation' subtly shifts the framing to sound more imperative/urgent, though this is a minor difference.\"\n    },\n    {\n      \"output_phrase\": \"The Ministry states that\",\n      \"issue\": \"The source presents the clarification as a direct factual assertion, not attributed as a 'statement' by the Ministry. Adding 'The Ministry states that' subtly frames it as a claim rather than a fact, which could imply skepticism not present in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.35,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. Minor framing differences exist: 'hinder' is slightly more loaded than 'obstacles,' and attributing the clarification about not seeking nuclear weapons as something 'The Ministry states' introduces a subtle distancing/skeptical framing. However, these are minor and the overall tone remains neutral and informational. The output also omits the source's contextual justification about the 'difficult-to-predict operational environment,' but this is an omission rather than a framing shift.\"\n}\n```",
+  "judge_prompt_tokens": 721,
+  "judge_completion_tokens": 428,
+  "judge_cost_usd": 0.014305,
+  "timestamp": 1774952547.2978518
+}

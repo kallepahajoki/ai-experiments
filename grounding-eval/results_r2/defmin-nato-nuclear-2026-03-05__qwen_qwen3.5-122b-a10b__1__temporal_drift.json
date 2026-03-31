@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source says 'The Ministry of Defence is sending a proposal' (present continuous, indicating an ongoing or imminent action), while the output says 'The Finnish Ministry of Defence has submitted a proposal' (present perfect, indicating a completed action). This is a minor tense drift that changes the temporal status of the event from in-progress to completed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending a proposal... for a consultation round\",\n    \"Under current legislation\",\n    \"in future be possible\",\n    \"The consultation period ends on 2 April 2026\",\n    \"remain criminalised\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted a proposal... for a consultation period ending on 2 April 2026\",\n    \"Current law completely prohibits\",\n    \"The proposal would allow\",\n    \"2 April 2026\",\n    \"remain criminalised\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal\",\n      \"source_temporal\": \"is sending a proposal\",\n      \"explanation\": \"The source uses present continuous tense ('is sending'), indicating the action is currently in progress or imminent. The output uses present perfect ('has submitted'), which implies the action has already been completed. This is a subtle tense shift from ongoing/imminent to completed action.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says 'The Ministry of Defence is sending a proposal' (present continuous, indicating an ongoing or imminent action), while the output says 'The Finnish Ministry of Defence has submitted a proposal' (present perfect, indicating a completed action). This is a minor tense drift that changes the temporal status of the event from in-progress to completed.\"\n}\n```",
+  "judge_prompt_tokens": 702,
+  "judge_completion_tokens": 349,
+  "judge_cost_usd": 0.012235,
+  "timestamp": 1774952547.297961
+}

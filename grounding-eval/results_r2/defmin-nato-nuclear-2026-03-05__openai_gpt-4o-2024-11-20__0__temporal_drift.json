@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The date '2 April 2026' is accurately preserved. The event ordering is consistent. There are minor tense shifts ('is sending' \u2192 'has proposed' and 'remain' \u2192 'will remain') but these do not materially misrepresent the temporal sequence or facts. No reordering of events or training-data temporal bleed detected.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense)\",\n    \"Under current legislation (present)\",\n    \"would in future be possible (conditional future)\",\n    \"The consultation period ends on 2 April 2026 (present tense, future reference)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed (present perfect)\",\n    \"would lift the current blanket prohibition (conditional)\",\n    \"will remain criminalized (future tense)\",\n    \"will conclude on 2 April 2026 (future tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed (present perfect)\",\n      \"source_temporal\": \"is sending (present tense / present progressive)\",\n      \"explanation\": \"The source says the Ministry 'is sending' the proposal for consultation, indicating an ongoing or imminent action. The summary uses 'has proposed,' which implies the proposal has already been completed/submitted. This is a minor tense shift but does not significantly misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"will remain criminalized\",\n      \"source_temporal\": \"remain criminalised in all circumstances (present tense)\",\n      \"explanation\": \"The source uses present tense 'remain criminalised' to describe the ongoing legal status. The summary shifts to future tense 'will remain criminalized,' which subtly implies this is a future state rather than a current and continuing one. This is a minor tense drift but does not materially alter meaning.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The date '2 April 2026' is accurately preserved. The event ordering is consistent. There are minor tense shifts ('is sending' \u2192 'has proposed' and 'remain' \u2192 'will remain') but these do not materially misrepresent the temporal sequence or facts. No reordering of events or training-data temporal bleed detected.\"\n}\n```",
+  "judge_prompt_tokens": 657,
+  "judge_completion_tokens": 474,
+  "judge_cost_usd": 0.015135,
+  "timestamp": 1774952547.297004
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output faithfully represents the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., the purpose of the legislative change, the connection between removing restrictions and NATO compatibility, the distinction between allowing transit/possession and acquiring/manufacturing nuclear devices) all accurately reflect the source. The statement about the proposal not meaning acquisition or placement of nuclear weapons combines two source sentences ('Suomi ei tavoittele ydinaseiden sijoittamista alueelleen' and 'eik\u00e4 sellaista ole Natossa suunnitteilla') but these are presented together in the source as well and are naturally related, not conflated.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output faithfully represents the source material without merging independent facts into false causal or combined claims. The relationships stated in the output (e.g., the purpose of the legislative change, the connection between removing restrictions and NATO compatibility, the distinction between allowing transit/possession and acquiring/manufacturing nuclear devices) all accurately reflect the source. The statement about the proposal not meaning acquisition or placement of nuclear weapons combines two source sentences ('Suomi ei tavoittele ydinaseiden sijoittamista alueelleen' and 'eik\u00e4 sellaista ole Natossa suunnitteilla') but these are presented together in the source as well and are naturally related, not conflated.\"\n}\n```",
+  "judge_prompt_tokens": 1173,
+  "judge_completion_tokens": 190,
+  "judge_cost_usd": 0.010615,
+  "timestamp": 1774952603.918719
+}

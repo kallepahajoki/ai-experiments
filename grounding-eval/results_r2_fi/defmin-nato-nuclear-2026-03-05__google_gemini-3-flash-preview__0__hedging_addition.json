@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully represents the source's definitive statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The conditional 'olisivat sallittuja' (would be permitted) mirrors the source's own conditional framing ('olisivat jatkossa mahdollisia'), as the proposal is indeed a legislative proposal, not yet enacted law. No inappropriate uncertainty was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully represents the source's definitive statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' The conditional 'olisivat sallittuja' (would be permitted) mirrors the source's own conditional framing ('olisivat jatkossa mahdollisia'), as the proposal is indeed a legislative proposal, not yet enacted law. No inappropriate uncertainty was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1137,
+  "judge_completion_tokens": 142,
+  "judge_cost_usd": 0.009235,
+  "timestamp": 1774952603.91631
+}

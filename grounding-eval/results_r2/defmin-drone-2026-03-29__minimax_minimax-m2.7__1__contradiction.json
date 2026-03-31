@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.35,
+    "evidence": "The summary largely aligns with the source. The addition of 'intercept' is an embellishment not supported by the source, and 'forensic investigation' is a specification not present in the source. However, these are more accurately characterized as unsupported additions/embellishments rather than direct contradictions \u2014 they don't say the opposite of what the source says, but rather go beyond it. No clear-cut contradiction where the summary states the opposite of the source was found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"The Finnish Air Force scrambled an F/A\u201118 Hornet to intercept and identify the objects.\",\n      \"source_statement\": \"The Air Force has been on-site with an F/A-18 Hornet fighter for identification.\",\n      \"explanation\": \"The source says the Hornet was used for 'identification' only. The summary adds 'intercept,' which is not stated in the source and implies a different, more aggressive action.\"\n    },\n    {\n      \"output_statement\": \"Police have cordoned off both crash sites for forensic investigation.\",\n      \"source_statement\": \"Police have secured the areas for further investigation.\",\n      \"explanation\": \"The source says 'secured the areas for further investigation.' The summary changes this to 'cordoned off both crash sites for forensic investigation,' introducing the specific terms 'cordoned off' and 'forensic' which are not in the source. While 'cordoned off' is a minor rephrasing, 'forensic investigation' is a more specific and potentially different type of investigation than what the source states.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.35,\n  \"evidence\": \"The summary largely aligns with the source. The addition of 'intercept' is an embellishment not supported by the source, and 'forensic investigation' is a specification not present in the source. However, these are more accurately characterized as unsupported additions/embellishments rather than direct contradictions \u2014 they don't say the opposite of what the source says, but rather go beyond it. No clear-cut contradiction where the summary states the opposite of the source was found.\"\n}\n```",
+  "judge_prompt_tokens": 469,
+  "judge_completion_tokens": 402,
+  "judge_cost_usd": 0.012395,
+  "timestamp": 1774952547.2918231
+}

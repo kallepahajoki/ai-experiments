@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The output omits the qualifier 'According to current information' before the drone crash details, which signals that the information was preliminary and potentially subject to change. It also omits the descriptor 'small' for the objects. The qualifier is important as it conveys uncertainty about the facts, but the overall meaning of the summary remains largely intact.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Detected in Finnish airspace over sea areas and Southeast Finland\",\n    \"Air Force deployed F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police have secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen: We take this very seriously\",\n    \"H\u00e4kk\u00e4nen: Security authorities have responded immediately\",\n    \"Defence Forces investigating together with other authorities\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"The objects were described as 'small' objects\", \"importance\": \"medium\"},\n    {\"fact\": \"The drone crash information was qualified with 'According to current information', indicating preliminary/uncertain status\", \"importance\": \"high\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The output omits the qualifier 'According to current information' before the drone crash details, which signals that the information was preliminary and potentially subject to change. It also omits the descriptor 'small' for the objects. The qualifier is important as it conveys uncertainty about the facts, but the overall meaning of the summary remains largely intact.\"\n}\n```",
+  "judge_prompt_tokens": 533,
+  "judge_completion_tokens": 350,
+  "judge_cost_usd": 0.011415,
+  "timestamp": 1774952547.294322
+}

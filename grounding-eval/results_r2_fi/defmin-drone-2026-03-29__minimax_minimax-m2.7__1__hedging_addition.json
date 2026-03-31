@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements without adding any hedging language such as 'may', 'might', 'reportedly', or 'allegedly'. All factual claims are presented with the same level of certainty as in the source. The phrase 'T\u00e4m\u00e4nhetkisten tietojen mukaan' mirrors the source's 'T\u00e4m\u00e4n hetken tietojen mukaan', and 'Puolustusministeri Antti H\u00e4kk\u00e4sen mukaan' is an appropriate attribution rather than hedging.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements without adding any hedging language such as 'may', 'might', 'reportedly', or 'allegedly'. All factual claims are presented with the same level of certainty as in the source. The phrase 'T\u00e4m\u00e4nhetkisten tietojen mukaan' mirrors the source's 'T\u00e4m\u00e4n hetken tietojen mukaan', and 'Puolustusministeri Antti H\u00e4kk\u00e4sen mukaan' is an appropriate attribution rather than hedging.\"\n}\n```",
+  "judge_prompt_tokens": 733,
+  "judge_completion_tokens": 172,
+  "judge_cost_usd": 0.007965,
+  "timestamp": 1774952603.9121192
+}

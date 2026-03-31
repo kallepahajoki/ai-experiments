@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source text is largely factual and declarative, describing a legislative proposal. There is very little hedging language in the source to begin with. The conditional/future-oriented nature of the proposal ('would in future be possible', 'proposes') is preserved in the output through language like 'proposed amendment would lift these restrictions.' The omission of 'difficult-to-predict operational environment' is a minor detail loss rather than a hedging removal that changes the factual certainty of a claim. No instances were found where uncertain or conditional claims were converted into established facts.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"would in future be possible\", \"context\": \"The bill proposes that these actions would in future be possible if they were related to Finland's military defence\"},\n    {\"expression\": \"difficult-to-predict operational environment\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"would in future be possible\", \"preserved\": true, \"output_version\": \"The proposed amendment would lift these restrictions specifically in contexts related to Finland's military defence, NATO collective defence, or defence cooperation\"},\n    {\"expression\": \"difficult-to-predict operational environment\", \"preserved\": false, \"output_version\": \"No equivalent language included in the output\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source text is largely factual and declarative, describing a legislative proposal. There is very little hedging language in the source to begin with. The conditional/future-oriented nature of the proposal ('would in future be possible', 'proposes') is preserved in the output through language like 'proposed amendment would lift these restrictions.' The omission of 'difficult-to-predict operational environment' is a minor detail loss rather than a hedging removal that changes the factual certainty of a claim. No instances were found where uncertain or conditional claims were converted into established facts.\"\n}\n```",
+  "judge_prompt_tokens": 802,
+  "judge_completion_tokens": 349,
+  "judge_cost_usd": 0.012735,
+  "timestamp": 1774952547.295279
+}

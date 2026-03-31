@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.99,
+    "evidence": "The only number in the source is the date 2.4.2026, which is accurately reproduced in the output.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"2.4.2026\"],\n  \"numbers_in_output\": [\"2.4.2026\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.99,\n  \"evidence\": \"The only number in the source is the date 2.4.2026, which is accurately reproduced in the output.\"\n}\n```",
+  "judge_prompt_tokens": 1170,
+  "judge_completion_tokens": 105,
+  "judge_cost_usd": 0.008475,
+  "timestamp": 1774952603.916461
+}

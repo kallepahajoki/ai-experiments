@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the critical claim about two drones falling to the ground. The source explicitly signals that this information is preliminary/current, but the output presents it as established fact. Additionally, the qualifier 'muutamia' (a few) is dropped, and the verb tense shift from 'on harhautunut' to 'harhautuivat' subtly removes the sense of an ongoing assessment. The removal of 'T\u00e4m\u00e4n hetken tietojen mukaan' is the most severe as it concerns a factual claim about drone crashes that was explicitly marked as preliminary.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella\"\n    },\n    {\n      \"expression\": \"on harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 hitaita kohteita (the qualifier 'muutamia' / 'a few' is dropped)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle (presented as established fact without 'according to current information')\"\n    },\n    {\n      \"expression\": \"on harhautunut (present perfect, ongoing uncertainty)\",\n      \"preserved\": false,\n      \"output_version\": \"lennokit harhautuivat (past tense, presented as completed established fact rather than current assessment)\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which qualified the critical claim about two drones falling to the ground. The source explicitly signals that this information is preliminary/current, but the output presents it as established fact. Additionally, the qualifier 'muutamia' (a few) is dropped, and the verb tense shift from 'on harhautunut' to 'harhautuivat' subtly removes the sense of an ongoing assessment. The removal of 'T\u00e4m\u00e4n hetken tietojen mukaan' is the most severe as it concerns a factual claim about drone crashes that was explicitly marked as preliminary.\"\n}\n```",
+  "judge_prompt_tokens": 777,
+  "judge_completion_tokens": 613,
+  "judge_cost_usd": 0.01921,
+  "timestamp": 1774952603.9149702
+}

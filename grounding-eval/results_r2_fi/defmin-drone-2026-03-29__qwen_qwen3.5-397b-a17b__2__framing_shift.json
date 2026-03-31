@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The main issue is that the output converts 'was present on an identification mission' into 'identified the objects,' which shifts the framing from an ongoing/incomplete task to a completed successful action. This is more of a factual nuance shift than dramatic editorial framing, but it does alter the implied narrative. No loaded language, dramatic framing, or strong editorial bias was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Ilmavoimat tunnisti kohteet F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n      \"issue\": \"The source says the Air Force was present on an identification mission ('tunnistusteht\u00e4v\u00e4ss\u00e4'), not that it successfully identified the objects. The output changes an ongoing task into a completed action, subtly implying a more decisive/resolved outcome than the source states.\"\n    },\n    {\n      \"output_phrase\": \"lennokit harhautuivat Suomen alueelle\",\n      \"issue\": \"Minor: the source quotes the minister saying 'Suomen alueelle on harhautunut lennokkeja' (drones have strayed). The output rephrases this as a paraphrase ('H\u00e4kk\u00e4sen mukaan lennokit harhautuivat') which is acceptable, but drops the direct quote framing. This is a very minor shift \u2014 no significant editorial tone added.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The main issue is that the output converts 'was present on an identification mission' into 'identified the objects,' which shifts the framing from an ongoing/incomplete task to a completed successful action. This is more of a factual nuance shift than dramatic editorial framing, but it does alter the implied narrative. No loaded language, dramatic framing, or strong editorial bias was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 690,
+  "judge_completion_tokens": 360,
+  "judge_cost_usd": 0.01245,
+  "timestamp": 1774952603.9155982
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The phrase 'Here are the key facts from the press release:' is meta-commentary about the task being performed rather than part of the summary content itself. It acknowledges the nature of the source document and frames the output as a task response.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [\n    {\"text\": \"Here are the key facts from the press release:\", \"type\": \"meta_commentary\"}\n  ],\n  \"leakage_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The phrase 'Here are the key facts from the press release:' is meta-commentary about the task being performed rather than part of the summary content itself. It acknowledges the nature of the source document and frames the output as a task response.\"\n}\n```",
+  "judge_prompt_tokens": 764,
+  "judge_completion_tokens": 126,
+  "judge_cost_usd": 0.00697,
+  "timestamp": 1774952547.2956002
+}

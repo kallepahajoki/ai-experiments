@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "Tiivistelm\u00e4st\u00e4 puuttuu maininta merialueesta havaintopaikkana, mik\u00e4 kaventaa tapahtuman maantieteellist\u00e4 laajuutta. Lis\u00e4ksi H\u00e4kk\u00e4sen k\u00e4ytt\u00e4m\u00e4 sana 'harhautunut' on j\u00e4tetty pois, mik\u00e4 on merkitt\u00e4v\u00e4 tulkinnallinen yksityiskohta, koska se viittaa tahattomaan rajanylitykseen. N\u00e4m\u00e4 ovat korkean tason puutteita mutta eiv\u00e4t kriittisi\u00e4, koska ydinsanoma s\u00e4ilyy.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Havainnot tehtiin sunnuntai-aamuna\",\n    \"Havainnot tehtiin Suomen ilmatilassa merialueella ja Kaakkois-Suomessa\",\n    \"Havaitut kohteet olivat matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Kohteita oli muutamia\",\n    \"Ilmavoimat oli paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"Yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen totesi asiasta\",\n    \"H\u00e4kk\u00e4sen mukaan Suomen alueelle on harhautunut lennokkeja\",\n    \"Asiaan suhtaudutaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Havaintoja tehtiin my\u00f6s merialueella (ei vain Kaakkois-Suomessa)\", \"importance\": \"high\"},\n    {\"fact\": \"H\u00e4kk\u00e4sen mukaan Suomen alueelle on nimenomaan 'harhautunut' lennokkeja (t\u00e4m\u00e4 sanavalinta viittaa tahattomaan rajanylitykseen)\", \"importance\": \"high\"},\n    {\"fact\": \"Kohteita kuvattiin olevan 'muutamia' (lukum\u00e4\u00e4r\u00e4n tarkenne puuttuu)\", \"importance\": \"medium\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"Tiivistelm\u00e4st\u00e4 puuttuu maininta merialueesta havaintopaikkana, mik\u00e4 kaventaa tapahtuman maantieteellist\u00e4 laajuutta. Lis\u00e4ksi H\u00e4kk\u00e4sen k\u00e4ytt\u00e4m\u00e4 sana 'harhautunut' on j\u00e4tetty pois, mik\u00e4 on merkitt\u00e4v\u00e4 tulkinnallinen yksityiskohta, koska se viittaa tahattomaan rajanylitykseen. N\u00e4m\u00e4 ovat korkean tason puutteita mutta eiv\u00e4t kriittisi\u00e4, koska ydinsanoma s\u00e4ilyy.\"\n}\n```",
+  "judge_prompt_tokens": 709,
+  "judge_completion_tokens": 693,
+  "judge_cost_usd": 0.02087,
+  "timestamp": 1774952603.913728
+}

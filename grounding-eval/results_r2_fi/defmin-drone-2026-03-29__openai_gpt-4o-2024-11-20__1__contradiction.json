@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The output is largely faithful to the source. The differences found are omissions (sea area, 'slow') and a minor paraphrase ('nopeasti' vs 'v\u00e4litt\u00f6m\u00e4sti'), but no statement in the output directly says the opposite of what the source states.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Sunnuntaiaamuna Suomen ilmatilassa Kaakkois-Suomessa havaittiin matalalla lent\u00e4vi\u00e4 pieni\u00e4 kohteita.\",\n      \"source_statement\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n      \"explanation\": \"The output omits 'merialueella' (sea area) as a location where objects were detected, and also omits 'hitaita' (slow). While these are omissions rather than direct contradictions, stating the objects were seen only 'Kaakkois-Suomessa' narrows the scope in a way that conflicts with the source which explicitly includes the sea area as well.\"\n    },\n    {\n      \"output_statement\": \"turvallisuusviranomaiset ovat reagoineet nopeasti\",\n      \"source_statement\": \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.\",\n      \"explanation\": \"The source says 'v\u00e4litt\u00f6m\u00e4sti' (immediately), while the output says 'nopeasti' (quickly). These are close in meaning but not identical \u2014 'immediately' is stronger than 'quickly'. This is a minor paraphrase difference rather than a clear contradiction.\"\n    }\n  ],\n  \"contradiction_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The output is largely faithful to the source. The differences found are omissions (sea area, 'slow') and a minor paraphrase ('nopeasti' vs 'v\u00e4litt\u00f6m\u00e4sti'), but no statement in the output directly says the opposite of what the source states.\"\n}\n```",
+  "judge_prompt_tokens": 636,
+  "judge_completion_tokens": 448,
+  "judge_cost_usd": 0.01438,
+  "timestamp": 1774952603.913345
+}

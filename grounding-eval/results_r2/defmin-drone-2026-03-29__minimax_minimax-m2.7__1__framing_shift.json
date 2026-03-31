@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The summary introduces militarized and crime-scene language ('scrambled,' 'intercept,' 'cordoned off,' 'forensic investigation') that amplifies the urgency and drama beyond the neutral, factual tone of the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"scrambled an F/A\u201118 Hornet to intercept and identify the objects\",\n      \"issue\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' introduces military urgency/drama not present in the source, and 'intercept' implies an adversarial engagement beyond mere identification.\"\n    },\n    {\n      \"output_phrase\": \"cordoned off both crash sites for forensic investigation\",\n      \"issue\": \"The source says 'Police have secured the areas for further investigation.' 'Cordoned off' and 'forensic investigation' add a more dramatic, crime-scene connotation not present in the original neutral phrasing.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary introduces militarized and crime-scene language ('scrambled,' 'intercept,' 'cordoned off,' 'forensic investigation') that amplifies the urgency and drama beyond the neutral, factual tone of the source.\"\n}\n```",
+  "judge_prompt_tokens": 503,
+  "judge_completion_tokens": 286,
+  "judge_cost_usd": 0.009665,
+  "timestamp": 1774952547.291915
+}

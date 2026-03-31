@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately reflects the content about the legislative proposal to amend nuclear energy and criminal law, the removal of the ban on nuclear explosives in defense contexts, NATO alignment, the security rationale, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline of 2.4.2026. The formatting and organization differ from the source but no external information has been added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately reflects the content about the legislative proposal to amend nuclear energy and criminal law, the removal of the ban on nuclear explosives in defense contexts, NATO alignment, the security rationale, the clarification that Finland is not seeking nuclear weapons on its territory, the continued criminalization of acquisition/manufacture/development/detonation, and the consultation deadline of 2.4.2026. The formatting and organization differ from the source but no external information has been added.\"\n}\n```",
+  "judge_prompt_tokens": 1296,
+  "judge_completion_tokens": 159,
+  "judge_cost_usd": 0.010455,
+  "timestamp": 1774952603.917873
+}

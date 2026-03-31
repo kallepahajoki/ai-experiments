@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.82,
+    "evidence": "The most notable omission is the qualifier 'according to current information' which signals the crash reports were preliminary. The summary presents the crashes as confirmed facts without this caveat. The summary does use 'multiple' which partially captures 'several,' but conflates the detected objects with the two crashed drones. These are meaningful but not critical omissions.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Several low-flying, slow-moving small objects were detected Sunday morning\",\n    \"Objects detected over sea areas and Southeast Finland\",\n    \"Air Force used F/A-18 Hornet fighter for identification\",\n    \"According to current information, one drone crashed north of Kouvola\",\n    \"Another drone crashed east of Kouvola\",\n    \"Police secured the areas for further investigation\",\n    \"Defense Minister Antti H\u00e4kk\u00e4nen stated drones strayed into Finnish territory\",\n    \"H\u00e4kk\u00e4nen said they take this very seriously\",\n    \"Security authorities responded immediately\",\n    \"Defence Forces investigating together with other authorities\",\n    \"The phrase 'according to current information' qualifies the crash reports\"\n  ],\n  \"omitted_facts\": [\n    {\n      \"fact\": \"The qualifier 'According to current information' before the drone crash details, indicating the information was preliminary and potentially subject to change\",\n      \"importance\": \"high\"\n    },\n    {\n      \"fact\": \"The source says 'several' objects were detected, while only two crashes are confirmed \u2014 the output doesn't clearly preserve the distinction that more objects were detected than just the two that crashed\",\n      \"importance\": \"medium\"\n    },\n    {\n      \"fact\": \"H\u00e4kk\u00e4nen's specific phrasing 'Drones have strayed into Finnish territory' (strayed, not necessarily intentionally directed)\",\n      \"importance\": \"medium\"\n    }\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.82,\n  \"evidence\": \"The most notable omission is the qualifier 'according to current information' which signals the crash reports were preliminary. The summary presents the crashes as confirmed facts without this caveat. The summary does use 'multiple' which partially captures 'several,' but conflates the detected objects with the two crashed drones. These are meaningful but not critical omissions.\"\n}\n```",
+  "judge_prompt_tokens": 492,
+  "judge_completion_tokens": 460,
+  "judge_cost_usd": 0.01396,
+  "timestamp": 1774952547.2899158
+}

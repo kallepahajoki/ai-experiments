@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be traced back to the source document. The summary accurately condenses the source without introducing external knowledge. The phrasing 'osana Natoa' is a reasonable paraphrase of 'osana liittokuntaa', and 'yhdenmukaistetaan muiden Nato-maiden kanssa' faithfully reflects the source's statement about most NATO countries not having similar restrictions and aligning Finnish legislation with NATO operations.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be traced back to the source document. The summary accurately condenses the source without introducing external knowledge. The phrasing 'osana Natoa' is a reasonable paraphrase of 'osana liittokuntaa', and 'yhdenmukaistetaan muiden Nato-maiden kanssa' faithfully reflects the source's statement about most NATO countries not having similar restrictions and aligning Finnish legislation with NATO operations.\"\n}\n```",
+  "judge_prompt_tokens": 1089,
+  "judge_completion_tokens": 145,
+  "judge_cost_usd": 0.00907,
+  "timestamp": 1774952603.918282
+}

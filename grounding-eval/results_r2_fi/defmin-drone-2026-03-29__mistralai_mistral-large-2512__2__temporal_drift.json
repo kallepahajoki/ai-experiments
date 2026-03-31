@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.65,
+    "evidence": "Two minor temporal drifts detected: (1) tense change from perfect/stative 'on ollut paikalla' to simple past 'l\u00e4hetti', altering the aspectual meaning; (2) replacement of the temporally-anchored 't\u00e4m\u00e4n hetken tietojen mukaan' with the neutral 'tiedotteen mukaan', losing the provisional present-time framing. Neither drift changes the overall event sequence or dates, but they do subtly alter temporal nuance.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"t\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Ilmavoimat l\u00e4hetti F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4n\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n      \"explanation\": \"The source uses the perfect tense 'on ollut paikalla' (has been present), indicating an ongoing or completed state of being on-site for an identification mission. The output changes this to the simple past 'l\u00e4hetti' (sent), which shifts the meaning from a state description to a discrete sending action. This is a tense/aspect change, though the temporal placement remains roughly the same.\"\n    },\n    {\n      \"output_temporal\": \"Tiedotteen mukaan\",\n      \"source_temporal\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"explanation\": \"The source says 'according to current information' (t\u00e4m\u00e4n hetken tietojen mukaan), emphasizing the provisional, present-moment nature of the data. The output replaces this with 'tiedotteen mukaan' (according to the bulletin), losing the temporal immediacy and provisional quality of the original expression.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.65,\n  \"evidence\": \"Two minor temporal drifts detected: (1) tense change from perfect/stative 'on ollut paikalla' to simple past 'l\u00e4hetti', altering the aspectual meaning; (2) replacement of the temporally-anchored 't\u00e4m\u00e4n hetken tietojen mukaan' with the neutral 'tiedotteen mukaan', losing the provisional present-time framing. Neither drift changes the overall event sequence or dates, but they do subtly alter temporal nuance.\"\n}\n```",
+  "judge_prompt_tokens": 761,
+  "judge_completion_tokens": 519,
+  "judge_cost_usd": 0.01678,
+  "timestamp": 1774952603.912957
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The causal/purposive connector 'jotta' in the opening sentence ('jotta Suomen sotilaallinen puolustus voidaan integroida t\u00e4ysim\u00e4\u00e4r\u00e4isesti Naton yhteiseen puolustukseen ja pelotteeseen') faithfully reflects the source's stated purpose ('poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa sek\u00e4 Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi'). All other relationships presented in the summary correspond to relationships stated in the source.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The causal/purposive connector 'jotta' in the opening sentence ('jotta Suomen sotilaallinen puolustus voidaan integroida t\u00e4ysim\u00e4\u00e4r\u00e4isesti Naton yhteiseen puolustukseen ja pelotteeseen') faithfully reflects the source's stated purpose ('poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa sek\u00e4 Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi'). All other relationships presented in the summary correspond to relationships stated in the source.\"\n}\n```",
+  "judge_prompt_tokens": 1286,
+  "judge_completion_tokens": 225,
+  "judge_cost_usd": 0.012055,
+  "timestamp": 1774952603.917668
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present continuous, ongoing/imminent), while the output says 'has submitted a proposal... for consultation' (present perfect, completed action). This is a minor tense drift from an in-progress action to a completed one. All other temporal elements (the date 2 April 2026, future tense for proposed changes, present tense for current law) are accurately preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present tense, indicating current/ongoing action)\",\n    \"Under current legislation (present)\",\n    \"in future (future reference)\",\n    \"The consultation period ends on 2 April 2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has submitted (present perfect, indicating completed action)\",\n    \"The current law completely prohibits (present)\",\n    \"The proposed bill would allow (conditional future)\",\n    \"The consultation period will run until 2 April 2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has submitted a proposal\",\n      \"source_temporal\": \"is sending a proposal\",\n      \"explanation\": \"The source uses present continuous 'is sending', indicating the action is in progress or imminent. The summary uses present perfect 'has submitted', which implies the action is already completed. This is a subtle tense shift that changes the temporal status of the event.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source says 'The Ministry of Defence is sending a proposal... for a consultation round' (present continuous, ongoing/imminent), while the output says 'has submitted a proposal... for consultation' (present perfect, completed action). This is a minor tense drift from an in-progress action to a completed one. All other temporal elements (the date 2 April 2026, future tense for proposed changes, present tense for current law) are accurately preserved.\"\n}\n```",
+  "judge_prompt_tokens": 736,
+  "judge_completion_tokens": 369,
+  "judge_cost_usd": 0.012905,
+  "timestamp": 1774952547.296246
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "The source qualifies the drone crash information with 'According to current information,' indicating the facts are preliminary and subject to change. The output drops this qualifier entirely and presents the crashes as established fact. Additionally, the source quotes the minister as saying drones 'strayed into' Finnish territory, which carries a sense of ambiguity about intent, while the output characterizes this as a confirmed 'incursion,' a stronger and more definitive term that removes the nuance of the original phrasing.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"expression\": \"Drones have strayed into Finnish territory\",\n      \"context\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory.\\\" \u2014 The minister uses 'strayed,' which implies unintentional or uncertain intent, rather than a deliberate incursion.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": false,\n      \"output_version\": \"Two drones subsequently crashed \u2014 one north of Kouvola and one east of Kouvola\"\n    },\n    {\n      \"expression\": \"Drones have strayed into Finnish territory\",\n      \"preserved\": false,\n      \"output_version\": \"Defense Minister Antti H\u00e4kk\u00e4nen confirmed the incursion\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"The source qualifies the drone crash information with 'According to current information,' indicating the facts are preliminary and subject to change. The output drops this qualifier entirely and presents the crashes as established fact. Additionally, the source quotes the minister as saying drones 'strayed into' Finnish territory, which carries a sense of ambiguity about intent, while the output characterizes this as a confirmed 'incursion,' a stronger and more definitive term that removes the nuance of the original phrasing.\"\n}\n```",
+  "judge_prompt_tokens": 543,
+  "judge_completion_tokens": 408,
+  "judge_cost_usd": 0.012915,
+  "timestamp": 1774952547.28979
+}

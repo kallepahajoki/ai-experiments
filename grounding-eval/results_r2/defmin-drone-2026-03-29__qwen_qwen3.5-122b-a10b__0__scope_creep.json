@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All information in the output can be directly traced to the source document. The summary accurately reflects the key facts: detection of objects, F/A-18 deployment, two drone crashes near Kouvola, police securing areas, Defense Minister H\u00e4kk\u00e4nen's statement, and the joint investigation. No additional context, background information, or external knowledge was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All information in the output can be directly traced to the source document. The summary accurately reflects the key facts: detection of objects, F/A-18 deployment, two drone crashes near Kouvola, police securing areas, Defense Minister H\u00e4kk\u00e4nen's statement, and the joint investigation. No additional context, background information, or external knowledge was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 492,
+  "judge_completion_tokens": 122,
+  "judge_cost_usd": 0.00551,
+  "timestamp": 1774952547.2938502
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output is a faithful summary of the source. Minor wording differences such as 'jatkotutkimuksia' vs 'lis\u00e4tutkimuksia' and 'eritt\u00e4in vakavasti' vs 'hyvin vakavasti' are paraphrases that do not constitute contradictions in meaning.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output is a faithful summary of the source. Minor wording differences such as 'jatkotutkimuksia' vs 'lis\u00e4tutkimuksia' and 'eritt\u00e4in vakavasti' vs 'hyvin vakavasti' are paraphrases that do not constitute contradictions in meaning.\"\n}\n```",
+  "judge_prompt_tokens": 704,
+  "judge_completion_tokens": 115,
+  "judge_cost_usd": 0.006395,
+  "timestamp": 1774952603.9137962
+}

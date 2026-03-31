@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the core temporal framework accurately: the events occurred on Sunday morning ('sunnuntaiaamuna'), the sequence of detection \u2192 identification \u2192 drones falling \u2192 police cordoning \u2192 minister's statement \u2192 ongoing investigation is maintained. The source's 'merialueella ja Kaakkois-Suomessa' is slightly simplified to just 'Kaakkois-Suomessa' (omitting the sea area), but this is a content omission, not a temporal drift. The tenses are consistent between source and output. The only minor change is 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'nopeasti', which is a nuance shift rather than a true temporal drift.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"v\u00e4litt\u00f6m\u00e4sti\"],\n  \"temporal_expressions_output\": [\"Sunnuntaiaamuna\", \"nopeasti\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"nopeasti\",\n      \"source_temporal\": \"v\u00e4litt\u00f6m\u00e4sti\",\n      \"explanation\": \"The source uses 'v\u00e4litt\u00f6m\u00e4sti' (immediately), while the summary uses 'nopeasti' (quickly). This is a minor semantic shift but not a strict temporal drift \u2014 it slightly softens the immediacy of the response.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the core temporal framework accurately: the events occurred on Sunday morning ('sunnuntaiaamuna'), the sequence of detection \u2192 identification \u2192 drones falling \u2192 police cordoning \u2192 minister's statement \u2192 ongoing investigation is maintained. The source's 'merialueella ja Kaakkois-Suomessa' is slightly simplified to just 'Kaakkois-Suomessa' (omitting the sea area), but this is a content omission, not a temporal drift. The tenses are consistent between source and output. The only minor change is 'v\u00e4litt\u00f6m\u00e4sti' \u2192 'nopeasti', which is a nuance shift rather than a true temporal drift.\"\n}\n```",
+  "judge_prompt_tokens": 671,
+  "judge_completion_tokens": 347,
+  "judge_cost_usd": 0.01203,
+  "timestamp": 1774952603.913391
+}

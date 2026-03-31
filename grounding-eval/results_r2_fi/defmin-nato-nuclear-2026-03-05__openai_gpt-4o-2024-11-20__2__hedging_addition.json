@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may', 'might', 'reportedly', or 'allegedly' has been added. The output uses direct, factual language consistent with the source. Minor rephrasing such as 'muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4' instead of 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' is a slight softening of description but does not constitute hedging of a factual claim \u2014 it is a paraphrase of a characterization rather than the addition of uncertainty to a definitive statement.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements. No hedging language such as 'may', 'might', 'reportedly', or 'allegedly' has been added. The output uses direct, factual language consistent with the source. Minor rephrasing such as 'muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4' instead of 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' is a slight softening of description but does not constitute hedging of a factual claim \u2014 it is a paraphrase of a characterization rather than the addition of uncertainty to a definitive statement.\"\n}\n```",
+  "judge_prompt_tokens": 1146,
+  "judge_completion_tokens": 188,
+  "judge_cost_usd": 0.01043,
+  "timestamp": 1774952603.918654
+}

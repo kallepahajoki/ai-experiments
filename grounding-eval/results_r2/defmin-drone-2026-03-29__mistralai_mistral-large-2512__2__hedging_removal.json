@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The source uses 'According to current information' which the output renders as 'According to preliminary information' \u2014 this is a reasonable paraphrase and preserves the hedging. However, the source quotes the minister as saying 'Drones have strayed into Finnish territory,' where 'strayed' could imply unintentional entry but is ambiguous and could also simply mean they entered without authorization. The output explicitly interprets this as 'the drones had entered Finnish territory unintentionally,' which is an interpretive addition that goes beyond what the source states. The minister's quote does not explicitly say 'unintentionally' \u2014 the output adds a specific characterization not clearly established in the source. This constitutes a mild form of hedging removal / editorializing, though the core hedging phrase ('According to current information') is preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"According to current information\",\n      \"context\": \"According to current information, one drone has crashed north of Kouvola and another east of Kouvola.\"\n    },\n    {\n      \"expression\": \"Drones have strayed into Finnish territory\",\n      \"context\": \"Defense Minister Antti H\u00e4kk\u00e4nen states: \\\"Drones have strayed into Finnish territory.\\\" \u2014 The word 'strayed' implies unintentional entry but does not explicitly say 'unintentionally'.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"According to current information\",\n      \"preserved\": true,\n      \"output_version\": \"According to preliminary information, two drones crashed\"\n    },\n    {\n      \"expression\": \"Drones have strayed into Finnish territory\",\n      \"preserved\": false,\n      \"output_version\": \"the drones had entered Finnish territory unintentionally\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses 'According to current information' which the output renders as 'According to preliminary information' \u2014 this is a reasonable paraphrase and preserves the hedging. However, the source quotes the minister as saying 'Drones have strayed into Finnish territory,' where 'strayed' could imply unintentional entry but is ambiguous and could also simply mean they entered without authorization. The output explicitly interprets this as 'the drones had entered Finnish territory unintentionally,' which is an interpretive addition that goes beyond what the source states. The minister's quote does not explicitly say 'unintentionally' \u2014 the output adds a specific characterization not clearly established in the source. This constitutes a mild form of hedging removal / editorializing, though the core hedging phrase ('According to current information') is preserved.\"\n}\n```",
+  "judge_prompt_tokens": 593,
+  "judge_completion_tokens": 467,
+  "judge_cost_usd": 0.01464,
+  "timestamp": 1774952547.292644
+}

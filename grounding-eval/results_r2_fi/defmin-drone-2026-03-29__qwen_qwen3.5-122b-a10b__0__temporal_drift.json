@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The output systematically shifts present perfect tenses ('on ollut paikalla', 'on pudonnut') to simple past ('l\u00e4hetti', 'putosi'), altering the temporal aspect from recently completed/ongoing events to discrete past events. Additionally, 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present for identification) is reinterpreted as 'l\u00e4hetti...tunnistusteht\u00e4v\u00e4\u00e4n' (sent...for identification), changing the meaning from a state description to an action. There is also a minor typo: 'Sununtai-aamuna' vs. source 'sunnuntai-aamuna', though this is orthographic rather than temporal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect - ongoing/completed)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"t\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"tutkii (present tense)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sununtai-aamuna\",\n    \"havaittiin (past tense - simple past)\",\n    \"l\u00e4hetti (past tense - simple past)\",\n    \"putosi (past tense - simple past)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti (simple past, implying a discrete completed sending action)\",\n      \"source_temporal\": \"on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 (present perfect, indicating ongoing presence)\",\n      \"explanation\": \"The source uses present perfect 'on ollut paikalla' (has been present), indicating an ongoing or recently completed state. The output changes this to simple past 'l\u00e4hetti' (sent), which shifts the aspect from a state of being present to a discrete completed action of dispatching. This is a tense/aspect drift.\"\n    },\n    {\n      \"output_temporal\": \"putosi (simple past)\",\n      \"source_temporal\": \"on pudonnut (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'on pudonnut' (has fallen), suggesting recent relevance. The output uses simple past 'putosi' (fell), shifting the tense from present perfect to simple past. This is a minor tense drift.\"\n    },\n    {\n      \"output_temporal\": \"havaittiin (simple past passive)\",\n      \"source_temporal\": \"havaittiin (simple past passive, implied from source)\",\n      \"explanation\": \"No drift here; the source also uses 'havaittiin' in passive past tense.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The output systematically shifts present perfect tenses ('on ollut paikalla', 'on pudonnut') to simple past ('l\u00e4hetti', 'putosi'), altering the temporal aspect from recently completed/ongoing events to discrete past events. Additionally, 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been present for identification) is reinterpreted as 'l\u00e4hetti...tunnistusteht\u00e4v\u00e4\u00e4n' (sent...for identification), changing the meaning from a state description to an action. There is also a minor typo: 'Sununtai-aamuna' vs. source 'sunnuntai-aamuna', though this is orthographic rather than temporal.\"\n}\n```",
+  "judge_prompt_tokens": 687,
+  "judge_completion_tokens": 688,
+  "judge_cost_usd": 0.020635,
+  "timestamp": 1774952603.914474
+}

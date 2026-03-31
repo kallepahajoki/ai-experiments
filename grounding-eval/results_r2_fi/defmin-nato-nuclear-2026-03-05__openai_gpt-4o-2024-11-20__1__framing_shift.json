@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The summary introduces minor framing shifts: replacing 'mahdollistamiseksi' (enabling) with 'vahvistamiseksi' (strengthening) subtly changes the stated purpose from removing barriers to actively enhancing defense, and replacing 'vaikeasti ennakoitavassa' (hard to predict) with 'muuttuvassa' (changing) softens the characterization of the security environment. These are relatively minor but represent editorial choices not present in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Suomen sotilaallisen puolustuksen vahvistamiseksi\",\n      \"issue\": \"The source says 'mahdollistamiseksi' (enabling/making possible), not 'vahvistamiseksi' (strengthening). 'Vahvistaminen' implies an active enhancement, which is a slightly more assertive framing than the neutral 'enabling' used in the source.\"\n    },\n    {\n      \"output_phrase\": \"muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n      \"issue\": \"The source uses 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' (difficult to predict/hard to anticipate security environment), which is more specific and carries a different nuance than the softer 'muuttuvassa' (changing). This is a slight tonal shift, though arguably a downplaying rather than dramatization.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The summary introduces minor framing shifts: replacing 'mahdollistamiseksi' (enabling) with 'vahvistamiseksi' (strengthening) subtly changes the stated purpose from removing barriers to actively enhancing defense, and replacing 'vaikeasti ennakoitavassa' (hard to predict) with 'muuttuvassa' (changing) softens the characterization of the security environment. These are relatively minor but represent editorial choices not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 1127,
+  "judge_completion_tokens": 377,
+  "judge_cost_usd": 0.01506,
+  "timestamp": 1774952603.918475
+}

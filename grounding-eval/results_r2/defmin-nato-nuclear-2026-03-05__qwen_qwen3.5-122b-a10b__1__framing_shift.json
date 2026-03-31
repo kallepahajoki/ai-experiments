@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.4,
+    "evidence": "The output is largely faithful to the source in tone and content. Minor framing issues include the use of 'hindering' (slightly more loaded than the source's neutral 'enable') and a subtle merging of the alignment and credibility points that introduces a mild causal implication. These are minor shifts and the overall summary remains close to the source's neutral, informational tone.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"hindering Finland's military defence\",\n      \"issue\": \"The source uses the neutral phrase 'to enable Finland's military defence,' while the output uses 'hindering,' which introduces a negative editorial framing implying the current legislation is an active impediment. The source simply says the goal is to 'remove legislative obstacles to enable' \u2014 'hindering' adds a slightly more loaded connotation.\"\n    },\n    {\n      \"output_phrase\": \"ensuring NATO deterrence remains credible\",\n      \"issue\": \"The source separates the alignment point and the credibility point into distinct paragraphs and contexts. The output merges them under 'Alignment,' implying a causal link \u2014 that alignment itself ensures credibility \u2014 which is a slight causal implication not explicitly made in the source.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.4,\n  \"evidence\": \"The output is largely faithful to the source in tone and content. Minor framing issues include the use of 'hindering' (slightly more loaded than the source's neutral 'enable') and a subtle merging of the alignment and credibility points that introduces a mild causal implication. These are minor shifts and the overall summary remains close to the source's neutral, informational tone.\"\n}\n```",
+  "judge_prompt_tokens": 701,
+  "judge_completion_tokens": 319,
+  "judge_cost_usd": 0.01148,
+  "timestamp": 1774952547.297996
+}

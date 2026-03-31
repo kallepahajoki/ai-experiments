@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output largely follows the structure of the source without merging independent facts into false causal or combined claims. The two drone locations are correctly presented as two separate incidents combined into one sentence without creating a false relationship. The minister's quote is accurately paraphrased. The slight change from 'was on an identification mission' to 'identified' is a subtle inaccuracy but not a composite conflation of two separate facts. No causal connectors (because, caused, led to, due to, resulting in) are used to create false causal relationships.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Ilmavoimat tunnisti kohteet F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"source_facts\": [\n        \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\"\n      ],\n      \"explanation\": \"The source says the Air Force was present on an identification mission with an F/A-18 Hornet, but does not state that the objects were actually identified. The output changes 'was present on an identification mission' to 'identified the objects,' implying a completed action that is not confirmed in the source. However, this is more of an accuracy/hallucination issue than a composite conflation of two separate facts.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output largely follows the structure of the source without merging independent facts into false causal or combined claims. The two drone locations are correctly presented as two separate incidents combined into one sentence without creating a false relationship. The minister's quote is accurately paraphrased. The slight change from 'was on an identification mission' to 'identified' is a subtle inaccuracy but not a composite conflation of two separate facts. No causal connectors (because, caused, led to, due to, resulting in) are used to create false causal relationships.\"\n}\n```",
+  "judge_prompt_tokens": 692,
+  "judge_completion_tokens": 354,
+  "judge_cost_usd": 0.01231,
+  "timestamp": 1774952603.915648
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The output removes hedging in two critical ways: (1) 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is dropped and replaced with 'vahvistettu' (confirmed), which actively strengthens the certainty beyond the source. (2) The source's neutral 'kohteita' (objects/targets) is changed to 'drooneja' (drones), presenting unidentified objects as confirmed drones. Both are significant hedging removals on critical claims about the nature and status of the incident.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"context\": \"The source describes the objects as 'kohteita' (targets/objects), not confirmed drones, and uses 'muutamia' (a few)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"The information about two drones falling is qualified with 'according to current information', indicating preliminary/uncertain status\"\n    },\n    {\n      \"expression\": \"harhautunut lennokkeja\",\n      \"context\": \"Minister H\u00e4kk\u00e4nen says drones have 'strayed' into Finnish territory, using a softer/more ambiguous term rather than stating intentional intrusion\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"preserved\": false,\n      \"output_version\": \"useita matalalla lent\u00e4vi\u00e4 pieni\u00e4 drooneja \u2014 the output changes 'kohteita' (objects) to 'drooneja' (drones), presenting unidentified objects as confirmed drones, and changes 'muutamia' (a few) to 'useita' (several), and drops 'hitaita' (slow)\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"Kaksi droonin on vahvistettu pudonneen maahan \u2014 not only is the hedging 'according to current information' dropped, but the output adds 'vahvistettu' (confirmed), which strengthens the claim beyond what the source states\"\n    },\n    {\n      \"expression\": \"harhautunut lennokkeja\",\n      \"preserved\": false,\n      \"output_version\": \"The nuance of 'straying' is omitted from the summary; the minister's quote is paraphrased without this characterization\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output removes hedging in two critical ways: (1) 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is dropped and replaced with 'vahvistettu' (confirmed), which actively strengthens the certainty beyond the source. (2) The source's neutral 'kohteita' (objects/targets) is changed to 'drooneja' (drones), presenting unidentified objects as confirmed drones. Both are significant hedging removals on critical claims about the nature and status of the incident.\"\n}\n```",
+  "judge_prompt_tokens": 777,
+  "judge_completion_tokens": 678,
+  "judge_cost_usd": 0.020835,
+  "timestamp": 1774952603.910798
+}

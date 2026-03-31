@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source text is largely a factual government press release with very little hedging language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are preserved in the output. The source uses definitive language throughout (e.g., 'The bill proposes that these actions would in future be possible'), and the output faithfully reflects this. The output's final sentence characterizing the change as 'a practical step' and referencing Finland's 'long-standing non-nuclear stance' is an editorial addition but does not constitute hedging removal \u2014 it is rather an added interpretive framing. No hedging was removed from the source material.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable operational environment\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"nor is such deployment planned by NATO\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source text is largely a factual government press release with very little hedging language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are preserved in the output. The source uses definitive language throughout (e.g., 'The bill proposes that these actions would in future be possible'), and the output faithfully reflects this. The output's final sentence characterizing the change as 'a practical step' and referencing Finland's 'long-standing non-nuclear stance' is an editorial addition but does not constitute hedging removal \u2014 it is rather an added interpretive framing. No hedging was removed from the source material.\"\n}\n```",
+  "judge_prompt_tokens": 904,
+  "judge_completion_tokens": 357,
+  "judge_cost_usd": 0.013445,
+  "timestamp": 1774952547.296866
+}

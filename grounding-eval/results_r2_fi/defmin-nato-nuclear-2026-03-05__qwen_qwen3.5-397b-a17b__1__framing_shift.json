@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the neutral, factual tone of the source. It accurately condenses the key points without introducing editorial language, loaded words, dramatic framing, or implied causality not present in the original. The phrasing closely mirrors the source's bureaucratic and informational register. Minor wording differences (e.g., 'rikoksina' instead of 'kriminalisoituina') are stylistic rather than evaluative and do not shift framing.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the neutral, factual tone of the source. It accurately condenses the key points without introducing editorial language, loaded words, dramatic framing, or implied causality not present in the original. The phrasing closely mirrors the source's bureaucratic and informational register. Minor wording differences (e.g., 'rikoksina' instead of 'kriminalisoituina') are stylistic rather than evaluative and do not shift framing.\"\n}\n```",
+  "judge_prompt_tokens": 1079,
+  "judge_completion_tokens": 150,
+  "judge_cost_usd": 0.009145,
+  "timestamp": 1774952603.920191
+}

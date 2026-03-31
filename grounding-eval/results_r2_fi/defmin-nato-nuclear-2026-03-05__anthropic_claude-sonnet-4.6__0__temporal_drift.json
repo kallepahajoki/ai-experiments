@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The only temporal drift is the tense shift from present 'l\u00e4hett\u00e4\u00e4' to perfect 'on l\u00e4hett\u00e4nyt'. The date 2.4.2026 is accurately preserved. Event ordering is faithfully maintained. No training-data temporal bleed detected. The drift is minor and does not materially misrepresent the timeline.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"l\u00e4hett\u00e4\u00e4 (present tense \u2013 sends)\",\n    \"Voimassa olevassa lains\u00e4\u00e4d\u00e4nn\u00f6ss\u00e4 (in current legislation)\",\n    \"jatkossa (in the future)\",\n    \"s\u00e4ilyv\u00e4t (remain \u2013 present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"temporal_expressions_output\": [\n    \"on l\u00e4hett\u00e4nyt (perfect tense \u2013 has sent)\",\n    \"Nykyisin (currently)\",\n    \"jatkossa (in the future)\",\n    \"pysyv\u00e4t (remain \u2013 present/future)\",\n    \"Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"on l\u00e4hett\u00e4nyt (has sent \u2013 past/perfect tense)\",\n      \"source_temporal\": \"l\u00e4hett\u00e4\u00e4 (sends \u2013 present tense)\",\n      \"explanation\": \"The source uses the present tense 'l\u00e4hett\u00e4\u00e4' (sends), indicating the action is currently taking place or being announced. The summary shifts this to the perfect tense 'on l\u00e4hett\u00e4nyt' (has sent), implying the action is already completed. This is a minor tense drift, though pragmatically it is a common and largely acceptable rephrasing in Finnish news context.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The only temporal drift is the tense shift from present 'l\u00e4hett\u00e4\u00e4' to perfect 'on l\u00e4hett\u00e4nyt'. The date 2.4.2026 is accurately preserved. Event ordering is faithfully maintained. No training-data temporal bleed detected. The drift is minor and does not materially misrepresent the timeline.\"\n}\n```",
+  "judge_prompt_tokens": 1234,
+  "judge_completion_tokens": 444,
+  "judge_cost_usd": 0.01727,
+  "timestamp": 1774952603.91574
+}

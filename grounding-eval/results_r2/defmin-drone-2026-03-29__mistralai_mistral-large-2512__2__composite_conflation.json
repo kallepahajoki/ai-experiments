@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.55,
+    "evidence": "The output largely mirrors the source accurately. The main concern is the addition of 'unintentionally' to describe the drones entering Finnish territory, which is an interpretive addition rather than a true composite conflation of two separate facts. No clear case of two independent facts being merged into a false combined or causal claim was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Defence Minister Antti H\u00e4kk\u00e4nen stated that the drones had entered Finnish territory unintentionally\",\n      \"source_facts\": [\n        \"H\u00e4kk\u00e4nen states: 'Drones have strayed into Finnish territory.'\",\n        \"The word 'strayed' does not necessarily mean 'unintentionally' \u2014 it could imply unauthorized entry without specifying intent.\"\n      ],\n      \"explanation\": \"The output adds the word 'unintentionally,' which is an interpretation not explicitly stated in the source. The source uses 'strayed into,' which could suggest unintentional entry but does not explicitly confirm it. This is more of an embellishment than a composite conflation, but it subtly merges the concept of 'straying' with a definitive claim of unintentional entry.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.55,\n  \"evidence\": \"The output largely mirrors the source accurately. The main concern is the addition of 'unintentionally' to describe the drones entering Finnish territory, which is an interpretive addition rather than a true composite conflation of two separate facts. No clear case of two independent facts being merged into a false combined or causal claim was found.\"\n}\n```",
+  "judge_prompt_tokens": 534,
+  "judge_completion_tokens": 314,
+  "judge_cost_usd": 0.01052,
+  "timestamp": 1774952547.292717
+}

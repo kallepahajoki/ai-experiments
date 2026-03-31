@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "content": "## Tiivistelm\u00e4: Ydinenergia- ja rikoslain muutosesitys lausuntokierrokselle\n\nPuolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle lakiesityksen, jolla muutetaan ydinenergia- ja rikoslakia. Lausuntokierros p\u00e4\u00e4ttyy **2.4.2026**.\n\n### Keskeiset muutokset\n\nNykyisin ydinr\u00e4j\u00e4hteen tuominen, kuljettaminen, toimittaminen ja hallussapito Suomessa on t\u00e4ysin kielletty\u00e4. Esityksen mukaan n\u00e4m\u00e4 toimet sallittaisiin jatkossa, kun ne liittyv\u00e4t **Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n**.\n\n### Tavoitteet\n\n- Poistetaan lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iselt\u00e4 hy\u00f6dynt\u00e4miselt\u00e4\n- Saatetaan Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden k\u00e4yt\u00e4nt\u00f6jen kanssa\n- Vahvistetaan Naton uskottavaa pelotetta ja korotetaan kynnyst\u00e4 sotilaallisille toimille\n\n### Mit\u00e4 esitys ei tarkoita\n\nSuomi **ei tavoittele ydinaseiden sijoittamista alueelleen**, eik\u00e4 sellaista ole Natossa suunnitteilla. Ydinr\u00e4j\u00e4hteiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen pysyv\u00e4t **kriminalisoituina kaikissa tilanteissa**.",
+  "prompt_tokens": 621,
+  "completion_tokens": 448,
+  "cost_usd": 0.008583,
+  "latency_ms": 7761.927041996387,
+  "timestamp": 1774951658.453177
+}

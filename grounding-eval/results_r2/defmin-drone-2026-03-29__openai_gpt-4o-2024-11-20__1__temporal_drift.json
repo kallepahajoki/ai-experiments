@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 fighter deployment \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) and the key temporal marker 'Sunday morning.' The tense shifts observed are minor and largely attributable to converting direct quotes and present-tense reporting into indirect/past-tense summary narration, which is standard summarization practice. No dates, times, or event orderings are misrepresented.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has crashed\", \"have secured\", \"have strayed\", \"have responded immediately\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"on Sunday morning\", \"deployed\", \"were confirmed to have crashed\", \"have secured\", \"had entered\", \"responded immediately\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"deployed (past tense)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site' suggesting an ongoing or recently completed action, while the summary uses simple past 'deployed', shifting the tense. This is a minor tense change but does not significantly misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"were confirmed to have crashed\",\n      \"source_temporal\": \"has crashed (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has crashed' and frames it as 'according to current information,' while the summary uses 'were confirmed to have crashed,' introducing the notion of confirmation and shifting to past tense. This is a minor tense shift and slight editorialization but does not substantially alter the temporal meaning.\"\n    },\n    {\n      \"output_temporal\": \"had entered (past perfect)\",\n      \"source_temporal\": \"have strayed (present perfect)\",\n      \"explanation\": \"The source quotes the minister using present perfect 'have strayed,' while the summary converts this to past perfect 'had entered' in indirect speech. This is a standard and grammatically appropriate tense shift for reported speech and does not constitute a meaningful temporal drift.\"\n    },\n    {\n      \"output_temporal\": \"responded immediately (simple past)\",\n      \"source_temporal\": \"have responded immediately (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'have responded immediately,' while the summary uses simple past 'responded immediately' in indirect speech. This is a minor tense adjustment consistent with reported speech conventions.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 fighter deployment \u2192 drone crashes \u2192 police securing areas \u2192 minister's statement \u2192 ongoing investigation) and the key temporal marker 'Sunday morning.' The tense shifts observed are minor and largely attributable to converting direct quotes and present-tense reporting into indirect/past-tense summary narration, which is standard summarization practice. No dates, times, or event orderings are misrepresented.\"\n}\n```",
+  "judge_prompt_tokens": 476,
+  "judge_completion_tokens": 596,
+  "judge_cost_usd": 0.01728,
+  "timestamp": 1774952547.29297
+}

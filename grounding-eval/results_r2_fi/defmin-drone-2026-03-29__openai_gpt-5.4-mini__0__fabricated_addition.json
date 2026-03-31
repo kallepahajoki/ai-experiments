@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "fabricated_addition",
+  "verdict": {
+    "failure_mode": "fabricated_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "No fabricated additions found. Minor paraphrasing differences exist (e.g., 'jatkotutkimuksia' vs. 'lis\u00e4tutkimuksia', 'eritt\u00e4in vakavasti' vs. 'hyvin vakavasti') but these are stylistic variations that do not introduce new factual claims.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"claims\": [\n    {\n      \"claim\": \"Sunnuntaiaamuna Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin muutamia matalalla lent\u00e4vi\u00e4, hitaita ja pieni\u00e4 kohteita.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\"\n    },\n    {\n      \"claim\": \"Ilmavoimat suoritti tunnistusteht\u00e4v\u00e4n F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4.\"\n    },\n    {\n      \"claim\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella.\",\n      \"grounded\": true,\n      \"source_evidence\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\"\n    },\n    {\n      \"claim\": \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella.\",\n      \"grounded\": true,\n      \"source_evidence\": \"toinen drooni Kouvolan it\u00e4puolella\"\n    },\n    {\n      \"claim\": \"Poliisi on erist\u00e4nyt alueet jatkotutkimuksia varten.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten.\"\n    },\n    {\n      \"claim\": \"Puolustusministeri Antti H\u00e4kk\u00e4sen mukaan Suomen alueelle on harhautunut lennokkeja.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: \\\"Suomen alueelle on harhautunut lennokkeja.\\\"\"\n    },\n    {\n      \"claim\": \"Tilanne otetaan eritt\u00e4in vakavasti.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Suhtaudumme asiaan hyvin vakavasti.\"\n    },\n    {\n      \"claim\": \"Turvallisuusviranomaiset reagoivat siihen v\u00e4litt\u00f6m\u00e4sti.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti.\"\n    },\n    {\n      \"claim\": \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\",\n      \"grounded\": true,\n      \"source_evidence\": \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.\"\n    }\n  ],\n  \"fabricated_additions_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"No fabricated additions found. Minor paraphrasing differences exist (e.g., 'jatkotutkimuksia' vs. 'lis\u00e4tutkimuksia', 'eritt\u00e4in vakavasti' vs. 'hyvin vakavasti') but these are stylistic variations that do not introduce new factual claims.\"\n}\n```",
+  "judge_prompt_tokens": 757,
+  "judge_completion_tokens": 909,
+  "judge_cost_usd": 0.02651,
+  "timestamp": 1774952603.913787
+}

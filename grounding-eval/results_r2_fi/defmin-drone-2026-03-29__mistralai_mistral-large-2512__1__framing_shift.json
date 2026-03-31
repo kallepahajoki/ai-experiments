@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful to the source in tone and content. The only notable difference is a slight softening of the defense minister's quote ('hyvin vakavasti' \u2192 'vakavasti' and active \u2192 passive voice), which is a minor tonal reduction rather than an editorial framing shift. No loaded language, dramatic framing, or implied causality was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"asiaa k\u00e4sitell\u00e4\u00e4n vakavasti\",\n      \"issue\": \"The source uses the stronger phrasing 'Suhtaudumme asiaan hyvin vakavasti' ('We take this very seriously'), while the summary softens it to 'asiaa k\u00e4sitell\u00e4\u00e4n vakavasti' ('the matter is handled seriously'), dropping 'hyvin' (very) and changing the active first-person stance to a passive construction. This is a minor tonal shift that slightly downplays the seriousness conveyed in the original.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. The only notable difference is a slight softening of the defense minister's quote ('hyvin vakavasti' \u2192 'vakavasti' and active \u2192 passive voice), which is a minor tonal reduction rather than an editorial framing shift. No loaded language, dramatic framing, or implied causality was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 741,
+  "judge_completion_tokens": 262,
+  "judge_cost_usd": 0.010255,
+  "timestamp": 1774952603.912797
+}

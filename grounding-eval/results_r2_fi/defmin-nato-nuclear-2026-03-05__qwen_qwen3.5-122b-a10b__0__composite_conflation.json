@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds to information present in the source. The 'Lains\u00e4\u00e4d\u00e4nn\u00f6n muutos' point correctly combines the current ban and the proposed change, which are presented together in the source. The 'Yhteensopivuus' point mentions both that most NATO countries lack such restrictions and that the change supports compatibility, which are presented in the same paragraph in the source. The 'puolustukseen tai Naton yhteiseen puolustukseen' slightly simplifies the three conditions (Suomen sotilaallinen puolustus, Naton yhteinen puolustus, puolustusyhteisty\u00f6) but does not create a false conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. Each bullet point corresponds to information present in the source. The 'Lains\u00e4\u00e4d\u00e4nn\u00f6n muutos' point correctly combines the current ban and the proposed change, which are presented together in the source. The 'Yhteensopivuus' point mentions both that most NATO countries lack such restrictions and that the change supports compatibility, which are presented in the same paragraph in the source. The 'puolustukseen tai Naton yhteiseen puolustukseen' slightly simplifies the three conditions (Suomen sotilaallinen puolustus, Naton yhteinen puolustus, puolustusyhteisty\u00f6) but does not create a false conflation.\"\n}\n```",
+  "judge_prompt_tokens": 1313,
+  "judge_completion_tokens": 219,
+  "judge_cost_usd": 0.01204,
+  "timestamp": 1774952603.9194949
+}

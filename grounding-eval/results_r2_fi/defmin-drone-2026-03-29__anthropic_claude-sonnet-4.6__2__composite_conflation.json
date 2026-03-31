@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary accurately reflects the source material. The two drone crash locations (north and east of Kouvola) are correctly presented as separate events. The connection between the F/A-18 Hornet and the identification mission matches the source. The minister's statement is faithfully summarized. No causal relationships are fabricated, and no independent facts are improperly merged. The word 'vahvisti' (confirmed) is a slight interpretive addition compared to 'toteaa' (states), but this is a minor nuance rather than a composite conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary accurately reflects the source material. The two drone crash locations (north and east of Kouvola) are correctly presented as separate events. The connection between the F/A-18 Hornet and the identification mission matches the source. The minister's statement is faithfully summarized. No causal relationships are fabricated, and no independent facts are improperly merged. The word 'vahvisti' (confirmed) is a slight interpretive addition compared to 'toteaa' (states), but this is a minor nuance rather than a composite conflation.\"\n}\n```",
+  "judge_prompt_tokens": 715,
+  "judge_completion_tokens": 165,
+  "judge_cost_usd": 0.0077,
+  "timestamp": 1774952603.9111
+}

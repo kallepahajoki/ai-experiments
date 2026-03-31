@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "content": "**Yhteenveto \u2013 Puolustusministeri\u00f6n tiedote (lausuntokierros 2.4.2026 asti)**  \n\n- **Tavoite:** Poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet, jotka est\u00e4v\u00e4t Suomea osallistumasta sotilaalliseen puolustukseen Naton yhteisen puolustuksen ja pelotteen puitteissa.  \n- **Nykyinen laki:** Ydinr\u00e4j\u00e4hteen tuonti, kuljetus, toimittaminen ja hallussapito Suomessa on t\u00e4ysin kielletty.  \n- **Ehdotettu muutos:** Salli n\u00e4m\u00e4 toimet, kun ne liittyv\u00e4t  \n  1. Suomen omaan sotilaalliseen puolustukseen,  \n  2. Naton yhteiseen puolustukseen tai  \n  3. puolustusyhteisty\u00f6h\u00f6n.  \n- **Kansainv\u00e4linen tausta:** Suuri osa Naton j\u00e4senmaista ei tunne vastaavia rajoituksia; muutos saattaa Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n yhteensopivaksi Naton toiminnan kanssa.  \n- **Turvallisuusp\u00e4\u00e4m\u00e4\u00e4r\u00e4t:**  \n  - Maksimoida Suomen turvallisuus ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4.  \n  - Varmistaa Naton pelotteen uskottavuus ja korkea kynnys mahdollisille sotilaallisille toimille.  \n- **Selvennykset:**  \n  - Esitys ei tarkoita ydinaseiden hankkimista tai sijoittamista Suomeen; sellaista ei ole Natossa suunnitteilla.  \n  - Ydinr\u00e4j\u00e4hteiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen s\u00e4ilyv\u00e4t rikosoikeudellisesti kiellettyin\u00e4 kaikissa tilanteissa.  \n- **Prosessi:** Esitys on l\u00e4hetetty lausuntokierrokselle; lausuntojen m\u00e4\u00e4r\u00e4aika p\u00e4\u00e4ttyy 2.4.2026.",
+  "prompt_tokens": 597,
+  "completion_tokens": 750,
+  "cost_usd": 0.0010791,
+  "latency_ms": 18866.79808300687,
+  "timestamp": 1774952002.529484
+}

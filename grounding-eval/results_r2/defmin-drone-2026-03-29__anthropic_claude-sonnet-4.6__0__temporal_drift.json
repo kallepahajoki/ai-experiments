@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"According to current information\" (implies present/ongoing),\n    \"have been on-site\" (present perfect),\n    \"has crashed\" (prese",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"According to current information\" (implies present/ongoing),\n    \"have been on-site\" (present perfect),\n    \"has crashed\" (present perfect),\n    \"have secured\" (present perfect),\n    \"have strayed\" (present perfect),\n    \"have responded immediately\" (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"have crashed\" (present perfect),\n    \"have secured\" (present perfect),\n    \"are investigating\" (present continuous),\n    \"confirmed\" (past tense),\n    \"calling\" (present participle),\n    \"responded immediately\" (past tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"confirmed\",\n      \"source_temporal\": \"states\",\n      \"explanation\": \"The source uses present tense 'states' for the minister's quote, while the summary uses past tense 'confirmed'. This is a minor tense shift \u2014 'states' suggests a current/ongoing statement, while 'confirmed' implies a completed past action. However, this is a relatively minor and common summarization convention.\"\n    },\n    {\n      \"output_temporal\": \"scrambled\",\n      \"source_temporal\": \"has been on-site with\",\n      \"explanation\": \"The source says 'The Air Force has been on-site with an F/A-18 Hornet fighter for identification,' using present perfect continuous implying ongoing presence. The summary says 'The Air Force scrambled an F/A-18 Hornet fighter jet,' using past tense 'scrambled' which implies a discrete completed action. Additionally, 'scrambled' introduces a connotation (emergency launch) not explicitly stated in the source, though the temporal shift from present perfect to simple past is the key drift here.\"\n    },\n    {\n      \"output_temporal\": \"noted that security authorities responded immediately\",\n      \"source_temporal\": \"Security authorities have responded immediately\",\n      \"explanation\": \"The source uses present perfect 'have responded,' while the summary shifts to simple past 'responded.' Minor tense drift, though meaning is largely preserved.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The summary introduces minor tense shifts: 'states' \u2192 'confirmed', 'has been on-site' \u2192 'scrambled', and 'have responded' \u2192 'responded'. These are relatively small drifts that don't significantly alter the meaning or event sequence, but they do represent tense changes from present perfect (suggesting ongoing relevance) to simple past (suggesting completed actions). No date/time errors or event reordering were found.\"\n}\n```",
+  "judge_prompt_tokens": 506,
+  "judge_completion_tokens": 641,
+  "judge_cost_usd": 0.018555,
+  "timestamp": 1774952547.2893639
+}

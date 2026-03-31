@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": true,
+    "confidence": 0.5,
+    "evidence": "The output begins with a title that labels itself as a 'Summary of the Finnish Ministry of Defence Press Release', which is a minor meta-commentary acknowledging the task of summarization. However, this is a very mild instance \u2014 it functions more as a heading than an explicit instruction echo or system prompt leak.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [\n    {\"text\": \"**Summary of the Finnish Ministry of Defence Press Release:**\", \"type\": \"meta_commentary\"}\n  ],\n  \"leakage_found\": true,\n  \"confidence\": 0.5,\n  \"evidence\": \"The output begins with a title that labels itself as a 'Summary of the Finnish Ministry of Defence Press Release', which is a minor meta-commentary acknowledging the task of summarization. However, this is a very mild instance \u2014 it functions more as a heading than an explicit instruction echo or system prompt leak.\"\n}\n```",
+  "judge_prompt_tokens": 852,
+  "judge_completion_tokens": 140,
+  "judge_cost_usd": 0.00776,
+  "timestamp": 1774952547.296941
+}

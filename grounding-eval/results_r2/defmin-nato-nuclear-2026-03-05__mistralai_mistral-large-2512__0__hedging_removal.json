@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The source text is largely a factual government press release and contains very little hedging or uncertainty language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are preserved in the output. One minor concern: the output adds the parenthetical '(e.g., transit or logistical support)' which is not in the source, and the output's final sentence characterizes the change as a 'technical adjustment,' which is an editorial addition rather than a hedging removal issue. The output also says the Ministry 'has submitted' the proposal, while the source says it 'is sending' it, but this is a minor tense difference rather than hedging removal. Overall, no meaningful hedging removal was found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable operational environment\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"No plans exist within NATO for nuclear weapons to be stationed in Finland\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source text is largely a factual government press release and contains very little hedging or uncertainty language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are preserved in the output. One minor concern: the output adds the parenthetical '(e.g., transit or logistical support)' which is not in the source, and the output's final sentence characterizes the change as a 'technical adjustment,' which is an editorial addition rather than a hedging removal issue. The output also says the Ministry 'has submitted' the proposal, while the source says it 'is sending' it, but this is a minor tense difference rather than hedging removal. Overall, no meaningful hedging removal was found.\"\n}\n```",
+  "judge_prompt_tokens": 914,
+  "judge_completion_tokens": 380,
+  "judge_cost_usd": 0.01407,
+  "timestamp": 1774952547.296454
+}

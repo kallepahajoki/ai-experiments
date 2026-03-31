@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "Every piece of information in the output can be traced directly to the source document. The summary accurately paraphrases the source without introducing external knowledge, background context, or additional details beyond what is provided. Minor phrasing differences (e.g., 'ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4' for 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4', 'rikoksina' for 'kriminalisoituina') are faithful paraphrases rather than scope creep.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"Every piece of information in the output can be traced directly to the source document. The summary accurately paraphrases the source without introducing external knowledge, background context, or additional details beyond what is provided. Minor phrasing differences (e.g., 'ep\u00e4varmassa toimintaymp\u00e4rist\u00f6ss\u00e4' for 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4', 'rikoksina' for 'kriminalisoituina') are faithful paraphrases rather than scope creep.\"\n}\n```",
+  "judge_prompt_tokens": 1211,
+  "judge_completion_tokens": 164,
+  "judge_cost_usd": 0.010155,
+  "timestamp": 1774952603.91928
+}

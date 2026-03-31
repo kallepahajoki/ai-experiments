@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.5,
+    "evidence": "The source says the Ministry 'is sending a proposal... for a consultation round,' indicating the proposal is being sent out for consultation (not yet a formal bill submission). The output says 'has submitted a bill,' which slightly overstates the stage of the process, though this is a minor nuance rather than a critical hedging removal. Additionally, the source states 'nor is such deployment planned within NATO,' attributing the lack of planning to NATO broadly, while the output narrows this to 'Finland is not planning to station nuclear weapons on its territory,' omitting the NATO-level assurance. However, the source text is largely factual and declarative with very little hedging language overall. There are no instances of classic hedging terms (suspected, alleged, reportedly, may, might, could, appears to) being removed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"sending a proposal\", \"context\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"sending a proposal\", \"preserved\": false, \"output_version\": \"has submitted a bill\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": false, \"output_version\": \"Finland is not planning to station nuclear weapons on its territory\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.5,\n  \"evidence\": \"The source says the Ministry 'is sending a proposal... for a consultation round,' indicating the proposal is being sent out for consultation (not yet a formal bill submission). The output says 'has submitted a bill,' which slightly overstates the stage of the process, though this is a minor nuance rather than a critical hedging removal. Additionally, the source states 'nor is such deployment planned within NATO,' attributing the lack of planning to NATO broadly, while the output narrows this to 'Finland is not planning to station nuclear weapons on its territory,' omitting the NATO-level assurance. However, the source text is largely factual and declarative with very little hedging language overall. There are no instances of classic hedging terms (suspected, alleged, reportedly, may, might, could, appears to) being removed.\"\n}\n```",
+  "judge_prompt_tokens": 736,
+  "judge_completion_tokens": 384,
+  "judge_cost_usd": 0.01328,
+  "timestamp": 1774952547.2959528
+}

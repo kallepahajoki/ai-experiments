@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The output sentence 'Muutoksella halutaan vain saattaa lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden kanssa' merges the reassurance about not seeking nuclear weapons with the compatibility rationale using the restrictive word 'vain' (only), slightly distorting the source's multiple stated purposes. However, this is a relatively minor conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Muutoksella halutaan vain saattaa lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden kanssa.\",\n      \"source_facts\": [\n        \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\",\n        \"Lakiesityksell\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 saatetaan yhteensopivaksi Naton toimintojen kanssa.\"\n      ],\n      \"explanation\": \"The output uses the word 'vain' (only) to merge two separate points: (1) Finland is not seeking nuclear weapons on its territory, and (2) the legislative change aims to make Finnish law compatible with NATO operations. By combining these with 'vain', the summary implies the sole purpose of the change is compatibility with other NATO countries, whereas the source also separately states the purpose is to maximize Finland's security and ensure NATO's deterrent is credible. The word 'vain' narrows the stated purpose in a way that conflates the compatibility goal with the reassurance about not seeking nuclear weapons.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The output sentence 'Muutoksella halutaan vain saattaa lains\u00e4\u00e4d\u00e4nt\u00f6 yhteensopivaksi muiden Nato-maiden kanssa' merges the reassurance about not seeking nuclear weapons with the compatibility rationale using the restrictive word 'vain' (only), slightly distorting the source's multiple stated purposes. However, this is a relatively minor conflation.\"\n}\n```",
+  "judge_prompt_tokens": 1189,
+  "judge_completion_tokens": 415,
+  "judge_cost_usd": 0.01632,
+  "timestamp": 1774952603.916775
+}

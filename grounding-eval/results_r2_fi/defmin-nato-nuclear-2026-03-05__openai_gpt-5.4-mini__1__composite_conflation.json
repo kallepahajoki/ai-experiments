@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The source separates the purpose of the proposal (paragraph 1: enabling military defense as part of an alliance and fully utilizing NATO's deterrence and collective defense) from the specific conditions under which acts would be permitted (paragraph 2: military defense, NATO's collective defense, or defense cooperation). The output's first sentence merges these two distinct framings into one, adding 'puolustusyhteisty\u00f6' to the purpose statement where the source did not include it.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Puolustusministeri\u00f6 on l\u00e4hett\u00e4nyt lausuntokierrokselle esityksen ydinenergia- ja rikoslain muuttamisesta, jotta lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen, Naton yhteisen puolustuksen ja puolustusyhteisty\u00f6n t\u00e4ysim\u00e4\u00e4r\u00e4iselt\u00e4 hy\u00f6dynt\u00e4miselt\u00e4 poistuisivat.\",\n      \"source_facts\": [\n        \"Esityksen tarkoitus on poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa sek\u00e4 Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi.\",\n        \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n.\"\n      ],\n      \"explanation\": \"The output merges the stated purpose of the proposal (removing obstacles for Finland's military defense as part of an alliance and fully utilizing NATO's deterrence and collective defense) with the specific conditions under which the prohibited acts would become permissible (military defense, NATO's collective defense, or defense cooperation). The source describes the purpose in terms of 'NATO's deterrence and collective defense' while the conditions for permissibility include 'defense cooperation' as a separate category. The output conflates these into a single purpose statement, making it appear that removing obstacles for 'puolustusyhteisty\u00f6' (defense cooperation) was part of the stated purpose, when in the source it was only listed as one of the conditions for permissibility, not as part of the overarching purpose.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The source separates the purpose of the proposal (paragraph 1: enabling military defense as part of an alliance and fully utilizing NATO's deterrence and collective defense) from the specific conditions under which acts would be permitted (paragraph 2: military defense, NATO's collective defense, or defense cooperation). The output's first sentence merges these two distinct framings into one, adding 'puolustusyhteisty\u00f6' to the purpose statement where the source did not include it.\"\n}\n```",
+  "judge_prompt_tokens": 1211,
+  "judge_completion_tokens": 617,
+  "judge_cost_usd": 0.02148,
+  "timestamp": 1774952603.9191208
+}

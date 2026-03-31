@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The summary is largely faithful to the source in tone and content. There are minor wording differences ('vahvistamaan' vs 'maksimoida', 'muuttuvassa' vs 'vaikeasti ennakoitavassa', 'k\u00e4yt\u00e4nt\u00f6jen' vs 'toimintojen') that slightly soften the source's language, but these do not constitute meaningful editorial framing shifts, loaded language, or introduced bias. No dramatic framing, opinion words, or implied causality were added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"vahvistamaan Suomen turvallisuutta muuttuvassa toimintaymp\u00e4rist\u00f6ss\u00e4\",\n      \"issue\": \"The source uses 'maksimoida Suomen turvallisuus vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' (maximize Finland's security in a hard-to-predict environment). The summary softens this to 'vahvistamaan' (strengthen) instead of 'maximize' and changes 'vaikeasti ennakoitavassa' (hard to predict) to the milder 'muuttuvassa' (changing), slightly reducing the urgency conveyed in the source.\"\n    },\n    {\n      \"output_phrase\": \"Naton k\u00e4yt\u00e4nt\u00f6jen kanssa\",\n      \"issue\": \"The source says 'Naton toimintojen kanssa' (NATO's operations/functions). Replacing 'toimintojen' (operations/functions) with 'k\u00e4yt\u00e4nt\u00f6jen' (practices) is a minor semantic shift, though not strongly evaluative.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The summary is largely faithful to the source in tone and content. There are minor wording differences ('vahvistamaan' vs 'maksimoida', 'muuttuvassa' vs 'vaikeasti ennakoitavassa', 'k\u00e4yt\u00e4nt\u00f6jen' vs 'toimintojen') that slightly soften the source's language, but these do not constitute meaningful editorial framing shifts, loaded language, or introduced bias. No dramatic framing, opinion words, or implied causality were added.\"\n}\n```",
+  "judge_prompt_tokens": 1171,
+  "judge_completion_tokens": 422,
+  "judge_cost_usd": 0.016405,
+  "timestamp": 1774952603.918669
+}

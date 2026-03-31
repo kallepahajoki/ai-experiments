@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The source uses 'muutamia' (a few) to describe the detected objects, while the output changes this to 'useita' (several), which is a subtle numerical distortion suggesting a greater quantity.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"yksi\", \"toinen\"],\n  \"numbers_in_output\": [\"useita\", \"yksi\", \"toinen\"],\n  \"distortions\": [\n    {\"output_value\": \"useita\", \"source_value\": \"muutamia\", \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several), which implies a larger quantity. Though both are vague quantifiers, 'useita' suggests more than 'muutamia' in Finnish.\"}\n  ],\n  \"distortion_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The source uses 'muutamia' (a few) to describe the detected objects, while the output changes this to 'useita' (several), which is a subtle numerical distortion suggesting a greater quantity.\"\n}\n```",
+  "judge_prompt_tokens": 724,
+  "judge_completion_tokens": 225,
+  "judge_cost_usd": 0.009245,
+  "timestamp": 1774952603.9142458
+}

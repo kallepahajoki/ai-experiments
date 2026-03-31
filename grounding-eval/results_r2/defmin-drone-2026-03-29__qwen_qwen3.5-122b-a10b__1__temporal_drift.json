@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary preserves the correct event sequence (detection \u2192 military response \u2192 drone crashes \u2192 police securing sites \u2192 official statement \u2192 ongoing investigation) and the correct time reference ('Sunday morning'). Tense shifts from present perfect to simple past are minor stylistic changes typical of summarization and do not misrepresent dates, times, or event ordering. The factual content regarding when and in what order events occurred is accurately conveyed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"has been on-site (present perfect)\",\n    \"has crashed (present perfect)\",\n    \"have secured (present perfect)\",\n    \"have strayed (present perfect)\",\n    \"have responded (present perfect)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"deployed (simple past)\",\n    \"crashed (simple past)\",\n    \"was found (simple past)\",\n    \"have secured (present perfect)\",\n    \"confirmed (simple past)\",\n    \"strayed (simple past)\",\n    \"responded (simple past)\",\n    \"are investigating (present continuous)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Two drones crashed\",\n      \"source_temporal\": \"one drone has crashed north of Kouvola and another east of Kouvola\",\n      \"explanation\": \"The source says 'one drone has crashed...and another east of Kouvola' \u2014 the second drone's status is ambiguous (it may have crashed or just been detected east of Kouvola). The summary states definitively that 'Two drones crashed,' which is a slight interpretive stretch but arguably reasonable given context. Minor tense shift from present perfect to simple past, but this does not misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect 'has been on-site,' implying an ongoing or recently completed action. The summary uses simple past 'deployed,' which shifts the framing slightly to a completed action. This is a minor tense change but does not materially alter the temporal meaning.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary preserves the correct event sequence (detection \u2192 military response \u2192 drone crashes \u2192 police securing sites \u2192 official statement \u2192 ongoing investigation) and the correct time reference ('Sunday morning'). Tense shifts from present perfect to simple past are minor stylistic changes typical of summarization and do not misrepresent dates, times, or event ordering. The factual content regarding when and in what order events occurred is accurately conveyed.\"\n}\n```",
+  "judge_prompt_tokens": 525,
+  "judge_completion_tokens": 545,
+  "judge_cost_usd": 0.01625,
+  "timestamp": 1774952547.294016
+}

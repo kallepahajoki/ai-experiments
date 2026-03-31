@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.7,
+    "evidence": "The key uncertainty marker 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved in the output. The word 'harhautunut' (strayed) is also preserved. Some descriptive qualifiers ('hitaita', 'pieni\u00e4', 'muutamia') are dropped from the description of the detected objects, which slightly reduces the tentativeness of the characterization, but these are more descriptive details than hedging expressions per se. No critical hedging on key claims (such as the preliminary nature of the drone findings) was removed. The attribution is slightly altered ('Puolustusministeri\u00f6n tiedotteen mukaan' is added in the output but not present in the source), but this does not constitute hedging removal. Overall, no significant hedging removal was found on critical claims.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita \u2014 described as slow, small objects (not definitively identified as drones at this point)\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 'strayed' implies accidental/unintentional entry, a hedged characterization\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"T\u00e4m\u00e4n hetken tietojen mukaan kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle\"\n    },\n    {\n      \"expression\": \"muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 kohteita \u2014 the qualifiers 'muutamia' (a few), 'hitaita' (slow), and 'pieni\u00e4' (small) are dropped, reducing descriptive hedging/vagueness\"\n    },\n    {\n      \"expression\": \"harhautunut (strayed)\",\n      \"preserved\": true,\n      \"output_version\": \"lenokit ovat harhautuneet Suomen alueelle\"\n    }\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.7,\n  \"evidence\": \"The key uncertainty marker 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved in the output. The word 'harhautunut' (strayed) is also preserved. Some descriptive qualifiers ('hitaita', 'pieni\u00e4', 'muutamia') are dropped from the description of the detected objects, which slightly reduces the tentativeness of the characterization, but these are more descriptive details than hedging expressions per se. No critical hedging on key claims (such as the preliminary nature of the drone findings) was removed. The attribution is slightly altered ('Puolustusministeri\u00f6n tiedotteen mukaan' is added in the output but not present in the source), but this does not constitute hedging removal. Overall, no significant hedging removal was found on critical claims.\"\n}\n```",
+  "judge_prompt_tokens": 790,
+  "judge_completion_tokens": 723,
+  "judge_cost_usd": 0.022025,
+  "timestamp": 1774952603.914749
+}

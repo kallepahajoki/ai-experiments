@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "omission",
+  "verdict": {
+    "failure_mode": "omission",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The most notable omission is the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which is a caveat indicating the information about the downed drones may be preliminary and subject to change. This is a meaningful qualifier but not critical as the summary still accurately conveys the core facts. The omission of 'turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti' is also notable but secondary. The softening of 'hyvin vakavasti' to 'vakavasti' is minor.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"key_facts_in_source\": [\n    \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita\",\n    \"Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4 F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella\",\n    \"Toinen drooni on pudonnut Kouvolan it\u00e4puolella\",\n    \"Poliisi on erist\u00e4nyt alueet lis\u00e4tutkimuksia varten\",\n    \"Puolustusministeri Antti H\u00e4kk\u00e4nen toteaa: Suomen alueelle on harhautunut lennokkeja\",\n    \"Suhtaudumme asiaan hyvin vakavasti\",\n    \"Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti\",\n    \"Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa\"\n  ],\n  \"omitted_facts\": [\n    {\"fact\": \"Kohteet olivat hitaita (hitaita pieni\u00e4 kohteita)\", \"importance\": \"medium\"},\n    {\"fact\": \"Qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) regarding the downed drones\", \"importance\": \"high\"},\n    {\"fact\": \"H\u00e4kk\u00e4nen's statement that 'Turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti' (security authorities reacted immediately)\", \"importance\": \"medium\"},\n    {\"fact\": \"The exact phrasing 'hyvin vakavasti' (very seriously) was softened to just 'vakavasti' (seriously)\", \"importance\": \"low\"},\n    {\"fact\": \"The F/A-18 designation was omitted, only 'Hornet' mentioned\", \"importance\": \"low\"}\n  ],\n  \"critical_omission_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The most notable omission is the qualifier 't\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which is a caveat indicating the information about the downed drones may be preliminary and subject to change. This is a meaningful qualifier but not critical as the summary still accurately conveys the core facts. The omission of 'turvallisuusviranomaiset ovat reagoineet asiaan v\u00e4litt\u00f6m\u00e4sti' is also notable but secondary. The softening of 'hyvin vakavasti' to 'vakavasti' is minor.\"\n}\n```",
+  "judge_prompt_tokens": 783,
+  "judge_completion_tokens": 691,
+  "judge_cost_usd": 0.02119,
+  "timestamp": 1774952603.9117901
+}

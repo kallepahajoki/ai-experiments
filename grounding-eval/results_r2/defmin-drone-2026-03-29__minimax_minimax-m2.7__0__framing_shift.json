@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.75,
+    "evidence": "The summary is largely faithful but introduces militarized/dramatic language ('scrambled,' 'intercept,' 'cordoned off') that subtly escalates the tone beyond the more neutral source phrasing ('has been on-site for identification,' 'secured the areas'). These are minor but consistent framing shifts toward a more urgent, dramatic register.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"scrambled an F/A\u201118 Hornet to intercept and identify the objects\",\n      \"issue\": \"The source says the Air Force 'has been on-site with an F/A-18 Hornet fighter for identification.' The word 'scrambled' introduces military urgency/dramatic framing not present in the source, and 'intercept' adds an implied mission objective beyond the stated 'identification.'\"\n    },\n    {\n      \"output_phrase\": \"cordoned off both crash sites\",\n      \"issue\": \"The source says police 'secured the areas for further investigation.' 'Cordoned off' is slightly more dramatic and specific than 'secured,' implying a particular enforcement action not explicitly described.\"\n    },\n    {\n      \"output_phrase\": \"the Finnish Ministry of Defence reported\",\n      \"issue\": \"The source does not attribute the report to the Ministry of Defence specifically. This adds an institutional attribution not present in the original.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.75,\n  \"evidence\": \"The summary is largely faithful but introduces militarized/dramatic language ('scrambled,' 'intercept,' 'cordoned off') that subtly escalates the tone beyond the more neutral source phrasing ('has been on-site for identification,' 'secured the areas'). These are minor but consistent framing shifts toward a more urgent, dramatic register.\"\n}\n```",
+  "judge_prompt_tokens": 497,
+  "judge_completion_tokens": 355,
+  "judge_cost_usd": 0.01136,
+  "timestamp": 1774952547.291646
+}

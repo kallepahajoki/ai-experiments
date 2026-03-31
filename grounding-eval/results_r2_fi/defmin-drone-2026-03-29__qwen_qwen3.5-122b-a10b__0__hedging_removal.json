@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.95,
+    "evidence": "The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which in the source signals that the information about two drones falling near Kouvola is preliminary and subject to change. The output presents this as established fact ('kaksi droonia putosi maahan'). Additionally, the minister's word 'harhautunut' (strayed), which implies accidental entry and uncertainty about intent, is not preserved. The quantifier 'muutamia' (a few) is also dropped. The removal of the preliminary-information hedge on the drone crash claims is the most critical instance.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita \u2014 'a few' small slow low-flying objects, vague quantity\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella \u2014 'According to current information' two drones fell, indicating preliminary/uncertain status\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja \u2014 Minister says drones 'strayed' into Finnish territory, implying accidental/uncertain intent\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"matalalla lent\u00e4vi\u00e4 hitaita kohteita \u2014 the qualifier 'muutamia' (a few) and 'pieni\u00e4' (small) are dropped\"\n    },\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": false,\n      \"output_version\": \"kaksi droonia putosi maahan Kouvolan pohjois- ja it\u00e4puolelle \u2014 stated as established fact without the 'according to current information' hedge\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"preserved\": false,\n      \"output_version\": \"The minister's specific characterization that drones 'strayed' (harhautunut) into Finnish territory is omitted; the output paraphrases him as calling the incident serious without preserving this nuance\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.95,\n  \"evidence\": \"The most significant hedging removal is the dropping of 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information), which in the source signals that the information about two drones falling near Kouvola is preliminary and subject to change. The output presents this as established fact ('kaksi droonia putosi maahan'). Additionally, the minister's word 'harhautunut' (strayed), which implies accidental entry and uncertainty about intent, is not preserved. The quantifier 'muutamia' (a few) is also dropped. The removal of the preliminary-information hedge on the drone crash claims is the most critical instance.\"\n}\n```",
+  "judge_prompt_tokens": 747,
+  "judge_completion_tokens": 677,
+  "judge_cost_usd": 0.02066,
+  "timestamp": 1774952603.9145029
+}

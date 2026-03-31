@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The only notable difference is 'is sending a proposal' (source) vs. 'has proposed' (output), which is a minor tense shift from present progressive to present perfect. However, the date '2 April 2026' is accurately preserved, the event ordering is correct, and no events are reordered or fabricated. The tense shift is minor and does not materially misrepresent the temporal sequence of events.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending (present progressive)\",\n    \"Under current legislation (present)\",\n    \"in future (future)\",\n    \"would align (conditional/future)\",\n    \"is based on (present)\",\n    \"is not about (present)\",\n    \"does not seek (present)\",\n    \"nor is such deployment planned (present)\",\n    \"remain criminalised (present/future)\",\n    \"The consultation period ends on 2 April 2026 (present/future)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed (present perfect)\",\n    \"currently prohibit (present)\",\n    \"aim to support (present)\",\n    \"Under the current law (present)\",\n    \"would allow (conditional/future)\",\n    \"is not seeking or planning (present progressive)\",\n    \"will remain criminalized (future)\",\n    \"are intended to enhance (present)\",\n    \"will end on 2 April 2026 (future)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed (present perfect)\",\n      \"source_temporal\": \"is sending a proposal... for a consultation round (present progressive)\",\n      \"explanation\": \"The source says the Ministry 'is sending' the proposal for consultation, indicating the process is ongoing/being initiated. The summary says it 'has proposed,' which implies the proposal has already been formally made. This is a minor tense shift but does not significantly misrepresent the timeline \u2014 the proposal exists and is being circulated in both cases.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The only notable difference is 'is sending a proposal' (source) vs. 'has proposed' (output), which is a minor tense shift from present progressive to present perfect. However, the date '2 April 2026' is accurately preserved, the event ordering is correct, and no events are reordered or fabricated. The tense shift is minor and does not materially misrepresent the temporal sequence of events.\"\n}\n```",
+  "judge_prompt_tokens": 662,
+  "judge_completion_tokens": 489,
+  "judge_cost_usd": 0.015535,
+  "timestamp": 1774952547.2971442
+}

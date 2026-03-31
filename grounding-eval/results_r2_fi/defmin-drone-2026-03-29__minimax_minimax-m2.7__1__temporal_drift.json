@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.7,
+    "evidence": "The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (perfect tense, ongoing/resultative state), while the output renders this as 'Ilmavoimat k\u00e4ynnisti tunnistusteht\u00e4v\u00e4n' (simple past, punctual action). This changes both the tense/aspect and the nature of the event described. All other temporal expressions and event ordering are faithfully preserved.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"on ollut paikalla (present perfect)\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntai\u2011aamuna\",\n    \"k\u00e4ynnisti (simple past)\",\n    \"T\u00e4m\u00e4nhetkisten tietojen mukaan\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"k\u00e4ynnisti (simple past / imperfekti)\",\n      \"source_temporal\": \"on ollut paikalla (present perfect / perfekti)\",\n      \"explanation\": \"The source uses the Finnish perfect tense 'on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (has been on site for an identification mission), implying an ongoing or recently completed state. The summary changes this to the simple past 'k\u00e4ynnisti tunnistusteht\u00e4v\u00e4n' (launched an identification mission), which is a slight tense shift and also a semantic shift from a state description to an action initiation. This is a minor temporal/aspectual drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.7,\n  \"evidence\": \"The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (perfect tense, ongoing/resultative state), while the output renders this as 'Ilmavoimat k\u00e4ynnisti tunnistusteht\u00e4v\u00e4n' (simple past, punctual action). This changes both the tense/aspect and the nature of the event described. All other temporal expressions and event ordering are faithfully preserved.\"\n}\n```",
+  "judge_prompt_tokens": 759,
+  "judge_completion_tokens": 484,
+  "judge_cost_usd": 0.015895,
+  "timestamp": 1774952603.912086
+}

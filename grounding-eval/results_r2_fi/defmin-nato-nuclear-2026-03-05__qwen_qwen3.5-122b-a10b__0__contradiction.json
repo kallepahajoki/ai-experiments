@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output accurately reflects all key points from the source document. The legislative change targets, the current prohibitions, the proposed exceptions for defense purposes, NATO compatibility, the clarification about not seeking nuclear weapons on Finnish territory, the retained prohibitions, and the consultation deadline are all correctly represented without any contradictions.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output accurately reflects all key points from the source document. The legislative change targets, the current prohibitions, the proposed exceptions for defense purposes, NATO compatibility, the clarification about not seeking nuclear weapons on Finnish territory, the retained prohibitions, and the consultation deadline are all correctly represented without any contradictions.\"\n}\n```",
+  "judge_prompt_tokens": 1277,
+  "judge_completion_tokens": 105,
+  "judge_cost_usd": 0.00901,
+  "timestamp": 1774952603.919359
+}

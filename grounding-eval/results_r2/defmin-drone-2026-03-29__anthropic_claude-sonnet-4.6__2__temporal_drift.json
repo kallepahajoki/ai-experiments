@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"has been on-site\" (present perfect, ongoing),\n    \"has crashed\" (present perfect),\n    \"have secured\" (present perfect),\n    \"ha",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"Sunday morning\",\n    \"has been on-site\" (present perfect, ongoing),\n    \"has crashed\" (present perfect),\n    \"have secured\" (present perfect),\n    \"have strayed\" (present perfect),\n    \"have responded immediately\" (present perfect)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"On Sunday morning\",\n    \"were detected\" (past tense),\n    \"scrambled\" (past tense),\n    \"have since crashed\" (present perfect with 'since'),\n    \"have secured\" (present perfect),\n    \"are investigating\" (present continuous),\n    \"described\" (past tense),\n    \"confirming\" (present participle),\n    \"had strayed\" (past perfect),\n    \"had responded immediately\" (past perfect)\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"scrambled (past tense, implying a reactive dispatch)\",\n      \"source_temporal\": \"has been on-site with an F/A-18 Hornet fighter for identification\",\n      \"explanation\": \"The source uses present perfect 'has been on-site,' indicating an ongoing presence. The summary uses 'scrambled,' which is past tense and introduces a connotation of urgent reactive deployment not explicitly stated in the source. However, the temporal shift from present perfect to simple past is minor and does not misrepresent the sequence.\"\n    },\n    {\n      \"output_temporal\": \"had strayed (past perfect), had responded (past perfect)\",\n      \"source_temporal\": \"have strayed (present perfect), have responded (present perfect)\",\n      \"explanation\": \"The source quotes the minister using present perfect tense ('have strayed,' 'have responded'), indicating recent/current relevance. The summary shifts these to past perfect ('had strayed,' 'had responded'), which pushes the events further into the past and changes the temporal framing from the minister's direct statement. This is a tense shift introduced by indirect speech reporting, which is a standard grammatical transformation and not a substantive temporal misrepresentation.\"\n    },\n    {\n      \"output_temporal\": \"have since crashed\",\n      \"source_temporal\": \"has crashed\",\n      \"explanation\": \"The addition of 'since' subtly implies the crashes happened after the initial detection, which is a reasonable inference but adds a temporal sequencing not explicitly stated in the source. This is a very minor addition.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The tense shifts observed (present perfect to simple past, present perfect to past perfect in indirect speech) are standard grammatical transformations in summary writing and do not misrepresent dates, times, or event sequences. The word 'scrambled' introduces a slight connotation not in the source but does not alter the temporal sequence. The event ordering is preserved accurately. No wrong dates, reordered events, or temporal bleed from training data were found.\"\n}\n```",
+  "judge_prompt_tokens": 511,
+  "judge_completion_tokens": 699,
+  "judge_cost_usd": 0.02003,
+  "timestamp": 1774952547.290129
+}

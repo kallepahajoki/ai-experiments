@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.55,
+    "evidence": "The source uses the conditional form 'liittyisiv\u00e4t' (would be related to), reflecting the hypothetical/conditional nature of the proposed law change. The output changes this to the indicative 'liittyv\u00e4t' (are related to), which slightly reduces the conditionality. However, the output does preserve the conditional 'Sallittaisiin' (would be permitted), maintaining the overall sense that this is a proposal. The change from 'suunnitteilla' (being planned) to 'suunnitelmaa' (plan) is a minor rephrasing that slightly shifts the nuance from an ongoing process to a static state, but the meaning is largely preserved. Overall, the hedging removals are minor and do not substantially distort the meaning.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"context\": \"Lakiesityksess\u00e4 esitet\u00e4\u00e4n, ett\u00e4 n\u00e4m\u00e4 toimet olisivat jatkossa mahdollisia, jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen\"\n    },\n    {\n      \"expression\": \"liittyisiv\u00e4t\",\n      \"context\": \"jos ne liittyisiv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"context\": \"Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eik\u00e4 sellaista ole Natossa suunnitteilla.\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"olisivat jatkossa mahdollisia\",\n      \"preserved\": true,\n      \"output_version\": \"Salli\u00adtai\u00adsiin edell\u00e4 mainitut toimet, jos ne liittyv\u00e4t\"\n    },\n    {\n      \"expression\": \"liittyisiv\u00e4t\",\n      \"preserved\": false,\n      \"output_version\": \"jos ne liittyv\u00e4t Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteisty\u00f6h\u00f6n\"\n    },\n    {\n      \"expression\": \"eik\u00e4 sellaista ole Natossa suunnitteilla\",\n      \"preserved\": false,\n      \"output_version\": \"eik\u00e4 Natossa ole sellaista suunnitelmaa\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The source uses the conditional form 'liittyisiv\u00e4t' (would be related to), reflecting the hypothetical/conditional nature of the proposed law change. The output changes this to the indicative 'liittyv\u00e4t' (are related to), which slightly reduces the conditionality. However, the output does preserve the conditional 'Sallittaisiin' (would be permitted), maintaining the overall sense that this is a proposal. The change from 'suunnitteilla' (being planned) to 'suunnitelmaa' (plan) is a minor rephrasing that slightly shifts the nuance from an ongoing process to a static state, but the meaning is largely preserved. Overall, the hedging removals are minor and do not substantially distort the meaning.\"\n}\n```",
+  "judge_prompt_tokens": 1398,
+  "judge_completion_tokens": 665,
+  "judge_cost_usd": 0.023615,
+  "timestamp": 1774952603.9168909
+}

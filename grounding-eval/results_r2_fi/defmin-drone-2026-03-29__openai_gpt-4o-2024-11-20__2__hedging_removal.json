@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-4o-2024-11-20",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The key hedging phrase 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved in the output as 'T\u00e4m\u00e4nhetkisten tietojen mukaan'. However, the minister's characterization that drones had 'strayed' (harhautunut) into Finnish airspace \u2014 which hedges on intentionality \u2014 is omitted from the summary. The vague quantifier 'muutamia' (a few) is also dropped. These are relatively minor hedging removals; the most critical hedging ('according to current information') is preserved. The overall hedging removal is mild.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"context\": \"T\u00e4m\u00e4n hetken tietojen mukaan yksi drooni on pudonnut maahan Kouvolan pohjoispuolella ja toinen drooni Kouvolan it\u00e4puolella.\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"context\": \"Suomen alueelle on harhautunut lennokkeja. (Minister H\u00e4kk\u00e4nen's characterization implies the drones strayed/wandered in, suggesting unintentionality)\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"context\": \"havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita (a few objects, vague quantity)\"\n    }\n  ],\n  \"hedging_preserved_in_output\": [\n    {\n      \"expression\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"preserved\": true,\n      \"output_version\": \"T\u00e4m\u00e4nhetkisten tietojen mukaan\"\n    },\n    {\n      \"expression\": \"harhautunut\",\n      \"preserved\": false,\n      \"output_version\": \"The output omits H\u00e4kk\u00e4nen's quote about drones having 'strayed' (harhautunut) into Finnish territory, removing the implication of accidental/unintentional entry.\"\n    },\n    {\n      \"expression\": \"muutamia\",\n      \"preserved\": false,\n      \"output_version\": \"The output drops 'muutamia' (a few), just saying 'matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita' without the quantifier.\"\n    }\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The key hedging phrase 'T\u00e4m\u00e4n hetken tietojen mukaan' (according to current information) is preserved in the output as 'T\u00e4m\u00e4nhetkisten tietojen mukaan'. However, the minister's characterization that drones had 'strayed' (harhautunut) into Finnish airspace \u2014 which hedges on intentionality \u2014 is omitted from the summary. The vague quantifier 'muutamia' (a few) is also dropped. These are relatively minor hedging removals; the most critical hedging ('according to current information') is preserved. The overall hedging removal is mild.\"\n}\n```",
+  "judge_prompt_tokens": 760,
+  "judge_completion_tokens": 630,
+  "judge_cost_usd": 0.01955,
+  "timestamp": 1774952603.913667
+}

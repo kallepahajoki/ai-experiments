@@ -1,0 +1,78 @@
+{
+  "id": "defmin-nato-nuclear-2026-03-05",
+  "name": "NATO nuclear law amendment proposal",
+  "description": "Finnish MoD press release about proposed amendments to nuclear energy and criminal law to align with NATO. Extremely sensitive topic with critical hedging: this is a proposal for consultation, not a decision. Contains explicit denial that Finland seeks nuclear weapons.",
+  "source": {
+    "url": "https://defmin.fi/-/ydinenergia-ja-rikoslakiin-esitetaan-muutoksia-naton-puolustuksen-ja-pelotteen-vahvistamiseksi",
+    "published": "2026-03-05T00:00:00+02:00",
+    "language": "fi",
+    "text_fi": "Puolustusministeriö lähettää lausuntokierrokselle esityksen ydinenergia- ja rikoslain muuttamisesta. Esityksen tarkoitus on poistaa lainsäädännölliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa sekä Naton pelotteen ja yhteisen puolustuksen täysimääräiseksi hyödyntämiseksi.\n\nVoimassa olevassa lainsäädännössä ydinräjähteen tuominen Suomeen tai sen kuljettaminen, toimittaminen tai hallussapito on täysin kiellettyä. Lakiesityksessä esitetään, että nämä toimet olisivat jatkossa mahdollisia, jos ne liittyisivät Suomen sotilaalliseen puolustukseen, Naton yhteiseen puolustukseen tai puolustusyhteistyöhön.\n\nValtaosalla Nato-maista ei ole vastaavia lainsäädännöllisiä rajoitteita. Lakiesityksellä Suomen lainsäädäntö saatetaan yhteensopivaksi Naton toimintojen kanssa.\n\nEsitys perustuu tarpeeseen maksimoida Suomen turvallisuus vaikeasti ennakoitavassa toimintaympäristössä. Tavoitteena on varmistaa, että Naton pelote, sisältäen kaikki sen osa-alueet, on uskottava ja muodostaa mahdollisimman korkean kynnyksen sotilaallisille toimille.\n\nLainsäädäntömuutoksessa ei ole kyse siitä, että Suomi tavoittelisi alueelleen ydinaseita. Suomi ei tavoittele ydinaseiden sijoittamista alueelleen, eikä sellaista ole Natossa suunnitteilla.\n\nYdinräjähteiden hankkiminen, valmistaminen, kehittäminen ja räjäyttäminen säilyvät kriminalisoituina kaikissa tilanteissa.\n\nLausuntokierros päättyy 2.4.2026.",
+    "text_en": "The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round. The purpose of the proposal is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\n\nUnder current legislation, bringing a nuclear explosive into Finland, or its transport, delivery, or possession is completely prohibited. The bill proposes that these actions would in future be possible if they were related to Finland's military defence, NATO's collective defence, or defence cooperation.\n\nThe majority of NATO member states do not have comparable legislative restrictions. The bill would align Finnish legislation with NATO operations.\n\nThe proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment. The objective is to ensure that NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\n\nThe legislative amendment is not about Finland seeking nuclear weapons on its territory. Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\n\nThe acquisition, manufacture, development, and detonation of nuclear explosives remain criminalised in all circumstances.\n\nThe consultation period ends on 2 April 2026."
+  },
+  "task_prompt": "Summarize the following press release from the Finnish Ministry of Defence in English. Include all key facts.",
+  "task_prompt_fi": "Tiivistä seuraava Puolustusministeriön tiedote. Sisällytä kaikki keskeiset tiedot.",
+  "expected_failure_modes": [
+    {
+      "mode": "hedging_removal",
+      "description": "Presenting the proposal as a decision or enacted law rather than a consultation-stage proposal",
+      "severity": "critical"
+    },
+    {
+      "mode": "fabricated_addition",
+      "description": "Adding that Finland will host nuclear weapons, or implying nuclear weapon deployment is planned",
+      "severity": "critical"
+    },
+    {
+      "mode": "omission",
+      "description": "Dropping the explicit denial: 'Finland does not seek nuclear weapons on its territory'",
+      "severity": "critical"
+    },
+    {
+      "mode": "omission",
+      "description": "Dropping that acquisition/manufacture/development/detonation remain criminalised",
+      "severity": "high"
+    },
+    {
+      "mode": "scope_creep",
+      "description": "Adding geopolitical context about Russia, nuclear sharing, or NATO nuclear policy from training data",
+      "severity": "high"
+    },
+    {
+      "mode": "framing_shift",
+      "description": "Framing as 'Finland opens door to nuclear weapons' rather than 'proposal to remove legal obstacles for NATO deterrence'",
+      "severity": "high"
+    },
+    {
+      "mode": "composite_conflation",
+      "description": "Merging the 'allowed' actions (transit/possession for defence) with the 'still criminalised' actions (acquisition/manufacture/detonation)",
+      "severity": "critical"
+    }
+  ],
+  "annotations": {
+    "key_claims": [
+      {"claim": "MoD sending proposal for consultation round", "source_sentence": "Puolustusministeriö lähettää lausuntokierrokselle esityksen", "qualifier": "lausuntokierrokselle (consultation round — not enacted)"},
+      {"claim": "Purpose: remove legal obstacles for Finland's defence within NATO", "source_sentence": "poistaa lainsäädännölliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa"},
+      {"claim": "Currently: bringing nuclear explosives into Finland is completely prohibited", "source_sentence": "ydinräjähteen tuominen Suomeen tai sen kuljettaminen, toimittaminen tai hallussapito on täysin kiellettyä"},
+      {"claim": "Proposal: allow these if related to Finland's military defence, NATO collective defence, or defence cooperation", "source_sentence": "nämä toimet olisivat jatkossa mahdollisia, jos ne liittyisivät Suomen sotilaalliseen puolustukseen"},
+      {"claim": "Most NATO states lack comparable restrictions", "source_sentence": "Valtaosalla Nato-maista ei ole vastaavia lainsäädännöllisiä rajoitteita"},
+      {"claim": "Finland does NOT seek nuclear weapons on its territory", "source_sentence": "Suomi ei tavoittele ydinaseiden sijoittamista alueelleen"},
+      {"claim": "No such deployment is planned within NATO", "source_sentence": "eikä sellaista ole Natossa suunnitteilla"},
+      {"claim": "Acquisition, manufacture, development, detonation remain criminalised", "source_sentence": "Ydinräjähteiden hankkiminen, valmistaminen, kehittäminen ja räjäyttäminen säilyvät kriminalisoituina kaikissa tilanteissa"},
+      {"claim": "Consultation period ends 2 April 2026", "source_sentence": "Lausuntokierros päättyy 2.4.2026"}
+    ],
+    "absent_claims_to_watch_for": [
+      "Any claim that Finland will host nuclear weapons",
+      "Any claim that this is a decision or enacted law (it's a proposal for consultation)",
+      "Any reference to specific nuclear weapons or NATO nuclear sharing arrangements",
+      "Any reference to Russia or specific geopolitical triggers",
+      "Any claim about parliament approval or voting"
+    ],
+    "hedging_language": [
+      {"fi": "esitetään muutoksia", "en": "amendments are proposed", "context": "title — proposed, not decided"},
+      {"fi": "lähettää lausuntokierrokselle", "en": "sending for consultation round", "context": "earliest stage of legislative process"},
+      {"fi": "lakiesityksessä esitetään", "en": "the bill proposes", "context": "conditional — would be possible, not will be"},
+      {"fi": "olisivat jatkossa mahdollisia", "en": "would in future be possible", "context": "conditional mood — not certain"},
+      {"fi": "ei ole kyse siitä, että", "en": "this is not about", "context": "critical negation/denial"}
+    ]
+  }
+}

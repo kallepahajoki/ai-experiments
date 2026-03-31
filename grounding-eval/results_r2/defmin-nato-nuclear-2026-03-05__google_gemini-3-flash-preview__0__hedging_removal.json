@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source text is largely factual and declarative, describing a legislative proposal. There is minimal hedging language in the source. The phrase 'difficult-to-predict' is rendered as 'unpredictable,' which is a close paraphrase. The statement about no deployment plans is preserved. The source itself uses definitive language throughout (e.g., 'The bill proposes that these actions would in future be possible'), and the output faithfully reflects this tone without introducing false certainty where none existed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable environment\"},\n    {\"expression\": \"nor is such deployment planned within NATO\", \"preserved\": true, \"output_version\": \"nor are there any plans within NATO to deploy them there\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source text is largely factual and declarative, describing a legislative proposal. There is minimal hedging language in the source. The phrase 'difficult-to-predict' is rendered as 'unpredictable,' which is a close paraphrase. The statement about no deployment plans is preserved. The source itself uses definitive language throughout (e.g., 'The bill proposes that these actions would in future be possible'), and the output faithfully reflects this tone without introducing false certainty where none existed.\"\n}\n```",
+  "judge_prompt_tokens": 816,
+  "judge_completion_tokens": 323,
+  "judge_cost_usd": 0.012155,
+  "timestamp": 1774952547.295532
+}

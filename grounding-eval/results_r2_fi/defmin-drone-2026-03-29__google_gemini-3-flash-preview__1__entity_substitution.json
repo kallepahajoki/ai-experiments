@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "All named entities in the output (Kouvola, Suomi, Kaakkois-Suomi, Ilmavoimat, Hornet, Puolustusvoimat, Antti H\u00e4kk\u00e4nen) match the source. The mention of 'Puolustusministeri\u00f6' as the source of the press release is an added attribution not in the source text, but it is not a substitution of one entity for another. The F/A-18 Hornet is shortened to 'Hornet' which is a minor variation, not a substitution.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Puolustusministeri\u00f6\", \"Kouvola\", \"Suomi\", \"Kaakkois-Suomi\", \"Ilmavoimat\", \"Hornet\", \"Puolustusvoimat\", \"Antti H\u00e4kk\u00e4nen\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Puolustusministeri\u00f6\",\n      \"source_entity\": \"N/A\",\n      \"explanation\": \"The output refers to this as a 'Puolustusministeri\u00f6n tiedote' (Defence Ministry press release), but the source does not identify itself as a press release from the Defence Ministry. However, this is a framing/attribution issue rather than an entity substitution per se.\"\n    }\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"All named entities in the output (Kouvola, Suomi, Kaakkois-Suomi, Ilmavoimat, Hornet, Puolustusvoimat, Antti H\u00e4kk\u00e4nen) match the source. The mention of 'Puolustusministeri\u00f6' as the source of the press release is an added attribution not in the source text, but it is not a substitution of one entity for another. The F/A-18 Hornet is shortened to 'Hornet' which is a minor variation, not a substitution.\"\n}\n```",
+  "judge_prompt_tokens": 789,
+  "judge_completion_tokens": 355,
+  "judge_cost_usd": 0.01282,
+  "timestamp": 1774952603.911388
+}

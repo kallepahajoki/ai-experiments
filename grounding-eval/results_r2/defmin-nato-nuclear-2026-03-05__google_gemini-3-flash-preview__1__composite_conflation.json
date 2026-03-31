@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.75,
+    "evidence": "The output's causal statement 'By removing these restrictions, Finland aims to ensure that NATO's deterrence remains credible...' merges two related but separately stated facts from the source. However, the source strongly implies this causal relationship through its overall framing (the proposal's purpose is to remove obstacles, and the objective is credible deterrence), so this does not constitute a meaningful composite conflation that creates a false claim.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"By removing these restrictions, Finland aims to ensure that NATO's deterrence remains credible and provides the highest possible threshold against military aggression.\",\n      \"source_facts\": [\n        \"The purpose of the proposal is to remove legislative obstacles to enable Finland's military defence as part of the alliance and to fully utilise NATO's deterrence and collective defence.\",\n        \"The objective is to ensure that NATO's deterrence, including all its components, is credible and forms the highest possible threshold for military action.\"\n      ],\n      \"explanation\": \"The source states the purpose is to remove obstacles to enable Finland's defence and fully utilise NATO's deterrence. Separately, it states the objective is to ensure deterrence is credible and forms the highest threshold for military action. The output merges these into a direct causal chain ('By removing these restrictions, Finland aims to ensure...'), which is a reasonable inference but slightly tightens the causal link beyond what the source explicitly states. However, the source does strongly imply this connection through the phrase 'the proposal is based on the need to maximise Finland's security.' This is a borderline case \u2014 the merger is largely faithful to the source's intent.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.75,\n  \"evidence\": \"The output's causal statement 'By removing these restrictions, Finland aims to ensure that NATO's deterrence remains credible...' merges two related but separately stated facts from the source. However, the source strongly implies this causal relationship through its overall framing (the proposal's purpose is to remove obstacles, and the objective is credible deterrence), so this does not constitute a meaningful composite conflation that creates a false claim.\"\n}\n```",
+  "judge_prompt_tokens": 792,
+  "judge_completion_tokens": 402,
+  "judge_cost_usd": 0.01401,
+  "timestamp": 1774952547.2957408
+}

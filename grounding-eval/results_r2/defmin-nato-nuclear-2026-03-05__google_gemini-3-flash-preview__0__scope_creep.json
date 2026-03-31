@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.92,
+    "evidence": "The output closely follows the source document. Minor paraphrasing differences exist (e.g., 'collective defence strategy' vs 'NATO operations,' addition of 'standard'), but no substantive external information, background context, historical references, or training-data-derived knowledge was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"to align national legislation with NATO's collective defence strategy\", \"explanation\": \"The source says the bill would 'align Finnish legislation with NATO operations,' not specifically with NATO's 'collective defence strategy.' The phrase 'collective defence strategy' adds a slight interpretive gloss, though the source does mention 'NATO's collective defence' in a different context. This is a minor rephrasing rather than clear scope creep.\"},\n    {\"output_content\": \"maximize security in an unpredictable environment\", \"explanation\": \"The source says 'maximise Finland's security in a difficult-to-predict operational environment.' The output drops 'Finland's' and 'operational,' simplifying but not adding external information. This is paraphrasing, not scope creep.\"},\n    {\"output_content\": \"standard NATO operations\", \"explanation\": \"The source says 'NATO operations' \u2014 the word 'standard' is added by the output, which is a minor embellishment but does not introduce external knowledge.\"}\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.92,\n  \"evidence\": \"The output closely follows the source document. Minor paraphrasing differences exist (e.g., 'collective defence strategy' vs 'NATO operations,' addition of 'standard'), but no substantive external information, background context, historical references, or training-data-derived knowledge was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 753,
+  "judge_completion_tokens": 336,
+  "judge_cost_usd": 0.012165,
+  "timestamp": 1774952547.2955709
+}

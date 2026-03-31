@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output preserves the correct event sequence (detection \u2192 Air Force deployment \u2192 drone crashes \u2192 police securing areas \u2192 investigation) and the correct time reference ('Sunday morning'). There are minor tense shifts (present perfect \u2192 simple past/past perfect) that are typical of summarization style changes and do not materially misrepresent the timeline or event ordering. No dates, times, or event sequences are wrong.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"Sunday morning\", \"have been\", \"has crashed\", \"have secured\", \"have strayed\", \"have responded immediately\", \"are investigating\"],\n  \"temporal_expressions_output\": [\"On Sunday morning\", \"detected\", \"deployed\", \"crashed\", \"have secured\", \"had entered\", \"responded immediately\", \"are investigating\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"detected (simple past)\",\n      \"source_temporal\": \"were detected (simple past passive)\",\n      \"explanation\": \"Tense is consistent; both use past tense for the detection event. No drift.\"\n    },\n    {\n      \"output_temporal\": \"deployed (simple past)\",\n      \"source_temporal\": \"has been on-site (present perfect)\",\n      \"explanation\": \"The source uses present perfect ('has been on-site') suggesting an ongoing state, while the output uses simple past ('deployed') suggesting a completed action. This is a minor tense shift but does not materially misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"had entered (past perfect)\",\n      \"source_temporal\": \"have strayed (present perfect)\",\n      \"explanation\": \"The source uses present perfect ('have strayed') indicating recent relevance, while the output uses past perfect ('had entered'), shifting the temporal framing slightly further into the past. Minor tense change but the meaning is largely preserved.\"\n    },\n    {\n      \"output_temporal\": \"responded (simple past)\",\n      \"source_temporal\": \"have responded (present perfect)\",\n      \"explanation\": \"Source uses present perfect 'have responded immediately' while output uses simple past 'responded immediately'. Minor tense shift.\"\n    }\n  ],\n  \"drift_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output preserves the correct event sequence (detection \u2192 Air Force deployment \u2192 drone crashes \u2192 police securing areas \u2192 investigation) and the correct time reference ('Sunday morning'). There are minor tense shifts (present perfect \u2192 simple past/past perfect) that are typical of summarization style changes and do not materially misrepresent the timeline or event ordering. No dates, times, or event sequences are wrong.\"\n}\n```",
+  "judge_prompt_tokens": 510,
+  "judge_completion_tokens": 512,
+  "judge_cost_usd": 0.01535,
+  "timestamp": 1774952547.292313
+}

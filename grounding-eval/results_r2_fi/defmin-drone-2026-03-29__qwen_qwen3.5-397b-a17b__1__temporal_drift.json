@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.85,
+    "evidence": "The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (present perfect, ongoing relevance), while the summary renders it as 'Ilmavoimat oli paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (simple past/pluperfect, completed action). This is a tense shift from present perfect to past tense, altering the temporal implication of the event.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\"sunnuntai-aamuna\", \"T\u00e4m\u00e4n hetken tietojen mukaan\", \"on ollut (present perfect)\", \"on pudonnut (present perfect)\", \"on erist\u00e4nyt (present perfect)\", \"ovat reagoineet (present perfect)\", \"tutkii (present tense)\"],\n  \"temporal_expressions_output\": [\"sunnuntai-aamuna\", \"oli (past tense / pluperfect)\", \"on pudonnut (present perfect)\", \"on erist\u00e4nyt (present perfect)\", \"tutkii (present tense)\"],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"Ilmavoimat oli paikalla\",\n      \"source_temporal\": \"Ilmavoimat on ollut paikalla\",\n      \"explanation\": \"The source uses the present perfect 'on ollut' (has been), implying the situation is still ongoing or recently completed and relevant to the present. The summary changes this to the simple past/pluperfect 'oli' (was), which shifts the temporal framing to a completed past event, subtly altering the tense and immediacy of the original.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.85,\n  \"evidence\": \"The source states 'Ilmavoimat on ollut paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (present perfect, ongoing relevance), while the summary renders it as 'Ilmavoimat oli paikalla tunnistusteht\u00e4v\u00e4ss\u00e4' (simple past/pluperfect, completed action). This is a tense shift from present perfect to past tense, altering the temporal implication of the event.\"\n}\n```",
+  "judge_prompt_tokens": 689,
+  "judge_completion_tokens": 414,
+  "judge_cost_usd": 0.013795,
+  "timestamp": 1774952603.9153621
+}

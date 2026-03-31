@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "model": "qwen/qwen3.5-397b-a17b",
+  "run_index": 1,
+  "content": "Puolustusministeri\u00f6 l\u00e4hett\u00e4\u00e4 lausuntokierrokselle esityksen ydinenergia- ja rikoslain muuttamisesta. Tavoitteena on poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Naton yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iselt\u00e4 hy\u00f6dynt\u00e4miselt\u00e4 ja maksimoida Suomen turvallisuus.\n\nEsityksell\u00e4 mahdollistettaisiin ydinr\u00e4j\u00e4hteiden tuominen, kuljettaminen, toimittaminen ja hallussapito, jos ne liittyv\u00e4t Suomen tai Naton puolustukseen. Suomi ei kuitenkaan tavoittele ydinaseita alueelleen, eik\u00e4 niiden sijoittamista ole suunnitteilla Natossa. Ydinaseiden hankkiminen, valmistaminen, kehitt\u00e4minen ja r\u00e4j\u00e4ytt\u00e4minen s\u00e4ilyv\u00e4t rikoksina kaikissa tilanteissa. Muutos saattaa Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n yhteensopivaksi muiden Nato-maiden kanssa. Lausuntokierros p\u00e4\u00e4ttyy 2.4.2026.",
+  "prompt_tokens": 476,
+  "completion_tokens": 2791,
+  "cost_usd": 0.00671658,
+  "latency_ms": 48648.01200000511,
+  "timestamp": 1774951883.221219
+}

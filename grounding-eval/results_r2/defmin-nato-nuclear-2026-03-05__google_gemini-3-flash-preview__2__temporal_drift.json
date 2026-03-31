@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": false,
+    "confidence": 0.0,
+    "evidence": "[PARSE ERROR] Could not parse judge response: ```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\" (present progressive, indicating current/ongoing action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference),\n ",
+    "severity": "unknown"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"is sending\" (present progressive, indicating current/ongoing action),\n    \"Under current legislation\" (present),\n    \"in future\" (future reference),\n    \"remains criminalised\" (present),\n    \"The consultation period ends on 2 April 2026\" (future date)\n  ],\n  \"temporal_expressions_output\": [\n    \"has proposed\" (present perfect, indicating completed action),\n    \"seeks to lift current prohibitions\" (present),\n    \"provided these actions are related\" (present/conditional),\n    \"is not seeking\" (present progressive),\n    \"There are currently no plans\" (present),\n    \"will remain strictly illegal\" (future),\n    \"has been sent\" (present perfect, indicating completed action),\n    \"is scheduled to conclude on April 2, 2026\" (future date)\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"has proposed (present perfect - suggesting completed action)\",\n      \"source_temporal\": \"is sending (present progressive - suggesting ongoing/current action)\",\n      \"explanation\": \"The source uses 'is sending' which indicates the action is currently in progress, while the output uses 'has proposed' which implies the action is already completed. This is a minor tense shift but does not significantly misrepresent the timeline.\"\n    },\n    {\n      \"output_temporal\": \"has been sent (present perfect)\",\n      \"source_temporal\": \"is sending (present progressive)\",\n      \"explanation\": \"Similar to above, the output treats the sending as a completed action ('has been sent') while the source describes it as an ongoing action ('is sending'). Minor tense drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.55,\n  \"evidence\": \"The source uses present progressive tense ('is sending') to describe the proposal being sent for consultation, suggesting the action is currently underway. The output shifts this to present perfect ('has proposed', 'has been sent'), implying the action is already completed. The date '2 April 2026' is correctly rendered as 'April 2, 2026'. No reordering of events or incorrect dates were found. The tense drift is minor and does not substantially misrepresent the timeline.\"\n}\n```",
+  "judge_prompt_tokens": 762,
+  "judge_completion_tokens": 536,
+  "judge_cost_usd": 0.01721,
+  "timestamp": 1774952547.295807
+}

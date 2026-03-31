@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_addition",
+  "verdict": {
+    "failure_mode": "hedging_addition",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully preserves the definitive tone of the source statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' All key claims are presented as facts consistent with the source. The only notable addition is the final sentence characterizing the change as a 'technical adjustment,' which is an editorial framing choice rather than hedging. No inappropriate uncertainty was introduced to any factual statements from the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"inappropriate_hedging\": [],\n  \"hedging_addition_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully preserves the definitive tone of the source statements without adding hedging language such as 'may,' 'might,' 'reportedly,' or 'allegedly.' All key claims are presented as facts consistent with the source. The only notable addition is the final sentence characterizing the change as a 'technical adjustment,' which is an editorial framing choice rather than hedging. No inappropriate uncertainty was introduced to any factual statements from the source.\"\n}\n```",
+  "judge_prompt_tokens": 803,
+  "judge_completion_tokens": 143,
+  "judge_cost_usd": 0.00759,
+  "timestamp": 1774952547.296681
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "content": "## Summary: Unauthorized Drones Detected in Finnish Airspace\n\nOn Sunday morning, multiple low-flying, slow-moving small objects were detected in Finnish airspace over sea areas and Southeast Finland. The Finnish Air Force scrambled an F/A-18 Hornet fighter jet to identify the objects.\n\n**Key Facts:**\n- Two drones have since crashed \u2014 one **north of Kouvola** and one **east of Kouvola**\n- Police have **secured both crash sites** for further investigation\n- The Finnish Defence Forces are investigating the incident **in cooperation with other authorities**\n\nDefence Minister **Antti H\u00e4kk\u00e4nen** described the situation as serious, confirming that the drones had strayed into Finnish territory and that security authorities had responded immediately.",
+  "prompt_tokens": 161,
+  "completion_tokens": 171,
+  "cost_usd": 0.003048,
+  "latency_ms": 13765.224624992697,
+  "timestamp": 1774951089.43876
+}

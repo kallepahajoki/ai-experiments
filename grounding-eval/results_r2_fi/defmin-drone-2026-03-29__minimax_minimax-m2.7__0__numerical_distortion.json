@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "numerical_distortion",
+  "verdict": {
+    "failure_mode": "numerical_distortion",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output says 'Kaksi droonia on pudonnut maahan' which is a valid inference from the source stating 'yksi drooni... ja toinen drooni...' (one + another = two). All other numbers and quantities match the source exactly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"numbers_in_source\": [\"muutamia\", \"yksi\", \"toinen\", \"F/A-18\"],\n  \"numbers_in_output\": [\"muutamia\", \"Kaksi\", \"yksi\", \"toinen\", \"F/A-18\"],\n  \"distortions\": [],\n  \"distortion_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output says 'Kaksi droonia on pudonnut maahan' which is a valid inference from the source stating 'yksi drooni... ja toinen drooni...' (one + another = two). All other numbers and quantities match the source exactly.\"\n}\n```",
+  "judge_prompt_tokens": 798,
+  "judge_completion_tokens": 170,
+  "judge_cost_usd": 0.00824,
+  "timestamp": 1774952603.911888
+}

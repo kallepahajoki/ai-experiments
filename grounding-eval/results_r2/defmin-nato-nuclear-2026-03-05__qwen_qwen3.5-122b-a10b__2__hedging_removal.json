@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source says the Ministry 'is sending' the proposal, which implies the process is ongoing or about to happen. The output says the Ministry 'has submitted' the proposal, which presents it as a completed action. This is a minor shift from an in-progress/imminent action to a completed one, but it is not a case of removing hedging about uncertainty, suspicion, or conditionality in the traditional sense. The source text is largely factual and declarative, containing very little hedging or uncertainty language. The change from 'is sending' to 'has submitted' is a minor temporal/aspectual shift rather than a significant hedging removal.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"is sending\", \"context\": \"The Ministry of Defence is sending a proposal to amend the Nuclear Energy Act and the Criminal Code for a consultation round.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"is sending\", \"preserved\": false, \"output_version\": \"has submitted a proposal\"}\n  ],\n  \"hedging_removal_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source says the Ministry 'is sending' the proposal, which implies the process is ongoing or about to happen. The output says the Ministry 'has submitted' the proposal, which presents it as a completed action. This is a minor shift from an in-progress/imminent action to a completed one, but it is not a case of removing hedging about uncertainty, suspicion, or conditionality in the traditional sense. The source text is largely factual and declarative, containing very little hedging or uncertainty language. The change from 'is sending' to 'has submitted' is a minor temporal/aspectual shift rather than a significant hedging removal.\"\n}\n```",
+  "judge_prompt_tokens": 792,
+  "judge_completion_tokens": 271,
+  "judge_cost_usd": 0.010735,
+  "timestamp": 1774952547.2981088
+}

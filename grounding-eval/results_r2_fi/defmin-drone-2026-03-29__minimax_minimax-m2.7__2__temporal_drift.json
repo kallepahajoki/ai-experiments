@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "temporal_drift",
+  "verdict": {
+    "failure_mode": "temporal_drift",
+    "detected": true,
+    "confidence": 0.72,
+    "evidence": "The main temporal drift is the tense change from present perfect 'on ollut paikalla' (has been on site) to simple past 'l\u00e4hetti' (sent), which alters both the tense and the action described. The rephrasing of 'T\u00e4m\u00e4n hetken tietojen mukaan' to 'T\u00e4h\u00e4n menness\u00e4' is a minor nuance shift. Event ordering is preserved correctly.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"temporal_expressions_source\": [\n    \"sunnuntai-aamuna\",\n    \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n    \"on ollut paikalla (present perfect)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\",\n    \"tutkii (present tense)\"\n  ],\n  \"temporal_expressions_output\": [\n    \"Sunnuntaina aamuna\",\n    \"T\u00e4h\u00e4n menness\u00e4\",\n    \"l\u00e4hetti (past tense / imperfect)\",\n    \"on pudonnut (present perfect)\",\n    \"on erist\u00e4nyt (present perfect)\",\n    \"ovat reagoineet (present perfect)\",\n    \"tutkii (present tense)\"\n  ],\n  \"drifts\": [\n    {\n      \"output_temporal\": \"l\u00e4hetti paikalle (simple past / imperfect)\",\n      \"source_temporal\": \"on ollut paikalla (present perfect, indicating ongoing or recently completed presence)\",\n      \"explanation\": \"The source uses the present perfect 'on ollut paikalla' (has been on site), implying the fighter is/was present as part of an ongoing situation. The output changes this to the simple past 'l\u00e4hetti' (sent), which shifts the tense and also slightly changes the meaning from 'has been present' to 'sent'. This is a tense drift from present perfect to simple past/imperfect.\"\n    },\n    {\n      \"output_temporal\": \"T\u00e4h\u00e4n menness\u00e4\",\n      \"source_temporal\": \"T\u00e4m\u00e4n hetken tietojen mukaan\",\n      \"explanation\": \"The source says 'according to current information' (T\u00e4m\u00e4n hetken tietojen mukaan), while the output says 'so far / up to this point' (T\u00e4h\u00e4n menness\u00e4). While both refer to the present moment, the nuance differs: the source emphasizes the provisional nature of current information, while the output emphasizes cumulative events up to now. This is a minor temporal nuance shift but not a major drift.\"\n    }\n  ],\n  \"drift_found\": true,\n  \"confidence\": 0.72,\n  \"evidence\": \"The main temporal drift is the tense change from present perfect 'on ollut paikalla' (has been on site) to simple past 'l\u00e4hetti' (sent), which alters both the tense and the action described. The rephrasing of 'T\u00e4m\u00e4n hetken tietojen mukaan' to 'T\u00e4h\u00e4n menness\u00e4' is a minor nuance shift. Event ordering is preserved correctly.\"\n}\n```",
+  "judge_prompt_tokens": 748,
+  "judge_completion_tokens": 637,
+  "judge_cost_usd": 0.019665,
+  "timestamp": 1774952603.912276
+}

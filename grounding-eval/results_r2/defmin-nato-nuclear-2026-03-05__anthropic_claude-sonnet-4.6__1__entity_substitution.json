@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output (Ministry of Defence, Finland, NATO, Nuclear Energy Act, Criminal Code) correspond to entities in the source. 'Finnish government' is a slight rephrasing but not a meaningful entity substitution \u2014 the source says 'Finland does not seek...' and the output says 'The Finnish government explicitly states this does not mean...' which is a paraphrase, not a substitution of a different entity.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\"Finnish Ministry of Defence\", \"Finland\", \"NATO\", \"Finnish government\"],\n  \"substitutions\": [\n    {\n      \"output_entity\": \"Finnish government\",\n      \"source_entity\": \"Finland\",\n      \"explanation\": \"The source states 'Finland does not seek the deployment of nuclear weapons on its territory' without attributing this to 'the Finnish government' specifically. However, this is a minor rephrasing rather than a true entity substitution, as the source's context (a Ministry of Defence proposal) implies governmental action.\"\n    }\n  ],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output (Ministry of Defence, Finland, NATO, Nuclear Energy Act, Criminal Code) correspond to entities in the source. 'Finnish government' is a slight rephrasing but not a meaningful entity substitution \u2014 the source says 'Finland does not seek...' and the output says 'The Finnish government explicitly states this does not mean...' which is a paraphrase, not a substitution of a different entity.\"\n}\n```",
+  "judge_prompt_tokens": 770,
+  "judge_completion_tokens": 261,
+  "judge_cost_usd": 0.010375,
+  "timestamp": 1774952547.295247
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": true,
+    "confidence": 0.6,
+    "evidence": "The source uses 'muutamia' (a few) to describe the number of objects detected, while the summary uses 'useita' (several), which implies a somewhat larger quantity. This is a minor but real discrepancy in the characterization of the number of objects.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [\n    {\n      \"output_statement\": \"Suomen ilmatilassa, merialueella ja Kaakkois\u2011Suomessa havaittiin useita matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n      \"source_statement\": \"Suomen ilmatilassa merialueella ja Kaakkois-Suomessa havaittiin sunnuntai-aamuna muutamia matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita.\",\n      \"explanation\": \"The source says 'muutamia' (a few), while the output says 'useita' (several/multiple). While both indicate more than one, 'useita' implies a larger number than 'muutamia', which is a slight but notable difference in meaning.\"\n    }\n  ],\n  \"contradiction_found\": true,\n  \"confidence\": 0.6,\n  \"evidence\": \"The source uses 'muutamia' (a few) to describe the number of objects detected, while the summary uses 'useita' (several), which implies a somewhat larger quantity. This is a minor but real discrepancy in the characterization of the number of objects.\"\n}\n```",
+  "judge_prompt_tokens": 713,
+  "judge_completion_tokens": 298,
+  "judge_cost_usd": 0.011015,
+  "timestamp": 1774952603.912229
+}

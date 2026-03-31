@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The key relationships stated in the summary (e.g., the purpose of the law change being to enable NATO deterrence, the goal of maximizing security, the restrictions remaining in place) all correspond to relationships explicitly stated in the source. The mention of 'muuttuneessa toimintaymp\u00e4rist\u00f6ss\u00e4' slightly paraphrases 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' but does not create a false conflation. The summary also correctly groups the allowed activities (tuominen, kuljettaminen, hallussapito) and their conditions, and the prohibited activities (valmistus, hankkiminen, r\u00e4j\u00e4ytt\u00e4minen) as presented in the source, though it omits 'kehitt\u00e4minen' (development) from the list of prohibited activities and 'toimittaminen' (delivery) from the allowed list \u2014 these are omissions rather than conflations.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary accurately reflects the source material without merging independent facts into false causal or combined claims. The key relationships stated in the summary (e.g., the purpose of the law change being to enable NATO deterrence, the goal of maximizing security, the restrictions remaining in place) all correspond to relationships explicitly stated in the source. The mention of 'muuttuneessa toimintaymp\u00e4rist\u00f6ss\u00e4' slightly paraphrases 'vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4' but does not create a false conflation. The summary also correctly groups the allowed activities (tuominen, kuljettaminen, hallussapito) and their conditions, and the prohibited activities (valmistus, hankkiminen, r\u00e4j\u00e4ytt\u00e4minen) as presented in the source, though it omits 'kehitt\u00e4minen' (development) from the list of prohibited activities and 'toimittaminen' (delivery) from the allowed list \u2014 these are omissions rather than conflations.\"\n}\n```",
+  "judge_prompt_tokens": 1179,
+  "judge_completion_tokens": 267,
+  "judge_cost_usd": 0.01257,
+  "timestamp": 1774952603.9165802
+}

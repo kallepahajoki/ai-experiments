@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "hedging_removal",
+  "verdict": {
+    "failure_mode": "hedging_removal",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The source text is largely a factual/legislative press release with minimal hedging language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are adequately preserved in the output. The phrase 'difficult-to-predict' is rendered as 'unpredictable,' which is a close paraphrase. The output also correctly uses 'has submitted' which aligns with 'is sending' from the source. No critical hedging was removed.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"hedging_in_source\": [\n    {\"expression\": \"difficult-to-predict\", \"context\": \"The proposal is based on the need to maximise Finland's security in a difficult-to-predict operational environment.\"},\n    {\"expression\": \"nor is such deployment planned\", \"context\": \"Finland does not seek the deployment of nuclear weapons on its territory, nor is such deployment planned within NATO.\"}\n  ],\n  \"hedging_preserved_in_output\": [\n    {\"expression\": \"difficult-to-predict\", \"preserved\": true, \"output_version\": \"unpredictable operational environment\"},\n    {\"expression\": \"nor is such deployment planned\", \"preserved\": true, \"output_version\": \"No deployment of nuclear weapons on Finnish soil is planned within NATO\"}\n  ],\n  \"hedging_removal_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The source text is largely a factual/legislative press release with minimal hedging language. The few instances of conditional or qualifying language ('difficult-to-predict', 'nor is such deployment planned') are adequately preserved in the output. The phrase 'difficult-to-predict' is rendered as 'unpredictable,' which is a close paraphrase. The output also correctly uses 'has submitted' which aligns with 'is sending' from the source. No critical hedging was removed.\"\n}\n```",
+  "judge_prompt_tokens": 796,
+  "judge_completion_tokens": 320,
+  "judge_cost_usd": 0.01198,
+  "timestamp": 1774952547.29626
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "mistralai/mistral-large-2512",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "entity_substitution",
+  "verdict": {
+    "failure_mode": "entity_substitution",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "All named entities in the output correspond to entities in the source. 'Finnish Ministry of Defence', 'Finland', 'Finnish Air Force', and 'Finnish Defence Forces' are reasonable expansions of entities mentioned or implied in the source (e.g., 'The Air Force', 'Finnish airspace', 'The Defence Forces'). 'Antti H\u00e4kk\u00e4nen', 'F/A-18 Hornet', and 'Kouvola' all match the source exactly. No entity substitutions were found.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"entities_in_output\": [\n    \"Finnish Ministry of Defence\",\n    \"Finland\",\n    \"Finnish Air Force\",\n    \"F/A-18 Hornet\",\n    \"Kouvola\",\n    \"Antti H\u00e4kk\u00e4nen\",\n    \"Finnish Defence Forces\"\n  ],\n  \"substitutions\": [],\n  \"substitution_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"All named entities in the output correspond to entities in the source. 'Finnish Ministry of Defence', 'Finland', 'Finnish Air Force', and 'Finnish Defence Forces' are reasonable expansions of entities mentioned or implied in the source (e.g., 'The Air Force', 'Finnish airspace', 'The Defence Forces'). 'Antti H\u00e4kk\u00e4nen', 'F/A-18 Hornet', and 'Kouvola' all match the source exactly. No entity substitutions were found.\"\n}\n```",
+  "judge_prompt_tokens": 561,
+  "judge_completion_tokens": 234,
+  "judge_cost_usd": 0.008655,
+  "timestamp": 1774952547.292585
+}

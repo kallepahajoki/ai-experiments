@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.93,
+    "evidence": "All statements in the output are consistent with the source document. The mention of 'forensic investigation' and 'border guard' are minor embellishments/inferences not present in the source, but they do not contradict anything stated in the source. The key facts \u2014 timing, location, F/A-18 Hornet response, two drone crashes near Kouvola, H\u00e4kk\u00e4nen's quote, and joint investigation \u2014 all match the source.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.93,\n  \"evidence\": \"All statements in the output are consistent with the source document. The mention of 'forensic investigation' and 'border guard' are minor embellishments/inferences not present in the source, but they do not contradict anything stated in the source. The key facts \u2014 timing, location, F/A-18 Hornet response, two drone crashes near Kouvola, H\u00e4kk\u00e4nen's quote, and joint investigation \u2014 all match the source.\"\n}\n```",
+  "judge_prompt_tokens": 502,
+  "judge_completion_tokens": 141,
+  "judge_cost_usd": 0.006035,
+  "timestamp": 1774952547.292041
+}

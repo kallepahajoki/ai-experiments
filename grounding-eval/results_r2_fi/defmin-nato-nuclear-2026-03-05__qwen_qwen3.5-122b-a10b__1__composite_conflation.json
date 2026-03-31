@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 1,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The source presents the purpose of removing legislative barriers and the fact about NATO compatibility as separate points in separate paragraphs. The output merges them into a single sentence with 'sek\u00e4' (and), presenting harmonization with other NATO countries as a co-equal stated goal alongside removing barriers, when the source frames it more as a contextual observation. Additionally, the source says 'yhteensopivaksi Naton toimintojen kanssa' (compatible with NATO's operations) while the output says 'yhten\u00e4ist\u00e4\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 muiden Nato-maiden kanssa' (harmonize Finland's legislation with other NATO countries), which is a subtle but meaningful reframing.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Tavoitteena on poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Naton yhteisen puolustuksen ja pelotteen hy\u00f6dynt\u00e4miselle sek\u00e4 yhten\u00e4ist\u00e4\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 muiden Nato-maiden kanssa.\",\n      \"source_facts\": [\n        \"Esityksen tarkoitus on poistaa lains\u00e4\u00e4d\u00e4nn\u00f6lliset esteet Suomen sotilaallisen puolustuksen mahdollistamiseksi osana liittokuntaa sek\u00e4 Naton pelotteen ja yhteisen puolustuksen t\u00e4ysim\u00e4\u00e4r\u00e4iseksi hy\u00f6dynt\u00e4miseksi.\",\n        \"Valtaosalla Nato-maista ei ole vastaavia lains\u00e4\u00e4d\u00e4nn\u00f6llisi\u00e4 rajoitteita. Lakiesityksell\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 saatetaan yhteensopivaksi Naton toimintojen kanssa.\"\n      ],\n      \"explanation\": \"The output merges two separate stated purposes into a single combined goal. The source states the purpose is to remove legislative barriers for Finland's military defense as part of the alliance and for utilizing NATO's deterrence. Separately, it states that the legislation is being made compatible with NATO's operations (not 'other NATO countries' legislation'). The output combines these and slightly reframes the compatibility point as 'harmonizing legislation with other NATO countries,' which conflates compatibility with NATO operations with alignment with other NATO countries' laws. However, this is a relatively minor conflation.\"\n    }\n  ],\n  \"conflation_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The source presents the purpose of removing legislative barriers and the fact about NATO compatibility as separate points in separate paragraphs. The output merges them into a single sentence with 'sek\u00e4' (and), presenting harmonization with other NATO countries as a co-equal stated goal alongside removing barriers, when the source frames it more as a contextual observation. Additionally, the source says 'yhteensopivaksi Naton toimintojen kanssa' (compatible with NATO's operations) while the output says 'yhten\u00e4ist\u00e4\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 muiden Nato-maiden kanssa' (harmonize Finland's legislation with other NATO countries), which is a subtle but meaningful reframing.\"\n}\n```",
+  "judge_prompt_tokens": 1122,
+  "judge_completion_tokens": 573,
+  "judge_cost_usd": 0.019935,
+  "timestamp": 1774952603.919678
+}

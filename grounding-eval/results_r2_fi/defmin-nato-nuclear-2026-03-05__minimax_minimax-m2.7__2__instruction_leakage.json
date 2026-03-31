@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "instruction_leakage",
+  "verdict": {
+    "failure_mode": "instruction_leakage",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output contains only a structured summary of the source text in Finnish. There are no instruction echoes, system prompt fragments, or meta-commentary about the task. The bold headers (e.g., 'Yhteenveto', 'Tavoite', 'Selvennykset') are content-organizational elements, not task-related meta-language.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"leakage_instances\": [],\n  \"leakage_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output contains only a structured summary of the source text in Finnish. There are no instruction echoes, system prompt fragments, or meta-commentary about the task. The bold headers (e.g., 'Yhteenveto', 'Tavoite', 'Selvennykset') are content-organizational elements, not task-related meta-language.\"\n}\n```",
+  "judge_prompt_tokens": 1353,
+  "judge_completion_tokens": 126,
+  "judge_cost_usd": 0.009915,
+  "timestamp": 1774952603.917399
+}

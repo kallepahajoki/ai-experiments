@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": true,
+    "confidence": 0.45,
+    "evidence": "The summary is largely faithful in tone and content. However, there are minor framing shifts: 'maximise' is softened to 'strengthen', 'enable' is changed to 'better support', 'operational environment' becomes 'security environment', and a factual claim is reattributed with 'the government says'. These are subtle and do not dramatically alter the meaning, but they do introduce slight editorial adjustments not present in the source.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"strengthen Finland's security\",\n      \"issue\": \"The source says 'maximise Finland's security', not 'strengthen'. 'Maximise' conveys a stronger, more specific intent than the softer 'strengthen', subtly downplaying the original framing.\"\n    },\n    {\n      \"output_phrase\": \"better support its military defence\",\n      \"issue\": \"The source says 'enable Finland's military defence', not 'better support'. 'Enable' implies removing a barrier, while 'better support' implies incremental improvement \u2014 a slight reframing of the purpose.\"\n    },\n    {\n      \"output_phrase\": \"The government says most NATO countries do not have similar restrictions\",\n      \"issue\": \"The source states this as a factual claim ('The majority of NATO member states do not have comparable legislative restrictions'), not as something attributed to 'the government says'. Adding 'the government says' introduces a subtle distancing/hedging frame not present in the source.\"\n    },\n    {\n      \"output_phrase\": \"unpredictable security environment\",\n      \"issue\": \"The source says 'difficult-to-predict operational environment'. Changing 'operational' to 'security' and 'difficult-to-predict' to 'unpredictable' is a minor reframing \u2014 'operational environment' is a more specific military/strategic term, while 'security environment' is broader and slightly more dramatic.\"\n    }\n  ],\n  \"framing_shift_found\": true,\n  \"confidence\": 0.45,\n  \"evidence\": \"The summary is largely faithful in tone and content. However, there are minor framing shifts: 'maximise' is softened to 'strengthen', 'enable' is changed to 'better support', 'operational environment' becomes 'security environment', and a factual claim is reattributed with 'the government says'. These are subtle and do not dramatically alter the meaning, but they do introduce slight editorial adjustments not present in the source.\"\n}\n```",
+  "judge_prompt_tokens": 728,
+  "judge_completion_tokens": 483,
+  "judge_cost_usd": 0.015715,
+  "timestamp": 1774952547.297736
+}

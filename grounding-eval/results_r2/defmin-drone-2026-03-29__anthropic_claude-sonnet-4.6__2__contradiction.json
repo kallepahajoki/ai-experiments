@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "anthropic/claude-sonnet-4.6",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "contradiction",
+  "verdict": {
+    "failure_mode": "contradiction",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The summary accurately reflects all key details from the source document. The locations of the crashed drones (north and east of Kouvola), the use of an F/A-18 Hornet, police securing the areas, the Defence Forces investigating with other authorities, and Defence Minister H\u00e4kk\u00e4nen's statements all align with the source. No contradictions were found.",
+    "severity": "critical"
+  },
+  "raw_judge_response": "```json\n{\n  \"contradictions\": [],\n  \"contradiction_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The summary accurately reflects all key details from the source document. The locations of the crashed drones (north and east of Kouvola), the use of an F/A-18 Hornet, police securing the areas, the Defence Forces investigating with other authorities, and Defence Minister H\u00e4kk\u00e4nen's statements all align with the source. No contradictions were found.\"\n}\n```",
+  "judge_prompt_tokens": 476,
+  "judge_completion_tokens": 121,
+  "judge_cost_usd": 0.005405,
+  "timestamp": 1774952547.290046
+}

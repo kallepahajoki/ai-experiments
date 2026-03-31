@@ -1,0 +1,11 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "model": "mistralai/mistral-large-2512",
+  "run_index": 1,
+  "content": "**Tiivistelm\u00e4 Puolustusministeri\u00f6n tiedotteesta:**\n\nSuomen ilmatilassa havaittiin sunnuntai-aamuna matalalla lent\u00e4vi\u00e4 hitaita pieni\u00e4 kohteita merialueella ja Kaakkois-Suomessa. Ilmavoimat tunnisti tilanteen F/A-18 Hornet -h\u00e4vitt\u00e4j\u00e4ll\u00e4. Kaksi droonia putosi maahan: toinen Kouvolan pohjoispuolelle ja toinen it\u00e4puolelle. Poliisi on erist\u00e4nyt alueet tutkimuksia varten.\n\nPuolustusministeri Antti H\u00e4kk\u00e4nen ilmoitti, ett\u00e4 kyse on Suomen alueelle harhautuneista lennokeista, ja asiaa k\u00e4sitell\u00e4\u00e4n vakavasti. Turvallisuusviranomaiset ovat reagoineet tilanteeseen v\u00e4litt\u00f6m\u00e4sti. Puolustusvoimat tutkii tapausta yhdess\u00e4 muiden viranomaisten kanssa.",
+  "prompt_tokens": 238,
+  "completion_tokens": 210,
+  "cost_usd": 0.000434,
+  "latency_ms": 5709.870000006049,
+  "timestamp": 1774951435.329684
+}

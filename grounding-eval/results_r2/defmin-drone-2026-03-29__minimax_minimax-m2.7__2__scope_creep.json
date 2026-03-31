@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "minimax/minimax-m2.7",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": true,
+    "confidence": 0.92,
+    "evidence": "Two instances of scope creep: (1) 'forensic investigation' embellishes 'further investigation' from the source, and (2) 'border guard' is not mentioned in the source and appears to be inferred from background knowledge of Finnish security structures.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\n      \"output_content\": \"Police have secured both crash sites for forensic investigation.\",\n      \"explanation\": \"The source says 'Police have secured the areas for further investigation.' The word 'forensic' is not in the source and adds a specific characterization of the type of investigation not supported by the document.\"\n    },\n    {\n      \"output_content\": \"The Defence Forces are working jointly with other authorities (police, border guard, etc.) to investigate the incident.\",\n      \"explanation\": \"The source says 'The Defence Forces are investigating the incident together with other authorities.' The specific mention of 'border guard' is not in the source document \u2014 this appears to be added from general knowledge about Finnish security authorities.\"\n    }\n  ],\n  \"scope_creep_found\": true,\n  \"confidence\": 0.92,\n  \"evidence\": \"Two instances of scope creep: (1) 'forensic investigation' embellishes 'further investigation' from the source, and (2) 'border guard' is not mentioned in the source and appears to be inferred from background knowledge of Finnish security structures.\"\n}\n```",
+  "judge_prompt_tokens": 534,
+  "judge_completion_tokens": 269,
+  "judge_cost_usd": 0.009395,
+  "timestamp": 1774952547.292162
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "qwen/qwen3.5-122b-a10b",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "framing_shift",
+  "verdict": {
+    "failure_mode": "framing_shift",
+    "detected": false,
+    "confidence": 0.9,
+    "evidence": "The summary closely mirrors the neutral, informational tone of the source. It uses bullet points and factual language consistent with the original press release style. The identified issues are very minor wording differences that do not introduce editorial tone, loaded language, bias, or implied causality. No dramatic framing, opinion words, or evaluative language was introduced.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"framing_issues\": [\n    {\n      \"output_phrase\": \"Muutoksella pyrit\u00e4\u00e4n varmistamaan Naton uskottava pelote ja korkea kynnys sotilaallisille toimille\",\n      \"issue\": \"Minor compression that slightly shifts framing: the source says 'mahdollisimman korkean kynnyksen' (as high a threshold as possible), while the summary says just 'korkea kynnys' (high threshold), subtly reducing the emphasis. However, this is more an accuracy issue than a framing shift.\"\n    },\n    {\n      \"output_phrase\": \"Muutos tukee Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n yhteensopivuutta\",\n      \"issue\": \"The source uses the stronger phrasing 'saatetaan yhteensopivaksi' (is being made compatible), while the summary uses 'tukee yhteensopivuutta' (supports compatibility), which slightly softens the stated purpose. This is a minor nuance shift rather than a clear framing issue.\"\n    }\n  ],\n  \"framing_shift_found\": false,\n  \"confidence\": 0.9,\n  \"evidence\": \"The summary closely mirrors the neutral, informational tone of the source. It uses bullet points and factual language consistent with the original press release style. The identified issues are very minor wording differences that do not introduce editorial tone, loaded language, bias, or implied causality. No dramatic framing, opinion words, or evaluative language was introduced.\"\n}\n```",
+  "judge_prompt_tokens": 1311,
+  "judge_completion_tokens": 368,
+  "judge_cost_usd": 0.015755,
+  "timestamp": 1774952603.919444
+}

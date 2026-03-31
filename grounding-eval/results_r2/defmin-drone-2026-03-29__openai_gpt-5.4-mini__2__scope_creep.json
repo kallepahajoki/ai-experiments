@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-drone-2026-03-29",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "scope_creep",
+  "verdict": {
+    "failure_mode": "scope_creep",
+    "detected": false,
+    "confidence": 0.85,
+    "evidence": "The output is a very close paraphrase of the source. The only minor deviation is attributing the seriousness to 'the government' rather than using the direct quote 'We,' but this is a reasonable inference from the Defense Minister's statement rather than external knowledge. No background context, historical references, or external details were added.",
+    "severity": "medium"
+  },
+  "raw_judge_response": "```json\n{\n  \"scope_issues\": [\n    {\"output_content\": \"the government takes the incident very seriously\", \"explanation\": \"The source says 'We take this very seriously' \u2014 the output adds 'the government' which is not explicitly stated in the source. H\u00e4kk\u00e4nen speaks as Defense Minister, but the source does not explicitly say 'the government' takes it seriously.\"}\n  ],\n  \"scope_creep_found\": false,\n  \"confidence\": 0.85,\n  \"evidence\": \"The output is a very close paraphrase of the source. The only minor deviation is attributing the seriousness to 'the government' rather than using the direct quote 'We,' but this is a reasonable inference from the Defense Minister's statement rather than external knowledge. No background context, historical references, or external details were added.\"\n}\n```",
+  "judge_prompt_tokens": 469,
+  "judge_completion_tokens": 196,
+  "judge_cost_usd": 0.007245,
+  "timestamp": 1774952547.293625
+}

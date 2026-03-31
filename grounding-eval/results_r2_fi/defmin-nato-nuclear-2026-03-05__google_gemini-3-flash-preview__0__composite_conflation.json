@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "google/gemini-3-flash-preview",
+  "run_index": 0,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.7,
+    "evidence": "The two facts merged in the summary (NATO compatibility and security maximization) are both presented as objectives/rationale in the source, just in separate paragraphs. The summary combines them with 'ja' (and), which doesn't create a false causal or conditional relationship \u2014 it simply lists them together. This is a very mild merger that doesn't distort meaning, so I assess no meaningful conflation.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [\n    {\n      \"output_statement\": \"Suomen lains\u00e4\u00e4d\u00e4nn\u00f6n saattaminen yhteensopivaksi muiden Nato-maiden kanssa ja turvallisuuden maksimointi uskottavan pelotteen avulla.\",\n      \"source_facts\": [\n        \"Lakiesityksell\u00e4 Suomen lains\u00e4\u00e4d\u00e4nt\u00f6 saatetaan yhteensopivaksi Naton toimintojen kanssa.\",\n        \"Esitys perustuu tarpeeseen maksimoida Suomen turvallisuus vaikeasti ennakoitavassa toimintaymp\u00e4rist\u00f6ss\u00e4. Tavoitteena on varmistaa, ett\u00e4 Naton pelote... on uskottava ja muodostaa mahdollisimman korkean kynnyksen sotilaallisille toimille.\"\n      ],\n      \"explanation\": \"The summary merges two separate points into a single combined goal statement. In the source, making legislation compatible with NATO operations is stated as a separate point, while maximizing security through credible deterrence is presented as a distinct rationale. The summary combines them as if they are a single unified objective, but this is a relatively minor conflation since both are indeed stated as goals/reasons for the proposal. The merger doesn't create a false causal claim.\"\n    }\n  ],\n  \"conflation_found\": false,\n  \"confidence\": 0.7,\n  \"evidence\": \"The two facts merged in the summary (NATO compatibility and security maximization) are both presented as objectives/rationale in the source, just in separate paragraphs. The summary combines them with 'ja' (and), which doesn't create a false causal or conditional relationship \u2014 it simply lists them together. This is a very mild merger that doesn't distort meaning, so I assess no meaningful conflation.\"\n}\n```",
+  "judge_prompt_tokens": 1164,
+  "judge_completion_tokens": 441,
+  "judge_cost_usd": 0.016845,
+  "timestamp": 1774952603.916387
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "defmin-nato-nuclear-2026-03-05",
+  "subject_model": "openai/gpt-5.4-mini",
+  "run_index": 2,
+  "judge_model": "anthropic/claude-opus-4.6",
+  "failure_mode": "composite_conflation",
+  "verdict": {
+    "failure_mode": "composite_conflation",
+    "detected": false,
+    "confidence": 0.95,
+    "evidence": "The output faithfully reflects the source material without merging independent facts into false causal or combined claims. The relationships presented (e.g., the purpose of the legislative change, the connection to NATO deterrence, the background motivation of security in an unpredictable environment) all exist in the source. The summary accurately separates the different aspects: the proposal's purpose, current law vs. proposed changes, the motivation, and the caveats about not seeking nuclear weapons on Finnish territory.",
+    "severity": "high"
+  },
+  "raw_judge_response": "```json\n{\n  \"conflations\": [],\n  \"conflation_found\": false,\n  \"confidence\": 0.95,\n  \"evidence\": \"The output faithfully reflects the source material without merging independent facts into false causal or combined claims. The relationships presented (e.g., the purpose of the legislative change, the connection to NATO deterrence, the background motivation of security in an unpredictable environment) all exist in the source. The summary accurately separates the different aspects: the proposal's purpose, current law vs. proposed changes, the motivation, and the caveats about not seeking nuclear weapons on Finnish territory.\"\n}\n```",
+  "judge_prompt_tokens": 1215,
+  "judge_completion_tokens": 144,
+  "judge_cost_usd": 0.009675,
+  "timestamp": 1774952603.9193118
+}
