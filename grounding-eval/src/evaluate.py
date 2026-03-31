@@ -29,6 +29,14 @@ class EvalResult:
 def parse_judge_response(mode_id: str, raw: str) -> JudgeVerdict:
     """Parse judge JSON response into a JudgeVerdict."""
     # Strip markdown code fences if present
+    if raw is None:
+        return JudgeVerdict(
+            failure_mode=mode_id,
+            detected=False,
+            confidence=0.0,
+            evidence="[ERROR] Judge returned null response",
+            severity="unknown",
+        )
     text = raw.strip()
     if text.startswith("```"):
         lines = text.split("\n")

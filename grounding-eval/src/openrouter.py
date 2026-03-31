@@ -37,13 +37,12 @@ class OpenRouterClient:
         self._async_client: httpx.AsyncClient | None = None
 
     def _get_async_client(self) -> httpx.AsyncClient:
-        if self._async_client is None or self._async_client.is_closed:
-            self._async_client = httpx.AsyncClient(
-                base_url=self.BASE_URL,
-                headers=self._headers,
-                timeout=120.0,
-            )
-        return self._async_client
+        # Always create a fresh client — event loops close between asyncio.run() calls
+        return httpx.AsyncClient(
+            base_url=self.BASE_URL,
+            headers=self._headers,
+            timeout=120.0,
+        )
 
     def _build_payload(self, model: str, messages: list[dict],
                        temperature: float | None, max_tokens: int) -> dict:
@@ -92,8 +91,9 @@ class OpenRouterClient:
 
         raise RuntimeError(f"Failed after {retries} retries: {last_error}")
 
-    async def acomplete(
+    async def _acomplete_with_client(
         self,
+        async_client: httpx.AsyncClient,
         model: str,
         messages: list[dict],
         temperature: float | None = None,
@@ -102,13 +102,12 @@ class OpenRouterClient:
         backoff_base: float = 2.0,
     ) -> CompletionResult:
         payload = self._build_payload(model, messages, temperature, max_tokens)
-        client = self._get_async_client()
 
         last_error = None
         for attempt in range(retries):
             try:
                 t0 = time.monotonic()
-                resp = await client.post("/chat/completions", json=payload)
+                resp = await async_client.post("/chat/completions", json=payload)
                 latency_ms = (time.monotonic() - t0) * 1000
 
                 if resp.status_code == 429:
@@ -116,7 +115,13 @@ class OpenRouterClient:
                     continue
 
                 resp.raise_for_status()
-                return _parse_response(resp.json(), model, latency_ms)
+                try:
+                    data = resp.json()
+                except Exception:
+                    last_error = ValueError(f"Invalid JSON response: {resp.text[:200]}")
+                    await asyncio.sleep(backoff_base ** attempt)
+                    continue
+                return _parse_response(data, model, latency_ms)
             except httpx.HTTPStatusError as e:
                 last_error = e
                 if e.response.status_code >= 500:
@@ -141,17 +146,22 @@ class OpenRouterClient:
         temperature, max_tokens.
         """
         semaphore = asyncio.Semaphore(concurrency)
+        async_client = self._get_async_client()
 
         async def _run(req: dict) -> CompletionResult:
             async with semaphore:
-                return await self.acomplete(
+                return await self._acomplete_with_client(
+                    async_client,
                     model=req["model"],
                     messages=req["messages"],
                     temperature=req.get("temperature"),
                     max_tokens=req.get("max_tokens", 4096),
                 )
 
-        return await asyncio.gather(*[_run(r) for r in requests])
+        try:
+            return await asyncio.gather(*[_run(r) for r in requests])
+        finally:
+            await async_client.aclose()
 
     def close(self):
         self._client.close()
@@ -173,7 +183,7 @@ class OpenRouterClient:
 def _parse_response(data: dict, model: str, latency_ms: float) -> CompletionResult:
     usage = data.get("usage", {})
     return CompletionResult(
-        content=data["choices"][0]["message"]["content"],
+        content=data["choices"][0]["message"].get("content"),
         model=data.get("model", model),
         prompt_tokens=usage.get("prompt_tokens", 0),
         completion_tokens=usage.get("completion_tokens", 0),

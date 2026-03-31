@@ -9,6 +9,8 @@ from .generate import load_all_cases, generate_outputs, save_outputs, load_outpu
 from .evaluate import evaluate_all, save_results
 from .failure_modes import all_mode_ids, FAILURE_MODES
 from .report import generate_report
+from .judge_calibration import run_judge_comparison, compare_judges
+from .evaluate import load_results
 
 
 DEFAULT_SUBJECT_MODELS = [
@@ -97,6 +99,34 @@ def cmd_report(args):
         print(f"\nReport saved to {output_path}")
 
 
+def cmd_calibrate(args):
+    opus_results_dir = Path(args.opus_results)
+    outputs_dir = Path(args.outputs)
+    cases_dir = Path(args.cases)
+    candidate_judges = args.judges.split(",")
+    source_key = args.source_key
+    concurrency = args.concurrency
+
+    print(f"Calibrating {len(candidate_judges)} judge(s) against Opus baseline")
+    print(f"Opus results: {opus_results_dir}")
+
+    with OpenRouterClient() as client:
+        candidate_results = run_judge_comparison(
+            client, opus_results_dir, outputs_dir, cases_dir,
+            candidate_judges, source_key=source_key, concurrency=concurrency,
+        )
+
+    opus_results = load_results(opus_results_dir)
+    report = compare_judges(opus_results, candidate_results)
+    print(report)
+
+    if args.output:
+        output_path = Path(args.output)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(report)
+        print(f"\nReport saved to {output_path}")
+
+
 def cmd_list_modes(args):
     print("Available failure modes:\n")
     for mode_id, fm in FAILURE_MODES.items():
@@ -136,6 +166,17 @@ def main():
     rep.add_argument("--results", type=str, default="results", help="Results directory")
     rep.add_argument("--output", type=str, default=None, help="Save report to file")
     rep.set_defaults(func=cmd_report)
+
+    # calibrate
+    cal = subparsers.add_parser("calibrate", help="Compare candidate judges against Opus baseline")
+    cal.add_argument("--opus-results", type=str, required=True, help="Opus results directory (ground truth)")
+    cal.add_argument("--outputs", type=str, required=True, help="Generated outputs directory")
+    cal.add_argument("--cases", type=str, default="eval_data", help="Eval cases directory")
+    cal.add_argument("--judges", type=str, required=True, help="Comma-separated candidate judge model IDs")
+    cal.add_argument("--concurrency", type=int, default=10, help="Max concurrent judge calls")
+    cal.add_argument("--source-key", type=str, default="text_en", help="Source text key")
+    cal.add_argument("--output", type=str, default=None, help="Save report to file")
+    cal.set_defaults(func=cmd_calibrate)
 
     # list-modes
     lm = subparsers.add_parser("list-modes", help="List available failure modes")
