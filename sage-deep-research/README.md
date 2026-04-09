@@ -1,6 +1,6 @@
 # Sage Deep Research: Lessons from Building an LLM Research Pipeline
 
-Practical findings from building and optimizing a multi-stage research pipeline that decomposes questions into sub-queries, searches the web, extracts facts from sources, reviews quality, and synthesizes reports. Built as part of the [Anvil AI Toolkit](https://anvisuilte.com) platform.
+Practical findings from building and optimizing a multi-stage research pipeline that decomposes questions into sub-queries, searches the web, extracts facts from sources, reviews quality, and synthesizes reports. Built as part of the [Anvil AI Toolkit](https://anvisuite.com) platform.
 
 **Hardware**: AMD Radeon RX 7900 XTX (24GB VRAM, RDNA3, ROCm)
 **Local model**: Qwen 3.5 9B (Q4_K_M, via Ollama 0.18.2)
@@ -104,7 +104,9 @@ The per-token speed was always normal (~60-70 t/s solo). The apparent "slowness"
 | Doc review issues | 1-5 per run | **0** |
 | Wall time | ~60 min | **8.7 min** |
 
-The thinking tokens were **pure waste** for Sage's workload. The model was ruminating internally and then producing roughly the same fact list it would produce without thinking. For structured JSON extraction tasks (rank, review_facts, extract), thinking mode is actively harmful — it adds latency without improving the output because the task is fundamentally pattern matching, not deep reasoning.
+The thinking tokens were **pure waste** for Sage's extraction heavy workload. The model was ruminating internally and then producing roughly the same fact list it would produce without thinking. For structured JSON extraction tasks (rank, review_facts, extract), thinking mode is actively harmful — it adds latency without improving the output because the task is fundamentally pattern matching, not deep reasoning.
+
+In the SAGE-15 run where we disabled thinking, the decomposition and synthesis tasks were executed by the Step 3.5 flash model through OpenRouter. It is possible, that disabling thinking for these critical steps of the research would have degraded the quality of the final report.
 
 ### Recommendation
 
@@ -128,20 +130,9 @@ Not all pipeline stages need the same model. We implemented per-purpose routing 
 
 **Decompose and synthesize are the two highest-leverage calls.** Decompose frames the entire research scope ("what 5-9 questions should we investigate?") — bad decomposition wastes the entire subsequent pipeline. Synthesize writes the final report — it defines the output quality. Both are 1 call per run, both benefit most from model intelligence, both are cheap at cloud pricing.
 
-**Extract is the bulk work.** 15-25 calls per run, each processing an 8k-token web page. The task is "pull factual claims from this text" — reading comprehension, not creative reasoning. A 9B local model handles this adequately. The volume makes cloud cost real (but still cheap — see Step 3.5 Flash section).
+**Extract is the bulk work.** 15-25 calls per run, each processing an 8k-token web page. The task is "pull factual claims from this text" — reading comprehension, not creative reasoning. A 9B local model handles this adequately, and does not need thinking enabled. The volume makes cloud cost real (but still cheap — see Step 3.5 Flash section).
 
 **Doc review and journeyman review need critical reading** — cross-referencing claims against sources, detecting contradictions, evaluating numerical consistency. A cloud model catches issues (like doing weighted-average arithmetic to spot survival statistic inconsistencies) that a 9B model misses.
-
-### Fall-through routing
-
-Forge's `getEffectiveModel(app, category)` resolves models with fall-through:
-
-1. Exact match: `(sage, synthesize)` → Step 3.5 Flash
-2. Fall-through to chat: `(sage, chat)` → Qwen 9B (if no synthesize row configured)
-3. Global default: `(_default, chat)` → whatever the admin set
-4. Hardcoded fallback
-
-This means **users only need to configure the tiers they want to override**. If they only set `Sage / Chat`, everything runs on that one model. If they add `Sage / Synthesize`, just decompose and synthesize get upgraded. Zero-config degradation.
 
 ---
 
