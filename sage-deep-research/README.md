@@ -178,6 +178,63 @@ OpenRouter's free tier for Step 3.5 Flash has **shared rate limits** across all 
 
 ---
 
+## All-Cloud Model Comparison: Step 3.5 Flash vs Claude Haiku 4.5
+
+We ran the identical query ("The onset and progression of bulbar ALS", moderate depth, scientific register) through both models with all pipeline stages on cloud (no local Qwen). Same concurrency (2), same extractor code, same synthesize/review prompts.
+
+### Quantitative comparison
+
+| Metric | Step 3.5 Flash (SAGE-23) | Claude Haiku 4.5 (SAGE-24) |
+|---|---|---|
+| **Wall time** | 12.7 min | **3.9 min** |
+| **Cost** | $0.061 | $0.076 |
+| **Extract calls** | 18 | 19 |
+| **Avg tokens/extract** | **2,827** | 795 |
+| **Total extract output** | **50,894 tok** | 15,097 tok |
+| **Total output (all calls)** | **125,441 tok** | 28,176 tok |
+| **Final report length** | 18,410 chars | **30,548 chars** |
+| **Citations in report** | 95 | **136** |
+| **Unique references** | **29** | 14 |
+
+### The extraction-synthesis paradox
+
+**Haiku extracts 3.6× fewer tokens per page but produces a 1.7× longer, more detailed final report.** This reveals fundamentally different strategies:
+
+**Step Flash** is a **copy-machine extractor** with a **summary synthesizer**: it extracts exhaustively (pulling near-verbatim content from sources, averaging 2,827 tokens per page) but then compresses aggressively during synthesis. Much of the extracted material doesn't survive into the final report. 51k tokens of extraction → 18k character report.
+
+**Haiku** is a **selective extractor** with an **authoring synthesizer**: it extracts concisely (pulling only key claims, averaging 795 tokens per page) but expands during synthesis with domain knowledge, creating coherent subsections and explanatory prose. 15k tokens of extraction → 30k character report.
+
+### Qualitative analysis
+
+**Step Flash report** ("selective depth" style):
+- Unique section on **selective bulbar motor neuron vulnerability** with specific molecular data: MMP9 ~2.5-fold lower in resistant motor neurons, calcium-binding protein expression differences, glycinergic vs GABAergic inhibition balance
+- **Speech decline trajectory** with specific clinical threshold: ~120 words per minute transition to rapid decline phase, with 3-month lead time for articulatory changes detectable before perceived problems
+- Elegant intrinsic/extrinsic vulnerability factor organization
+- Weaker on general epidemiology and molecular mechanism depth
+
+**Haiku report** ("comprehensive textbook" style):
+- Deep **molecular mechanism sections**: glutamate excitotoxicity (EAAT2, GLT-1, system xc−), calcium dysregulation (AMPAR/NMDAR pathways), mitochondrial dysfunction with motor neuron type-specific vulnerability, TDP-43 pathology (present in ~97% of ALS patients), ER stress/UPR signaling, autophagy dysfunction with specific ALS gene involvement at each stage (C9ORF72 early, p62 intermediate, VCP late)
+- **Spastic vs flaccid bulbar palsy distinction** — clinically important differentiation Step Flash missed entirely
+- **Better epidemiology**: FRALim register 21-year longitudinal data, racial variation in bulbar onset (27-28% similar between European- and African-Americans), breakdown of all onset types (spinal 58-82%, mixed 9.9-17.1%, thoracic 1.5-3.5%, respiratory 1.7%)
+- **Detailed physical examination findings**: specific clinical signs (jaw jerk preservation despite weakness, pharyngeal reflex loss, palate/vocal cord movement assessment)
+
+### Which is "better"?
+
+Neither dominates across all dimensions:
+
+- **For a researcher wanting unique mechanistic insights**: Step Flash's selective vulnerability section (MMP9, calcium-binding proteins, E/I balance) contains material Haiku's report doesn't cover. These are specific, citable data points.
+- **For a clinician wanting comprehensive reference**: Haiku's report is more thorough on mechanisms, epidemiology, clinical presentation, and diagnostic approach. It reads like a review article.
+- **For cost efficiency**: Step Flash at $0.061 vs Haiku at $0.076 — negligible difference. Both are under 10 cents.
+- **For speed**: Haiku is 3× faster (3.9 min vs 12.7 min) even at the same concurrency=2. With higher concurrency (8+), Haiku could finish in under 2 minutes.
+
+### Recommendation
+
+**For production all-cloud deployment, Haiku is the better default.** It produces a more comprehensive report, runs faster, costs only marginally more, and its "selective extraction + expansive synthesis" strategy is more token-efficient. The 14 references (vs Step Flash's 29) are cited more densely (136 vs 95 citations), suggesting higher citation-per-claim discipline.
+
+**Step Flash remains the best value for the hybrid architecture** (local Qwen for extraction, Step Flash for linchpin calls only), where its $0.008/run cost for just the 2-3 cloud-tier calls is essentially free.
+
+---
+
 ## Ollama Parallel Mode on AMD
 
 ### What it promises
