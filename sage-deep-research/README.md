@@ -1,6 +1,6 @@
 # Sage Deep Research: Lessons from Building an LLM Research Pipeline
 
-Practical findings from building and optimizing a multi-stage research pipeline that decomposes questions into sub-queries, searches the web, extracts facts from sources, reviews quality, and synthesizes reports. Built as part of the [Anvil AI Toolkit](https://github.com/your-repo/ai-toolkit) platform.
+Practical findings from building and optimizing a multi-stage research pipeline that decomposes questions into sub-queries, searches the web, extracts facts from sources, reviews quality, and synthesizes reports. Built as part of the [Anvil AI Toolkit](https://anvisuilte.com) platform.
 
 **Hardware**: AMD Radeon RX 7900 XTX (24GB VRAM, RDNA3, ROCm)
 **Local model**: Qwen 3.5 9B (Q4_K_M, via Ollama 0.18.2)
