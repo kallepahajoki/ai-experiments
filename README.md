@@ -89,6 +89,7 @@ Training data deliberately excludes the real target project so it serves as a he
 | v0 — RAG only | 40.0% | — |
 | v1 — + fact extraction | 52.0% | SS Assistant 50% → 100% |
 | v2 — + supersession + diversity | 56.0% | Knowledge Update 42% → 67%, Multi-Session 25% → 50% |
+| v4 — + reference date | 64.0% | Temporal 46% → 85%, Knowledge Update 42% → 75% |
 
 The memory layer abstracts storage behind `memory.search` / `memory.store` tools — agents don't know about the backend. Today: Atlas (ChromaDB vector search) + Postgres (structured facts with LLM extraction and supersession). Dual-scoped by agent and/or project.
 

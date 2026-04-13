@@ -23,6 +23,9 @@ The memory system sits between agents and storage — agents call `memory.search
 | v0 — Atlas RAG only | 40.0% | 80% | 50% | 46% | 42% | 25% | 12% |
 | v1 — + fact extraction | 52.0% | 100% | 100% | 62% | 42% | 25% | 25% |
 | v2 — + supersession + diversity | 56.0% | 80% | 100% | 62% | 67% | 50% | 0% |
+| v3 — + proactive search prompt | 54.0% | 80% | 100% | 69% | 58% | 25% | 12% |
+| v4 — + reference date injection | 64.0% | 80% | 100% | **85%** | **75%** | 50% | 0% |
+| v5 — + fact prefetch (fast path) | pending | | | | | | |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -38,11 +41,27 @@ At ingest time, an LLM extracts concrete facts from each conversation ("User pre
 
 **Impact**: Knowledge Update 42% → 67% (supersession ensures latest info wins). Multi-Session 25% → 50% (diversity pulls from multiple conversations).
 
-### SS Preference regression (25% → 0%)
+### v2 → v3: Proactive search prompt (-2 pts, noisy)
 
-Preference questions ask things like "suggest recipes for meal prep" — the gold answer describes what the response *should account for* ("user grows cherry tomatoes, prefers healthy meals"). The model doesn't call `memory.search` for these because nothing in the question triggers recall ("earlier", "remember", etc.). This is a tool-invocation problem, not retrieval. The preference facts exist in the fact store but the model doesn't think to look.
+Expanded the tool-use instruction to tell the model: "Also use memory.search BEFORE giving suggestions, recommendations, or advice." Aimed at getting the model to check memory before answering preference questions where nothing in the question explicitly triggers recall.
 
-Fix in progress: expanding the tool-use instruction to trigger memory.search for suggestion/recommendation questions.
+**Impact**: Mixed. SS Preference recovered slightly (0% → 12.5%), Temporal improved (+7.7), but Knowledge Update regressed (-8.4, likely noise at n=12). 7 judge errors also pulled the overall down. The prompt alone isn't reliable enough — the model still doesn't consistently connect "suggest recipes" with "check what this user likes to cook."
+
+### v3 → v4: Reference date injection (+10 pts)
+
+The benchmark questions have a `question_date` (e.g. "2023/05/30") but the model was answering relative-time questions ("how many months ago") using today's date (2026). Added a `reference_date` parameter to the `/complete` endpoint — the tool instruction now says "Current date: Monday, May 30, 2023" using the question's reference date for benchmarks, or the real date for production use.
+
+**Impact**: Temporal Reasoning jumped from 62% → **85%** — most failures were purely date math errors. Knowledge Update also rose to **75%**, likely because temporal context helps the model pick the most recent fact.
+
+### v4 → v5: Fact prefetch into system prompt (pending)
+
+The SS Preference category remains at 0% across multiple versions. Root cause: these questions ask for suggestions ("recommend recipes", "suggest phone accessories") where the gold answer expects the model to account for user preferences (grows cherry tomatoes, owns iPhone 13 Pro). The model doesn't call `memory.search` because nothing triggers recall.
+
+**Solution**: Auto-inject matching facts from Postgres into the system prompt before the LLM runs. No tool call needed — the model always sees user preferences. Initial implementation called the full RAG pipeline (10-20s, timed out). Fixed to query the `memory_facts` Postgres table directly (~50ms).
+
+### Observations on SS Preference
+
+These questions have unusual gold answers — not factual answers but meta-descriptions of what the response *should account for* (e.g. "The user would prefer baking suggestions that take into account their previous success with the lemon drizzle cake"). This makes them harder to judge: even if the model uses the right preferences, the judge may mark it incorrect if the response format doesn't match the gold's meta-description. This category may have a ceiling effect from the judge prompt.
 
 ---
 
@@ -51,7 +70,10 @@ Fix in progress: expanding the tool-use instruction to trigger memory.search for
 ```
 ┌─────────────────────────────────────────────────────┐
 │  Agent (Spark /complete)                             │
-│  → calls memory.search / memory.store tools          │
+│  1. Prefetch: query Postgres facts (~50ms)           │
+│     → inject matching facts into system prompt       │
+│  2. LLM runs with facts + tool-use instruction       │
+│  3. LLM may call memory.search for deeper recall     │
 │  → auto-scoped by agent_id + project_id              │
 ├─────────────────────────────────────────────────────┤
 │  Memory endpoints (Atlas /api/internal/tool/memory/) │
