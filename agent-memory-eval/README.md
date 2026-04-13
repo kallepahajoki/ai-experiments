@@ -27,6 +27,7 @@ The memory system sits between agents and storage — agents call `memory.search
 | v4 — + reference date injection | **64.0%** | 80% | 100% | **85%** | **75%** | 50% | 0% |
 | v5 — + all-facts prefetch (354 facts) | 58.0% | 80% | 100% | 85% | 58% | 37% | 0% |
 | v6 — + user profile + chunk dates + expiry | **64.0%** | 100% | 100% | 62% | **75%** | 50% | **25%** |
+| v7 — + strict extraction prompts | 62.0% | 100% | 100% | 69% | 58% | 50% | 25% |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -82,7 +83,18 @@ Three changes inspired by MemPalace (metadata filtering) and SuperMemory (user p
 
 **Impact**: SS Preference recovered to 25% (2/8) — the profile contains enough specific details for some questions (guitar: profile mentions Fender Stratocaster; colleague connection: profile reflects work context). Temporal regressed from 85% to 62% — likely noise at n=13, not a systematic issue.
 
-**Key finding on SS Preference ceiling**: Only 2 of 8 key preference facts (iPhone 13 Pro, quinoa meal prep, cherry tomatoes, podcast genres, etc.) were extracted by the fact extraction LLM. The extraction prompt catches general preferences but misses specific product names and contextual details embedded in conversation. Better extraction prompts or multi-pass extraction could improve this.
+**Key finding on SS Preference ceiling**: Only 2 of 8 key preference facts (iPhone 13 Pro, quinoa meal prep, cherry tomatoes, podcast genres, etc.) were extracted by the fact extraction LLM. The extraction prompt catches general preferences but misses specific product names and contextual details embedded in conversation.
+
+### v6 → v7: Strict extraction prompts with failure conditions (=62%)
+
+Rewrote the extraction prompt with imperative rules and explicit failure examples (inspired by [Arthur Soares' blog on model instruction compliance](https://arthur.earth/it-feels-like-a-different-team/)):
+
+- "FAIL: 'User has a phone' when text says 'my iPhone 13 Pro' → CORRECT: 'User owns an iPhone 13 Pro'"
+- Every brand, model, quantity, ingredient MUST appear in extracted fact
+
+**Extraction quality improved dramatically**: iPhone 13 Pro, cherry tomatoes, basil and mint, true crime podcasts, history podcasts, Fender Stratocaster — all now extracted (previously missing). Total facts rose from 345 to 400+.
+
+**SS Preference held at 25%**: The 2 questions that pass are ones where the model calls `memory.search` and gets the right facts back (dinner with homegrown ingredients → cherry tomatoes; commute activities → history podcasts like Hardcore History). The 6 failures are where the model gives generic answers without searching. The facts exist, retrieval works when triggered — the bottleneck is now profile coverage (top-50 facts → 4-8 sentence summary loses specifics) and tool invocation reliability.
 
 ### Overall progress: 40% → 64% (+24 points)
 
