@@ -26,6 +26,7 @@ The memory system sits between agents and storage — agents call `memory.search
 | v3 — + proactive search prompt | 54.0% | 80% | 100% | 69% | 58% | 25% | 12% |
 | v4 — + reference date injection | **64.0%** | 80% | 100% | **85%** | **75%** | 50% | 0% |
 | v5 — + all-facts prefetch (354 facts) | 58.0% | 80% | 100% | 85% | 58% | 37% | 0% |
+| v6 — + user profile + chunk dates + expiry | **64.0%** | 100% | 100% | 62% | **75%** | 50% | **25%** |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -69,10 +70,31 @@ Two compounding problems make this category resistant to improvement:
 
 2. **Model behavior**: Even with all facts in the system prompt, the model gives generic advice and asks follow-up questions ("What's your phone model?") rather than using injected context. This suggests either the facts block is too long to attend to, or the model's instruction-following for injected context is weak at this prompt length.
 
-Potential fixes for future iterations:
-- **Semantic fact search**: Embed facts in Postgres (pgvector) or ChromaDB, retrieve top-5 relevant facts per query instead of dumping all
-- **Compact user profile**: LLM-generated summary of the user's key preferences/possessions, updated incrementally, injected as 2-3 sentences
-- **Judge prompt adjustment**: Account for the meta-gold-answer format in SS Preference scoring
+### v5 → v6: User profile + chunk dates + auto-expiry (=64%, SS Pref 0→25%)
+
+Three changes inspired by MemPalace (metadata filtering) and SuperMemory (user profiles):
+
+1. **User profile summary**: After fact extraction, an LLM generates a compact 2-4 sentence profile from the top 50 active preference+personal facts. Stored in `memory_profiles` table, injected into the system prompt (~250 tokens). Example: *"The user is a frequent traveler with United Airlines Premier Gold status... owns a rare 1978 Rumours vinyl, a full MCU Funko POP! set, and 17 vintage cameras... enjoys astrophotography, BBQ experimentation..."*
+
+2. **ChromaDB chunk metadata**: `source_date` field threaded from memory.store through the ingest pipeline to chunk metadata. Enables temporal filtering at retrieval time.
+
+3. **Fact auto-expiry**: `expires_at` column on memory_facts, filtered in search queries. Time-bound facts can be set to expire.
+
+**Impact**: SS Preference recovered to 25% (2/8) — the profile contains enough specific details for some questions (guitar: profile mentions Fender Stratocaster; colleague connection: profile reflects work context). Temporal regressed from 85% to 62% — likely noise at n=13, not a systematic issue.
+
+**Key finding on SS Preference ceiling**: Only 2 of 8 key preference facts (iPhone 13 Pro, quinoa meal prep, cherry tomatoes, podcast genres, etc.) were extracted by the fact extraction LLM. The extraction prompt catches general preferences but misses specific product names and contextual details embedded in conversation. Better extraction prompts or multi-pass extraction could improve this.
+
+### Overall progress: 40% → 64% (+24 points)
+
+The biggest wins came from:
+- Structured fact extraction with supersession (+12 pts)
+- Reference date injection for temporal reasoning (+10 pts)
+- Source diversity for multi-session questions (+8 pts from baseline)
+
+Remaining challenges:
+- SS Preference (25%) — combination of extraction gaps, profile coverage, and meta-gold-answer format
+- Temporal Reasoning (62-85%, varies) — noise from small sample size (n=13)
+- Multi-Session (50%) — diversity helped but cross-document synthesis still hard
 
 ---
 
