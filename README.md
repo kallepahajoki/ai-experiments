@@ -80,6 +80,18 @@ The 27B model (dense) gets tantalizingly close but picks the wrong webpack mecha
 
 Training data deliberately excludes the real target project so it serves as a held-out generalization test.
 
+### [`agent-memory-eval/`](agent-memory-eval/)
+
+**Long-term memory for AI chat agents** — iterative development of a memory subsystem benchmarked against LongMemEval (ICLR 2025, 500 questions across 6 recall categories). Starting from pure vector RAG, progressively adding structured fact extraction, temporal supersession, and retrieval diversity.
+
+| Version | Overall | Best improvement |
+|---------|---------|-----------------|
+| v0 — RAG only | 40.0% | — |
+| v1 — + fact extraction | 52.0% | SS Assistant 50% → 100% |
+| v2 — + supersession + diversity | 56.0% | Knowledge Update 42% → 67%, Multi-Session 25% → 50% |
+
+The memory layer abstracts storage behind `memory.search` / `memory.store` tools — agents don't know about the backend. Today: Atlas (ChromaDB vector search) + Postgres (structured facts with LLM extraction and supersession). Dual-scoped by agent and/or project.
+
 ---
 
 ## Hardware
