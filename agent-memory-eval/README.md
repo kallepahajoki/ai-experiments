@@ -24,8 +24,8 @@ The memory system sits between agents and storage — agents call `memory.search
 | v1 — + fact extraction | 52.0% | 100% | 100% | 62% | 42% | 25% | 25% |
 | v2 — + supersession + diversity | 56.0% | 80% | 100% | 62% | 67% | 50% | 0% |
 | v3 — + proactive search prompt | 54.0% | 80% | 100% | 69% | 58% | 25% | 12% |
-| v4 — + reference date injection | 64.0% | 80% | 100% | **85%** | **75%** | 50% | 0% |
-| v5 — + fact prefetch (fast path) | pending | | | | | | |
+| v4 — + reference date injection | **64.0%** | 80% | 100% | **85%** | **75%** | 50% | 0% |
+| v5 — + all-facts prefetch (354 facts) | 58.0% | 80% | 100% | 85% | 58% | 37% | 0% |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -53,15 +53,26 @@ The benchmark questions have a `question_date` (e.g. "2023/05/30") but the model
 
 **Impact**: Temporal Reasoning jumped from 62% → **85%** — most failures were purely date math errors. Knowledge Update also rose to **75%**, likely because temporal context helps the model pick the most recent fact.
 
-### v4 → v5: Fact prefetch into system prompt (pending)
+### v4 → v5: All-facts prefetch — too much noise (-6 pts)
 
-The SS Preference category remains at 0% across multiple versions. Root cause: these questions ask for suggestions ("recommend recipes", "suggest phone accessories") where the gold answer expects the model to account for user preferences (grows cherry tomatoes, owns iPhone 13 Pro). The model doesn't call `memory.search` because nothing triggers recall.
+Injected all 354 active facts into the system prompt (~5K tokens). The model should see preferences like "User grows cherry tomatoes" and use them when asked "suggest dinner with homegrown ingredients."
 
-**Solution**: Auto-inject matching facts from Postgres into the system prompt before the LLM runs. No tool call needed — the model always sees user preferences. Initial implementation called the full RAG pipeline (10-20s, timed out). Fixed to query the `memory_facts` Postgres table directly (~50ms).
+**Result**: Overall dropped from 64% to 58%. The noise from hundreds of irrelevant facts (trip plans, random events, purchase history) confused the model on other categories. Knowledge Update fell from 75% to 58%. SS Preference remained at 0% — the model still gave generic responses and even asked "what's your phone model?" despite facts stating "User owns iPhone 13 Pro" being in the prompt.
+
+**Lesson**: Brute-force context injection doesn't work. The LLM ignores or gets confused by large blocks of injected context. Need either semantic fact retrieval (embed facts, vector search) or a very focused profile summary.
 
 ### Observations on SS Preference
 
-These questions have unusual gold answers — not factual answers but meta-descriptions of what the response *should account for* (e.g. "The user would prefer baking suggestions that take into account their previous success with the lemon drizzle cake"). This makes them harder to judge: even if the model uses the right preferences, the judge may mark it incorrect if the response format doesn't match the gold's meta-description. This category may have a ceiling effect from the judge prompt.
+Two compounding problems make this category resistant to improvement:
+
+1. **Gold answer format**: Gold answers are meta-descriptions ("The user would prefer baking suggestions that take into account their previous success with the lemon drizzle cake"), not factual answers. The judge checks whether the response *accounts for* specific preferences, which requires reading between the lines.
+
+2. **Model behavior**: Even with all facts in the system prompt, the model gives generic advice and asks follow-up questions ("What's your phone model?") rather than using injected context. This suggests either the facts block is too long to attend to, or the model's instruction-following for injected context is weak at this prompt length.
+
+Potential fixes for future iterations:
+- **Semantic fact search**: Embed facts in Postgres (pgvector) or ChromaDB, retrieve top-5 relevant facts per query instead of dumping all
+- **Compact user profile**: LLM-generated summary of the user's key preferences/possessions, updated incrementally, injected as 2-3 sentences
+- **Judge prompt adjustment**: Account for the meta-gold-answer format in SS Preference scoring
 
 ---
 
