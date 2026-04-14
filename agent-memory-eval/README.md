@@ -110,6 +110,127 @@ Remaining challenges:
 
 ---
 
+## Concrete example: end-to-end data flow
+
+To illustrate what the system actually sees at each stage, here's a real example from the benchmark — the "dinner with homegrown ingredients" question (SS Preference category).
+
+### 1. Source conversation (ingested as memory)
+
+A session from `2023/05/23` where the user discusses gardening and cooking:
+
+```
+USER: I'm trying to find some new recipe ideas that use fresh basil
+      and mint. Can you suggest any?
+
+ASSISTANT: What a refreshing combination! Fresh basil and mint can add
+           a bright, herbaceous flavor to many dishes...
+
+USER: What are some good companion plants for tomatoes?
+
+ASSISTANT: Tomatoes benefit from being paired with certain companion
+           plants...
+
+USER: I've been using basil and mint in my cooking lately. I've even
+      harvested some cherry tomatoes from my garden. Do you have any
+      suggestions for companion plants that could help my cherry
+      tomatoes grow better?
+
+ASSISTANT: What a great combination! Basil, mint, and cherry tomatoes
+           are a match made in heaven...
+```
+
+### 2. Extracted facts (stored in Postgres memory_facts)
+
+The fact extraction LLM processes this conversation and should extract:
+
+```json
+[
+  {"fact": "User cooks with fresh basil and mint", "category": "preference"},
+  {"fact": "User owns cherry tomato plants", "category": "personal"},
+  {"fact": "User has harvested cherry tomatoes from their garden", "category": "personal"},
+  {"fact": "User has tomato, pepper, and cucumber seedlings", "category": "personal"}
+]
+```
+
+> **Reliability issue found**: In the v8 run, the fact extraction silently failed for this session — the fire-and-forget LLM call timed out or errored. The basil/mint/cherry tomato facts were not stored, causing the question to fail.
+
+### 3. User profile (injected into system prompt, ~500 tokens)
+
+Generated from the top 200 active preference+personal facts:
+
+```
+The user is a Senior Marketing Specialist with 3 years and 9 months
+of experience... Their devices include an iPhone 13 Pro with a cracked
+screen protector, a Fender Stratocaster guitar... They enjoy cooking
+with lemon and poppyseeds, experimenting with apple wood chips and
+marinades for BBQ, favor Sweet Baby Ray's sauce... gardening marigold,
+tomato, pepper, and cucumber seedlings with a peat moss-perlite-
+vermiculite mix... They listen to history, science, true crime, and
+self-improvement podcasts during their 40-minute commute...
+```
+
+Note: the profile mentions "tomato, pepper, and cucumber seedlings" but NOT "cherry tomatoes" or "basil and mint" — those facts weren't extracted, so they couldn't make it into the profile.
+
+### 4. Benchmark question
+
+```
+Q: What should I serve for dinner this weekend with my homegrown ingredients?
+
+Gold: The user would prefer dinner suggestions that incorporate their
+      homegrown cherry tomatoes and herbs like basil and mint,
+      highlighting recipes that showcase their garden produce.
+```
+
+### 5. LLM tool calls (from llm_calls table)
+
+**Call 1** — LLM decides to search memory:
+```json
+{
+  "function": "memory.search",
+  "arguments": {
+    "query": "homegrown garden ingredients cooking preferences tomatoes peppers cucumbers"
+  }
+}
+```
+Duration: 39,987ms (full RAG pipeline)
+
+**Call 2** — LLM synthesizes answer from profile + RAG results:
+
+> "Based on what you're growing in your garden (tomatoes, peppers, cucumbers), here are some delicious dinner ideas..."
+
+### 6. What went wrong
+
+The model used the profile's "tomato, pepper, and cucumber seedlings" — but the gold answer wants "cherry tomatoes and herbs like basil and mint." The specific gardening facts were never extracted, so neither the profile nor memory.search could surface them. The answer is reasonable given the available data, but the judge marks it INCORRECT because it doesn't mention the specific ingredients.
+
+### 7. Failure classification
+
+```
+Failure: wrong_reasoning (had some context but wrong specifics)
+Root cause: missing_facts (extraction failed for this session)
+```
+
+This example shows how a single extraction failure cascades through the entire pipeline — the profile misses the detail, memory.search can't find it, and the model gives a plausible but incorrect answer.
+
+---
+
+## Failure analysis (v8, 18 failures out of 50)
+
+Diagnostic tool (`diagnose.py`) cross-references results with the Postgres fact store, profile table, and LLM call audit log to classify each failure:
+
+```
+wrong_reasoning:  8  — model had context but reasoned incorrectly
+no_search:        5  — model didn't call memory.search when it should have
+not_in_profile:   5  — facts exist in DB but not in the profile summary
+```
+
+The "wrong_reasoning" failures are further decomposed:
+- 3 are **RAG returning incomplete chunks** (not all relevant sessions found)
+- 2 are **supersession failures** (old facts overriding new ones — therapist frequency, airline status)
+- 2 are **model arithmetic/ordering errors** (date math, counting)
+- 1 is a **possible judge error** (answer looks correct but marked wrong)
+
+---
+
 ## Architecture
 
 ```
