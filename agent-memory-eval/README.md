@@ -28,6 +28,8 @@ The memory system sits between agents and storage — agents call `memory.search
 | v5 — + all-facts prefetch (354 facts) | 58.0% | 80% | 100% | 85% | 58% | 37% | 0% |
 | v6 — + user profile + chunk dates + expiry | **64.0%** | 100% | 100% | 62% | **75%** | 50% | **25%** |
 | v7 — + strict extraction prompts | 62.0% | 100% | 100% | 69% | 58% | 50% | 25% |
+| v8 — + bigger profile (200 facts, 8-15 sent) | 64.0% | 100% | 100% | 53% | 58% | 62% | 62% |
+| **v9 — + pgvector + 100q** | **53.0%** | **83%** | **100%** | **45%** | **59%** | **43%** | **20%** |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -96,7 +98,23 @@ Rewrote the extraction prompt with imperative rules and explicit failure example
 
 **SS Preference held at 25%**: The 2 questions that pass are ones where the model calls `memory.search` and gets the right facts back (dinner with homegrown ingredients → cherry tomatoes; commute activities → history podcasts like Hardcore History). The 6 failures are where the model gives generic answers without searching. The facts exist, retrieval works when triggered — the bottleneck is now profile coverage (top-50 facts → 4-8 sentence summary loses specifics) and tool invocation reliability.
 
-### Overall progress: 40% → 64% (+24 points)
+### v9: pgvector + 100 questions — the real baseline (53%)
+
+Doubled the question count to 100 for statistical significance. This exposed that the 50-question runs (64%) were inflated by noise in small categories. At n=100:
+
+**Failure breakdown (47 failures):**
+```
+not_in_profile:   24  (51%) — facts exist but not surfaced to the model
+wrong_reasoning:  11  (23%) — model had context, reasoned incorrectly
+no_search:         9  (19%) — model didn't call memory.search
+query_error:       3  ( 7%) — timeouts
+```
+
+The #1 bottleneck is `not_in_profile` — the profile summary (8-15 sentences from 200 facts) can't cover all 936 extracted facts. When the model doesn't call memory.search (which happens 19% of the time), the profile is the only context available and it often lacks the specific detail needed.
+
+pgvector embeddings are working (all 936 facts embedded), but they only help when memory.search is called — the profile is still a compressed summary without semantic retrieval.
+
+### Overall progress: 40% → 53% at 100q (+13 points)
 
 The biggest wins came from:
 - Structured fact extraction with supersession (+12 pts)
