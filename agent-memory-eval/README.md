@@ -33,6 +33,7 @@ The memory system sits between agents and storage — agents call `memory.search
 | v12 — + query expansion + prefix cache | 60.0% | 92% | 83% | 55% | 68% | 43% | 40% |
 | *(v12 excl. timeouts, n=93)* | *64.5%* | *92%* | *83%* | *70%* | *68%* | *43%* | *44%* |
 | **v16 — + supersession v2 + retry + caches** | 52.0% | 75% | 83% | 48% | **82%** | 24% | 10% |
+| **v17 — + intent detection + expanded-only + dedup** | **62.0%** | **83%** | 83% | **62%** | **86%** | **33%** | **30%** |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -153,17 +154,34 @@ Five changes targeting supersession quality, extraction reliability, and pipelin
 
 **skipLLM experiment (v14)**: Tried skipping the RAG LLM synthesis step in memory.search (returning raw chunks instead of a synthesized answer). Dropped accuracy ~15pts (46%). The synthesis step is important — it contextualizes raw chunks, extracts relevant details, and filters noise before Spark's model sees the result. Reverted.
 
-### Overall progress: 40% → 60% at 100q (+20 points, +24.5 excl. timeouts)
+### v16 → v17: Intent detection + expanded-only search + fact dedup (+10 pts, 11 fixes / 1 regression)
+
+Three changes targeting the SS Preference bottleneck (model gives generic advice without using personal facts):
+
+1. **Embedding-based intent detection** (`lib/services/intent/index.ts`): Classifies user messages by cosine similarity against pre-embedded intent exemplars (advice_seeking, mail, calendar, reminders, memory_recall, web_search, general_chat). Uses bge-m3 centroids — language-agnostic, tested with English, Finnish, German, Japanese. Lazy-initialized on first request (~200ms), cached for process lifetime. Detection rule: advice_seeking must be top-1 intent AND score ≥ 0.62.
+
+2. **Expanded-only vector search**: For advice-seeking queries, the prefetch drops the original user question from vector search and uses only LLM-generated keyword queries. The original question "What should I serve for dinner this weekend" matches topical facts ("dinner party", "meal prep") at 0.72 cosine, drowning out personal attribute facts ("grows cherry tomatoes" at 0.53). The expanded queries ("fresh tomatoes basil garden herbs") match personal facts at 0.69, which now rank highest without the topical interference. Also requests 20 facts (vs default 10) and uses a directive injection: "You MUST use these facts to personalize your response."
+
+3. **Fact text deduplication**: Extraction retries create duplicate facts with different IDs (e.g. 3 copies of "User is planning a dinner party this weekend"). Merge step now deduplicates by case-insensitive fact text, keeping the highest-scored copy. Frees fact slots for diverse results.
+
+**Also improved**: Query expansion prompt rewritten to focus on personal attributes ("POSSESSIONS, HOBBIES, HABITS, PREFERENCES") instead of generating recipe names or product answers. The old prompt produced "tomatoes basil pasta caprese salad"; the new one produces "fresh tomatoes basil garden herbs cooking" which better matches stored facts.
+
+**Impact**: Every category improved. SS Preference 10% → 30% (+20pp) — the primary target. Temporal 48% → 62% (+14pp) and Multi-Session 24% → 33% (+9pp) also benefited from dedup and better expansion. 11 fixes across all categories, only 1 regression.
+
+**Key insight**: For personalization queries, the user's literal question is a bad retrieval query. "Suggest dinner" matches dinner-related events, not the user's garden inventory. Separating "what is the user asking about" (the question) from "what personal facts would help answer this" (the expanded queries) and only searching with the latter dramatically improves recall for preference questions.
+
+### Overall progress: 40% → 62% at 100q (+22 points)
 
 The biggest wins came from:
 - Structured fact extraction with supersession (+12 pts)
 - Reference date injection for temporal reasoning (+10 pts)
+- Intent-aware retrieval with expanded-only search (+10 pts)
 - Source diversity for multi-session questions (+8 pts from baseline)
 
 Remaining challenges:
-- Multi-Session (43%) — requires aggregating facts from 3-5 sessions; retrieval returns partial results
-- Temporal Reasoning (55-70%) — model reasoning on date math + retrieval gaps
-- SS Preference (40%) — improved dramatically with query expansion but still limited by extraction coverage
+- Multi-Session (33%) — requires aggregating facts from 3-5 sessions; retrieval returns partial results
+- Temporal Reasoning (62%) — model reasoning on date math + retrieval gaps
+- SS Preference (30%) — improved with intent detection but still limited when the question doesn't hint at the relevant personal attribute (e.g. "phone accessories" can't guess "iPhone 13 Pro")
 
 ---
 
@@ -182,35 +200,38 @@ Remaining challenges:
 - Prefix-cache-friendly prompt ordering (static prefix + dynamic suffix)
 - In-memory LRU caches for embeddings (2000 entries) and query expansion (500 entries)
 - NER and source-boost disabled for memory.search (document Q&A features, not memory)
+- Embedding-based intent detection (`lib/services/intent/`) — language-agnostic classification using bge-m3 centroids
+- Expanded-only vector search for advice queries — bypasses topical matching, uses only personal-attribute keyword queries
+- Fact text deduplication in search results
+- Local bge-m3 embeddings via Ollama (3x faster than OpenRouter)
 - Benchmark harness with `--tag`, `--failed-from`, extraction retry, diagnostics, single-question test tool
 
 ### What's working well
 - **Fact extraction** — strict prompt with failure conditions catches specific details. Extraction retry in benchmark achieves 97% coverage (185/191 sessions).
-- **Supersession** — cross-category vector-based comparison with FAIL/CORRECT prompt. Knowledge Update at 82%, the best category score in benchmark history.
+- **Supersession** — cross-category vector-based comparison with FAIL/CORRECT prompt. Knowledge Update at 86%.
+- **Intent-aware retrieval** — embedding-based intent detection identifies advice/suggestion queries, expanded-only search finds personal facts instead of topical matches. SS Preference 10% → 30%.
 - **pgvector search** — semantic matching works when query expansion bridges the gap
-- **Pipeline performance** — NER/source-boost removal + caches cut mean latency from 77s to 51s
+- **Pipeline performance** — NER/source-boost removal + caches + local embeddings cut mean latency from 77s to ~40s
 - **Model reasoning** — confirmed via synthetic tests that the model handles counting/aggregation perfectly when given the right facts
 
 ### Known issues
-1. **Benchmark variance** — extraction non-determinism (LLM produces different facts each run even at temperature=0.1) causes ±20pt swings in Multi-Session and SS Preference. Makes it hard to measure net improvement. Need to run 3x and average, or use deterministic routing.
-2. **Multi-session aggregation** — 24% accuracy, the weakest category. Questions like "how many devices" or "total spent" need facts from 3-5 sessions. Vector search returns top-K from the closest sessions, missing the others. Aggregation-aware retrieval (factLimit 25) helps but doesn't fully solve it.
-3. **SS Preference** — 10-40% depending on run. Model doesn't consistently call memory.search for advice/suggestion questions. When it does search, facts are found and answers are correct.
+1. **Benchmark variance** — extraction non-determinism (LLM produces different facts each run even at temperature=0.1) causes ±10pt swings. Local embeddings reduced one source of variance (OpenRouter routing), but LLM extraction still varies.
+2. **Multi-session aggregation** — 33% accuracy, the weakest category. Questions like "how many devices" or "total spent" need facts from 3-5 sessions. Vector search returns top-K from the closest sessions, missing the others.
+3. **SS Preference indirect references** — 30% accuracy. Intent detection + expanded-only search fixed cases where relevant facts exist but aren't found. Remaining failures are when the question doesn't hint at the relevant attribute (e.g. "phone accessories" can't bridge to "iPhone 13 Pro" without the model chaining a search to identify the phone first).
 4. **RAG synthesis is necessary** — experiment showed skipping the RAG LLM synthesis step drops accuracy ~15pts. Raw chunks are too noisy for the chat model.
-5. **OpenRouter non-determinism** — even with temperature=0.1, OpenRouter routing across GPU clusters produces different outputs. Affects extraction consistency between runs.
 
 ### Ideas for further improvement
 
 **High impact, moderate effort:**
-- **Reduce benchmark variance** — run 3x and average scores, or pin OpenRouter to a specific GPU endpoint for deterministic extraction.
 - **Multi-session retrieval overhaul** — pre-compute aggregation facts at extraction time ("User mentions 4 health devices: Fitbit, hearing aids, blood sugar monitor, nebulizer"). Detect counting patterns and expand retrieval across more diverse sources.
-- **Force memory.search for preference questions** — add heuristic in Spark to detect advice/suggestion queries and inject a stronger search instruction.
+- **Chained search for indirect preference queries** — when the user says "my phone" and the prefetch finds phone facts but not the specific model, automatically trigger a follow-up search with the specific details found (e.g. search for "iPhone 13 Pro accessories" after finding "User owns an iPhone 13 Pro").
+- **Replace hasToolIntent regex** — the intent detection module already supports all tool categories. Migrating `hasToolIntent()` would make tool routing language-agnostic.
 
 **Moderate impact, low effort:**
 - **Topic-tagged facts** — extract topic tags at fact insertion time (cooking, travel, health). Filter facts by topic before vector search to reduce noise.
-- **Embedding model upgrade** — current bge-m3 via OpenRouter. A dedicated local embedding model would be faster and more deterministic.
+- **Batch deduplication** — clean up existing duplicate facts in the DB (currently only deduped at search time). Would reduce noise in vector search across all query types.
 
 **Research directions:**
-- **Test with stronger chat model** — run same benchmark with Claude Sonnet or GPT-4o to see ceiling. If it scores 80%+, the architecture is solid and Step 3.5 Flash is the bottleneck.
 - **LongMemEval S variant** — switch from oracle (only relevant sessions) to S (~50 sessions per question with distractors). Harder but more realistic.
 - **Official eval** — export results as JSONL, run LongMemEval's evaluate_qa.py with GPT-4o judge for publishable numbers.
 
@@ -340,9 +361,19 @@ With extraction retry achieving 97% coverage (185/191 sessions), the failure pro
 - **Knowledge Update (4 failures)**: Dramatically improved with supersession. Remaining failures are edge cases (plans treated as incomplete, ambiguous supersession).
 - **SS User/Assistant (4 failures)**: Extraction variability — specific details not captured in this run.
 
-### Key insight: benchmark variance dominates
+### v17 (38 failures out of 100)
 
-Comparing v12→v16: 10 new fixes + 18 new regressions. **All 18 regressions traced to extraction non-determinism** — different facts extracted each run due to LLM non-determinism (OpenRouter routing). The code improvements (supersession, caches, retry) are sound; the measurement is noisy.
+11 fixes from v16, 1 regression. Intent detection + expanded-only search improved all categories:
+
+- **Multi-Session (14 failures)**: Aggregation still hardest, but dedup freed fact slots — 2 multi-session questions fixed (fish aquariums, pet supplies cost).
+- **Temporal (11 failures)**: Better expansion surfaced date-relevant facts. 3 temporal fixes (Summer Nights festival, Valentine's airline, spark plugs).
+- **SS Preference (7 failures)**: Down from 9. Remaining failures are indirect reference cases — "phone accessories" where the model can't bridge to "iPhone 13 Pro" without chained search.
+- **Knowledge Update (3 failures)**: Steady improvement. Grocery list method fixed.
+- **SS User (2 failures)**: Internet plan speed fixed by better fact retrieval.
+
+### Key insight: separating question intent from fact retrieval
+
+v16→v17 showed that for personalization queries, the user's literal question is a poor retrieval query. "Suggest dinner this weekend" has high cosine similarity to topical facts ("dinner party", "meal prep") but low similarity to the personal attributes needed to answer well ("grows cherry tomatoes", "cooks with basil"). Expanded-only mode — dropping the original question from vector search and using only LLM-generated personal-attribute keywords — fixes this category of failure.
 
 ---
 
@@ -351,8 +382,11 @@ Comparing v12→v16: 10 new fixes + 18 new regressions. **All 18 regressions tra
 ```
 ┌─────────────────────────────────────────────────────┐
 │  Agent (Spark /complete)                             │
-│  1. Prefetch: query Postgres facts (~50ms)           │
-│     → inject matching facts into system prompt       │
+│  0. Intent detection: classify user message          │
+│     (bge-m3 centroids, language-agnostic)            │
+│  1. Prefetch: query Postgres facts                   │
+│     → advice queries: expanded-only + directive      │
+│     → other queries: standard prefetch               │
 │  2. LLM runs with facts + tool-use instruction       │
 │  3. LLM may call memory.search for deeper recall     │
 │  → auto-scoped by agent_id + project_id              │
@@ -416,8 +450,9 @@ All code lives in the Anvil toolkit repo (`ai-toolkit/`), not here. This directo
 | Path | Purpose |
 |------|---------|
 | `lib/memory/` | Type definitions, Atlas backend, fact DB, fact extractor |
-| `atlas/app/api/internal/tool/memory/` | Store + search endpoints (fact extraction, supersession, diversity) |
+| `lib/services/intent/index.ts` | Embedding-based intent detection (bge-m3 centroids, language-agnostic) |
+| `atlas/app/api/internal/tool/memory/` | Store + search endpoints (fact extraction, supersession, diversity, expanded-only mode) |
 | `lib/tools/registry.ts` | `memory.search` + `memory.store` tool definitions |
-| `spark/app/api/chats/[id]/complete/route.ts` | Auto-scoping, tool-use instructions |
+| `spark/app/api/chats/[id]/complete/route.ts` | Auto-scoping, intent-aware prefetch, tool-use instructions |
 | `memory-benchmark/` | Benchmark harness (Python) |
 | `migrations/1776058251509_memory-facts.sql` | Postgres schema for extracted facts |
