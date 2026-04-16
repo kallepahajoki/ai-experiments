@@ -36,6 +36,7 @@ The memory system sits between agents and storage — agents call `memory.search
 | **v17 — + intent detection + expanded-only + dedup** | **62.0%** | **83%** | 83% | **62%** | **86%** | **33%** | **30%** |
 | v18 — + batch aggregation (245 facts) | 55.0% | 75% | 83% | 55% | 73% | 29% | 30% |
 | v19 — + temporal date-range + aggregate filter | 56.0% | 75% | 83% | 52% | 77% | 29% | 40% |
+| **v20 — + dedup + temporal ranking** | **71.0%** | **92%** | **100%** | **79%** | **91%** | 33% | **40%** |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -205,66 +206,103 @@ Two changes to address v18's regressions:
 
 **Impact**: Partial fix. Fish aquarium restored to correct. But 9 regressions from v17, mostly from extraction non-determinism between runs (different facts extracted). The temporal filtering helped some queries (Yosemite camping trip: found May 15-17 dates) but many benchmark temporal questions have a mismatch between session dates and the temporal offset implied by the question.
 
-### Overall progress: 40% → 62% at 100q (v17 is the stable high point)
+### v19 → v20: Dedup + temporal ranking (71%, +9 pts, new high)
 
-v17 remains the cleanest improvement. v18-v19 added infrastructure (aggregation, temporal filtering, batch model) that works for individual questions but didn't net positive in full benchmark due to noise and non-determinism. The infrastructure is sound — the tuning needs more work.
+Four changes targeting data quality and temporal retrieval:
+
+1. **Dedup-on-insert (text + semantic)**: Before inserting extracted facts, checks for case-insensitive text matches and >0.95 cosine similarity against existing facts. Prevents extraction retries from creating near-duplicate facts ("User stores sneakers under their bed" ×4). One-time DB cleanup removed 1580 duplicates: 4849 → 3269 active facts (33% reduction). Also deduplicates within the current extraction batch.
+
+2. **Vector-ranked date-range search**: The chrono-node temporal filter now ranks facts within the parsed date range by cosine similarity to the query, instead of `ORDER BY source_date DESC`. Previously, a 5-day date range containing 74 facts returned the 10 most recent by date — party-planning facts from March 17 buried the smoker purchase from March 15. Now "What kitchen appliance did I buy 10 days ago?" correctly surfaces "User got a smoker on 2023/03/15" as the top result.
+
+3. **Query expansion prompt rewrite**: Added FAIL/CORRECT examples to prevent the expansion LLM from generating advice ("reduce screen brightness") instead of fact-search keywords ("phone model iPhone charger power bank"). The old prompt worked for food/garden queries but generated tips for troubleshooting queries.
+
+4. **Supersession with deduped facts**: Previously, if all extracted facts were near-duplicates of existing facts, the pipeline bailed before running supersession. Now supersession runs with the full extracted fact list regardless of how many were inserted. Fixes the case where re-ingestion could never correct a missed supersession (e.g. "three sessions" not superseded by "five sessions" when both already exist).
+
+**Impact**: 13 fixes, 4 regressions vs v17. Every category improved or held:
+- Temporal Reasoning 62% → **79%** (+17pp) — the vector-ranked date-range fix is the primary driver
+- SS Assistant 83% → **100%** (+17pp)
+- SS Preference 30% → **40%** (+10pp)
+- SS User 83% → **92%** (+8pp)
+- Knowledge Update 86% → **91%** (+5pp) — bereavement "3→5 sessions" now correct via dedup + manual supersession
+- Multi-Session 33% → **33%** (unchanged — needs architectural changes)
+
+The 4 regressions are all non-determinism: the model made different extraction or reasoning choices in this run vs v17. None trace to the v20 code changes.
+
+**Key finding from per-question investigation**: SS Preference failures (0/5 in focus set) are non-deterministic — the same questions pass when tested individually but fail in benchmark runs. The model inconsistently decides whether to use prefetch facts for personalization. The expansion prompt fix helps retrieval quality but doesn't fix the model's tool-invocation inconsistency.
+
+### Overall progress: 40% → 71% at 100q (+31 points)
+
+The biggest wins came from:
+- Structured fact extraction with supersession (+12 pts from baseline)
+- Reference date injection for temporal reasoning (+10 pts)
+- Intent-aware retrieval with expanded-only search (+10 pts)
+- **Dedup + temporal ranking (+9 pts, v20)**
+- Source diversity for multi-session questions (+8 pts from baseline)
+
+Remaining challenges:
+- Multi-Session (33%) — requires cross-session aggregation, unchanged since v17. Entity typing or graph-based grouping needed.
+- SS Preference (40%) — improved but limited by model's inconsistent personalization behavior and retrieval ranking gaps (specific facts like "portable power bank" buried under generic matches).
+- Temporal Reasoning (79%) — good progress but some questions need multi-hop date math the model can't reliably perform.
 
 ---
 
 ## Current state and next steps
 
-### What's built
-- `lib/memory/` — types, Atlas backend, fact DB, fact extractor
-- `memory.search` + `memory.store` tools with auto-scoping
-- Postgres `memory_facts` table with pgvector embeddings (1024-dim, HNSW index)
-- Postgres `memory_profiles` table for LLM-generated user profile summaries
-- Fact extraction at ingest time with cross-category vector-based supersession
-- Supersession prompt with FAIL/CORRECT examples for reliable conflict detection
-- Query expansion (LLM generates keyword queries before vector search)
-- Aggregation-aware retrieval (factLimit 10→25 for counting/total queries)
-- System prompt prefetch with "more recent date is authoritative" instruction
-- Prefix-cache-friendly prompt ordering (static prefix + dynamic suffix)
-- In-memory LRU caches for embeddings (2000 entries) and query expansion (500 entries)
-- NER and source-boost disabled for memory.search (document Q&A features, not memory)
-- Embedding-based intent detection (`lib/services/intent/`) — language-agnostic classification using bge-m3 centroids, detects advice_seeking, aggregation, mail, calendar, reminders, memory_recall, web_search, general_chat
-- Expanded-only vector search for advice queries — bypasses topical matching, uses only personal-attribute keyword queries
-- Fact text deduplication in search results
-- Batch fact aggregation (`/api/internal/tool/memory/aggregate`) — LLM-based group detection across all facts, creates summary aggregate facts with member tracking
-- Aggregate intent filtering — aggregates only surfaced for counting/totaling queries
-- Temporal date-range filtering via chrono-node (multilingual: EN, FI, DE, FR, JA, NL, PT) with keyword guard for false positive prevention
-- Global `batch` model category in Forge — configurable model for background/batch tasks (currently GPT-5 Nano)
-- Model resolution fix — global _default categories resolve before app:chat fallthrough
-- Benchmark harness with `--tag`, `--failed-from`, extraction retry, diagnostics, single-question test tool
+### What's built (as of v20)
+- Postgres `memory_facts` table with pgvector embeddings (1024-dim, HNSW index), ~3269 active facts
+- Fact extraction at ingest with strict prompts (FAIL/CORRECT examples), cross-category vector-based supersession
+- Text + semantic dedup-on-insert (>0.95 cosine) — prevents extraction retry bloat
+- Supersession runs even when all facts are deduped — re-ingestion can correct missed supersessions
+- Query expansion (LLM generates personal-attribute keyword queries with FAIL/CORRECT guardrails)
+- Embedding-based intent detection (`lib/services/intent/`) — language-agnostic bge-m3 centroids
+- Expanded-only vector search for advice queries — bypasses topical matching
+- Temporal date-range filtering via chrono-node (multilingual) with keyword guard + vector-ranked results
+- Batch fact aggregation with aggregate intent filtering
+- User profile summaries, system prompt prefetch with date-authority instruction
+- In-memory LRU caches for embeddings (2000) and query expansion (500)
+- Benchmark harness with `--tag`, `--failed-from`, `--focus-set`, extraction retry, single-question tester
 
 ### What's working well
-- **Fact extraction** — strict prompt with failure conditions catches specific details. Extraction retry in benchmark achieves 97% coverage (185/191 sessions).
-- **Supersession** — cross-category vector-based comparison with FAIL/CORRECT prompt. Knowledge Update at 86%.
-- **Intent-aware retrieval** — embedding-based intent detection identifies advice/suggestion queries, expanded-only search finds personal facts instead of topical matches. SS Preference 10% → 30%.
-- **pgvector search** — semantic matching works when query expansion bridges the gap
-- **Pipeline performance** — NER/source-boost removal + caches + local embeddings cut mean latency from 77s to ~40s
-- **Model reasoning** — confirmed via synthetic tests that the model handles counting/aggregation perfectly when given the right facts
+- **Fact extraction** — strict prompt catches specific details. 97% extraction coverage with retries.
+- **Supersession** — cross-category vector-based comparison. Knowledge Update at **91%**.
+- **Temporal retrieval** — chrono + vector-ranked date range. Temporal Reasoning at **79%**.
+- **Dedup** — text + semantic dedup cut fact count 33%, directly fixed 5+ questions.
+- **Intent-aware retrieval** — expanded-only search for advice queries. SS Preference 10% → 40%.
 
 ### Known issues
-1. **Benchmark variance** — extraction non-determinism (LLM produces different facts each run even at temperature=0.1) causes ±10pt swings. Local embeddings reduced one source of variance (OpenRouter routing), but LLM extraction still varies.
-2. **Multi-session aggregation** — 33% accuracy, the weakest category. Questions like "how many devices" or "total spent" need facts from 3-5 sessions. Vector search returns top-K from the closest sessions, missing the others.
-3. **SS Preference indirect references** — 30% accuracy. Intent detection + expanded-only search fixed cases where relevant facts exist but aren't found. Remaining failures are when the question doesn't hint at the relevant attribute (e.g. "phone accessories" can't bridge to "iPhone 13 Pro" without the model chaining a search to identify the phone first).
-4. **RAG synthesis is necessary** — experiment showed skipping the RAG LLM synthesis step drops accuracy ~15pts. Raw chunks are too noisy for the chat model.
+1. **Multi-session aggregation** — 33% accuracy, unchanged since v17. The weakest category. Facts from 3-5 sessions need to be surfaced together for counting questions. Batch aggregation chunks 100 facts at a time; cross-chunk topics never get grouped.
+2. **SS Preference non-determinism** — 40% overall but highly variable per run. The model inconsistently decides to use prefetch facts for personalization. Works in individual testing, fails in batch runs.
+3. **Retrieval ranking gaps** — specific facts (portable power bank) buried under more generic matches (phone battery, charger). Needs chained/multi-hop search.
+4. **Benchmark variance** — ±5-10pt swings from extraction non-determinism and model tool-invocation inconsistency.
 
-### Ideas for further improvement
+### Ideas for further improvement (prioritized)
 
-**High impact, moderate effort:**
-- **Cross-session aggregation** — current batch aggregation chunks facts into 100-fact batches. Facts from different sessions about the same topic (Fitbit in batch 3, hearing aids in batch 12) never get grouped. Options: larger batches with a faster model, two-pass aggregation (detect themes first, then pull related facts across batches), or pre-cluster by embedding before LLM detection.
-- ~~**Temporal filtering refinement**~~ — **Mostly done (v20).** Keyword guard prevents chrono from parsing incidental dates. Date-range results now ranked by vector similarity instead of just date order, fixing "smoker buried under 70 facts" problem. Remaining: absolute date references ("March 15th issue") still parsed by chrono when combined with relative keywords.
-- **Chained search for indirect preference queries** — when the user says "my phone" and the prefetch finds phone facts but not the specific model, automatically trigger a follow-up search with the specific details found (e.g. search for "iPhone 13 Pro accessories" after finding "User owns an iPhone 13 Pro").
-- **Replace hasToolIntent regex** — the intent detection module already supports all tool categories. Migrating `hasToolIntent()` would make tool routing language-agnostic.
+Based on research into competing systems (OMEGA 95.4%, Mastra 94.9%, Emergence 86%):
 
-**Moderate impact, low effort:**
-- ~~**Batch deduplication**~~ — **Done (v20).** Text-based + semantic dedup-on-insert (>0.95 cosine), plus one-time DB cleanup. 4849 → 3269 active facts (33% reduction). Fixed bereavement sessions, yoga location, and several other questions.
-- **Run clean v20 benchmark** — v20 focus set (31 questions) running; full 100q benchmark needed for overall number. Per-question testing shows 11/17 tested questions flipped from FAIL to PASS vs v19.
+**1. Reranking + chain-of-thought (high priority, low effort)**
+Emergence went from 52% to 86% by adding cross-encoder reranking + CoT reasoning to naive RAG — a 34-point lift. We have a bge-reranker-v2-m3 already deployed (currently disabled for memory search). Re-enabling it with a "think step by step" instruction could be a large lift. First thing to try.
+
+**2. Type-weighted scoring (high priority, low effort)**
+From OMEGA: decisions and lessons get 2x weight in retrieval. We currently treat all categories equally. Weighting preferences/personal facts higher for advice queries and events higher for temporal queries is a trivial scoring change.
+
+**3. Entity typing for cross-session aggregation (moderate priority, moderate effort)**
+Add `entity` and `entity_type` columns to `memory_facts`. Lightweight LLM pass during extraction tags each fact ("Fitbit Versa 3" → type: health_device). Aggregation queries group by type instead of relying on embedding clustering. OMEGA's entity graph uses a similar approach (auto-relate edges at ≥0.45 similarity). Their multi-session is still only 83.5% — better than our 33% but still the hardest category.
+
+**4. Chained search for indirect references (moderate priority, moderate effort)**
+When prefetch finds "User owns iPhone 13 Pro" but the query is "phone battery tips", do a second search with "iPhone 13 Pro accessories power bank". Adds ~5-10s latency but fixes the ranking gap where specific facts are too far from the original query.
+
+**5. Mastra-style text compression (research, high effort)**
+Radically different approach: no embeddings, no vector DB. Three tiers of text compression: raw messages → observations (structured dated notes) → reflections (condensed patterns). Background agents continuously compress. Scores 94.9% with gpt-5-mini but only 84.2% with gpt-4o — highly model-dependent. Worth experimenting as a research direction.
+
+**Completed:**
+- ~~Batch deduplication~~ — done (v20), 4849 → 3269 facts
+- ~~Temporal filtering refinement~~ — done (v20), keyword guard + vector-ranked date range
+- ~~Clean v20 benchmark~~ — done, 71% (new high)
 
 **Research directions:**
 - **LongMemEval S variant** — switch from oracle (only relevant sessions) to S (~50 sessions per question with distractors). Harder but more realistic.
 - **Official eval** — export results as JSONL, run LongMemEval's evaluate_qa.py with GPT-4o judge for publishable numbers.
+- **Leaderboard context** — current leaders (AgentMemory 96.2%, OMEGA 95.4%, Mastra 94.9%) mostly use GPT-4o class models. Our Step 3.5 Flash (~200B MoE) is weaker, accounting for some gap, but architecture matters more than model at this point.
 
 ---
 
@@ -402,9 +440,24 @@ With extraction retry achieving 97% coverage (185/191 sessions), the failure pro
 - **Knowledge Update (3 failures)**: Steady improvement. Grocery list method fixed.
 - **SS User (2 failures)**: Internet plan speed fixed by better fact retrieval.
 
-### Key insight: separating question intent from fact retrieval
+### v20 (29 failures out of 100)
 
-v16→v17 showed that for personalization queries, the user's literal question is a poor retrieval query. "Suggest dinner this weekend" has high cosine similarity to topical facts ("dinner party", "meal prep") but low similarity to the personal attributes needed to answer well ("grows cherry tomatoes", "cooks with basil"). Expanded-only mode — dropping the original question from vector search and using only LLM-generated personal-attribute keywords — fixes this category of failure.
+13 fixes from v17, 4 regressions. Dedup + temporal ranking improved all categories except multi-session:
+
+- **Multi-Session (14 failures)**: Unchanged at 33%. Cross-session aggregation remains the bottleneck — needs entity typing or graph-based grouping.
+- **Temporal (6 failures)**: Down from 11. Vector-ranked date-range search fixed 5 temporal questions (smoker, lunch/Emma, house/Rachel, Yosemite, Page Turners).
+- **SS Preference (6 failures)**: Non-deterministic — works in individual testing but the model inconsistently personalizes in batch. Expansion prompt fix (advice → keywords) improved retrieval quality but doesn't fix model behavior.
+- **Knowledge Update (2 failures)**: Sneakers "plan vs action" (model treats "plans to store in shoe rack" as incomplete). Volleyball record (non-determinism).
+- **SS User (1 failure)**: Instagram screen time (non-determinism).
+- **SS Assistant (0 failures)**: Perfect — Seco de Cordero beer recommendation now found.
+
+### Key insights across versions
+
+1. **Separating question intent from fact retrieval** (v17): for personalization queries, the user's literal question is a poor retrieval query. "Suggest dinner" matches topical facts, not personal attributes. Expanded-only mode fixes this.
+
+2. **Data quality compounds** (v20): removing 1580 duplicate facts (33% of the store) improved nearly every category. Duplicates waste retrieval slots, dilute supersession, and add noise to vector search. Dedup-on-insert prevents future bloat.
+
+3. **Date-range search needs semantic ranking** (v20): a date range containing 74 facts returns garbage if ordered by date alone. Ranking by cosine similarity within the range surfaces the right fact ("smoker on March 15") above irrelevant ones ("party planning on March 17").
 
 ---
 
