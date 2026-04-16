@@ -254,13 +254,13 @@ v17 remains the cleanest improvement. v18-v19 added infrastructure (aggregation,
 
 **High impact, moderate effort:**
 - **Cross-session aggregation** — current batch aggregation chunks facts into 100-fact batches. Facts from different sessions about the same topic (Fitbit in batch 3, hearing aids in batch 12) never get grouped. Options: larger batches with a faster model, two-pass aggregation (detect themes first, then pull related facts across batches), or pre-cluster by embedding before LLM detection.
-- **Temporal filtering refinement** — chrono-node parses absolute dates ("March 15th") in temporal queries, but the date-range filter should only apply for relative references ("10 days ago", "last Tuesday"). Distinguish relative vs absolute temporal references.
+- ~~**Temporal filtering refinement**~~ — **Mostly done (v20).** Keyword guard prevents chrono from parsing incidental dates. Date-range results now ranked by vector similarity instead of just date order, fixing "smoker buried under 70 facts" problem. Remaining: absolute date references ("March 15th issue") still parsed by chrono when combined with relative keywords.
 - **Chained search for indirect preference queries** — when the user says "my phone" and the prefetch finds phone facts but not the specific model, automatically trigger a follow-up search with the specific details found (e.g. search for "iPhone 13 Pro accessories" after finding "User owns an iPhone 13 Pro").
 - **Replace hasToolIntent regex** — the intent detection module already supports all tool categories. Migrating `hasToolIntent()` would make tool routing language-agnostic.
 
 **Moderate impact, low effort:**
-- **Batch deduplication** — clean up existing duplicate facts in the DB (~4849 facts → ~4271 unique). Currently only deduped at search time. A one-time cleanup + dedup-on-insert would reduce noise in vector search.
-- **Run clean v20 benchmark** — v17 is the stable high point (62%). v18-v19 added infrastructure that needs tuning. A clean run with aggregate filtering + temporal guard (no chrono false positives) should be ≥ v17.
+- ~~**Batch deduplication**~~ — **Done (v20).** Text-based + semantic dedup-on-insert (>0.95 cosine), plus one-time DB cleanup. 4849 → 3269 active facts (33% reduction). Fixed bereavement sessions, yoga location, and several other questions.
+- **Run clean v20 benchmark** — v20 focus set (31 questions) running; full 100q benchmark needed for overall number. Per-question testing shows 11/17 tested questions flipped from FAIL to PASS vs v19.
 
 **Research directions:**
 - **LongMemEval S variant** — switch from oracle (only relevant sessions) to S (~50 sessions per question with distractors). Harder but more realistic.
