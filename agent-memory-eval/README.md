@@ -34,6 +34,8 @@ The memory system sits between agents and storage — agents call `memory.search
 | *(v12 excl. timeouts, n=93)* | *64.5%* | *92%* | *83%* | *70%* | *68%* | *43%* | *44%* |
 | **v16 — + supersession v2 + retry + caches** | 52.0% | 75% | 83% | 48% | **82%** | 24% | 10% |
 | **v17 — + intent detection + expanded-only + dedup** | **62.0%** | **83%** | 83% | **62%** | **86%** | **33%** | **30%** |
+| v18 — + batch aggregation (245 facts) | 55.0% | 75% | 83% | 55% | 73% | 29% | 30% |
+| v19 — + temporal date-range + aggregate filter | 56.0% | 75% | 83% | 52% | 77% | 29% | 40% |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -183,6 +185,30 @@ Remaining challenges:
 - Temporal Reasoning (62%) — model reasoning on date math + retrieval gaps
 - SS Preference (30%) — improved with intent detection but still limited when the question doesn't hint at the relevant personal attribute (e.g. "phone accessories" can't guess "iPhone 13 Pro")
 
+### v17 → v18: Batch fact aggregation (55%, -7 pts — aggregate noise)
+
+Built a batch aggregation pipeline that scans all active facts, detects countable groups via LLM, and creates summary aggregate facts stored in `memory_facts` with `aggregate_member_ids UUID[]`.
+
+**Pipeline**: `POST /api/internal/tool/memory/aggregate` — fire-and-forget endpoint. Chunks 4271 unique facts into 100-fact batches, sends each to GPT-5 Nano (new global `batch` model category in Forge) for group detection, generates summary facts. Created 245 aggregates including "User has 17 fish across 2 aquariums: 10 neon tetras, 5 golden honey gouramis, 1 pleco, 1 betta (Bubbles)" and "User spent $1,200 on a Gucci handbag."
+
+**Individual question validation**: The fish question ("How many fish in both aquariums?") went from INCORRECT to CORRECT with exact count of 17. The aggregation works when the right summary fact is surfaced.
+
+**But overall dropped 62→55%**: The 245 aggregate facts competed with individual facts in pgvector search, adding noise for non-aggregation queries. 9 regressions, only 2 fixes. Same pattern as v5's all-facts prefetch — too much irrelevant context drowns out the signal.
+
+### v18 → v19: Aggregate filtering + temporal date-range (56%, +1 pt)
+
+Two changes to address v18's regressions:
+
+1. **Aggregate intent filtering**: Added `aggregation` intent to the embedding-based classifier (exemplars: "how many devices", "total amount spent", "how many classes per week"). Aggregate facts are excluded from search results by default (`aggregate_member_ids IS NULL` in scope filter), only included when the aggregation intent is detected. This prevents aggregate noise for non-counting queries.
+
+2. **Temporal date-range filtering via chrono-node**: Detects relative time expressions ("10 days ago", "last Tuesday", "neljä viikkoa sitten") using chrono-node with multilingual support (EN, FI, DE, FR, JA, NL, PT). Converts to absolute date range using the reference_date, then adds a SQL filter on `source_date`. Requires a keyword guard (`/\b(ago|last|yesterday|past|viime|sitten|eilen|vor)\b/`) to prevent chrono from parsing incidental dates ("5-day trip" → false positive).
+
+**Impact**: Partial fix. Fish aquarium restored to correct. But 9 regressions from v17, mostly from extraction non-determinism between runs (different facts extracted). The temporal filtering helped some queries (Yosemite camping trip: found May 15-17 dates) but many benchmark temporal questions have a mismatch between session dates and the temporal offset implied by the question.
+
+### Overall progress: 40% → 62% at 100q (v17 is the stable high point)
+
+v17 remains the cleanest improvement. v18-v19 added infrastructure (aggregation, temporal filtering, batch model) that works for individual questions but didn't net positive in full benchmark due to noise and non-determinism. The infrastructure is sound — the tuning needs more work.
+
 ---
 
 ## Current state and next steps
@@ -200,10 +226,14 @@ Remaining challenges:
 - Prefix-cache-friendly prompt ordering (static prefix + dynamic suffix)
 - In-memory LRU caches for embeddings (2000 entries) and query expansion (500 entries)
 - NER and source-boost disabled for memory.search (document Q&A features, not memory)
-- Embedding-based intent detection (`lib/services/intent/`) — language-agnostic classification using bge-m3 centroids
+- Embedding-based intent detection (`lib/services/intent/`) — language-agnostic classification using bge-m3 centroids, detects advice_seeking, aggregation, mail, calendar, reminders, memory_recall, web_search, general_chat
 - Expanded-only vector search for advice queries — bypasses topical matching, uses only personal-attribute keyword queries
 - Fact text deduplication in search results
-- Local bge-m3 embeddings via Ollama (3x faster than OpenRouter)
+- Batch fact aggregation (`/api/internal/tool/memory/aggregate`) — LLM-based group detection across all facts, creates summary aggregate facts with member tracking
+- Aggregate intent filtering — aggregates only surfaced for counting/totaling queries
+- Temporal date-range filtering via chrono-node (multilingual: EN, FI, DE, FR, JA, NL, PT) with keyword guard for false positive prevention
+- Global `batch` model category in Forge — configurable model for background/batch tasks (currently GPT-5 Nano)
+- Model resolution fix — global _default categories resolve before app:chat fallthrough
 - Benchmark harness with `--tag`, `--failed-from`, extraction retry, diagnostics, single-question test tool
 
 ### What's working well
@@ -223,13 +253,14 @@ Remaining challenges:
 ### Ideas for further improvement
 
 **High impact, moderate effort:**
-- **Multi-session retrieval overhaul** — pre-compute aggregation facts at extraction time ("User mentions 4 health devices: Fitbit, hearing aids, blood sugar monitor, nebulizer"). Detect counting patterns and expand retrieval across more diverse sources.
+- **Cross-session aggregation** — current batch aggregation chunks facts into 100-fact batches. Facts from different sessions about the same topic (Fitbit in batch 3, hearing aids in batch 12) never get grouped. Options: larger batches with a faster model, two-pass aggregation (detect themes first, then pull related facts across batches), or pre-cluster by embedding before LLM detection.
+- **Temporal filtering refinement** — chrono-node parses absolute dates ("March 15th") in temporal queries, but the date-range filter should only apply for relative references ("10 days ago", "last Tuesday"). Distinguish relative vs absolute temporal references.
 - **Chained search for indirect preference queries** — when the user says "my phone" and the prefetch finds phone facts but not the specific model, automatically trigger a follow-up search with the specific details found (e.g. search for "iPhone 13 Pro accessories" after finding "User owns an iPhone 13 Pro").
 - **Replace hasToolIntent regex** — the intent detection module already supports all tool categories. Migrating `hasToolIntent()` would make tool routing language-agnostic.
 
 **Moderate impact, low effort:**
-- **Topic-tagged facts** — extract topic tags at fact insertion time (cooking, travel, health). Filter facts by topic before vector search to reduce noise.
-- **Batch deduplication** — clean up existing duplicate facts in the DB (currently only deduped at search time). Would reduce noise in vector search across all query types.
+- **Batch deduplication** — clean up existing duplicate facts in the DB (~4849 facts → ~4271 unique). Currently only deduped at search time. A one-time cleanup + dedup-on-insert would reduce noise in vector search.
+- **Run clean v20 benchmark** — v17 is the stable high point (62%). v18-v19 added infrastructure that needs tuning. A clean run with aggregate filtering + temporal guard (no chrono false positives) should be ≥ v17.
 
 **Research directions:**
 - **LongMemEval S variant** — switch from oracle (only relevant sessions) to S (~50 sessions per question with distractors). Harder but more realistic.
@@ -451,8 +482,14 @@ All code lives in the Anvil toolkit repo (`ai-toolkit/`), not here. This directo
 |------|---------|
 | `lib/memory/` | Type definitions, Atlas backend, fact DB, fact extractor |
 | `lib/services/intent/index.ts` | Embedding-based intent detection (bge-m3 centroids, language-agnostic) |
-| `atlas/app/api/internal/tool/memory/` | Store + search endpoints (fact extraction, supersession, diversity, expanded-only mode) |
+| `lib/services/temporal/index.ts` | Date-range extraction via chrono-node (multilingual) |
+| `lib/forge/tiers.ts` | Model categories incl. global `batch` for background tasks |
+| `lib/forge/db.ts` | Model resolution with global-before-app-chat fallthrough |
+| `atlas/app/api/internal/tool/memory/store/` | Extraction, supersession, profile generation |
+| `atlas/app/api/internal/tool/memory/search/` | Fact search (pgvector + keyword + date-range) + RAG |
+| `atlas/app/api/internal/tool/memory/aggregate/` | Batch fact aggregation (fire-and-forget) |
 | `lib/tools/registry.ts` | `memory.search` + `memory.store` tool definitions |
-| `spark/app/api/chats/[id]/complete/route.ts` | Auto-scoping, intent-aware prefetch, tool-use instructions |
+| `spark/app/api/chats/[id]/complete/route.ts` | Intent-aware prefetch, auto-scoping, tool-use instructions |
 | `memory-benchmark/` | Benchmark harness (Python) |
 | `migrations/1776058251509_memory-facts.sql` | Postgres schema for extracted facts |
+| `migrations/1776266035260_memory-fact-aggregates.sql` | `aggregate_member_ids UUID[]` column + GIN index |
