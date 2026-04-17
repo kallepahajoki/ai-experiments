@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pac-Man</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Courier New', monospace;
+      color: #fff;
+      overflow: hidden;
+    }
+    #hud {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    #hud textarea {
+      background: #000;
+      border: none;
+      color: #FFB852;
+      text-align: center;
+      width: 140px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 0;
+      outline: none;
+      cursor: default;
+      resize: none;
+    }
+    #message {
+      background: #000;
+      border: none;
+      color: #FFFF00;
+      text-align: center;
+      width: 456px;
+      height: 24px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 0;
+      outline: none;
+      cursor: default;
+      resize: none;
+      margin-top: 8px;
+    }
+    canvas {
+      border: 3px solid #1a1aa0;
+      border-radius: 4px;
+    }
+    .controls {
+      margin-top: 12px;
+      color: #555;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    <textarea id="score" readonly></textarea>
+    <textarea id="highscore" readonly></textarea>
+  </div>
+  <canvas id="game"></canvas>
+  <textarea id="message" readonly></textarea>
+  <div class="controls">ARROW KEYS / WASD to move &bull; ENTER to start</div>
+  <script src="./bundle.js"></script>
+</body>
+</html>

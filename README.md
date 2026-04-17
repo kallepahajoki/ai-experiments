@@ -96,6 +96,16 @@ The memory layer abstracts storage behind `memory.search` / `memory.store` tools
 
 ---
 
+## Model Playground
+
+Model Playground is for testing agentic coding capabilities of various models. Tasks are hands-on programming challenges — building complete, runnable projects from scratch — and serve as a practical signal for how well an agent can plan, write correct code across multiple files, and ship something functional.
+
+### [`model-playground/qwen3.6-35b-a3b/`](model-playground/qwen3.6-35b-a3b/)
+
+**Pac-Man game** — A fully functional Pac-Man clone built with HTML Canvas and TypeScript, demonstrating multi-file project planning, game loop architecture, collision detection, and AI ghost movement. Includes four ghosts with distinct chase behaviors, a 19x19 tile map, scoring with combo multipliers, lives system, and frightened ghost mode. Bundled with esbuild and served via a static HTTP server.
+
+---
+
 ## Hardware
 
 All experiments target a single RTX 4090 (24GB VRAM) using 4-bit NF4 quantization and gradient checkpointing. Trained models are exported to GGUF and served via Ollama for inference.
