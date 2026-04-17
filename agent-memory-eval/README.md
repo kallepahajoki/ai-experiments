@@ -37,6 +37,7 @@ The memory system sits between agents and storage — agents call `memory.search
 | v18 — + batch aggregation (245 facts) | 55.0% | 75% | 83% | 55% | 73% | 29% | 30% |
 | v19 — + temporal date-range + aggregate filter | 56.0% | 75% | 83% | 52% | 77% | 29% | 40% |
 | **v20 — + dedup + temporal ranking** | **71.0%** | **92%** | **100%** | **79%** | **91%** | 33% | **40%** |
+| v21 — + cross-encoder reranking + CoT | 71.0% | 92% | 100% | 79% | 91% | 33% | 40% |
 
 ### v0 → v1: Structured fact extraction (+12 pts)
 
@@ -230,6 +231,40 @@ The 4 regressions are all non-determinism: the model made different extraction o
 
 **Key finding from per-question investigation**: SS Preference failures (0/5 in focus set) are non-deterministic — the same questions pass when tested individually but fail in benchmark runs. The model inconsistently decides whether to use prefetch facts for personalization. The expansion prompt fix helps retrieval quality but doesn't fix the model's tool-invocation inconsistency.
 
+### v20 → v21: Cross-encoder reranking + chain-of-thought (71%, ±0 pts)
+
+Two changes based on Emergence AI's reported 34-point lift from reranking + CoT on naive RAG:
+
+1. **Cross-encoder fact reranking**: After pgvector retrieval, facts are passed through bge-reranker-v2-m3 (running on llama-server with `--reranking` flag, hosted on R9700 via Tailscale). Retrieves 2× candidates from pgvector, reranker scores each (query, fact) pair jointly, returns the top-K. Graceful fallback to original order if reranker unavailable.
+
+2. **Chain-of-thought instruction**: Added "Before answering, mentally identify which facts below are relevant to the question and how they connect — then use those specific facts in your answer" to the prefetch memory context injection. Uses "mentally identify" to encourage internal reasoning without producing visible reasoning text.
+
+**Impact on focus set (31 questions)**: 0 fixes, 1 regression. No measurable improvement.
+
+**Why it didn't work for us**: Emergence's 34-point lift was from **naive RAG** (raw conversation chunks, no fact extraction, no query expansion). Their reranking had a massive surface to improve. Our pipeline already does what reranking does through other means:
+- Fact extraction concentrates relevance into atomic statements
+- Multi-query expansion with best-score-per-fact merging
+- Intent-based routing (expanded-only for advice, aggregate filtering)
+- Semantic dedup prevents slot waste
+
+The reranker is still wired in (helps marginally for the RAG chunk path) but the investment thesis — that reranking would bridge us from 71% to 80%+ — was invalidated. The remaining failures are retrieval coverage gaps (facts not found at all) and model reasoning issues (facts found but not used correctly), not ranking quality.
+
+**Infrastructure added**: New `llama-server` provider driver in Forge UI (distinct from Ollama, which doesn't support `/rerank`). bge-reranker-v2-m3 hosted at `http://100.80.253.86:8090` via llama-server.
+
+### v21: Entity typing for cross-session aggregation (in progress)
+
+Added `entity` and `entity_type` columns to `memory_facts` to enable structured grouping for counting queries. During extraction, the LLM tags facts with entity names and normalized types:
+
+```json
+{"fact": "User owns a Fitbit Versa 3", "category": "personal", "entity": "Fitbit Versa 3", "entity_type": "health_device"}
+```
+
+Entity types: `health_device`, `electronic_device`, `vehicle`, `pet`, `person`, `doctor`, `fitness_class`, `course`, `book`, `podcast`, `recipe`, `instrument`, `tool`, `plant`, `sport`, `game`, `place`, `purchase`, `trip`.
+
+Existing facts backfilled via batch LLM classification. Entity tags are displayed inline with facts (`{health_device: Fitbit Versa 3}`) to give the model explicit grouping cues for aggregation queries.
+
+**Target**: Multi-session accuracy (stuck at 33% since v12). Questions like "how many health devices?" can now potentially be answered by counting distinct entities of type `health_device`.
+
 ### Overall progress: 40% → 71% at 100q (+31 points)
 
 The biggest wins came from:
@@ -239,16 +274,19 @@ The biggest wins came from:
 - **Dedup + temporal ranking (+9 pts, v20)**
 - Source diversity for multi-session questions (+8 pts from baseline)
 
+What didn't work:
+- Cross-encoder reranking (+0 pts) — our pipeline already captures what reranking provides via fact extraction, query expansion, and intent routing
+
 Remaining challenges:
-- Multi-Session (33%) — requires cross-session aggregation, unchanged since v17. Entity typing or graph-based grouping needed.
-- SS Preference (40%) — improved but limited by model's inconsistent personalization behavior and retrieval ranking gaps (specific facts like "portable power bank" buried under generic matches).
+- Multi-Session (33%) — requires cross-session aggregation, unchanged since v12. Entity typing in progress.
+- SS Preference (40%) — improved but limited by model's inconsistent personalization behavior. Not a retrieval problem — facts are there, model doesn't use them.
 - Temporal Reasoning (79%) — good progress but some questions need multi-hop date math the model can't reliably perform.
 
 ---
 
 ## Current state and next steps
 
-### What's built (as of v20)
+### What's built (as of v21)
 - Postgres `memory_facts` table with pgvector embeddings (1024-dim, HNSW index), ~3269 active facts
 - Fact extraction at ingest with strict prompts (FAIL/CORRECT examples), cross-category vector-based supersession
 - Text + semantic dedup-on-insert (>0.95 cosine) — prevents extraction retry bloat
@@ -257,6 +295,9 @@ Remaining challenges:
 - Embedding-based intent detection (`lib/services/intent/`) — language-agnostic bge-m3 centroids
 - Expanded-only vector search for advice queries — bypasses topical matching
 - Temporal date-range filtering via chrono-node (multilingual) with keyword guard + vector-ranked results
+- Cross-encoder reranking via bge-reranker-v2-m3 on llama-server (marginal impact but wired in)
+- Entity typing (`entity` + `entity_type` columns) with LLM tagging at extraction and batch backfill
+- Chain-of-thought instruction in memory context ("mentally identify relevant facts before answering")
 - Batch fact aggregation with aggregate intent filtering
 - User profile summaries, system prompt prefetch with date-authority instruction
 - In-memory LRU caches for embeddings (2000) and query expansion (500)
@@ -279,25 +320,23 @@ Remaining challenges:
 
 Based on research into competing systems (OMEGA 95.4%, Mastra 94.9%, Emergence 86%):
 
-**1. Reranking + chain-of-thought (high priority, low effort)**
-Emergence went from 52% to 86% by adding cross-encoder reranking + CoT reasoning to naive RAG — a 34-point lift. We have a bge-reranker-v2-m3 already deployed (currently disabled for memory search). Re-enabling it with a "think step by step" instruction could be a large lift. First thing to try.
+**1. Entity typing for cross-session aggregation (in progress)**
+`entity` and `entity_type` columns added. Extraction prompt updated. Existing facts being backfilled. Next: benchmark to measure impact on multi-session (33%).
 
-**2. Type-weighted scoring (high priority, low effort)**
-From OMEGA: decisions and lessons get 2x weight in retrieval. We currently treat all categories equally. Weighting preferences/personal facts higher for advice queries and events higher for temporal queries is a trivial scoring change.
+**2. Type-weighted scoring (moderate priority, low effort)**
+From OMEGA: decisions and lessons get 2x weight in retrieval. We currently treat all categories equally. Weighting preferences/personal facts higher for advice queries and events higher for temporal queries is a trivial scoring change. May be marginal given our intent routing already does category-aware filtering.
 
-**3. Entity typing for cross-session aggregation (moderate priority, moderate effort)**
-Add `entity` and `entity_type` columns to `memory_facts`. Lightweight LLM pass during extraction tags each fact ("Fitbit Versa 3" → type: health_device). Aggregation queries group by type instead of relying on embedding clustering. OMEGA's entity graph uses a similar approach (auto-relate edges at ≥0.45 similarity). Their multi-session is still only 83.5% — better than our 33% but still the hardest category.
-
-**4. Chained search for indirect references (moderate priority, moderate effort)**
+**3. Chained search for indirect references (moderate priority, moderate effort)**
 When prefetch finds "User owns iPhone 13 Pro" but the query is "phone battery tips", do a second search with "iPhone 13 Pro accessories power bank". Adds ~5-10s latency but fixes the ranking gap where specific facts are too far from the original query.
 
-**5. Mastra-style text compression (research, high effort)**
+**4. Mastra-style text compression (research, high effort)**
 Radically different approach: no embeddings, no vector DB. Three tiers of text compression: raw messages → observations (structured dated notes) → reflections (condensed patterns). Background agents continuously compress. Scores 94.9% with gpt-5-mini but only 84.2% with gpt-4o — highly model-dependent. Worth experimenting as a research direction.
 
 **Completed:**
 - ~~Batch deduplication~~ — done (v20), 4849 → 3269 facts
 - ~~Temporal filtering refinement~~ — done (v20), keyword guard + vector-ranked date range
 - ~~Clean v20 benchmark~~ — done, 71% (new high)
+- ~~Reranking + chain-of-thought~~ — done (v21), +0 pts. Our pipeline already captures what reranking provides through fact extraction, query expansion, and intent routing. Cross-encoder (bge-reranker-v2-m3 on llama-server) is wired in but marginal.
 
 **Research directions:**
 - **LongMemEval S variant** — switch from oracle (only relevant sessions) to S (~50 sessions per question with distractors). Harder but more realistic.
@@ -519,6 +558,7 @@ Every moving part of the memory system, what it does, and how benchmark-specific
 | **Dedup-on-insert** | Before inserting, checks for case-insensitive matches against existing facts for the same tenant+agent. Skips duplicates, both against DB and within the current batch. | Extraction retries and re-ingestion produce near-identical facts. Duplicates waste retrieval slots and can outvote correct superseded facts (4 copies of "3 sessions" drowns out 1 copy of "5 sessions"). | **3-6%** | **Fully general.** Any system that re-processes conversations or retries extraction needs deduplication. |
 | **Source-ref idempotency** | Skips extraction entirely if facts already exist for a given `source_ref`. | Prevents re-extraction on retry when facts were successfully extracted but the caller didn't get the response. | **<1%** | **Fully general.** Standard idempotency pattern. |
 | **Embedding at insert** | Each fact gets a pgvector embedding (bge-m3, 1024-dim) stored alongside the text. Batch-embedded in one call per ingestion. | Enables semantic search. Without embeddings, retrieval is keyword-only. | **10-15%** | **Fully general.** Core infrastructure for any vector-search-based memory. |
+| **Entity typing** | Each extracted fact can be tagged with `entity` (specific item name) and `entity_type` (normalized category like `health_device`, `electronic_device`, `doctor`, `fitness_class`, etc.). Tagged at extraction time and backfilled on existing facts via batch LLM classification. Displayed inline in search results as `{health_device: Fitbit Versa 3}`. | Enables structured grouping for aggregation queries ("how many health devices?"). Without entity typing, counting queries rely on embedding clustering which fails across semantically distant items (Fitbit vs nebulizer vs hearing aids). | **TBD** | **Mixed.** Entity typing is genuinely useful for agents that need to answer counting/enumeration queries. The specific type taxonomy is shaped by LongMemEval's multi-session category. A production system might use a more dynamic taxonomy or let the LLM determine types freely. |
 | **ChromaDB document store** | Raw conversation text stored as chunked documents in ChromaDB, alongside the structured facts in Postgres. | Provides a fallback retrieval path (RAG) for information that fact extraction misses, and for verbatim recall ("what exactly did you say about X"). | **2-5%** | **Fully general.** Dual-store (structured + unstructured) is a common pattern. The RAG path is less important as extraction quality improves, but remains valuable for edge cases. |
 
 ### Knowledge maintenance
@@ -544,6 +584,7 @@ Every moving part of the memory system, what it does, and how benchmark-specific
 | **Temporal keyword guard** | Only triggers chrono parsing when the query contains relative time words (`ago`, `last`, `yesterday`, `past`, plus Finnish/German equivalents). | Without the guard, chrono parses incidental numbers ("5-day trip") or absolute dates ("March 15th issue") as temporal references and filters to wrong date ranges. | **1-2%** (prevents ~5% regression) | **Mostly general.** False positive prevention is essential for any temporal parsing in production. The specific keyword list is somewhat language-specific but the pattern is universal. |
 | **Source diversity (round-robin)** | RAG retrieval gets top-12 chunks, then round-robin diversifies across source documents (max 3 chunks per doc) before taking top-8. | Multi-session questions need context from multiple conversations. Without diversity, all 8 chunks come from the single most relevant conversation, missing the others. | **3-5%** | **Mostly general.** Source diversity is useful whenever memory spans multiple conversations, which is the norm for any long-lived agent. |
 | **Fact text deduplication in results** | After merging vector + keyword + date results, deduplicates by case-insensitive fact text, keeping the highest-scored copy. | Even with dedup-on-insert, near-duplicate facts with different phrasings survive ("User got a smoker" vs "User acquired a smoker"). Dedup at retrieval frees slots for diverse results. | **1-3%** | **Fully general.** Search-time dedup is standard practice. |
+| **Cross-encoder reranking** | After pgvector retrieval, facts are passed through bge-reranker-v2-m3 (cross-encoder on llama-server). Retrieves 2× candidates, reranker scores each (query, fact) pair jointly, returns top-K. Graceful fallback if unavailable. | Cross-encoders score query-document pairs more accurately than bi-encoder cosine similarity. Emergence AI reported +34 pts from reranking on naive RAG. | **~0%** | **Fully general** as infrastructure, but **marginal for our pipeline.** Our fact extraction + query expansion + intent routing already capture most of what reranking provides. The 34-pt lift reported by Emergence was from naive RAG without these mechanisms. |
 | **Embedding cache** | In-memory LRU cache (2000 entries) wrapping the embedding provider. Batch calls only hit the API for uncached texts. Keyed by MD5 of input text. | Avoids redundant API calls for identical texts across searches. Facts get re-embedded on every search without this. | **0%** (latency only) | **Fully general.** Standard caching. |
 | **Query expansion cache** | In-memory cache (500 entries) for LLM-generated query expansions. | Avoids redundant LLM calls when the same question is searched multiple times (prefetch + tool call, or re-runs). | **0%** (latency only) | **Fully general.** Standard caching. |
 
@@ -620,3 +661,6 @@ All code lives in the Anvil toolkit repo (`ai-toolkit/`), not here. This directo
 | `memory-benchmark/` | Benchmark harness (Python) |
 | `migrations/1776058251509_memory-facts.sql` | Postgres schema for extracted facts |
 | `migrations/1776266035260_memory-fact-aggregates.sql` | `aggregate_member_ids UUID[]` column + GIN index |
+| `migrations/1776370202022_add-entity-columns-to-memory-facts.sql` | `entity` + `entity_type` columns for structured aggregation |
+| `atlas/lib/reranker.ts` | Cross-encoder reranker module (llama-server `/rerank` endpoint) |
+| `memory-benchmark/backfill_entities.py` | Batch LLM classification to backfill entity tags on existing facts |
