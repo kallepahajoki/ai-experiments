@@ -1,5 +1,5 @@
 import { GameState } from './types';
-import { CANVAS_W, CANVAS_H, TILE_SIZE, isWall } from './map';
+import { CANVAS_W, CANVAS_H, TILE_SIZE, isWalkable, isGhostDoor, MAP, MAP_H, MAP_W } from './map';
 import { createGhosts, moveGhost, getGhostBodyColor } from './ghost';
 import { createPacman, getMouthAngle, getPacmanPixelPos, resetPacman } from './pacman';
 import { initDots, getDots, allDotsEaten } from './dot';
@@ -283,19 +283,47 @@ function update(): void {
 
   frameCount++;
 
-  // Move pacman
-  const moveDir = pacman.nextDirection;
-  const mv = { x: moveDir === 'left' ? -1 : moveDir === 'right' ? 1 : 0,
-               y: moveDir === 'up' ? -1 : moveDir === 'down' ? 1 : 0 };
+  // Move pacman — always step-by-step at constant speed
+  const px = pacman.x ?? TILE_SIZE * 9;
+  const py = pacman.y ?? TILE_SIZE * 15;
 
-  if (mv.x !== 0 || mv.y !== 0) {
-    const nx = (pacman.x ?? TILE_SIZE * 9) + mv.x * 2;
-    const ny = (pacman.y ?? TILE_SIZE * 15) + mv.y * 2;
-    if (!isWall(nx, ny)) {
-      pacman.x = nx;
-      pacman.y = ny;
-      pacman.direction = moveDir;
+  if (pacman.direction === 'none') return;
+
+  // Check if near grid center (tolerance of 4px)
+  const gridX = Math.round(px / TILE_SIZE) * TILE_SIZE;
+  const gridY = Math.round(py / TILE_SIZE) * TILE_SIZE;
+  const atCenter = Math.abs(px - gridX) <= 4 && Math.abs(py - gridY) <= 4;
+
+  if (atCenter) {
+    // Try buffered turn at intersection — snap to grid only when a turn is applied
+    const intentDir = pacman.nextDirection;
+    if (intentDir !== pacman.direction && intentDir !== 'none') {
+      const dv = { x: intentDir === 'left' ? -1 : intentDir === 'right' ? 1 : 0,
+                   y: intentDir === 'up' ? -1 : intentDir === 'down' ? 1 : 0 };
+      const tx = Math.floor(gridX / TILE_SIZE) + dv.x;
+      const ty = Math.floor(gridY / TILE_SIZE) + dv.y;
+      const walkable = (ty < 0 || ty >= MAP_H) ? false : (tx < 0 || tx >= MAP_W) ? true : MAP[ty][tx] !== 1;
+      if (walkable) {
+        pacman.x = gridX;
+        pacman.y = gridY;
+        pacman.direction = intentDir;
+        pacman.nextDirection = 'none';
+      }
     }
+  }
+
+  // Move one step (2px) in current direction
+  const dv = { x: pacman.direction === 'left' ? -1 : pacman.direction === 'right' ? 1 : 0,
+               y: pacman.direction === 'up' ? -1 : pacman.direction === 'down' ? 1 : 0 };
+  const nx = (pacman.x ?? 0) + dv.x * 2;
+  const ny = (pacman.y ?? 0) + dv.y * 2;
+  // Check the tile at the new position (incremental 2px movement, so this catches walls correctly).
+  const tx = Math.floor(nx / TILE_SIZE);
+  const ty = Math.floor(ny / TILE_SIZE);
+  const walkable = (ty < 0 || ty >= MAP_H) ? false : (tx < 0 || tx >= MAP_W) ? true : MAP[ty][tx] !== 1;
+  if (walkable) {
+    pacman.x = nx;
+    pacman.y = ny;
   }
 
   // Tunnel wrap

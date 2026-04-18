@@ -47,10 +47,28 @@ export function getWalls(): WallRect[] {
 }
 
 export function isWall(x: number, y: number): boolean {
+  // Horizontal tunnel wrap zone (row 7)
+  if (x < -TILE_SIZE || x > CANVAS_W) return false;
+  if (y < -TILE_SIZE || y > CANVAS_H) return true; // out of bounds vertically = wall
   const c = Math.floor(x / TILE_SIZE);
   const r = Math.floor(y / TILE_SIZE);
-  if (r < 0 || r >= MAP_H || c < 0 || c >= MAP_W) return false; // tunnel
+  if (r < 0 || r >= MAP_H || c < 0 || c >= MAP_W) return true; // out of bounds = wall
   return MAP[r][c] === 1;
+}
+
+// Check if any corner of the rectangle overlaps a wall tile
+export function isWallAt(x: number, y: number, w: number, h: number): boolean {
+  const left = Math.floor(x / TILE_SIZE);
+  const right = Math.floor((x + w - 1) / TILE_SIZE);
+  const top = Math.floor(y / TILE_SIZE);
+  const bottom = Math.floor((y + h - 1) / TILE_SIZE);
+  for (let r = top; r <= bottom; r++) {
+    for (let c = left; c <= right; c++) {
+      if (r < 0 || r >= MAP_H || c < 0 || c >= MAP_W) continue; // tunnel
+      if (MAP[r][c] === 1) return true;
+    }
+  }
+  return false;
 }
 
 export function isWalkable(x: number, y: number): boolean {

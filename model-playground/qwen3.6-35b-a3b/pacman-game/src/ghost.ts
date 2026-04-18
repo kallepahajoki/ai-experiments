@@ -18,7 +18,7 @@ function manhattan(a: Point, b: Point): number {
 }
 
 function snapToGrid(val: number): number {
-  return Math.round(val / TILE_SIZE) * TILE_SIZE;
+  return Math.floor(val / TILE_SIZE) * TILE_SIZE;
 }
 
 // Ghost personality targets (chase mode)
@@ -68,10 +68,23 @@ export function moveGhost(ghost: GhostState, ghostIdx: number, pacmanCx: number,
   }
 
   const speed = ghost.scared ? SCARED_SPEED : SPEED;
+
+  // Check if ghost is near a grid intersection (within tolerance)
   const cx = snapToGrid(ghost.x + TILE_SIZE / 2);
   const cy = snapToGrid(ghost.y + TILE_SIZE / 2);
+  const atIntersection = Math.abs(ghost.x - cx) <= speed && Math.abs(ghost.y - cy) <= speed;
 
-  if (ghost.x !== cx || ghost.y !== cy) return; // Only turn at grid centers
+  // Always move in current direction
+  const v = dirVector(ghost.dir);
+  ghost.x += v.x * speed;
+  ghost.y += v.y * speed;
+
+  // Tunnel wrap (only at row 7 where tunnel opening is)
+  if (ghost.x < -TILE_SIZE) ghost.x = 18 * TILE_SIZE;
+  if (ghost.x > 18 * TILE_SIZE) ghost.x = 0;
+
+  // Only evaluate new direction at grid intersections
+  if (!atIntersection) return;
 
   const tileX = Math.floor((ghost.x + TILE_SIZE / 2) / TILE_SIZE);
   const tileY = Math.floor((ghost.y + TILE_SIZE / 2) / TILE_SIZE);
@@ -82,7 +95,6 @@ export function moveGhost(ghost: GhostState, ghostIdx: number, pacmanCx: number,
     target = { x: 9, y: 9 };
   } else if (ghost.scared) {
     // Random movement
-    const dirs: Direction[] = ['up', 'down', 'left', 'right'];
     target = { x: Math.floor(Math.random() * 19), y: Math.floor(Math.random() * 19) };
   } else {
     // Chase or scatter
@@ -108,14 +120,10 @@ export function moveGhost(ghost: GhostState, ghostIdx: number, pacmanCx: number,
 
   for (const d of candidates) {
     if (ghost.scared && !ghost.eaten && d === opposite(ghost.dir)) continue; // No U-turn when scared
-    const v = dirVector(d);
-    const nx = (tileX + v.x) * TILE_SIZE + TILE_SIZE / 2;
-    const ny = (tileY + v.y) * TILE_SIZE + TILE_SIZE / 2;
+    const vd = dirVector(d);
+    const nx = (tileX + vd.x) * TILE_SIZE + TILE_SIZE / 2;
+    const ny = (tileY + vd.y) * TILE_SIZE + TILE_SIZE / 2;
 
-    // Ghost door only for eaten ghosts going home
-    if (isGhostDoor(nx, ny)) {
-      if (!ghost.eaten) continue;
-    }
     if (isWall(nx, ny)) continue;
 
     const dist = manhattan({ x: nx / TILE_SIZE, y: ny / TILE_SIZE }, target);
@@ -129,25 +137,25 @@ export function moveGhost(ghost: GhostState, ghostIdx: number, pacmanCx: number,
     }
   }
 
-  // Fallback: allow U-turn if no other option
+  // Fallback: only try reverse if current direction is blocked
   if (bestDir === ghost.dir) {
-    const fallback = opposite(ghost.dir);
-    const v = dirVector(fallback);
-    const nx = (tileX + v.x) * TILE_SIZE + TILE_SIZE / 2;
-    const ny = (tileY + v.y) * TILE_SIZE + TILE_SIZE / 2;
-    if (!isWall(nx, ny)) {
-      bestDir = fallback;
-    } else {
-      return; // Truly stuck
+    const vd = dirVector(ghost.dir);
+    const nx = (tileX + vd.x) * TILE_SIZE + TILE_SIZE / 2;
+    const ny = (tileY + vd.y) * TILE_SIZE + TILE_SIZE / 2;
+    if (isWall(nx, ny)) {
+      // Current direction blocked, try opposite
+      const fallback = opposite(ghost.dir);
+      const fvd = dirVector(fallback);
+      const fnx = (tileX + fvd.x) * TILE_SIZE + TILE_SIZE / 2;
+      const fny = (tileY + fvd.y) * TILE_SIZE + TILE_SIZE / 2;
+      if (!isWall(fnx, fny)) {
+        bestDir = fallback;
+      } else {
+        return; // Truly stuck
+      }
     }
+    // else: current direction is valid, keep going
   }
 
   ghost.dir = bestDir;
-  const v = dirVector(ghost.dir);
-  ghost.x += v.x * speed;
-  ghost.y += v.y * speed;
-
-  // Tunnel wrap
-  if (ghost.x < -TILE_SIZE) ghost.x = CANVAS_W;
-  if (ghost.x > CANVAS_W) ghost.x = -TILE_SIZE;
 }
